@@ -8,10 +8,13 @@
     "pnpm": "12.4.2"
   },
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail --names client,admin,api --prefix-colors blue,magenta,green \"pnpm dev:client\" \"pnpm dev:admin\" \"pnpm dev:api\"",
+    "dev": "node scripts/dev-selector.js",
+    "dev:all": "concurrently --kill-others-on-fail --names \"client 🌐,admin 🛠️,server ⚡\" --prefix-colors blue,magenta,green \"pnpm dev:client\" \"pnpm dev:admin\" \"pnpm dev:server\"",
+    "dev:client-server": "concurrently --kill-others-on-fail --names \"client 🌐,server ⚡\" --prefix-colors blue,green \"pnpm dev:client\" \"pnpm dev:server\"",
+    "dev:admin-server": "concurrently --kill-others-on-fail --names \"admin 🛠️,server ⚡\" --prefix-colors magenta,green \"pnpm dev:admin\" \"pnpm dev:server\"",
     "dev:client": "pnpm --filter @metalmax-wiki/client dev",
     "dev:admin": "pnpm --filter @metalmax-wiki/admin dev",
-    "dev:api": "cd apps/backend/server && uv run fastapi dev app/main.py --port 8000",
+    "dev:server": "cd apps/backend/server && uv run fastapi dev app/main.py --port 8000",
     "build": "pnpm -r --if-present build",
     "lint": "pnpm -r --if-present lint && pnpm lint:api",
     "lint:api": "cd apps/backend/server && uv run ruff check .",
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "concurrently": "catalog:",
+    "inquirer": "catalog:",
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:"
   }

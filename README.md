@@ -39,6 +39,12 @@ docker compose --env-file infra/env/.env -f infra/compose.yaml down
 pnpm dev
 ```
 
+该命令会打开交互式菜单，可选择启动用户端、管理端、后端、常用前后端组合或全部应用。直接启动全部应用：
+
+```bash
+pnpm dev:all
+```
+
 - Client：<http://localhost:3000>
 - Admin：<http://localhost:5173>
 - API：<http://localhost:8000>
@@ -49,7 +55,7 @@ pnpm dev
 ```bash
 pnpm dev:client
 pnpm dev:admin
-pnpm dev:api
+pnpm dev:server
 ```
 
 ## 质量检查
