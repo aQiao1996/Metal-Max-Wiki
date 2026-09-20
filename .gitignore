@@ -1,7 +1,7 @@
 .worktrees/
 
 # Local agent working files
-/AGENTS.md
+AGENTS.md
 docs/superpowers/
 
 # Dependencies and build output
