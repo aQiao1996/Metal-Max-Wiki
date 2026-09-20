@@ -1,0 +1,37 @@
+{
+  "name": "@metalmax-wiki/admin",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --pretty false",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@ant-design/icons": "catalog:",
+    "@tanstack/react-query": "catalog:",
+    "antd": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-router-dom": "catalog:",
+    "zod": "catalog:",
+    "zustand": "catalog:"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
+    "globals": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "vite": "catalog:"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@metalmax-wiki/root",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": "22.18.0",
+    "pnpm": "12.4.2"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --names client,admin,api --prefix-colors blue,magenta,green \"pnpm dev:client\" \"pnpm dev:admin\" \"pnpm dev:api\"",
+    "dev:client": "pnpm --filter @metalmax-wiki/client dev",
+    "dev:admin": "pnpm --filter @metalmax-wiki/admin dev",
+    "dev:api": "cd apps/backend/server && uv run fastapi dev app/main.py --port 8000",
+    "build": "pnpm -r --if-present build",
+    "lint": "pnpm -r --if-present lint && pnpm lint:api",
+    "lint:api": "cd apps/backend/server && uv run ruff check .",
+    "typecheck": "pnpm -r --if-present typecheck && pnpm typecheck:api",
+    "typecheck:api": "cd apps/backend/server && uv run mypy app tests",
+    "test": "pnpm test:api",
+    "test:api": "cd apps/backend/server && uv run pytest",
+    "format": "prettier --write . && cd apps/backend/server && uv run ruff format .",
+    "format:check": "prettier --check . && cd apps/backend/server && uv run ruff format --check ."
+  },
+  "devDependencies": {
+    "concurrently": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:"
+  }
+}

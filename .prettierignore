@@ -1,0 +1,8 @@
+.next
+dist
+node_modules
+.venv
+coverage
+pnpm-lock.yaml
+apps/backend/server/uv.lock
+next-env.d.ts

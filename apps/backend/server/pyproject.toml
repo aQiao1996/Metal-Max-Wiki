@@ -1,0 +1,47 @@
+[project]
+name = "metalmax-wiki-api"
+version = "0.1.0"
+description = "Metal Max Wiki API"
+requires-python = "==3.14.*"
+dependencies = [
+  "alembic==1.20.0",
+  "fastapi[standard-no-fastapi-cloud-cli]==0.141.1",
+  "psycopg[binary,pool]==3.3.5",
+  "pydantic==2.13.5",
+  "pydantic-settings==2.15.0",
+  "sqlalchemy[asyncio]==2.0.54",
+]
+
+[dependency-groups]
+dev = [
+  "httpx==0.28.1",
+  "mypy==2.3.1",
+  "pytest==9.1.1",
+  "pytest-asyncio==1.4.0",
+  "ruff==0.16.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.14"
+plugins = ["pydantic.mypy"]
+strict = true
+files = ["app", "tests"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
