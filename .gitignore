@@ -3,6 +3,7 @@
 # Local agent working files
 AGENTS.md
 docs/superpowers/
+.superpowers
 
 # Dependencies and build output
 node_modules/
