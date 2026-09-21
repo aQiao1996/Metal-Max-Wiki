@@ -9,11 +9,8 @@
   },
   "scripts": {
     "dev": "node scripts/dev-selector.js",
-    "dev:all": "concurrently --kill-others-on-fail --names \"client 🌐,admin 🛠️,server ⚡\" --prefix-colors blue,magenta,green \"pnpm dev:client\" \"pnpm dev:admin\" \"pnpm dev:server\"",
-    "dev:client-server": "concurrently --kill-others-on-fail --names \"client 🌐,server ⚡\" --prefix-colors blue,green \"pnpm dev:client\" \"pnpm dev:server\"",
-    "dev:admin-server": "concurrently --kill-others-on-fail --names \"admin 🛠️,server ⚡\" --prefix-colors magenta,green \"pnpm dev:admin\" \"pnpm dev:server\"",
+    "dev:all": "concurrently --kill-others-on-fail --names \"client 🌐,server ⚡\" --prefix-colors blue,green \"pnpm dev:client\" \"pnpm dev:server\"",
     "dev:client": "pnpm --filter @metalmax-wiki/client dev",
-    "dev:admin": "pnpm --filter @metalmax-wiki/admin dev",
     "dev:server": "cd apps/backend/server && uv run fastapi dev app/main.py --port 8000",
     "build": "pnpm -r --if-present build",
     "lint": "pnpm -r --if-present lint && pnpm lint:api",
