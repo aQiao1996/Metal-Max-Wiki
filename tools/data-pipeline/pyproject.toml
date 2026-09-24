@@ -1,0 +1,55 @@
+[project]
+name = "metalmax-wiki-data"
+version = "0.1.0"
+description = "Traceable data acquisition tools for Metal Max Wiki"
+requires-python = "==3.14.*"
+dependencies = [
+  "beautifulsoup4==4.14.3",
+  "httpx==0.28.1",
+  "idna==3.20",
+  "pillow==12.3.0",
+  "pydantic==2.13.5",
+  "pyyaml==6.0.3",
+]
+
+[project.scripts]
+mmwiki-data = "mmwiki_data.cli:main"
+
+[dependency-groups]
+dev = [
+  "mypy==2.3.1",
+  "pytest==9.1.1",
+  "ruff==0.16.8",
+  "types-pyyaml==6.0.12.20250915",
+]
+
+[build-system]
+requires = ["hatchling==1.29.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mmwiki_data"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.14"
+plugins = ["pydantic.mypy"]
+strict = true
+files = ["src", "tests"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true

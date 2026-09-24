@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "source_id": "dqff-mm2r",
+  "target_id": "dqff-jobs",
+  "source_url": "https://dqff.sakura.ne.jp/metalmax2r/77806d69/2e7a5e98/2a6706525e98.html",
+  "retrieved_at": "2026-09-21T10:14:24.138083+08:00",
+  "content_hash": "sha256:b2cbea7150684798086724d88eeac1148404c58e79ca058907f029f7c8ac8b6e",
+  "license": "NOASSERTION",
+  "verification_status": "source_only",
+  "tables": [
+    {
+      "section": "未分類 | 種類 | 職業 | [DS] メタルマックス2: リローデッド 攻略 wiki 組長式",
+      "headers": [
+        "No",
+        "職業"
+      ],
+      "rows": [
+        {
+          "No": "1",
+          "職業": "ハンター"
+        },
+        {
+          "No": "2",
+          "職業": "メカニック"
+        },
+        {
+          "No": "3",
+          "職業": "ソルジャー"
+        },
+        {
+          "No": "4",
+          "職業": "ナース"
+        },
+        {
+          "No": "5",
+          "職業": "レスラー"
+        },
+        {
+          "No": "6",
+          "職業": "アーチスト"
+        },
+        {
+          "No": "7",
+          "職業": "犬"
+        }
+      ],
+      "merged_cells": []
+    }
+  ],
+  "excerpts": [],
+  "warnings": []
+}

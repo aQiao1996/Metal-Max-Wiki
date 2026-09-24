@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-21T10:14:37.326624+08:00",
+  "collected": [
+    {
+      "target_id": "tank-parts",
+      "output": "tank-parts.json",
+      "table_count": 1,
+      "row_count": 95
+    },
+    {
+      "target_id": "special-shells",
+      "output": "special-shells.json",
+      "table_count": 1,
+      "row_count": 15
+    },
+    {
+      "target_id": "tank-tools",
+      "output": "tank-tools.json",
+      "table_count": 1,
+      "row_count": 38
+    },
+    {
+      "target_id": "human-equipment",
+      "output": "human-equipment.json",
+      "table_count": 1,
+      "row_count": 55
+    },
+    {
+      "target_id": "human-items",
+      "output": "human-items.json",
+      "table_count": 2,
+      "row_count": 93
+    },
+    {
+      "target_id": "quests",
+      "output": "quests.json",
+      "table_count": 1,
+      "row_count": 8
+    },
+    {
+      "target_id": "dqff-human-items",
+      "output": "dqff-human-items.json",
+      "table_count": 1,
+      "row_count": 106
+    },
+    {
+      "target_id": "dqff-tank-items",
+      "output": "dqff-tank-items.json",
+      "table_count": 1,
+      "row_count": 30
+    },
+    {
+      "target_id": "dqff-special-shells",
+      "output": "dqff-special-shells.json",
+      "table_count": 1,
+      "row_count": 15
+    },
+    {
+      "target_id": "dqff-jobs",
+      "output": "dqff-jobs.json",
+      "table_count": 1,
+      "row_count": 7
+    },
+    {
+      "target_id": "dqff-skills-field",
+      "output": "dqff-skills-field.json",
+      "table_count": 1,
+      "row_count": 3
+    },
+    {
+      "target_id": "dqff-skills-vehicle",
+      "output": "dqff-skills-vehicle.json",
+      "table_count": 1,
+      "row_count": 7
+    },
+    {
+      "target_id": "dqff-skills-auto",
+      "output": "dqff-skills-auto.json",
+      "table_count": 1,
+      "row_count": 3
+    },
+    {
+      "target_id": "dqff-skills-human",
+      "output": "dqff-skills-human.json",
+      "table_count": 1,
+      "row_count": 40
+    },
+    {
+      "target_id": "dqff-skills-repair",
+      "output": "dqff-skills-repair.json",
+      "table_count": 1,
+      "row_count": 5
+    },
+    {
+      "target_id": "dqff-skills-healing",
+      "output": "dqff-skills-healing.json",
+      "table_count": 1,
+      "row_count": 5
+    },
+    {
+      "target_id": "dqff-skills-art",
+      "output": "dqff-skills-art.json",
+      "table_count": 1,
+      "row_count": 2
+    }
+  ],
+  "skipped": [
+    "official-manual",
+    "dqff-index",
+    "atwiki-index"
+  ],
+  "failed": []
+}

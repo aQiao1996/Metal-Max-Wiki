@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "domain": "quests",
+  "source_hashes": [
+    "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053"
+  ],
+  "records": [
+    {
+      "id": "quest-18bf5cbeba",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "埋もれたマンホール",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience": 50,
+        "experience_raw": "50",
+        "fame": 10,
+        "fame_raw": "10",
+        "location_raw": "マド（城内东北废墟）"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-25d8a8b687",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "デヤークのおつかい",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience": 50,
+        "experience_raw": "50",
+        "fame": 8,
+        "fame_raw": "8",
+        "location_raw": "マド（城内东北废墟）",
+        "reward_raw": "300G"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 4
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-2d46970a02",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "マリアよ、安らかに眠れ",
+        "zh_09": "玛丽亚,安息吧",
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "location_raw": "游戏本篇开始后"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-970b2650e3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "昔のボトルで出ています",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience_raw": "?",
+        "fame_raw": "?",
+        "location_raw": "マド（酒场）",
+        "notes_raw": "マドに酒場建設で受注可能",
+        "reward_raw": "?"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 7
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-b8912c86d1",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "並ばされし者たち",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience": 596,
+        "experience_raw": "596",
+        "fame": 3,
+        "fame_raw": "3",
+        "location_raw": "マド（薬局）",
+        "notes_raw": "マドに薬局を建設＆薬局バーゲン時に受注可能",
+        "reward_raw": "ゴーカイスイング"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 6
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-d2642ae325",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "砂漠を越えて",
+        "zh_09": "穿越沙漠",
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience": 20,
+        "experience_raw": "20",
+        "fame": 3,
+        "fame_raw": "3",
+        "location_raw": "マド（ナイル的修理厂）",
+        "notes_raw": "バギー（ガルシア号）入手"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-f6bb203123",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "木材ハンター",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "experience": 1500,
+        "experience_raw": "1500",
+        "fame": 8,
+        "fame_raw": "8",
+        "location_raw": "マド（城内东北废墟）"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 3
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "quest-f7f4125d44",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "quests",
+      "kind": "quest",
+      "names": {
+        "ja": "タケノコ狩り",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "fame": 10,
+        "fame_raw": "10",
+        "location_raw": "マド（城内东北废墟）",
+        "reward_raw": "300G"
+      },
+      "version_scope": [
+        "mm2r-jp",
+        "zh-patch-0.9-family"
+      ],
+      "verification_status": "compatible_candidate",
+      "source_refs": [
+        {
+          "source_id": "zzjb-mm2r",
+          "target_id": "quests",
+          "source_url": "https://www.zzjb.com/wiki/mm2r/mm2r_quest",
+          "retrieved_at": "2026-09-21T10:14:16.964623+08:00",
+          "content_hash": "sha256:c9db33cbc573e7dda3ebb516ebd5b0c8c5fe086cf156db31c4b96c1217f4a053",
+          "table_index": 0,
+          "row_index": 5
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    }
+  ]
+}

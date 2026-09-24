@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "source_id": "dqff-mm2r",
+  "target_id": "dqff-skills-art",
+  "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/b230fc30b830c430.html",
+  "retrieved_at": "2026-09-21T10:14:37.325026+08:00",
+  "content_hash": "sha256:2e0b7ebf548c583e4d7af196a2477208df2c95bbd8c2922767f182fbdb9edcb7",
+  "license": "NOASSERTION",
+  "verification_status": "source_only",
+  "tables": [
+    {
+      "section": "ゲージツ | 種類 | スキル | [DS] メタルマックス2: リローデッド 攻略 wiki 組長式",
+      "headers": [
+        "No",
+        "スキル",
+        "職業",
+        "Lv",
+        "種類",
+        "説明"
+      ],
+      "rows": [
+        {
+          "No": "1",
+          "スキル": "砲弾ゲージツ",
+          "職業": "アーチスト",
+          "Lv": "5",
+          "種類": "ゲージツ",
+          "説明": "特殊砲弾、素材を作成する"
+        },
+        {
+          "No": "2",
+          "スキル": "改造ゲージツ",
+          "職業": "アーチスト",
+          "Lv": "45",
+          "種類": "ゲージツ",
+          "説明": "クルマを改造する、要スーパーレアメタル"
+        }
+      ],
+      "merged_cells": []
+    }
+  ],
+  "excerpts": [],
+  "warnings": []
+}

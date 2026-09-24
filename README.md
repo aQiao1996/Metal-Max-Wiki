@@ -16,8 +16,9 @@
 
 ```bash
 npm install --global pnpm@12.4.2
-pnpm install
-cd apps/backend/server && uv sync
+pnpm install --frozen-lockfile
+(cd apps/backend/server && uv sync --locked)
+(cd tools/data-pipeline && uv sync --locked)
 ```
 
 ## 本地数据库
@@ -66,6 +67,50 @@ pnpm test
 pnpm build
 ```
 
+## MM2R 0.99 资料数据管线
+
+数据管线已将 17 份候选快照标准化为 504 条记录：装备 150 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条。输出保留 527 个来源引用和 37 个跨列原始范围，当前字段冲突为 0。
+
+初次运行先同步数据工具依赖：
+
+```bash
+cd tools/data-pipeline && uv sync --locked && cd ../..
+```
+
+完整的可重建顺序如下：
+
+```bash
+pnpm data:collect
+pnpm data:normalize
+pnpm data:audit
+pnpm assets:fetch
+pnpm assets:audit
+```
+
+`data:collect` 会访问清单中的公开资料页；`data:normalize` 根据显式映射重建 `interim` 数据；`data:audit` 离线执行候选快照与图片资产审计，`assets:audit` 可单独执行后者。`assets:fetch` 是显式的网络操作，只获取权利清单允许的资产，不会被 `test`、`lint`、`build` 或默认启动命令触发。
+
+数据分层的语义是：
+
+- `data/raw/`：保留候选快照、原始字段、来源与权利结论，不被标准化流程覆盖。
+- `data/interim/`：网站准备使用的统一候选记录，但不是 0.99 实机准确性证明。
+- `data/processed/`：只接收经本机 0.99 游戏界面、截图、存档观察或可重复提取核验的 `verified_0_99` 数据。
+
+### 图片权利与获取边界
+
+| 权利状态                               | 处理方式                                                       |
+| -------------------------------------- | -------------------------------------------------------------- |
+| `reusable`                             | 仅在具有明确开放许可或作者授权时下载，保留作者、许可和原始来源 |
+| `user_capture`                         | 后续保存用户自有 0.99 版本的必要截图，记录地点、条件和日期     |
+| `original_diagram`                     | 后续根据已核对的事实制作原创 SVG，不复制他人图片的像素与排版   |
+| `permission_needed` / `reference_only` | 只保留来源索引，不复制未授权文件                               |
+| `rejected`                             | 不使用官方攻略书扫描、版本错误或来源不明的图片                 |
+
+当前清单记录 3 个外部候选，均为仅索引或已拒绝，因此本地下载数为 0；这不代表攻略图片已齐全。后续的用户自有截图将放入 `assets/files/user-captures/`，原创 SVG 将放入 `assets/files/original-diagrams/`。
+
+远程图片仅允许 HTTPS 与清单允许的重定向主机；每次请求都检查公网 DNS，并限制重定向次数、文件大小、MIME、实际图片格式、尺寸、帧数和哈希。远程下载只接受 PNG、JPEG 和 WebP，全部合格后才更新 `lock.json`。
+
+AI 问答与 Agent 由用户后续单独实现；本轮数据和图片管线未接入、未修改相关代码。
+
 ## 项目结构
 
 ```text
@@ -102,8 +147,12 @@ metalmax-wiki/
 │   └── config/                 # TypeScript、ESLint 等共享配置
 │
 ├── data/
-│   ├── raw/                    # 原始攻略、截图、表格等资料
-│   └── processed/              # 清洗和结构化后的数据
+│   ├── raw/                    # 来源快照、人工权利清单与允许保存的原始资产
+│   ├── interim/                # 可追溯、尚未经 0.99 实机核验的统一候选数据
+│   └── processed/              # 仅保存已核验的 0.99 数据
+│
+├── tools/
+│   └── data-pipeline/          # 资料采集、标准化、权利校验与资产审计工具
 │
 ├── infra/                      # 部署及服务器基础设施配置
 │   ├── compose.yaml            # 本地及服务器容器编排

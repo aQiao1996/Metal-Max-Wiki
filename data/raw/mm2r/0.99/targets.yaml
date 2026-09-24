@@ -1,0 +1,111 @@
+schema_version: 1
+targets:
+  - id: tank-parts
+    source_id: zzjb-mm2r
+    category: equipment
+    url: https://www.zzjb.com/wiki/mm2r/item/tank/part/start
+    output: tank-parts.json
+    verification_status: compatible_candidate
+  - id: special-shells
+    source_id: zzjb-mm2r
+    category: equipment
+    url: https://www.zzjb.com/wiki/mm2r/item/tank/shell/start
+    output: special-shells.json
+    verification_status: compatible_candidate
+  - id: tank-tools
+    source_id: zzjb-mm2r
+    category: equipment
+    url: https://www.zzjb.com/wiki/mm2r/item/tank/tool/start
+    output: tank-tools.json
+    verification_status: compatible_candidate
+  - id: human-equipment
+    source_id: zzjb-mm2r
+    category: equipment
+    url: https://www.zzjb.com/wiki/mm2r/item/mm2r_equipment
+    output: human-equipment.json
+    verification_status: compatible_candidate
+  - id: human-items
+    source_id: zzjb-mm2r
+    category: equipment
+    url: https://www.zzjb.com/wiki/mm2r/item/mm2r_lovemachine
+    output: human-items.json
+    verification_status: compatible_candidate
+  - id: quests
+    source_id: zzjb-mm2r
+    category: quests
+    url: https://www.zzjb.com/wiki/mm2r/mm2r_quest
+    output: quests.json
+    verification_status: compatible_candidate
+  - id: official-manual
+    source_id: nintendo-mm2r-manual
+    category: mechanics
+    url: https://www.nintendo.co.jp/data/software/manual/man_tbtj.pdf
+    output: official-manual.json
+    collect: false
+  - id: dqff-index
+    source_id: dqff-mm2r
+    category: cross-check
+    url: https://dqff.sakura.ne.jp/metalmax2r/
+    output: dqff-index.json
+    collect: false
+  - id: dqff-human-items
+    source_id: dqff-mm2r
+    category: equipment
+    url: https://dqff.sakura.ne.jp/metalmax2r/a230a430c630e030/2e7a5e98/ba4e9395.html
+    output: dqff-human-items.json
+  - id: dqff-tank-items
+    source_id: dqff-mm2r
+    category: equipment
+    url: https://dqff.sakura.ne.jp/metalmax2r/a230a430c630e030/2e7a5e98/2662ca8e.html
+    output: dqff-tank-items.json
+  - id: dqff-special-shells
+    source_id: dqff-mm2r
+    category: equipment
+    url: https://dqff.sakura.ne.jp/metalmax2r/a230a430c630e030/2e7a5e98/79728a6b32783e5f.html
+    output: dqff-special-shells.json
+  - id: dqff-jobs
+    source_id: dqff-mm2r
+    category: jobs
+    url: https://dqff.sakura.ne.jp/metalmax2r/77806d69/2e7a5e98/2a6706525e98.html
+    output: dqff-jobs.json
+  - id: dqff-skills-field
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/fb79d552.html
+    output: dqff-skills-field.json
+  - id: dqff-skills-vehicle
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html
+    output: dqff-skills-vehicle.json
+  - id: dqff-skills-auto
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/aa30fc30c830.html
+    output: dqff-skills-auto.json
+  - id: dqff-skills-human
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html
+    output: dqff-skills-human.json
+  - id: dqff-skills-repair
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html
+    output: dqff-skills-repair.json
+  - id: dqff-skills-healing
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html
+    output: dqff-skills-healing.json
+  - id: dqff-skills-art
+    source_id: dqff-mm2r
+    category: skills
+    url: https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/b230fc30b830c430.html
+    output: dqff-skills-art.json
+  - id: atwiki-index
+    source_id: atwiki-mm2r
+    category: cross-check
+    url: https://w.atwiki.jp/mm2-r/
+    output: atwiki-index.json
+    collect: false

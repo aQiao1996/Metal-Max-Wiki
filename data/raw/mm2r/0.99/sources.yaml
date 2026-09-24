@@ -1,0 +1,34 @@
+schema_version: 1
+sources:
+  - id: zzjb-mm2r
+    title: 重装机兵专题站 MM2R
+    base_url: https://www.zzjb.com/wiki/mm2r/
+    language: zh-CN
+    license: CC-BY-NC-SA-4.0
+    usage: primary-data
+    attribution: 重装机兵专题站（www.zzjb.com）
+    notes: 中文名称主要标注为 RPC 组 0.9 汉化
+  - id: nintendo-mm2r-manual
+    title: Nintendo 3DS 电子说明书
+    base_url: https://www.nintendo.co.jp/data/software/manual/man_tbtj.pdf
+    language: ja
+    license: All-Rights-Reserved
+    usage: mechanics-reference
+    attribution: Nintendo / rights holders
+    notes: 只记录事实和页码，不保存完整 PDF
+  - id: dqff-mm2r
+    title: MM2R 攻略 wiki 組長式
+    base_url: https://dqff.sakura.ne.jp/metalmax2r/
+    language: ja
+    license: NOASSERTION
+    usage: cross-check-only
+    attribution: dqff.sakura.ne.jp
+    notes: 未确认可复用许可，不建立整页副本
+  - id: atwiki-mm2r
+    title: メタルマックス2 リローデッド攻略WIKI
+    base_url: https://w.atwiki.jp/mm2-r/
+    language: ja
+    license: NOASSERTION
+    usage: cross-check-only
+    attribution: w.atwiki.jp/mm2-r
+    notes: 未确认可复用许可，不建立整页副本

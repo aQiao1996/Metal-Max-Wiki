@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "source_id": "dqff-mm2r",
+  "target_id": "dqff-skills-field",
+  "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/fb79d552.html",
+  "retrieved_at": "2026-09-21T10:14:25.838691+08:00",
+  "content_hash": "sha256:2f0c9edd5c467bf9c4e9ef629247ad0369be5ecc0f4e677f670381ab3769ff67",
+  "license": "NOASSERTION",
+  "verification_status": "source_only",
+  "tables": [
+    {
+      "section": "移動 | 種類 | スキル | [DS] メタルマックス2: リローデッド 攻略 wiki 組長式",
+      "headers": [
+        "No",
+        "スキル",
+        "職業",
+        "Lv",
+        "種類",
+        "説明"
+      ],
+      "rows": [
+        {
+          "No": "1",
+          "スキル": "獲物の匂い",
+          "職業": "ハンター",
+          "Lv": "3",
+          "種類": "移動",
+          "説明": "近くに生息するモンスターを調べる。"
+        },
+        {
+          "No": "2",
+          "スキル": "囮よせ",
+          "職業": "ハンター",
+          "Lv": "25",
+          "種類": "移動",
+          "説明": "狙ったモンスターとエンカウントする"
+        },
+        {
+          "No": "3",
+          "スキル": "戦いのフェロモン",
+          "職業": "ソルジャー",
+          "Lv": "15",
+          "種類": "移動",
+          "説明": "エンカウント率アップ"
+        }
+      ],
+      "merged_cells": []
+    }
+  ],
+  "excerpts": [],
+  "warnings": []
+}

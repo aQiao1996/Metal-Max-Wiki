@@ -1,0 +1,2726 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "domain": "skills",
+  "source_hashes": [
+    "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+    "sha256:2e0b7ebf548c583e4d7af196a2477208df2c95bbd8c2922767f182fbdb9edcb7",
+    "sha256:2f0c9edd5c467bf9c4e9ef629247ad0369be5ecc0f4e677f670381ab3769ff67",
+    "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+    "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+    "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+    "sha256:f4e0dfbc9cf40a77d571627b79c7368dd8fa2b4ff5591bd9b907c27a8b685fbc"
+  ],
+  "records": [
+    {
+      "id": "skill-0a6267c36f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "モーレツ看護",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "味方のHPを半分ほど回復する",
+        "job_raw": "ナース",
+        "level": 8,
+        "level_raw": "8",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "回復",
+        "source_target": "dqff-skills-healing",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-healing",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html",
+          "retrieved_at": "2026-09-21T10:14:35.482793+08:00",
+          "content_hash": "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-0aa83f9043",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック5",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが低いほど大ダメージ",
+        "job_raw": "レスラー",
+        "level_raw": "20 女/オカマ",
+        "number": 25,
+        "number_raw": "25",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 24
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-0b8d92a07a",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "復元ゲージツ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "修理用具を使って、破損したパーツを修理する",
+        "job_raw": "アーチスト",
+        "level": 15,
+        "level_raw": "15",
+        "number": 5,
+        "number_raw": "5",
+        "skill_category": "修理",
+        "source_target": "dqff-skills-repair",
+        "target_raw": "破損したパーツ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-repair",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html",
+          "retrieved_at": "2026-09-21T10:14:33.854730+08:00",
+          "content_hash": "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+          "table_index": 0,
+          "row_index": 4
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-0f1aa9891f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "女らしいほど大ダメージ",
+        "job_raw": "ハンター",
+        "level_raw": "20 女/オカマ",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-0f5dddfe12",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "肉塊グラインダー",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与える",
+        "job_raw": "レスラー",
+        "level": 12,
+        "level_raw": "12",
+        "number": 23,
+        "number_raw": "23",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵全体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 22
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-10847f139b",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "エルボー乱気流",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵に数回ダメージを与える",
+        "job_raw": "レスラー",
+        "level": 4,
+        "level_raw": "4",
+        "number": 21,
+        "number_raw": "21",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵単体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 20
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-17bc400310",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "おしっこ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "効果なし",
+        "job_raw": "犬",
+        "level": 1,
+        "level_raw": "1",
+        "number": 36,
+        "number_raw": "36",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 35
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-17c9ea2758",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "台風チョップ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "ランダムで4回敵にダメージを与える",
+        "job_raw": "レスラー",
+        "level": 28,
+        "level_raw": "28",
+        "number": 27,
+        "number_raw": "27",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 26
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-183a82ae67",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気パンチ3",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "ナース",
+        "level_raw": "20 男",
+        "number": 17,
+        "number_raw": "17",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 16
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-19e8a10d42",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "囮よせ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "狙ったモンスターとエンカウントする",
+        "job_raw": "ハンター",
+        "level": 25,
+        "level_raw": "25",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "移動",
+        "source_target": "dqff-skills-field"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-field",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/fb79d552.html",
+          "retrieved_at": "2026-09-21T10:14:25.838691+08:00",
+          "content_hash": "sha256:2f0c9edd5c467bf9c4e9ef629247ad0369be5ecc0f4e677f670381ab3769ff67",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-1b4bec1dc3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "破損修理",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "修理用具を使い、破損したパーツを修理する。",
+        "job_raw": "メカニック",
+        "level": 1,
+        "level_raw": "1",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "修理",
+        "source_target": "dqff-skills-repair",
+        "target_raw": "破損したパーツ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-repair",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html",
+          "retrieved_at": "2026-09-21T10:14:33.854730+08:00",
+          "content_hash": "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-1e93218c5d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "タイル命",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "タイルパックを使い、戦闘中に戦車の装甲を補充する。",
+        "job_raw": "メカニック",
+        "level": 25,
+        "level_raw": "25",
+        "number": 6,
+        "number_raw": "6",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "味方クルマ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 5
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-249eab4669",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "オーバードリップ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "毎ターンの終了時にHPを少しずつ自動回復する",
+        "job_raw": "ナース",
+        "level": 15,
+        "level_raw": "15",
+        "number": 16,
+        "number_raw": "16",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 15
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-26cadc32e3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "おたけび",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与え、味方の攻撃力を上げる",
+        "job_raw": "ソルジャー",
+        "level": 5,
+        "level_raw": "5",
+        "number": 8,
+        "number_raw": "8",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 7
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-291d562baf",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "満タン看護",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "味方のHPを全回復する",
+        "job_raw": "ナース",
+        "level": 45,
+        "level_raw": "45",
+        "number": 4,
+        "number_raw": "4",
+        "skill_category": "回復",
+        "source_target": "dqff-skills-healing",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-healing",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html",
+          "retrieved_at": "2026-09-21T10:14:35.482793+08:00",
+          "content_hash": "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+          "table_index": 0,
+          "row_index": 3
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-2d0e61c02f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "武器の知識",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "装備した人間用武器の攻撃力を自動的に高めてくれる",
+        "job_raw": "ソルジャー",
+        "level": 1,
+        "level_raw": "1",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "オート",
+        "source_target": "dqff-skills-auto",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-auto",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/aa30fc30c830.html",
+          "retrieved_at": "2026-09-21T10:14:29.360073+08:00",
+          "content_hash": "sha256:f4e0dfbc9cf40a77d571627b79c7368dd8fa2b4ff5591bd9b907c27a8b685fbc",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-2edb64c5a1",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ヤバイ修理",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "道具を使わずに、破損したパーツを修理する。 状況が悪化する可能性もある。",
+        "job_raw": "メカニック",
+        "level": 15,
+        "level_raw": "15",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "修理",
+        "source_target": "dqff-skills-repair",
+        "target_raw": "破損したパーツ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-repair",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html",
+          "retrieved_at": "2026-09-21T10:14:33.854730+08:00",
+          "content_hash": "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-2f805c8b5d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "戦場の天使",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "味方全員に回復アイテムを使う。人数分アイテムが必要",
+        "job_raw": "ナース",
+        "level": 1,
+        "level_raw": "1",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "回復",
+        "source_target": "dqff-skills-healing",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-healing",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html",
+          "retrieved_at": "2026-09-21T10:14:35.482793+08:00",
+          "content_hash": "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-31547f82da",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック4",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが低いほど大ダメージ",
+        "job_raw": "ナース",
+        "level_raw": "20 女/オカマ",
+        "number": 18,
+        "number_raw": "18",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 17
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3348787569",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "死んだふり",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵に狙われなくなる、使用中は攻撃できない",
+        "job_raw": "アーチスト",
+        "level": 1,
+        "level_raw": "1",
+        "number": 30,
+        "number_raw": "30",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 29
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-34121aedac",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック6",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが低いほど大ダメージ",
+        "job_raw": "アーチスト",
+        "level_raw": "20 女/オカマ",
+        "number": 34,
+        "number_raw": "34",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵1体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 33
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3661f8887d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック3",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが低いほど大ダメージ",
+        "job_raw": "ソルジャー",
+        "level_raw": "20 女/オカマ",
+        "number": 11,
+        "number_raw": "11",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 10
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-38c0ba9ac6",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "じゃれる",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵の攻撃を妨げる",
+        "job_raw": "犬",
+        "level": 20,
+        "level_raw": "20",
+        "number": 39,
+        "number_raw": "39",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 38
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3a6e607428",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "戦場のAED",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "50%の確率で味方を蘇生する",
+        "job_raw": "ナース",
+        "level": 55,
+        "level_raw": "55",
+        "number": 5,
+        "number_raw": "5",
+        "skill_category": "回復",
+        "source_target": "dqff-skills-healing",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-healing",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html",
+          "retrieved_at": "2026-09-21T10:14:35.482793+08:00",
+          "content_hash": "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+          "table_index": 0,
+          "row_index": 4
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3bde241435",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "全門発射",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "装備している全武器で攻撃",
+        "job_raw": "ハンター",
+        "level": 55,
+        "level_raw": "55",
+        "number": 5,
+        "number_raw": "5",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 4
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3bfec117db",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ねらいうち",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "クリティカル率の高い攻撃",
+        "job_raw": "ハンター",
+        "level": 7,
+        "level_raw": "7",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3e8bad0092",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "暗黒舞踏",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵に3～4回ダメージを与える",
+        "job_raw": "アーチスト",
+        "level": 25,
+        "level_raw": "25",
+        "number": 35,
+        "number_raw": "35",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵1体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 34
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-3eb4046787",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "掘る",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "たまにアイテムを見つける",
+        "job_raw": "犬",
+        "level": 1,
+        "level_raw": "1",
+        "number": 37,
+        "number_raw": "37",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 36
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-45208a0fc7",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "気つけ薬",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "味方の状態異常を回復する",
+        "job_raw": "ナース",
+        "level": 40,
+        "level_raw": "40",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "回復",
+        "source_target": "dqff-skills-healing",
+        "target_raw": "味方"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-healing",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/de56a95f.html",
+          "retrieved_at": "2026-09-21T10:14:35.482793+08:00",
+          "content_hash": "sha256:279fe69c7b6899cb1fb5e3f04a7c5f301f597d24e51c4fe846075a4176eeb749",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-45881ce3a4",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ハンターズアイ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵の属性がわかる",
+        "job_raw": "ハンター",
+        "level": 15,
+        "level_raw": "15",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "オート",
+        "source_target": "dqff-skills-auto"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-auto",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/aa30fc30c830.html",
+          "retrieved_at": "2026-09-21T10:14:29.360073+08:00",
+          "content_hash": "sha256:f4e0dfbc9cf40a77d571627b79c7368dd8fa2b4ff5591bd9b907c27a8b685fbc",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5841d31581",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "火炎カブキ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与える、火属性",
+        "job_raw": "レスラー",
+        "level": 8,
+        "level_raw": "8",
+        "number": 22,
+        "number_raw": "22",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵全体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 21
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5af1be5685",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気キック",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "メカニック",
+        "level_raw": "20 男",
+        "number": 5,
+        "number_raw": "5",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 4
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5b3291b7ec",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ヨコヅナオーラ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "自身の全能力を高める",
+        "job_raw": "レスラー",
+        "level": 48,
+        "level_raw": "48",
+        "number": 29,
+        "number_raw": "29",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 28
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5bbc9d330e",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "パンチラキック2",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが低いほど大ダメージ",
+        "job_raw": "メカニック",
+        "level_raw": "20 女/オカマ",
+        "number": 6,
+        "number_raw": "6",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 5
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5df14c1c66",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気パンチ2",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "ソルジャー",
+        "level_raw": "20 男",
+        "number": 10,
+        "number_raw": "10",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 9
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-5e805c90d0",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ニトロラリアット",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与える",
+        "job_raw": "レスラー",
+        "level": 24,
+        "level_raw": "24",
+        "number": 26,
+        "number_raw": "26",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 25
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-61e34b12c3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ドラムストレッチ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "次の攻撃を強化する",
+        "job_raw": "レスラー",
+        "level": 1,
+        "level_raw": "1",
+        "number": 20,
+        "number_raw": "20",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 19
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-7666835d94",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "みだれなげ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "戦闘用道具を何回も投げる、投げる数だけアイテムが必要",
+        "job_raw": "ソルジャー",
+        "level": 10,
+        "level_raw": "10",
+        "number": 9,
+        "number_raw": "9",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 8
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-77ad706836",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気キック2",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "アーチスト",
+        "level_raw": "20 男",
+        "number": 33,
+        "number_raw": "33",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵1体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 32
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-8cc8fa72c7",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "大破修理",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "修理用具を使い、大破したパーツを修理する",
+        "job_raw": "メカニック",
+        "level": 40,
+        "level_raw": "40",
+        "number": 4,
+        "number_raw": "4",
+        "skill_category": "修理",
+        "source_target": "dqff-skills-repair",
+        "target_raw": "大破したパーツ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-repair",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html",
+          "retrieved_at": "2026-09-21T10:14:33.854730+08:00",
+          "content_hash": "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+          "table_index": 0,
+          "row_index": 3
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-8f75f039b6",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "砲弾ゲージツ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "特殊砲弾、素材を作成する",
+        "job_raw": "アーチスト",
+        "level": 5,
+        "level_raw": "5",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "ゲージツ",
+        "source_target": "dqff-skills-art"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-art",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/b230fc30b830c430.html",
+          "retrieved_at": "2026-09-21T10:14:37.325026+08:00",
+          "content_hash": "sha256:2e0b7ebf548c583e4d7af196a2477208df2c95bbd8c2922767f182fbdb9edcb7",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-90cae46ead",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "突進",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与える(防御が高いほど威力増加の可能性有り)",
+        "job_raw": "犬",
+        "level": 30,
+        "level_raw": "30",
+        "number": 40,
+        "number_raw": "40",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵1体"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 39
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-9216e7fc11",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "獲物の匂い",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "近くに生息するモンスターを調べる。",
+        "job_raw": "ハンター",
+        "level": 3,
+        "level_raw": "3",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "移動",
+        "source_target": "dqff-skills-field"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-field",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/fb79d552.html",
+          "retrieved_at": "2026-09-21T10:14:25.838691+08:00",
+          "content_hash": "sha256:2f0c9edd5c467bf9c4e9ef629247ad0369be5ecc0f4e677f670381ab3769ff67",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-93646da531",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "人間パトリオット",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "自分が装備している武器で敵が撃った弾を撃ち落とす",
+        "job_raw": "ソルジャー",
+        "level": 30,
+        "level_raw": "30",
+        "number": 13,
+        "number_raw": "13",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 12
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-942d41aac3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "吼える",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "生物系の敵を追い払うor行動キャンセル。追い払った敵の経験値はもらえない",
+        "job_raw": "犬",
+        "level": 10,
+        "level_raw": "10",
+        "number": 38,
+        "number_raw": "38",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 37
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-9d1fb32061",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ジェットハット",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にダメージを与える、守備力が高いほど大ダメージ",
+        "job_raw": "レスラー",
+        "level": 36,
+        "level_raw": "36",
+        "number": 28,
+        "number_raw": "28",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 27
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-a55ab6a99b",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "禁断の注射器",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "生物型の敵を即死させる",
+        "job_raw": "ナース",
+        "level": 30,
+        "level_raw": "30",
+        "number": 19,
+        "number_raw": "19",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 18
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-b74eca0079",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ゆるめる",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "機械型の敵の守備力を下げる",
+        "job_raw": "メカニック",
+        "level": 5,
+        "level_raw": "5",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-bf4f665e87",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "最も危険な修理",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "戦闘中に修理を行う。",
+        "job_raw": "メカニック",
+        "level": 30,
+        "level_raw": "30",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "修理",
+        "source_target": "dqff-skills-repair",
+        "target_raw": "味方クルマ"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-repair",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ee4f0674.html",
+          "retrieved_at": "2026-09-21T10:14:33.854730+08:00",
+          "content_hash": "sha256:9c9ee313a91136ae7de2bab6d80b19b7fe7eb0492e20da75ae4d342a9ab6561f",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-c0a3cca819",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気パンチ4",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "レスラー",
+        "level_raw": "20 男",
+        "number": 24,
+        "number_raw": "24",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 23
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-c375334719",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "改造ゲージツ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "クルマを改造する、要スーパーレアメタル",
+        "job_raw": "アーチスト",
+        "level": 45,
+        "level_raw": "45",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "ゲージツ",
+        "source_target": "dqff-skills-art"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-art",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/b230fc30b830c430.html",
+          "retrieved_at": "2026-09-21T10:14:37.325026+08:00",
+          "content_hash": "sha256:2e0b7ebf548c583e4d7af196a2477208df2c95bbd8c2922767f182fbdb9edcb7",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-c4bc90098a",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ニンジャステップ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "回避率アップ",
+        "job_raw": "ソルジャー",
+        "level": 40,
+        "level_raw": "40",
+        "number": 14,
+        "number_raw": "14",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 13
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-d3fa6b159f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ぶっぱなす",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "装備している全武器で攻撃する(銃火器のみ\\",
+        "job_raw": "ソルジャー",
+        "level": 55,
+        "level_raw": "55",
+        "number": 15,
+        "number_raw": "15",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 14
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-d8f20b758b",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "砲撃演舞",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "装備した武器で攻撃を繰り返す",
+        "job_raw": "アーチスト",
+        "level": 30,
+        "level_raw": "30",
+        "number": 7,
+        "number_raw": "7",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 6
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-dab1a18d6e",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "男気パンチ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "男らしさが高いほど大ダメージ",
+        "job_raw": "ハンター",
+        "level_raw": "20 男",
+        "number": 1,
+        "number_raw": "1",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-e0219d71ad",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "スパナ乱舞",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "機械型の敵に大ダメージを与える",
+        "job_raw": "メカニック",
+        "level": 10,
+        "level_raw": "10",
+        "number": 4,
+        "number_raw": "4",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 3
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-e97cd3d8a0",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "電光石火",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "装備中の武器で複数回攻撃を行う。",
+        "job_raw": "ハンター",
+        "level": 10,
+        "level_raw": "10",
+        "number": 2,
+        "number_raw": "2",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 1
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-eae6bc33d5",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "戦いのフェロモン",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "エンカウント率アップ",
+        "job_raw": "ソルジャー",
+        "level": 15,
+        "level_raw": "15",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "移動",
+        "source_target": "dqff-skills-field"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-field",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/fb79d552.html",
+          "retrieved_at": "2026-09-21T10:14:25.838691+08:00",
+          "content_hash": "sha256:2f0c9edd5c467bf9c4e9ef629247ad0369be5ecc0f4e677f670381ab3769ff67",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-ee9e5d209f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "薬の知識",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "回復アイテムの効果を高める",
+        "job_raw": "ナース",
+        "level": 1,
+        "level_raw": "1",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "オート",
+        "source_target": "dqff-skills-auto"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-auto",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/aa30fc30c830.html",
+          "retrieved_at": "2026-09-21T10:14:29.360073+08:00",
+          "content_hash": "sha256:f4e0dfbc9cf40a77d571627b79c7368dd8fa2b4ff5591bd9b907c27a8b685fbc",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-efcc088c92",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ゴーストドリフト",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "回避率アップ",
+        "job_raw": "ハンター",
+        "level": 40,
+        "level_raw": "40",
+        "number": 4,
+        "number_raw": "4",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 3
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-f1011354da",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "金粉ゲージツ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "属性攻撃に対する抵抗力を上げる",
+        "job_raw": "アーチスト",
+        "level": 10,
+        "level_raw": "10",
+        "number": 32,
+        "number_raw": "32",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "自分"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 31
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-f2835e74f7",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "解体",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "機械型の敵を即死させる",
+        "job_raw": "メカニック",
+        "level": 50,
+        "level_raw": "50",
+        "number": 7,
+        "number_raw": "7",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 6
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-fc0d0bf894",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ダブルアタック",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "2回攻撃",
+        "job_raw": "ソルジャー",
+        "level": 25,
+        "level_raw": "25",
+        "number": 12,
+        "number_raw": "12",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 11
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-fde2b0485e",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "ハンターマジック",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "車から降りて生身で敵への攻撃を行う。",
+        "job_raw": "ハンター",
+        "level": 30,
+        "level_raw": "30",
+        "number": 3,
+        "number_raw": "3",
+        "skill_category": "クルマ",
+        "source_target": "dqff-skills-vehicle",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-vehicle",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/af30eb30de30.html",
+          "retrieved_at": "2026-09-21T10:14:27.702288+08:00",
+          "content_hash": "sha256:55d4a06893a339dee49c71d2d9947b9191e4feac16a965150c1f65fbd46ea296",
+          "table_index": 0,
+          "row_index": 2
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "skill-ff8575d50f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "skills",
+      "kind": "skill",
+      "names": {
+        "ja": "着ぐるみゲージツ",
+        "zh_09": null,
+        "zh_099": null,
+        "aliases": []
+      },
+      "attributes": {
+        "description_raw": "敵にさまざまな攻撃を行う(おおよそ4パターンと思われる)",
+        "job_raw": "アーチスト",
+        "level": 1,
+        "level_raw": "1",
+        "number": 31,
+        "number_raw": "31",
+        "skill_category": "人間",
+        "source_target": "dqff-skills-human",
+        "target_raw": "敵"
+      },
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "dqff-mm2r",
+          "target_id": "dqff-skills-human",
+          "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/ba4e9395.html",
+          "retrieved_at": "2026-09-21T10:14:31.899255+08:00",
+          "content_hash": "sha256:b32633548e9431e0e437d8b4c384f2b969b37971742a326da0b763578f85b811",
+          "table_index": 0,
+          "row_index": 30
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    }
+  ]
+}

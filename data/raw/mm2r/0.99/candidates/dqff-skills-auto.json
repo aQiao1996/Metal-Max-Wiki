@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "source_id": "dqff-mm2r",
+  "target_id": "dqff-skills-auto",
+  "source_url": "https://dqff.sakura.ne.jp/metalmax2r/b930ad30eb30/2e7a5e98/aa30fc30c830.html",
+  "retrieved_at": "2026-09-21T10:14:29.360073+08:00",
+  "content_hash": "sha256:f4e0dfbc9cf40a77d571627b79c7368dd8fa2b4ff5591bd9b907c27a8b685fbc",
+  "license": "NOASSERTION",
+  "verification_status": "source_only",
+  "tables": [
+    {
+      "section": "オート | 種類 | スキル | [DS] メタルマックス2: リローデッド 攻略 wiki 組長式",
+      "headers": [
+        "No",
+        "スキル",
+        "職業",
+        "Lv",
+        "種類",
+        "対象",
+        "説明"
+      ],
+      "rows": [
+        {
+          "No": "1",
+          "スキル": "ハンターズアイ",
+          "職業": "ハンター",
+          "Lv": "15",
+          "種類": "オート",
+          "対象": "",
+          "説明": "敵の属性がわかる"
+        },
+        {
+          "No": "2",
+          "スキル": "武器の知識",
+          "職業": "ソルジャー",
+          "Lv": "1",
+          "種類": "オート",
+          "対象": "自分",
+          "説明": "装備した人間用武器の攻撃力を自動的に高めてくれる"
+        },
+        {
+          "No": "3",
+          "スキル": "薬の知識",
+          "職業": "ナース",
+          "Lv": "1",
+          "種類": "オート",
+          "対象": "",
+          "説明": "回復アイテムの効果を高める"
+        }
+      ],
+      "merged_cells": []
+    }
+  ],
+  "excerpts": [],
+  "warnings": []
+}

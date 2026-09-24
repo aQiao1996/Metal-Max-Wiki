@@ -5,4 +5,8 @@ node_modules
 coverage
 pnpm-lock.yaml
 apps/backend/server/uv.lock
+data/raw/**/candidates/*.json
+data/raw/**/reports/*.json
+data/interim/**/*.json
+data/raw/**/assets/lock.json
 next-env.d.ts
