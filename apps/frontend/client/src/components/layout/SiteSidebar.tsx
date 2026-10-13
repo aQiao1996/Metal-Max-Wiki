@@ -12,11 +12,38 @@ import { cn } from '@/lib/utils'
 import { VersionSwitcher } from './VersionSwitcher'
 
 export const siteNavigationItems = [
-  { label: '情报总览', href: '', icon: Compass },
-  { label: '资料百科', href: '/wiki/vehicles', icon: BookOpenText },
-  { label: '攻略整理', href: '/guides', icon: ScrollText },
-  { label: 'AI 问答', href: '/ai', icon: Bot },
+  { label: '情报总览', href: '', activePrefix: '', icon: Compass },
+  {
+    label: '资料百科',
+    href: '/wiki/equipment',
+    activePrefix: '/wiki',
+    icon: BookOpenText,
+  },
+  {
+    label: '攻略整理',
+    href: '/guides',
+    activePrefix: '/guides',
+    icon: ScrollText,
+  },
+  { label: 'AI 问答', href: '/ai', activePrefix: '/ai', icon: Bot },
 ] as const
+
+type SiteNavigationItem = (typeof siteNavigationItems)[number]
+
+/** 按当前版本与导航前缀判断主导航活动态。 */
+export function isSiteNavigationItemActive(
+  pathname: string,
+  version: GameVersion['slug'],
+  item: SiteNavigationItem,
+): boolean {
+  const activePath = buildVersionPath(version, item.activePrefix)
+
+  if (item.activePrefix === '') {
+    return pathname === activePath
+  }
+
+  return pathname === activePath || pathname.startsWith(`${activePath}/`)
+}
 
 interface SiteSidebarProps {
   version: GameVersion
@@ -52,10 +79,11 @@ export function SiteSidebar({ version }: SiteSidebarProps) {
         <ul className="space-y-1">
           {siteNavigationItems.map((item) => {
             const href = buildVersionPath(version.slug, item.href)
-            const isHome = item.href === ''
-            const isActive = isHome
-              ? pathname === href
-              : pathname.startsWith(href)
+            const isActive = isSiteNavigationItemActive(
+              pathname,
+              version.slug,
+              item,
+            )
             const Icon = item.icon
 
             return (

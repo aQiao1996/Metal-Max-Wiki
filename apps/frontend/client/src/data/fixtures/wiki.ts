@@ -3,6 +3,10 @@ import type {
   WikiCategorySlug,
   WikiEntityDetail,
 } from '@/types/wiki'
+import {
+  legacyEquipmentCategories,
+  type LegacyEquipmentCategorySlug,
+} from '@/config/equipment-types'
 
 export const wikiCategories = [
   {
@@ -13,55 +17,70 @@ export const wikiCategories = [
     index: '01',
   },
   {
-    slug: 'main-cannons',
-    label: '主炮',
-    shortLabel: '主炮',
-    description: '单发、连射与特殊炮弹资料',
+    slug: 'equipment',
+    label: '装备',
+    shortLabel: '装备',
+    description: '人类武器、主炮、副炮、S-E、C装置与引擎',
     index: '02',
-  },
-  {
-    slug: 'sub-guns',
-    label: '副炮',
-    shortLabel: '副炮',
-    description: '副炮属性、攻击范围与适用场景',
-    index: '03',
-  },
-  {
-    slug: 'special-equipment',
-    label: 'S-E',
-    shortLabel: 'S-E',
-    description: '特殊装备、连射方式与隐藏效果',
-    index: '04',
-  },
-  {
-    slug: 'c-units',
-    label: 'C装置',
-    shortLabel: 'C装置',
-    description: '特性、载重与火力流派配置',
-    index: '05',
-  },
-  {
-    slug: 'engines',
-    label: '引擎',
-    shortLabel: '引擎',
-    description: '载重、改造路线与获取来源',
-    index: '06',
   },
   {
     slug: 'wanted-monsters',
     label: '赏金首',
     shortLabel: '赏金首',
     description: '位置、触发条件与掉落校对',
-    index: '07',
+    index: '03',
   },
   {
     slug: 'jobs',
     label: '职业与技能',
     shortLabel: '职业',
     description: '主副职业、成长方向与技能用途',
-    index: '08',
+    index: '04',
   },
 ] as const satisfies readonly WikiCategory[]
+
+const legacyWikiCategoryMetadata = {
+  'main-cannons': {
+    label: '主炮',
+    shortLabel: '主炮',
+    description: '单发、连射与特殊炮弹资料',
+    index: '02',
+  },
+  'sub-guns': {
+    label: '副炮',
+    shortLabel: '副炮',
+    description: '副炮属性、攻击范围与适用场景',
+    index: '03',
+  },
+  'special-equipment': {
+    label: 'S-E',
+    shortLabel: 'S-E',
+    description: '特殊装备、连射方式与隐藏效果',
+    index: '04',
+  },
+  'c-units': {
+    label: 'C装置',
+    shortLabel: 'C装置',
+    description: '特性、载重与火力流派配置',
+    index: '05',
+  },
+  engines: {
+    label: '引擎',
+    shortLabel: '引擎',
+    description: '载重、改造路线与获取来源',
+    index: '06',
+  },
+} as const satisfies Record<
+  LegacyEquipmentCategorySlug,
+  Omit<WikiCategory, 'slug'>
+>
+
+const legacyWikiCategories = legacyEquipmentCategories.map(
+  ({ categorySlug }): WikiCategory => ({
+    slug: categorySlug,
+    ...legacyWikiCategoryMetadata[categorySlug],
+  }),
+)
 
 export const wikiEntities = [
   {
@@ -206,5 +225,7 @@ export const wikiEntities = [
 ] as const satisfies readonly WikiEntityDetail[]
 
 export const wikiCategoriesBySlug = new Map<WikiCategorySlug, WikiCategory>(
-  wikiCategories.map((category) => [category.slug, category]),
+  [...wikiCategories, ...legacyWikiCategories].map(
+    (category): [WikiCategorySlug, WikiCategory] => [category.slug, category],
+  ),
 )

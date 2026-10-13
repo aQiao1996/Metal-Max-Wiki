@@ -1,0 +1,98 @@
+import { ExternalLink } from 'lucide-react'
+
+import type { EquipmentEntry } from '@/types/equipment'
+
+interface EquipmentSourceReferencesProps {
+  sources: EquipmentEntry['source_refs']
+}
+
+export function EquipmentSourceReferences({
+  sources,
+}: EquipmentSourceReferencesProps) {
+  return (
+    <section aria-labelledby="equipment-sources-heading">
+      <h2
+        id="equipment-sources-heading"
+        className="text-xl font-semibold tracking-tight text-[var(--mm-navy)]"
+      >
+        来源与定位
+      </h2>
+
+      {sources.length === 0 ? (
+        <p className="border-border text-foreground mt-5 border-y py-5 text-sm">
+          该记录没有可追溯来源
+        </p>
+      ) : (
+        <ol className="border-border mt-5 border-t">
+          {sources.map((source, index) => (
+            <li
+              key={`${source.source_id}:${source.target_id}:${source.table_index}:${source.row_index}:${index}`}
+              className="border-border grid min-w-0 gap-3 border-b py-5 sm:grid-cols-[2rem_minmax(0,1fr)_auto] sm:gap-4"
+            >
+              <span className="font-mono text-xs font-semibold text-[var(--mm-navy)]">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+
+              <dl className="grid min-w-0 gap-x-5 gap-y-2 text-sm sm:grid-cols-2">
+                <div className="min-w-0">
+                  <dt className="font-medium text-[var(--mm-navy)]">
+                    source_id
+                  </dt>
+                  <dd className="text-foreground mt-0.5 font-mono text-xs break-all">
+                    {source.source_id}
+                  </dd>
+                </div>
+                <div className="min-w-0">
+                  <dt className="font-medium text-[var(--mm-navy)]">
+                    target_id
+                  </dt>
+                  <dd className="text-foreground mt-0.5 font-mono text-xs break-all">
+                    {source.target_id}
+                  </dd>
+                </div>
+                <div className="min-w-0">
+                  <dt className="font-medium text-[var(--mm-navy)]">
+                    表格编号
+                  </dt>
+                  <dd className="text-foreground mt-0.5">
+                    {source.table_index + 1}
+                  </dd>
+                </div>
+                <div className="min-w-0">
+                  <dt className="font-medium text-[var(--mm-navy)]">行号</dt>
+                  <dd className="text-foreground mt-0.5">
+                    {source.row_index + 1}
+                  </dd>
+                </div>
+                <div className="min-w-0">
+                  <dt className="font-medium text-[var(--mm-navy)]">
+                    采集日期
+                  </dt>
+                  <dd className="text-foreground mt-0.5 break-words">
+                    <time dateTime={source.retrieved_at}>
+                      {source.retrieved_at.slice(0, 10)}
+                    </time>
+                  </dd>
+                </div>
+              </dl>
+
+              <a
+                href={source.source_url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`查看原始资料：${source.source_id}（在新窗口打开）`}
+                className="focus-visible:ring-ring text-accent-foreground inline-flex min-h-10 max-w-full min-w-0 items-center gap-1.5 self-start text-sm font-medium underline underline-offset-4 focus-visible:ring-2 focus-visible:outline-none sm:justify-self-end"
+              >
+                <span className="break-words">查看原始资料</span>
+                <ExternalLink
+                  className="size-3.5 shrink-0"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+  )
+}

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 
 import { ArrowLeft, ListFilter } from 'lucide-react'
 
+import { getLegacyEquipmentType } from '@/config/equipment-types'
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { wikiCategoriesBySlug, wikiEntities } from '@/data/fixtures/wiki'
 import { buildVersionPath } from '@/lib/version-routes'
@@ -21,9 +22,22 @@ interface CategoryPageProps {
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { version: versionSlug, category: categorySlug } = await params
   const version = getGameVersion(versionSlug)
+
+  if (!version || !isAvailableGameVersion(version)) {
+    notFound()
+  }
+
+  const legacyEquipmentType = getLegacyEquipmentType(categorySlug)
+
+  if (legacyEquipmentType) {
+    redirect(
+      `${buildVersionPath(version.slug, '/wiki/equipment')}?type=${legacyEquipmentType}`,
+    )
+  }
+
   const category = wikiCategoriesBySlug.get(categorySlug as WikiCategorySlug)
 
-  if (!version || !isAvailableGameVersion(version) || !category) {
+  if (!category) {
     notFound()
   }
 

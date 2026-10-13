@@ -1,10 +1,9 @@
+import { legacyEquipmentCategories } from '@/config/equipment-types'
+
 export const wikiCategorySlugs = [
   'vehicles',
-  'main-cannons',
-  'sub-guns',
-  'special-equipment',
-  'c-units',
-  'engines',
+  'equipment',
+  ...legacyEquipmentCategories.map(({ categorySlug }) => categorySlug),
   'wanted-monsters',
   'jobs',
 ] as const

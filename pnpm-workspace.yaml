@@ -25,6 +25,8 @@ catalog:
   react-dom: 19.3.0
   tailwindcss: 4.3.3
   typescript: 6.0.3
+  vite: 8.3.4
+  vitest: 5.0.4
   zod: 4.6.5
 
 allowBuilds:
@@ -33,3 +35,6 @@ allowBuilds:
   unrs-resolver: true
 minimumReleaseAgeExclude:
   - prettier@3.9.8
+  - '@vitest/mocker@5.0.4'
+  - '@vitest/spy@5.0.4'
+  - vitest@5.0.4
