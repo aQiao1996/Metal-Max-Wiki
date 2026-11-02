@@ -15,4 +15,6 @@
 
 S-E 数值表、逐星级普通改造数值和获取地点参考 [METAL MAniaX MM2R 战车资料](https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A)，署名为 METAL MAniaX contributors。`special-equipment/facts.json` 只保存表格事实、获取地点和逐页定位，不包含整页正文、攻略评论或图片；未确认其页面内容的开放许可。
 
+C 装置的面板、逐星级普通改造值、特性表与获取地点同样参考 METAL MAniaX；命中与回避说明参考其 [C 装置验证记录](https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/C%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%81%AE%E5%91%BD%E4%B8%AD%E3%83%BB%E5%9B%9E%E9%81%BF%E3%81%AE%E8%AC%8E)。`c-units/facts.json` 仅保存事实和出处，`c-units/names.yaml` 为项目整理的参考译名与事实摘要，不冒充 0.99 实机名称。原页面署名与许可状态同上。
+
 `special-equipment/names.yaml` 中的中文参考译名、别名和简要效果说明由项目整理，不代表 0.9 或 0.99 汉化版的实机名称。获取方式保留日文原始记录供核对。

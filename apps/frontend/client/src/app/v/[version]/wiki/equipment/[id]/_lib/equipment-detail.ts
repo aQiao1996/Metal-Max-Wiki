@@ -63,6 +63,27 @@ const specialEquipmentFields = [
   { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
 ] as const
 
+const cUnitFields = [
+  { key: 'stat_condition_raw', label: '数值条件' },
+  { key: 'trait_name_raw', label: '特性（中文参考）' },
+  { key: 'trait_raw', label: '特性原名' },
+  { key: 'trait_activation_raw', label: '生效方式' },
+  { key: 'trait_effect_raw', label: '特性作用' },
+  { key: 'trait_limits_raw', label: '生效限制' },
+  { key: 'accuracy_raw', label: '初始命中（面板）' },
+  { key: 'evasion_raw', label: '初始回避（面板）' },
+  { key: 'defense_raw', label: '初始防御力' },
+  { key: 'weight_raw', label: '初始重量（t）' },
+  { key: 'price_raw', label: '价格（* 为卖价）' },
+  { key: 'rarity_raw', label: '可获取星级' },
+  { key: 'availability_raw', label: '获取限制' },
+  { key: 'acquisition_raw', label: '获取方式' },
+  { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
+  { key: 'mechanics_note_raw', label: '命中与回避说明' },
+  { key: 'notes_raw', label: '使用备注' },
+  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+] as const
+
 function toProfessionDisplayValue(value: string | number): string {
   if (value === '○') {
     return '可装备'
@@ -84,11 +105,20 @@ export function buildEquipmentDetailAttributes(
       ? humanWeaponFields
       : entry.type === 'special-equipment'
         ? specialEquipmentFields
-        : mainCannonFields
+        : entry.type === 'c-unit'
+          ? cUnitFields
+          : mainCannonFields
   const attributes: WikiAttribute[] = []
 
   for (const field of fields) {
     const value = entry.attributes[field.key]
+
+    if (
+      field.key === 'rarity_raw' &&
+      entry.attributes.availability_raw !== undefined
+    ) {
+      continue
+    }
 
     if (value !== undefined) {
       if (

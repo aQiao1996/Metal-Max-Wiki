@@ -4,7 +4,6 @@ import re
 import time
 from collections.abc import Callable
 from datetime import datetime
-from decimal import Decimal
 from pathlib import Path
 from typing import Literal
 from urllib.parse import urljoin, urlsplit
@@ -25,6 +24,13 @@ from mmwiki_data.normalization_models import (
     SourceRef,
 )
 from mmwiki_data.storage import write_json_atomic
+from mmwiki_data.vehicle_tables import (
+    acquisition_entries,
+    comparable_stat,
+    expanded_rows,
+    obtainable_stars,
+    text,
+)
 
 SOURCE_ID = "metalmaniax-mm2r"
 TARGET_ID = "maniax-special-equipment"
@@ -104,35 +110,6 @@ class SpecialEquipmentSnapshot(StrictModel):
         return self
 
 
-def _text(tag: Tag) -> str:
-    return " ".join(tag.get_text(" ", strip=True).split())
-
-
-def _expanded_rows(table: Tag) -> list[list[str]]:
-    """展开行列合并单元格，避免把星级数值错配到其他字段。"""
-    cells: dict[tuple[int, int], str] = {}
-    output: list[list[str]] = []
-    for row_index, row in enumerate(table.find_all("tr")):
-        column = 0
-        for cell in row.find_all(["td", "th"], recursive=False):
-            while (row_index, column) in cells:
-                column += 1
-            colspan = int(str(cell.get("colspan", "1")))
-            rowspan = int(str(cell.get("rowspan", "1")))
-            if not 1 <= colspan <= 20 or not 1 <= rowspan <= 20:
-                raise ValueError("S-E 表格包含不支持的跨行或跨列范围")
-            for row_offset in range(rowspan):
-                for column_offset in range(colspan):
-                    key = (row_index + row_offset, column + column_offset)
-                    if key in cells:
-                        raise ValueError("S-E 表格的合并单元格发生重叠")
-                    cells[key] = _text(cell)
-            column += colspan
-        width = max((key[1] + 1 for key in cells if key[0] == row_index), default=0)
-        output.append([cells.get((row_index, index), "") for index in range(width)])
-    return output
-
-
 def _detail_facts(
     body: bytes, name: str
 ) -> tuple[list[EquipmentModification], list[str], list[str]]:
@@ -140,12 +117,12 @@ def _detail_facts(
     content = soup.select_one("#body")
     if content is None:
         raise ValueError(f"{name}: 缺少详情正文")
-    has_heading = any("基本情報" in _text(section) for section in content.find_all(["h2", "h3"]))
+    has_heading = any("基本情報" in text(section) for section in content.find_all(["h2", "h3"]))
     tables = content.find_all("table")
     if not tables:
         return [], [], ["source_detail_unavailable"]
     table = tables[0]
-    rows = _expanded_rows(table)
+    rows = expanded_rows(table)
     if len(rows) < 3 or not all(label in rows[0] for label in ("攻撃力", "守備力", "弾倉", "重量")):
         raise ValueError(f"{name}: 基础数值表头发生变化")
     groups = {
@@ -187,21 +164,7 @@ def _detail_facts(
                 }
             )
         )
-    acquisition: list[str] = []
-    for section in content.find_all(["h2", "h3"]):
-        if not any(label in _text(section) for label in ("販売箇所", "その他入手法")):
-            continue
-        label = "店铺" if "販売箇所" in _text(section) else "其他获取"
-        for sibling in section.next_siblings:
-            if not isinstance(sibling, Tag):
-                continue
-            if sibling.name in ("h2", "h3"):
-                break
-            if sibling.name not in ("ul", "ol", "p"):
-                continue
-            value = _text(sibling)
-            if value and value not in ("なし", "無し", "↑"):
-                acquisition.append(f"{label}：{value}")
+    acquisition = acquisition_entries(content)
     issues = [] if modifications else ["source_modification_unavailable"]
     if not has_heading and not modifications:
         issues.append("source_detail_unavailable")
@@ -211,11 +174,6 @@ def _detail_facts(
 def _load_names(repo_root: Path) -> SpecialEquipmentNames:
     path = repo_root / _ROOT / "names.yaml"
     return SpecialEquipmentNames.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
-
-
-def _comparable_stat(value: str) -> Decimal | str:
-    text = value.removesuffix("t")
-    return Decimal(text) if re.fullmatch(r"[0-9]+(?:\.[0-9]+)?", text) else text
 
 
 def collect_special_equipment(
@@ -240,7 +198,7 @@ def collect_special_equipment(
         candidates = [
             table
             for table in content.find_all("table")
-            if tuple(_text(cell) for cell in table.find_all("tr")[0].find_all(["td", "th"]))
+            if tuple(text(cell) for cell in table.find_all("tr")[0].find_all(["td", "th"]))
             == _HEADERS
         ]
         if len(candidates) != 1:
@@ -252,7 +210,7 @@ def collect_special_equipment(
         omitted: list[str] = []
         for row_index, row in enumerate(table.find_all("tr")[1:]):
             cells = row.find_all(["td", "th"], recursive=False)
-            name = _text(cells[0])
+            name = text(cells[0])
             if name == "LOVEマシン":
                 omitted.append("LOVEマシン：总表存在配方合并列，独立详情未提供有效数值表")
                 continue
@@ -273,7 +231,7 @@ def collect_special_equipment(
             records.append(
                 SpecialEquipmentFact(
                     name_ja=name,
-                    overview=dict(zip(_HEADERS, map(_text, cells), strict=True)),
+                    overview=dict(zip(_HEADERS, map(text, cells), strict=True)),
                     overview_ref=SourceRef(
                         source_id=SOURCE_ID,
                         target_id=TARGET_ID,
@@ -328,20 +286,7 @@ def load_special_equipment(repo_root: Path) -> NormalizedBundle | None:
         }
         rarity = fact.overview["レア"]
         fixed_stars = len(rarity) if re.fullmatch(r"★{1,3}", rarity) else 0
-        available_stars: set[int] = set()
-        if re.fullmatch(r"★{1,3}", rarity):
-            available_stars.add(fixed_stars)
-        elif re.fullmatch(r"☆{1,3}", rarity):
-            available_stars.update(range(len(rarity) + 1))
-        elif rarity == "-":
-            available_stars.add(0)
-        for acquisition in fact.acquisition_ja:
-            for match in re.finditer(r"★([0-3])(?:\s*[～〜~-]\s*★?([0-3]))?", acquisition):
-                start = int(match[1])
-                end = int(match[2]) if match[2] is not None else start
-                if end < start:
-                    raise ValueError(f"{name}: 来源星级范围倒置")
-                available_stars.update(range(start, end + 1))
+        available_stars = obtainable_stars(rarity, fact.acquisition_ja, name)
         if available_stars:
             attributes["obtainable_stars_raw"] = ",".join(map(str, sorted(available_stars)))
         primary = next((m for m in fact.modifications if m.stars == fixed_stars), None)
@@ -356,7 +301,7 @@ def load_special_equipment(repo_root: Path) -> NormalizedBundle | None:
                 ):
                     overview_value = fact.overview[header]
                     detail_value = str(getattr(primary, field))
-                    if detail_value and _comparable_stat(overview_value) != _comparable_stat(
+                    if detail_value and comparable_stat(overview_value) != comparable_stat(
                         detail_value
                     ):
                         differences.append(

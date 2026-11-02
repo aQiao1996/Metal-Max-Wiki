@@ -13,6 +13,7 @@ import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
 
 interface EquipmentFilterFormProps {
   elements: readonly string[]
+  traits: readonly string[]
   query: EquipmentQuery
   version: GameVersionSlug
 }
@@ -22,6 +23,7 @@ const controlClassName =
 
 export function EquipmentFilterForm({
   elements,
+  traits,
   query,
   version,
 }: EquipmentFilterFormProps) {
@@ -61,19 +63,23 @@ export function EquipmentFilterForm({
 
       <div className="min-w-0">
         <label
-          htmlFor="equipment-element"
+          htmlFor={
+            query.type === 'c-unit' ? 'equipment-trait' : 'equipment-element'
+          }
           className="mb-1.5 block text-xs font-medium text-[var(--mm-navy)]"
         >
-          属性
+          {query.type === 'c-unit' ? '特性' : '属性'}
         </label>
         <select
-          id="equipment-element"
-          name="element"
-          defaultValue={query.element}
+          id={query.type === 'c-unit' ? 'equipment-trait' : 'equipment-element'}
+          name={query.type === 'c-unit' ? 'trait' : 'element'}
+          defaultValue={query.type === 'c-unit' ? query.trait : query.element}
           className={controlClassName}
         >
-          <option value="">全部属性</option>
-          {elements.map((element) => (
+          <option value="">
+            {query.type === 'c-unit' ? '全部特性' : '全部属性'}
+          </option>
+          {(query.type === 'c-unit' ? traits : elements).map((element) => (
             <option key={element} value={element}>
               {query.type === 'special-equipment' &&
               formatSpecialEquipmentValue('element_raw', element) !== element

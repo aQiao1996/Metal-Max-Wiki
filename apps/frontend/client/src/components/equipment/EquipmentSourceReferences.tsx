@@ -55,7 +55,15 @@ export function EquipmentSourceReferences({
                       ? source.table_index > 0
                         ? 'S-E 总表'
                         : '装备独立详情'
-                      : source.target_id}
+                      : source.target_id === 'maniax-c-units'
+                        ? decodeURIComponent(
+                            new URL(source.source_url).search,
+                          ).includes('検証')
+                          ? '命中与回避验证'
+                          : source.table_index === 0
+                            ? '装备独立详情'
+                            : 'C 装置与特性总表'
+                        : source.target_id}
                   </dd>
                 </div>
                 <div className="min-w-0">

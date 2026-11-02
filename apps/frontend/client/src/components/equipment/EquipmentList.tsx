@@ -29,6 +29,12 @@ const mainCannonFields = [
   { key: 'magazine_raw', label: '弹仓' },
 ] as const
 
+const cUnitFields = [
+  { key: 'trait_name_raw', label: '特性' },
+  { key: 'trait_activation_raw', label: '生效方式' },
+  { key: 'weight_raw', label: '重量（t）' },
+] as const
+
 export function EquipmentList({
   emptyMessage,
   entries,
@@ -69,7 +75,11 @@ export function EquipmentList({
     <ul className="border-border border-t">
       {entries.map((entry) => {
         const fields =
-          entry.type === 'human-weapon' ? humanWeaponFields : mainCannonFields
+          entry.type === 'human-weapon'
+            ? humanWeaponFields
+            : entry.type === 'c-unit'
+              ? cUnitFields
+              : mainCannonFields
         const japaneseName =
           entry.names.ja !== null && entry.names.ja !== entry.name
             ? entry.names.ja
@@ -95,12 +105,18 @@ export function EquipmentList({
                     日文名：{japaneseName}
                   </span>
                 )}
-                {entry.type === 'special-equipment' &&
+                {(entry.type === 'special-equipment' ||
+                  entry.type === 'c-unit') &&
                   entry.attributes.stat_condition_raw !== undefined && (
                     <span className="text-muted-foreground mt-1 block text-xs leading-5">
                       {String(entry.attributes.stat_condition_raw)}
                     </span>
                   )}
+                {entry.attributes.availability_raw !== undefined && (
+                  <span className="text-muted-foreground mt-1 block text-xs leading-5">
+                    {String(entry.attributes.availability_raw)}
+                  </span>
+                )}
               </span>
 
               <dl className="grid min-w-0 grid-cols-3 gap-3 sm:contents">

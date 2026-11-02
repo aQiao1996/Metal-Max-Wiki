@@ -71,6 +71,13 @@ export default async function EquipmentPage({
         .filter((value): value is string => typeof value === 'string'),
     ),
   ].sort((left, right) => left.localeCompare(right, 'zh-CN'))
+  const traits = [
+    ...new Set(
+      currentTypeEntries
+        .map((entry) => entry.attributes.trait_name_raw)
+        .filter((value): value is string => typeof value === 'string'),
+    ),
+  ].sort((left, right) => left.localeCompare(right, 'zh-CN'))
 
   return (
     <div className="mx-auto max-w-6xl pb-10">
@@ -120,8 +127,9 @@ export default async function EquipmentPage({
 
         <div className="mt-5">
           <EquipmentFilterForm
-            key={`${query.type}:${query.q}:${query.element}:${query.sort}:${query.profession ?? ''}`}
+            key={`${query.type}:${query.q}:${query.element}:${query.trait}:${query.sort}:${query.profession}`}
             elements={elements}
+            traits={traits}
             query={query}
             version={version.slug}
           />

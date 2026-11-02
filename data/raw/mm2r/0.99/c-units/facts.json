@@ -1,0 +1,3823 @@
+{
+  "schema_version": 1,
+  "source_id": "metalmaniax-mm2r",
+  "records": [
+    {
+      "name_ja": "さびたCユニット",
+      "overview": {
+        "名称": "さびたCユニット",
+        "命中": "0",
+        "回避": "0",
+        "守備": "5",
+        "重量(t)": "0.20",
+        "特性": "なし",
+        "価格(G)": "*100",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 0
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%95%E3%81%B3%E3%81%9FC%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88",
+        "retrieved_at": "2026-11-02T12:58:50.386360+08:00",
+        "content_hash": "sha256:65ba6f44e48bf1afb644835834428f824afbc0bf91263597175fab2505b562e4",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*100",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "-",
+          "defense_raw": "5",
+          "defense_max_raw": "-",
+          "weight_min_raw": "-",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "-"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：メルトタウン 周辺など、各地にランダム 埋設 (要金属探知機)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "システムRENTA",
+      "overview": {
+        "名称": "システムRENTA",
+        "命中": "10",
+        "回避": "10",
+        "守備": "50",
+        "重量(t)": "0.20",
+        "特性": "なし",
+        "価格(G)": "-",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 1
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0RENTA",
+        "retrieved_at": "2026-11-02T12:58:51.558934+08:00",
+        "content_hash": "sha256:dd99ded66e1083f6e5b6dbab49dde7ba896f152343928969319562edb88fe07a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "-",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "-",
+          "evasion_raw": "10",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "-",
+          "defense_raw": "50",
+          "defense_max_raw": "-",
+          "weight_min_raw": "t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：入手不可"],
+      "issues": []
+    },
+    {
+      "name_ja": "HAL900",
+      "overview": {
+        "名称": "HAL900",
+        "命中": "0",
+        "回避": "0",
+        "守備": "30",
+        "重量(t)": "0.80",
+        "特性": "なし",
+        "価格(G)": "200",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 2
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/HAL900",
+        "retrieved_at": "2026-11-02T12:58:52.737307+08:00",
+        "content_hash": "sha256:f50764f5e0d076309fbcda5206edac4f648749a83ff47291946a74accf160330",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "200",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "0",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "0",
+          "evasion_raw": "0",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "7",
+          "defense_raw": "30",
+          "defense_max_raw": "79(90)",
+          "weight_min_raw": "0.44t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.59(2.48)t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：マド 南東の トレーダーキャンプ",
+        "其他获取：バギー初期装備"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ライダーブレイン",
+      "overview": {
+        "名称": "ライダーブレイン",
+        "命中": "0",
+        "回避": "0",
+        "守備": "10",
+        "重量(t)": "0.10",
+        "特性": "なし",
+        "価格(G)": "*250",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 3
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%A9%E3%82%A4%E3%83%80%E3%83%BC%E3%83%96%E3%83%AC%E3%82%A4%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:58:54.013650+08:00",
+        "content_hash": "sha256:3d938cd847a1bcf5d810f4ee77303142e511a478c1e43145850d666dd3d7ebac",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*250",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "2",
+          "defense_raw": "10",
+          "defense_max_raw": "20",
+          "weight_min_raw": "0.05t",
+          "weight_raw": "0.10t",
+          "weight_max_raw": "0.20(0.22)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：ストレイドッグ 初期装備 タキオンテレポーター(チョッパーとモトクロッサの初期装備)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "無線ポリス",
+      "overview": {
+        "名称": "無線ポリス",
+        "命中": "0",
+        "回避": "0",
+        "守備": "40",
+        "重量(t)": "0.20",
+        "特性": "なし",
+        "価格(G)": "*250",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 4
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E7%84%A1%E7%B7%9A%E3%83%9D%E3%83%AA%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:58:55.207275+08:00",
+        "content_hash": "sha256:cd5af4d2b989fcb5662e97e98fbce7418368b74bbc899d91e2f1df39301b1d69",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*250",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "70",
+          "weight_min_raw": "0.11t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "0.29t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：白バイ 初期装備 タキオンテレポーター(パトカーの初期装備)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スパシーボII",
+      "overview": {
+        "名称": "スパシーボII",
+        "命中": "1",
+        "回避": "1",
+        "守備": "30",
+        "重量(t)": "0.91",
+        "特性": "なし",
+        "価格(G)": "350",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 5
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%91%E3%82%B7%E3%83%BC%E3%83%9CII",
+        "retrieved_at": "2026-11-02T12:58:56.408601+08:00",
+        "content_hash": "sha256:84b97219924d1f1d098298c8c43de8cc8aafa2bb3ce9be1e5ad15d14a80ea998",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "350",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "1",
+          "accuracy_max_raw": "5",
+          "evasion_min_raw": "-",
+          "evasion_raw": "1",
+          "evasion_max_raw": "5",
+          "defense_min_raw": "-",
+          "defense_raw": "30",
+          "defense_max_raw": "-",
+          "weight_min_raw": "0.91t",
+          "weight_raw": "0.91t",
+          "weight_max_raw": "1.12t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "1",
+          "accuracy_max_raw": "5",
+          "evasion_min_raw": "-",
+          "evasion_raw": "1",
+          "evasion_max_raw": "5",
+          "defense_min_raw": "-",
+          "defense_raw": "31",
+          "defense_max_raw": "-",
+          "weight_min_raw": "0.95t",
+          "weight_raw": "0.95t",
+          "weight_max_raw": "1.17t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "1",
+          "accuracy_max_raw": "5",
+          "evasion_min_raw": "-",
+          "evasion_raw": "1",
+          "evasion_max_raw": "5",
+          "defense_min_raw": "-",
+          "defense_raw": "33",
+          "defense_max_raw": "-",
+          "weight_min_raw": "1.00t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.24t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "1",
+          "accuracy_max_raw": "6",
+          "evasion_min_raw": "-",
+          "evasion_raw": "1",
+          "evasion_max_raw": "6",
+          "defense_min_raw": "-",
+          "defense_raw": "36",
+          "defense_max_raw": "-",
+          "weight_min_raw": "1.09t",
+          "weight_raw": "1.09t",
+          "weight_max_raw": "1.41t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：エルニニョ ハトバ",
+        "其他获取：野バス 、 ゲパルト 初期装備(★0) ハトバ北の砂漠にランダム埋蔵(★変動) ノボトケの村周辺草地にランダム埋蔵(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ウォズニアクII",
+      "overview": {
+        "名称": "ウォズニアクII",
+        "命中": "0",
+        "回避": "0",
+        "守備": "40",
+        "重量(t)": "0.20",
+        "特性": "なし",
+        "価格(G)": "500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 6
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A6%E3%82%A9%E3%82%BA%E3%83%8B%E3%82%A2%E3%82%AFII",
+        "retrieved_at": "2026-11-02T12:58:57.668987+08:00",
+        "content_hash": "sha256:931597e97fbee9004a66b7d671e80a23336cf38e28f4d691a25c3b8f64f7af76",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "0",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "0",
+          "evasion_raw": "0",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "90",
+          "weight_min_raw": "0.11t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "0.38t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：アズサ (販売パターンC) アズサ北の トレーダーキャンプ (販売パターンC)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "HAL800",
+      "overview": {
+        "名称": "HAL800",
+        "命中": "5",
+        "回避": "5",
+        "守備": "45",
+        "重量(t)": "0.80",
+        "特性": "なし",
+        "価格(G)": "375",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 7
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/HAL800",
+        "retrieved_at": "2026-11-02T12:58:58.918498+08:00",
+        "content_hash": "sha256:467a9c15ac3740e257c934fa84d3af33ee071648e83adb9a3b2bcd16f9d1819d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "375",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "78",
+          "weight_min_raw": "0.41(0.34)t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.40t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：アズサ (販売パターンA) アズサ北の トレーダーキャンプ (販売パターンA)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スパシーボIII",
+      "overview": {
+        "名称": "スパシーボIII",
+        "命中": "8",
+        "回避": "8",
+        "守備": "55",
+        "重量(t)": "1.00",
+        "特性": "なし",
+        "価格(G)": "400",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 8
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%91%E3%82%B7%E3%83%BC%E3%83%9CIII",
+        "retrieved_at": "2026-11-02T12:59:00.101485+08:00",
+        "content_hash": "sha256:eb2e0efffc6763100304e6ce803bcf53fc6118dc872584ecc621526011a0b4b7",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "400",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "8",
+          "accuracy_max_raw": "12",
+          "evasion_min_raw": "4",
+          "evasion_raw": "8",
+          "evasion_max_raw": "12",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "88",
+          "weight_min_raw": "0.52(0.31)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.60t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：アズサ (販売パターンB) アズサ北の トレーダーキャンプ (販売パターンB)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "エミー",
+      "overview": {
+        "名称": "エミー",
+        "命中": "15",
+        "回避": "0",
+        "守備": "70",
+        "重量(t)": "3.00",
+        "特性": "なし",
+        "価格(G)": "700",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 9
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A8%E3%83%9F%E3%83%BC",
+        "retrieved_at": "2026-11-02T12:59:01.340383+08:00",
+        "content_hash": "sha256:02efdfc5f10e4dcc158e8d35755f97cf126a992e6fb52dbd4228866ebec8b224",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "700",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "20",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "17",
+          "defense_raw": "70",
+          "defense_max_raw": "97",
+          "weight_min_raw": "1.56(1.02)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "4.17t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "21",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "18",
+          "defense_raw": "73",
+          "defense_max_raw": "105",
+          "weight_min_raw": "1.63(1.07)t",
+          "weight_raw": "3.15t",
+          "weight_max_raw": "4.56t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "9",
+          "accuracy_raw": "16",
+          "accuracy_max_raw": "23",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "19",
+          "defense_raw": "77",
+          "defense_max_raw": "107",
+          "weight_min_raw": "1.71(1.12)t",
+          "weight_raw": "3.30t",
+          "weight_max_raw": "4.78t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "11",
+          "accuracy_raw": "18",
+          "accuracy_max_raw": "27",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "21",
+          "defense_raw": "84",
+          "defense_max_raw": "117",
+          "weight_min_raw": "1.87(1.22)t",
+          "weight_raw": "3.60t",
+          "weight_max_raw": "5.43t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：酒場サースティ ホックの交易所 デルタ・リオ (運送前限定) イスラポルト (運送前限定)",
+        "其他获取：ホックの交易所～デルタ・リオ間にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "カバレロ2022",
+      "overview": {
+        "名称": "カバレロ2022",
+        "命中": "0",
+        "回避": "10",
+        "守備": "20",
+        "重量(t)": "0.15",
+        "特性": "なし",
+        "価格(G)": "*600",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 10
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AB%E3%83%90%E3%83%AC%E3%83%AD2022",
+        "retrieved_at": "2026-11-02T12:59:02.606276+08:00",
+        "content_hash": "sha256:ceaf7540e8fbfa02ea73367bc089fb9a3bd7320699a2b9f32bf7242309055c6e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*600",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "5",
+          "defense_raw": "20",
+          "defense_max_raw": "30",
+          "weight_min_raw": "0.07(0.06)t",
+          "weight_raw": "0.15t",
+          "weight_max_raw": "0.28t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "5",
+          "defense_raw": "21",
+          "defense_max_raw": "31",
+          "weight_min_raw": "0.07(0.06)t",
+          "weight_raw": "0.15t",
+          "weight_max_raw": "0.28t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "16",
+          "evasion_min_raw": "6",
+          "evasion_raw": "11",
+          "evasion_max_raw": "17",
+          "defense_min_raw": "5",
+          "defense_raw": "22",
+          "defense_max_raw": "33",
+          "weight_min_raw": "0.08(0.06)t",
+          "weight_raw": "0.16t",
+          "weight_max_raw": "0.31t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "18",
+          "evasion_min_raw": "7",
+          "evasion_raw": "12",
+          "evasion_max_raw": "20",
+          "defense_min_raw": "6",
+          "defense_raw": "24",
+          "defense_max_raw": "36",
+          "weight_min_raw": "0.09(0.07)t",
+          "weight_raw": "0.18t",
+          "weight_max_raw": "0.36(0.37)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：グラップルタワー 7F木箱(★変動)"],
+      "issues": []
+    },
+    {
+      "name_ja": "アリス2027",
+      "overview": {
+        "名称": "アリス2027",
+        "命中": "0",
+        "回避": "0",
+        "守備": "7",
+        "重量(t)": "0.07",
+        "特性": "なし",
+        "価格(G)": "675",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 11
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%83%AA%E3%82%B92027",
+        "retrieved_at": "2026-11-02T12:59:03.807961+08:00",
+        "content_hash": "sha256:0a3e924ff96d17c006d0629ebe6d5ba7bc08c73e866ea7ba31d3504b79fc91b1",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "675",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "20",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "20",
+          "defense_min_raw": "1",
+          "defense_raw": "7",
+          "defense_max_raw": "65524 *1",
+          "weight_min_raw": "0.03(0.00)t",
+          "weight_raw": "0.07t",
+          "weight_max_raw": "0.14(0.15)t"
+        }
+      ],
+      "acquisition_ja": ["店铺：デルタ・リオ (販売パターンA)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ウォズニアクSI",
+      "overview": {
+        "名称": "ウォズニアクSI",
+        "命中": "10",
+        "回避": "10",
+        "守備": "45",
+        "重量(t)": "0.20",
+        "特性": "なし",
+        "価格(G)": "500",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 12
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A6%E3%82%A9%E3%82%BA%E3%83%8B%E3%82%A2%E3%82%AFSI",
+        "retrieved_at": "2026-11-02T12:59:05.570274+08:00",
+        "content_hash": "sha256:3e6f61f5178155223302437aae6a0e9a240bf8529665af71a17f7ab4fc5541ce",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "90",
+          "weight_min_raw": "0.10(0.05)t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "0.38t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "11",
+          "defense_raw": "47",
+          "defense_max_raw": "94",
+          "weight_min_raw": "0.10(0.05)t",
+          "weight_raw": "0.21t",
+          "weight_max_raw": "0.39t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "17",
+          "evasion_min_raw": "6",
+          "evasion_raw": "11",
+          "evasion_max_raw": "17",
+          "defense_min_raw": "12",
+          "defense_raw": "49",
+          "defense_max_raw": "98",
+          "weight_min_raw": "0.11(0.05)t",
+          "weight_raw": "0.22t",
+          "weight_max_raw": "0.43t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "20",
+          "evasion_min_raw": "7",
+          "evasion_raw": "12",
+          "evasion_max_raw": "20",
+          "defense_min_raw": "13",
+          "defense_raw": "54",
+          "defense_max_raw": "108",
+          "weight_min_raw": "0.12(0.06)t",
+          "weight_raw": "0.24t",
+          "weight_max_raw": "0.48(0.49)t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デルタ・リオ (「 荒野の運送屋 」にて荷物運搬後) キャタピラビレッジ 北の トレーダーキャンプ",
+        "其他获取：装甲車 初期装備(★0) バトー戦車初期装備(★0) レンタル買取戦車 初期装備(★0) 酒場サースティ 付近(すぐ左)にランダム 埋設 (要金属探知機、★変動) ヴラド博物館 B1Fリフト(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "SOLOMON2",
+      "overview": {
+        "名称": "SOLOMON2",
+        "命中": "0",
+        "回避": "0",
+        "守備": "190",
+        "重量(t)": "2.00",
+        "特性": "なし",
+        "価格(G)": "*1250",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 13
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/SOLOMON2",
+        "retrieved_at": "2026-11-02T12:59:06.810833+08:00",
+        "content_hash": "sha256:bde61ea563f1d64c2ea14b03eaa9945492380f902381af73d9139c1340800a3a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*1250",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "0",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "0",
+          "evasion_raw": "0",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "-",
+          "defense_raw": "190",
+          "defense_max_raw": "-",
+          "weight_min_raw": "2.00t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.98(4.40)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "0",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "0",
+          "evasion_raw": "0",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "-",
+          "defense_raw": "199",
+          "defense_max_raw": "-",
+          "weight_min_raw": "2.10t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "4.17(4.68)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：サルベージ (★0) タキオンテレポーター(★0～1)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "SOLOMON3",
+      "overview": {
+        "名称": "SOLOMON3",
+        "命中": "10",
+        "回避": "10",
+        "守備": "90",
+        "重量(t)": "0.95",
+        "特性": "なし",
+        "価格(G)": "*2750",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 14
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/SOLOMON3",
+        "retrieved_at": "2026-11-02T12:59:08.013689+08:00",
+        "content_hash": "sha256:925e4797c18e0cd8eac6e5cd9f6f62b325df1cf2eba9325d92ed485a22e2b73f",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*2750",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "108",
+          "weight_min_raw": "0.49(0.23)t",
+          "weight_raw": "0.95t",
+          "weight_max_raw": "1.63t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "23",
+          "defense_raw": "94",
+          "defense_max_raw": "112",
+          "weight_min_raw": "0.51(0.24)t",
+          "weight_raw": "0.99t",
+          "weight_max_raw": "1.73t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "28",
+          "evasion_min_raw": "6",
+          "evasion_raw": "11",
+          "evasion_max_raw": "17",
+          "defense_min_raw": "24",
+          "defense_raw": "99",
+          "defense_max_raw": "118",
+          "weight_min_raw": "0.54(0.26)t",
+          "weight_raw": "1.04t",
+          "weight_max_raw": "1.88t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "32",
+          "evasion_min_raw": "7",
+          "evasion_raw": "12",
+          "evasion_max_raw": "20",
+          "defense_min_raw": "27",
+          "defense_raw": "108",
+          "defense_max_raw": "129",
+          "weight_min_raw": "0.59(0.28)t",
+          "weight_raw": "1.14t",
+          "weight_max_raw": "2.23t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：デルタ・リオ 北の倒れた給水塔からすぐ北に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ラクター",
+      "overview": {
+        "名称": "ラクター",
+        "命中": "15",
+        "回避": "8",
+        "守備": "80",
+        "重量(t)": "1.30",
+        "特性": "なし",
+        "価格(G)": "800",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 15
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC",
+        "retrieved_at": "2026-11-02T12:59:09.217060+08:00",
+        "content_hash": "sha256:48c05d1df9479b0f824188bc7095efcae3f564920b7f6654cde6b5ec16777272",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "800",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "22",
+          "evasion_min_raw": "4",
+          "evasion_raw": "8",
+          "evasion_max_raw": "12",
+          "defense_min_raw": "20",
+          "defense_raw": "80",
+          "defense_max_raw": "100",
+          "weight_min_raw": "0.67(0.28)t",
+          "weight_raw": "1.30t",
+          "weight_max_raw": "1.92t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "23",
+          "evasion_min_raw": "4",
+          "evasion_raw": "8",
+          "evasion_max_raw": "12",
+          "defense_min_raw": "21",
+          "defense_raw": "84",
+          "defense_max_raw": "105",
+          "weight_min_raw": "0.70(0.29)t",
+          "weight_raw": "1.36t",
+          "weight_max_raw": "2.05t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "9",
+          "accuracy_raw": "16",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "4",
+          "evasion_raw": "8",
+          "evasion_max_raw": "13",
+          "defense_min_raw": "22",
+          "defense_raw": "88",
+          "defense_max_raw": "110",
+          "weight_min_raw": "0.74(0.31)t",
+          "weight_raw": "1.43t",
+          "weight_max_raw": "2.24t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "11",
+          "accuracy_raw": "18",
+          "accuracy_max_raw": "29",
+          "evasion_min_raw": "5",
+          "evasion_raw": "9",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "24",
+          "defense_raw": "96",
+          "defense_max_raw": "120",
+          "weight_min_raw": "0.81(0.34)t",
+          "weight_raw": "1.56t",
+          "weight_max_raw": "2.58t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：イスラポルト (「 荒野の運送屋 」にて荷物運搬後)",
+        "其他获取：エレファント 初期装備(★0) ヘルメツ島 B2F、No.04コンテナ木箱(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "99式神話",
+      "overview": {
+        "名称": "99式神話",
+        "命中": "0",
+        "回避": "15",
+        "守備": "100",
+        "重量(t)": "3.50",
+        "特性": "なし",
+        "価格(G)": "990",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 16
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/99%E5%BC%8F%E7%A5%9E%E8%A9%B1",
+        "retrieved_at": "2026-11-02T12:59:10.780437+08:00",
+        "content_hash": "sha256:f209bffd4eea01d8c263c4f55a3d07696f90cfe91cf244adaaa3de6235bf4124",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "990",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "20",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "120",
+          "weight_min_raw": "1.82(1.19)t",
+          "weight_raw": "3.50t",
+          "weight_max_raw": "4.44t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "21",
+          "defense_min_raw": "26",
+          "defense_raw": "105",
+          "defense_max_raw": "126",
+          "weight_min_raw": "1.90(1.24)t",
+          "weight_raw": "3.67t",
+          "weight_max_raw": "4.77t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "9",
+          "evasion_raw": "16",
+          "evasion_max_raw": "23",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "132",
+          "weight_min_raw": "2.00(1.30)t",
+          "weight_raw": "3.85t",
+          "weight_max_raw": "5.12t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "11",
+          "evasion_raw": "18",
+          "evasion_max_raw": "27",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "144",
+          "weight_min_raw": "2.18(1.42)t",
+          "weight_raw": "4.20t",
+          "weight_max_raw": "5.83t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：タイシャー",
+        "其他获取：マンムート 初期装備(★0) ヘルメツ島 B4F下段左の木箱(★変動) 金輪際ホテル 南の砂浜にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "デス13",
+      "overview": {
+        "名称": "デス13",
+        "命中": "13",
+        "回避": "13",
+        "守備": "113",
+        "重量(t)": "0.13",
+        "特性": "なし",
+        "価格(G)": "1300",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 17
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%87%E3%82%B913",
+        "retrieved_at": "2026-11-02T12:59:11.997176+08:00",
+        "content_hash": "sha256:cfe3f2a6cabf7dfbdf1f424488d8a3958c1716174ce7a980f8c0a7555c65e2ab",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "1300",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "13",
+          "accuracy_max_raw": "50",
+          "evasion_min_raw": "7",
+          "evasion_raw": "13",
+          "evasion_max_raw": "50",
+          "defense_min_raw": "28",
+          "defense_raw": "113",
+          "defense_max_raw": "197",
+          "weight_min_raw": "0.06(0.02)t",
+          "weight_raw": "0.13t",
+          "weight_max_raw": "0.26t"
+        }
+      ],
+      "acquisition_ja": ["店铺：タイシャー (販売パターンB)"],
+      "issues": []
+    },
+    {
+      "name_ja": "アクセルノイマン",
+      "overview": {
+        "名称": "アクセルノイマン",
+        "命中": "8",
+        "回避": "15",
+        "守備": "65",
+        "重量(t)": "0.60",
+        "特性": "なし",
+        "価格(G)": "1000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 18
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%AB%E3%83%8E%E3%82%A4%E3%83%9E%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:59:13.212812+08:00",
+        "content_hash": "sha256:d2e96adaad4fd3f4863b7fabe08a50f39c0876349c14fa017afb7c704980159d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "1000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "8",
+          "accuracy_max_raw": "12",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "22",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "97",
+          "weight_min_raw": "0.31(0.13)t",
+          "weight_raw": "0.60t",
+          "weight_max_raw": "0.97t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "8",
+          "accuracy_max_raw": "12",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "23",
+          "defense_min_raw": "17",
+          "defense_raw": "68",
+          "defense_max_raw": "105",
+          "weight_min_raw": "0.32(0.13)t",
+          "weight_raw": "0.63t",
+          "weight_max_raw": "1.06t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "8",
+          "accuracy_max_raw": "13",
+          "evasion_min_raw": "9",
+          "evasion_raw": "16",
+          "evasion_max_raw": "25",
+          "defense_min_raw": "17",
+          "defense_raw": "71",
+          "defense_max_raw": "110",
+          "weight_min_raw": "0.34(0.14)t",
+          "weight_raw": "0.66t",
+          "weight_max_raw": "1.15t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "9",
+          "accuracy_max_raw": "15",
+          "evasion_min_raw": "11",
+          "evasion_raw": "18",
+          "evasion_max_raw": "29",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "120",
+          "weight_min_raw": "0.37(0.15)t",
+          "weight_raw": "0.72t",
+          "weight_max_raw": "1.32t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：風力発電所 南西の トレーダーキャンプ",
+        "其他获取：ゼロ 初期装備(★0) ヘルメツ島 B3F南部屋木箱(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "キャノンボックス",
+      "overview": {
+        "名称": "キャノンボックス",
+        "命中": "5",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "6.00",
+        "特性": "キャノンラッシュ",
+        "価格(G)": "5500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 19
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AD%E3%83%A3%E3%83%8E%E3%83%B3%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:59:14.453757+08:00",
+        "content_hash": "sha256:87e3edf58e890f66d37fb7cc6e6ca7a0318be19df472d2274508132d35734c77",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "キャノンラッシュ",
+      "detail_price": "5500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "3.12(2.94)t",
+          "weight_raw": "6.00t",
+          "weight_max_raw": "10.14t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "3.27(3.08)t",
+          "weight_raw": "6.30t",
+          "weight_max_raw": "10.64t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：ノボトケの村 東の トレーダーキャンプ モロ・ポコ 東の トレーダーキャンプ",
+        "其他获取：敵撃破数ボーナス(1250体) タキオンテレポーター(★無し～★1)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "バルカンボックス",
+      "overview": {
+        "名称": "バルカンボックス",
+        "命中": "5",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "4.50",
+        "特性": "バルカンラッシュ",
+        "価格(G)": "5000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 20
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:59:15.667794+08:00",
+        "content_hash": "sha256:284fd20502df1b60808dcae5cbb906f5d10a04aa6e351abf0cae8774f9f2df22",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "バルカンラッシュ",
+      "detail_price": "5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "2.34(2.20)t",
+          "weight_raw": "4.50t",
+          "weight_max_raw": "7.60t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "2.45(2.31)t",
+          "weight_raw": "4.72t",
+          "weight_max_raw": "7.97t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：バザースカ デルタ・リオ (「 荒野の運送屋 」にて荷物運搬後) モロ・ポコ 東の トレーダーキャンプ",
+        "其他获取：敵撃破数ボーナス(750体) タキオンテレポーター(★無し～★1)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ミサイルボックス",
+      "overview": {
+        "名称": "ミサイルボックス",
+        "命中": "5",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "6.00",
+        "特性": "S-Eラッシュ",
+        "価格(G)": "5500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 21
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%9F%E3%82%B5%E3%82%A4%E3%83%AB%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:59:16.856071+08:00",
+        "content_hash": "sha256:79712bec3691baff0d88b7dc1ab62a2dd39366dc5ed59c3ba5a64728903c6a78",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "S-Eラッシュ",
+      "detail_price": "5500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "3.12(2.94)t",
+          "weight_raw": "6.00t",
+          "weight_max_raw": "10.14t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "3.27(3.08)t",
+          "weight_raw": "6.30t",
+          "weight_max_raw": "10.64t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：イスラポルト 西の トレーダーキャンプ モロ・ポコ 東の トレーダーキャンプ",
+        "其他获取：敵撃破数ボーナス(2500体) タキオンテレポーター(★無し～★1)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ダンシングドール",
+      "overview": {
+        "名称": "ダンシングドール",
+        "命中": "0",
+        "回避": "10",
+        "守備": "50",
+        "重量(t)": "2.00",
+        "特性": "身交わし走行",
+        "価格(G)": "4000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 22
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%80%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%89%E3%83%BC%E3%83%AB",
+        "retrieved_at": "2026-11-02T12:59:18.128298+08:00",
+        "content_hash": "sha256:8f2e9cd55efe36818503f6d3f5c0e43ef483d251cf61af3882a51a452fdaab3b",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "身交わし走行",
+      "detail_price": "4000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "1.04(0.80)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.38t"
+        }
+      ],
+      "acquisition_ja": ["店铺：モロ・ポコ 東の トレーダーキャンプ"],
+      "issues": []
+    },
+    {
+      "name_ja": "スカイウォッチ",
+      "overview": {
+        "名称": "スカイウォッチ",
+        "命中": "10",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "3.00",
+        "特性": "対空能力",
+        "価格(G)": "4500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 23
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81",
+        "retrieved_at": "2026-11-02T12:59:19.331857+08:00",
+        "content_hash": "sha256:d9bda6990db0d0d86714a97583984e8ef26157ee22d9baa9029085dc2b11d62d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "対空能力",
+      "detail_price": "4500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "5",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "1.56(1.20)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "5.52t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：モロ・ポコ (クルマ道具屋) モロ・ポコ東の トレーダーキャンプ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ATストライク",
+      "overview": {
+        "名称": "ATストライク",
+        "命中": "15",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "1.20",
+        "特性": "会心の1発",
+        "価格(G)": "5000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 24
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/AT%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF",
+        "retrieved_at": "2026-11-02T12:59:20.518145+08:00",
+        "content_hash": "sha256:0a6dd5b3760d7aecbab35a7cb9d42e841b9b3432bc436b95f3f263e9accc6f11",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "会心の一発",
+      "detail_price": "5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "30",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "0.62(0.40)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.02t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "31",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "0.65(0.42)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "2.16t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "9",
+          "accuracy_raw": "16",
+          "accuracy_max_raw": "34",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "77",
+          "weight_min_raw": "0.68(0.44)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.34t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "11",
+          "accuracy_raw": "18",
+          "accuracy_max_raw": "39",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "weight_min_raw": "0.74(0.48)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.69t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：キャタピラビレッジ",
+        "其他获取：北の魔女の家 北西の トレーダーキャンプ 東に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "空冷雷神",
+      "overview": {
+        "名称": "空冷雷神",
+        "命中": "0",
+        "回避": "10",
+        "守備": "75",
+        "重量(t)": "1.00",
+        "特性": "アース装着",
+        "価格(G)": "6000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 25
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E7%A9%BA%E5%86%B7%E9%9B%B7%E7%A5%9E",
+        "retrieved_at": "2026-11-02T12:59:21.785916+08:00",
+        "content_hash": "sha256:8188899704435724a9bd8bb23008f79b54528b6e7db9fa6ea5b7c10e4ff399e6",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "アース装着",
+      "detail_price": "6000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "50",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "198",
+          "weight_min_raw": "0.52(0.40)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.99(3.19)t"
+        }
+      ],
+      "acquisition_ja": ["店铺：キャタピラビレッジ (販売パターンC)"],
+      "issues": []
+    },
+    {
+      "name_ja": "スパイダーネット",
+      "overview": {
+        "名称": "スパイダーネット",
+        "命中": "5",
+        "回避": "5",
+        "守備": "50",
+        "重量(t)": "6.00",
+        "特性": "迎撃能力",
+        "価格(G)": "6000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 26
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%91%E3%82%A4%E3%83%80%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88",
+        "retrieved_at": "2026-11-02T12:59:23.087143+08:00",
+        "content_hash": "sha256:6cd9d5fcf3c2912c30f561a8580c512c8faa61fc61b6c0508250ea361e175d4f",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃能力",
+      "detail_price": "6000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "3.12(2.58)t",
+          "weight_raw": "6.00t",
+          "weight_max_raw": "9.24t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "3.27(2.70)t",
+          "weight_raw": "6.30t",
+          "weight_max_raw": "9.70t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "11",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "11",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "77",
+          "weight_min_raw": "3.43(2.83)t",
+          "weight_raw": "6.60t",
+          "weight_max_raw": "10.56t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "6",
+          "accuracy_max_raw": "13",
+          "evasion_min_raw": "4",
+          "evasion_raw": "6",
+          "evasion_max_raw": "13",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "weight_min_raw": "3.74(3.09)t",
+          "weight_raw": "7.20t",
+          "weight_max_raw": "11.95t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デスクルス (解放後) メルトタウン デスクルス 西の砂漠の トレーダーキャンプ",
+        "其他获取：タキオンテレポーター(★0～1) モロ・ポコ 南の砂漠、ありふれた廃墟の南に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ジーニアス777",
+      "overview": {
+        "名称": "ジーニアス777",
+        "命中": "20",
+        "回避": "20",
+        "守備": "120",
+        "重量(t)": "6.50",
+        "特性": "迎撃能力",
+        "価格(G)": "*8000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 27
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%83%BC%E3%83%8B%E3%82%A2%E3%82%B9777",
+        "retrieved_at": "2026-11-02T12:59:24.314187+08:00",
+        "content_hash": "sha256:02a9e9ae75212f80ac3a25e1241001545f15f3cfd33c4b2885e3723c1366d498",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃能力",
+      "detail_price": "*8000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "10",
+          "accuracy_raw": "20",
+          "accuracy_max_raw": "50",
+          "evasion_min_raw": "10",
+          "evasion_raw": "20",
+          "evasion_max_raw": "50",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "240",
+          "weight_min_raw": "3.38(0.00)t",
+          "weight_raw": "6.50t",
+          "weight_max_raw": "12.93(22.10)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "11",
+          "accuracy_raw": "21",
+          "accuracy_max_raw": "53",
+          "evasion_min_raw": "11",
+          "evasion_raw": "21",
+          "evasion_max_raw": "53",
+          "defense_min_raw": "31",
+          "defense_raw": "126",
+          "defense_max_raw": "252",
+          "weight_min_raw": "3.54(0.00)t",
+          "weight_raw": "6.82t",
+          "weight_max_raw": "13.57(24.00)t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "12",
+          "accuracy_raw": "22",
+          "accuracy_max_raw": "57",
+          "evasion_min_raw": "12",
+          "evasion_raw": "22",
+          "evasion_max_raw": "57",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "264",
+          "weight_min_raw": "3.71(0.00)t",
+          "weight_raw": "7.15t",
+          "weight_max_raw": "14.22(26.45)t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "14",
+          "accuracy_raw": "24",
+          "accuracy_max_raw": "64",
+          "evasion_min_raw": "14",
+          "evasion_raw": "24",
+          "evasion_max_raw": "64",
+          "defense_min_raw": "36",
+          "defense_raw": "144",
+          "defense_max_raw": "288",
+          "weight_min_raw": "4.05(0.00)t",
+          "weight_raw": "7.80t",
+          "weight_max_raw": "15.52(31.20)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：レインバレー内、 メルトタウン から右上辺りに 埋設 (要金属探知機、★変動有) クエスト「 暴れ野バスを止めろ！ 」の報酬候補の一つ(★変動有) 敵撃破数ボーナス(7777体)(★変動有)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ニューロPAC",
+      "overview": {
+        "名称": "ニューロPAC",
+        "命中": "5",
+        "回避": "5",
+        "守備": "50",
+        "重量(t)": "5.00",
+        "特性": "迎撃補助",
+        "価格(G)": "5000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 28
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%ADPAC",
+        "retrieved_at": "2026-11-02T12:59:25.512196+08:00",
+        "content_hash": "sha256:30fabf528e06db7eecb2552051c60817b4443dc99095e7a120b0785c29cc5645",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃補助",
+      "detail_price": "5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "2.60(2.15)t",
+          "weight_raw": "5.00t",
+          "weight_max_raw": "7.70t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "10",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "10",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "2.73(2.25)t",
+          "weight_raw": "5.25t",
+          "weight_max_raw": "8.08t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "11",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "11",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "77",
+          "weight_min_raw": "2.86(2.36)t",
+          "weight_raw": "5.50t",
+          "weight_max_raw": "8.80t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "4",
+          "accuracy_raw": "6",
+          "accuracy_max_raw": "13",
+          "evasion_min_raw": "4",
+          "evasion_raw": "6",
+          "evasion_max_raw": "13",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "weight_min_raw": "3.12(2.58)t",
+          "weight_raw": "6.00t",
+          "weight_max_raw": "9.96t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：メルトタウン デスクルス 西の砂漠の トレーダーキャンプ",
+        "其他获取：いきどまり洞 B4F木箱(★変動) MM3からの転送(PAC3000が変化)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "コンボトロン",
+      "overview": {
+        "名称": "コンボトロン",
+        "命中": "10",
+        "回避": "0",
+        "守備": "50",
+        "重量(t)": "3.00",
+        "特性": "トリプルラッシュ",
+        "価格(G)": "*15000",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 29
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B3%E3%83%B3%E3%83%9C%E3%83%88%E3%83%AD%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:59:26.697155+08:00",
+        "content_hash": "sha256:da1a7717bb6281446d9fa4eed93cb2a38770ae024ea8e14a51eb077c280ae690",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "トリプルラッシュ",
+      "detail_price": "*15000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "0",
+          "evasion_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "50",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "1.63(1.26)t",
+          "weight_raw": "3.15t",
+          "weight_max_raw": "5.41t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：クエスト「 コンボトロンを探せ 」報酬"],
+      "issues": []
+    },
+    {
+      "name_ja": "ジェミナイザー",
+      "overview": {
+        "名称": "ジェミナイザー",
+        "命中": "10",
+        "回避": "0",
+        "守備": "65",
+        "重量(t)": "4.00",
+        "特性": "ダブルストライク",
+        "価格(G)": "*5000",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 30
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%82%A7%E3%83%9F%E3%83%8A%E3%82%A4%E3%82%B6%E3%83%BC",
+        "retrieved_at": "2026-11-02T12:59:27.874151+08:00",
+        "content_hash": "sha256:b52f380b3a262c987bf143ef198b2092db91ef95a2952e789b9bd4479bfc8848",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "ダブルストライク",
+      "detail_price": "*5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "0",
+          "evasion_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "65",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "21",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "17",
+          "defense_raw": "68",
+          "defense_max_raw": "91",
+          "weight_min_raw": "2.18(1.68)t",
+          "weight_raw": "4.20t",
+          "weight_max_raw": "6.46t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：スタンプ屋750ポイント景品"],
+      "issues": []
+    },
+    {
+      "name_ja": "アクティブハリー",
+      "overview": {
+        "名称": "アクティブハリー",
+        "命中": "5",
+        "回避": "0",
+        "守備": "70",
+        "重量(t)": "2.50",
+        "特性": "ダーティラッシュ",
+        "価格(G)": "*6000",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 31
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%83%8F%E3%83%AA%E3%83%BC",
+        "retrieved_at": "2026-11-02T12:59:29.126345+08:00",
+        "content_hash": "sha256:a32d31d7c45b66a26e88d68f46aabfdf52c84c4d618c1fff7145c7532d49bc0e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "ダーティラッシュ",
+      "detail_price": "*6000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "",
+          "evasion_max_raw": "0",
+          "defense_min_raw": "",
+          "defense_raw": "70",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "18",
+          "defense_raw": "73",
+          "defense_max_raw": "98",
+          "weight_min_raw": "1.36(1.28)t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "4.82t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：スタンプ屋4000ポイント景品(★1)"],
+      "issues": []
+    },
+    {
+      "name_ja": "連動ヤヌス",
+      "overview": {
+        "名称": "連動ヤヌス",
+        "命中": "5",
+        "回避": "0",
+        "守備": "75",
+        "重量(t)": "4.00",
+        "特性": "ダブルアタッカー",
+        "価格(G)": "*7000",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 32
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E9%80%A3%E5%8B%95%E3%83%A4%E3%83%8C%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:59:30.358372+08:00",
+        "content_hash": "sha256:73466ef09244135632e8bcfbbee4048fb316357a4996d5c4b70051db71542269",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "ダブルアタッカー",
+      "detail_price": "*7000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "0",
+          "evasion_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "75",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "3",
+          "accuracy_raw": "5",
+          "accuracy_max_raw": "21",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "97",
+          "weight_min_raw": "2.18(2.05)t",
+          "weight_raw": "4.20t",
+          "weight_max_raw": "6.84t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：スタンプ屋2500ポイント景品(★1)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ウオンディーヌ",
+      "overview": {
+        "名称": "ウオンディーヌ",
+        "命中": "10",
+        "回避": "5",
+        "守備": "30",
+        "重量(t)": "1.00",
+        "特性": "S-Eラッシュ",
+        "価格(G)": "*6000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 33
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A6%E3%82%AA%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%83%8C",
+        "retrieved_at": "2026-11-02T12:59:31.549372+08:00",
+        "content_hash": "sha256:9e4ea16271af5f9494ce432ef64847aa4d932e388bf4c3bf1a15c096ea525c62",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "S-Eラッシュ",
+      "detail_price": "*6000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "30",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "7",
+          "defense_raw": "30",
+          "defense_max_raw": "120",
+          "weight_min_raw": "0.52(0.34)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.99(3.70)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "31",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "15",
+          "defense_min_raw": "7",
+          "defense_raw": "31",
+          "defense_max_raw": "125",
+          "weight_min_raw": "0.54(0.35)t",
+          "weight_raw": "1.05t",
+          "weight_max_raw": "2.08(3.94)t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "34",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "16",
+          "defense_min_raw": "8",
+          "defense_raw": "33",
+          "defense_max_raw": "132",
+          "weight_min_raw": "0.57(0.37)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "2.18(3.08)t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "38",
+          "evasion_min_raw": "4",
+          "evasion_raw": "6",
+          "evasion_max_raw": "19",
+          "defense_min_raw": "9",
+          "defense_raw": "36",
+          "defense_max_raw": "144",
+          "weight_min_raw": "0.62(0.40)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.38(4.76)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：トビウオン からドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "ダロス1000",
+      "overview": {
+        "名称": "ダロス1000",
+        "命中": "4",
+        "回避": "4",
+        "守備": "171",
+        "重量(t)": "1.44",
+        "特性": "なし",
+        "価格(G)": "*8750",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 34
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%80%E3%83%AD%E3%82%B91000",
+        "retrieved_at": "2026-11-02T12:59:32.805539+08:00",
+        "content_hash": "sha256:0c81c1f5143466a96436bffad4497b2ae0f07c103bf1c7023e34f7d242346f18",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*8750",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "2",
+          "accuracy_raw": "4",
+          "accuracy_max_raw": "50",
+          "evasion_min_raw": "2",
+          "evasion_raw": "4",
+          "evasion_max_raw": "50",
+          "defense_min_raw": "42",
+          "defense_raw": "171",
+          "defense_max_raw": "239",
+          "weight_min_raw": "0.74(0.61)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.86(5.76)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "2",
+          "accuracy_raw": "4",
+          "accuracy_max_raw": "52",
+          "evasion_min_raw": "2",
+          "evasion_raw": "4",
+          "evasion_max_raw": "52",
+          "defense_min_raw": "44",
+          "defense_raw": "179",
+          "defense_max_raw": "250",
+          "weight_min_raw": "0.78(0.64)t",
+          "weight_raw": "1.51t",
+          "weight_max_raw": "3.00(6.22)t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "2",
+          "accuracy_raw": "4",
+          "accuracy_max_raw": "55",
+          "evasion_min_raw": "2",
+          "evasion_raw": "4",
+          "evasion_max_raw": "55",
+          "defense_min_raw": "47",
+          "defense_raw": "188",
+          "defense_max_raw": "263",
+          "weight_min_raw": "0.82(0.67)t",
+          "weight_raw": "1.58t",
+          "weight_max_raw": "3.14(6.79)t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "2",
+          "accuracy_raw": "4",
+          "accuracy_max_raw": "54(60)",
+          "evasion_min_raw": "2",
+          "evasion_raw": "4",
+          "evasion_max_raw": "54(60)",
+          "defense_min_raw": "51",
+          "defense_raw": "205",
+          "defense_max_raw": "287",
+          "weight_min_raw": "0.89(0.73)t",
+          "weight_raw": "1.72t",
+          "weight_max_raw": "3.42(7.91)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：ダイダロス からドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "ダロス3000",
+      "overview": {
+        "名称": "ダロス3000",
+        "命中": "10",
+        "回避": "10",
+        "守備": "181",
+        "重量(t)": "6.00",
+        "特性": "トリプルアタッカー",
+        "価格(G)": "*17500",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 35
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%80%E3%83%AD%E3%82%B93000",
+        "retrieved_at": "2026-11-02T12:59:34.055966+08:00",
+        "content_hash": "sha256:1db85b0d8b68cbad05c21f7c30cc76541f9e4cf0f440d1520e1531cd54bc6d40",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "トリプルアタッカー",
+      "detail_price": "*17500",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "25",
+          "defense_min_raw": "45",
+          "defense_raw": "181",
+          "defense_max_raw": "235",
+          "weight_min_raw": "3.12(1.50)t",
+          "weight_raw": "6.00t",
+          "weight_max_raw": "11.94(12.48)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "26",
+          "defense_min_raw": "47",
+          "defense_raw": "190",
+          "defense_max_raw": "247",
+          "weight_min_raw": "3.27(1.57)t",
+          "weight_raw": "6.30t",
+          "weight_max_raw": "12.53(13.48)t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "28",
+          "evasion_min_raw": "6",
+          "evasion_raw": "11",
+          "evasion_max_raw": "28",
+          "defense_min_raw": "49",
+          "defense_raw": "199",
+          "defense_max_raw": "258",
+          "weight_min_raw": "3.43(1.65)t",
+          "weight_raw": "6.60t",
+          "weight_max_raw": "13.13(14.52)t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "32",
+          "evasion_min_raw": "7",
+          "evasion_raw": "12",
+          "evasion_max_raw": "32",
+          "defense_min_raw": "54",
+          "defense_raw": "217",
+          "defense_max_raw": "282",
+          "weight_min_raw": "3.74(1.80)t",
+          "weight_raw": "7.20t",
+          "weight_max_raw": "14.32(17.13)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：エクスダイダロス からドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "サイレントダロス",
+      "overview": {
+        "名称": "サイレントダロス",
+        "命中": "10",
+        "回避": "0",
+        "守備": "65",
+        "重量(t)": "2.00",
+        "特性": "迎撃回避能力",
+        "価格(G)": "*20000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 36
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%83%80%E3%83%AD%E3%82%B9",
+        "retrieved_at": "2026-11-02T12:59:35.253685+08:00",
+        "content_hash": "sha256:c95d94551f248bd3e9af931cefeee7eedbe942ed764e9a9383b8642ddaacb88e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃回避能力",
+      "detail_price": "*20000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "25",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "97",
+          "weight_min_raw": "1.04(0.80)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.50t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "26",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "17",
+          "defense_raw": "68",
+          "defense_max_raw": "105",
+          "weight_min_raw": "1.09(0.84)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.80t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "28",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "17",
+          "defense_raw": "71",
+          "defense_max_raw": "110",
+          "weight_min_raw": "1.14(0.88)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "4.04t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "7",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "32",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "120",
+          "weight_min_raw": "1.24(0.96)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.63t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：エクスダイダロス からドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "母トロン",
+      "overview": {
+        "名称": "母トロン",
+        "命中": "50",
+        "回避": "50",
+        "守備": "240",
+        "重量(t)": "8.00",
+        "特性": "なし",
+        "価格(G)": "*80000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 37
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E6%AF%8D%E3%83%88%E3%83%AD%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:59:36.471158+08:00",
+        "content_hash": "sha256:72e29e693b5f9a310299282e05ba48518431c8941601d47f0dc79797bc4e8880",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "*80000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "25",
+          "accuracy_raw": "50",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "25",
+          "evasion_raw": "50",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "60",
+          "defense_raw": "240",
+          "defense_max_raw": "-",
+          "weight_min_raw": "4.16(0.00)t",
+          "weight_raw": "8.00t",
+          "weight_max_raw": "8.00t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "27",
+          "accuracy_raw": "52",
+          "accuracy_max_raw": "54",
+          "evasion_min_raw": "27",
+          "evasion_raw": "52",
+          "evasion_max_raw": "54",
+          "defense_min_raw": "63",
+          "defense_raw": "252",
+          "defense_max_raw": "-",
+          "weight_min_raw": "4.36(0.00)t",
+          "weight_raw": "8.40t",
+          "weight_max_raw": "9.40t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "30",
+          "accuracy_raw": "55",
+          "accuracy_max_raw": "60",
+          "evasion_min_raw": "30",
+          "evasion_raw": "55",
+          "evasion_max_raw": "60",
+          "defense_min_raw": "66",
+          "defense_raw": "264",
+          "defense_max_raw": "-",
+          "weight_min_raw": "4.57(0.00)t",
+          "weight_raw": "8.80t",
+          "weight_max_raw": "11.44t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "35",
+          "accuracy_raw": "60",
+          "accuracy_max_raw": "70",
+          "evasion_min_raw": "35",
+          "evasion_raw": "60",
+          "evasion_max_raw": "70",
+          "defense_min_raw": "72",
+          "defense_raw": "288",
+          "defense_max_raw": "-",
+          "weight_min_raw": "4.99(0.00)t",
+          "weight_raw": "9.60t",
+          "weight_max_raw": "15.36t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：母艦サウルス からドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "電撃的アミーゴ",
+      "overview": {
+        "名称": "電撃的アミーゴ",
+        "命中": "10",
+        "回避": "5",
+        "守備": "60",
+        "重量(t)": "5.50",
+        "特性": "トリプルストライク",
+        "価格(G)": "*81000",
+        "レア": "★★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 38
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E9%9B%BB%E6%92%83%E7%9A%84%E3%82%A2%E3%83%9F%E3%83%BC%E3%82%B4",
+        "retrieved_at": "2026-11-02T12:59:38.074474+08:00",
+        "content_hash": "sha256:09142c0a0b1711ca2f9acb81c9b718b233e4645ce57860e6147a34db1d82fe54",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "トリプルストライク",
+      "detail_price": "*81000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "5",
+          "evasion_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "60",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "5.50t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "11",
+          "accuracy_max_raw": "23",
+          "evasion_min_raw": "3",
+          "evasion_raw": "5",
+          "evasion_max_raw": "11",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "108",
+          "weight_min_raw": "3.14(2.05)t",
+          "weight_raw": "6.05t",
+          "weight_max_raw": "11.67t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：クエスト『 バトーのプレゼント 』報酬(4つの選択肢から選ぶ)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "バイオブレイン",
+      "overview": {
+        "名称": "バイオブレイン",
+        "命中": "12",
+        "回避": "12",
+        "守備": "75",
+        "重量(t)": "0.30",
+        "特性": "なし",
+        "価格(G)": "----",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 42
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%82%A4%E3%82%AA%E3%83%96%E3%83%AC%E3%82%A4%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:59:39.260336+08:00",
+        "content_hash": "sha256:85266a769a221ab8b859df5a54da4ad1504b86dcae4446d94f62190c9c10c403",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "なし",
+      "detail_price": "---",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "-",
+          "evasion_raw": "12",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "-",
+          "defense_raw": "75",
+          "defense_max_raw": "-",
+          "weight_min_raw": "0.30t",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "0.30t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター"],
+      "issues": []
+    },
+    {
+      "name_ja": "サンバカーニバル",
+      "overview": {
+        "名称": "サンバカーニバル",
+        "命中": "0",
+        "回避": "15",
+        "守備": "50",
+        "重量(t)": "2.00",
+        "特性": "身交わし歩行",
+        "価格(G)": "",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 43
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%90%E3%82%AB%E3%83%BC%E3%83%8B%E3%83%90%E3%83%AB",
+        "retrieved_at": "2026-11-02T12:59:40.453125+08:00",
+        "content_hash": "sha256:2cd27d2183d3b7c2704ef7c25da5f7fac250ab0a0a7dc15c8de687347832a1e2",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "身交わし歩行",
+      "detail_price": "*4000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "25",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "1.04(0.68)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.08t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター"],
+      "issues": []
+    },
+    {
+      "name_ja": "セナ2022",
+      "overview": {
+        "名称": "セナ2022",
+        "命中": "0",
+        "回避": "15",
+        "守備": "50",
+        "重量(t)": "0.30",
+        "特性": "身交わし走行",
+        "価格(G)": "*4000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 44
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BB%E3%83%8A2022",
+        "retrieved_at": "2026-11-02T12:59:41.926647+08:00",
+        "content_hash": "sha256:6e4328a3698fc8230ee4f63e08ccffca33f0a08fa6825ca36dc8f358474a8dc4",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "身交わし走行",
+      "detail_price": "*4000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "25",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "70",
+          "weight_min_raw": "0.15(0.10)t",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "0.46t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "26",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "72",
+          "weight_min_raw": "0.15(0.10)t",
+          "weight_raw": "0.31t",
+          "weight_max_raw": "0.48t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "9",
+          "evasion_raw": "16",
+          "evasion_max_raw": "28",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "77",
+          "weight_min_raw": "(0.11)t",
+          "weight_raw": "0.33t",
+          "weight_max_raw": "0.52t"
+        },
+        {
+          "stars": 3,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "11",
+          "evasion_raw": "18",
+          "evasion_max_raw": "33",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "weight_min_raw": "(0.12)t",
+          "weight_raw": "0.36t",
+          "weight_max_raw": "0.60t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：タキオンテレポーター(★0～3)(敵ざんがい:スピードキング)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ジャックアローン",
+      "overview": {
+        "名称": "ジャックアローン",
+        "命中": "15",
+        "回避": "15",
+        "守備": "120",
+        "重量(t)": "4.75",
+        "特性": "耐電仕様",
+        "価格(G)": "*7000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 45
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF%E3%82%A2%E3%83%AD%E3%83%BC%E3%83%B3",
+        "retrieved_at": "2026-11-02T12:59:43.110121+08:00",
+        "content_hash": "sha256:7e903466b38bdf925f8cddf413d1ba19d9162fe061374ad55e1ccdf02bad1e4d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "耐電仕様",
+      "detail_price": "*7000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "40",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "40",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "216",
+          "weight_min_raw": "2.47(0.61)t",
+          "weight_raw": "4.75t",
+          "weight_max_raw": "9.45(14.15)t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "42",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "42",
+          "defense_min_raw": "31",
+          "defense_raw": "126",
+          "defense_max_raw": "226",
+          "weight_min_raw": "2.58t(0.64)t",
+          "weight_raw": "4.98t",
+          "weight_max_raw": "9.91t(15.43)t"
+        },
+        {
+          "stars": 2,
+          "accuracy_min_raw": "9",
+          "accuracy_raw": "16",
+          "accuracy_max_raw": "45",
+          "evasion_min_raw": "9",
+          "evasion_raw": "16",
+          "evasion_max_raw": "45",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "237",
+          "weight_min_raw": "2.71(0.67)t",
+          "weight_raw": "5.22t",
+          "weight_max_raw": "10.38(16.80)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター(★0～3)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ヌイーゼン改",
+      "overview": {
+        "名称": "ヌイーゼン改",
+        "命中": "19",
+        "回避": "0",
+        "守備": "65",
+        "重量(t)": "4.00",
+        "特性": "バルカンラッシュ",
+        "価格(G)": "",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 46
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8C%E3%82%A4%E3%83%BC%E3%82%BC%E3%83%B3%E6%94%B9",
+        "retrieved_at": "2026-11-02T12:59:44.336676+08:00",
+        "content_hash": "sha256:ae02109011e2b4f09ee32e55483a9cf17bf28133df991543c2ea0ba608d2c852",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "バルカンラッシュ",
+      "detail_price": "*3000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "10",
+          "accuracy_raw": "19",
+          "accuracy_max_raw": "50",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "94",
+          "weight_min_raw": "2.08(1.12)t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "7.96(8.80)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：タキオンテレポーターでヌイーゼンを転送(★0)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ティターン改",
+      "overview": {
+        "名称": "ティターン改",
+        "命中": "0",
+        "回避": "0",
+        "守備": "150",
+        "重量(t)": "4.00",
+        "特性": "キャノンラッシュ",
+        "価格(G)": "*5000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 47
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%86%E3%82%A3%E3%82%BF%E3%83%BC%E3%83%B3%E6%94%B9",
+        "retrieved_at": "2026-11-02T12:59:45.555038+08:00",
+        "content_hash": "sha256:890703093529ba9d90777febd322b96b096d1c69eb38501db7a2c510177cf437",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "キャノンラッシュ",
+      "detail_price": "*5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "-",
+          "accuracy_raw": "0",
+          "accuracy_max_raw": "-",
+          "evasion_min_raw": "-",
+          "evasion_raw": "0",
+          "evasion_max_raw": "-",
+          "defense_min_raw": "37",
+          "defense_raw": "150",
+          "defense_max_raw": "255",
+          "weight_min_raw": "2.20t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "5.68t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：タキオンテレポーターでティターンを転送(★0)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "アポロニア改",
+      "overview": {
+        "名称": "アポロニア改",
+        "命中": "15",
+        "回避": "15",
+        "守備": "100",
+        "重量(t)": "4.50",
+        "特性": "S-Eラッシュ",
+        "価格(G)": "",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 48
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%8B%E3%82%A2%E6%94%B9",
+        "retrieved_at": "2026-11-02T12:59:46.758970+08:00",
+        "content_hash": "sha256:c7bb7fe6dc238b5d02d1b3fe673535d640774307f199ced37cab52854dc33758",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "S-Eラッシュ",
+      "detail_price": "*5000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "8",
+          "accuracy_raw": "15",
+          "accuracy_max_raw": "40",
+          "evasion_min_raw": "8",
+          "evasion_raw": "15",
+          "evasion_max_raw": "40",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "200",
+          "weight_min_raw": "2.34(0.58)t",
+          "weight_raw": "4.50t",
+          "weight_max_raw": "8.95(13.95)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーターでアポロニアを送る"],
+      "issues": []
+    },
+    {
+      "name_ja": "クレオパトラ改",
+      "overview": {
+        "名称": "クレオパトラ改",
+        "命中": "12",
+        "回避": "12",
+        "守備": "95",
+        "重量(t)": "0.25",
+        "特性": "迎撃回避能力",
+        "価格(G)": "",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 49
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AF%E3%83%AC%E3%82%AA%E3%83%91%E3%83%88%E3%83%A9%E6%94%B9",
+        "retrieved_at": "2026-11-02T12:59:48.026642+08:00",
+        "content_hash": "sha256:1cf50db0e5515a94eb99fa2a9815b547ecab2c162dc7011858fa6fb3d90c4659",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃回避能力",
+      "detail_price": "*6250",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "6",
+          "accuracy_raw": "12",
+          "accuracy_max_raw": "36",
+          "evasion_min_raw": "6",
+          "evasion_raw": "12",
+          "evasion_max_raw": "36",
+          "defense_min_raw": "23",
+          "defense_raw": "95",
+          "defense_max_raw": "114",
+          "weight_min_raw": "0.12(0.04)t",
+          "weight_raw": "0.25t",
+          "weight_max_raw": "0.50(0.64)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーターでクレオパトラを転送"],
+      "issues": []
+    },
+    {
+      "name_ja": "プルート改",
+      "overview": {
+        "名称": "プルート改",
+        "命中": "10",
+        "回避": "10",
+        "守備": "85",
+        "重量(t)": "0.90",
+        "特性": "迎撃能力",
+        "価格(G)": "",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 8,
+        "row_index": 50
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%97%E3%83%AB%E3%83%BC%E3%83%88%E6%94%B9",
+        "retrieved_at": "2026-11-02T12:59:49.240747+08:00",
+        "content_hash": "sha256:3233d960dbcfcdd7f27955b74ae7324fb6086f5b4837e2d68fc9689ef7968c47",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "detail_trait": "迎撃能力",
+      "detail_price": "*2000",
+      "modifications": [
+        {
+          "stars": 0,
+          "accuracy_min_raw": "",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "",
+          "evasion_min_raw": "",
+          "evasion_raw": "10",
+          "evasion_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "85",
+          "defense_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "0.90t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "accuracy_min_raw": "5",
+          "accuracy_raw": "10",
+          "accuracy_max_raw": "31",
+          "evasion_min_raw": "5",
+          "evasion_raw": "10",
+          "evasion_max_raw": "52",
+          "defense_min_raw": "22",
+          "defense_raw": "89",
+          "defense_max_raw": "115",
+          "weight_min_raw": "0.48(0.23)t",
+          "weight_raw": "0.94t",
+          "weight_max_raw": "1.87(2.88)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：プルートをタキオンテレポーターで転送(★1)"],
+      "issues": []
+    }
+  ],
+  "traits": [
+    {
+      "name_ja": "身交わし走行",
+      "effect_ja": "身交わし率約2%",
+      "limits_ja": "重複不可、身交わし歩行が優先される",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 0
+      }
+    },
+    {
+      "name_ja": "身交わし歩行",
+      "effect_ja": "身交わし率約4.5%",
+      "limits_ja": "重複不可",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 1
+      }
+    },
+    {
+      "name_ja": "耐電仕様",
+      "effect_ja": "電気耐性1.5倍",
+      "limits_ja": "",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 6
+      }
+    },
+    {
+      "name_ja": "アース装着",
+      "effect_ja": "電気攻撃ほぼ無効",
+      "limits_ja": "電気耐性1.95倍",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 7
+      }
+    },
+    {
+      "name_ja": "会心の一発",
+      "effect_ja": "会心率2倍",
+      "limits_ja": "穴1にのみ適用、重複可能",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 9
+      }
+    },
+    {
+      "name_ja": "ダブルストライク",
+      "effect_ja": "穴1に装備している武器の連射数が1回増加",
+      "limits_ja": "使用弾数は変わらない 一部の火炎属性武器には無効",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 10
+      }
+    },
+    {
+      "name_ja": "トリプルストライク",
+      "effect_ja": "穴1に装備している武器の連射数が2回増加",
+      "limits_ja": "使用弾数は変わらない 一部の火炎属性武器には無効",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 11
+      }
+    },
+    {
+      "name_ja": "キャノンラッシュ",
+      "effect_ja": "大砲タイプの武器を一斉に発射",
+      "limits_ja": "コマンド追加 他タイプにも一部対応武器がある",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 12
+      }
+    },
+    {
+      "name_ja": "バルカンラッシュ",
+      "effect_ja": "機銃タイプの武器を一斉に発射",
+      "limits_ja": "コマンド追加 他タイプにも一部対応武器がある",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 13
+      }
+    },
+    {
+      "name_ja": "S-Eラッシュ",
+      "effect_ja": "S-Eタイプの武器を一斉に発射",
+      "limits_ja": "コマンド追加 他タイプにも一部対応武器がある",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 14
+      }
+    },
+    {
+      "name_ja": "ダーティラッシュ",
+      "effect_ja": "ランダムで武器を2～4連射する",
+      "limits_ja": "コマンド追加 攻撃に使える状態の武器のみを使用",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 15
+      }
+    },
+    {
+      "name_ja": "トリプルラッシュ",
+      "effect_ja": "穴1、穴2、穴3の武器を一斉に発射",
+      "limits_ja": "コマンド追加",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 17
+      }
+    },
+    {
+      "name_ja": "ダブルアタッカー",
+      "effect_ja": "穴1の武器を一度で2連射する",
+      "limits_ja": "コマンド追加(ダブルショット) 使用弾数2倍",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 18
+      }
+    },
+    {
+      "name_ja": "トリプルアタッカー",
+      "effect_ja": "穴1の武器を一度で3連射する",
+      "limits_ja": "コマンド追加(トリプルショット) 使用弾数3倍",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 19
+      }
+    },
+    {
+      "name_ja": "対空能力",
+      "effect_ja": "空中の敵への攻撃を当てやすくする",
+      "limits_ja": "カミカゼ系等にも有効 対空能力が適用されない武器が存在する",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 20
+      }
+    },
+    {
+      "name_ja": "迎撃能力",
+      "effect_ja": "迎撃機能を持つ武器で敵の弾を撃ち落とす",
+      "limits_ja": "通常・電気・ビーム属性の一部が対応 使用の優先順位は1:通常 2:ビーム 3:電気 同じ順位の武器があると穴番号が若いものを優先 火炎・冷気・音波・ガス属性には対応武器なし",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 21
+      }
+    },
+    {
+      "name_ja": "迎撃補助",
+      "effect_ja": "迎撃発動確率上昇",
+      "limits_ja": "",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 22
+      }
+    },
+    {
+      "name_ja": "迎撃回避能力",
+      "effect_ja": "穴1に装備している武器の攻撃が迎撃されない",
+      "limits_ja": "バグで対空能力と同等の能力になっている模様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-c-units",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T12:58:49.190503+08:00",
+        "content_hash": "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "table_index": 11,
+        "row_index": 23
+      }
+    }
+  ],
+  "mechanics_ref": {
+    "source_id": "metalmaniax-mm2r",
+    "target_id": "maniax-c-units",
+    "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/C%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%81%AE%E5%91%BD%E4%B8%AD%E3%83%BB%E5%9B%9E%E9%81%BF%E3%81%AE%E8%AC%8E",
+    "retrieved_at": "2026-11-02T12:59:50.541701+08:00",
+    "content_hash": "sha256:36b94394ac55bd259304f12b649d7de66cdd34181a6e1e9cf2478d46fd003f9b",
+    "table_index": 2,
+    "row_index": 0
+  },
+  "omitted": ["LOVE 机器 3131/3132/3133：配方合并行尚未建立独立事实条目"]
+}

@@ -24,9 +24,15 @@ def retrieve_equipment(question: str, *, limit: int = 4) -> list[EquipmentRecord
         exact = any(normalize("NFKC", name).casefold() in query for name in names)
         title_hits = len(terms & _terms(" ".join(names)))
         body_hits = len(terms & _terms(equipment_text(record)))
-        type_hit = ("主炮" in query and record.kind == "main_cannon") or (
-            (re.search(r"\bs[\s-]?e\b", query) is not None or "特殊装备" in query)
-            and record.kind == "special_equipment"
+        type_hit = (
+            ("主炮" in query and record.kind == "main_cannon")
+            or (
+                (re.search(r"\bs[\s-]?e\b", query) is not None or "特殊装备" in query)
+                and record.kind == "special_equipment"
+            )
+            or (
+                (re.search(r"c\s*装置|c\s*ユニット", query) is not None) and record.kind == "c_unit"
+            )
         )
         score = 30 * exact + 4 * title_hits + body_hits + 2 * type_hit
         if score > 0:

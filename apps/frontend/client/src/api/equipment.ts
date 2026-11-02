@@ -34,6 +34,7 @@ export const equipmentPageSchema = z.object({
     z.number().int().nonnegative(),
   ),
   elements: z.array(z.string()),
+  traits: z.array(z.string()),
   pagination: z.object({
     page: z.number().int().positive(),
     pageSize: z.number().int().positive(),
@@ -53,7 +54,10 @@ export function toSearchResult(entry: EquipmentEntry): SearchResult {
     kind: 'entity',
     name: entry.name,
     aliases: entry.names.aliases,
-    summary: ['attack_raw', 'range_raw', 'acquisition_raw']
+    summary: (entry.type === 'c-unit'
+      ? ['trait_name_raw', 'trait_activation_raw', 'acquisition_raw']
+      : ['attack_raw', 'range_raw', 'acquisition_raw']
+    )
       .map((key) => {
         const value = entry.attributes[key]
         return value !== undefined && entry.type === 'special-equipment'

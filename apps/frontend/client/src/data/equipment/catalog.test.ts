@@ -75,7 +75,7 @@ describe('equipment catalog', () => {
   it('返回完整的装备目录', () => {
     const catalog = getEquipmentCatalog()
 
-    expect(catalog).toHaveLength(239)
+    expect(catalog).toHaveLength(287)
     expect(
       catalog.filter((record) => record.kind === 'human_weapon'),
     ).toHaveLength(55)
@@ -266,7 +266,7 @@ describe('equipment catalog', () => {
   it('转换全部真实装备记录', () => {
     const entries = getEquipmentEntries()
 
-    expect(entries).toHaveLength(239)
+    expect(entries).toHaveLength(287)
     expect(entries.every((entry) => entry.name.length > 0)).toBe(true)
     expect(
       entries.filter((entry) => entry.type === 'human-weapon'),

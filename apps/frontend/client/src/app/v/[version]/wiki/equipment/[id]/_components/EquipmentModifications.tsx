@@ -1,9 +1,16 @@
 import type { EquipmentEntry } from '@/types/equipment'
 
-const fields = [
+const weaponFields = [
   { label: '攻击力', initial: 'attack_raw', maximum: 'attack_max_raw' },
   { label: '防御力', initial: 'defense_raw', maximum: 'defense_max_raw' },
   { label: '弹仓', initial: 'magazine_raw', maximum: 'magazine_max_raw' },
+  { label: '重量（t）', initial: 'weight_raw', maximum: 'weight_max_raw' },
+] as const
+
+const controlFields = [
+  { label: '面板命中', initial: 'accuracy_raw', maximum: 'accuracy_max_raw' },
+  { label: '面板回避', initial: 'evasion_raw', maximum: 'evasion_max_raw' },
+  { label: '防御力', initial: 'defense_raw', maximum: 'defense_max_raw' },
   { label: '重量（t）', initial: 'weight_raw', maximum: 'weight_max_raw' },
 ] as const
 
@@ -13,7 +20,24 @@ function displayValue(value: string) {
 }
 
 export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
-  const modifications = entry.modifications ?? []
+  const modifications =
+    entry.type === 'c-unit'
+      ? (entry.control_modifications ?? []).map((item) => ({
+          stars: item.stars,
+          rows: controlFields.map((field) => ({
+            label: field.label,
+            initial: item[field.initial],
+            maximum: item[field.maximum],
+          })),
+        }))
+      : (entry.modifications ?? []).map((item) => ({
+          stars: item.stars,
+          rows: weaponFields.map((field) => ({
+            label: field.label,
+            initial: item[field.initial],
+            maximum: item[field.maximum],
+          })),
+        }))
   if (modifications.length === 0) return null
   const stars = entry.attributes.obtainable_stars_raw
   const obtainableStars =
@@ -28,7 +52,7 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
         星级与改造
       </h2>
       <p className="text-muted-foreground mt-3 text-sm leading-6">
-        下表为来源记录的普通改造范围，不含超改造。各项上限分别列出，重量上限不代表仅提高攻击力后的重量。
+        下表为来源记录的普通改造范围，不含超改造。各项上限分别列出，不能拼成同一套改造配置；括号内数值保留来源原记法。
       </p>
       <div className="mt-6 grid min-w-0 gap-6 sm:grid-cols-2">
         {modifications.map((modification) => {
@@ -67,16 +91,16 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {fields.map((field) => (
-                    <tr key={field.initial} className="border-border border-b">
+                  {modification.rows.map((row) => (
+                    <tr key={row.label} className="border-border border-b">
                       <th className="py-3 pr-2 font-normal" scope="row">
-                        {field.label}
+                        {row.label}
                       </th>
                       <td className="py-3 pr-2 break-words">
-                        {displayValue(modification[field.initial])}
+                        {displayValue(row.initial)}
                       </td>
                       <td className="py-3 break-words">
-                        {displayValue(modification[field.maximum])}
+                        {displayValue(row.maximum)}
                       </td>
                     </tr>
                   ))}

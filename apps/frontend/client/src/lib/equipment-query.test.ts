@@ -64,6 +64,7 @@ function makeQuery(overrides: Partial<EquipmentQuery> = {}): EquipmentQuery {
     q: '',
     sort: 'name-asc',
     element: '',
+    trait: '',
     profession: '',
     ...overrides,
   }
@@ -82,6 +83,7 @@ describe('equipment query', () => {
       q: '',
       sort: 'name-asc',
       element: '',
+      trait: '',
       profession: '',
     })
   })
@@ -177,6 +179,7 @@ describe('equipment query', () => {
       q: '炮',
       sort: 'name-asc',
       element: '通常',
+      trait: '',
       profession: '',
     })
   })

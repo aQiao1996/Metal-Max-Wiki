@@ -45,6 +45,15 @@ _ATTRIBUTE_LABELS = {
     "acquisition_ja_raw": "获取地点原始记录（日文）",
     "obtainable_stars_raw": "来源标注可获取星级",
     "source_difference_raw": "同星级来源数值差异（尚待核对）",
+    "accuracy_raw": "面板命中（不等于实际命中率）",
+    "evasion_raw": "面板回避（不等于实际闪避率）",
+    "trait_name_raw": "特性名称（中文参考）",
+    "trait_raw": "特性原名",
+    "trait_activation_raw": "生效方式",
+    "trait_effect_raw": "特性作用",
+    "trait_limits_raw": "特性限制",
+    "mechanics_note_raw": "面板效果验证说明",
+    "availability_raw": "获取限制",
 }
 _PROFESSION_LABELS = {
     "hunter": "猎人",
@@ -69,8 +78,12 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             for key, label in _PROFESSION_LABELS.items()
             if record.attributes.get(f"{key}_raw") == "○"
         )
-    if record.kind == "special_equipment":
+    if record.kind in ("special_equipment", "c_unit"):
         facts["名称说明"] = "中文参考译名，未核对 0.99 实机名称"
+        facts["改造说明"] = (
+            "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
+        )
+    if record.kind == "special_equipment":
         if "range_raw" in record.attributes:
             facts["攻击方式"] = (
                 str(record.attributes["range_raw"])
@@ -88,8 +101,17 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             )
             or "来源未提供改造数值"
         )
-        facts["改造说明"] = (
-            "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
+    if record.kind == "c_unit":
+        facts["逐星级普通改造"] = (
+            "；".join(
+                f"{item.stars} 星：面板命中 {item.accuracy_raw or '未收录'} → "
+                f"{item.accuracy_max_raw or '未收录'}，面板回避 {item.evasion_raw or '未收录'} → "
+                f"{item.evasion_max_raw or '未收录'}，防御 {item.defense_raw} → "
+                f"{item.defense_max_raw or '未收录'}，重量 {item.weight_raw} → "
+                f"{item.weight_max_raw or '未收录'}"
+                for item in record.control_modifications
+            )
+            or "来源未提供改造数值"
         )
     return facts
 
@@ -135,6 +157,7 @@ def list_equipment(
     equipment_type: EquipmentType | None = None,
     q: str = "",
     element: str = "",
+    trait: str = "",
     profession: EquipmentProfession | None = None,
     sort: EquipmentSort = "name-asc",
     page: int = 1,
@@ -149,11 +172,15 @@ def list_equipment(
     elements = sorted(
         {str(r.attributes["element_raw"]) for r in typed if "element_raw" in r.attributes}
     )
+    traits = sorted(
+        {str(r.attributes["trait_name_raw"]) for r in typed if "trait_name_raw" in r.attributes}
+    )
     filtered = [
         r
         for r in typed
         if (not query or query in equipment_text(r))
         and (not element or r.attributes.get("element_raw") == element)
+        and (not trait or r.attributes.get("trait_name_raw") == trait)
         and (profession is None or r.attributes.get(f"{profession}_raw") == "○")
     ]
     if sort == "name-asc":
@@ -176,6 +203,7 @@ def list_equipment(
         pagination=PaginationMeta.create(page=page, page_size=page_size, total=len(filtered)),
         type_counts=type_counts,
         elements=elements,
+        traits=traits,
     )
 
 

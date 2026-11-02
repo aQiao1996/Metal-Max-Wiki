@@ -21,18 +21,20 @@ async def equipment_list(
     equipment_type: Annotated[EquipmentType | None, Query(alias="type")] = None,
     q: Annotated[str, Query(max_length=100)] = "",
     element: Annotated[str, Query(max_length=40)] = "",
+    trait: Annotated[str, Query(max_length=40)] = "",
     profession: EquipmentProfession | None = None,
     sort: EquipmentSort = "name-asc",
     page: Annotated[int, Query(ge=1, le=10000)] = 1,
     page_size: Annotated[int, Query(alias="pageSize", ge=1, le=100)] = 20,
 ) -> ApiResponse[EquipmentListData]:
-    """按类型、名称、属性与职业筛选装备。"""
+    """按类型、名称、属性、特性与职业筛选装备。"""
     return ApiResponse(
         data=list_equipment(
             version,
             equipment_type=equipment_type,
             q=q,
             element=element,
+            trait=trait,
             profession=profession,
             sort=sort,
             page=page,

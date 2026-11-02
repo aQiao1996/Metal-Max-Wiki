@@ -109,7 +109,7 @@ export default async function VersionHomePage({
                 {getEquipmentEntries().length}
               </span>
               <span className="mt-3 block">
-                人类武器、主炮与 S-E · 可追溯来源
+                人类武器、主炮、S-E 与 C 装置 · 可追溯来源
               </span>
             </div>
           </div>

@@ -56,15 +56,32 @@ class EquipmentModification(CamelModel):
     weight_max_raw: str
 
 
+class ControlModification(CamelModel):
+    stars: int = Field(ge=0, le=3)
+    accuracy_min_raw: str
+    accuracy_raw: str
+    accuracy_max_raw: str
+    evasion_min_raw: str
+    evasion_raw: str
+    evasion_max_raw: str
+    defense_min_raw: str
+    defense_raw: str
+    defense_max_raw: str
+    weight_min_raw: str
+    weight_raw: str
+    weight_max_raw: str
+
+
 class EquipmentRecord(CamelModel):
     id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
     game: Literal["mm2r"]
     target_version: Literal["0.99"]
     domain: Literal["equipment"]
-    kind: Literal["human_weapon", "main_cannon", "special_equipment"]
+    kind: Literal["human_weapon", "main_cannon", "special_equipment", "c_unit"]
     names: EquipmentNames
     attributes: dict[str, str | int | float]
     modifications: list[EquipmentModification] = Field(default_factory=list)
+    control_modifications: list[ControlModification] = Field(default_factory=list)
     version_scope: list[str]
     verification_status: Literal["source_only", "compatible_candidate"]
     source_refs: list[EquipmentSource] = Field(min_length=1)
@@ -90,6 +107,7 @@ class EquipmentRecord(CamelModel):
             "human_weapon": "human-weapon",
             "main_cannon": "main-cannon",
             "special_equipment": "special-equipment",
+            "c_unit": "c-unit",
         }
         return types[self.kind]
 
@@ -117,4 +135,5 @@ class EquipmentListData(CamelModel):
     pagination: PaginationMeta
     type_counts: dict[EquipmentType, int]
     elements: list[str]
+    traits: list[str] = Field(default_factory=list)
     list: list[EquipmentRecord]

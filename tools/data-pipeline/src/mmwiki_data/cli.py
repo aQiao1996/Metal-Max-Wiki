@@ -11,6 +11,7 @@ import httpx
 from pydantic import BaseModel, ValidationError
 
 from mmwiki_data.asset_pipeline import AssetPipelineError, audit_assets, fetch_assets
+from mmwiki_data.c_units import collect_c_units, load_c_units
 from mmwiki_data.fetcher import FetchError, fetch
 from mmwiki_data.models import (
     CandidateSnapshot,
@@ -170,6 +171,10 @@ def audit(repo_root: Path) -> list[str]:
         load_special_equipment(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid S-E source: {error}")
+    try:
+        load_c_units(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid C-unit source: {error}")
     return errors
 
 
@@ -220,13 +225,14 @@ def _load_normalization_snapshots(repo_root: Path) -> list[CandidateSnapshot]:
 def normalize(repo_root: Path) -> dict[str, object]:
     """将完整候选集合写入确定性的 interim 数据包。"""
     result = normalize_snapshots(_load_normalization_snapshots(repo_root))
-    special_equipment = load_special_equipment(repo_root)
-    if special_equipment is not None:
+    for supplement in (load_special_equipment(repo_root), load_c_units(repo_root)):
+        if supplement is None:
+            continue
         equipment = result.bundles["equipment"]
         result.bundles["equipment"] = NormalizedBundle(
             domain="equipment",
-            records=sorted([*equipment.records, *special_equipment.records], key=lambda r: r.id),
-            source_hashes=[*equipment.source_hashes, *special_equipment.source_hashes],
+            records=sorted([*equipment.records, *supplement.records], key=lambda r: r.id),
+            source_hashes=[*equipment.source_hashes, *supplement.source_hashes],
         )
     output_root = repo_root / "data" / "interim" / "mm2r" / "0.99"
     output_values: dict[Path, BaseModel] = {
@@ -260,6 +266,7 @@ def _build_parser() -> argparse.ArgumentParser:
     for command in (
         "collect",
         "collect-special-equipment",
+        "collect-c-units",
         "audit",
         "normalize",
         "asset-audit",
@@ -280,6 +287,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-c-units":
+            c_unit_summary = collect_c_units(arguments.repo_root.resolve())
+            print(json.dumps(c_unit_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-special-equipment":
             se_summary = collect_special_equipment(arguments.repo_root.resolve())
             print(json.dumps(se_summary, ensure_ascii=False, indent=2))

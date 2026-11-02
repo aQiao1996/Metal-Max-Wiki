@@ -77,16 +77,40 @@ const modificationSchema = z
   })
   .strict()
 
+const controlModificationSchema = modificationSchema
+  .omit({
+    attack_min_raw: true,
+    attack_raw: true,
+    attack_max_raw: true,
+    magazine_min_raw: true,
+    magazine_raw: true,
+    magazine_max_raw: true,
+  })
+  .extend({
+    accuracy_min_raw: z.string(),
+    accuracy_raw: z.string(),
+    accuracy_max_raw: z.string(),
+    evasion_min_raw: z.string(),
+    evasion_raw: z.string(),
+    evasion_max_raw: z.string(),
+  })
+
 export const rawEquipmentRecordSchema = z
   .object({
     id: equipmentIdSchema,
     game: z.literal('mm2r'),
     target_version: z.literal('0.99'),
     domain: z.literal('equipment'),
-    kind: z.enum(['human_weapon', 'main_cannon', 'special_equipment']),
+    kind: z.enum([
+      'human_weapon',
+      'main_cannon',
+      'special_equipment',
+      'c_unit',
+    ]),
     names: equipmentNamesSchema,
     attributes: z.record(z.string(), z.union([z.string(), z.number()])),
     modifications: z.array(modificationSchema).optional(),
+    control_modifications: z.array(controlModificationSchema).optional(),
     version_scope: z.array(nonEmptyStringSchema),
     verification_status: interimVerificationStatusSchema,
     source_refs: z.array(equipmentSourceRefSchema).min(1),

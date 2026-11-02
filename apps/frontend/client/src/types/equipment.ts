@@ -26,6 +26,7 @@ export interface EquipmentQuery {
   q: string
   sort: EquipmentSort
   element: string
+  trait: string
   profession: string
 }
 

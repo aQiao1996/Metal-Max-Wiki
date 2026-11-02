@@ -115,3 +115,9 @@ targets:
     url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A
     output: maniax-special-equipment.json
     collect: false
+  - id: maniax-c-units
+    source_id: metalmaniax-mm2r
+    category: equipment
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A
+    output: maniax-c-units.json
+    collect: false

@@ -57,11 +57,11 @@ export const equipmentTypes = [
   },
   {
     id: 'c-unit',
-    kind: null,
+    kind: 'c_unit',
     label: 'C装置',
-    description: '战车的控制与性能核心。',
-    emptyMessage: '该分类已保留，资料待录入。',
-    sorts: ['name-asc'],
+    description: '按特性选择控制装置，查看主动指令、被动效果与逐星级改造数值。',
+    emptyMessage: '暂无 C 装置资料。',
+    sorts: ['name-asc', 'weight-asc', 'price-asc'],
   },
   {
     id: 'engine',

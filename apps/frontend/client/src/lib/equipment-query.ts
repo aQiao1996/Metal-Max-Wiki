@@ -53,7 +53,9 @@ export function parseEquipmentQuery(
     type,
     q: firstValue(params.q)?.trim() ?? '',
     sort: isAllowedSort(sortValue, config.sorts) ? sortValue : 'name-asc',
-    element: firstValue(params.element)?.trim() ?? '',
+    element:
+      type === 'c-unit' ? '' : (firstValue(params.element)?.trim() ?? ''),
+    trait: type === 'c-unit' ? (firstValue(params.trait)?.trim() ?? '') : '',
     profession:
       type === 'human-weapon' && isProfession(professionValue)
         ? professionValue
@@ -126,6 +128,9 @@ export function filterEquipmentEntries(
     ) {
       return false
     }
+    if (query.trait !== '' && entry.attributes.trait_name_raw !== query.trait) {
+      return false
+    }
 
     return (
       professionConfig === undefined ||
@@ -173,6 +178,9 @@ export function buildEquipmentSearch(query: EquipmentQuery): string {
 
   if (query.element !== '') {
     params.set('element', query.element)
+  }
+  if (query.type === 'c-unit' && query.trait !== '') {
+    params.set('trait', query.trait)
   }
 
   if (query.type === 'human-weapon' && query.profession !== '') {
