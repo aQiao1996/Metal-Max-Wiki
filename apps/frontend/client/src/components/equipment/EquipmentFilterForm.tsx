@@ -34,6 +34,7 @@ export function EquipmentFilterForm({
   }
 
   const action = `/v/${version}/wiki/equipment`
+  const hasTraits = query.type === 'c-unit' || query.type === 'engine'
 
   return (
     <form
@@ -63,23 +64,19 @@ export function EquipmentFilterForm({
 
       <div className="min-w-0">
         <label
-          htmlFor={
-            query.type === 'c-unit' ? 'equipment-trait' : 'equipment-element'
-          }
+          htmlFor={hasTraits ? 'equipment-trait' : 'equipment-element'}
           className="mb-1.5 block text-xs font-medium text-[var(--mm-navy)]"
         >
-          {query.type === 'c-unit' ? '特性' : '属性'}
+          {hasTraits ? '特性' : '属性'}
         </label>
         <select
-          id={query.type === 'c-unit' ? 'equipment-trait' : 'equipment-element'}
-          name={query.type === 'c-unit' ? 'trait' : 'element'}
-          defaultValue={query.type === 'c-unit' ? query.trait : query.element}
+          id={hasTraits ? 'equipment-trait' : 'equipment-element'}
+          name={hasTraits ? 'trait' : 'element'}
+          defaultValue={hasTraits ? query.trait : query.element}
           className={controlClassName}
         >
-          <option value="">
-            {query.type === 'c-unit' ? '全部特性' : '全部属性'}
-          </option>
-          {(query.type === 'c-unit' ? traits : elements).map((element) => (
+          <option value="">{hasTraits ? '全部特性' : '全部属性'}</option>
+          {(hasTraits ? traits : elements).map((element) => (
             <option key={element} value={element}>
               {query.type === 'special-equipment' &&
               formatSpecialEquipmentValue('element_raw', element) !== element

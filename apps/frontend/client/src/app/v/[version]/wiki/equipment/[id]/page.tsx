@@ -18,6 +18,7 @@ import { AttributeTable } from '@/components/wiki/AttributeTable'
 
 import { EquipmentReturnLink } from './_components/EquipmentReturnLink'
 import { EquipmentModifications } from './_components/EquipmentModifications'
+import { EngineUpgrades } from './_components/EngineUpgrades'
 import {
   buildEquipmentDetailAttributes,
   equipmentIssueLabels,
@@ -151,8 +152,16 @@ export default async function EquipmentDetailPage({
       <div className="mt-9 grid min-w-0 gap-12 xl:grid-cols-[minmax(0,1fr)_19rem] xl:items-start">
         <div className="min-w-0 space-y-10">
           <AttributeTable attributes={attributes} />
+          <EngineUpgrades entry={entry} version={version.slug} />
           <EquipmentModifications entry={entry} />
-          <EquipmentSourceReferences sources={entry.source_refs} />
+          <EquipmentSourceReferences
+            sources={entry.source_refs}
+            calculationSource={
+              typeof entry.attributes.trait_calculation_source_raw === 'string'
+                ? entry.attributes.trait_calculation_source_raw
+                : undefined
+            }
+          />
         </div>
 
         <aside className="min-w-0 space-y-8 xl:sticky xl:top-24">

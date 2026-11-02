@@ -39,4 +39,4 @@ sources:
     license: NOASSERTION
     usage: cross-check-only
     attribution: METAL MAniaX contributors
-    notes: 只提取 S-E、C 装置数值表、特性和获取地点事实，保留逐页出处；不保存整页正文、攻略评论或图片
+    notes: 只提取 S-E、C 装置和引擎数值表、特性及获取地点事实，保留逐页出处；不保存整页正文、攻略评论或图片

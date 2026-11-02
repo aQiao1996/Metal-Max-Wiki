@@ -65,11 +65,11 @@ export const equipmentTypes = [
   },
   {
     id: 'engine',
-    kind: null,
+    kind: 'engine',
     label: '引擎',
-    description: '决定战车载重能力的动力装置。',
-    emptyMessage: '该分类已保留，资料待录入。',
-    sorts: ['name-asc'],
+    description: '查看基础载重、特性条件、逐星级数值与马力强化路径。',
+    emptyMessage: '暂无引擎资料。',
+    sorts: ['name-asc', 'capacity-desc', 'weight-asc', 'price-asc'],
   },
 ] as const satisfies readonly EquipmentTypeConfig[]
 
@@ -135,6 +135,7 @@ export function getLegacyEquipmentType(
 export const equipmentSortLabels = {
   'name-asc': '名称升序',
   'attack-desc': '攻击力降序',
+  'capacity-desc': '基础载重降序',
   'price-asc': '价格升序',
   'weight-asc': '重量升序',
 } as const satisfies Record<EquipmentSort, string>

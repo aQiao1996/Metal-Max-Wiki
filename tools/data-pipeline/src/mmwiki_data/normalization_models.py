@@ -147,6 +147,19 @@ class ControlModification(StrictModel):
     weight_max_raw: str
 
 
+class EngineModification(StrictModel):
+    """同型号引擎的逐星级载重与防御、重量改造值。"""
+
+    stars: int = Field(ge=0, le=3)
+    capacity_raw: str
+    defense_min_raw: str
+    defense_raw: str
+    defense_max_raw: str
+    weight_min_raw: str
+    weight_raw: str
+    weight_max_raw: str
+
+
 class NormalizedRecord(StrictModel):
     """尚待本机版本核验的标准化领域记录。"""
 
@@ -161,6 +174,9 @@ class NormalizedRecord(StrictModel):
         default_factory=list, exclude_if=lambda value: not value
     )
     control_modifications: list[ControlModification] = Field(
+        default_factory=list, exclude_if=lambda value: not value
+    )
+    engine_modifications: list[EngineModification] = Field(
         default_factory=list, exclude_if=lambda value: not value
     )
     version_scope: list[str] = Field(default_factory=list)

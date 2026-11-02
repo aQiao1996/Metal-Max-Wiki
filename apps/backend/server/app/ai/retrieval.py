@@ -33,6 +33,7 @@ def retrieve_equipment(question: str, *, limit: int = 4) -> list[EquipmentRecord
             or (
                 (re.search(r"c\s*装置|c\s*ユニット", query) is not None) and record.kind == "c_unit"
             )
+            or (("引擎" in query or "涡轮" in query) and record.kind == "engine")
         )
         score = 30 * exact + 4 * title_hits + body_hits + 2 * type_hit
         if score > 0:

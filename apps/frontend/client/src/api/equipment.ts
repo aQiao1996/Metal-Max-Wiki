@@ -56,10 +56,14 @@ export function toSearchResult(entry: EquipmentEntry): SearchResult {
     aliases: entry.names.aliases,
     summary: (entry.type === 'c-unit'
       ? ['trait_name_raw', 'trait_activation_raw', 'acquisition_raw']
-      : ['attack_raw', 'range_raw', 'acquisition_raw']
+      : entry.type === 'engine'
+        ? ['capacity_raw', 'trait_name_raw', 'acquisition_raw']
+        : ['attack_raw', 'range_raw', 'acquisition_raw']
     )
       .map((key) => {
         const value = entry.attributes[key]
+        if (key === 'capacity_raw' && value !== undefined)
+          return `基础载重 ${value}t`
         return value !== undefined && entry.type === 'special-equipment'
           ? formatSpecialEquipmentValue(key, value)
           : value

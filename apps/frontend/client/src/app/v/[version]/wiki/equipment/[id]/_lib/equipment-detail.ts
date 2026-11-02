@@ -84,6 +84,27 @@ const cUnitFields = [
   { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
 ] as const
 
+const engineFields = [
+  { key: 'stat_condition_raw', label: '数值条件' },
+  { key: 'capacity_raw', label: '当前型号基础载重（t）' },
+  { key: 'capacity_note_raw', label: '载重说明' },
+  { key: 'trait_name_raw', label: '特性（中文参考）' },
+  { key: 'trait_raw', label: '特性原名' },
+  { key: 'trait_activation_raw', label: '生效方式' },
+  { key: 'trait_effect_raw', label: '特性作用' },
+  { key: 'trait_limits_raw', label: '生效限制' },
+  { key: 'defense_raw', label: '初始防御力' },
+  { key: 'weight_raw', label: '初始重量（t）' },
+  { key: 'price_raw', label: '价格（* 为卖价）' },
+  { key: 'rarity_raw', label: '来源星级标记' },
+  { key: 'rental_stars_raw', label: '仅见租赁装备的星级' },
+  { key: 'acquisition_raw', label: '获取方式' },
+  { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
+  { key: 'upgrade_note_raw', label: '马力强化限制' },
+  { key: 'notes_raw', label: '使用备注' },
+  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+] as const
+
 function toProfessionDisplayValue(value: string | number): string {
   if (value === '○') {
     return '可装备'
@@ -107,7 +128,9 @@ export function buildEquipmentDetailAttributes(
         ? specialEquipmentFields
         : entry.type === 'c-unit'
           ? cUnitFields
-          : mainCannonFields
+          : entry.type === 'engine'
+            ? engineFields
+            : mainCannonFields
   const attributes: WikiAttribute[] = []
 
   for (const field of fields) {

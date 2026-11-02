@@ -4,11 +4,19 @@ import type { EquipmentEntry } from '@/types/equipment'
 
 interface EquipmentSourceReferencesProps {
   sources: EquipmentEntry['source_refs']
+  calculationSource?: string
 }
 
 export function EquipmentSourceReferences({
   sources,
+  calculationSource,
 }: EquipmentSourceReferencesProps) {
+  if (calculationSource !== undefined) {
+    const url = new URL(calculationSource)
+    if (url.protocol !== 'https:' || url.hostname !== 'metalmaniax.com') {
+      throw new Error('载重加成补充出处地址无效')
+    }
+  }
   return (
     <section aria-labelledby="equipment-sources-heading">
       <h2
@@ -63,7 +71,11 @@ export function EquipmentSourceReferences({
                           : source.table_index === 0
                             ? '装备独立详情'
                             : 'C 装置与特性总表'
-                        : source.target_id}
+                        : source.target_id === 'maniax-engines'
+                          ? source.table_index === 0
+                            ? '引擎独立详情'
+                            : '引擎与特性总表'
+                          : source.target_id}
                   </dd>
                 </div>
                 <div className="min-w-0">
@@ -108,6 +120,20 @@ export function EquipmentSourceReferences({
             </li>
           ))}
         </ol>
+      )}
+      {calculationSource !== undefined && (
+        <p className="text-muted-foreground mt-4 text-xs leading-6">
+          加成计算另参考{' '}
+          <a
+            href={calculationSource}
+            target="_blank"
+            rel="noreferrer"
+            className="focus-visible:ring-ring inline-flex min-h-10 items-center underline underline-offset-4 focus-visible:ring-2 focus-visible:outline-none"
+          >
+            METAL MAX 大辞典
+          </a>
+          。已核对其资料快照，原词典页面目前无法直接访问。
+        </p>
       )}
     </section>
   )

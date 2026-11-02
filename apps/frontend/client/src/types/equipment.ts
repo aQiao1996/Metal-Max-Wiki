@@ -12,7 +12,7 @@ export const equipmentTypeIds = [
 export type EquipmentTypeId = (typeof equipmentTypeIds)[number]
 export type EquipmentNameSource = 'zh_099' | 'zh_09' | 'zh_reference' | 'ja'
 export type EquipmentSort =
-  'name-asc' | 'attack-desc' | 'price-asc' | 'weight-asc'
+  'name-asc' | 'attack-desc' | 'capacity-desc' | 'price-asc' | 'weight-asc'
 
 export interface EquipmentEntry extends RawEquipmentRecord {
   type: EquipmentTypeId

@@ -35,6 +35,12 @@ const cUnitFields = [
   { key: 'weight_raw', label: '重量（t）' },
 ] as const
 
+const engineFields = [
+  { key: 'capacity_raw', label: '基础载重（t）' },
+  { key: 'trait_name_raw', label: '特性' },
+  { key: 'weight_raw', label: '重量（t）' },
+] as const
+
 export function EquipmentList({
   emptyMessage,
   entries,
@@ -79,7 +85,9 @@ export function EquipmentList({
             ? humanWeaponFields
             : entry.type === 'c-unit'
               ? cUnitFields
-              : mainCannonFields
+              : entry.type === 'engine'
+                ? engineFields
+                : mainCannonFields
         const japaneseName =
           entry.names.ja !== null && entry.names.ja !== entry.name
             ? entry.names.ja
@@ -106,7 +114,8 @@ export function EquipmentList({
                   </span>
                 )}
                 {(entry.type === 'special-equipment' ||
-                  entry.type === 'c-unit') &&
+                  entry.type === 'c-unit' ||
+                  entry.type === 'engine') &&
                   entry.attributes.stat_condition_raw !== undefined && (
                     <span className="text-muted-foreground mt-1 block text-xs leading-5">
                       {String(entry.attributes.stat_condition_raw)}

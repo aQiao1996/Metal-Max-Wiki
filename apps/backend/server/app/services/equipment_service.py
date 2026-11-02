@@ -54,6 +54,13 @@ _ATTRIBUTE_LABELS = {
     "trait_limits_raw": "特性限制",
     "mechanics_note_raw": "面板效果验证说明",
     "availability_raw": "获取限制",
+    "capacity_raw": "当前型号基础载重（t，未计特性加成）",
+    "capacity_note_raw": "载重条件说明",
+    "rental_stars_raw": "仅见租赁装备的星级，不能当作自有装备获取星级",
+    "upgrade_to_raw": "马力强化后型号",
+    "upgrade_cost_raw": "本次马力强化费用（G）",
+    "upgrade_note_raw": "马力强化限制",
+    "trait_calculation_source_raw": "加成计算补充出处",
 }
 _PROFESSION_LABELS = {
     "hunter": "猎人",
@@ -78,7 +85,7 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             for key, label in _PROFESSION_LABELS.items()
             if record.attributes.get(f"{key}_raw") == "○"
         )
-    if record.kind in ("special_equipment", "c_unit"):
+    if record.kind in ("special_equipment", "c_unit", "engine"):
         facts["名称说明"] = "中文参考译名，未核对 0.99 实机名称"
         facts["改造说明"] = (
             "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
@@ -112,6 +119,22 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
                 for item in record.control_modifications
             )
             or "来源未提供改造数值"
+        )
+    if record.kind == "engine":
+        facts["逐星级普通改造"] = (
+            "；".join(
+                f"{item.stars} 星：此型号载重 {item.capacity_raw}，"
+                f"防御 {item.defense_raw}（下限 {item.defense_min_raw}，"
+                f"上限 {item.defense_max_raw}），重量 {item.weight_raw}"
+                f"（下限 {item.weight_min_raw}，上限 {item.weight_max_raw}）"
+                for item in record.engine_modifications
+            )
+            or "来源未提供改造数值"
+        )
+        facts["改造说明"] = (
+            "载重按当前型号和星级列出，不含特性加成和自重扣除；"
+            "防御与重量改造不改变型号，马力强化变为另一型号；"
+            "各项上下限分别记录，不能拼为同一改造配置，括号保留来源记法"
         )
     return facts
 
@@ -186,13 +209,18 @@ def list_equipment(
     if sort == "name-asc":
         filtered.sort(key=lambda r: (r.name, r.id))
     else:
-        key = {"attack-desc": "attack", "price-asc": "price", "weight-asc": "weight"}[sort]
+        key = {
+            "attack-desc": "attack",
+            "capacity-desc": "capacity",
+            "price-asc": "price",
+            "weight-asc": "weight",
+        }[sort]
 
         def sort_key(record: EquipmentRecord) -> tuple[bool, float, str]:
             value = numeric_attribute(record, key)
             return (
                 value is None,
-                -(value or 0) if sort == "attack-desc" else (value or 0),
+                -(value or 0) if sort in ("attack-desc", "capacity-desc") else (value or 0),
                 record.id,
             )
 

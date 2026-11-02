@@ -8,7 +8,7 @@ from app.schemas.response import PaginationMeta
 EquipmentType = Literal[
     "human-weapon", "main-cannon", "sub-gun", "special-equipment", "c-unit", "engine"
 ]
-EquipmentSort = Literal["name-asc", "attack-desc", "price-asc", "weight-asc"]
+EquipmentSort = Literal["name-asc", "attack-desc", "capacity-desc", "price-asc", "weight-asc"]
 EquipmentProfession = Literal["hunter", "mechanic", "soldier", "nurse", "artist", "wrestler"]
 
 
@@ -72,16 +72,28 @@ class ControlModification(CamelModel):
     weight_max_raw: str
 
 
+class EngineModification(CamelModel):
+    stars: int = Field(ge=0, le=3)
+    capacity_raw: str
+    defense_min_raw: str
+    defense_raw: str
+    defense_max_raw: str
+    weight_min_raw: str
+    weight_raw: str
+    weight_max_raw: str
+
+
 class EquipmentRecord(CamelModel):
     id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
     game: Literal["mm2r"]
     target_version: Literal["0.99"]
     domain: Literal["equipment"]
-    kind: Literal["human_weapon", "main_cannon", "special_equipment", "c_unit"]
+    kind: Literal["human_weapon", "main_cannon", "special_equipment", "c_unit", "engine"]
     names: EquipmentNames
     attributes: dict[str, str | int | float]
     modifications: list[EquipmentModification] = Field(default_factory=list)
     control_modifications: list[ControlModification] = Field(default_factory=list)
+    engine_modifications: list[EngineModification] = Field(default_factory=list)
     version_scope: list[str]
     verification_status: Literal["source_only", "compatible_candidate"]
     source_refs: list[EquipmentSource] = Field(min_length=1)
@@ -108,6 +120,7 @@ class EquipmentRecord(CamelModel):
             "main_cannon": "main-cannon",
             "special_equipment": "special-equipment",
             "c_unit": "c-unit",
+            "engine": "engine",
         }
         return types[self.kind]
 

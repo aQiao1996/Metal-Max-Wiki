@@ -18,3 +18,7 @@ S-E 数值表、逐星级普通改造数值和获取地点参考 [METAL MAniaX M
 C 装置的面板、逐星级普通改造值、特性表与获取地点同样参考 METAL MAniaX；命中与回避说明参考其 [C 装置验证记录](https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/C%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%81%AE%E5%91%BD%E4%B8%AD%E3%83%BB%E5%9B%9E%E9%81%BF%E3%81%AE%E8%AC%8E)。`c-units/facts.json` 仅保存事实和出处，`c-units/names.yaml` 为项目整理的参考译名与事实摘要，不冒充 0.99 实机名称。原页面署名与许可状态同上。
 
 `special-equipment/names.yaml` 中的中文参考译名、别名和简要效果说明由项目整理，不代表 0.9 或 0.99 汉化版的实机名称。获取方式保留日文原始记录供核对。
+
+引擎的型号、逐星级数值、特性、获取地点和马力强化费用参考 METAL MAniaX 的战车资料与独立详情。`engines/facts.json` 仅保存事实和逐页引用；`engines/names.yaml` 为项目整理的中文参考译名和事实摘要，不代表实机汉化名称。
+
+辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。

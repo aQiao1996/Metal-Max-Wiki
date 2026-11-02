@@ -14,13 +14,33 @@ const controlFields = [
   { label: '重量（t）', initial: 'weight_raw', maximum: 'weight_max_raw' },
 ] as const
 
+const engineFields = [
+  {
+    label: '防御力',
+    minimum: 'defense_min_raw',
+    initial: 'defense_raw',
+    maximum: 'defense_max_raw',
+  },
+  {
+    label: '重量（t）',
+    minimum: 'weight_min_raw',
+    initial: 'weight_raw',
+    maximum: 'weight_max_raw',
+  },
+] as const
+
+interface ModificationGroup {
+  stars: number
+  rows: { label: string; minimum?: string; initial: string; maximum: string }[]
+}
+
 function displayValue(value: string) {
   const text = value.replace(/t$/, '')
   return text === '' || text === '-' || text === '?' ? '—' : text
 }
 
 export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
-  const modifications =
+  const modifications: ModificationGroup[] =
     entry.type === 'c-unit'
       ? (entry.control_modifications ?? []).map((item) => ({
           stars: item.stars,
@@ -30,18 +50,39 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
             maximum: item[field.maximum],
           })),
         }))
-      : (entry.modifications ?? []).map((item) => ({
-          stars: item.stars,
-          rows: weaponFields.map((field) => ({
-            label: field.label,
-            initial: item[field.initial],
-            maximum: item[field.maximum],
-          })),
-        }))
+      : entry.type === 'engine'
+        ? (entry.engine_modifications ?? []).map((item) => ({
+            stars: item.stars,
+            rows: [
+              {
+                label: '载重（t）',
+                minimum: '',
+                initial: item.capacity_raw,
+                maximum: '',
+              },
+              ...engineFields.map((field) => ({
+                label: field.label,
+                minimum: item[field.minimum],
+                initial: item[field.initial],
+                maximum: item[field.maximum],
+              })),
+            ],
+          }))
+        : (entry.modifications ?? []).map((item) => ({
+            stars: item.stars,
+            rows: weaponFields.map((field) => ({
+              label: field.label,
+              initial: item[field.initial],
+              maximum: item[field.maximum],
+            })),
+          }))
   if (modifications.length === 0) return null
   const stars = entry.attributes.obtainable_stars_raw
   const obtainableStars =
     typeof stars === 'string' ? stars.split(',').map(Number) : []
+  const rental = entry.attributes.rental_stars_raw
+  const rentalStars =
+    typeof rental === 'string' ? rental.split(',').map(Number) : []
 
   return (
     <section aria-labelledby="equipment-modifications-heading">
@@ -54,6 +95,11 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
       <p className="text-muted-foreground mt-3 text-sm leading-6">
         下表为来源记录的普通改造范围，不含超改造。各项上限分别列出，不能拼成同一套改造配置；括号内数值保留来源原记法。
       </p>
+      {entry.type === 'engine' && (
+        <p className="text-muted-foreground mt-2 text-sm leading-6">
+          载重按当前型号与星级列出，不含特性加成。防御与重量改造不增加载重；马力强化请查看型号路径。
+        </p>
+      )}
       <div className="mt-6 grid min-w-0 gap-6 sm:grid-cols-2">
         {modifications.map((modification) => {
           const referenceOnly =
@@ -69,7 +115,11 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
                 </span>
                 {obtainableStars.length > 0 && (
                   <span className="text-muted-foreground text-xs font-normal">
-                    {referenceOnly ? '图鉴参考，获取未确认' : '来源记录可获取'}
+                    {rentalStars.includes(modification.stars)
+                      ? '仅见租赁装备记录'
+                      : referenceOnly
+                        ? '图鉴参考，获取未确认'
+                        : '来源记录可获取'}
                   </span>
                 )}
               </h3>
@@ -82,6 +132,11 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
                     <th className="py-3 font-normal" scope="col">
                       项目
                     </th>
+                    {entry.type === 'engine' && (
+                      <th className="py-3 font-normal" scope="col">
+                        改造下限
+                      </th>
+                    )}
                     <th className="py-3 font-normal" scope="col">
                       初始
                     </th>
@@ -96,6 +151,11 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
                       <th className="py-3 pr-2 font-normal" scope="row">
                         {row.label}
                       </th>
+                      {entry.type === 'engine' && (
+                        <td className="py-3 pr-2 break-words">
+                          {displayValue(row.minimum ?? '')}
+                        </td>
+                      )}
                       <td className="py-3 pr-2 break-words">
                         {displayValue(row.initial)}
                       </td>

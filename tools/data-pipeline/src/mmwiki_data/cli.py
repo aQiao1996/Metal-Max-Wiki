@@ -12,6 +12,7 @@ from pydantic import BaseModel, ValidationError
 
 from mmwiki_data.asset_pipeline import AssetPipelineError, audit_assets, fetch_assets
 from mmwiki_data.c_units import collect_c_units, load_c_units
+from mmwiki_data.engines import collect_engines, load_engines
 from mmwiki_data.fetcher import FetchError, fetch
 from mmwiki_data.models import (
     CandidateSnapshot,
@@ -175,6 +176,10 @@ def audit(repo_root: Path) -> list[str]:
         load_c_units(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid C-unit source: {error}")
+    try:
+        load_engines(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid engine source: {error}")
     return errors
 
 
@@ -225,7 +230,11 @@ def _load_normalization_snapshots(repo_root: Path) -> list[CandidateSnapshot]:
 def normalize(repo_root: Path) -> dict[str, object]:
     """将完整候选集合写入确定性的 interim 数据包。"""
     result = normalize_snapshots(_load_normalization_snapshots(repo_root))
-    for supplement in (load_special_equipment(repo_root), load_c_units(repo_root)):
+    for supplement in (
+        load_special_equipment(repo_root),
+        load_c_units(repo_root),
+        load_engines(repo_root),
+    ):
         if supplement is None:
             continue
         equipment = result.bundles["equipment"]
@@ -267,6 +276,7 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect",
         "collect-special-equipment",
         "collect-c-units",
+        "collect-engines",
         "audit",
         "normalize",
         "asset-audit",
@@ -287,6 +297,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-engines":
+            engine_summary = collect_engines(arguments.repo_root.resolve())
+            print(json.dumps(engine_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-c-units":
             c_unit_summary = collect_c_units(arguments.repo_root.resolve())
             print(json.dumps(c_unit_summary, ensure_ascii=False, indent=2))

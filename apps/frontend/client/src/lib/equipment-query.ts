@@ -48,14 +48,14 @@ export function parseEquipmentQuery(
 
   const sortValue = firstValue(params.sort)
   const professionValue = firstValue(params.profession)?.trim() ?? ''
+  const hasTraits = type === 'c-unit' || type === 'engine'
 
   return {
     type,
     q: firstValue(params.q)?.trim() ?? '',
     sort: isAllowedSort(sortValue, config.sorts) ? sortValue : 'name-asc',
-    element:
-      type === 'c-unit' ? '' : (firstValue(params.element)?.trim() ?? ''),
-    trait: type === 'c-unit' ? (firstValue(params.trait)?.trim() ?? '') : '',
+    element: hasTraits ? '' : (firstValue(params.element)?.trim() ?? ''),
+    trait: hasTraits ? (firstValue(params.trait)?.trim() ?? '') : '',
     profession:
       type === 'human-weapon' && isProfession(professionValue)
         ? professionValue
@@ -81,7 +81,7 @@ function compareNumbers(
 
 function numericAttribute(
   entry: EquipmentEntry,
-  key: 'attack' | 'price' | 'weight',
+  key: 'attack' | 'capacity' | 'price' | 'weight',
 ): number | undefined {
   const value = entry.attributes[key]
   if (typeof value === 'number') {
@@ -146,6 +146,12 @@ export function filterEquipmentEntries(
           numericAttribute(right, 'attack'),
           'desc',
         )
+      case 'capacity-desc':
+        return compareNumbers(
+          numericAttribute(left, 'capacity'),
+          numericAttribute(right, 'capacity'),
+          'desc',
+        )
       case 'price-asc':
         return compareNumbers(
           numericAttribute(left, 'price'),
@@ -179,7 +185,10 @@ export function buildEquipmentSearch(query: EquipmentQuery): string {
   if (query.element !== '') {
     params.set('element', query.element)
   }
-  if (query.type === 'c-unit' && query.trait !== '') {
+  if (
+    (query.type === 'c-unit' || query.type === 'engine') &&
+    query.trait !== ''
+  ) {
     params.set('trait', query.trait)
   }
 

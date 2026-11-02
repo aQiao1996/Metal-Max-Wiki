@@ -31,6 +31,7 @@ from mmwiki_data.vehicle_tables import (
     obtainable_stars,
     text,
 )
+from mmwiki_data.vehicle_traits import TraitDescription, TraitFact
 
 SOURCE_ID = "metalmaniax-mm2r"
 TARGET_ID = "maniax-c-units"
@@ -59,15 +60,6 @@ _ATTRIBUTE_FIELDS = {
 }
 
 
-class TraitDescription(StrictModel):
-    """项目整理的特性说明，区分指令与被动效果。"""
-
-    name: str = Field(min_length=1)
-    activation: Literal["主动指令", "被动生效", "无特性", "效果待确认"]
-    effect: str = Field(min_length=1)
-    limits: str = Field(min_length=1)
-
-
 class CUnitNames(StrictModel):
     schema_version: Literal[1]
     names: dict[str, str]
@@ -84,13 +76,6 @@ class CUnitNames(StrictModel):
             if set(values) - set(self.names):
                 raise ValueError("C 装置说明包含未知名称")
         return self
-
-
-class TraitFact(StrictModel):
-    name_ja: str
-    effect_ja: str
-    limits_ja: str
-    source_ref: SourceRef
 
 
 class CUnitFact(StrictModel):

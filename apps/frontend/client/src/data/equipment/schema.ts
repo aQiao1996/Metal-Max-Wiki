@@ -95,6 +95,17 @@ const controlModificationSchema = modificationSchema
     evasion_max_raw: z.string(),
   })
 
+const engineModificationSchema = controlModificationSchema
+  .omit({
+    accuracy_min_raw: true,
+    accuracy_raw: true,
+    accuracy_max_raw: true,
+    evasion_min_raw: true,
+    evasion_raw: true,
+    evasion_max_raw: true,
+  })
+  .extend({ capacity_raw: z.string() })
+
 export const rawEquipmentRecordSchema = z
   .object({
     id: equipmentIdSchema,
@@ -106,11 +117,13 @@ export const rawEquipmentRecordSchema = z
       'main_cannon',
       'special_equipment',
       'c_unit',
+      'engine',
     ]),
     names: equipmentNamesSchema,
     attributes: z.record(z.string(), z.union([z.string(), z.number()])),
     modifications: z.array(modificationSchema).optional(),
     control_modifications: z.array(controlModificationSchema).optional(),
+    engine_modifications: z.array(engineModificationSchema).optional(),
     version_scope: z.array(nonEmptyStringSchema),
     verification_status: interimVerificationStatusSchema,
     source_refs: z.array(equipmentSourceRefSchema).min(1),
