@@ -36,3 +36,7 @@ C 装置的面板、逐星级普通改造值、特性表与获取地点同样参
 职业、成长观测、技能机制和主副职业规则参考 [METAL MAniaX MM2R 角色资料](https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF)、各职业页及 FAQ，并保留与组长式技能表的差异。`job-skills` 仅保存事实字段、最短定位片段与项目整理的中文摘要，不复制完整攻略；参考译名、属性观测和技能次数未作 0.99 实机确认。
 
 辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。
+
+道具用途、消耗性、特殊炮弹、LOVE 配方与芯片位置参考 METAL MAniaX MM2R 人类、战车和 LOVE 机器资料，并保留既有中文资料及赏金首掉落物的对应原值。`items` 只保存事实字段、来源条件与项目整理的中文摘要；消耗性冲突和缺失不改写为固定结论。
+
+101 项任务及特别委托参考 [METAL MAniaX MM2R 任务资料](https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88) 与独立详情，另保留重装机兵资料站已收录的 8 项中文对照。`quests` 中的中文步骤与条件由项目归纳，报酬原值与失败条件逐条留出处，不复制完整攻略正文。

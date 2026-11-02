@@ -184,6 +184,12 @@ export function KnowledgeDetail({
             日文原名：{entry.names.ja}
           </p>
         )}
+        {entry.names.zh_reference &&
+          entry.names.zh_reference !== entry.name && (
+            <p className="text-muted-foreground mt-2 text-sm">
+              参考译名：{entry.names.zh_reference}
+            </p>
+          )}
         {entry.names.aliases.length > 0 && (
           <p className="text-muted-foreground mt-2 text-sm">
             别名：{entry.names.aliases.join(' / ')}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
 import type { GameVersion } from '@/config/game-versions'
+import { getKnowledgeTagOptions } from '@/config/knowledge-filters'
 import { knowledgePageSchema } from '@/api/knowledge'
 import { toKnowledgeSummary } from '@/data/knowledge/entry'
 import type { KnowledgeCategory } from '@/data/knowledge/schema'
@@ -18,6 +19,7 @@ export interface KnowledgeQuery {
   sort?: string | string[]
   page?: string | string[]
   mount?: string | string[]
+  tag?: string | string[]
 }
 
 interface KnowledgeIndexProps {
@@ -48,6 +50,9 @@ export async function KnowledgeIndex({
       ? rawMount
       : 'all'
   const rawPage = first(query.page)
+  const tagOptions = getKnowledgeTagOptions(categorySlug)
+  const rawTag = first(query.tag) ?? ''
+  const tag = tagOptions.includes(rawTag) ? rawTag : ''
   const page =
     rawPage && /^[1-9][0-9]{0,3}$/.test(rawPage) ? Number(rawPage) : 1
   const path = buildVersionPath(version.slug, `/wiki/${categorySlug}`)
@@ -58,6 +63,7 @@ export async function KnowledgeIndex({
     pageSize: '20',
   })
   if (mount !== 'all') parameters.set('mount', mount)
+  if (tag) parameters.set('tag', tag)
   const data = await serverRequest(
     `/versions/${version.slug}/wiki/${categorySlug}?${parameters}`,
     knowledgePageSchema,
@@ -65,6 +71,7 @@ export async function KnowledgeIndex({
   const listParameters = (targetPage: number) => {
     const values = new URLSearchParams({ q, sort, page: String(targetPage) })
     if (mount !== 'all') values.set('mount', mount)
+    if (tag) values.set('tag', tag)
     return values
   }
   const href = (targetPage: number) => `${path}?${listParameters(targetPage)}`
@@ -111,7 +118,11 @@ export async function KnowledgeIndex({
                 ? '车型、型号或特性'
                 : categorySlug === 'jobs'
                   ? '职业、技能或作用'
-                  : '名称、地点或掉落物品'
+                  : categorySlug === 'items'
+                    ? '名称、用途、配方或地点'
+                    : categorySlug === 'quests'
+                      ? '任务、接取地点或条件'
+                      : '名称、地点或掉落物品'
             }
           />
         </div>
@@ -122,14 +133,30 @@ export async function KnowledgeIndex({
             }
             className="mb-2 block text-sm font-medium"
           >
-            {categorySlug === 'vehicles' ? '动力配置' : '排序'}
+            {categorySlug === 'vehicles'
+              ? '动力配置'
+              : tagOptions.length
+                ? '资料类型'
+                : '排序'}
           </label>
           <select
             id={
               categorySlug === 'vehicles' ? 'knowledge-mount' : 'knowledge-sort'
             }
-            name={categorySlug === 'vehicles' ? 'mount' : 'sort'}
-            defaultValue={categorySlug === 'vehicles' ? mount : sort}
+            name={
+              categorySlug === 'vehicles'
+                ? 'mount'
+                : tagOptions.length
+                  ? 'tag'
+                  : 'sort'
+            }
+            defaultValue={
+              categorySlug === 'vehicles'
+                ? mount
+                : tagOptions.length
+                  ? tag
+                  : sort
+            }
             className="border-input bg-card focus-visible:ring-ring h-10 w-full rounded-md border px-3 text-sm focus-visible:ring-2 focus-visible:outline-none"
           >
             {categorySlug === 'vehicles' ? (
@@ -137,6 +164,15 @@ export async function KnowledgeIndex({
                 <option value="all">全部车型</option>
                 <option value="double-engine">支持双引擎</option>
                 <option value="double-c-unit">支持双 C</option>
+              </>
+            ) : tagOptions.length ? (
+              <>
+                <option value="">全部类型</option>
+                {tagOptions.map((value) => (
+                  <option key={value} value={value}>
+                    {value}
+                  </option>
+                ))}
               </>
             ) : (
               <>

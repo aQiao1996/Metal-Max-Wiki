@@ -1,0 +1,1084 @@
+schema_version: 1
+reference_note: 中文任务名、地点与步骤是日版公开资料的参考译名及编辑事实摘要；zzjb原表的RPC0.9译名另保留，全部未经0.99实机确认。
+coverage_note: METAL MAniaX总表编号1至101完整采集；zzjb当前页面只有8条，并非旧解析器遗漏其他表。原表或详情接取条件明确写出「特別な依頼」时标为special_request，其他项归普通或事件任务，不据此排除其他接取渠道。
+quests:
+  1:
+    name_ja: マリアよ、安らかに眠れ
+    name_zh_reference: 玛丽亚，安息吧
+    location_zh: 游戏开始
+    acceptance_zh: 随主线开始。
+    steps_zh:
+      - 推进主线并击败最终首领。
+  2:
+    name_ja: 砂漠を越えて
+    name_zh_reference: 穿越沙漠
+    location_zh: 玛多、厄尔尼诺
+    acceptance_zh: 在纳伊鲁车库1层询问机械师，或在厄尔尼诺取得纳伊鲁的消息。
+    steps_zh:
+      - 前往厄尔尼诺找到纳伊鲁，返回玛多接收并命名越野车；休息一晚后再次与他交谈。
+    vehicle_related: true
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - バギーを調べ
+          - 名前をつける
+          - 一晩経過
+      - section_ja: コメント
+        terms:
+          - No.1戦車
+          - レンタルタンク屋が開店
+    reward_notes_zh:
+      - 任务进行中取得1号战车；完成后玛多租赁战车店开业。
+  3:
+    name_ja: 埋もれたマンホール
+    name_zh_reference: 被掩埋的井盖
+    location_zh: 玛多东北废墟
+    acceptance_zh: 调查被瓦砾掩埋的井盖。
+    steps_zh:
+      - 请人清除瓦砾，开放通往地下的入口。
+  4:
+    name_ja: 木材ハンター
+    name_zh_reference: 木材猎人
+    location_zh: 玛多、码头镇、德尔塔利奥、森林监视局
+    acceptance_zh: 完成“被掩埋的井盖”后出镇再返回，与木匠迪亚克交谈。
+    steps_zh:
+      - 在码头镇询问莫里尼下落，在德尔塔利奥联络船码头右侧出口找到他，带回玛多交给迪亚克。
+      - 休息一晚后护送采木队到森林监视局，通过战斗推进采木；亚当蚁尚未击败时可另触发救援莫里尼。
+      - 返回玛多后至少休息3晚，选择建筑及外观；再休息至少8晚等待建成。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 3泊以上
+          - 8泊以上
+          - モリニウ
+  5:
+    name_ja: モリニウを助けろ！
+    name_zh_reference: 帮助莫里尼！
+    location_zh: 森林监视局、巨大蚁穴
+    acceptance_zh: “木材猎人”进行中且尚未击败亚当蚁；采木开始后登上监视塔。
+    steps_zh:
+      - 从巨大蚁穴B1F向南下坡、B2F向北下坡，在B3F首处分岔向南找到莫里尼，将他带回地面。
+    aliases:
+      - 帮助莫里尼
+      - 救出莫里尼
+      - 帮助莫里尼乌
+    failure_notes_zh:
+      - 必须在击败亚当蚁之前触发；先击败亚当蚁将错过本任务。
+    detail_checks:
+      - section_ja: 発生条件
+        terms:
+          - アダムアント撃破前限定
+          - 撃破後は発生しない
+      - section_ja: 達成条件
+        terms:
+          - B1F
+          - 南へ
+          - B2F
+          - 北へ
+          - B3F
+          - 地上に戻る
+  6:
+    name_ja: デヤークのおつかい
+    name_zh_reference: 迪亚克的差事
+    location_zh: 玛多
+    acceptance_zh: 着手建造第二栋建筑时触发。
+    steps_zh:
+      - 交付30个防腐剂，建筑完工后与迪亚克等人交谈。
+  7:
+    name_ja: タケノコ狩り
+    name_zh_reference: 狩猎竹笋
+    location_zh: 玛多
+    acceptance_zh: 着手建造第三栋建筑时触发。
+    steps_zh:
+      - 击败超合金竹笋，处理建造现场的障碍。
+  8:
+    name_ja: 並ばされし者たち
+    name_zh_reference: 代人排队
+    location_zh: 玛多药店
+    acceptance_zh: 药店打折期间与入口的摔跤手交谈。
+    steps_zh:
+      - 替男子排队并完成其要求。
+  9:
+    name_ja: 昔のボトルで出ています
+    name_zh_reference: 出售陈年酒
+    location_zh: 玛多新酒吧
+    acceptance_zh: 建好新酒吧后与柜台女老板交谈。
+    steps_zh:
+      - 卖出10瓶名称以“昔の”开头的酒。
+  10:
+    name_ja: カジノの救世主
+    name_zh_reference: 赌场的救世主
+    location_zh: 玛多赌场
+    acceptance_zh: 与赌场柜台老板交谈。
+    steps_zh:
+      - 收集L1、O1、V1、E1芯片及电子零件，修好游戏机。
+  11:
+    name_ja: イリットと料理の本
+    name_zh_reference: 伊莉特与料理书
+    location_zh: 玛多
+    acceptance_zh: 给伊莉特料理书，休息两晚后再次交谈。
+    steps_zh:
+      - 把咖喱粉交给伊莉特。
+  12:
+    name_ja: 世界の果てへ
+    name_zh_reference: 前往世界尽头
+    location_zh: 玛多新酒吧、人类村
+    acceptance_zh: 建好新酒吧并完成“招募高手猎人”后，接受特别委托。
+    steps_zh:
+      - 把包裹送到人类村的加藤手中。
+  13:
+    name_ja: 極悪非道？の兄弟
+    name_zh_reference: 穷凶极恶？的兄弟
+    location_zh: 厄尔尼诺至熔岩镇的连环事件
+    acceptance_zh: 在厄尔尼诺猎人事务所与皮奇兄长交谈。
+    steps_zh:
+      - 推进皮奇兄弟相关会面及连环委托，最终在熔岩镇地下击败兄弟二人。
+    failure_notes_zh:
+      - 部分会面有截止时机：击败斯坎克斯会跳过再次在厄尔尼诺及干渴酒吧的会面；完成招募高手或搭便车委托也会分别跳过德尔塔利奥或死亡十字的会面。
+      - 这些跳过不妨碍任务完成，但会减少冒险指南条目。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - イベントは消滅
+          - ガイド項目の数は減る
+  14:
+    name_ja: さらわれた女、カティア
+    name_zh_reference: 被掳走的卡佳
+    location_zh: 厄尔尼诺旅馆
+    acceptance_zh: 与旅馆内躺着的赫克托交谈。
+    steps_zh:
+      - 上2层隔牢门与卡佳说话，再处理掠夺者并救出她。
+  15:
+    name_ja: 牢破りのメロディ
+    name_zh_reference: 劫狱的梅洛蒂
+    location_zh: 厄尔尼诺牢房前
+    acceptance_zh: 与牢房前的梅洛蒂交谈。
+    steps_zh:
+      - 救出被关押的阿克塞尔。
+  16:
+    name_ja: シュリエットの部品
+    name_zh_reference: 修莉叶的零件
+    location_zh: 厄尔尼诺
+    acceptance_zh: 完成“努卡的地下酒吧”后与修莉叶交谈。
+    steps_zh:
+      - 卖出至少25个电子零件后，再额外卖出至少1个。
+  17:
+    name_ja: たおすぜ！グラップラー
+    name_zh_reference: 打倒掠夺者！
+    location_zh: 厄尔尼诺传送装置前
+    acceptance_zh: 看过展望大楼前的事件后与里奇交谈。
+    steps_zh:
+      - 累计击败5名混混掠夺者等军团敌人，再向里奇报告。
+  18:
+    name_ja: ヌッカの地下酒場
+    name_zh_reference: 努卡的地下酒吧
+    location_zh: 厄尔尼诺
+    acceptance_zh: 完成“打倒掠夺者！”后继续与里奇交谈。
+    steps_zh:
+      - 向努卡说出暗号。
+  19:
+    name_ja: ヒヌケ団の密使
+    name_zh_reference: 希努克团的密使
+    location_zh: 厄尔尼诺
+    acceptance_zh: 完成“努卡的地下酒吧”且到访码头镇后与里奇交谈。
+    steps_zh:
+      - 把要求的武器交给里奇。
+  20:
+    name_ja: ヒヌケを愛したスパイ
+    name_zh_reference: 热爱希努克的间谍
+    location_zh: 厄尔尼诺的希努克团据点
+    acceptance_zh: 完成密使委托并击败斯坎克斯后，与据点内的里奇交谈。
+    steps_zh:
+      - 找到间谍手册并交给里奇。
+  21:
+    name_ja: わたしの愛しいひとだから
+    name_zh_reference: 因为他是我心爱的人
+    location_zh: 厄尔尼诺展望大楼4层
+    acceptance_zh: 与雅兹敏交谈。
+    steps_zh:
+      - 找到阿隆索，并把他的情况告诉雅兹敏。
+  22:
+    name_ja: ねずみの始末
+    name_zh_reference: 清理老鼠
+    location_zh: 厄尔尼诺
+    acceptance_zh: 与门多萨会面。
+    steps_zh:
+      - 取得金假牙并向门多萨出示。
+  23:
+    name_ja: 続・ねずみの始末
+    name_zh_reference: 续·清理老鼠
+    location_zh: 厄尔尼诺
+    acceptance_zh: 在“清理老鼠”中向门多萨出示金假牙后触发。
+    steps_zh:
+      - 在“打倒门多萨！”进行期间让门多萨与金牙见面。
+  24:
+    name_ja: たおすぜ！メンドーザ
+    name_zh_reference: 打倒门多萨！
+    location_zh: 厄尔尼诺希努克团据点
+    acceptance_zh: 完成间谍委托且获得船后，与里奇交谈。
+    steps_zh:
+      - 推进据点事件并击败门多萨。
+  25:
+    name_ja: 黄金の冷蔵庫
+    name_zh_reference: 黄金冰箱
+    location_zh: 厄尔尼诺
+    acceptance_zh: 击败门多萨后与艾玛交谈。
+    steps_zh:
+      - 调查金冰箱。
+  26:
+    name_ja: 思い出は砂の中
+    name_zh_reference: 回忆埋在沙中
+    location_zh: 玛多东南商人营地
+    acceptance_zh: 获得1号战车后与艾瑞丝交谈。
+    steps_zh:
+      - 利用探测器找出戒指并交还委托人。
+  27:
+    name_ja: 帰らぬあの人を探して
+    name_zh_reference: 寻找一去不回的人
+    location_zh: 码头镇栈桥、巨大蚁穴
+    acceptance_zh: 与栈桥旁的阿莉交谈并答应帮忙。
+    steps_zh:
+      - 接下阿莉的请求后尽快前往巨大蚁穴，把信交给汉特并取得蓝色护目镜。
+      - 把护目镜带给阿莉；若要取得阿莉的戒指，需要在报酬对话中提出要求。
+    aliases:
+      - 寻找一去不返的人
+      - 寻找不归之人
+    failure_notes_zh:
+      - 接取后因住宿经过太多天，汉特可能变成尸体；完成委托后长期不打倒亚当蚁也可能发生。来源未给出确切天数。
+      - 未要求戒指报酬时不会取得戒指。先击败亚当蚁不会使本任务消失。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - 日数を経過させすぎる
+          - 死体
+          - 指輪を要求
+          - 指輪は手に入らない
+          - アダムアントを先に倒しても
+      - section_ja: ガイド項目一覧
+        terms:
+          - アリーの手紙をハントに届ける
+    reward_notes_zh:
+      - 戒指为对话分支奖励，不能把总表列出戒指理解为必定取得。
+  28:
+    name_ja: 盗まれたコレクション
+    name_zh_reference: 被盗的收藏品
+    location_zh: 码头镇联络船码头3层
+    acceptance_zh: 与老狼交谈。
+    steps_zh:
+      - 找回被盗的3件物品，分别交还老狼。
+  29:
+    name_ja: ボムポポの綿毛につつまれて
+    name_zh_reference: 被炸弹蒲公英绒毛包围
+    location_zh: 码头镇北方商人营地
+    acceptance_zh: 到达码头镇后接受特别委托。
+    steps_zh:
+      - 把蒲公英绒毛交给荣江，休息一晚后再交谈。
+    failure_notes_zh:
+      - 完成后店铺会撤下“そまつなマフラー”；若要收集其全部种类，应在完成前购买。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - そまつなマフラー
+          - 商品から消え
+          - クエストクリア前に購入
+  30:
+    name_ja: キャラバンの護衛
+    name_zh_reference: 商队护卫
+    location_zh: 码头镇至梓镇
+    acceptance_zh: 有名度至少171时与莉可交谈。
+    steps_zh:
+      - 一路护送商队抵达梓镇。
+  31:
+    name_ja: 最後のチワワ
+    name_zh_reference: 最后的吉娃娃
+    location_zh: 码头镇联络船码头1层、森林监视局附近
+    acceptance_zh: 已有狗类伙伴后，与出现的麦克交谈；普通狗也可满足条件。
+    steps_zh:
+      - 在森林监视局附近树林击败最后的吉娃娃，带证物交差。
+  32:
+    name_ja: アリの卵
+    name_zh_reference: 蚂蚁卵
+    location_zh: 码头镇酒吧、巨大蚁穴
+    acceptance_zh: 击败亚当蚁并至少休息一晚，且击败斯坎克斯后与酒吧老板交谈。
+    steps_zh:
+      - 到蚁穴取得内部仍在活动的新鲜蚁卵，交给老板。
+  33:
+    name_ja: いざ、宝島へ
+    name_zh_reference: 出发，前往宝岛
+    location_zh: 码头镇酒吧、赫尔梅茨岛
+    acceptance_zh: 获得船后与酒吧的白交谈。
+    steps_zh:
+      - 取得神秘钥匙并用它打开赫尔梅茨岛的井盖。
+  34:
+    name_ja: 復讐のバイク
+    name_zh_reference: 复仇的摩托车
+    location_zh: 无名酒吧1层、码头镇北方沙漠
+    acceptance_zh: 获得并命名1号战车后，与无名酒吧的蓝衣猎人交谈；领取钥匙需达到12级。
+    steps_zh:
+      - 领取摩托车钥匙并取得白摩托，击败码头镇北方沙漠的安塔雷斯后返回报告；不要求用白摩托参战。
+    vehicle_related: true
+    aliases:
+      - 复仇摩托
+    detail_checks:
+      - section_ja: 発生条件
+        terms:
+          - レベルが12
+          - バイクのキー
+      - section_ja: 達成条件
+        terms:
+          - No.10戦車
+          - 白バイの使用は達成条件には含まれない
+    reward_notes_zh:
+      - 接受委托并拿到钥匙时，白摩托即正式成为自有10号战车；不是击败安塔雷斯后才取得。
+  35:
+    name_ja: 怪しい荷物
+    name_zh_reference: 可疑的包裹
+    location_zh: 不爆弹之馆、干渴酒吧北部废墟
+    acceptance_zh: 到达梓镇后接受特别委托。
+    steps_zh:
+      - 把包裹带到干渴酒吧北面的废墟；交货可按原运输委托结束。
+      - 也可连续拒绝交货，再选择“ぶっとばす！”并击败恶党战车，取得钥匙救出包裹中的琳卡。
+    failure_notes_zh:
+      - 选择击败收件人的救人分支，会使“可疑的包裹”任务消失，并转入琳卡相关任务。
+      - 红石吊坠与恶党战车图鉴在这一事件的不同分支取得；来源注明本周目不能同时登记这两项。
+    reward_notes_zh:
+      - 交货前可询问报酬并取得最多300G预付；不是交货后另发报酬。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - ぶっとばす！
+          - このクエストが消滅
+          - 1周回ではどちらかしか登録できない
+  36:
+    name_ja: リンカを探して
+    name_zh_reference: 寻找琳卡
+    location_zh: 梓镇北方商人营地
+    acceptance_zh: 到达梓镇后与琳卡父母交谈。
+    steps_zh:
+      - 琳卡位于“可疑的包裹”所运送的包裹中；拒绝交货并击败恶党战车，取得钥匙后可救出并送回她。
+      - 若已把包裹交货，则在德尔塔利奥酒吧后找到红石吊坠，并向父母出示，按另一结局完成。
+    reward_notes_zh:
+      - 完成方式影响报酬；救出本人并送回可取得4000G，出示吊坠路线为2000G。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - 荷物の中
+          - 赤い石のペンダント
+          - 悪党戦車
+  37:
+    name_ja: リンカの両親をさがせ
+    name_zh_reference: 寻找琳卡的父母
+    location_zh: 干渴酒吧北方普通废墟
+    acceptance_zh: 未接受“寻找琳卡”就先救出琳卡。
+    steps_zh:
+      - 未先接受“寻找琳卡”时，在包裹事件中救出琳卡，再把她带到干渴酒吧西南的商人营地。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - サースティ南西のトレーダーキャンプ
+  38:
+    name_ja: 鉄のサメ
+    name_zh_reference: 铁鲨鱼
+    location_zh: 干渴酒吧东南商人营地
+    acceptance_zh: 到达干渴酒吧后与商人交谈。
+    steps_zh:
+      - 击败铁鲨鱼并回来报告。
+  39:
+    name_ja: 過去へのトンネル
+    name_zh_reference: 通往过去的隧道
+    location_zh: 比特隧道
+    acceptance_zh: 与比特交谈。
+    steps_zh:
+      - 修理隧道掘进机，休息一晚后返回，驾驶战车推动车辆。
+    vehicle_related: true
+  40:
+    name_ja: シグナルを追え
+    name_zh_reference: 追踪信号
+    location_zh: 巴扎斯卡码头
+    acceptance_zh: 与码头的厨子王交谈。
+    steps_zh:
+      - 追踪信号找到并击败大型蝠鲼，把信号弹交还厨子王。
+  41:
+    name_ja: 家出少女
+    name_zh_reference: 离家少女
+    location_zh: 巴扎斯卡码头旁
+    acceptance_zh: 与萨莉交谈。
+    steps_zh:
+      - 把她带到码头镇、德尔塔利奥或以斯拉港中的一座港口城镇。
+  42:
+    name_ja: 家出少女の行方
+    name_zh_reference: 离家少女的下落
+    location_zh: 巴扎斯卡及萨莉停留的城镇
+    acceptance_zh: 完成“离家少女”后，通过休息和交谈推进事件，再接受特别委托。
+    steps_zh:
+      - 把萨莉带回巴扎斯卡。
+  43:
+    name_ja: 不死身のソルジャー
+    name_zh_reference: 不死的战士
+    location_zh: 掠夺者之塔入口、德尔塔利奥、明奇研究所
+    acceptance_zh: 调查掠夺者之塔入口的尸体并选择送往明奇博士处。
+    steps_zh:
+      - 先复活战士，观看德尔塔利奥的后续事件后再回收尸体，请明奇博士再次复活她。
+  44:
+    name_ja: 荒野の運送屋
+    name_zh_reference: 荒野运输
+    location_zh: 霍克交易所及沿途战车装备店
+    acceptance_zh: 与霍克交易所入口的阿多交谈。
+    steps_zh:
+      - 把货物装入战车，依次送到德尔塔利奥、以斯拉港、摩洛波克、熔岩镇的战车装备店；每站均需继续接受运输。
+    aliases:
+      - 荒野运输屋
+      - 荒野的运输商
+    vehicle_related: true
+    failure_notes_zh:
+      - 在任意交货站拒绝下一程委托，会当场结束整个运输任务。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 戦車に積み込み
+          - 徐々に重く
+          - 依頼を断るとその時点でクエストが完了
+      - section_ja: 報酬
+        terms:
+          - デルタ・リオ：1500G
+          - イスラポルト：3000G
+          - モロ・ポコ：6000G
+          - メルトタウン：12000G
+      - section_ja: コメント
+        terms:
+          - 品揃えが更新
+          - 称号
+    reward_notes_zh:
+      - 四站报酬分别为1500G、3000G、6000G、12000G；货物逐渐加重。
+      - 交货会更新当地战车装备店货物；完成全程可取得荒野运输屋称号。
+  45:
+    name_ja: はじめての店番
+    name_zh_reference: 第一次看店
+    location_zh: 霍克交易所东北商人营地
+    acceptance_zh: 在营地左侧灌木处与艾克交谈。
+    steps_zh:
+      - 代看商店，最后把营业结果告诉艾克。
+  46:
+    name_ja: 美人すぎるハイテク海女
+    name_zh_reference: 过分美丽的高科技海女
+    location_zh: 贝内特的海之家
+    acceptance_zh: 与咲交谈。
+    steps_zh:
+      - 打捞银音乐盒并交给咲。
+  47:
+    name_ja: 幻のラーメン
+    name_zh_reference: 梦幻拉面
+    location_zh: 贝内特的海之家
+    acceptance_zh: 接受特别委托。
+    steps_zh:
+      - 取得拉面罐头并交给贝内特。
+  48:
+    name_ja: 凄腕ハンター募集
+    name_zh_reference: 招募高手猎人
+    location_zh: 德尔塔利奥酒吧、城镇西北废墟
+    acceptance_zh: 推进皮奇兄弟任务，有名度至少701后与史密斯交谈。
+    steps_zh:
+      - 在西北废墟击败皮奇兄弟，再向史密斯报告。
+  49:
+    name_ja: ヒッチハイカー
+    name_zh_reference: 搭便车的人
+    location_zh: 风力发电站附近野外
+    acceptance_zh: 完成“招募高手猎人”后与野外的沃克交谈。
+    steps_zh:
+      - 把人送到风力发电站西南营地，击败皮奇兄弟后与沃克交谈。
+    failure_notes_zh:
+      - 到达死亡十字前完成本委托，会跳过当地皮奇兄弟会面；不影响连环任务推进，但少一项冒险指南记录。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - デスクルス到着前
+          - 遭遇できなくなる
+          - ガイド項目が一つ減る
+  50:
+    name_ja: 霧の中で
+    name_zh_reference: 浓雾之中
+    location_zh: 熔岩镇西方普通废墟、雨谷废墟
+    acceptance_zh: 完成“搭便车的人”后与潘瑟交谈。
+    steps_zh:
+      - 前往雨谷废墟并击败皮奇兄弟。
+  51:
+    name_ja: エバの行方
+    name_zh_reference: 艾娃的下落
+    location_zh: 德尔塔利奥、黑暗水道
+    acceptance_zh: 与德尔塔利奥入口附近的船员交谈。
+    steps_zh:
+      - 在黑暗水道击败卡廖斯特罗后，与艾娃交谈。
+  52:
+    name_ja: 空室の未亡人
+    name_zh_reference: 空房间的寡妇
+    location_zh: 德尔塔利奥公寓3层
+    acceptance_zh: 购买公寓并至少休息一晚后，与鲍比交谈。
+    steps_zh:
+      - 完成房间内的事件，击败小鳄鱼后与娜塔莉交谈。
+  53:
+    name_ja: 海の復讐鬼
+    name_zh_reference: 海上复仇者
+    location_zh: 以斯拉港船坞附近
+    acceptance_zh: 与船坞附近男子交谈。
+    steps_zh:
+      - 击败U鲨鱼，取得涅墨西斯号。
+    vehicle_related: true
+  54:
+    name_ja: 機械じかけの従業員
+    name_zh_reference: 机械员工
+    location_zh: 以斯拉港船坞2层
+    acceptance_zh: 与金造交谈，待其停止后与富美交谈。
+    steps_zh:
+      - 处理金造与布鲁特的事件，随后向富美报告。
+  55:
+    name_ja: お水をください
+    name_zh_reference: 请给我水
+    location_zh: 以斯拉港塞西尔家
+    acceptance_zh: 塞西尔倒下后接受特别委托。
+    steps_zh:
+      - 取得大社镇清水并交给丹。
+  56:
+    name_ja: 薬をください
+    name_zh_reference: 请给我药
+    location_zh: 以斯拉港塞西尔家
+    acceptance_zh: 完成“请给我水”，在塞西尔家休息一晚后与丹交谈。
+    steps_zh:
+      - 把退烧药交给丹。
+  57:
+    name_ja: 大根をください
+    name_zh_reference: 请给我萝卜
+    location_zh: 以斯拉港塞西尔家
+    acceptance_zh: 完成“请给我药”，在塞西尔家休息两晚后与丹交谈。
+    steps_zh:
+      - 把沙萝卜根交给丹。
+  58:
+    name_ja: 金食い虫を探せ
+    name_zh_reference: 寻找食金虫
+    location_zh: 以斯拉港塞西尔家
+    acceptance_zh: 给送给塞西尔的食金虫喂约100G，待其逃走后与她交谈。
+    steps_zh:
+      - 找回食金虫并交给塞西尔。
+  59:
+    name_ja: 魔女の秘密
+    name_zh_reference: 魔女的秘密
+    location_zh: 北之魔女之家
+    acceptance_zh: 到达以斯拉港后接受特别委托。
+    steps_zh:
+      - 收集要求的材料，完成魔女的药。
+  60:
+    name_ja: 消えた輸送船
+    name_zh_reference: 消失的运输船
+    location_zh: 德尔塔利奥码头
+    acceptance_zh: 获得船后与码头旁的罗伊交谈。
+    steps_zh:
+      - 驾驶船进入德尔塔利奥港接上罗伊，再前往恶魔岛东南的运输船，下车登船调查。
+      - 立即登船时，与塔妮雅交谈后击败3只鱼雷鱼，随后拖船回港并向罗伊交差。
+      - 若未及时登船、未带罗伊，或鱼雷鱼战全灭，则进入另一事件分支；完成调查后拖船回港，与塔妮雅交谈。
+    failure_notes_zh:
+      - 未带罗伊便登上运输船，或靠船后先离开而不立即登船，会转入另一结局分支。
+      - 在船上鱼雷鱼战中全灭也会转入该分支，需打捞自己的船后重新返回。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - ロイを乗せる
+          - すぐに船に乗り込んだ場合
+          - ギョライギョ戦で全滅
+          - 下のパターンへ移行
+      - section_ja: コメント
+        terms:
+          - ロイを乗せずに輸送船に乗り込んで
+  61:
+    name_ja: 消えた父
+    name_zh_reference: 失踪的父亲
+    location_zh: 以斯拉港旅馆2层
+    acceptance_zh: 获得船后与桃子交谈。
+    steps_zh:
+      - 找到银项坠后回来与桃子交谈。
+  62:
+    name_ja: 私を”あい”に連れてって
+    name_zh_reference: 带我去爱之碎片
+    location_zh: 以斯拉港酒吧
+    acceptance_zh: 获得船后与贡交谈。
+    steps_zh:
+      - 把贡带到爱之碎片。
+    detail_title_aliases:
+      - 私を"あい"に連れてって
+    aliases:
+      - 私を"あい"に連れてって
+  63:
+    name_ja: 危険海域
+    name_zh_reference: 危险海域
+    location_zh: 以斯拉港及打捞船
+    acceptance_zh: 获得船并使用打捞服务至少3次后接受特别委托。
+    steps_zh:
+      - 击败水上父母号，再与打捞船员交谈。
+  64:
+    name_ja: エンジントラブル
+    name_zh_reference: 发动机故障
+    location_zh: 大社镇西南野外的卡车旁
+    acceptance_zh: 接受“大社镇挖冰”后与野外商人的卡车交谈。
+    steps_zh:
+      - 交付载重量至少40.00吨的发动机；来源以可购买的超级脉冲为满足条件的例子。
+    vehicle_related: true
+    aliases:
+      - 引擎故障
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 積載量40.00t以上
+      - section_ja: コメント
+        terms:
+          - スーパーインパルス
+          - 24000G
+          - 光子力ジェット
+          - LOVEマシン2313
+          - 二度と手に入らなく
+    failure_notes_zh:
+      - 交出的发动机不会返还；若交付唯一品光子力喷射或LOVE机器2313，会永久失去该物品，LOVE机器也无法重新组合。
+    reward_notes_zh:
+      - 返还所交发动机的购买价并另付2000G；完成后更新大社镇战车装备店货物。
+      - 来源举例超级脉冲载重量恰为40吨，购买价24000G；该价格只是日版来源参考。
+    source_uncertainties_zh:
+      - 来源对仅靠星级使载重量超过40吨能否满足条件标为疑问，不能保证这类发动机可交付。
+  65:
+    name_ja: タイシャーの氷掘り
+    name_zh_reference: 大社镇挖冰
+    location_zh: 大社镇冰洞
+    acceptance_zh: 与冰洞内的冰人交谈。
+    steps_zh:
+      - 破坏至少一面冰壁后向冰人报告。
+    vehicle_related: true
+  66:
+    name_ja: 神をも恐れぬ
+    name_zh_reference: 连神也不怕
+    location_zh: 大社镇酒吧、神社
+    acceptance_zh: 与酒吧的莉兹交谈。
+    steps_zh:
+      - 回收香火钱后向莉兹报告。
+  67:
+    name_ja: コンボトロンを探せ
+    name_zh_reference: 寻找组合电子
+    location_zh: 大社镇神社前
+    acceptance_zh: 获得船并到达大社镇后接受特别委托。
+    steps_zh:
+      - 找到组合电子，再与神社前的亨利交谈。
+    vehicle_related: true
+  68:
+    name_ja: なぞの少年
+    name_zh_reference: 神秘少年
+    location_zh: 大社镇
+    acceptance_zh: 镇内天气晴朗时与入口男子交谈。
+    steps_zh:
+      - 取得玻璃弹珠后再与男子交谈。
+  69:
+    name_ja: 暴れ野バスを止めろ！
+    name_zh_reference: 阻止暴走野巴士！
+    location_zh: 德尔塔利奥、佛像村周边
+    acceptance_zh: 已获得野巴士且到达大社镇后接受特别委托。
+    steps_zh:
+      - 在德尔塔利奥东北、佛像村东南商人营地以西的地面使用金属探测器，调查反应点并击败垃圾巨人。
+      - 向德尔塔利奥的金报告；若谈定的是战车装备奖励，还需推进其移居事件，到东北商人营地领取。
+    vehicle_related: true
+    failure_notes_zh:
+      - 接取时不询问报酬，会失去装备奖励。
+      - 任务进行期间才会遇到暴走野巴士；完成前应处理所需怪物图鉴记录。
+      - 来源注明轨道炮仅能由本任务取得，选择其他奖励会错过本周目的该武器。
+    detail_checks:
+      - section_ja: 発生条件
+        terms:
+          - 報酬は？
+          - 何も得られない
+      - section_ja: コメント
+        terms:
+          - クエスト進行中のみ
+          - あばれ野バス
+          - レイルガンのみ入手機会
+      - section_ja: 達成条件
+        terms:
+          - トレーダーキャンプの西
+          - 金属探知機
+          - 戦車用の報酬
+          - トレーダーキャンプでジンから報酬
+  70:
+    name_ja: 世界を盗め
+    name_zh_reference: 盗遍世界
+    location_zh: 天鹅镇及各地上锁设施
+    acceptance_zh: 取得开锁器后开始。
+    steps_zh:
+      - 打开任务要求的全部门锁。
+    vehicle_related: true
+  71:
+    name_ja: スワン発進！
+    name_zh_reference: 天鹅号出发！
+    location_zh: 天鹅镇B1层
+    acceptance_zh: 完成“见证人”后与大卫交谈。
+    steps_zh:
+      - 收集马达、螺旋桨和燃料电池，交给大卫使天鹅号启动。
+    vehicle_related: true
+    failure_notes_zh:
+      - 天鹅号航行期间若队伍全灭，仍在船上的乘客会变成尸体，相关商店将无法使用。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - スワン乗船中に全滅
+          - 乗客が死体
+          - お店が利用できなく
+  72:
+    name_ja: 立会人
+    name_zh_reference: 见证人
+    location_zh: 天鹅镇1层
+    acceptance_zh: 击败加西亚并至少休息一晚后与马尔科交谈。
+    steps_zh:
+      - 分别给马尔科与伊祖武器，见证并结束决斗。
+    failure_notes_zh:
+      - 交付给双方的武器会改变决斗结局，可能导致伊祖死亡；两人的武器需分别向马尔科及倒在天鹅镇外的伊祖回收。
+    source_uncertainties_zh:
+      - 来源对“攻击力175以上导致死亡”的条件带问号，且列出互相不能用单一攻击阈值解释的实测组合；不能把175当作确定的安全界线。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 渡した武器によって決闘の結果が変化
+          - イズーが死亡
+      - section_ja: コメント
+        terms:
+          - イズーに貸した分の武器
+          - 攻撃力210
+          - イズー生存
+  73:
+    name_ja: 奪われたマッチョ
+    name_zh_reference: 被夺走的肌肉
+    location_zh: 乙姬沙龙前野外
+    acceptance_zh: 被抽取肌肉精华至少4次后与野外的健二交谈。
+    steps_zh:
+      - 把肌肉精华交给健二。
+  74:
+    name_ja: 複製の穴
+    name_zh_reference: 复制之穴
+    location_zh: 以斯拉港码头旁
+    acceptance_zh: 击败筋肉夫人并至少休息一晚后，与丹尼交谈。
+    steps_zh:
+      - 调查复制之穴，取得丹尼的日记并交还。
+    failure_notes_zh:
+      - 完成后其余丹尼复制体也会消失；若需要记录怪物图鉴，应在完成前击败对应个体。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - クエストクリア後
+          - 消滅
+          - モンスターなので登録
+  75:
+    name_ja: 死者からの復讐
+    name_zh_reference: 死者的复仇
+    location_zh: 金轮际旅馆警备系统前
+    acceptance_zh: 调查尸体，取得并阅读信件。
+    steps_zh:
+      - 击败杰克。
+  76:
+    name_ja: 7人の冒険者
+    name_zh_reference: 七名冒险者
+    location_zh: 以斯拉港酒吧
+    acceptance_zh: 领取金轮际幽灵赏金后与阿宏交谈。
+    steps_zh:
+      - 把冒险者队伍带到金轮际旅馆。
+  77:
+    name_ja: 金輪際ホテル殺人事件
+    name_zh_reference: 金轮际旅馆杀人事件
+    location_zh: 金轮际旅馆
+    acceptance_zh: “七名冒险者”进行中触发。
+    steps_zh:
+      - 调查B1F停车场倒地的机械师并与全员交谈，清完B1F至3F怪物后向3F商人报告。
+      - 通过住宿继续事件，依次调查旅馆正门外倒地的人、与全员交谈，再到13F及屋顶推进结局。
+      - 屋顶选择“生きろ！2人の分まで”可让顺姬生还；另一选项导致死亡，报酬不受此分支影响。
+    failure_notes_zh:
+      - 正门外调查第二名倒地者期间，不要接触从2F窗口垂下的绳子；来源报告会卡住而需要读档。
+      - 屋顶对话选择“生きてれば、イイ事がある”会导致顺姬死亡。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 2Fの窓から下がるロープ
+          - ハマってリセット
+          - 生きてれば、イイ事がある
+          - スンヒ死亡
+          - 生きろ！2人の分まで
+  78:
+    name_ja: 家族の元へ
+    name_zh_reference: 回到家人身边
+    location_zh: 奇怪岛沙滩广场
+    acceptance_zh: 乘船登陆奇怪岛后与拉托雅交谈。
+    steps_zh:
+      - 把她带到寂寞男子之家。
+  79:
+    name_ja: ハトバへ
+    name_zh_reference: 前往码头镇
+    location_zh: 奇怪岛入口沙滩
+    acceptance_zh: 在宝岛事件中小八被掳走后，乘船到奇怪岛入口与她交谈。
+    steps_zh:
+      - 把小八带回码头镇。
+  80:
+    name_ja: 脱出！
+    name_zh_reference: 逃脱！
+    location_zh: 奇怪岛、古洛温体内
+    acceptance_zh: 队伍中有同伴时，与古洛温触手战斗并全灭。
+    steps_zh:
+      - 找到失散的同伴，使用传送装置脱出。
+    failure_notes_zh:
+      - 完成宝岛任务后，本周目无法再接取此任务。
+      - 单人队伍无法满足寻找同伴的指南条件，因此即使漂流到奇怪岛也不会触发。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - 次の周回まで受注不可能
+          - 1人旅
+          - クエストが発生しない
+  81:
+    name_ja: ボクヲナオシテ
+    name_zh_reference: 请修好我
+    location_zh: 恶魔岛3层
+    acceptance_zh: 调查并修理迈克尔。
+    steps_zh:
+      - 根据要求找齐宇宙零件并交付。
+    failure_notes_zh:
+      - 最初选择“解体する”会取得L3芯片，但任务随即消失。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - 解体する
+          - L3-ICチップ
+          - クエストは消滅
+  82:
+    name_ja: 嫌われ者
+    name_zh_reference: 惹人讨厌的家伙
+    location_zh: 职员住宅
+    acceptance_zh: 击败蓝蛙后与海蒂交谈。
+    steps_zh:
+      - 消灭全部粪便投掷者，再向海蒂报告。
+  83:
+    name_ja: インセクター
+    name_zh_reference: 除虫专家
+    location_zh: 职员住宅
+    acceptance_zh: 完成“惹人讨厌的家伙”后选择继续除虫。
+    steps_zh:
+      - 击败30只虫类怪物，再与海蒂交谈。
+  84:
+    name_ja: 草刈り
+    name_zh_reference: 除草
+    location_zh: 职员住宅
+    acceptance_zh: 完成“除虫专家”时答应继续帮忙。
+    steps_zh:
+      - 击败30只植物类怪物，再与海蒂交谈。
+  85:
+    name_ja: お買いもの
+    name_zh_reference: 购物
+    location_zh: 职员住宅
+    acceptance_zh: 完成“惹人讨厌的家伙”后选择购买蚊香的分支。
+    steps_zh:
+      - 把20个蚊香交给海蒂。
+  86:
+    name_ja: 幸せの青いカニ
+    name_zh_reference: 幸福的蓝螃蟹
+    location_zh: 摩洛波克南方商人营地
+    acceptance_zh: 到达摩洛波克后接受特别委托。
+    steps_zh:
+      - 把蓝螃蟹钳交给拉琪娜。
+  87:
+    name_ja: エリーザの恋人
+    name_zh_reference: 艾莉莎的恋人
+    location_zh: 摩洛波克酒吧、北方海湾
+    acceptance_zh: 与酒吧的艾莉莎交谈。
+    steps_zh:
+      - 把她带到海湾中指定地点，完成遭遇事件。
+  88:
+    name_ja: 湖底の片腕
+    name_zh_reference: 湖底的独臂
+    location_zh: 摩洛波克、东北废墟
+    acceptance_zh: 击败海星怪并至少休息一晚后与1层的古德曼交谈，或直接前往东北废墟。
+    steps_zh:
+      - 在黑暗水道靠摩洛波克一侧出口附近打捞武装枪，带给废墟中的恶党并击败β型。
+      - 若武装枪已装备在角色身上，先卸下，否则事件可能按未持有处理。
+    failure_notes_zh:
+      - 第一次败给β型会导致古德曼父子死亡；之后重战胜利仍可完成任务，但不能取得金钱与有名度。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - 装備していると
+          - タイプβに敗北
+          - お金と有名度は得られない
+  89:
+    name_ja: イッチの依頼
+    name_zh_reference: 一奇的委托
+    location_zh: 摩洛波克3层酒吧
+    acceptance_zh: 先与一奇交谈，再与珍妮交谈。
+    steps_zh:
+      - 把一奇的包裹送到摩洛波克东南废墟。
+  90:
+    name_ja: ニールの依頼
+    name_zh_reference: 尼尔的委托
+    location_zh: 摩洛波克
+    acceptance_zh: 完成“一奇的委托”后接受特别委托。
+    steps_zh:
+      - 把尼尔的礼物送到摩洛波克东南废墟。
+  91:
+    name_ja: サンポスの依頼
+    name_zh_reference: 桑波斯的委托
+    location_zh: 摩洛波克
+    acceptance_zh: 完成“尼尔的委托”后接受特别委托。
+    steps_zh:
+      - 取得花汁后与桑波斯交谈。
+  92:
+    name_ja: 兄弟たちの挽歌
+    name_zh_reference: 兄弟们的挽歌
+    location_zh: 摩洛波克及东南废墟
+    acceptance_zh: 完成“桑波斯的委托”后接受特别委托。
+    steps_zh:
+      - 观看东南废墟的后续事件，再与珍妮交谈。
+  93:
+    name_ja: 砂漠のタンクフリーク
+    name_zh_reference: 沙漠的战车迷
+    location_zh: 死亡十字、南关卡
+    acceptance_zh: 解放死亡十字并到达履带村后接受特别委托。
+    steps_zh:
+      - 在南关卡驾驶战车与洛可交谈，完成其“古董大炮”要求后，再向死亡十字租赁战车店报告。
+    vehicle_related: true
+    reward_notes_zh:
+      - 完成后可开放租赁18号；若原先已可租借则没有这一额外变化。
+    failure_notes_zh:
+      - 若先完成“古董大炮”再向租赁店报告，仍能完成并取得常客卡，但来源注明不会记录在冒险指南中。
+    source_uncertainties_zh:
+      - 来源仅提出“时间经过后洛可是否死亡”的待验证疑问，没有给出可靠时限，不能据此推算截止时间。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - レンタル18号
+          - 冒険ガイドに記載されない
+          - 要検証
+  94:
+    name_ja: ビンテージキャノン
+    name_zh_reference: 古董大炮
+    location_zh: 南关卡
+    acceptance_zh: “沙漠的战车迷”进行中，驾驶战车与洛可交谈。
+    steps_zh:
+      - 装备死神加农炮并让洛可查看。
+    vehicle_related: true
+    source_uncertainties_zh:
+      - 来源提出“时间经过后洛可是否死亡”的待验证疑问，尚无可靠时限。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - ロコが死亡する
+          - 要検証
+  95:
+    name_ja: 塀の中の天国
+    name_zh_reference: 围墙中的天堂
+    location_zh: 死亡十字
+    acceptance_zh: 进入死亡十字时触发。
+    steps_zh:
+      - 击败斯坎克斯复制体，解放城镇。
+    failure_notes_zh:
+      - 成为厨房工人后，打开厨房入口旁的木箱会退回推油桶阶段；来源建议先检查厨房深处。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 厨房入ってすぐの木箱
+          - ドラム缶を押す
+          - やり直し
+  96:
+    name_ja: きずなのコイン
+    name_zh_reference: 羁绊的硬币
+    location_zh: 死亡十字
+    acceptance_zh: 解放死亡十字后接受特别委托。
+    steps_zh:
+      - 把硬币交给达拉斯。
+  97:
+    name_ja: 幻の13号
+    name_zh_reference: 梦幻13号
+    location_zh: 熔岩镇租赁战车店
+    acceptance_zh: 尝试租借13号战车。
+    steps_zh:
+      - 先完成“梦幻拉面”取得高级金属探测器，在被埋大楼东面的荒地调查探测反应；发现13号后回熔岩镇租赁店报告。
+    vehicle_related: true
+    reward_notes_zh:
+      - 发现后租赁13号会自动返回，任务本身并不把它变成自有战车。
+    detail_checks:
+      - section_ja: 達成条件
+        terms:
+          - 埋もれたビル
+          - 東の荒地
+          - グレート金属探知機
+          - 幻のラーメン
+      - section_ja: コメント
+        terms:
+          - 発見すると自動で帰還
+  98:
+    name_ja: 同調式開錠装置
+    name_zh_reference: 同步式开锁装置
+    location_zh: 拜亚斯都市入口
+    acceptance_zh: 击败入口守卫后与其交谈。
+    steps_zh:
+      - 取得并使用同步器，打开都市入口。
+    vehicle_related: true
+  99:
+    name_ja: 宿屋の忘れ物
+    name_zh_reference: 遗留在旅馆的东西
+    location_zh: 死亡十字旅馆
+    acceptance_zh: 解放死亡十字并通关后接受特别委托。
+    steps_zh:
+      - 击败巨大甜瓜怪后与旅馆老板交谈。
+    failure_notes_zh:
+      - 任务期间城内随机遭遇含限定怪物“小甜瓜”和“迷你芋虫火神”；击败巨大甜瓜后遭遇归零，图鉴需提前处理。
+    detail_checks:
+      - section_ja: コメント
+        terms:
+          - デカメロウィンを倒した時点
+          - クエスト発生中限定
+          - ベビーメロウィン
+          - ミニイモバルカン
+  100:
+    name_ja: バトーのプレゼント
+    name_zh_reference: 巴特的礼物
+    location_zh: 巴特研究所
+    acceptance_zh: 先让巴特取外号；完成大社镇挖冰、打破全部冰壁并发现巨蛋，使巨蛋被供奉于神社；取得神社5号底盘后至少休息3晚。还需击败筋肉夫人并通关，随后阅读邮箱中的巴特来信。
+    steps_zh:
+      - 在研究所接取委托，为i护目镜安装朋友雷达；先处理布拉德博物馆屋顶的敌人，回来报告取得新坐标。
+      - 前往风力发电站完成“拯救发电站！”，再报告取得下一组坐标。
+      - 依坐标在佛像村东南草地取得宇宙零件+5；继续调查赫尔梅茨岛南方幽灵船，关闭求救信号并取得航海日志。
+      - 再到蛋白质宫殿地下找到奥普蒂，把她带回研究所；最后击败大社镇周边的拉格纳·洛克并报告。
+    vehicle_related: true
+    failure_notes_zh:
+      - 取得宇宙零件+5时选择不装载，会使反应消失并失去该物品。
+      - 最终装备奖励选择装载车辆时若选“不装载”，本周目将无法再次领取。
+    reward_notes_zh:
+      - 最终从朋友炮、F龙卷风、电击密友、神之朋友四件战车装备中选择一件。
+    detail_checks:
+      - section_ja: 発生条件
+        terms:
+          - あだ名
+          - 氷の壁を全て破壊
+          - シャシーNo.5
+          - 3泊
+          - マダム・マッスル
+          - ゲームクリア
+      - section_ja: 達成条件
+        terms:
+          - 友だちレーダー
+          - ヘルコール
+          - 発電所を救え
+          - 宇宙パーツ+5
+          - つみこまない
+          - 船員の航海日誌
+          - オプティ
+          - ラグナ＝ロック
+      - section_ja: 報酬
+        terms:
+          - フレンド砲
+          - F-トルネード
+          - 電撃的アミーゴ
+          - ゴッドフレンド
+          - 二度と報酬を受け取れなく
+  101:
+    name_ja: 発電所を救え！
+    name_zh_reference: 拯救发电站！
+    location_zh: 风力发电站1层
+    acceptance_zh: “巴特的礼物”进行中与1层机器人交谈。
+    steps_zh:
+      - 击败螳螂杀手，修好漏电处。
+    vehicle_related: true

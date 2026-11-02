@@ -85,6 +85,8 @@ pnpm dev:all
 
 职业收录 7 类职业、65 项技能、28 组成长观测与主副职业规则。技能按学习等级、Lv99 次数、对象、作用和使用条件分别展示，保留 28 处来源差异；同一技能的不同来源原值可展开核对。技能名称与作用纳入职业列表及全站搜索，不推算来源未提供的成长公式。
 
+道具收录 274 条记录，包括 81 组 LOVE 配方与 12 处芯片位置；用途、地点、消耗性和不同来源条件分别保留。任务收录 101 项，其中 25 项特别委托、21 项有明确失败或错过条件；其余条目明确标注来源未说明，不能据此认定不会失败。两类均支持类型筛选、中文用途检索、分页和返回列表。
+
 资料使用可追溯 JSON，账号与可撤销会话使用 PostgreSQL。密码通过 Argon2 哈希保存，登录令牌仅保存在 HttpOnly Cookie，数据库保存令牌摘要。生产环境需设置 `ENVIRONMENT=production`、HTTPS 的 `CLIENT_ORIGIN` 并使用 HTTPS；登录与问答限流当前适用于单进程部署。
 
 前端默认连接 `http://127.0.0.1:8000`，可通过前端环境变量 `API_BASE_URL` 修改。浏览器只访问同源 `/api`，不直接访问 Ollama 或持有模型密钥。
@@ -99,7 +101,9 @@ pnpm dev:all
 - `GET /versions/{version}/wiki/vehicles`：车型搜索与 `mount=double-engine|double-c-unit|all` 筛选。
 - `GET /versions/{version}/wiki/vehicles/{id}`：底盘配置、获取方式、特性、改造限制与来源。
 - `GET /versions/{version}/wiki/jobs`、`/wiki/jobs/{id}`：职业检索、成长观测、技能与来源差异。
-- `GET /versions/{version}/search?q=...`：装备、战车、赏金首与职业技能搜索，返回统一摘要及详情链接。
+- `GET /versions/{version}/wiki/items`、`/wiki/items/{id}`：道具类型、用途、LOVE 配方及芯片位置。
+- `GET /versions/{version}/wiki/quests`、`/wiki/quests/{id}`：任务类型、步骤、奖励与错过条件。两类列表支持 `tag` 筛选。
+- `GET /versions/{version}/search?q=...`：装备、战车、赏金首、职业、道具与任务搜索，返回统一摘要及详情链接。
 - `POST /auth/register`、`POST /auth/login`、`GET /auth/me`、`POST /auth/logout`：账号与会话。
 - `POST /versions/{version}/ask`：登录后的带引用问答。
 
@@ -142,7 +146,7 @@ pnpm build
 
 ## MM2R 0.99 资料数据管线
 
-数据管线从 17 份候选快照与战车底盘及部件、赏金首和掉落物事实快照生成 857 条记录：装备 457 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条、赏金首 30 条、战车 16 条。输出保留 3542 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
+数据管线从 17 份候选快照与战车底盘及部件、赏金首和掉落物事实快照生成 950 条记录：装备 457 条、道具 274 条、任务 101 条、职业 7 条、技能 65 条、赏金首 30 条、战车 16 条。输出保留 4587 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
 
 初次运行先同步数据工具依赖：
 
@@ -163,6 +167,8 @@ pnpm data:collect:wanted-items
 pnpm data:collect:vehicles
 pnpm data:collect:vehicle-traits
 pnpm data:collect:job-skills
+pnpm data:collect:items
+pnpm data:collect:quests
 pnpm data:normalize
 pnpm data:audit
 pnpm assets:fetch

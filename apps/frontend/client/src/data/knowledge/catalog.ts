@@ -1,6 +1,8 @@
 import rawWantedDataset from '../../../../../../data/interim/mm2r/0.99/wanted-monsters.json'
 import rawVehicleDataset from '../../../../../../data/interim/mm2r/0.99/vehicles.json'
 import rawJobDataset from '../../../../../../data/interim/mm2r/0.99/job-entries.json'
+import rawItemDataset from '../../../../../../data/interim/mm2r/0.99/item-entries.json'
+import rawQuestDataset from '../../../../../../data/interim/mm2r/0.99/quest-entries.json'
 
 import { toKnowledgeEntry, type KnowledgeEntry } from './entry'
 import { knowledgeDatasetSchema, type KnowledgeCategory } from './schema'
@@ -10,6 +12,8 @@ const datasets = [
   knowledgeDatasetSchema.parse(rawWantedDataset),
   knowledgeDatasetSchema.parse(rawVehicleDataset),
   knowledgeDatasetSchema.parse(rawJobDataset),
+  knowledgeDatasetSchema.parse(rawItemDataset),
+  knowledgeDatasetSchema.parse(rawQuestDataset),
 ]
 const entries: KnowledgeEntry[] = datasets.flatMap((dataset) =>
   dataset.records.map((record) => toKnowledgeEntry(record)),

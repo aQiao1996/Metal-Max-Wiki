@@ -4,6 +4,1376 @@
   "target_version": "0.99",
   "routes": [
     {
+      "category": "items",
+      "id": "human-item-06412cf077",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-0e503d2609",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-0e693361dd",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-10750733db",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-109b4fd35d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-11407341bb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-13787f22ee",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-1587482e75",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-16a8ddeecd",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-16fe3073dc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-197460bc5a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-1d791c0f46",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-24b0f09233",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-27fce487f2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-28810f3688",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-29169a01bb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-2c60a0af02",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-2ffe827de2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-336e2a888c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-34e41a2e2f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-34fd4de81d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-353fafe2d8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-357dead4f5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-37eb5a47ea",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-384b893307",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-3b27afcfc0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-493dd9501b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-4b9d2a6958",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-4c4687f171",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-52c53329b1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-52ca0fc676",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-5351215969",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-5352e9de5e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-5535fe189f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-55e9368315",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-570f33435f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-59575dcc5a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-59c99ffec4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-5d6ae36c84",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-5dfd2098e6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-64f3c8026f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-68328c976a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-68eea81321",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-699bc91a15",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-6b8800d8aa",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-6be809ffa7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-6cac93e47c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-6cedca2f4f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-6dd6606eae",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-7aea891add",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-7ccad1ec36",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-7f6b5e9b3a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-831d46fe0c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-835a004a73",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-83d2c708af",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-83ed30ffc0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-84b14a53c6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-858a9976c5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-85b1f4ee2b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-87af51b083",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-8a9a147d22",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-9062e1784b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-950419b0dc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-95b1d91c9b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-9dc2a79000",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-a1c19ed414",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-ab8db929c3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-aba7da50fb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-b1b402e086",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-b2669bc022",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-b3dd740882",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-b5ffb5b1df",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-b855dad15a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-bda086ba90",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-c147e8179b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-c26e0762f5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-c67ae999dc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-c813bb38cc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-ce9055dcc8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-d033fd46d2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-d422270df8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-d446497622",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-d62edaa16b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-d6f4dd7b1e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-da85879b4a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-dacbc6ea48",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-db8b889cb5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-dcaafe203f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-dcd8adc6b2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e0e71f1abd",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e201757203",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e295d93471",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e30a14d8ec",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e4ae560a6a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e57b74c3fe",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e96a117f3c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-e98756d2fc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-eb2436a433",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-ec8aebe719",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-eed44787db",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-f5a5db117e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-f5f8fa8419",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-f762e9bbc2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-f829dd631f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-f8a315560a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "human-item-feae6860bc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-0b434171d4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-27f89db3fc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-2a91b5d88b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-3156116d5c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-399cfc6ed4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-3af38aa724",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-6916e3cfab",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-6ea1a98334",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-8b2fcda67a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-acdbcab125",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-c84d543aa3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "ic-chip-location-e4e8fbeb28",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-04a1c90546",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-05e4e8aeb7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-0601e30a40",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-08eab2fa0c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-096cfd0a9d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-0ecd16666d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-0ffdaf42d6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-111fb60325",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-117f0a2806",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-17ccdbffb5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-1b5157fc3f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-1e07dab3f9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-1e95c9db1a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-20fa367d70",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-21f80773d7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-220a6530ce",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-2b2f444780",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-2e48278f4c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-361bc92369",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-4206dea509",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-4703b8edf2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-4f590c0b9e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-5341d81846",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-56b23402c9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-57f54995fa",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-5ea89ccc61",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-6197ca9819",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-641f8d3c60",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-69b4fd24eb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-70075241d2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-70f77925ba",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-72b2314ac9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-7492434872",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-75d358f46d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-7674a42fc5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-7b4507a440",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-7b8e1dd435",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-87e29c82ff",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-8800e33350",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-8eee302598",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-95a72972b4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-95cf702e8e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-97ba408c92",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-9ae3a9bdc5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-a9a82485ca",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-aea8252891",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-b69fa7b074",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-bbbfa9cb16",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-bd08d2141e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-be0e4d08b6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-be4970a9ac",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c18ebfee14",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c22c5d1765",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c3d4a10dd4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c44b90395f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c531cca550",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-c6db3d7b67",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-cc11617c15",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-cd8f4b9a69",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-cdfab4379c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-ce3ea92586",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-ce68eb854f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-d1b13ec646",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-d4835f7b26",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-de27ec6381",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-de340a5a6f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-de4f55285c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-de8729724b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e00ed19e19",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e17e979657",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e4a007aa6d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e6f553ef6f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e783814209",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e92fa85d30",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e999f1fac6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-e9ccd06a2e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-ea4f744573",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-ec373af839",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-f11dd6ea84",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-f2752b994d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "love-machine-recipe-f7fccc517a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-009a444dc1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-056a243d79",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-33eab5dfa6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-4183477d0c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-44235a9b82",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-537a931963",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-587b877a20",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-6577b4c47b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-77b5e37b32",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-8eec149996",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-993d3a26da",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-a21522939d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-a56b7f85d9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-ae38c829c2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-c23c15b3a2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "special-shell-e323b9f43b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-002ffa2113",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-003e04ba4e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-1726b4ad45",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-1a004d7f49",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-1cdd1d5113",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-1f6bce69a4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-2610a1f9ea",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-29c81ea2a0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-2ac039c297",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-2b0a57924b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-355803ac9f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-3911fa50af",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-3b64e90435",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-3caaf886a4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-42a40964c4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-4c92ae11cc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-5023a4a519",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-51fff9e203",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-6532177363",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-6b0fca089c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-6c66027920",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-6c6bbe6b99",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-6e03abf885",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-7775ee12d3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-7f4cec3143",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-7f954c3fe9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-83a3099f46",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-8aa9dbf454",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-8bf5cdeb7c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-9091ea3aa1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-91dee60d34",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-92ce65fb84",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-95211ff380",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-95456ed46d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-997a290301",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-9bc847319f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-9dbaf40f22",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-a83a93e37a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-ad5b6c5ddf",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-b176bf2c7d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-b1d55c38b0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-b8f98654bb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-c89ebad825",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-cdee35f044",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-cfaa2f03c7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d2a03923f2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d3d90d8f56",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d63598e2a5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d659c02ebc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d85645a93a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-d997b111fb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-dbc34bac47",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-e30cb869de",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-e4030efe35",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-ec20c0c3b1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-f4538b19ae",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-f989a572ef",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-f9d9bb0043",
+      "legacy_slugs": []
+    },
+    {
+      "category": "items",
+      "id": "tank-item-faddaa15cc",
+      "legacy_slugs": []
+    },
+    {
       "category": "jobs",
       "id": "job-09b51cf0e7",
       "legacy_slugs": []
@@ -36,6 +1406,511 @@
     {
       "category": "jobs",
       "id": "job-c8ea6c94a5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-0154ced5fb",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-03b2eb66c4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-0732f7e496",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-083c08e69d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-098d939295",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-0b0db75653",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-11feb34d4d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-18bf5cbeba",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-18dd821b73",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-191eb2e47f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-1f3d300d17",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-1fa1752427",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-216fd2e86a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-253da09c59",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-25d8a8b687",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-286394ddd0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-29c2633f45",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-2d46970a02",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-2e0b093714",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-3a04911874",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-3c04e266e3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-3f99938301",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-3fbe78a250",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-4098863721",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-4099914229",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-4331c5c6ee",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-438148fdf6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-44dc3680ef",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-47a7844ae3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-47c70d0c9e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-49dcf0e5a5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-4c79969036",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-4e026cf97b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-502aa323e0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-531bf23085",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-5579dff8ca",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-55d7a23ab5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-57b36eb673",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-5f9b2654f2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-6026208adf",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-608dbf51a3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-623ef43bdd",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-65574cc00a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-6a54a237b5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-6aac7d97b2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-6d0073d099",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-743704dbf9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-75579703c3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-7d2e0d4d1a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-7ecb5d7663",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-808553a9ba",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-83fcc0720f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-89532c395e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-89781e8be5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-8b6951edb0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-8fc651247b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-924f5a5dfa",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-9283c0251d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-951657c4cf",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-951ba2dd25",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-970b2650e3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-97b1411839",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-97c831a121",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-9c89f72a2d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-9cc88c304b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-9ed77a2481",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-a03faaebd5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-a0f913cf6a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-a53809ec8c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-a633cba62e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-ad4382d244",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-ad7a8fb143",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-af6c0c6ca4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-b100180f6f",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-b4c569822e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-b6ed458994",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-b8912c86d1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-b99f359217",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-bc6376515e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-bcac367768",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-bff506e117",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-c449d04ec0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-c841ef7bc6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-d05a9292f0",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-d2642ae325",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-d8af553e3d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-d9c98affd8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-dab862749c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-dbe2048f1e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-ddf74aa280",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-e2c2920a44",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-e2d508c992",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-eaed29f060",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-ebe6032973",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-efe7548746",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-f4a002455a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-f6bb203123",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-f7f4125d44",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-f923ad01e5",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-fbb06b9d8b",
+      "legacy_slugs": []
+    },
+    {
+      "category": "quests",
+      "id": "quest-fd8ba7db5c",
       "legacy_slugs": []
     },
     {

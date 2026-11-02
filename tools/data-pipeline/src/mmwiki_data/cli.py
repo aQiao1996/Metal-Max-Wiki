@@ -14,6 +14,8 @@ from mmwiki_data.asset_pipeline import AssetPipelineError, audit_assets, fetch_a
 from mmwiki_data.c_units import collect_c_units, load_c_units
 from mmwiki_data.engines import collect_engines, load_engines
 from mmwiki_data.fetcher import FetchError, fetch
+from mmwiki_data.item_normalization import load_item_references, validate_item_sources
+from mmwiki_data.items import collect_items
 from mmwiki_data.job_normalization import load_job_references, validate_job_sources
 from mmwiki_data.job_skills import collect_job_skills
 from mmwiki_data.knowledge_models import build_knowledge_route_index
@@ -26,6 +28,8 @@ from mmwiki_data.models import (
 from mmwiki_data.normalization import NormalizationError, normalize_snapshots
 from mmwiki_data.normalization_models import NormalizedBundle
 from mmwiki_data.parser import extract_page
+from mmwiki_data.quest_normalization import load_quest_references, validate_quest_sources
+from mmwiki_data.quests import collect_quests
 from mmwiki_data.special_equipment import collect_special_equipment, load_special_equipment
 from mmwiki_data.storage import (
     ManifestError,
@@ -206,6 +210,11 @@ def audit(repo_root: Path) -> list[str]:
         validate_job_sources(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid job source: {error}")
+    for label, validator in (("item", validate_item_sources), ("quest", validate_quest_sources)):
+        try:
+            validator(repo_root)
+        except (OSError, ValueError) as error:
+            errors.append(f"invalid {label} source: {error}")
     return errors
 
 
@@ -298,7 +307,15 @@ def normalize(repo_root: Path) -> dict[str, object]:
     )
     if jobs is not None:
         output_values[output_root / "job-entries.json"] = jobs
-    knowledge_datasets = [dataset for dataset in (wanted, vehicle, jobs) if dataset is not None]
+    items = load_item_references(repo_root, rebuilt_bundle=result.bundles["items"])
+    quests = load_quest_references(repo_root, rebuilt_bundle=result.bundles["quests"])
+    if items is not None:
+        output_values[output_root / "item-entries.json"] = items
+    if quests is not None:
+        output_values[output_root / "quest-entries.json"] = quests
+    knowledge_datasets = [
+        dataset for dataset in (wanted, vehicle, jobs, items, quests) if dataset is not None
+    ]
     if knowledge_datasets:
         output_values[output_root / "knowledge-routes.json"] = build_knowledge_route_index(
             knowledge_datasets
@@ -320,6 +337,10 @@ def normalize(repo_root: Path) -> dict[str, object]:
         source_ref_count += sum(len(record.source_refs) for record in vehicle.records)
     if jobs is not None:
         source_ref_count += sum(len(record.source_refs) for record in jobs.records)
+    for dataset in (items, quests):
+        if dataset is not None:
+            domain_counts[dataset.category] = len(dataset.records)
+            source_ref_count += sum(len(record.source_refs) for record in dataset.records)
     output_paths: Mapping[str, str] = {path.name: str(path) for path in sorted(output_values)}
     return {
         "domains": domain_counts,
@@ -345,6 +366,8 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect-vehicles",
         "collect-vehicle-traits",
         "collect-job-skills",
+        "collect-items",
+        "collect-quests",
         "audit",
         "normalize",
         "asset-audit",
@@ -365,6 +388,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-items":
+            item_summary = collect_items(arguments.repo_root.resolve())
+            print(json.dumps(item_summary, ensure_ascii=False, indent=2))
+            return 0
+        if arguments.command == "collect-quests":
+            quest_summary = collect_quests(arguments.repo_root.resolve())
+            print(json.dumps(quest_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-job-skills":
             job_summary = collect_job_skills(arguments.repo_root.resolve())
             print(json.dumps(job_summary, ensure_ascii=False, indent=2))

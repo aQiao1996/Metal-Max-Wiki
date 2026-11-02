@@ -23,6 +23,8 @@ _KNOWLEDGE_LABELS: dict[KnowledgeCategory, str] = {
     "wanted-monsters": "赏金首",
     "vehicles": "战车",
     "jobs": "职业与技能",
+    "items": "道具",
+    "quests": "任务与委托",
 }
 
 

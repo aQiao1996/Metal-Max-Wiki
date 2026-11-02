@@ -37,6 +37,20 @@ export const wikiCategories = [
     description: '主副职业、成长方向与技能用途',
     index: '04',
   },
+  {
+    slug: 'items',
+    label: '道具',
+    shortLabel: '道具',
+    description: '道具用途、获取地点、特殊炮弹与 LOVE 配方',
+    index: '05',
+  },
+  {
+    slug: 'quests',
+    label: '任务与委托',
+    shortLabel: '任务',
+    description: '接取条件、完成步骤、报酬与错过条件',
+    index: '06',
+  },
 ] as const satisfies readonly WikiCategory[]
 
 const legacyWikiCategoryMetadata = {

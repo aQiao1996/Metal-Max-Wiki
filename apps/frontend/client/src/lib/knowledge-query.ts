@@ -1,4 +1,5 @@
 import type { GameVersionSlug } from '@/config/game-versions'
+import { getKnowledgeTagOptions } from '@/config/knowledge-filters'
 import type { KnowledgeCategory } from '@/data/knowledge/schema'
 import { buildVersionPath } from '@/lib/version-routes'
 
@@ -20,6 +21,9 @@ export function getKnowledgeReturnHref(
   const page = source.get('page')
   if (page && /^[1-9][0-9]{0,3}$/.test(page)) parameters.set('page', page)
   const mount = source.get('mount')
+  const tag = source.get('tag')
+  if (tag && getKnowledgeTagOptions(category).includes(tag))
+    parameters.set('tag', tag)
   if (
     category === 'vehicles' &&
     (mount === 'double-engine' || mount === 'double-c-unit')

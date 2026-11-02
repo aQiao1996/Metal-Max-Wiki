@@ -16,7 +16,15 @@ from app.services.equipment_service import require_available_version
 
 def knowledge_text(record: KnowledgeRecord) -> str:
     """检索名称、正文与条件表，排除全局来源说明。"""
-    values = [record.name, record.names.ja or "", *record.names.aliases, record.summary]
+    values = [
+        record.name,
+        record.names.ja or "",
+        record.names.zh_09 or "",
+        record.names.zh_099 or "",
+        record.names.zh_reference or "",
+        *record.names.aliases,
+        record.summary,
+    ]
     values.extend(attribute.value for attribute in record.attributes)
     values.extend(
         paragraph
@@ -61,6 +69,7 @@ def list_knowledge(
     q: str = "",
     sort: KnowledgeSort = "name-asc",
     mount: KnowledgeMount = "all",
+    tag: str = "",
     page: int = 1,
     page_size: int = 20,
 ) -> KnowledgeListData:
@@ -70,18 +79,31 @@ def list_knowledge(
         raise BusinessError(422, "此分类不支持赏金排序")
     if category != "vehicles" and mount != "all":
         raise BusinessError(422, "此分类不支持战车动力筛选")
+    source = load_knowledge(category)
+    if tag and (
+        category not in ("items", "quests")
+        or tag not in {value for record in source for value in record.tags}
+    ):
+        raise BusinessError(422, "此分类不支持所选资料类型")
     query = normalize("NFKC", q.strip()).casefold()
     records = [
         record
-        for record in load_knowledge(category)
-        if not query or query in knowledge_text(record)
+        for record in source
+        if (not query or query in knowledge_text(record)) and (not tag or tag in record.tags)
     ]
     exact = [
         record
         for record in records
         if any(
             query == normalize("NFKC", name).casefold()
-            for name in (record.name, record.names.ja or "", *record.names.aliases)
+            for name in (
+                record.name,
+                record.names.ja or "",
+                record.names.zh_09 or "",
+                record.names.zh_099 or "",
+                record.names.zh_reference or "",
+                *record.names.aliases,
+            )
         )
     ]
     if query and exact:

@@ -7,6 +7,8 @@ export const wikiCategorySlugs = [
   ...legacyEquipmentCategories.map(({ categorySlug }) => categorySlug),
   'wanted-monsters',
   'jobs',
+  'items',
+  'quests',
 ] as const
 
 export type WikiCategorySlug = (typeof wikiCategorySlugs)[number]

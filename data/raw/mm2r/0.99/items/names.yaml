@@ -1,0 +1,2913 @@
+schema_version: 1
+reference_note: 中文名称与说明为资料参考翻译，不代表0.99汉化实机名称；已有0.9译名及原日文事实独立保留。
+condition_note: 原目录中的274条稳定ID均保留；来源表、星级、场景、合并格和版本条件分别呈现。缺少获取、消耗和关键道具限制的明确信息时标为缺失，不按常识补造。
+categories:
+  recovery: 回复与状态治疗
+  battle_tool: 战斗道具
+  exploration_tool: 探索与便利用具
+  repair_tool: 修理工具
+  accessory: 人类辅助装备
+  key_item: 钥匙与流程道具
+  quest_item: 任务与证明物品
+  material: 制作材料
+  valuable: 换金物品
+  collectible: 收藏与纪念物品
+  entertainment: 娱乐与装饰物品
+  chip: LOVE机器芯片
+  chip_location: LOVE芯片获取资料
+  recipe: LOVE机器组合配方
+  special_shell: 特殊炮弹
+  vehicle_tool: 战车道具
+  vehicle_material: 战车制造与冶金材料
+  vehicle_weapon: 车载武器
+  bad_item: 不利道具
+names:
+  human-item-06412cf077:
+    name_zh_reference: 修理工具包
+    category: repair_tool
+    summary_zh: 用于修理破损或大破零件；METAL标为使用1次，旧表记载工具随机损坏，消耗性按来源分别保留。
+    target_zh: 一个零件
+    match_names: []
+    related_record_ids: []
+    notes_zh:
+      - 旧表随机损坏与METAL一次性使用存在冲突。
+  human-item-0e503d2609:
+    name_zh_reference: 叉头勺
+    category: key_item
+    summary_zh: 用于逃脱的叉头勺。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-0e693361dd:
+    name_zh_reference: 液体驱蚊剂
+    category: exploration_tool
+    summary_zh: 强化驱蚊剂，战斗中对一名敌人造成气体伤害；METAL为数次使用，旧表为反复使用，消耗性存在冲突。
+    target_zh: 队伍
+    match_names:
+      - 液体カトール
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：えきたいカトール → 液体カトール；各来源事实与旧ID分别保留。
+  human-item-10750733db:
+    name_zh_reference: 禁闭室钥匙
+    category: key_item
+    summary_zh: 禁闭室钥匙；来源关联“被掳走的女子卡蒂娅”任务，标为不可继承到下一周目。
+    target_zh: null
+    match_names:
+      - 座敷牢のカギ
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ざしきろうのかぎ → 座敷牢のカギ；各来源事实与旧ID分别保留。
+  human-item-109b4fd35d:
+    name_zh_reference: 铅笔导弹
+    category: battle_tool
+    summary_zh: 对一名敌人造成伤害；METAL记载攻击力150、使用1次。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-11407341bb:
+    name_zh_reference: 伊娃的便条
+    category: key_item
+    summary_zh: 阅读便条上的提示。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-13787f22ee:
+    name_zh_reference: 速度药片
+    category: battle_tool
+    summary_zh: 旧表记载提高速度，METAL用途栏为问号且标为使用1次；效果尚待0.99实机核验。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-1587482e75:
+    name_zh_reference: 姐姐的毛巾
+    category: entertainment
+    summary_zh: 擦汗；可反复使用。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-16a8ddeecd:
+    name_zh_reference: 犀牛之角
+    category: quest_item
+    summary_zh: 击败对应赏金首的证明。
+    target_zh: null
+    match_names:
+      - サイゴンの角
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：サイゴンのつの → サイゴンの角；各来源事实与旧ID分别保留。
+  human-item-16fe3073dc:
+    name_zh_reference: 耳塞
+    category: accessory
+    summary_zh: 装备后增加音波耐性。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-197460bc5a:
+    name_zh_reference: 混乱HI
+    category: battle_tool
+    summary_zh: 造成混乱。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-1d791c0f46:
+    name_zh_reference: 中和剂
+    category: recovery
+    summary_zh: 中和酸液状态。
+    target_zh: 一名同伴
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-24b0f09233:
+    name_zh_reference: E2号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-27fce487f2:
+    name_zh_reference: V2号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-28810f3688:
+    name_zh_reference: 混乱瓶
+    category: battle_tool
+    summary_zh: 造成混乱。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-29169a01bb:
+    name_zh_reference: 游戏机君
+    category: entertainment
+    summary_zh: 可反复游玩的游戏机；METAL为100G赌注的“战车砰砰”，旧表为“呱呱大作战”，分别保留。
+    target_zh: 玩家
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-2c60a0af02:
+    name_zh_reference: 再生胶囊
+    category: recovery
+    summary_zh: 使倒下的同伴复苏。
+    target_zh: 一名同伴
+    match_names:
+      - 再生カプセル
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：さいせいカプセル → 再生カプセル；各来源事实与旧ID分别保留。
+  human-item-2ffe827de2:
+    name_zh_reference: 玛丽亚的吊坠
+    category: collectible
+    summary_zh: 装有玛丽亚照片的吊坠。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-336e2a888c:
+    name_zh_reference: 能量胶囊
+    category: recovery
+    summary_zh: 回复HP；旧表为500 HP，METAL为约600 HP，分别保留来源数值。
+    target_zh: 一名同伴
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-34e41a2e2f:
+    name_zh_reference: 古旧硬币
+    category: entertainment
+    summary_zh: 掷硬币；可反复使用。
+    target_zh: null
+    match_names:
+      - 古びたコイン
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ふるびたコイン → 古びたコイン；各来源事实与旧ID分别保留。
+  human-item-34fd4de81d:
+    name_zh_reference: 波奇面罩
+    category: accessory
+    summary_zh: 装备后增加气体耐性。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-353fafe2d8:
+    name_zh_reference: 手榴弹
+    category: battle_tool
+    summary_zh: METAL记载小型圆形范围伤害、攻击力250、使用1次；旧表的敌人一组范围另行保留。
+    target_zh: 小型圆形范围；旧表为敌人一组
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-357dead4f5:
+    name_zh_reference: L1号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-37eb5a47ea:
+    name_zh_reference: 冰冷细胞
+    category: material
+    summary_zh: 制作下酒菜的材料。
+    target_zh: null
+    match_names:
+      - ひえひえ細胞
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ひえひえさいぼう → ひえひえ細胞；各来源事实与旧ID分别保留。
+  human-item-384b893307:
+    name_zh_reference: 难投的石头
+    category: battle_tool
+    summary_zh: 造成伤害。
+    target_zh: 一名敌人
+    match_names:
+      - 投げにくい石
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：なげにくいいし → 投げにくい石；各来源事实与旧ID分别保留。
+  human-item-3b27afcfc0:
+    name_zh_reference: ID卡3
+    category: key_item
+    summary_zh: 用于操作电脑的身份卡。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-493dd9501b:
+    name_zh_reference: 信号探测器
+    category: exploration_tool
+    summary_zh: 显示怪物的位置。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-4b9d2a6958:
+    name_zh_reference: 万能钥匙
+    category: key_item
+    summary_zh: 万能开锁工具；击败加西亚后在天鹅镇宝箱取得，不可继承到下一周目。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-4c4687f171:
+    name_zh_reference: 金条
+    category: valuable
+    summary_zh: 主要用于出售换钱。
+    target_zh: null
+    match_names:
+      - 金ののべぼう
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：きんののべぼう → 金ののべぼう；各来源事实与旧ID分别保留。
+  human-item-52c53329b1:
+    name_zh_reference: 镇痛毒素原料
+    category: material
+    summary_zh: 制作镇痛药的原料。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-52ca0fc676:
+    name_zh_reference: 黏滑细胞
+    category: material
+    summary_zh: 制作下酒菜的材料。
+    target_zh: null
+    match_names:
+      - ぬめぬめ細胞
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ぬめぬめさいぼう → ぬめぬめ細胞；各来源事实与旧ID分别保留。
+  human-item-5351215969:
+    name_zh_reference: 信号弹
+    category: battle_tool
+    summary_zh: 在地图显示一名敌人的出没位置，关联“追踪信号”任务，可反复使用。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-5352e9de5e:
+    name_zh_reference: 回复胶囊
+    category: recovery
+    summary_zh: 回复HP；旧表为80 HP，METAL为约100 HP，分别保留来源数值。
+    target_zh: 一名同伴
+    match_names:
+      - 回復カプセル
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：かいふくカプセル → 回復カプセル；各来源事实与旧ID分别保留。
+  human-item-5535fe189f:
+    name_zh_reference: 铁鱼翅
+    category: quest_item
+    summary_zh: 击败对应赏金首的证明。
+    target_zh: null
+    match_names:
+      - 鉄のフカヒレ
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：てつのフカヒレ → 鉄のフカヒレ；各来源事实与旧ID分别保留。
+  human-item-55e9368315:
+    name_zh_reference: 松之间肥皂
+    category: collectible
+    summary_zh: 松之间客房的备品。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-570f33435f:
+    name_zh_reference: O3号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-59575dcc5a:
+    name_zh_reference: 恶人照片4
+    category: collectible
+    summary_zh: 印有肌肉夫人的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  human-item-59c99ffec4:
+    name_zh_reference: L3号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-5d6ae36c84:
+    name_zh_reference: 银假牙
+    category: quest_item
+    summary_zh: 假牙；有牙齿的人无法使用。
+    target_zh: null
+    match_names:
+      - 銀の入れ歯
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ぎんのいれば → 銀の入れ歯；各来源事实与旧ID分别保留。
+  human-item-5dfd2098e6:
+    name_zh_reference: 水罐
+    category: recovery
+    summary_zh: 灭火；可反复使用。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-64f3c8026f:
+    name_zh_reference: 恶人照片5
+    category: collectible
+    summary_zh: 印有卡里奥斯特罗的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  human-item-68328c976a:
+    name_zh_reference: E3号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-68eea81321:
+    name_zh_reference: 街机咚
+    category: entertainment
+    summary_zh: 游玩“战车砰砰”小游戏；可反复使用。
+    target_zh: 玩家
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-699bc91a15:
+    name_zh_reference: 冷冻瓶
+    category: battle_tool
+    summary_zh: 施加冷气效果。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-6b8800d8aa:
+    name_zh_reference: V3号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-6be809ffa7:
+    name_zh_reference: 草莓口红
+    category: entertainment
+    summary_zh: METAL记载男子气概降低3至4点、使用1次；旧表的涂红嘴唇、可反复使用另行保留。
+    target_zh: 使用者
+    match_names:
+      - いちごの口紅
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：いちごのくちべに → いちごの口紅；各来源事实与旧ID分别保留。
+  human-item-6cac93e47c:
+    name_zh_reference: 同步器
+    category: key_item
+    summary_zh: 钥匙类流程道具；恶魔岛7F与布鲁弗洛格战斗后，从6F宝箱取得，不可继承到下一周目。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-6cedca2f4f:
+    name_zh_reference: 解麻药
+    category: recovery
+    summary_zh: 解除麻痹。
+    target_zh: 一名同伴
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-6dd6606eae:
+    name_zh_reference: 灭火器
+    category: recovery
+    summary_zh: 灭火。
+    target_zh: 使用者
+    match_names:
+      - 消火器
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：しょうかき → 消火器；各来源事实与旧ID分别保留。
+  human-item-7aea891add:
+    name_zh_reference: 浓缩甲醇
+    category: battle_tool
+    summary_zh: METAL记载伤害并附加酸液、可使用数次；旧表记载可反复使用，消耗性按来源分别保留。
+    target_zh: 一名敌人
+    match_names:
+      - 濃縮メチル
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：のうしゅくメチル → 濃縮メチル；各来源事实与旧ID分别保留。
+  human-item-7ccad1ec36:
+    name_zh_reference: DD菠萝弹
+    category: battle_tool
+    summary_zh: METAL记载大型圆形范围伤害、攻击力350、使用1次；旧表的全体范围另行保留。
+    target_zh: 大型圆形范围；旧表为全体敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-7f6b5e9b3a:
+    name_zh_reference: 防毒面具
+    category: accessory
+    summary_zh: 装备后增加气体耐性。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-831d46fe0c:
+    name_zh_reference: 纹身贴纸
+    category: entertainment
+    summary_zh: METAL道具表记载男子气概增加1至2点、使用1次；旧表的可反复使用与外观描述另行保留。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh:
+      - 消耗性存在来源冲突，不把可反复使用或一次性标为0.99已核验。
+  human-item-835a004a73:
+    name_zh_reference: 回复饮料
+    category: recovery
+    summary_zh: 回复HP；旧表为230 HP，METAL为约300 HP，分别保留来源数值。
+    target_zh: 一名同伴
+    match_names:
+      - 回復ドリンク
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：かいふくドリンク → 回復ドリンク；各来源事实与旧ID分别保留。
+  human-item-83d2c708af:
+    name_zh_reference: 松之间拖鞋
+    category: collectible
+    summary_zh: 松之间客房的备品。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-83ed30ffc0:
+    name_zh_reference: L2号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-84b14a53c6:
+    name_zh_reference: 机械师工具包
+    category: repair_tool
+    summary_zh: 修理破损或大破零件，仅供机械师特技使用，可反复使用。
+    target_zh: 一个破损或大破零件（机械师特技专用）
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-858a9976c5:
+    name_zh_reference: 海参碎片
+    category: material
+    summary_zh: 制作下酒菜的材料。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-85b1f4ee2b:
+    name_zh_reference: 火箭烟花
+    category: battle_tool
+    summary_zh: 造成伤害。
+    target_zh: 一名敌人
+    match_names:
+      - ロケット花火
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ロケットはなび → ロケット花火；各来源事实与旧ID分别保留。
+  human-item-87af51b083:
+    name_zh_reference: 恶人照片2
+    category: collectible
+    summary_zh: 印有僵尸冲浪者的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  human-item-8a9a147d22:
+    name_zh_reference: 兴奋药片
+    category: battle_tool
+    summary_zh: 提高攻击力。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-9062e1784b:
+    name_zh_reference: 恶人照片
+    category: collectible
+    summary_zh: 印有黄金蚁的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：あくのブロマイド → 悪のブロマイド；各来源事实与旧ID分别保留。
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  human-item-950419b0dc:
+    name_zh_reference: 易投的石头
+    category: battle_tool
+    summary_zh: 造成伤害。
+    target_zh: 一名敌人
+    match_names:
+      - 投げやすい石
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：なげやすいいし → 投げやすい石；各来源事实与旧ID分别保留。
+  human-item-95b1d91c9b:
+    name_zh_reference: 亚当的前肢
+    category: quest_item
+    summary_zh: 击败对应赏金首的证明。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-9dc2a79000:
+    name_zh_reference: 蓝色羽毛
+    category: quest_item
+    summary_zh: 和平的象征。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-a1c19ed414:
+    name_zh_reference: 口香糖
+    category: bad_item
+    summary_zh: 不利道具；原表未具体说明其影响。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-ab8db929c3:
+    name_zh_reference: 铜条
+    category: valuable
+    summary_zh: 主要用于出售换钱。
+    target_zh: null
+    match_names:
+      - 銅ののべぼう
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：どうののべぼう → 銅ののべぼう；各来源事实与旧ID分别保留。
+  human-item-aba7da50fb:
+    name_zh_reference: 水母触足
+    category: material
+    summary_zh: 制作下酒菜的材料。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-b1b402e086:
+    name_zh_reference: 镇痛胶囊
+    category: recovery
+    summary_zh: METAL记载完全回复HP并造成麻痹；旧表记载无效果，作用按来源并列保留。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-b2669bc022:
+    name_zh_reference: 金斧
+    category: valuable
+    summary_zh: 主要用于出售换钱。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-b3dd740882:
+    name_zh_reference: 银条
+    category: valuable
+    summary_zh: 主要用于出售换钱。
+    target_zh: null
+    match_names:
+      - 銀ののべぼう
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：ぎんののべぼう → 銀ののべぼう；各来源事实与旧ID分别保留。
+  human-item-b5ffb5b1df:
+    name_zh_reference: O1号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-b855dad15a:
+    name_zh_reference: LOVE机器
+    category: exploration_tool
+    summary_zh: 通过L、O、V、E四类芯片的81种组合改变功能，可反复使用；每个存档只能取得一个。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-bda086ba90:
+    name_zh_reference: 波奇气瓶
+    category: recovery
+    summary_zh: 仅供犬使用的回复道具，可反复使用；METAL为全体回复约250 HP，旧表为230 HP。
+    target_zh: 全体同伴（道具由犬使用）
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-c147e8179b:
+    name_zh_reference: 催眠瓶
+    category: battle_tool
+    summary_zh: 造成睡眠。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-c26e0762f5:
+    name_zh_reference: 松之间毛巾
+    category: collectible
+    summary_zh: 松之间客房的备品。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-c67ae999dc:
+    name_zh_reference: E1号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-c813bb38cc:
+    name_zh_reference: O2号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-ce9055dcc8:
+    name_zh_reference: 超级解麻药
+    category: recovery
+    summary_zh: 解除麻痹；可反复使用。
+    target_zh: 一名同伴
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-d033fd46d2:
+    name_zh_reference: 电击遥控器
+    category: key_item
+    summary_zh: 电击遥控器；旧表记载发出电击，METAL标记不可继承到下一周目；获取和持有数量尚未明确。
+    target_zh: null
+    match_names:
+      - 電撃リモコン
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：でんげきリモコン → 電撃リモコン；各来源事实与旧ID分别保留。
+  human-item-d422270df8:
+    name_zh_reference: 驱蚊剂
+    category: exploration_tool
+    summary_zh: 驱除蚊子。
+    target_zh: 队伍
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-d446497622:
+    name_zh_reference: 亚当的翅膀
+    category: quest_item
+    summary_zh: 击败对应赏金首的证明。
+    target_zh: null
+    match_names:
+      - アダムの羽
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：アダムのはね → アダムの羽；各来源事实与旧ID分别保留。
+  human-item-d62edaa16b:
+    name_zh_reference: 接地尾巴
+    category: accessory
+    summary_zh: 装备后增加电击耐性。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-d6f4dd7b1e:
+    name_zh_reference: 海星喇叭
+    category: vehicle_weapon
+    summary_zh: 车载音波武器，对全体敌人攻击；旧人类道具表的“鸣笛”用途与METAL武器表冲突，按来源并列保留。
+    target_zh: 全体敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh:
+      - 分类采用METAL车载武器事实；旧human_item种类和鸣笛描述保留在inherited_record。
+  human-item-da85879b4a:
+    name_zh_reference: 红头巾
+    category: entertainment
+    summary_zh: 擦汗；可反复使用。
+    target_zh: 使用者
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-dacbc6ea48:
+    name_zh_reference: 烟幕烟花
+    category: battle_tool
+    summary_zh: METAL记载全体烟幕效果、使用1次；旧表的使用者回避率提高30%另行保留。
+    target_zh: 来源不同：METAL为全体，旧表为使用者
+    match_names:
+      - 煙幕花火
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：えんまくはなび → 煙幕花火；各来源事实与旧ID分别保留。
+  human-item-db8b889cb5:
+    name_zh_reference: 燃烧瓶
+    category: battle_tool
+    summary_zh: 造成伤害并附带火炎效果。
+    target_zh: 一名敌人
+    match_names:
+      - 火炎ビン
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：かえんびん → 火炎ビン；各来源事实与旧ID分别保留。
+  human-item-dcaafe203f:
+    name_zh_reference: 地雷探测器
+    category: exploration_tool
+    summary_zh: 可反复探测较小范围内的埋藏物品；旧表标为周围3格，范围表述分开保留。
+    target_zh: 周围3格
+    match_names:
+      - 地雷探知機
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：じらいたんちき → 地雷探知機；各来源事实与旧ID分别保留。
+  human-item-dcd8adc6b2:
+    name_zh_reference: 松之间浴袍
+    category: collectible
+    summary_zh: 松之间客房的备品。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-e0e71f1abd:
+    name_zh_reference: 金属探测器
+    category: exploration_tool
+    summary_zh: 可反复探测中等范围内的埋藏物品；旧表标为周围7格，范围表述分开保留。
+    target_zh: 周围7格
+    match_names:
+      - 金属探知機
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：きんぞくたんちき → 金属探知機；各来源事实与旧ID分别保留。
+  human-item-e201757203:
+    name_zh_reference: 满回复饮料
+    category: recovery
+    summary_zh: 完全回复HP。
+    target_zh: 一名同伴
+    match_names:
+      - まんたんドリンク
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：満タンドリンク → まんたんドリンク；各来源事实与旧ID分别保留。
+  human-item-e295d93471:
+    name_zh_reference: ID卡
+    category: key_item
+    summary_zh: 用于操作电脑的身份卡。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-e30a14d8ec:
+    name_zh_reference: 金戒指
+    category: quest_item
+    summary_zh: 爱情的证明。
+    target_zh: null
+    match_names:
+      - 金の指輪
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：きんのゆびわ → 金の指輪；各来源事实与旧ID分别保留。
+  human-item-e4ae560a6a:
+    name_zh_reference: 碱性喷雾
+    category: recovery
+    summary_zh: 中和酸液状态；可反复使用。
+    target_zh: 一名同伴
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-e57b74c3fe:
+    name_zh_reference: 汪汪美食
+    category: recovery
+    summary_zh: 强化犬的能力，不推算成长结果。
+    target_zh: 一只犬
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-e96a117f3c:
+    name_zh_reference: DDT喷雾
+    category: battle_tool
+    summary_zh: 释放气体伤害和毒气；METAL为全体、可使用数次，旧表为使用者以外且可反复使用，分别保留。
+    target_zh: 来源不同：METAL为全体，旧表为使用者以外
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-e98756d2fc:
+    name_zh_reference: 纸片
+    category: key_item
+    summary_zh: 阅读纸片上的密码。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-eb2436a433:
+    name_zh_reference: 恐怖贝肉
+    category: material
+    summary_zh: 制作下酒菜的材料。
+    target_zh: null
+    match_names:
+      - テロ貝の身
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：テロがいのみ → テロ貝の身；各来源事实与旧ID分别保留。
+  human-item-ec8aebe719:
+    name_zh_reference: V1号IC芯片
+    category: chip
+    summary_zh: 用于LOVE机器的芯片组合。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-eed44787db:
+    name_zh_reference: 圣经
+    category: entertainment
+    summary_zh: 阅读圣经；可反复使用。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-f5a5db117e:
+    name_zh_reference: ID卡2
+    category: key_item
+    summary_zh: 用于操作电脑的身份卡。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-f5f8fa8419:
+    name_zh_reference: 硝化啤酒
+    category: battle_tool
+    summary_zh: 造成伤害并附带火炎效果。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-f762e9bbc2:
+    name_zh_reference: 金假牙
+    category: quest_item
+    summary_zh: 获得金巴认可的证明。
+    target_zh: null
+    match_names:
+      - 金の入れ歯
+    related_record_ids: []
+    notes_zh:
+      - 来源写法对应：きんのいれば → 金の入れ歯；各来源事实与旧ID分别保留。
+  human-item-f829dd631f:
+    name_zh_reference: 恶人照片6
+    category: collectible
+    summary_zh: 印有泰德布罗拉的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  human-item-f8a315560a:
+    name_zh_reference: BS控制器
+    category: exploration_tool
+    summary_zh: 显示地图等BS功能。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  human-item-feae6860bc:
+    name_zh_reference: 恶人照片3
+    category: collectible
+    summary_zh: 印有神风王的恶人照片。
+    target_zh: null
+    match_names:
+      - 悪のブロマイド
+    related_record_ids: []
+    notes_zh:
+      - 新来源统一称“恶人照片”，按照片内容中的敌人名称对应原记录，不合并其他照片的用途或获取方式。
+  ic-chip-location-0b434171d4:
+    name_zh_reference: O-2号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器O-2号芯片：暗黑水道内木箱；埋没大楼内使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - O-2
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-27f89db3fc:
+    name_zh_reference: L-3号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器L-3号芯片：在贝内特的海之家购买。
+    target_zh: LOVE机器芯片
+    match_names:
+      - L-3
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-2a91b5d88b:
+    name_zh_reference: L-2号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器L-2号芯片：在埋没大楼内使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - L-2
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-3156116d5c:
+    name_zh_reference: L-1号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器L-1号芯片：在奇怪岛沙滩使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - L-1
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-399cfc6ed4:
+    name_zh_reference: O-1号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器O-1号芯片：恶魔岛木箱；奇怪岛沙滩使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - O-1
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-3af38aa724:
+    name_zh_reference: V-3号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器V-3号芯片：德斯克鲁斯的人类道具店。
+    target_zh: LOVE机器芯片
+    match_names:
+      - V-3
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-6916e3cfab:
+    name_zh_reference: E-2号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器E-2号芯片：任务“艾丽莎的恋人”报酬；埋没大楼内使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - E-2
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-6ea1a98334:
+    name_zh_reference: O-3号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器O-3号芯片：击破数达到4000的奖励。
+    target_zh: LOVE机器芯片
+    match_names:
+      - O-3
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-8b2fcda67a:
+    name_zh_reference: E-3号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器E-3号芯片：巴亚斯城B6层的木箱。
+    target_zh: LOVE机器芯片
+    match_names:
+      - E-3
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-acdbcab125:
+    name_zh_reference: E-1号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器E-1号芯片：天鹅镇地下保险箱（需要万能钥匙）；奇怪岛沙滩使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - E-1
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-c84d543aa3:
+    name_zh_reference: V-2号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器V-2号芯片：在埋没大楼内使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - V-2
+    related_record_ids: []
+    notes_zh: []
+  ic-chip-location-e4e8fbeb28:
+    name_zh_reference: V-1号IC芯片获取资料
+    category: chip_location
+    summary_zh: 用于查找LOVE机器V-1号芯片：任务“请给我水”报酬；奇怪岛沙滩使用金属探测器。
+    target_zh: LOVE机器芯片
+    match_names:
+      - V-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-04a1c90546:
+    name_zh_reference: LOVE机器组合 1-1-2-3
+    category: recipe
+    summary_zh: 来源合并说明：自动清理车内污染的换气装置。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-2-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-05e4e8aeb7:
+    name_zh_reference: LOVE机器组合 2-1-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的音波攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-0601e30a40:
+    name_zh_reference: LOVE机器组合 2-2-2-1
+    category: recipe
+    summary_zh: 来源合并说明：修改队伍成员姓名。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-2-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-08eab2fa0c:
+    name_zh_reference: LOVE机器组合 1-1-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：消除对象周围的火炎和冷气，可选择对象。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-096cfd0a9d:
+    name_zh_reference: LOVE机器组合 2-2-2-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：治疗全体同伴的异常状态。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-2-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-0ecd16666d:
+    name_zh_reference: LOVE机器组合 1-3-1-2
+    category: recipe
+    summary_zh: 来源合并说明：提高速度的防具。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-1-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-0ffdaf42d6:
+    name_zh_reference: LOVE机器组合 3-2-2-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：为全体同伴回复较多HP。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-2-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-111fb60325:
+    name_zh_reference: LOVE机器组合 1-2-1-3
+    category: recipe
+    summary_zh: 来源合并说明：降低被敌人发现的机会。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-1-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-117f0a2806:
+    name_zh_reference: LOVE机器组合 2-1-3-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的火炎攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-3-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-17ccdbffb5:
+    name_zh_reference: LOVE机器组合 3-1-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：强化气体与电击效果。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-1b5157fc3f:
+    name_zh_reference: LOVE机器组合 2-3-1-3
+    category: recipe
+    summary_zh: 来源合并说明：高性能引擎。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-1-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-1e07dab3f9:
+    name_zh_reference: LOVE机器组合 2-3-2-3
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的强力气体武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-2-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-1e95c9db1a:
+    name_zh_reference: LOVE机器组合 2-2-1-2
+    category: recipe
+    summary_zh: 来源合并说明：修改队伍成员姓名。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-1-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-20fa367d70:
+    name_zh_reference: LOVE机器组合 3-2-3-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使敌人很闪亮；旧表同时记载HP、经验与金钱为5倍，不外推其他能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-3-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-21f80773d7:
+    name_zh_reference: LOVE机器组合 2-1-3-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的冷气攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-3-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-220a6530ce:
+    name_zh_reference: LOVE机器组合 2-2-3-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使战斗获得经验变为2倍，具体适用条件以来源为准。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-3-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-2b2f444780:
+    name_zh_reference: LOVE机器组合 1-3-2-2
+    category: recipe
+    summary_zh: 来源合并说明：提高攻击力的防具。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-2-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-2e48278f4c:
+    name_zh_reference: LOVE机器组合 3-1-3-2
+    category: recipe
+    summary_zh: 来源合并说明：能够迎击的高性能C装置。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-3-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-361bc92369:
+    name_zh_reference: LOVE机器组合 2-2-1-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开吸收伤害的屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-1-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-4206dea509:
+    name_zh_reference: LOVE机器组合 1-2-1-1
+    category: recipe
+    summary_zh: 地图：发出笑声。；战斗：没有效果。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-1-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-4703b8edf2:
+    name_zh_reference: LOVE机器组合 1-2-1-2
+    category: recipe
+    summary_zh: 来源合并说明：修改队伍成员姓名。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-1-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-4f590c0b9e:
+    name_zh_reference: LOVE机器组合 2-2-3-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：具有随机成败的复苏装置。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-3-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-5341d81846:
+    name_zh_reference: LOVE机器组合 2-3-2-1
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的火炎武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-2-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-56b23402c9:
+    name_zh_reference: LOVE机器组合 1-1-2-1
+    category: recipe
+    summary_zh: 地图：解除一名人类的酸液状态。；战斗：解除人类的酸液状态，可选择对象。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-2-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-57f54995fa:
+    name_zh_reference: LOVE机器组合 1-1-1-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：大幅回复HP，可选择对象。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-1-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-5ea89ccc61:
+    name_zh_reference: LOVE机器组合 3-3-2-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开气体耐性屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-2-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-6197ca9819:
+    name_zh_reference: LOVE机器组合 3-1-2-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：强化光束与音波效果。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-2-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-641f8d3c60:
+    name_zh_reference: LOVE机器组合 3-1-2-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：强化火炎与冷气效果。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-2-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-69b4fd24eb:
+    name_zh_reference: LOVE机器组合 2-3-3-1
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的冷气武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-3-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-70075241d2:
+    name_zh_reference: LOVE机器组合 2-2-1-1
+    category: recipe
+    summary_zh: 来源合并说明：发出可爱的猫叫声。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-1-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-70f77925ba:
+    name_zh_reference: LOVE机器组合 3-3-3-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使敌人稍微闪亮。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-3-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-72b2314ac9:
+    name_zh_reference: LOVE机器组合 3-3-3-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：战斗中施放烟幕。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-3-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-7492434872:
+    name_zh_reference: LOVE机器组合 1-2-3-2
+    category: recipe
+    summary_zh: 来源合并说明：发射钻头弹的人类武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-3-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-75d358f46d:
+    name_zh_reference: LOVE机器组合 2-3-2-2
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的音波武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-2-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-7674a42fc5:
+    name_zh_reference: LOVE机器组合 2-3-1-2
+    category: recipe
+    summary_zh: 来源合并说明：具有较高防御力的引擎。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-1-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-7b4507a440:
+    name_zh_reference: LOVE机器组合 3-3-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开火炎耐性屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-7b8e1dd435:
+    name_zh_reference: LOVE机器组合 3-3-1-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开音波耐性屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-1-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-87e29c82ff:
+    name_zh_reference: LOVE机器组合 1-2-2-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：用于挖洞。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-2-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-8800e33350:
+    name_zh_reference: LOVE机器组合 1-1-1-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：为使用者回复约300 HP。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-1-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-8eee302598:
+    name_zh_reference: LOVE机器组合 2-1-1-2
+    category: recipe
+    summary_zh: 来源合并说明：使敌人附着酸液的人类武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-1-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-95a72972b4:
+    name_zh_reference: LOVE机器组合 1-3-1-3
+    category: recipe
+    summary_zh: 来源合并说明：具有较高防御力的防具。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-1-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-95cf702e8e:
+    name_zh_reference: LOVE机器组合 2-3-3-2
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的光束武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-3-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-97ba408c92:
+    name_zh_reference: LOVE机器组合 2-1-3-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的光束攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-3-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-9ae3a9bdc5:
+    name_zh_reference: LOVE机器组合 2-2-3-1
+    category: recipe
+    summary_zh: 来源合并说明：效果随机的喷雾罐。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-3-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-a9a82485ca:
+    name_zh_reference: LOVE机器组合 3-1-1-3
+    category: recipe
+    summary_zh: 地图：播放声援消息。；战斗：受到声援后提高多种能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-1-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-aea8252891:
+    name_zh_reference: LOVE机器组合 3-3-3-3
+    category: recipe
+    summary_zh: 来源合并说明：专门用于迎击的高性能S-E。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-3-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-b69fa7b074:
+    name_zh_reference: LOVE机器组合 1-3-3-3
+    category: recipe
+    summary_zh: 组合效果：可四连射的重型主炮。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-3-3
+    related_record_ids: []
+    notes_zh:
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。旧中文来源将此值置于地图使用列，不能据新表回改旧来源的单列记载。
+  love-machine-recipe-bbbfa9cb16:
+    name_zh_reference: LOVE机器组合 3-2-3-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使敌人最大程度闪亮；旧表同时记载HP、经验与金钱为20倍，不外推其他能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-3-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-bd08d2141e:
+    name_zh_reference: LOVE机器组合 2-3-3-3
+    category: recipe
+    summary_zh: 来源合并说明：人类使用的电击武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-3-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-be0e4d08b6:
+    name_zh_reference: LOVE机器组合 1-1-3-3
+    category: recipe
+    summary_zh: 地图：播放自我介绍语音。；战斗：强化女子气概较高者的能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-3-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-be4970a9ac:
+    name_zh_reference: LOVE机器组合 3-2-1-3
+    category: recipe
+    summary_zh: 来源合并说明：立即遇敌。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-1-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-c18ebfee14:
+    name_zh_reference: LOVE机器组合 1-2-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使敌人陷入异常状态。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-c22c5d1765:
+    name_zh_reference: LOVE机器组合 3-1-3-1
+    category: recipe
+    summary_zh: 来源合并说明：辅助迎击的C装置。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-3-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-c3d4a10dd4:
+    name_zh_reference: LOVE机器组合 3-1-1-2
+    category: recipe
+    summary_zh: 地图：播放声援消息。；战斗：受到声援后提高力量。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-1-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-c44b90395f:
+    name_zh_reference: LOVE机器组合 3-2-2-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：为全体同伴大幅回复HP。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-2-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-c531cca550:
+    name_zh_reference: LOVE机器组合 3-2-1-1
+    category: recipe
+    summary_zh: 来源合并说明：提高多种能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-1-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-c6db3d7b67:
+    name_zh_reference: LOVE机器组合 1-3-3-1
+    category: recipe
+    summary_zh: 来源合并说明：轻便易用的主炮。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-3-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-cc11617c15:
+    name_zh_reference: LOVE机器组合 2-1-2-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的气体攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-2-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-cd8f4b9a69:
+    name_zh_reference: LOVE机器组合 2-1-1-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：攻击虫型怪物。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-1-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-cdfab4379c:
+    name_zh_reference: LOVE机器组合 1-1-3-1
+    category: recipe
+    summary_zh: 地图：播放多种音乐。；战斗：没有效果。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-3-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-ce3ea92586:
+    name_zh_reference: LOVE机器组合 1-3-1-1
+    category: recipe
+    summary_zh: 来源合并说明：提高男子气概的饰品。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-1-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-ce68eb854f:
+    name_zh_reference: LOVE机器组合 1-2-2-3
+    category: recipe
+    summary_zh: 来源合并说明：发射水泥弹的人类武器。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-2-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-d1b13ec646:
+    name_zh_reference: LOVE机器组合 3-2-1-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：战斗中修补装甲片。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-1-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-d4835f7b26:
+    name_zh_reference: LOVE机器组合 3-3-2-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开冷气耐性屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-2-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-de27ec6381:
+    name_zh_reference: LOVE机器组合 1-3-2-3
+    category: recipe
+    summary_zh: 来源合并说明：抵抗属性攻击的防具。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-2-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-de340a5a6f:
+    name_zh_reference: LOVE机器组合 2-2-2-2
+    category: recipe
+    summary_zh: 来源合并说明：治疗同伴的异常状态。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-2-2-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-de4f55285c:
+    name_zh_reference: LOVE机器组合 1-1-1-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：回复较多HP，可选择对象。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-1-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-de8729724b:
+    name_zh_reference: LOVE机器组合 3-2-3-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使敌人大幅闪亮；旧表同时记载HP、经验与金钱为10倍，不外推其他能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-3-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-e00ed19e19:
+    name_zh_reference: LOVE机器组合 3-3-1-2
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开电击耐性屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-1-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-e17e979657:
+    name_zh_reference: LOVE机器组合 3-3-1-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：展开反射光束的屏障。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-3-1-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-e4a007aa6d:
+    name_zh_reference: LOVE机器组合 1-3-2-1
+    category: recipe
+    summary_zh: 来源合并说明：提高女子气概的饰品。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-2-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-e6f553ef6f:
+    name_zh_reference: LOVE机器组合 2-1-2-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：发动可靠命中的电击攻击。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-2-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-e783814209:
+    name_zh_reference: LOVE机器组合 2-1-1-3
+    category: recipe
+    summary_zh: 来源合并说明：给战车涂上可爱风格的涂装。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-1-1-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-e92fa85d30:
+    name_zh_reference: LOVE机器组合 1-3-3-2
+    category: recipe
+    summary_zh: 来源合并说明：体积与重量较大的强力主炮。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-3-3-2
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-e999f1fac6:
+    name_zh_reference: LOVE机器组合 3-1-1-1
+    category: recipe
+    summary_zh: 地图：播放声援消息。；战斗：受到声援后提高速度。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-1-1
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-e9ccd06a2e:
+    name_zh_reference: LOVE机器组合 1-1-3-2
+    category: recipe
+    summary_zh: 地图：发出汪汪叫声。；战斗：提高犬的能力。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-1-3-2
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-ea4f744573:
+    name_zh_reference: LOVE机器组合 2-3-1-1
+    category: recipe
+    summary_zh: 来源合并说明：性能较好的引擎。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 2-3-1-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-ec373af839:
+    name_zh_reference: LOVE机器组合 3-1-3-3
+    category: recipe
+    summary_zh: 来源合并说明：可进行三连攻击的C装置。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-1-3-3
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+      - 新采日文表的此项说明跨“地图使用”和“战斗中使用”两列，不将装备类别或说明单独归入某一场景；旧来源仍按其原字段与条件分别保留。
+  love-machine-recipe-f11dd6ea84:
+    name_zh_reference: LOVE机器组合 1-2-3-1
+    category: recipe
+    summary_zh: 来源合并说明：提供三种小游戏，原表标价100G。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-3-1
+    related_record_ids: []
+    notes_zh:
+      - 旧LOVE表为跨地图与战斗两列的合并单元格，不能把其功能单独归给一个场景；新表行独立保留。
+  love-machine-recipe-f2752b994d:
+    name_zh_reference: LOVE机器组合 1-2-3-3
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：使战斗获得金钱变为2倍，具体适用条件以来源为准。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 1-2-3-3
+    related_record_ids: []
+    notes_zh: []
+  love-machine-recipe-f7fccc517a:
+    name_zh_reference: LOVE机器组合 3-2-2-1
+    category: recipe
+    summary_zh: 地图：不可使用。；战斗：为全体同伴回复HP。
+    target_zh: LOVE机器（L/O/V/E顺序的芯片组合）
+    match_names:
+      - 3-2-2-1
+    related_record_ids: []
+    notes_zh: []
+  special-shell-009a444dc1:
+    name_zh_reference: APFSDS弹
+    category: special_shell
+    summary_zh: 零件破坏
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-056a243d79:
+    name_zh_reference: 催眠瓦斯弹
+    category: special_shell
+    summary_zh: 睡眠付与
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-33eab5dfa6:
+    name_zh_reference: 恐慌弹
+    category: special_shell
+    summary_zh: 混乱付与
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-4183477d0c:
+    name_zh_reference: 定向爆破弹
+    category: special_shell
+    summary_zh: 零件破坏
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-44235a9b82:
+    name_zh_reference: 凝固汽油弹
+    category: special_shell
+    summary_zh: 燃烧付与
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-537a931963:
+    name_zh_reference: 冷冻弹
+    category: special_shell
+    summary_zh: 冷冻付与
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-587b877a20:
+    name_zh_reference: 毒气弹
+    category: special_shell
+    summary_zh: 毒气付与
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-6577b4c47b:
+    name_zh_reference: 火箭弹
+    category: special_shell
+    summary_zh: 对空炮弹 火花･非晶态系的大炮专用。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-77b5e37b32:
+    name_zh_reference: 哑弹
+    category: special_shell
+    summary_zh: 效果随即 艺术家制作炮弹失败时出品。
+    target_zh: 随机效果。
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-8eec149996:
+    name_zh_reference: 钻头弹
+    category: special_shell
+    summary_zh: 对地中炮弹 火花･非晶态系的大炮专用。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-993d3a26da:
+    name_zh_reference: 钢弹(穿甲弹)
+    category: special_shell
+    summary_zh: 零件破坏
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-a21522939d:
+    name_zh_reference: 榴弹
+    category: special_shell
+    summary_zh: 范围攻击(威力减半)
+    target_zh: 一组敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-a56b7f85d9:
+    name_zh_reference: 麻痹瓦斯弹
+    category: special_shell
+    summary_zh: 使目标陷入麻痹的特殊炮弹；两条旧记录的名称问号差异与各自事实分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids:
+      - special-shell-e323b9f43b
+    notes_zh:
+      - 来源名称中的问号不能当作0.99物品存在性或版本确认。
+  special-shell-ae38c829c2:
+    name_zh_reference: 鱼雷弹
+    category: special_shell
+    summary_zh: 对水中炮弹 火花･非晶态系的大炮专用。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-c23c15b3a2:
+    name_zh_reference: 水泥弹
+    category: special_shell
+    summary_zh: 防御回避降低
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  special-shell-e323b9f43b:
+    name_zh_reference: 麻痹瓦斯弹
+    category: special_shell
+    summary_zh: 使目标陷入麻痹的特殊炮弹；两条旧记录的名称问号差异与各自事实分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids:
+      - special-shell-a56b7f85d9
+    notes_zh:
+      - 来源名称中的问号不能当作0.99物品存在性或版本确认。
+  tank-item-002ffa2113:
+    name_zh_reference: 暖风机
+    category: vehicle_tool
+    summary_zh: 搭载后增加冷气耐性。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-003e04ba4e:
+    name_zh_reference: 自动空调
+    category: vehicle_tool
+    summary_zh: 搭载后增加火炎、冷气和毒气耐性。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-1726b4ad45:
+    name_zh_reference: 冷风机
+    category: vehicle_tool
+    summary_zh: 搭载后增加火炎耐性。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-1a004d7f49:
+    name_zh_reference: 装甲包250
+    category: vehicle_tool
+    summary_zh: SP250回复
+    target_zh: 战车一台
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-1cdd1d5113:
+    name_zh_reference: 电磁屏障
+    category: vehicle_tool
+    summary_zh: 可搭载；旧表记载没有效果。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-1f6bce69a4:
+    name_zh_reference: 梦幻铁
+    category: vehicle_material
+    summary_zh: 战车作成・冶金素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-2610a1f9ea:
+    name_zh_reference: 安全护符（平假名记录）
+    category: vehicle_tool
+    summary_zh: 旧表记载用于装饰。
+    target_zh: null
+    match_names:
+      - 安全おまもり
+    related_record_ids:
+      - tank-item-9bc847319f
+    notes_zh:
+      - 来源写法对应：あんぜんおまもり → 安全おまもり；各来源事实与旧ID分别保留。
+  tank-item-29c81ea2a0:
+    name_zh_reference: 换气装置（平假名记录）
+    category: vehicle_tool
+    summary_zh: 搭载后增加毒气耐性。
+    target_zh: 搭载该道具的车辆
+    match_names:
+      - 換気装置
+    related_record_ids:
+      - tank-item-f989a572ef
+    notes_zh:
+      - 来源写法对应：かんきそうち → 換気装置；各来源事实与旧ID分别保留。
+  tank-item-2ac039c297:
+    name_zh_reference: 灭火装置
+    category: vehicle_tool
+    summary_zh: 灭火；可反复使用。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-2b0a57924b:
+    name_zh_reference: 喇叭R
+    category: vehicle_tool
+    summary_zh: 搭载后鸣笛。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-355803ac9f:
+    name_zh_reference: 超光速物质
+    category: vehicle_tool
+    summary_zh: 超光速道具传送
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-3911fa50af:
+    name_zh_reference: 传真系统
+    category: vehicle_tool
+    summary_zh: 场所移动
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-3b64e90435:
+    name_zh_reference: 装甲包500
+    category: vehicle_tool
+    summary_zh: SP500回复
+    target_zh: 战车一台
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-3caaf886a4:
+    name_zh_reference: 鸟粪
+    category: bad_item
+    summary_zh: 不利道具；原表未具体说明其影响。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-42a40964c4:
+    name_zh_reference: 激光戈耳工
+    category: vehicle_tool
+    summary_zh: 搭载后提供迎击系统。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-4c92ae11cc:
+    name_zh_reference: 装甲包80
+    category: vehicle_tool
+    summary_zh: 回复战车装甲值SP；本条旧表未明确回复量。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-5023a4a519:
+    name_zh_reference: 雷达瞄准镜
+    category: vehicle_tool
+    summary_zh: 搭载后提高命中率。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-51fff9e203:
+    name_zh_reference: 毛绒兔兔
+    category: vehicle_tool
+    summary_zh: 命中上升
+    target_zh: 装备的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-6532177363:
+    name_zh_reference: 宇宙零件+++
+    category: vehicle_material
+    summary_zh: 制造宇宙炮所需的零件；不同后缀、重量与星级原值分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-6b0fca089c:
+    name_zh_reference: 叫卖扬声器
+    category: vehicle_tool
+    summary_zh: 敌出现率增加
+    target_zh: 随时
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-6c66027920:
+    name_zh_reference: 装甲包40
+    category: vehicle_tool
+    summary_zh: 回复战车装甲值SP；本条旧表未明确回复量。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-6c6bbe6b99:
+    name_zh_reference: 雷龙装甲包
+    category: vehicle_tool
+    summary_zh: SP5000回复
+    target_zh: 战车一台
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-6e03abf885:
+    name_zh_reference: 高科技废铁
+    category: vehicle_material
+    summary_zh: 冶金素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-7775ee12d3:
+    name_zh_reference: 接地链（长音记录）
+    category: vehicle_tool
+    summary_zh: 搭载后增加电击耐性。
+    target_zh: 搭载该道具的车辆
+    match_names:
+      - アースチェーン
+    related_record_ids:
+      - tank-item-b1d55c38b0
+    notes_zh:
+      - 与“アースチェイ”有接地链名称关联，未合并两条旧ID。
+  tank-item-7f4cec3143:
+    name_zh_reference: 黑钢锁
+    category: vehicle_tool
+    summary_zh: 电气耐性上升
+    target_zh: 装备的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-7f954c3fe9:
+    name_zh_reference: 废铁
+    category: vehicle_material
+    summary_zh: 战车作成・冶金素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-83a3099f46:
+    name_zh_reference: 医疗箱
+    category: vehicle_tool
+    summary_zh: HP回复(小)
+    target_zh: 人間一人
+    match_names: []
+    related_record_ids:
+      - tank-item-b8f98654bb
+    notes_zh: []
+  tank-item-8aa9dbf454:
+    name_zh_reference: 防火防护膜
+    category: vehicle_tool
+    summary_zh: 火炎耐性
+    target_zh: 使用的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-8bf5cdeb7c:
+    name_zh_reference: 迷彩屏障（平假名记录）
+    category: vehicle_tool
+    summary_zh: 搭载后改变遇敌情况。
+    target_zh: 队伍
+    match_names:
+      - 迷彩シールド
+    related_record_ids:
+      - tank-item-95211ff380
+    notes_zh:
+      - 来源写法对应：めいさいシールド → 迷彩シールド；各来源事实与旧ID分别保留。
+  tank-item-9091ea3aa1:
+    name_zh_reference: 装甲包L
+    category: vehicle_tool
+    summary_zh: SP1000回复
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-91dee60d34:
+    name_zh_reference: 铅蘑菇
+    category: bad_item
+    summary_zh: 不利道具；原表未具体说明其影响。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-92ce65fb84:
+    name_zh_reference: 喇叭X
+    category: vehicle_tool
+    summary_zh: 搭载后鸣笛。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-95211ff380:
+    name_zh_reference: 伪装迷彩
+    category: vehicle_tool
+    summary_zh: 敌出现率下降
+    target_zh: 随时
+    match_names: []
+    related_record_ids:
+      - tank-item-8bf5cdeb7c
+    notes_zh: []
+  tank-item-95456ed46d:
+    name_zh_reference: 稀有金属玉
+    category: vehicle_material
+    summary_zh: 冶金素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-997a290301:
+    name_zh_reference: AM爱国者
+    category: vehicle_tool
+    summary_zh: 搭载后提供迎击系统。
+    target_zh: 搭载该道具的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-9bc847319f:
+    name_zh_reference: 安全护符
+    category: vehicle_tool
+    summary_zh: 回避上升
+    target_zh: 装备的车辆
+    match_names: []
+    related_record_ids:
+      - tank-item-2610a1f9ea
+    notes_zh: []
+  tank-item-9dbaf40f22:
+    name_zh_reference: 宇宙零件+5
+    category: vehicle_material
+    summary_zh: 制造宇宙炮所需的零件；不同后缀、重量与星级原值分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-a83a93e37a:
+    name_zh_reference: 宇宙零件+10
+    category: vehicle_material
+    summary_zh: 制造宇宙炮所需的零件；不同后缀、重量与星级原值分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-ad5b6c5ddf:
+    name_zh_reference: 装甲包100
+    category: vehicle_tool
+    summary_zh: SP100回复
+    target_zh: 战车一台
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-b176bf2c7d:
+    name_zh_reference: 医疗装置
+    category: vehicle_tool
+    summary_zh: 移动时回复HP
+    target_zh: 车上一名乘员
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-b1d55c38b0:
+    name_zh_reference: 接地链
+    category: vehicle_tool
+    summary_zh: 电气耐性上升
+    target_zh: 装备的车辆
+    match_names:
+      - アースチェイン
+    related_record_ids:
+      - tank-item-7775ee12d3
+    notes_zh:
+      - 来源写法对应：アースチェイ → アースチェイン；各来源事实与旧ID分别保留。
+  tank-item-b8f98654bb:
+    name_zh_reference: 医疗箱（平假名记录）
+    category: vehicle_tool
+    summary_zh: 回复HP；旧表记载随机损坏，与汉字同名医疗箱的可反复使用资料分别保留。
+    target_zh: 一名同伴
+    match_names:
+      - 医療キット
+    related_record_ids:
+      - tank-item-83a3099f46
+    notes_zh:
+      - 来源写法对应：いりょうキット → 医療キット；各来源事实与旧ID分别保留。
+  tank-item-c89ebad825:
+    name_zh_reference: 伪装迷彩G
+    category: vehicle_tool
+    summary_zh: 敌出现率大幅下降
+    target_zh: 随时
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-cdee35f044:
+    name_zh_reference: 电气喇叭L
+    category: vehicle_tool
+    summary_zh: 汽车的喇叭
+    target_zh: 随时
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-cfaa2f03c7:
+    name_zh_reference: 静默防护膜
+    category: vehicle_tool
+    summary_zh: 提高车辆音波耐性；旧dqff表记载提高回避率，作用按来源分别保留。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d2a03923f2:
+    name_zh_reference: 冥界车轮
+    category: vehicle_material
+    summary_zh: 战车作成素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d3d90d8f56:
+    name_zh_reference: 医疗箱EX
+    category: vehicle_tool
+    summary_zh: HP回复(大)
+    target_zh: 人間一人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d63598e2a5:
+    name_zh_reference: 碱性防护膜
+    category: vehicle_tool
+    summary_zh: 增加酸耐性。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d659c02ebc:
+    name_zh_reference: 装甲包LL
+    category: vehicle_tool
+    summary_zh: SP2000回复
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d85645a93a:
+    name_zh_reference: 镜面防护膜
+    category: vehicle_tool
+    summary_zh: 反射光束。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-d997b111fb:
+    name_zh_reference: 碱性蜡
+    category: vehicle_tool
+    summary_zh: 中和战车上的酸液。
+    target_zh: 一辆战车
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-dbc34bac47:
+    name_zh_reference: 海龟蓑衣
+    category: vehicle_tool
+    summary_zh: 提高装备车辆的电击耐性，可以开启或关闭。
+    target_zh: 装备的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-e30cb869de:
+    name_zh_reference: 宇宙零件+
+    category: vehicle_material
+    summary_zh: 制造宇宙炮所需的零件；不同后缀、重量与星级原值分别保留。
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-e4030efe35:
+    name_zh_reference: 耐寒防护膜
+    category: vehicle_tool
+    summary_zh: 冷气耐性
+    target_zh: 使用的车辆
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-ec20c0c3b1:
+    name_zh_reference: 钢铁之卵
+    category: vehicle_material
+    summary_zh: 战车作成素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-f4538b19ae:
+    name_zh_reference: 露营好帮手
+    category: vehicle_tool
+    summary_zh: 随时投宿&存档
+    target_zh: 随时
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-f989a572ef:
+    name_zh_reference: 换气装置
+    category: vehicle_tool
+    summary_zh: 气体耐性
+    target_zh: 车上一名乘员
+    match_names: []
+    related_record_ids:
+      - tank-item-29c81ea2a0
+    notes_zh: []
+  tank-item-f9d9bb0043:
+    name_zh_reference: 金色头冠
+    category: vehicle_material
+    summary_zh: 战车作成素材
+    target_zh: null
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+  tank-item-faddaa15cc:
+    name_zh_reference: 金属撞角
+    category: vehicle_tool
+    summary_zh: 对敌人发动撞击。
+    target_zh: 一名敌人
+    match_names: []
+    related_record_ids: []
+    notes_zh: []
+value_translations:
+  HP80回復: 回复80 HP。
+  HP230回復: 回复230 HP。
+  HP500回復: 回复500 HP。
+  HP全回復: 完全回复HP。
+  HP230回復 何度でも使える: 回复230 HP；旧表标为可反复使用。
+  LOVEマシン: 通过L、O、V、E四类IC芯片的组合改变LOVE机器功能，对应81条组合资料。
+  LOVEマシン用: 用于LOVE机器的芯片组合。
+  あるヒントが読める: 阅读便条上的提示。
+  おつまみの材料: 制作下酒菜的材料。
+  すばやさ上昇: 提高速度。
+  カミカゼキング: 印有神风王的恶人照片。
+  カリョストロ: 印有卡里奥斯特罗的恶人照片。
+  ガス耐性を付加 装備: 装备后增加气体耐性。
+  キンバに認められた証: 获得金巴认可的证明。
+  ゲコゲコ大作戦 何度でも使える: 游玩“呱呱大作战”小游戏；可反复使用。
+  コイントス 何度でも使える: 掷硬币；可反复使用。
+  コンピュータの操作: 用于操作电脑的身份卡。
+  ゴールドアント: 印有黄金蚁的恶人照片。
+  ゾンビサーファー: 印有僵尸冲浪者的恶人照片。
+  ダメージ: 造成伤害。
+  ダメージ 何度でも使える: 造成伤害；旧表标为可反复使用。
+  ダメージ＋炎: 造成伤害并附带火炎效果。
+  テッドブロイラー: 印有泰德布罗拉的恶人照片。
+  バッドアイテム: 不利道具；原表未具体说明其影响。
+  パスワードが読める: 阅读纸片上的密码。
+  ビリビリ: 发出电击，具体流程作用见来源表。
+  マダム・マッスル: 印有肌肉夫人的恶人照片。
+  マップ表示等: 显示地图等BS功能。
+  マリアの写真: 装有玛丽亚照片的吊坠。
+  マーキング: 为敌人加上标记。
+  モンスターの位置表示: 显示怪物的位置。
+  万能鍵: 万能开锁工具。
+  冷気: 施加冷气效果。
+  効果なし: 原表标为没有效果，不推断其他用途。
+  唇が赤くなる 何度でも使える: 将嘴唇涂红；可反复使用。
+  回避率30%上昇: 旧表记载提高30%回避率，未在0.99实机核验。
+  売却用アイテム: 主要用于出售换钱。
+  平和の証: 和平的象征。
+  愛の証: 爱情的证明。
+  戦車でバンバン 何度でも使える: 游玩“战车砰砰”小游戏；可反复使用。
+  攻撃力上昇: 提高攻击力。
+  松の間の備品: 松之间客房的备品。
+  歯のある人は使えない: 假牙；有牙齿的人无法使用。
+  毒ガス 何度でも使える: 释放毒气；旧表标为可反复使用。
+  汗を拭く 何度でも使える: 擦汗；可反复使用。
+  消火: 灭火。
+  消火 何度でも使える: 灭火；可反复使用。
+  混乱: 造成混乱。
+  犬強化: 强化犬的能力，不推算成长结果。
+  睡眠: 造成睡眠。
+  破損を修理する ランダムで壊れる: 修理损坏零件；旧表记载使用后随机损坏工具。
+  破損を修理する 何度でも使える: 修理损坏零件；可反复使用。
+  緋牡丹の花が咲く 何度でも使える: 旧表记载显示绯牡丹纹身并可反复使用。
+  聖書 何度でも使える: 阅读圣经；可反复使用。
+  脱走用: 用于逃脱的叉头勺。
+  蘇生: 使倒下的同伴复苏。
+  蚊を退治する: 驱除蚊子。
+  蚊を退治する 何度でも使える: 驱除蚊子；可反复使用。
+  警笛が鳴る: 旧表记载鸣笛；与METAL的车载音波武器资料冲突。
+  賞金首を倒した証: 击败对应赏金首的证明。
+  酸の中和: 中和酸液状态。
+  酸の中和 何度でも使える: 中和酸液状态；可反复使用。
+  金属反応を探す 何度でも使える: 探测附近金属反应；可反复使用。
+  鍵: 用于打开对应锁的钥匙，具体限制只采用明确来源。
+  鎮痛剤の原料: 制作镇痛药的原料。
+  電撃耐性を付加 装備: 装备后增加电击耐性。
+  音波耐性を付加 装備: 装备后增加音波耐性。
+  麻痺回復: 解除麻痹。
+  麻痺回復 何度でも使える: 解除麻痹；可反复使用。
+  HP回復 ランダムで壊れる: 回复HP；旧表记载使用后随机损坏。
+  SP回復: 回复战车装甲值SP；本条旧表未明确回复量。
+  レーザー反射: 反射激光。
+  体当たり攻撃: 对敌人发动撞击。
+  冷気耐性 装備: 搭载后增加冷气耐性。
+  効果なし 装備: 可搭载；旧表记载没有效果。
+  命中率上昇 装備: 搭载后提高命中率。
+  回避率上昇: 提高回避率。
+  場所移動 何度でも使える: 转移到其他地点；可反复使用。
+  戦車作成に必要: 制造战车所需的材料。
+  敵出現型変化 装備: 搭载后改变遇敌情况。
+  毒ガス耐性 装備: 搭载后增加毒气耐性。
+  熱冷気毒ガス耐性 装備: 搭载后增加火炎、冷气和毒气耐性。
+  熱耐性 装備: 搭载后增加火炎耐性。
+  装飾用: 旧表记载用于装饰。
+  警笛 装備: 搭载后鸣笛。
+  迎撃システム 装備: 搭载后提供迎击系统。
+  酸中和: 中和战车上的酸液。
+  酸耐性: 增加酸耐性。
+  電撃耐性 装備: 搭载后增加电击耐性。
+  通常弾の50%ダメージ: 造成普通炮弹50%的伤害。
+  ダメージ＋燃え: 造成伤害并附加燃烧。
+  ダメージ＋冷え: 造成伤害并附加冻结。
+  毒ガス: 释放毒气。
+  ダメージ＋パーツ破壊: 造成伤害并破坏零件。
+  ホローチャージよりもさらに強力: 比定向爆破弹更强的炮弹，具体数值未明示。
+  大ダメージ: 造成较大伤害。
+  ランダム: 随机效果。
+  セメント: 施加水泥效果，降低防御和回避。
+  ビーム反射: 反射光束。
+  麻痺付与: 附加麻痹。
+  男らしさ+1～2: 男子气概增加1至2点。
+  破損・大破修理時に使用: 在修理破损或大破零件时使用。
+  1回: 一次性使用。
+  消費: 消耗品。
+  消耗品: 消耗品。
+  ∞: 可反复使用。
+  ON/OFF: 开启或关闭搭载效果。
+  使用不可: 不可使用。
+  味方一人: 一名同伴
+  味方全員: 全体同伴
+  敵一体: 一名敌人
+  敵全体: 全体敌人
+  敵グル: 一组敌人
+  グル: 一组敌人
+  一体: 一名敌人
+  使用者: 使用者
+  使用者以外: 使用者以外的对象
+  パーツ一個: 一个零件
+  犬一匹: 一只犬
+  プレイヤー: 玩家
+  PT: 队伍
+  周囲3マス: 周围3格
+  周囲7マス: 周围7格
+  戦車一台: 一辆战车
+  搭載車両: 搭载该道具的车辆
+  乗車している一人: 车上一名乘员
+  装備した車両: 装备该道具的车辆
+  円範囲小: 小型圆形范围
+  全体: 全体对象
+  4連射の重量級大砲: 可四连射的重型主炮。
+  「こんにちは。私～（略）」: 播放自我介绍语音。
+  「わんわん！」: 发出汪汪叫声。
+  いちかばちかの蘇生装置: 具有随机成败的复苏装置。
+  かなりの守備力がある防具: 具有较高防御力的防具。
+  かなり体力を回復、対象選択可: 回复较多HP，可选择对象。
+  かなり守備力の高いエンジン: 具有较高防御力的引擎。
+  かわいい猫のなきごえ: 发出可爱的猫叫声。
+  さまざまな能力がアップ: 提高多种能力。
+  すばやさがアップする防具: 提高速度的防具。
+  なかなか高性能のエンジン: 性能较好的引擎。
+  なにもおこらない: 没有效果。
+  ガスと電気の効果をアップ: 强化气体与电击效果。
+  ガスによる確実な攻撃: 发动可靠命中的气体攻击。
+  ガスに強いバリアを張る: 展开气体耐性屏障。
+  ゲーム機(3種とも収録、100G): 提供三种小游戏，原表标价100G。
+  セメント弾発射の人間武器: 发射水泥弹的人类武器。
+  ダメージ吸収バリアを展開: 展开吸收伤害的屏障。
+  ドリル弾発射の人間武器: 发射钻头弹的人类武器。
+  ビームと音波の効果をアップ: 强化光束与音波效果。
+  ビームによる確実な攻撃: 发动可靠命中的光束攻击。
+  ビーム反射バリアを張る: 展开反射光束的屏障。
+  三連攻撃可能のCユニット: 可进行三连攻击的C装置。
+  人間の酸状態を回復、対象選択可: 解除人类的酸液状态，可选择对象。
+  人間一人の酸状態を回復: 解除一名人类的酸液状态。
+  人間用のビーム武器: 人类使用的光束武器。
+  人間用の冷気武器: 人类使用的冷气武器。
+  人間用の強力なガス武器: 人类使用的强力气体武器。
+  人間用の火炎武器: 人类使用的火炎武器。
+  人間用の電気武器: 人类使用的电击武器。
+  人間用の音波武器: 人类使用的音波武器。
+  仲間の状態異常を治療する: 治疗同伴的异常状态。
+  仲間全員の状態異常を治療: 治疗全体同伴的异常状态。
+  体力を約300回復、自分のみ: 为使用者回复约300 HP。
+  何も起こらない: 没有效果。
+  冷気による確実な攻撃: 发动可靠命中的冷气攻击。
+  冷気バリアを張る: 展开冷气耐性屏障。
+  出たとこ勝負のスプレー缶: 效果随机的喷雾罐。
+  即座に敵とエンカウント: 立即遇敌。
+  周囲の炎と冷気を消す、対象選択可: 消除对象周围的火炎和冷气，可选择对象。
+  味方全員の体力をかなり回復: 为全体同伴回复较多HP。
+  味方全員の体力を回復: 为全体同伴回复HP。
+  味方全員の体力を大きく回復: 为全体同伴大幅回复HP。
+  大きく体力を回復、対象選択可: 大幅回复HP，可选择对象。
+  大きく重くたくましい大砲: 体积与重量较大的强力主炮。
+  女らしい人の能力アップ: 强化女子气概较高者的能力。
+  女らしさがアップするアクセ: 提高女子气概的饰品。
+  属性攻撃に強い防具: 抵抗属性攻击的防具。
+  応援されて力が強くなる: 受到声援后提高力量。
+  応援されて素早くなる: 受到声援后提高速度。
+  応援されて色々強くなる: 受到声援后提高多种能力。
+  応援メッセージ: 播放声援消息。
+  戦闘での獲得経験値を2倍に: 使战斗获得经验变为2倍，具体适用条件以来源为准。
+  戦闘での獲得金額を2倍に: 使战斗获得金钱变为2倍，具体适用条件以来源为准。
+  戦闘中に煙幕をはる: 战斗中施放烟幕。
+  戦闘中に装甲タイルを補修: 战斗中修补装甲片。
+  攻撃力がアップする防具: 提高攻击力的防具。
+  敵に見つかりにくくなる: 降低被敌人发现的机会。
+  敵の状態をおかしくする: 使敌人陷入异常状态。
+  敵をかなりキラキラさせる （HP・経験値・金10倍）: 使敌人大幅闪亮；旧表同时记载HP、经验与金钱为10倍，不外推其他能力。
+  敵をすごくキラキラさせる （HP・経験値・金5倍）: 使敌人很闪亮；旧表同时记载HP、经验与金钱为5倍，不外推其他能力。
+  敵を少しキラキラさせる: 使敌人稍微闪亮。
+  敵を最高にキラキラさせる（HP・経験値・金20倍）: 使敌人最大程度闪亮；旧表同时记载HP、经验与金钱为20倍，不外推其他能力。
+  敵を酸状態にする人間武器: 使敌人附着酸液的人类武器。
+  最高の迎撃専用S-E: 专门用于迎击的高性能S-E。
+  様々な音楽を聞ける: 播放多种音乐。
+  炎と冷気の効果をアップ: 强化火炎与冷气效果。
+  炎による確実な攻撃: 发动可靠命中的火炎攻击。
+  熱バリアを張る: 展开火炎耐性屏障。
+  犬の能力アップ: 提高犬的能力。
+  男らしさがアップするアクセ: 提高男子气概的饰品。
+  穴を掘れる: 用于挖洞。
+  笑い声がひびきわたる: 发出笑声。
+  自分たちの名前を変える: 修改队伍成员姓名。
+  虫型のモンスターを攻撃: 攻击虫型怪物。
+  超高性能エンジン: 高性能引擎。
+  車をラブリーにペイントする: 给战车涂上可爱风格的涂装。
+  車内汚染を自動で直す戦車道具（換気装置）: 自动清理车内污染的换气装置。
+  軽くてあつかいやすい大砲: 轻便易用的主炮。
+  迎撃を補助するCユニット: 辅助迎击的C装置。
+  迎撃可能な高性能Cユニット: 能够迎击的高性能C装置。
+  電気による確実な攻撃: 发动可靠命中的电击攻击。
+  電気に強いバリアを張る: 展开电击耐性屏障。
+  音波による確実な攻撃: 发动可靠命中的音波攻击。
+  音波に強いバリアを張る: 展开音波耐性屏障。
+  ダーク・カナル内木箱、埋もれたビル内（金属探知機）: 暗黑水道内木箱；埋没大楼内使用金属探测器。
+  ベネット海の家购买: 在贝内特的海之家购买。
+  埋もれたビル内（金属探知機）: 在埋没大楼内使用金属探测器。
+  奇怪ヶ島的沙滩（金属探知機）: 在奇怪岛沙滩使用金属探测器。
+  デビルアイランド木箱、奇怪ヶ島沙滩（金属探知機）: 恶魔岛木箱；奇怪岛沙滩使用金属探测器。
+  デスクルスの人間道具屋: 德斯克鲁斯的人类道具店。
+  クエスト『エリーザの恋人』報酬、埋もれたビル内（金属探知機）: 任务“艾丽莎的恋人”报酬；埋没大楼内使用金属探测器。
+  撃破数4000のボーナス: 击破数达到4000的奖励。
+  バイアスシティB6の木箱: 巴亚斯城B6层的木箱。
+  スワン地下の金庫（ロックハッカー）、奇怪ヶ島砂浜（金属探知機）: 天鹅镇地下保险箱（需要万能钥匙）；奇怪岛沙滩使用金属探测器。
+  クエスト『お水をください』報酬、奇怪ヶ島砂浜（金属探知機）: 任务“请给我水”报酬；奇怪岛沙滩使用金属探测器。
+  ×: 不可继承到下一周目。
+  ○: 可继承到下一周目。
+  数回: 可使用数次，次数用尽后消耗。
+  単体: 单个对象
+  円範囲大: 大型圆形范围
+  パーティ: 队伍
+  人間一人: 一名人类
+  使用した車両: 使用该道具的车辆
+  破損・大破修理時に使用(メカニックの特技専用): 修理破损或大破零件时使用，仅供机械师特技使用。
+  1データにつき1個のみ: 每个存档只能获得一个。
+  犬専用: 仅供犬使用。
+  スパルク･アモルフ系の砲専用: 仅适用于斯帕克、阿莫尔夫系列主炮。
+  火花･非晶态系的大炮专用: 仅适用于来源所称“火花、非晶态”系列主炮，原0.9译名另行保留。
+  (宝)スワン(ガルシア撃破後): 宝箱：天鹅镇，击败加西亚后取得。
+  (宝)デスクルス地下: 宝箱：德斯克鲁斯地下。
+  (宝)デビルアイランド: 宝箱：恶魔岛。
+  (宝)デビルアイランド、デスクルス地下 (交換)イスラポルト病院(要オイホロトキシン): 宝箱：恶魔岛、德斯克鲁斯地下；也可在以斯拉港医院用镇痛毒素原料兑换。
+  (宝)ノボトケの村、モンキーセンター他: 宝箱：野佛村、猴子中心等处。
+  (宝)プロテイン・パレス: 宝箱：蛋白质宫殿。
+  (宝)マド・イリットの部屋 システムキッチン購入で入手不可に: 宝箱：马多镇伊莉特的房间；购买整体厨房后将无法取得。
+  (宝)職員住宅: 宝箱：职员住宅。
+  (落)U-シャーク MM2と違い使用しても特別なメッセージは無い: 由U鲨鱼掉落；来源注明与MM2不同，使用时没有特殊消息。
+  (落)アシッドアント 他 (宝)デルタリオ 他: 酸蚁等敌人掉落；德尔塔里奥等处宝箱。
+  (落)アダムアント 戦闘中に使用すると防御行動を取る(効果不明): 亚当蚁掉落；战斗中使用会采取防御动作，具体效果不明。
+  (落)サイゴン: 犀牛掉落。
+  (落)サンドアント: 沙蚁掉落。
+  (落)デスペロイド他: 机械亡命客等敌人掉落。
+  (落)パラサイトヒル: 寄生水蛭掉落。
+  (買)イスラポルト 自販機 他: 以斯拉港自动售货机等处购买。
+  (買)デルタ・リオ 他: 德尔塔里奥等处购买。
+  (買)デルタ・リオ、イスラポルト、タイシャー、スワン: 德尔塔里奥、以斯拉港、泰夏、天鹅镇购买。
+  (買)デルタ・リオ自販機(陸路未到達時点)、ホックの交易所 他: 尚未经陆路抵达时，可在德尔塔里奥自动售货机购买；霍克交易所等处也有售。
+  (買)ノボトケの村(宝)奇怪ヶ島: 野佛村购买；奇怪岛宝箱。
+  (買)ハトバ北のトレーダーキャンプ 他: 哈特巴北方商人营地等处购买。
+  (買)バザースカ 他: 巴扎斯卡等处购买。
+  (買)バザースカ、: 来源列出巴扎斯卡，后续地点未完整填写。
+  (買)バザースカ、アズサ自販機 他: 巴扎斯卡、阿梓莎自动售货机等处购买。
+  (買)ビルの廃墟 自販機 、フメツ・ゲート自販機 他: 大楼废墟自动售货机、不朽之门自动售货机等处购买。
+  (買)ホックの交易所: 霍克交易所购买。
+  (買)マド 他: 马多镇等处购买。
+  (買)マド自販機、ハトバ 他: 马多镇自动售货机、哈特巴等处购买。
+  (買)マド自販機、ホックの交易所東TC、デルタ・リオ(陸路到達後) 他: 马多镇自动售货机、霍克交易所东侧商人营地、经陆路抵达后的德尔塔里奥等处购买。
+  (買)マド薬局、デルタ・リオ: 马多镇药店、德尔塔里奥购买。
+  (買)モロ・ポコ: 摩罗波克购买。
+  (買)人間ビレッジ: 人类村购买。
+  イスラポルトの人間道具屋: 以斯拉港人类道具店购买。
+  クエスト「 さらわれた女、カティア 」: 来源关联任务“被掳走的女子卡蒂娅”，未单独列出交付步骤。
+  クエスト「 思い出は砂の中 」開始時: 任务“回忆埋在沙中”开始时取得。
+  クエスト「シグナルを追え」: 来源关联任务“追踪信号”。
+  クエスト『 お水をください 』報酬、デビルアイランドの木箱、奇怪ヶ島砂浜（金属探知機）: 任务“请给我水”报酬；恶魔岛木箱；奇怪岛沙滩使用金属探测器。
+  クエスト『 エリーザの恋人 』報酬、埋もれたビル内（金属探知機）: 任务“艾丽莎的恋人”报酬；埋没大楼内使用金属探测器。
+  クエスト『 ハトバへ 』報酬、埋もれたビル内（金属探知機）: 任务“前往哈特巴”报酬；埋没大楼内使用金属探测器。
+  クエスト『 私を”あい”に連れてって 』の報酬、埋もれたビル内（金属探知機）: 任务“带我去寻找爱”报酬；埋没大楼内使用金属探测器。
+  ダーク・カナル内の木箱、埋もれたビル内（金属探知機）: 暗黑水道内木箱；埋没大楼内使用金属探测器。
+  デビルアイランド6F宝箱(7Fでブルフロッグと戦闘後): 在恶魔岛7F与布鲁弗洛格战斗后，从6F宝箱取得。
+  ノグチケミカル(1個のみ所持可能): 野口化学取得；只能持有一个。
+  バザースカの掘り出し物屋、ベネットの海の家で買う、奇怪ヶ島砂浜（金属探知機）: 巴扎斯卡珍品店、贝内特海之家购买；奇怪岛沙滩使用金属探测器。
+  ベネットの海の家で買う（ 『 イリットと料理の本 』をクリアしないと店に並ばない クエストクリア前に販売を確認）、デビルアイランドのアンドロイドを解体: 贝内特海之家购买；来源同时保留“需完成伊莉特与料理书任务”和“任务完成前也确认有售”两种观察；也可拆解恶魔岛的机器人取得。
+  ホックの交易所の人間道具屋、ベネットの海の家で買う、デビルアイランドの木箱、奇怪ヶ島砂浜（金属探知機）: 霍克交易所人类道具店、贝内特海之家购买；恶魔岛木箱；奇怪岛沙滩使用金属探测器。
+  悪の福袋 (宝)イスラポルト: 恶人福袋；以斯拉港宝箱。
+  悪の福袋 (宝)グラップルタワー: 恶人福袋；掠夺者塔宝箱。
+  悪の福袋 (宝)タイシャー民家: 恶人福袋；泰夏民家宝箱。
+  悪の福袋 (宝)ダークカナル: 恶人福袋；暗黑水道宝箱。
+  悪の福袋 (宝)酒場サースティ、サロンド乙姫: 恶人福袋；萨斯蒂酒馆、乙姬沙龙宝箱。
+  悪の福袋 (宝)風力発電所、イスラポルト(要ロックハッカー): 恶人福袋；风力发电所、以斯拉港宝箱，来源注明需要万能钥匙。
+  悪の福袋、筋肉美パック (宝)デビルアイランド: 恶人福袋、肌肉美礼包；恶魔岛宝箱。
+  撃破数4000のボーナス、クエスト『 スワン発進！ 』の報酬: 击破数4000奖励；任务“天鹅号出发”报酬。
+  自販機の当たり、悪の福袋: 自动售货机中奖；恶人福袋。
+  味方全員の体力を回復(約300): 为全体同伴回复约300 HP。
+  味方全員の体力を大きく回復(約750): 为全体同伴回复约750 HP。
+  HP100程度回復: 回复约100 HP。
+  HP300程度回復: 回复约300 HP。
+  HP600程度回復: 回复约600 HP。
+  HP250程度回復: 回复约250 HP。
+  HP完全回復: 完全回复HP。
+  HP完全回復＋マヒ: 完全回复HP，同时造成麻痹。
+  マヒ回復: 解除麻痹。
+  酸回復(人間): 解除人类的酸液状态。
+  酸回復(戦車): 解除战车的酸液状态。
+  ？: 来源用途栏未明确效果。
+  混乱させる: 使对象混乱。
+  敵1体にダメージ （攻撃力150）: 对一名敌人造成伤害，来源攻击力为150。
+  敵1体にダメージ （攻撃力50）: 对一名敌人造成伤害，来源攻击力为50。
+  敵1体に1～5ダメージ: 对一名敌人造成1至5点伤害。
+  敵1体に極小ダメージ: 对一名敌人造成极少伤害。
+  範囲にダメージ （攻撃力350）: 造成范围伤害，来源攻击力为350。
+  範囲にダメージ （攻撃力250）: 造成范围伤害，来源攻击力为250。
+  敵1体の出現位置をマップ上に表示: 在地图上显示一名敌人的出没位置。
+  男らしさ−3～4: 男子气概降低3至4点。
+  燃え解除: 解除燃烧。
+  ダメージ＋酸: 造成伤害并附加酸液。
+  腕力1.4倍: 腕力提高至1.4倍。
+  煙幕状態にする: 使对象进入烟幕状态。
+  火炎ダメージ＋燃え（小）: 造成火炎伤害，并附加小程度燃烧。
+  火炎ダメージ＋燃え（中）: 造成火炎伤害，并附加中等程度燃烧。
+  埋蔵アイテム探知(範囲小): 在较小范围探测埋藏物品。
+  埋蔵アイテム探知(範囲中): 在中等范围探测埋藏物品。
+  ガスダメージ＋毒ガス: 造成气体伤害并附加毒气。
+  掛け金100Gで「戦車でバンバン！」が遊べる: 以100G为赌注游玩“战车砰砰”小游戏。
+  カトールの強力版。戦闘中は敵1体にガス属性ダメージ。 宿泊で蚊が出た場合、カトールより優先で使われる。: 强化驱蚊剂；战斗中对一名敌人造成气体伤害，住宿遇蚊子时会优先于普通驱蚊剂使用。
+  蚊をやっつける薬。戦闘中は敵1体にガス属性ダメージ。: 驱蚊药；战斗中对一名敌人造成气体伤害。
+  犬の能力を上げる成分の入った特別なペットフード。犬はこれが大好きらしい。: 含有强化犬能力成分的特殊犬粮；不推算成长结果。
+  じっくり眺めてえもいわれず誇らしい気持ちになる: 赏金首战利品，可查看留作纪念。
+  消费: 消耗品。
+  デスペロイド：掉落槽1，原表概率50%: 机械亡命客：掉落槽1，原表概率50%。
+  スカンクス：掉落槽1，原表概率100%: 斯坎克斯：掉落槽1，原表概率100%。
+  ステピチ：掉落槽1，原表概率60%: ステピチ：掉落槽1，原表概率60%。
+  ヒトデロン：掉落槽1，原表概率55%: 海星怪：掉落槽1，原表概率55%。
+  穿甲弹壳 + APFS箭头 + 汇流环: 穿甲弹壳 + APFS箭头 + 汇流环
+  サボシェル + APFSアロー + スリップリング: 穿甲弹壳 + APFS箭头 + 汇流环
+  软弹壳 + 催眠气体罐 + 冲击触发保险: 软弹壳 + 催眠气体罐 + 冲击触发保险
+  ソフトシェル + さいみんガス缶 + 衝撃ヒューズ: 软弹壳 + 催眠气体罐 + 冲击触发保险
+  软弹壳 + 混乱气体罐 + 冲击触发保险: 软弹壳 + 混乱气体罐 + 冲击触发保险
+  ソフトシェル + パニックガス缶 + 衝撃ヒューズ: 软弹壳 + 混乱气体罐 + 冲击触发保险
+  硬弹壳 + 锥形聚能弹壳 + 门罗炸药: 硬弹壳 + 锥形聚能弹壳 + 门罗炸药
+  ハードシェル + ホロージャケット + モンロー爆薬: 硬弹壳 + 锥形聚能弹壳 + 门罗炸药
+  软弹壳 + 凝固汽油罐 + 接近触发保险: 软弹壳 + 凝固汽油罐 + 接近触发保险
+  ソフトシェル + ナパーム缶 + 近接ヒューズ: 软弹壳 + 凝固汽油罐 + 接近触发保险
+  软弹壳 + 冷冻气体罐 + 冲击触发保险: 软弹壳 + 冷冻气体罐 + 冲击触发保险
+  ソフトシェル + 冷えガス缶 + 衝撃ヒューズ: 软弹壳 + 冷冻气体罐 + 冲击触发保险
+  软弹壳 + 毒气罐 + 冲击触发保险: 软弹壳 + 毒气罐 + 冲击触发保险
+  ソフトシェル + 毒ガス缶 + 衝撃ヒューズ: 软弹壳 + 毒气罐 + 冲击触发保险
+  火箭弹壳 + 炸药 + 炸药: 火箭弹壳 + 炸药 + 炸药
+  ロケットシェル + 爆薬 + 爆薬: 火箭弹壳 + 炸药 + 炸药
+  任意 + 任意 + 任意: 原表材料为任意组合；对应艺术家制作失败的哑弹，不代表保证产出的有效配方。
+  トータルタートル：掉落槽1，原表概率85%: 全能龟：掉落槽1，原表概率85%。
+  火箭弹壳 + 钻头 + 炸药: 火箭弹壳 + 钻头 + 炸药
+  ロケットシェル + ドリルヘッド + 爆薬: 火箭弹壳 + 钻头 + 炸药
+  硬弹壳 + 金属弹壳 + 炸药: 硬弹壳 + 金属弹壳 + 炸药
+  ハードシェル + メタルジャケット + 爆薬: 硬弹壳 + 金属弹壳 + 炸药
+  硬弹壳 + 炸药 + 接近触发保险: 硬弹壳 + 炸药 + 接近触发保险
+  ハードシェル + 爆薬 + 近接ヒューズ: 硬弹壳 + 炸药 + 接近触发保险
+  ソフトシェル + まひガス缶 + 衝撃ヒューズ: 软弹壳 + 麻痹气体罐 + 冲击触发保险
+  火箭弹壳 + 推进剂罐 + 炸药: 火箭弹壳 + 推进剂罐 + 炸药
+  ロケットシェル + プロペラント缶 + 爆薬: 火箭弹壳 + 推进剂罐 + 炸药
+  软弹壳 + 粘着剂罐 + 接近触发保险: 软弹壳 + 粘着剂罐 + 接近触发保险
+  ソフトシェル + セメント缶 + 近接ヒューズ: 软弹壳 + 粘着剂罐 + 接近触发保险
+  软弹壳 + 麻痹气体罐 + 冲击触发保险: 软弹壳 + 麻痹气体罐 + 冲击触发保险
+  ぐんかんサウルス：掉落槽1，原表概率75%: 军舰恐龙：掉落槽1，原表概率75%。
+  トータルタートル：掉落槽2，原表概率35%: 全能龟：掉落槽2，原表概率35%。
+  母艦サウルス：掉落槽1，原表概率99%: 母舰恐龙：掉落槽1，原表概率99%。
+  HP回復(大): 大幅回复HP，具体数值未明示。
+  HP回復(小): 少量回复HP，具体数值未明示。
+  どこでも宿泊&セーブ: 可就地住宿并存档。
+  ガス耐性: 增加气体耐性。
+  クラクション: 鸣笛。
+  タキオンテレポーター: 用于超光速传送功能，未补造流程步骤。
+  テッド・ブロイラー: 印有泰德布罗拉的恶人照片。
+  パーツ破壊: 破坏零件。
+  冶金素材: 冶金材料。
+  冷凍付与: 附加冻结。
+  冷気耐性: 增加冷气耐性。
+  命中上昇: 提高命中。
+  回避上昇: 提高回避。
+  場所移動: 地点转移。
+  宇宙砲パーツ: 宇宙炮零件。
+  対地中砲弾: 针对地中目标的炮弹。
+  対水中砲弾: 针对水下目标的炮弹。
+  対空砲弾: 针对空中目标的炮弹。
+  戦車作成・冶金素材: 战车制造与冶金材料。
+  戦車作成素材: 战车制造材料。
+  敵出現率低下: 降低遇敌率。
+  敵出現率増加: 提高遇敌率。
+  敵出現率大幅低下: 大幅降低遇敌率。
+  毒ガス付与: 附加毒气。
+  混乱付与: 附加混乱。
+  火炎耐性: 增加火炎耐性。
+  燃焼付与: 附加燃烧。
+  睡眠付与: 附加睡眠。
+  移動時にHPを回復: 移动时回复HP。
+  範囲攻撃(威力半減): 范围攻击，威力减半。
+  防御回避低下: 降低防御与回避。
+  電気耐性上昇: 提高电击耐性。
+  音波耐性: 增加音波耐性。
+  SP100回復: 回复100点SP。
+  SP100回复: 回复100点SP。
+  SP250回復: 回复250点SP。
+  SP250回复: 回复250点SP。
+  SP500回復: 回复500点SP。
+  SP500回复: 回复500点SP。
+  SP1000回復: 回复1000点SP。
+  SP1000回复: 回复1000点SP。
+  SP2000回復: 回复2000点SP。
+  SP2000回复: 回复2000点SP。
+  SP5000回復: 回复5000点SP。
+  SP5000回复: 回复5000点SP。
+  HP回复(大): 大幅回复HP，具体数值未明示。
+  HP回复(小): 少量回复HP，具体数值未明示。
+  冷冻付与: 附加冻结。
+  冷气耐性: 增加冷气耐性。
+  命中上升: 提高命中。
+  回避上升: 提高回避。
+  场所移动: 地点转移。
+  宇宙炮零件: 宇宙炮零件。
+  对地中炮弹: 针对地中目标的炮弹。
+  对水中炮弹: 针对水下目标的炮弹。
+  对空炮弹: 针对空中目标的炮弹。
+  战车作成・冶金素材: 战车制造与冶金材料。
+  战车作成素材: 战车制造材料。
+  效果随即: 随机效果。
+  敌出现率下降: 降低遇敌率。
+  敌出现率增加: 提高遇敌率。
+  敌出现率大幅下降: 大幅降低遇敌率。
+  毒气付与: 附加毒气。
+  气体耐性: 增加气体耐性。
+  汽车的喇叭: 鸣笛。
+  燃烧付与: 附加燃烧。
+  电气耐性上升: 提高电击耐性。
+  移动时回复HP: 移动时回复HP。
+  范围攻击(威力减半): 范围攻击，威力减半。
+  超光速道具传送: 用于超光速传送功能，未补造流程步骤。
+  防御回避降低: 降低防御与回避。
+  随时投宿&存档: 可就地住宿并存档。
+  零件破坏: 破坏零件。

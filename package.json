@@ -24,6 +24,8 @@
     "data:collect:vehicles": "cd tools/data-pipeline && uv run mmwiki-data collect-vehicles --repo-root ../..",
     "data:collect:vehicle-traits": "cd tools/data-pipeline && uv run mmwiki-data collect-vehicle-traits --repo-root ../..",
     "data:collect:job-skills": "cd tools/data-pipeline && uv run mmwiki-data collect-job-skills --repo-root ../..",
+    "data:collect:items": "cd tools/data-pipeline && uv run mmwiki-data collect-items --repo-root ../..",
+    "data:collect:quests": "cd tools/data-pipeline && uv run mmwiki-data collect-quests --repo-root ../..",
     "data:normalize": "cd tools/data-pipeline && uv run mmwiki-data normalize --repo-root ../..",
     "data:audit": "cd tools/data-pipeline && uv run mmwiki-data audit --repo-root ../.. && uv run mmwiki-data asset-audit --repo-root ../..",
     "assets:audit": "cd tools/data-pipeline && uv run mmwiki-data asset-audit --repo-root ../..",

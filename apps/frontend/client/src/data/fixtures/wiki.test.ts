@@ -6,12 +6,14 @@ import { wikiCategorySlugs } from '@/types/wiki'
 import { wikiCategories, wikiCategoriesBySlug } from './wiki'
 
 describe('wiki categories', () => {
-  it('公开分类只展示合并后的四个入口', () => {
+  it('公开分类展示固定的六个入口', () => {
     expect(wikiCategories.map(({ slug, index }) => ({ slug, index }))).toEqual([
       { slug: 'vehicles', index: '01' },
       { slug: 'equipment', index: '02' },
       { slug: 'wanted-monsters', index: '03' },
       { slug: 'jobs', index: '04' },
+      { slug: 'items', index: '05' },
+      { slug: 'quests', index: '06' },
     ])
   })
 

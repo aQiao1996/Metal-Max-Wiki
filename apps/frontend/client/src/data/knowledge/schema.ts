@@ -6,6 +6,8 @@ export const knowledgeCategories = [
   'wanted-monsters',
   'vehicles',
   'jobs',
+  'items',
+  'quests',
 ] as const
 export const knowledgeCategorySchema = z.enum(knowledgeCategories)
 

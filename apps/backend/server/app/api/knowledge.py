@@ -22,13 +22,14 @@ async def knowledge_list(
     q: Annotated[str, Query(max_length=100)] = "",
     sort: KnowledgeSort = "name-asc",
     mount: KnowledgeMount = "all",
+    tag: Annotated[str, Query(max_length=40)] = "",
     page: Annotated[int, Query(ge=1, le=10000)] = 1,
     page_size: Annotated[int, Query(alias="pageSize", ge=1, le=100)] = 20,
 ) -> ApiResponse[KnowledgeListData]:
     """按关键词、排序和战车动力配置浏览百科。"""
     return ApiResponse(
         data=list_knowledge(
-            version, category, q=q, sort=sort, mount=mount, page=page, page_size=page_size
+            version, category, q=q, sort=sort, mount=mount, tag=tag, page=page, page_size=page_size
         )
     )
 

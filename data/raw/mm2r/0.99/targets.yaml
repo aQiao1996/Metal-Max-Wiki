@@ -1,5 +1,17 @@
 schema_version: 1
 targets:
+  - id: maniax-items
+    source_id: metalmaniax-mm2r
+    category: items
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93
+    output: maniax-items.json
+    collect: false
+  - id: maniax-quests
+    source_id: metalmaniax-mm2r
+    category: quests
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88
+    output: maniax-quests.json
+    collect: false
   - id: maniax-job-skills
     source_id: metalmaniax-mm2r
     category: jobs
