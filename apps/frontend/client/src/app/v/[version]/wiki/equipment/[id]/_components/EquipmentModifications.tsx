@@ -88,7 +88,7 @@ export function EquipmentModifications({ entry }: { entry: EquipmentEntry }) {
     <section aria-labelledby="equipment-modifications-heading">
       <h2
         id="equipment-modifications-heading"
-        className="text-xl font-semibold tracking-tight text-[var(--mm-navy)]"
+        className="scroll-mt-24 text-xl font-semibold tracking-tight text-[var(--mm-navy)]"
       >
         星级与改造
       </h2>

@@ -5,8 +5,13 @@ import type { GameVersionSlug } from '@/config/game-versions'
 
 const sourceSchema = z.object({
   number: z.number().int().positive(),
+  chunkId: z.string().min(1),
   title: z.string(),
-  href: z.string().regex(/^\/v\/[a-z0-9-]+\/wiki\/equipment\/[a-z0-9-]+$/),
+  href: z
+    .string()
+    .regex(
+      /^\/v\/[a-z0-9-]+\/(?:wiki\/(?:equipment|wanted-monsters|vehicles|jobs|items|quests)|guides)\/[a-z0-9-]+(?:#[a-z0-9-]+)?$/,
+    ),
   excerpt: z.string(),
   verificationStatus: z.enum(['source_only', 'compatible_candidate']),
 })

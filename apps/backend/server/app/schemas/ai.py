@@ -19,6 +19,7 @@ class AskRequest(CamelModel):
 
 class AnswerSource(CamelModel):
     number: int
+    chunk_id: str
     title: str
     href: str
     excerpt: str
