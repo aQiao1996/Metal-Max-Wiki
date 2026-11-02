@@ -1,0 +1,1439 @@
+{
+  "schema_version": 1,
+  "scope": "equipment_identity_only",
+  "rom_sha256": "sha256:189754a134b0919a0a837f5a5453f217a5f2b5a897c3d8232422a5ab81228f1c",
+  "records": [
+    {
+      "id": "c-unit-43907c5b72",
+      "item_id": 975,
+      "value": "主炮核心",
+      "matched_alias": "炮击盒",
+      "reference_attributes": {
+        "accuracy_raw": "5",
+        "evasion_raw": "0",
+        "defense_raw": "50",
+        "weight_raw": "6.00",
+        "trait_raw": "キャノンラッシュ",
+        "price_raw": "5500",
+        "rarity_raw": "-",
+        "trait_name_raw": "主炮齐射",
+        "trait_activation_raw": "主动指令",
+        "trait_effect_raw": "新增主炮齐射指令，一次发射符合条件的主炮。",
+        "trait_limits_raw": "仅使用能攻击且有弹药的武器；少数其他类别武器也可参与，不能据类别推断全部例外。",
+        "mechanics_note_raw": "命中与回避仅列来源面板数值，不能解释为实际命中率或闪避率。来源的有限样本对比未观察到明显效果，具体计算仍未明确；选装时应结合特性、重量和防御判断，不将面板增加直接换算成伤害提升。",
+        "acquisition_raw": "佛像村东侧、摩洛波克东侧商人营地出售；击破1250个敌人的奖励；MM3通信转送可得0至1星。",
+        "stat_condition_raw": "0 星初始面板值；普通改造上限不含超改造",
+        "obtainable_stars_raw": "0,1",
+        "acquisition_ja_raw": "店铺：ノボトケの村 東の トレーダーキャンプ モロ・ポコ 東の トレーダーキャンプ；其他获取：敵撃破数ボーナス(1250体) タキオンテレポーター(★無し～★1)",
+        "trait_effect_ja_raw": "大砲タイプの武器を一斉に発射",
+        "trait_limits_ja_raw": "コマンド追加 他タイプにも一部対応武器がある"
+      },
+      "reference_source_hashes": [
+        "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "sha256:36b94394ac55bd259304f12b649d7de66cdd34181a6e1e9cf2478d46fd003f9b",
+        "sha256:87e3edf58e890f66d37fb7cc6e6ca7a0318be19df472d2274508132d35734c77"
+      ],
+      "parameter_table": "CUNIT.ARR",
+      "parameter_index": 19,
+      "parameter_hex": "90015802324605000a0a0d00",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/19/overview/重量(t)",
+          "raw_value": "6.00"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/19/overview/守備",
+          "raw_value": "50"
+        },
+        {
+          "field": "accuracy_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/19/overview/命中",
+          "raw_value": "5"
+        },
+        {
+          "field": "evasion_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/19/overview/回避",
+          "raw_value": "0"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/19/overview",
+          "value_json": "{\"名称\":\"キャノンボックス\",\"命中\":\"5\",\"回避\":\"0\",\"守備\":\"50\",\"重量(t)\":\"6.00\",\"特性\":\"キャノンラッシュ\",\"価格(G)\":\"5500\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 3908,
+          "hex": "c49e0000",
+          "note_zh": "按物品ID索引独立物品说明。"
+        },
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 40644,
+          "hex": "e5620967004e216bfd80d153045cfa5140620967c58807592d4e84760a002759ae7084769f52fd8084760a0023ffc5886e7f02300000",
+          "note_zh": "物品说明明确主炮齐射、S-E齐射或随机武器连射，用于区分相同基础参数。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 162,
+          "hex": "3b4eae70509f045c0000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 866,
+          "hex": "1862668f2d4ec5880759407784760a003b4eae707b7c8b578476666b6856004e509fdb8f4c88d153045c02300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "使用原始总表的未加星基础值直接核对ROM，并以译名、价格及独立特性说明区分身份；没有反算星级倍率，不提升星级、可获取性或战斗机制状态。"
+    },
+    {
+      "id": "c-unit-6ae934d1a6",
+      "item_id": 977,
+      "value": "Ｓ－Ｅ核心",
+      "matched_alias": "导弹盒",
+      "reference_attributes": {
+        "accuracy_raw": "5",
+        "evasion_raw": "0",
+        "defense_raw": "50",
+        "weight_raw": "6.00",
+        "trait_raw": "S-Eラッシュ",
+        "price_raw": "5500",
+        "rarity_raw": "-",
+        "trait_name_raw": "S-E齐射",
+        "trait_activation_raw": "主动指令",
+        "trait_effect_raw": "新增S-E齐射指令，一次发射符合条件的S-E。",
+        "trait_limits_raw": "弹药耗尽、损坏或迎击专用装备不能作为普通攻击使用；存在少数跨类别例外。",
+        "mechanics_note_raw": "命中与回避仅列来源面板数值，不能解释为实际命中率或闪避率。来源的有限样本对比未观察到明显效果，具体计算仍未明确；选装时应结合特性、重量和防御判断，不将面板增加直接换算成伤害提升。",
+        "acquisition_raw": "以斯拉港西侧、摩洛波克东侧商人营地出售；击破2500个敌人的奖励；MM3通信转送可得0至1星。",
+        "stat_condition_raw": "0 星初始面板值；普通改造上限不含超改造",
+        "obtainable_stars_raw": "0,1",
+        "acquisition_ja_raw": "店铺：イスラポルト 西の トレーダーキャンプ モロ・ポコ 東の トレーダーキャンプ；其他获取：敵撃破数ボーナス(2500体) タキオンテレポーター(★無し～★1)",
+        "trait_effect_ja_raw": "S-Eタイプの武器を一斉に発射",
+        "trait_limits_ja_raw": "コマンド追加 他タイプにも一部対応武器がある"
+      },
+      "reference_source_hashes": [
+        "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "sha256:36b94394ac55bd259304f12b649d7de66cdd34181a6e1e9cf2478d46fd003f9b",
+        "sha256:79712bec3691baff0d88b7dc1ab62a2dd39366dc5ed59c3ba5a64728903c6a78"
+      ],
+      "parameter_table": "CUNIT.ARR",
+      "parameter_index": 21,
+      "parameter_hex": "90015802324605000a0a0f00",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/21/overview/重量(t)",
+          "raw_value": "6.00"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/21/overview/守備",
+          "raw_value": "50"
+        },
+        {
+          "field": "accuracy_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/21/overview/命中",
+          "raw_value": "5"
+        },
+        {
+          "field": "evasion_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/21/overview/回避",
+          "raw_value": "0"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/21/overview",
+          "value_json": "{\"名称\":\"ミサイルボックス\",\"命中\":\"5\",\"回避\":\"0\",\"守備\":\"50\",\"重量(t)\":\"6.00\",\"特性\":\"S-Eラッシュ\",\"価格(G)\":\"5500\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 3916,
+          "hex": "4c9f0000",
+          "note_zh": "按物品ID索引独立物品说明。"
+        },
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 40780,
+          "hex": "e5620967004e216bfd80d153045cfa5140620967c58807592d4e84760a0033ff0dff25ff84769f52fd8084760a0023ffc5886e7f02300000",
+          "note_zh": "物品说明明确主炮齐射、S-E齐射或随机武器连射，用于区分相同基础参数。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 198,
+          "hex": "33ff0dff25ff1b733b650000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 982,
+          "hex": "1862668f2d4ec5880759407784760a0033ff0dff25ff7b7c8b578476666b6856004e509fdb8f4c88d153045c02300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "使用原始总表的未加星基础值直接核对ROM，并以译名、价格及独立特性说明区分身份；没有反算星级倍率，不提升星级、可获取性或战斗机制状态。"
+    },
+    {
+      "id": "c-unit-eb6b662c7c",
+      "item_id": 987,
+      "value": "积极射击",
+      "matched_alias": "活力哈利",
+      "reference_attributes": {
+        "accuracy_raw": "5",
+        "evasion_raw": "0",
+        "defense_raw": "73",
+        "weight_raw": "2.62",
+        "trait_raw": "ダーティラッシュ",
+        "price_raw": "*6000",
+        "rarity_raw": "★",
+        "trait_name_raw": "辣手连射",
+        "trait_activation_raw": "主动指令",
+        "trait_effect_raw": "每次随机选择可攻击武器并发射，重复2至4次。",
+        "trait_limits_raw": "耗尽弹药、严重损坏、迎击专用或不能攻击的装备不参与选择；不是所有武器固定发射四次。",
+        "mechanics_note_raw": "命中与回避仅列来源面板数值，不能解释为实际命中率或闪避率。来源的有限样本对比未观察到明显效果，具体计算仍未明确；选装时应结合特性、重量和防御判断，不将面板增加直接换算成伤害提升。",
+        "acquisition_raw": "印章店4000点奖励，固定一星。",
+        "stat_condition_raw": "1 星初始面板值；普通改造上限不含超改造",
+        "obtainable_stars_raw": "1",
+        "acquisition_ja_raw": "其他获取：スタンプ屋4000ポイント景品(★1)",
+        "notes_raw": "只装一件可攻击武器时，随机选择的攻击会集中到该武器；迎击专用与不能攻击的装备不参与抽取。",
+        "trait_effect_ja_raw": "ランダムで武器を2～4連射する",
+        "trait_limits_ja_raw": "コマンド追加 攻撃に使える状態の武器のみを使用"
+      },
+      "reference_source_hashes": [
+        "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
+        "sha256:36b94394ac55bd259304f12b649d7de66cdd34181a6e1e9cf2478d46fd003f9b",
+        "sha256:a32d31d7c45b66a26e88d68f46aabfdf52c84c4d618c1fff7145c7532d49bc0e"
+      ],
+      "parameter_table": "CUNIT.ARR",
+      "parameter_index": 31,
+      "parameter_hex": "f401fa00465f050019001000",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/31/overview/重量(t)",
+          "raw_value": "2.50"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/31/overview/守備",
+          "raw_value": "70"
+        },
+        {
+          "field": "accuracy_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/31/overview/命中",
+          "raw_value": "5"
+        },
+        {
+          "field": "evasion_raw",
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/31/overview/回避",
+          "raw_value": "0"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/c-units/facts.json",
+          "source_sha256": "sha256:e82adaf18c56c93eadcac747a13a414d31b9d635ad2ec8dc286cb562afc39881",
+          "json_pointer": "#/records/31/overview",
+          "value_json": "{\"名称\":\"アクティブハリー\",\"命中\":\"5\",\"回避\":\"0\",\"守備\":\"70\",\"重量(t)\":\"2.50\",\"特性\":\"ダーティラッシュ\",\"価格(G)\":\"*6000\",\"レア\":\"★\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 3956,
+          "hex": "30a20000",
+          "note_zh": "按物品ID索引独立物品说明。"
+        },
+        {
+          "archive": "xls/pack_data.pak",
+          "file": "SETUMEI_ITEM.SET",
+          "offset": 41520,
+          "hex": "e5620967e180714ed153045c666b68560a0084769f52fd8084760a000967b97071536996847623ffc5886e7f02300000",
+          "note_zh": "物品说明明确主炮齐射、S-E齐射或随机武器连射，用于区分相同基础参数。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 214,
+          "hex": "a38f4b62de8f045c0000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 1042,
+          "hex": "1862668f2d4ec5880759407784760a0040620967666b68562d4e8f963a670990e962004ee8900652004ede5608540a00d153045c12ff5eff14ff216b02300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "使用原始总表的未加星基础值直接核对ROM，并以译名、价格及独立特性说明区分身份；没有反算星级倍率，不提升星级、可获取性或战斗机制状态。"
+    },
+    {
+      "id": "engine-0e04ff1fed",
+      "item_id": 893,
+      "value": "旋风引擎",
+      "matched_alias": "旋风",
+      "reference_attributes": {
+        "capacity_raw": "45.00",
+        "defense_raw": "100",
+        "weight_raw": "3.00",
+        "trait_raw": "カーボーナス",
+        "price_raw": "50000",
+        "rarity_raw": "-",
+        "trait_name_raw": "汽车加成",
+        "trait_activation_raw": "被动生效",
+        "trait_effect_raw": "在符合条件的轮式车辆上，来源记录载重增加80%。",
+        "trait_limits_raw": "摩托车不适用；不要与覆盖范围更大的轮胎加成混淆。",
+        "trait_effect_ja_raw": "車輪タイプの車両（バイク不可）に積むとボーナス発生",
+        "trait_limits_ja_raw": "積載量ボーナス+80％",
+        "capacity_note_raw": "载重为当前型号、当前星级的单台基础值，不含特性加成，未扣除引擎和其他装备重量。防御与重量改造不代表马力强化；马力强化会变为下一级型号，请沿强化路径比较。",
+        "stat_condition_raw": "0 星、当前型号的初始值；未计特性加成",
+        "obtainable_stars_raw": "0",
+        "acquisition_raw": "解放后的死亡十字出售，限货物模式A。",
+        "acquisition_ja_raw": "店铺：デスクルス (開放後)(販売パターンA)",
+        "upgrade_note_raw": "来源记录此型号不能继续马力强化"
+      },
+      "reference_source_hashes": [
+        "sha256:212d412016e1302acd5b2e1bfeeef56f600e2c3e38bd3a8106180a799e6cc0fc",
+        "sha256:fe05950cc0756161c5e5885bf726b8ba8ef794cd2d13a3cfc273e0b2b7548048"
+      ],
+      "parameter_table": "ENGINE.ARR",
+      "parameter_index": 60,
+      "parameter_hex": "96002c016496941100000100",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/60/overview/重量(t)",
+          "raw_value": "3.00"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/60/overview/守備",
+          "raw_value": "100"
+        },
+        {
+          "field": "capacity_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/60/overview/積載量",
+          "raw_value": "45.00"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/60/overview",
+          "value_json": "{\"名称\":\"サイクロン\",\"積載量\":\"45.00\",\"守備\":\"100\",\"重量(t)\":\"3.00\",\"特性\":\"カーボーナス\",\"価格(G)\":\"50000\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 376,
+          "hex": "668f868f7b7c5659b1520000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 1684,
+          "hex": "02900854668f6e8f7b7c668f868f8476155fce6402300a00c5883052668f6e8f7b7c668f868f0a4e8476dd8b0cff0a00fd801f599d981659975f30527d8fcd91cf915659b15202300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "三个引擎的基础参数及价格相同，按参数记录+10的特性编码分别为车辆类奖励、摩托类奖励、单引擎奖励区分，且与原日文特性对应。特性字典定位经过已确认116个引擎逐项交叉检查；仅确认名称身份。"
+    },
+    {
+      "id": "engine-3815696d52",
+      "item_id": 950,
+      "value": "光子力喷气引擎",
+      "matched_alias": "光子力喷射",
+      "reference_attributes": {
+        "capacity_raw": "86.40",
+        "defense_raw": "120",
+        "weight_raw": "2.88",
+        "trait_raw": "無双タイプ",
+        "price_raw": "*120000",
+        "rarity_raw": "★★★",
+        "trait_name_raw": "无双型",
+        "trait_activation_raw": "无特性",
+        "trait_effect_raw": "只能装备在引擎一号槽，不额外增加载重。",
+        "trait_limits_raw": "不能装备在二号槽，可作为一号引擎与辅助涡轮搭配。",
+        "trait_effect_ja_raw": "エンジン1にのみ装備可能",
+        "trait_limits_ja_raw": "",
+        "capacity_note_raw": "载重为当前型号、当前星级的单台基础值，不含特性加成，未扣除引擎和其他装备重量。防御与重量改造不代表马力强化；马力强化会变为下一级型号，请沿强化路径比较。",
+        "stat_condition_raw": "3 星、当前型号的初始值；未计特性加成",
+        "obtainable_stars_raw": "3",
+        "acquisition_raw": "击破15000个以上敌人的奖励，固定三星。",
+        "acquisition_ja_raw": "其他获取：撃破数ボーナス (15000以上、★3固定)",
+        "upgrade_note_raw": "来源记录此型号不能继续马力强化",
+        "notes_raw": "固定三星，只能装在引擎一号槽；击破数奖励通常仅提供一个，交易通信另计。"
+      },
+      "reference_source_hashes": [
+        "sha256:212d412016e1302acd5b2e1bfeeef56f600e2c3e38bd3a8106180a799e6cc0fc",
+        "sha256:bef44fca00f7a5630231dbc389e1c7a75ff8ad38f3abe77fc8f43c7c565b123a"
+      ],
+      "parameter_table": "ENGINE.ARR",
+      "parameter_index": 117,
+      "parameter_hex": "2003f0006482201c00000600",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/117/overview/重量(t)",
+          "raw_value": "2.40"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/117/overview/守備",
+          "raw_value": "100"
+        },
+        {
+          "field": "capacity_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/117/overview/積載量",
+          "raw_value": "72.00"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/117/overview",
+          "value_json": "{\"名称\":\"光子力ジェット\",\"積載量\":\"72.00\",\"守備\":\"100\",\"重量(t)\":\"2.40\",\"特性\":\"無双タイプ\",\"価格(G)\":\"*120000\",\"レア\":\"★★★\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 454,
+          "hex": "e065cc538b570000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 2148,
+          "hex": "ea53fd805c4f3a4e3b4e155fce640a00db8f4c88c58807598476155fce6402300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "使用原始总表的未加星基础值直接核对ROM，并以译名、价格及独立特性说明区分身份；没有反算星级倍率，不提升星级、可获取性或战斗机制状态。"
+    },
+    {
+      "id": "engine-6c80927d71",
+      "item_id": 895,
+      "value": "螺旋引擎",
+      "matched_alias": "螺旋",
+      "reference_attributes": {
+        "capacity_raw": "45.00",
+        "defense_raw": "100",
+        "weight_raw": "3.00",
+        "trait_raw": "シングルボーナス",
+        "price_raw": "50000",
+        "rarity_raw": "-",
+        "trait_name_raw": "单引擎加成",
+        "trait_activation_raw": "被动生效",
+        "trait_effect_raw": "装在单引擎车辆上时，来源记录载重增加80%。",
+        "trait_limits_raw": "需要车辆为单引擎配置，不是双引擎车辆只装一台即可获得加成。",
+        "trait_effect_ja_raw": "シングルエンジンの車両に積むとボーナス発生",
+        "trait_limits_ja_raw": "積載量ボーナス+80％",
+        "capacity_note_raw": "载重为当前型号、当前星级的单台基础值，不含特性加成，未扣除引擎和其他装备重量。防御与重量改造不代表马力强化；马力强化会变为下一级型号，请沿强化路径比较。",
+        "stat_condition_raw": "0 星、当前型号的初始值；未计特性加成",
+        "obtainable_stars_raw": "0",
+        "acquisition_raw": "解放后的死亡十字出售，限货物模式C。",
+        "acquisition_ja_raw": "店铺：デスクルス (開放後)(販売パターンC)",
+        "upgrade_note_raw": "来源记录此型号不能继续马力强化"
+      },
+      "reference_source_hashes": [
+        "sha256:0aa65cc091217400e4756fb616efe1dbf3bea18a5d48de96a654f29769058070",
+        "sha256:212d412016e1302acd5b2e1bfeeef56f600e2c3e38bd3a8106180a799e6cc0fc"
+      ],
+      "parameter_table": "ENGINE.ARR",
+      "parameter_index": 62,
+      "parameter_hex": "96002c016496941100000500",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/62/overview/重量(t)",
+          "raw_value": "3.00"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/62/overview/守備",
+          "raw_value": "100"
+        },
+        {
+          "field": "capacity_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/62/overview/積載量",
+          "raw_value": "45.00"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/62/overview",
+          "value_json": "{\"名称\":\"スパイラル\",\"積載量\":\"45.00\",\"守備\":\"100\",\"重量(t)\":\"3.00\",\"特性\":\"シングルボーナス\",\"価格(G)\":\"50000\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 436,
+          "hex": "5553155fce645659b1520000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 2052,
+          "hex": "029008545553155fce64668f868f8476155fce6402300a00c58830520854029084761862668f0a4e8476dd8b0cff0a00fd801f599d981659975f30527d8fcd91cf915659b15202300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "三个引擎的基础参数及价格相同，按参数记录+10的特性编码分别为车辆类奖励、摩托类奖励、单引擎奖励区分，且与原日文特性对应。特性字典定位经过已确认116个引擎逐项交叉检查；仅确认名称身份。"
+    },
+    {
+      "id": "engine-d071be2565",
+      "item_id": 894,
+      "value": "试作引擎",
+      "matched_alias": "越野竞技",
+      "reference_attributes": {
+        "capacity_raw": "45.00",
+        "defense_raw": "100",
+        "weight_raw": "3.00",
+        "trait_raw": "バイクボーナス",
+        "price_raw": "50000",
+        "rarity_raw": "-",
+        "trait_name_raw": "摩托加成",
+        "trait_activation_raw": "被动生效",
+        "trait_effect_raw": "装在摩托车上时，来源记录载重增加80%。",
+        "trait_limits_raw": "依赖摩托车型，普通轮式车和履带战车不适用。",
+        "trait_effect_ja_raw": "バイクに積むとボーナス発生",
+        "trait_limits_ja_raw": "積載量ボーナス+80％",
+        "capacity_note_raw": "载重为当前型号、当前星级的单台基础值，不含特性加成，未扣除引擎和其他装备重量。防御与重量改造不代表马力强化；马力强化会变为下一级型号，请沿强化路径比较。",
+        "stat_condition_raw": "0 星、当前型号的初始值；未计特性加成",
+        "obtainable_stars_raw": "0",
+        "acquisition_raw": "解放后的死亡十字出售，限货物模式B。",
+        "acquisition_ja_raw": "店铺：デスクルス (開放後)(販売パターンB)",
+        "upgrade_note_raw": "来源记录此型号不能继续马力强化"
+      },
+      "reference_source_hashes": [
+        "sha256:0735575ede93a3c2b1ff6574230e5dabcc980730c4701436eea04e4960eb70f5",
+        "sha256:212d412016e1302acd5b2e1bfeeef56f600e2c3e38bd3a8106180a799e6cc0fc"
+      ],
+      "parameter_table": "ENGINE.ARR",
+      "parameter_index": 61,
+      "parameter_hex": "96002c016496941100000400",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/61/overview/重量(t)",
+          "raw_value": "3.00"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/61/overview/守備",
+          "raw_value": "100"
+        },
+        {
+          "field": "capacity_raw",
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/61/overview/積載量",
+          "raw_value": "45.00"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/engines/facts.json",
+          "source_sha256": "sha256:98156c2cac1fa3522c3c0cdc0b07b82075be0816c1f51110d69aa487a63ac0b4",
+          "json_pointer": "#/records/61/overview",
+          "value_json": "{\"名称\":\"トライアル\",\"積載量\":\"45.00\",\"守備\":\"100\",\"重量(t)\":\"3.00\",\"特性\":\"バイクボーナス\",\"価格(G)\":\"50000\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SYSWORD_TOKUSEI.NAM",
+          "offset": 420,
+          "hex": "696458627b7c5659b1520000",
+          "note_zh": "特性名称；索引来自ARM9解压后0xfb370的u16名称偏移表，C编码直接索引，引擎编码加26。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "SETUMEI_TOKUSEI.NAM",
+          "offset": 1974,
+          "hex": "0290085469645862668f8476155fce6402300a00c588305269645862668f0a4e8476dd8b0cff0a00fd801f599d981659975f30527d8fcd91cf915659b15202300000",
+          "note_zh": "特性说明；索引来自ARM9解压后0xfb3b8的u16说明偏移表；不据文本推测战斗计算公式。"
+        }
+      ],
+      "note_zh": "三个引擎的基础参数及价格相同，按参数记录+10的特性编码分别为车辆类奖励、摩托类奖励、单引擎奖励区分，且与原日文特性对应。特性字典定位经过已确认116个引擎逐项交叉检查；仅确认名称身份。"
+    },
+    {
+      "id": "human-weapon-0966c42ea3",
+      "item_id": 650,
+      "value": "４４马格南枪",
+      "matched_alias": "44玛格南枪",
+      "reference_attributes": {
+        "acquisition_raw": "霍克交易所、德尔塔利奥 掘出物",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "88",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "nurse_raw": "○",
+        "price_raw": "1000",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 42,
+      "parameter_hex": "5b5a58001501a20d",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-0d25014192",
+      "item_id": 733,
+      "value": "单手持突击步枪",
+      "matched_alias": "单手突击步枪",
+      "reference_attributes": {
+        "acquisition_raw": "核熔镇（2周目以后）",
+        "additional_raw": "-",
+        "artist_raw": "-",
+        "attack_raw": "255",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "11100",
+        "range_raw": "1体",
+        "soldier_raw": "-",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 125,
+      "parameter_hex": "0302ff001601a40d",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-0fa964e05b",
+      "item_id": 652,
+      "value": "巨鲨弯刀",
+      "matched_alias": "砂鲛弯刀",
+      "reference_attributes": {
+        "acquisition_raw": "掉落：沙鲛",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "90",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "nurse_raw": "○",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆1",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 44,
+      "parameter_hex": "5e5e5a000101742e",
+      "base_parameters": [],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/wanted-drop-items/facts.json",
+          "source_sha256": "sha256:2fa275201c9577b392dffcb6e329f098dd061584808c0c441dbb7f9981af1d90",
+          "json_pointer": "#/records/35",
+          "value_json": "{\"canonical_item_ja\":\"ザメカトラス\",\"raw_names_ja\":[\"ザメカトラス\"],\"detail_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"detail_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":0},\"discovery_refs\":[{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96\",\"retrieved_at\":\"2026-11-02T14:02:29.552818+08:00\",\"content_hash\":\"sha256:bde333adebc04655bb53e85807b972c03f38c5f1b56bc453b767fecdbf55f3ce\",\"table_index\":0,\"row_index\":1},{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}],\"drop_uses\":[{\"wanted_name_ja\":\"スナザメ\",\"enemy_name_ja\":\"スナザメ\",\"slot\":3,\"item_ja\":\"ザメカトラス\",\"rate_raw\":\"30%\",\"source_ref\":{\"source_id\":\"kaerulabo-mm2r\",\"target_id\":\"kaerulabo-wanted-monster-drops\",\"source_url\":\"http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html\",\"retrieved_at\":\"2026-11-02T13:48:53.033819+08:00\",\"content_hash\":\"sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8\",\"table_index\":1,\"row_index\":13}}],\"tables\":[{\"caption_ja\":\"基本情報\",\"headers\":[\"列1\",\"列2\",\"列3\",\"列4\"],\"header_rows\":[],\"rows\":[{\"values\":[\"名称\",\"ザメカトラス\",\"ハンター\",\"○\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":0},\"cells\":[{\"text\":\"名称\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"ザメカトラス\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ハンター\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"レア度\",\"-\",\"メカニック\",\"○\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":1},\"cells\":[{\"text\":\"レア度\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"メカニック\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"タイプ\",\"武器\",\"ソルジャー\",\"○\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":2},\"cells\":[{\"text\":\"タイプ\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"武器\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ソルジャー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"攻撃力\",\"90\",\"ナース\",\"○\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":3},\"cells\":[{\"text\":\"攻撃力\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"90\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ナース\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"範囲\",\"一体\",\"レスラー\",\"-\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":4},\"cells\":[{\"text\":\"範囲\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"一体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"レスラー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"属性\",\"通常\",\"アーチスト\",\"○\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":5},\"cells\":[{\"text\":\"属性\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"アーチスト\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"価格\",\"*1000G\",\"犬\",\"-\"],\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":6},\"cells\":[{\"text\":\"価格\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"*1000G\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"犬\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"overview_tables\":[{\"caption_ja\":\"武器一覧\",\"headers\":[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者/ハ\",\"装備可能者/メ\",\"装備可能者/ソ\",\"装備可能者/ナ\",\"装備可能者/レ\",\"装備可能者/ア\",\"装備可能者/犬\",\"追加効果\",\"価格(G)\"],\"header_rows\":[[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"追加効果\",\"価格(G)\"],[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"ハ\",\"メ\",\"ソ\",\"ナ\",\"レ\",\"ア\",\"犬\",\"追加効果\",\"価格(G)\"]],\"rows\":[{\"values\":[\"ザメカトラス\",\"90\",\"1体\",\"通常\",\"1\",\"◯\",\"◯\",\"◯\",\"◯\",\"-\",\"◯\",\"-\",\"\",\"*1000\"],\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49},\"cells\":[{\"text\":\"ザメカトラス\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"90\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"1体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"1\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"*1000\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"properties\":[{\"label_ja\":\"名称\",\"value_raw\":\"ザメカトラス\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"ハンター\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"レア度\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"メカニック\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"タイプ\",\"value_raw\":\"武器\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"ソルジャー\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"90\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"ナース\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"範囲\",\"value_raw\":\"一体\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"レスラー\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"アーチスト\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"価格\",\"value_raw\":\"*1000G\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"犬\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：-\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%B6%E3%83%A1%E3%82%AB%E3%83%88%E3%83%A9%E3%82%B9\",\"retrieved_at\":\"2026-11-02T14:03:20.555676+08:00\",\"content_hash\":\"sha256:3b1122524fb9e7c078350541a683cc3e5cd75b6571f62b708429059f98d31d92\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"名称\",\"value_raw\":\"ザメカトラス\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"90\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"範囲\",\"value_raw\":\"1体\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"★\",\"value_raw\":\"1\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/ハ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/メ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/ソ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/ナ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/レ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/ア\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"装備可能者/犬\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"追加効果\",\"value_raw\":\"\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}},{\"label_ja\":\"価格(G)\",\"value_raw\":\"*1000\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":49}}],\"inherited_facts\":[],\"existing_record_ids\":[],\"issues\":[]}",
+          "note_zh": "独立掉落与装备详情辅助对应；保留原始日文名、来源及装备条件。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 1296,
+          "hex": "b000",
+          "note_zh": "对应怪物名称指针。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.NAM",
+          "offset": 176,
+          "hex": "996c9b9c0000",
+          "note_zh": "读取该怪物名称，防止只凭攻击力关联。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 1400,
+          "hex": "8c021e00",
+          "note_zh": "对应怪物掉落槽中的物品ID，用于身份桥接，不将槽值解释为已核实掉率。"
+        }
+      ],
+      "note_zh": "攻击、六职业投影与原候选一致，并用对应赏金首的ROM掉落物品ID及独立原始掉落资料交叉桥接名称；仅核对身份，不提升掉率或战斗机制状态。"
+    },
+    {
+      "id": "human-weapon-20229f039c",
+      "item_id": 655,
+      "value": "刺战锤",
+      "matched_alias": "刺锤",
+      "reference_attributes": {
+        "acquisition_raw": "宝：德尔塔利奥公寓",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "100",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "notes_raw": "一周目1个限定",
+        "nurse_raw": "-",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 47,
+      "parameter_hex": "4b4a640002010510",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-22916b28aa",
+      "item_id": 619,
+      "value": "亚当的前足",
+      "matched_alias": "亚当蚁的前脚",
+      "reference_attributes": {
+        "acquisition_raw": "赏金首：亚当蚁",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "28",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆1",
+        "wrestler_raw": "○"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 11,
+      "parameter_hex": "6b6a1c000301f931",
+      "base_parameters": [],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/wanted-drop-items/facts.json",
+          "source_sha256": "sha256:2fa275201c9577b392dffcb6e329f098dd061584808c0c441dbb7f9981af1d90",
+          "json_pointer": "#/records/11",
+          "value_json": "{\"canonical_item_ja\":\"アダムの前足\",\"raw_names_ja\":[\"アダムの前足\"],\"detail_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"detail_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":0},\"discovery_refs\":[{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96\",\"retrieved_at\":\"2026-11-02T14:02:29.552818+08:00\",\"content_hash\":\"sha256:bde333adebc04655bb53e85807b972c03f38c5f1b56bc453b767fecdbf55f3ce\",\"table_index\":0,\"row_index\":3},{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}],\"drop_uses\":[{\"wanted_name_ja\":\"アダムアント\",\"enemy_name_ja\":\"アダムアント\",\"slot\":2,\"item_ja\":\"アダムの前足\",\"rate_raw\":\"30%\",\"source_ref\":{\"source_id\":\"kaerulabo-mm2r\",\"target_id\":\"kaerulabo-wanted-monster-drops\",\"source_url\":\"http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html\",\"retrieved_at\":\"2026-11-02T13:48:53.034198+08:00\",\"content_hash\":\"sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8\",\"table_index\":1,\"row_index\":52}}],\"tables\":[{\"caption_ja\":\"基本情報\",\"headers\":[\"列1\",\"列2\",\"列3\",\"列4\"],\"header_rows\":[],\"rows\":[{\"values\":[\"名称\",\"アダムの前足\",\"ハンター\",\"○\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":0},\"cells\":[{\"text\":\"名称\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"アダムの前足\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ハンター\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"レア度\",\"★\",\"メカニック\",\"-\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":1},\"cells\":[{\"text\":\"レア度\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"★\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"メカニック\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"タイプ\",\"武器\",\"ソルジャー\",\"○\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":2},\"cells\":[{\"text\":\"タイプ\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"武器\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ソルジャー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"攻撃力\",\"28\",\"ナース\",\"-\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":3},\"cells\":[{\"text\":\"攻撃力\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"28\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ナース\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"範囲\",\"一体\",\"レスラー\",\"○\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":4},\"cells\":[{\"text\":\"範囲\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"一体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"レスラー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"属性\",\"通常\",\"アーチスト\",\"○\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":5},\"cells\":[{\"text\":\"属性\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"アーチスト\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"価格\",\"*1000G\",\"犬\",\"-\"],\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":6},\"cells\":[{\"text\":\"価格\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"*1000G\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"犬\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"overview_tables\":[{\"caption_ja\":\"武器一覧\",\"headers\":[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者/ハ\",\"装備可能者/メ\",\"装備可能者/ソ\",\"装備可能者/ナ\",\"装備可能者/レ\",\"装備可能者/ア\",\"装備可能者/犬\",\"追加効果\",\"価格(G)\"],\"header_rows\":[[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"追加効果\",\"価格(G)\"],[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"ハ\",\"メ\",\"ソ\",\"ナ\",\"レ\",\"ア\",\"犬\",\"追加効果\",\"価格(G)\"]],\"rows\":[{\"values\":[\"アダムの前足\",\"28\",\"1体\",\"通常\",\"1\",\"◯\",\"-\",\"◯\",\"-\",\"◯\",\"◯\",\"-\",\"\",\"*1000\"],\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14},\"cells\":[{\"text\":\"アダムの前足\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"28\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"1体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"1\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"*1000\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"properties\":[{\"label_ja\":\"名称\",\"value_raw\":\"アダムの前足\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"ハンター\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"レア度\",\"value_raw\":\"★\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"メカニック\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"タイプ\",\"value_raw\":\"武器\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"ソルジャー\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"28\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"ナース\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"範囲\",\"value_raw\":\"一体\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"レスラー\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"アーチスト\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"価格\",\"value_raw\":\"*1000G\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"犬\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%8D%E8%B6%B3\",\"retrieved_at\":\"2026-11-02T14:02:52.258971+08:00\",\"content_hash\":\"sha256:1d4dd87133c4b15bb047baa5ceeff8145e78dc15d132b480dbd30911e17d9a02\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"名称\",\"value_raw\":\"アダムの前足\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"28\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"範囲\",\"value_raw\":\"1体\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"★\",\"value_raw\":\"1\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/ハ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/メ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/ソ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/ナ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/レ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/ア\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"装備可能者/犬\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"追加効果\",\"value_raw\":\"\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}},{\"label_ja\":\"価格(G)\",\"value_raw\":\"*1000\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":14}}],\"inherited_facts\":[],\"existing_record_ids\":[],\"issues\":[]}",
+          "note_zh": "独立掉落与装备详情辅助对应；保留原始日文名、来源及装备条件。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 5508,
+          "hex": "ba02",
+          "note_zh": "对应怪物名称指针。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.NAM",
+          "offset": 698,
+          "hex": "9a4e535f81860000",
+          "note_zh": "读取该怪物名称，防止只凭攻击力关联。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 5608,
+          "hex": "6b021e00",
+          "note_zh": "对应怪物掉落槽中的物品ID，用于身份桥接，不将槽值解释为已核实掉率。"
+        }
+      ],
+      "note_zh": "攻击、六职业投影与原候选一致，并用对应赏金首的ROM掉落物品ID及独立原始掉落资料交叉桥接名称；仅核对身份，不提升掉率或战斗机制状态。"
+    },
+    {
+      "id": "human-weapon-2dbfcb2caf",
+      "item_id": 707,
+      "value": "汉字马格南",
+      "matched_alias": "汉子玛格南",
+      "reference_attributes": {
+        "acquisition_raw": "人类村（任务「世界の果てへ」完成后） 掘出物",
+        "additional_raw": "-",
+        "artist_raw": "-",
+        "attack_raw": "215",
+        "element_raw": "通常",
+        "hunter_raw": "-",
+        "mechanic_raw": "-",
+        "notes_raw": "男士兵专用/玛多酒吧建设",
+        "nurse_raw": "-",
+        "price_raw": "6500",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 99,
+      "parameter_hex": "0800d7001501a30d",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-630d04959a",
+      "item_id": 744,
+      "value": "ＬＯＶＥ机器",
+      "matched_alias": "LOVE机器",
+      "reference_attributes": {
+        "acquisition_raw": "LOVE组合1223",
+        "additional_raw": "水泥弹",
+        "artist_raw": "○",
+        "attack_raw": "200",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "notes_raw": "水泥弹，可被迎击",
+        "nurse_raw": "○",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆2",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 136,
+      "parameter_hex": "5f5ec8004c016a2f",
+      "base_parameters": [],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/candidates/human-items.json",
+          "source_sha256": "sha256:a21c48454946c6b1accf42e6a87b3bbe849a3ad76d69f948157bfd93b3fcbc59",
+          "json_pointer": "#/tables/1/rows/14",
+          "value_json": "{\"L\":\"1\",\"O\":\"2\",\"V\":\"2\",\"E\":\"3\",\"地图上使用效果\":\"セメント弾発射の人間武器\",\"战斗中使用效果\":\"\"}",
+          "note_zh": "来源组合表1223，配方顺序与ROM组合表及原装备的获取字段一致。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "LOVE_KUMIAWASE.ARR",
+          "offset": 56,
+          "hex": "e8024801",
+          "note_zh": "按1111至3333的81行组合索引，读取配方1223的结果物品ID与说明指针。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "LOVE_KUMIAWASE.NAM",
+          "offset": 328,
+          "hex": "d153045c346ce56c395f8476ba4e7b7c666b68560000",
+          "note_zh": "该配方的人类武器用途说明，与来源的水泥弹或钻头弹配置对应。"
+        }
+      ],
+      "note_zh": "两条同名LOVE机器对应不同配方和不同物品ID。依据配方1223直接定位ROM组合表，再核对说明、攻击与六职业投影；保留两条来源记录，不合并，不把其他配方效果套用到该配置。"
+    },
+    {
+      "id": "human-weapon-90d6c791a8",
+      "item_id": 702,
+      "value": "臂枪",
+      "matched_alias": "片腕火炮",
+      "reference_attributes": {
+        "acquisition_raw": "任务「湖底の片腕」报酬",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "205",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "notes_raw": "人间爱国者成为可能，但因动作慢而没什么意义",
+        "nurse_raw": "-",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆1",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 94,
+      "parameter_hex": "4b4acd0018016b32",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-99e5267a4d",
+      "item_id": 636,
+      "value": "Ｗ电锯",
+      "matched_alias": "W链锯",
+      "reference_attributes": {
+        "acquisition_raw": "厄尔尼诺（周目模式C） 掉落：老鼠",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "55",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 28,
+      "parameter_hex": "4b4a37003a017207",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-9f9e630a83",
+      "item_id": 716,
+      "value": "光束剑",
+      "matched_alias": "光束刀",
+      "reference_attributes": {
+        "acquisition_raw": "死亡十字",
+        "additional_raw": "-",
+        "artist_raw": "-",
+        "attack_raw": "230",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "20000",
+        "range_raw": "1体",
+        "soldier_raw": "-",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 108,
+      "parameter_hex": "0302e60002017313",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-bcee470d71",
+      "item_id": 688,
+      "value": "象牙装饰的手枪",
+      "matched_alias": "象牙装饰手枪",
+      "reference_attributes": {
+        "acquisition_raw": "掘出物",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "180",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "nurse_raw": "○",
+        "price_raw": "8200",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 80,
+      "parameter_hex": "5f5eb4001201a30d",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-bef59c4019",
+      "item_id": 711,
+      "value": "鬼菜刀",
+      "matched_alias": "鬼厨刀",
+      "reference_attributes": {
+        "acquisition_raw": "人类村（周目模式C）",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "223",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "-",
+        "notes_raw": "酒场6240G畅销",
+        "nurse_raw": "○",
+        "price_raw": "7800",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 103,
+      "parameter_hex": "5b5adf000201b10f",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-c29dc1014d",
+      "item_id": 736,
+      "value": "鸡冠割刀",
+      "matched_alias": "吗啡刀",
+      "reference_attributes": {
+        "acquisition_raw": "掉落：泰德布罗拉",
+        "additional_raw": "部件损坏",
+        "artist_raw": "-",
+        "attack_raw": "280",
+        "element_raw": "通常",
+        "hunter_raw": "-",
+        "mechanic_raw": "-",
+        "notes_raw": "零件破坏，不被迎击",
+        "nurse_raw": "○",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆3",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 128,
+      "parameter_hex": "191818013601de37",
+      "base_parameters": [],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/wanted-drop-items/facts.json",
+          "source_sha256": "sha256:2fa275201c9577b392dffcb6e329f098dd061584808c0c441dbb7f9981af1d90",
+          "json_pointer": "#/records/59",
+          "value_json": "{\"canonical_item_ja\":\"モヒカッター\",\"raw_names_ja\":[\"モヒカッター\"],\"detail_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"detail_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":0},\"discovery_refs\":[{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96\",\"retrieved_at\":\"2026-11-02T14:02:29.552818+08:00\",\"content_hash\":\"sha256:bde333adebc04655bb53e85807b972c03f38c5f1b56bc453b767fecdbf55f3ce\",\"table_index\":0,\"row_index\":27},{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}],\"drop_uses\":[{\"wanted_name_ja\":\"テッド・ブロイラー\",\"enemy_name_ja\":\"テッド・ブロイラー\",\"slot\":3,\"item_ja\":\"モヒカッター\",\"rate_raw\":\"10%\",\"source_ref\":{\"source_id\":\"kaerulabo-mm2r\",\"target_id\":\"kaerulabo-wanted-monster-drops\",\"source_url\":\"http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html\",\"retrieved_at\":\"2026-11-02T13:48:53.037147+08:00\",\"content_hash\":\"sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8\",\"table_index\":1,\"row_index\":476}}],\"tables\":[{\"caption_ja\":\"基本情報\",\"headers\":[\"列1\",\"列2\",\"列3\",\"列4\"],\"header_rows\":[],\"rows\":[{\"values\":[\"名称\",\"モヒカッター\",\"ハンター\",\"-\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":0},\"cells\":[{\"text\":\"名称\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"モヒカッター\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ハンター\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"レア度\",\"★★★\",\"メカニック\",\"-\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":1},\"cells\":[{\"text\":\"レア度\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"★★★\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"メカニック\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"タイプ\",\"武器\",\"ソルジャー\",\"○\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":2},\"cells\":[{\"text\":\"タイプ\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"武器\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ソルジャー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"攻撃力\",\"280\",\"ナース\",\"○\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":3},\"cells\":[{\"text\":\"攻撃力\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"280\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"ナース\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"○\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"範囲\",\"1体\",\"レスラー\",\"-\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":4},\"cells\":[{\"text\":\"範囲\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"1体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"レスラー\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"属性\",\"通常\",\"アーチスト\",\"-\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":5},\"cells\":[{\"text\":\"属性\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"アーチスト\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]},{\"values\":[\"価格\",\"*48000G\",\"犬\",\"-\"],\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":6},\"cells\":[{\"text\":\"価格\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"*48000G\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"犬\",\"rowspan\":1,\"colspan\":1,\"is_header\":true},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"overview_tables\":[{\"caption_ja\":\"武器一覧\",\"headers\":[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者/ハ\",\"装備可能者/メ\",\"装備可能者/ソ\",\"装備可能者/ナ\",\"装備可能者/レ\",\"装備可能者/ア\",\"装備可能者/犬\",\"追加効果\",\"価格(G)\"],\"header_rows\":[[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"装備可能者\",\"追加効果\",\"価格(G)\"],[\"名称\",\"攻撃力\",\"範囲\",\"属性\",\"★\",\"ハ\",\"メ\",\"ソ\",\"ナ\",\"レ\",\"ア\",\"犬\",\"追加効果\",\"価格(G)\"]],\"rows\":[{\"values\":[\"モヒカッター\",\"280\",\"1体\",\"通常\",\"3\",\"-\",\"-\",\"◯\",\"◯\",\"-\",\"-\",\"-\",\"パーツ破壊\",\"*48000\"],\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138},\"cells\":[{\"text\":\"モヒカッター\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"280\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"1体\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"通常\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"3\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"◯\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"-\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"パーツ破壊\",\"rowspan\":1,\"colspan\":1,\"is_header\":false},{\"text\":\"*48000\",\"rowspan\":1,\"colspan\":1,\"is_header\":false}]}],\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":0},\"alignment_issues\":[]}],\"properties\":[{\"label_ja\":\"名称\",\"value_raw\":\"モヒカッター\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"ハンター\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":0}},{\"label_ja\":\"レア度\",\"value_raw\":\"★★★\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"メカニック\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":1}},{\"label_ja\":\"タイプ\",\"value_raw\":\"武器\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"ソルジャー\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":2}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"280\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"ナース\",\"value_raw\":\"○\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":3}},{\"label_ja\":\"範囲\",\"value_raw\":\"1体\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"レスラー\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":4}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"アーチスト\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":5}},{\"label_ja\":\"価格\",\"value_raw\":\"*48000G\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"犬\",\"value_raw\":\"-\",\"condition_raw\":\"ページのレア度表記：★★★\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93/%E3%83%A2%E3%83%92%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC\",\"retrieved_at\":\"2026-11-02T14:03:51.583801+08:00\",\"content_hash\":\"sha256:74fdffe256bccc675492828ce0e9323f887b336b9a7ff97015aa7674c0181b9d\",\"table_index\":0,\"row_index\":6}},{\"label_ja\":\"名称\",\"value_raw\":\"モヒカッター\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"攻撃力\",\"value_raw\":\"280\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"範囲\",\"value_raw\":\"1体\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"属性\",\"value_raw\":\"通常\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"★\",\"value_raw\":\"3\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/ハ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/メ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/ソ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/ナ\",\"value_raw\":\"◯\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/レ\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/ア\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"装備可能者/犬\",\"value_raw\":\"-\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"追加効果\",\"value_raw\":\"パーツ破壊\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}},{\"label_ja\":\"価格(G)\",\"value_raw\":\"*48000\",\"condition_raw\":\"総表の掲載値；詳細ページの星別数値とは別条件\",\"source_ref\":{\"source_id\":\"metalmaniax-mm2r\",\"target_id\":\"maniax-wanted-drop-items\",\"source_url\":\"https://metalmaniax.com/index.php?MM2R/DATA/%E4%BA%BA%E9%96%93\",\"retrieved_at\":\"2026-11-02T14:02:33.762982+08:00\",\"content_hash\":\"sha256:a2ccd7213407776150d982e4e1c104b50cb945ee09d0081e053a1b37a12c083b\",\"table_index\":0,\"row_index\":138}}],\"inherited_facts\":[],\"existing_record_ids\":[],\"issues\":[]}",
+          "note_zh": "独立掉落与装备详情辅助对应；保留原始日文名、来源及装备条件。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 51300,
+          "hex": "2017",
+          "note_zh": "对应怪物名称指针。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.NAM",
+          "offset": 5920,
+          "hex": "f06cb75fb700035e577fc9620000",
+          "note_zh": "读取该怪物名称，防止只凭攻击力关联。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "ENE_MONSTER.ARR",
+          "offset": 51404,
+          "hex": "e0020a00",
+          "note_zh": "对应怪物掉落槽中的物品ID，用于身份桥接，不将槽值解释为已核实掉率。"
+        }
+      ],
+      "note_zh": "攻击、六职业投影与原候选一致，并用对应赏金首的ROM掉落物品ID及独立原始掉落资料交叉桥接名称；仅核对身份，不提升掉率或战斗机制状态。"
+    },
+    {
+      "id": "human-weapon-d330a8feab",
+      "item_id": 751,
+      "value": "喷射锯链",
+      "matched_alias": "喷射链锯",
+      "reference_attributes": {
+        "acquisition_raw": "通信",
+        "additional_raw": "-",
+        "artist_raw": "-",
+        "attack_raw": "120",
+        "element_raw": "通常",
+        "hunter_raw": "-",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆2",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 143,
+      "parameter_hex": "090878003a017207",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "NINGEN_BUKI.ARR",
+          "offset": 228,
+          "hex": "3a017207",
+          "note_zh": "与已同名确认的电锯家族参数后四字节相同；不解释未解字节的机制含义。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "NINGEN_BUKI.ARR",
+          "offset": 636,
+          "hex": "3a017207",
+          "note_zh": "与已同名确认的电锯家族参数后四字节相同；不解释未解字节的机制含义。"
+        }
+      ],
+      "note_zh": "攻击与六职业投影留下青龙刀和喷射锯链两个候选；喷射锯链的译名语义相符，参数后四字节与W电锯、杀人电锯相同，并与青龙刀不同，仅确认名称身份。"
+    },
+    {
+      "id": "human-weapon-d8b774f6bd",
+      "item_id": 631,
+      "value": "危险匕首",
+      "matched_alias": "危险的匕首",
+      "reference_attributes": {
+        "acquisition_raw": "渴望酒吧",
+        "additional_raw": "-",
+        "artist_raw": "○",
+        "attack_raw": "45",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "nurse_raw": "○",
+        "price_raw": "200",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 23,
+      "parameter_hex": "5f5e2d001201f837",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-e5b0dd814f",
+      "item_id": 611,
+      "value": "铁水管",
+      "matched_alias": "铁管",
+      "reference_attributes": {
+        "acquisition_raw": "阿梓莎",
+        "additional_raw": "-",
+        "artist_raw": "-",
+        "attack_raw": "8",
+        "element_raw": "通常",
+        "hunter_raw": "-",
+        "mechanic_raw": "-",
+        "nurse_raw": "-",
+        "price_raw": "50",
+        "range_raw": "1体",
+        "soldier_raw": "-",
+        "stars_raw": "-",
+        "wrestler_raw": "○"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 3,
+      "parameter_hex": "202008000201f91e",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "human-weapon-ecf04aabbf",
+      "item_id": 743,
+      "value": "ＬＯＶＥ机器",
+      "matched_alias": "LOVE机器",
+      "reference_attributes": {
+        "acquisition_raw": "LOVE组合1232",
+        "additional_raw": "钻头弹",
+        "artist_raw": "○",
+        "attack_raw": "200",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "notes_raw": "钻头弹，可被迎击",
+        "nurse_raw": "○",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "☆2",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 135,
+      "parameter_hex": "5f5ec8004e01692f",
+      "base_parameters": [],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/candidates/human-items.json",
+          "source_sha256": "sha256:a21c48454946c6b1accf42e6a87b3bbe849a3ad76d69f948157bfd93b3fcbc59",
+          "json_pointer": "#/tables/1/rows/16",
+          "value_json": "{\"L\":\"1\",\"O\":\"2\",\"V\":\"3\",\"E\":\"2\",\"地图上使用效果\":\"ドリル弾発射の人間武器\",\"战斗中使用效果\":\"\"}",
+          "note_zh": "来源组合表1232，配方顺序与ROM组合表及原装备的获取字段一致。"
+        }
+      ],
+      "rom_evidence": [
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "LOVE_KUMIAWASE.ARR",
+          "offset": 64,
+          "hex": "e7026c01",
+          "note_zh": "按1111至3333的81行组合索引，读取配方1232的结果物品ID与说明指针。"
+        },
+        {
+          "archive": "xls/data/pack_data.pak",
+          "file": "LOVE_KUMIAWASE.NAM",
+          "offset": 364,
+          "hex": "d153045cbb943459395f8476ba4e7b7c666b68560000",
+          "note_zh": "该配方的人类武器用途说明，与来源的水泥弹或钻头弹配置对应。"
+        }
+      ],
+      "note_zh": "两条同名LOVE机器对应不同配方和不同物品ID。依据配方1232直接定位ROM组合表，再核对说明、攻击与六职业投影；保留两条来源记录，不合并，不把其他配方效果套用到该配置。"
+    },
+    {
+      "id": "human-weapon-f25c90629a",
+      "item_id": 618,
+      "value": "水中枪",
+      "matched_alias": "水枪",
+      "reference_attributes": {
+        "acquisition_raw": "玛多（周目模式C） 掉落：溺死鬼",
+        "additional_raw": "?",
+        "artist_raw": "○",
+        "attack_raw": "24",
+        "element_raw": "通常",
+        "hunter_raw": "○",
+        "mechanic_raw": "○",
+        "notes_raw": "不被迎击，对水、对空无效",
+        "nurse_raw": "○",
+        "price_raw": "-",
+        "range_raw": "1体",
+        "soldier_raw": "○",
+        "stars_raw": "-",
+        "wrestler_raw": "-"
+      },
+      "reference_source_hashes": [
+        "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11"
+      ],
+      "parameter_table": "NINGEN_BUKI.ARR",
+      "parameter_index": 10,
+      "parameter_hex": "5f5e18005301560d",
+      "base_parameters": [],
+      "source_evidence": [],
+      "rom_evidence": [],
+      "note_zh": "同类攻击力、六职业投影及来源有数值时的价格相符，并逐项核查译名语义；不能将名称身份核对外推为属性、获取条件或星级已验证。"
+    },
+    {
+      "id": "special-equipment-db732e2cee",
+      "item_id": 1202,
+      "value": "二重身",
+      "matched_alias": "2重身",
+      "reference_attributes": {
+        "attack_raw": "700",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "80",
+        "weight_raw": "4.45(0.44)",
+        "magazine_raw": "24",
+        "ammunition_price_raw": "10",
+        "price_raw": "18000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "source_difference_raw": "重量(t)：总表 4.45，独立详情 4.45(0.44)t",
+        "attack_max_raw": "875",
+        "defense_max_raw": "100",
+        "weight_max_raw": "5.78",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：タイシャー",
+        "acquisition_raw": "大神社商店。"
+      },
+      "reference_source_hashes": [
+        "sha256:363b366af9db1dc4a10cfd7f1102ffa6bb51d16c79bbdad750da656ee594c8ef",
+        "sha256:4bcf691ff690a6ce9193cd19d69edaea13923faccd21cbc93be38df7bd308471"
+      ],
+      "parameter_table": "CARWEPON.ARR",
+      "parameter_index": 195,
+      "parameter_hex": "9001bd015064bc021200cd000118082001007803",
+      "base_parameters": [
+        {
+          "field": "weight_raw",
+          "source_path": "data/raw/mm2r/0.99/special-equipment/facts.json",
+          "source_sha256": "sha256:0994e3941f44852a1d8ebe4ba6571f9021d3366db85850834140e2370ceab371",
+          "json_pointer": "#/records/46/overview/重量(t)",
+          "raw_value": "4.45"
+        },
+        {
+          "field": "defense_raw",
+          "source_path": "data/raw/mm2r/0.99/special-equipment/facts.json",
+          "source_sha256": "sha256:0994e3941f44852a1d8ebe4ba6571f9021d3366db85850834140e2370ceab371",
+          "json_pointer": "#/records/46/overview/守備",
+          "raw_value": "80"
+        },
+        {
+          "field": "attack_raw",
+          "source_path": "data/raw/mm2r/0.99/special-equipment/facts.json",
+          "source_sha256": "sha256:0994e3941f44852a1d8ebe4ba6571f9021d3366db85850834140e2370ceab371",
+          "json_pointer": "#/records/46/overview/攻撃",
+          "raw_value": "700"
+        },
+        {
+          "field": "magazine_raw",
+          "source_path": "data/raw/mm2r/0.99/special-equipment/facts.json",
+          "source_sha256": "sha256:0994e3941f44852a1d8ebe4ba6571f9021d3366db85850834140e2370ceab371",
+          "json_pointer": "#/records/46/overview/弾倉",
+          "raw_value": "24"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_path": "data/raw/mm2r/0.99/special-equipment/facts.json",
+          "source_sha256": "sha256:0994e3941f44852a1d8ebe4ba6571f9021d3366db85850834140e2370ceab371",
+          "json_pointer": "#/records/46/overview",
+          "value_json": "{\"名称\":\"ドッペルゲンガー\",\"攻撃\":\"700\",\"範囲\":\"1体\",\"属性\":\"通常\",\"守備\":\"80\",\"重量(t)\":\"4.45\",\"弾倉\":\"24\",\"弾薬(G)\":\"10\",\"価格(G)\":\"18000\",\"レア\":\"-\"}",
+          "note_zh": "总表保存的原始基础值及特性；固定获取星级另由详情表达，不据此换算。"
+        }
+      ],
+      "rom_evidence": [],
+      "note_zh": "原详情重量写作4.45(0.44)，未将括号值当作相同条件。改用原始总表明确的4.45t，连同攻击700、防御80、弹仓24及价格18000唯一对应ROM二重身；保留原详情差异，不猜括号机制。"
+    }
+  ]
+}

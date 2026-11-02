@@ -136,7 +136,7 @@ export function EquipmentSourceReferences({
           >
             METAL MAX 大辞典
           </a>
-          。已核对其资料快照，原词典页面目前无法直接访问。
+          。原词典页面目前无法直接访问，可参考资料快照。
         </p>
       )}
     </section>

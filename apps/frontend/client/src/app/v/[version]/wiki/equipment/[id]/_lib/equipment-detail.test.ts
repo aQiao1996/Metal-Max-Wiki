@@ -95,7 +95,7 @@ describe('equipment detail', () => {
 
   it('名称来源和已知问题使用固定中文文案', () => {
     expect(equipmentNameSourceLabels).toMatchObject({
-      zh_099: '0.99 实机名称',
+      zh_099: '0.99 中文名',
       zh_09: '0.9 系汉化名称',
       ja: '日文原名',
     })

@@ -92,7 +92,7 @@ export async function KnowledgeIndex({
           {category.label}
         </h1>
         <p className="text-muted-foreground mt-3 text-sm leading-7">
-          {category.description}。日版参考资料，尚未逐项核验 0.99 实机。
+          {category.description}
         </p>
       </header>
       <form

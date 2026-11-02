@@ -5,9 +5,9 @@ import { ArrowLeft, ChevronRight } from 'lucide-react'
 import type { GameVersion } from '@/config/game-versions'
 import { toKnowledgeSources, type KnowledgeEntry } from '@/data/knowledge/entry'
 import { cn } from '@/lib/utils'
+import { formatReaderText } from '@/lib/reader-text'
 import { buildVersionPath } from '@/lib/version-routes'
 import type { WikiCategory } from '@/types/wiki'
-import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 import { AttributeTable } from '@/components/wiki/AttributeTable'
 import { ReferenceDataTable } from '@/components/wiki/ReferenceDataTable'
 import { SourceReferences } from '@/components/wiki/SourceReferences'
@@ -33,7 +33,7 @@ function KnowledgeSection({
     <>
       <div className="mt-4 space-y-3 text-sm leading-7 sm:text-base">
         {section.paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+          <p key={paragraph}>{formatReaderText(paragraph)}</p>
         ))}
       </div>
       {section.tables.length > 0 && (
@@ -142,7 +142,7 @@ export function KnowledgeDetail({
         href="#sources-heading"
         className="focus-visible:ring-ring inline-flex min-h-10 items-center hover:underline focus-visible:ring-2 focus-visible:outline-none"
       >
-        来源与校对
+        资料来源
       </a>
     </nav>
   )
@@ -174,7 +174,6 @@ export function KnowledgeDetail({
           <span className="border-border rounded border px-2 py-1 text-[var(--mm-navy)]">
             {category.label}
           </span>
-          <EquipmentVerificationBadge status={entry.verification_status} />
         </div>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-[var(--mm-navy)] sm:text-4xl">
           {entry.name}
@@ -196,11 +195,14 @@ export function KnowledgeDetail({
           </p>
         )}
         <p className="text-muted-foreground mt-4 max-w-3xl leading-7">
-          {entry.summary}
+          {formatReaderText(entry.summary)}
         </p>
-        <p className="mt-5 max-w-3xl border-l-2 border-[var(--mm-signal)] bg-[#f5e8e2] px-4 py-3 text-sm leading-6 text-[#81432e]">
-          日版资料与中文参考译名，尚未完成 0.99 实机核验。
-        </p>
+        <a
+          href="#sources-heading"
+          className="text-muted-foreground mt-3 inline-flex min-h-10 items-center text-xs underline underline-offset-4"
+        >
+          查看资料来源
+        </a>
       </header>
 
       <details className="border-border mt-6 border-b pb-3 xl:hidden">
@@ -301,7 +303,7 @@ export function KnowledgeDetail({
                         </p>
                         {drop.summary && (
                           <p className="mt-3 text-sm leading-6">
-                            {drop.summary}
+                            {formatReaderText(drop.summary)}
                           </p>
                         )}
                         {drop.attributes.length > 0 && (
@@ -312,7 +314,7 @@ export function KnowledgeDetail({
                                   {attribute.label}：
                                 </dt>
                                 <dd className="inline break-words">
-                                  {attribute.value}
+                                  {formatReaderText(attribute.value)}
                                 </dd>
                               </div>
                             ))}
@@ -333,11 +335,6 @@ export function KnowledgeDetail({
                               </p>
                             </div>
                           </details>
-                        )}
-                        {drop.issues.length > 0 && (
-                          <p className="text-muted-foreground mt-3 text-xs leading-6">
-                            部分字段仍待核对，已保留来源记录。
-                          </p>
                         )}
                       </li>
                     ))}

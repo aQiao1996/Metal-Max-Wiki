@@ -30,6 +30,7 @@ _ROOT = Path("data/raw/mm2r/0.99/guides")
 _CAPTION: Literal["原创流程示意 · 非实机地图 · 0.99未验证"] = (
     "原创流程示意 · 非实机地图 · 0.99未验证"
 )
+_DIAGRAM_FOOTER = "原创流程示意 · 非实机地图"
 _CHAPTER_IDS = (
     "mado-first-vehicle",
     "party-bay-bridge",
@@ -517,7 +518,7 @@ def _svg(draft: DiagramDraft) -> bytes:
         },
     )
     ET.SubElement(root, "title", {"id": "title"}).text = draft.title_zh
-    ET.SubElement(root, "desc", {"id": "desc"}).text = draft.alt_zh + "。" + _CAPTION
+    ET.SubElement(root, "desc", {"id": "desc"}).text = draft.alt_zh + "。" + _DIAGRAM_FOOTER
     ET.SubElement(
         root, "rect", {"width": str(width), "height": str(height), "rx": "20", "fill": "#f4f7fa"}
     )
@@ -601,7 +602,7 @@ def _svg(draft: DiagramDraft) -> bytes:
             "font-size": "15",
             "font-family": "sans-serif",
         },
-    ).text = _CAPTION
+    ).text = _DIAGRAM_FOOTER
     ET.SubElement(
         root,
         "text",
@@ -630,7 +631,7 @@ def _validate_svg(data: bytes) -> None:
             raise ValueError("原创SVG包含非图表元素")
         if any(key.lower().startswith("on") or "href" in key.lower() for key in node.attrib):
             raise ValueError("原创SVG包含外链或事件处理器")
-    if _CAPTION not in data.decode("utf-8"):
+    if _DIAGRAM_FOOTER not in data.decode("utf-8"):
         raise ValueError("原创SVG缺少非实机地图声明")
 
 

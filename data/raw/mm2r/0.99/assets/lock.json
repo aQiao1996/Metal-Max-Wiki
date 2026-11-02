@@ -4,30 +4,30 @@
     {
       "asset_id": "mm2r-guide-bias-unlock-flow",
       "final_url": null,
-      "local_path": "files/original-diagrams/bias-unlock-flow-43b857e022eb.svg",
-      "sha256": "sha256:43b857e022eb6e41fd6c0cbaba03e48de7520b916ed0c19bd9c8593011729a75",
+      "local_path": "files/original-diagrams/bias-unlock-flow-2b87c2ef738f.svg",
+      "sha256": "sha256:2b87c2ef738f62db11117d36e8f20bf99430b6e2571e8c950fb190e7567717eb",
       "media_type": "image/svg+xml",
-      "byte_size": 5363,
+      "byte_size": 5329,
       "width": 840,
       "height": 1038
     },
     {
       "asset_id": "mm2r-guide-dark-canal-flow",
       "final_url": null,
-      "local_path": "files/original-diagrams/dark-canal-flow-3d2b94f9d82c.svg",
-      "sha256": "sha256:3d2b94f9d82c5fd324fee4b67ebec2645ee5b77b62a4870d8023d36d1f2d2085",
+      "local_path": "files/original-diagrams/dark-canal-flow-e7308ef8ce60.svg",
+      "sha256": "sha256:e7308ef8ce60fe31abfcd29ecafb0e99d144cadd70ba1de3850f6420d7bbe2d5",
       "media_type": "image/svg+xml",
-      "byte_size": 4677,
+      "byte_size": 4643,
       "width": 840,
       "height": 920
     },
     {
       "asset_id": "mm2r-guide-mainline-overview",
       "final_url": null,
-      "local_path": "files/original-diagrams/mainline-overview-862eae001adb.svg",
-      "sha256": "sha256:862eae001adba729b743314d0436109f201d69ab10638a73bf02004227449374",
+      "local_path": "files/original-diagrams/mainline-overview-e9f01e19c769.svg",
+      "sha256": "sha256:e9f01e19c7696651e3ed16f513ab26d643947cb3c7f1ac564500e26cba1ae9e7",
       "media_type": "image/svg+xml",
-      "byte_size": 4718,
+      "byte_size": 4684,
       "width": 840,
       "height": 920
     }

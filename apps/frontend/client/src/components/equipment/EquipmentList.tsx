@@ -6,8 +6,6 @@ import type { GameVersionSlug } from '@/config/game-versions'
 import { buildEquipmentSearch } from '@/lib/equipment-query'
 import type { EquipmentEntry, EquipmentQuery } from '@/types/equipment'
 
-import { EquipmentVerificationBadge } from './EquipmentVerificationBadge'
-
 interface EquipmentListProps {
   emptyMessage: string
   entries: readonly EquipmentEntry[]
@@ -104,9 +102,6 @@ export function EquipmentList({
                   <span className="min-w-0 font-medium break-words text-[var(--mm-navy)]">
                     {entry.name}
                   </span>
-                  <EquipmentVerificationBadge
-                    status={entry.verification_status}
-                  />
                 </span>
                 {japaneseName !== null && (
                   <span className="mt-1 block text-xs break-words text-[var(--mm-navy)]">

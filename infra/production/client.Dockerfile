@@ -17,6 +17,7 @@ ARG API_BASE_URL=http://server:8000
 ENV API_BASE_URL=${API_BASE_URL}
 COPY apps/frontend/client ./apps/frontend/client
 COPY data/interim ./data/interim
+COPY data/processed ./data/processed
 RUN mkdir -p apps/frontend/client/public \
     && pnpm --filter @metalmax-wiki/client build
 

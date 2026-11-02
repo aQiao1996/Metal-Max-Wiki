@@ -10,6 +10,7 @@ import { ArrowRight, Search } from 'lucide-react'
 import type { GameVersion } from '@/config/game-versions'
 import { searchLibrary, suggestedSearches } from '@/api/search'
 import { buildVersionPath } from '@/lib/version-routes'
+import { formatReaderText } from '@/lib/reader-text'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -20,7 +21,6 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 
 interface GlobalSearchDialogProps {
   version: GameVersion
@@ -168,11 +168,6 @@ export function GlobalSearchDialog({
                     <span className="min-w-0 flex-1">
                       <span className="text-foreground flex flex-wrap items-center gap-2 font-medium">
                         <span>{result.name}</span>
-                        {result.verificationStatus && (
-                          <EquipmentVerificationBadge
-                            status={result.verificationStatus}
-                          />
-                        )}
                       </span>
                       {result.nameSource === 'zh_reference' && (
                         <span className="text-muted-foreground mt-1 block text-xs">
@@ -180,7 +175,7 @@ export function GlobalSearchDialog({
                         </span>
                       )}
                       <span className="text-muted-foreground mt-1 line-clamp-2 block text-sm leading-5">
-                        {result.summary}
+                        {formatReaderText(result.summary)}
                       </span>
                     </span>
                     <ArrowRight className="text-muted-foreground mt-1 size-4 shrink-0 transition-transform group-hover:translate-x-0.5" />

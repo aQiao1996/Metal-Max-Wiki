@@ -8,9 +8,9 @@ import type { WikiAttribute } from '@/types/wiki'
 import { formatVehicleWeaponValue } from '@/data/equipment/vehicle-weapons'
 
 export const equipmentNameSourceLabels = {
-  zh_099: '0.99 实机名称',
+  zh_099: '0.99 中文名',
   zh_09: '0.9 系汉化名称',
-  zh_reference: '中文参考译名（未经 0.99 实机核对）',
+  zh_reference: '中文参考译名',
   ja: '日文原名',
 } as const satisfies Record<EquipmentNameSource, string>
 
@@ -21,7 +21,7 @@ export const equipmentIssueLabels: Readonly<Record<string, string>> = {
   source_detail_unavailable: '来源尚未提供独立详情',
   source_modification_unavailable: '来源尚未提供完整改造数值',
   source_value_difference:
-    '总表与独立详情存在同星级数值差异，展示值取自独立详情，仍待核对',
+    '总表与独立详情存在同星级数值差异，展示值取自独立详情',
 }
 
 const humanWeaponFields = [
@@ -62,7 +62,7 @@ const specialEquipmentFields = [
   { key: 'acquisition_raw', label: '获取方式' },
   { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
   { key: 'notes_raw', label: '特殊作用' },
-  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+  { key: 'source_difference_raw', label: '来源数值差异' },
 ] as const
 
 const cUnitFields = [
@@ -83,7 +83,7 @@ const cUnitFields = [
   { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
   { key: 'mechanics_note_raw', label: '命中与回避说明' },
   { key: 'notes_raw', label: '使用备注' },
-  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+  { key: 'source_difference_raw', label: '来源数值差异' },
 ] as const
 
 const engineFields = [
@@ -104,7 +104,7 @@ const engineFields = [
   { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
   { key: 'upgrade_note_raw', label: '马力强化限制' },
   { key: 'notes_raw', label: '使用备注' },
-  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+  { key: 'source_difference_raw', label: '来源数值差异' },
 ] as const
 
 function toProfessionDisplayValue(value: string | number): string {

@@ -5,14 +5,17 @@ import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import type { GameVersion } from '@/config/game-versions'
 import {
   guideKindLabels,
-  guideReaderNote,
   type GuideDetail,
   type GuideFact,
 } from '@/data/guides'
 import { buildVersionPath } from '@/lib/version-routes'
 import { Badge } from '@/components/ui/badge'
 
-import { GuideDiagramFigure, GuideFactContent } from './GuideReference'
+import {
+  formatGuideReaderNote,
+  GuideDiagramFigure,
+  GuideFactContent,
+} from './GuideReference'
 
 interface GuideArticleProps {
   guide: GuideDetail
@@ -33,7 +36,7 @@ const sections = [
   { id: 'cautions', title: '注意事项' },
   { id: 'next-steps', title: '下一步' },
   { id: 'diagrams', title: '原创流程示意' },
-  { id: 'sources', title: '来源与校对' },
+  { id: 'sources', title: '资料来源' },
 ] as const
 
 function FactSection({
@@ -142,9 +145,6 @@ export function GuideArticle({ guide, version }: GuideArticleProps) {
           <Badge variant="outline" className="rounded font-normal">
             {guideKindLabels[guide.kind]}
           </Badge>
-          <span className="text-muted-foreground text-xs">
-            中文参考 · {version.version} 未实机验证
-          </span>
         </div>
         <h1 className="mt-4 max-w-4xl text-3xl font-semibold tracking-[-0.035em] text-[var(--mm-navy)] sm:text-4xl lg:text-[2.75rem]">
           {guide.title.replace(/^\d{2}\s+/, '')}
@@ -154,7 +154,7 @@ export function GuideArticle({ guide, version }: GuideArticleProps) {
         </p>
         <p className="mt-4 text-sm font-medium">途经：{guide.location}</p>
         <p className="border-border text-muted-foreground mt-6 max-w-3xl border-l-2 pl-4 text-sm leading-7">
-          {guideReaderNote(guide.referenceNote)}
+          {formatGuideReaderNote(guide.referenceNote)}
         </p>
       </header>
 
@@ -296,12 +296,11 @@ export function GuideArticle({ guide, version }: GuideArticleProps) {
               id="sources-heading"
               className="text-2xl font-semibold tracking-tight text-[var(--mm-navy)]"
             >
-              来源与校对
+              资料来源
             </h2>
             <p className="text-muted-foreground mt-4 text-sm leading-7">
               操作条件依据 MM2R
-              日文公开资料归纳；中文名称为参考译名。每条操作下方可展开短证据并跳转原文。来源核对不等于已在
-              0.99 实机验证。
+              日文公开资料归纳；中文名称为参考译名。每条操作下方可展开短证据并跳转原文。
             </p>
             <ul className="border-border mt-5 divide-y border-y">
               {guide.sources.map((source) => (

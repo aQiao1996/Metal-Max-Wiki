@@ -2,7 +2,17 @@ import Image from 'next/image'
 
 import { ExternalLink } from 'lucide-react'
 
-import type { GuideDiagram, GuideFact } from '@/data/guides'
+import {
+  guideReaderNote,
+  type GuideDiagram,
+  type GuideFact,
+} from '@/data/guides'
+import { formatReaderText } from '@/lib/reader-text'
+
+/** 保留阅读说明，隐藏数据层核验状态。 */
+export function formatGuideReaderNote(value: string): string {
+  return guideReaderNote(formatReaderText(value))
+}
 
 const rawValueLabels: Readonly<Record<string, string>> = {
   soldiers_raw: '士兵数量',
@@ -52,7 +62,7 @@ export function GuideFactContent({ fact }: GuideFactContentProps) {
           查看原文证据与出处
         </summary>
         <div className="border-border mt-2 space-y-3 border-l pl-4 leading-6">
-          <p className="text-xs">日文来源短证据，供核对操作条件：</p>
+          <p className="text-xs">日文来源原文：</p>
           {fact.evidence.map((evidence) => (
             <blockquote key={evidence} lang="ja" className="break-words">
               {evidence}
@@ -72,7 +82,6 @@ export function GuideFactContent({ fact }: GuideFactContentProps) {
             {new Date(fact.sourceRef.retrievedAt).toLocaleDateString('zh-CN', {
               timeZone: 'UTC',
             })}
-            ，尚未逐项核对 0.99 实机。
           </p>
         </div>
       </details>
@@ -103,7 +112,7 @@ export function GuideDiagramFigure({ diagram }: GuideDiagramFigureProps) {
             {diagram.titleZh}
           </span>
           <span className="text-muted-foreground">
-            {diagram.author} · {diagram.captionZh}
+            {diagram.author} · {formatReaderText(diagram.captionZh)}
           </span>
         </span>
         <a

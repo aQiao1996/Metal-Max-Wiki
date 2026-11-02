@@ -20,7 +20,7 @@ _SYSTEM_PROMPT = (
     "只输出简洁的最终中文结论，不输出思考过程、内部标记或引言。"
     "只回答所问内容，不重复或补充未问的数据；数值、单位和原始符号按证据保留。"
     "每段结论后必须有[数字]引用，只能引用本次编号。"
-    "缺少条件或证据就说明无法确定，横杠或未记载不代表无限制；不能猜测或声称已核验0.99。"
+    "缺少条件或证据就说明无法确定，横杠或未记载不代表无限制；不能猜测或将局部名称核验称为整条0.99已验证。"
 )
 _DOMAIN_RULES = {
     "equipment": (
@@ -102,7 +102,6 @@ def _answered_data(answer: str, chunks: tuple[EvidenceChunk, ...], version: str)
         for index, chunk in enumerate(chunks, 1)
         if index in numbers
     ]
-    answer += "\n\n资料状态：日版参考／汉化兼容候选，0.99尚未逐项实机核验。"
     return AnswerData(answer=answer, sources=sources, status="answered")
 
 
@@ -111,7 +110,7 @@ async def ask_question(version: str, question: str) -> AnswerData:
     require_available_version(version)
     if _outside_scope(question):
         return AnswerData(
-            answer="当前问答只收录重装机兵2R的日版参考与0.99汉化兼容候选，没有足够证据回答其他作品或NEX改版的问题。",
+            answer="当前问答只收录重装机兵2R的资料，没有足够证据回答其他作品或NEX改版的问题。",
             sources=[],
             status="insufficient_evidence",
         )

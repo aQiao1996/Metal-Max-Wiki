@@ -3,17 +3,17 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Suspense } from 'react'
 
-import { ArrowLeft, BadgeCheck, ChevronRight, Info } from 'lucide-react'
+import { ArrowLeft, ChevronRight } from 'lucide-react'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { equipmentTypeById } from '@/config/equipment-types'
+import { formatReaderText } from '@/lib/reader-text'
 import {
   getEquipmentEntries,
   getEquipmentEntry,
 } from '@/data/equipment/catalog'
 import { Badge } from '@/components/ui/badge'
 import { EquipmentSourceReferences } from '@/components/equipment/EquipmentSourceReferences'
-import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 import { AttributeTable } from '@/components/wiki/AttributeTable'
 
 import { EquipmentReturnLink } from './_components/EquipmentReturnLink'
@@ -82,12 +82,6 @@ export default async function EquipmentDetailPage({
 
   const defaultEquipmentHref = `/v/${version.slug}/wiki/equipment?type=${entry.type}`
   const attributes = buildEquipmentDetailAttributes(entry)
-  const statusMessage =
-    entry.verification_status === 'verified_0_99'
-      ? '该记录已完成 0.99 实机核验。'
-      : entry.verification_status === 'source_only'
-        ? '该记录采用日版参考资料，中文名称为参考译名，尚未完成 0.99 实机核验。'
-        : '该记录为兼容候选，尚未完成 0.99 实机核验。'
 
   return (
     <article className="mx-auto max-w-6xl pb-12">
@@ -129,7 +123,6 @@ export default async function EquipmentDetailPage({
           <Badge variant="outline" className="rounded text-[var(--mm-navy)]">
             {typeConfig.label}
           </Badge>
-          <EquipmentVerificationBadge status={entry.verification_status} />
         </div>
 
         <h1 className="mt-5 text-3xl font-semibold tracking-[-0.035em] break-words text-[var(--mm-navy)] sm:text-4xl lg:text-[2.75rem]">
@@ -138,15 +131,6 @@ export default async function EquipmentDetailPage({
         <p className="text-foreground mt-2 text-sm">
           名称来源：{equipmentNameSourceLabels[entry.nameSource]}
         </p>
-
-        <div className="bg-accent text-accent-foreground mt-6 flex max-w-3xl items-start gap-2.5 border-l-2 border-[var(--mm-signal)] px-3 py-3 text-sm leading-6">
-          {entry.verification_status === 'verified_0_99' ? (
-            <BadgeCheck className="mt-1 size-4 shrink-0" aria-hidden="true" />
-          ) : (
-            <Info className="mt-1 size-4 shrink-0" aria-hidden="true" />
-          )}
-          <p>{statusMessage}</p>
-        </div>
       </header>
 
       <div className="mt-9 grid min-w-0 gap-12 xl:grid-cols-[minmax(0,1fr)_19rem] xl:items-start">
@@ -238,7 +222,7 @@ export default async function EquipmentDetailPage({
                     key={`${issue}:${index}`}
                     className="border-border text-foreground min-w-0 border-b py-3 text-sm break-words"
                   >
-                    {equipmentIssueLabels[issue] ?? issue}
+                    {formatReaderText(equipmentIssueLabels[issue] ?? issue)}
                   </li>
                 ))}
               </ul>

@@ -110,7 +110,7 @@ export function SiteSidebar({ version }: SiteSidebarProps) {
       </nav>
 
       <div className="border-t border-white/10 px-5 py-4 text-xs leading-5 text-white/40">
-        社区资料库 · 数据待持续校对
+        社区资料库
       </div>
     </aside>
   )

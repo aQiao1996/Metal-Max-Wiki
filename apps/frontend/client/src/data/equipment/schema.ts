@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { identityReviewSchema } from './identity-review'
 
 const nonEmptyStringSchema = z.string().min(1)
 const sourceHashSchema = z.string().regex(/^sha256:[0-9a-f]{64}$/)
@@ -144,6 +145,37 @@ export const equipmentDatasetSchema = z
     records: z.array(rawEquipmentRecordSchema),
   })
   .strict()
+
+export const romNameProofSchema = z
+  .object({
+    id: equipmentIdSchema,
+    verification_status: z.literal('verified_0_99'),
+    field: z.literal('names.zh_099'),
+    method: z.enum([
+      'rom_extraction_exact_name',
+      'rom_extraction_parameter_identity',
+      'rom_extraction_reviewed_identity',
+    ]),
+    identity_parameters: z.record(z.string(), z.string()).optional(),
+    identity_price: z.number().int().nonnegative().optional(),
+    identity_review: identityReviewSchema.optional(),
+    value: z.string().min(1).max(128),
+    matched_alias: z.string().min(1),
+    item_id: z.number().int().nonnegative(),
+    item_kind: z.number().int().positive(),
+    record_offset: z.number().int().nonnegative(),
+    name_offset: z.number().int().nonnegative(),
+    name_bytes: z.number().int().min(2).max(512),
+  })
+  .strict()
+
+export const equipmentRecordSchema = rawEquipmentRecordSchema.extend({
+  name_verification: romNameProofSchema
+    .extend({ rom_sha256: sourceHashSchema })
+    .optional(),
+})
+
+export type EquipmentRecord = z.infer<typeof equipmentRecordSchema>
 
 export type RawEquipmentRecord = z.infer<typeof rawEquipmentRecordSchema>
 export type EquipmentDataset = z.infer<typeof equipmentDatasetSchema>

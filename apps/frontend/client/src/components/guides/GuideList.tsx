@@ -65,8 +65,7 @@ export function GuideList({ guides, phases, version }: GuideListProps) {
                         {guide.summary}
                       </span>
                       <span className="text-muted-foreground mt-3 block text-xs leading-6">
-                        {guide.location} · {guide.stepCount} 个操作步骤 ·
-                        中文参考，0.99 未实测
+                        {guide.location} · {guide.stepCount} 个操作步骤
                       </span>
                     </span>
                     <ArrowRight

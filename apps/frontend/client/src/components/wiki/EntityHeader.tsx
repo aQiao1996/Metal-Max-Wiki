@@ -4,6 +4,7 @@ import { ChevronRight, ImageIcon } from 'lucide-react'
 
 import type { GameVersion } from '@/config/game-versions'
 import { buildVersionPath } from '@/lib/version-routes'
+import { formatReaderText } from '@/lib/reader-text'
 import type { WikiCategory, WikiEntityDetail } from '@/types/wiki'
 import { Badge } from '@/components/ui/badge'
 
@@ -43,12 +44,6 @@ export function EntityHeader({ category, entity, version }: EntityHeaderProps) {
             <Badge variant="outline" className="rounded text-[var(--mm-navy)]">
               {version.shortLabel}
             </Badge>
-            <Badge
-              variant="secondary"
-              className="text-muted-foreground rounded font-normal"
-            >
-              {entity.verification === 'checked' ? '已校对' : '待校对'}
-            </Badge>
           </div>
           <h1 className="mt-5 text-3xl font-semibold tracking-[-0.035em] text-[var(--mm-navy)] sm:text-4xl lg:text-[2.75rem]">
             {entity.name}
@@ -59,7 +54,7 @@ export function EntityHeader({ category, entity, version }: EntityHeaderProps) {
             </p>
           )}
           <p className="text-muted-foreground mt-5 max-w-3xl text-base leading-7 text-pretty sm:text-lg sm:leading-8">
-            {entity.summary}
+            {formatReaderText(entity.summary)}
           </p>
           <div className="text-muted-foreground mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs">
             {entity.tags.map((tag) => (

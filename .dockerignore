@@ -19,6 +19,8 @@
 !data/
 !data/interim/
 !data/interim/**
+!data/processed/
+!data/processed/**
 
 **/AGENTS.md
 **/.env

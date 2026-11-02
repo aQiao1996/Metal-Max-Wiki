@@ -9,7 +9,7 @@
   "route_note": "共6阶段23章，覆盖从开场到正式通关的必需门槛，夹列少量明确标注的整备与可跳过支线；这是可执行的推荐顺序，不声称开放世界只有一条路线。各章cautions包含容易漏做的机关、对话、物品或已知错过条件，不将全部风险称为永久错过。",
   "source_locator_note": "所有攻略事实以source_url锚点、section和locator定位；正文SourceRef的table_index和row_index使用0，不表示来自表格行。证据为用于核对的短片段，不保存完整攻略正文。",
   "names_hash": "sha256:ef21df98d534664d1ee16834067cd26248476b8905f84da8fc97ad44b30c775e",
-  "snapshot_hash": "sha256:d4cd6c03fd9c9f7aba66da003f4174535028b3795299c9e0d422605520518484",
+  "snapshot_hash": "sha256:1f3b826f0398c051b8d656698d7fabf5eafa7719ba0d1748d99dbd2a4cdc7c64",
   "phases": [
     {
       "id": "opening",
@@ -6179,8 +6179,8 @@
         "final-three-stages",
         "clear-and-next-cycle"
       ],
-      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/mainline-overview-862eae001adb.svg",
-      "content_hash": "sha256:862eae001adba729b743314d0436109f201d69ab10638a73bf02004227449374",
+      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/mainline-overview-e9f01e19c769.svg",
+      "content_hash": "sha256:e9f01e19c7696651e3ed16f513ab26d643947cb3c7f1ac564500e26cba1ae9e7",
       "rights_status": "original_diagram",
       "license": "LicenseRef-Project-Original",
       "author": "Metal Max Wiki 项目原创",
@@ -6241,7 +6241,7 @@
           "row_index": 0
         }
       ],
-      "public_path": "/wiki/mm2r/0.99/guides/mainline-overview-862eae001adb.svg",
+      "public_path": "/wiki/mm2r/0.99/guides/mainline-overview-e9f01e19c769.svg",
       "width": 840,
       "height": 920
     },
@@ -6254,8 +6254,8 @@
         "dark-canal-gates",
         "cagliostro-eva"
       ],
-      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/dark-canal-flow-3d2b94f9d82c.svg",
-      "content_hash": "sha256:3d2b94f9d82c5fd324fee4b67ebec2645ee5b77b62a4870d8023d36d1f2d2085",
+      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/dark-canal-flow-e7308ef8ce60.svg",
+      "content_hash": "sha256:e7308ef8ce60fe31abfcd29ecafb0e99d144cadd70ba1de3850f6420d7bbe2d5",
       "rights_status": "original_diagram",
       "license": "LicenseRef-Project-Original",
       "author": "Metal Max Wiki 项目原创",
@@ -6280,7 +6280,7 @@
           "row_index": 0
         }
       ],
-      "public_path": "/wiki/mm2r/0.99/guides/dark-canal-flow-3d2b94f9d82c.svg",
+      "public_path": "/wiki/mm2r/0.99/guides/dark-canal-flow-e7308ef8ce60.svg",
       "width": 840,
       "height": 920
     },
@@ -6297,8 +6297,8 @@
         "cyclotron-shutdown",
         "final-three-stages"
       ],
-      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/bias-unlock-flow-43b857e022eb.svg",
-      "content_hash": "sha256:43b857e022eb6e41fd6c0cbaba03e48de7520b916ed0c19bd9c8593011729a75",
+      "repo_relative_path": "data/raw/mm2r/0.99/guides/diagrams/bias-unlock-flow-2b87c2ef738f.svg",
+      "content_hash": "sha256:2b87c2ef738f62db11117d36e8f20bf99430b6e2571e8c950fb190e7567717eb",
       "rights_status": "original_diagram",
       "license": "LicenseRef-Project-Original",
       "author": "Metal Max Wiki 项目原创",
@@ -6359,7 +6359,7 @@
           "row_index": 0
         }
       ],
-      "public_path": "/wiki/mm2r/0.99/guides/bias-unlock-flow-43b857e022eb.svg",
+      "public_path": "/wiki/mm2r/0.99/guides/bias-unlock-flow-2b87c2ef738f.svg",
       "width": 840,
       "height": 1038
     }

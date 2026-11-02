@@ -4,6 +4,7 @@ from pydantic import AwareDatetime, Field, HttpUrl, model_validator
 
 from app.schemas.base import CamelModel
 from app.schemas.response import PaginationMeta
+from app.schemas.rom_names import EquipmentNameVerification
 
 EquipmentType = Literal[
     "human-weapon", "main-cannon", "sub-gun", "special-equipment", "c-unit", "engine"
@@ -90,6 +91,9 @@ class EquipmentRecord(CamelModel):
     domain: Literal["equipment"]
     kind: Literal["human_weapon", "main_cannon", "sub_gun", "special_equipment", "c_unit", "engine"]
     names: EquipmentNames
+    name_verification: EquipmentNameVerification | None = Field(
+        default=None, exclude_if=lambda value: value is None
+    )
     attributes: dict[str, str | int | float]
     modifications: list[EquipmentModification] = Field(default_factory=list)
     control_modifications: list[ControlModification] = Field(default_factory=list)
@@ -136,6 +140,8 @@ class EquipmentDataset(CamelModel):
 
     @model_validator(mode="after")
     def validate_records(self) -> EquipmentDataset:
+        if any(record.name_verification is not None for record in self.records):
+            raise ValueError("中间装备包不得自带 ROM 名称核验，须加载独立字段证据")
         ids = [record.id for record in self.records]
         if len(ids) != len(set(ids)):
             raise ValueError("装备资料包含重复 ID")

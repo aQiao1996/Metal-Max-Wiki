@@ -1,9 +1,9 @@
 import { equipmentTypeByKind } from '@/config/equipment-types'
 import type { EquipmentEntry, EquipmentNameSource } from '@/types/equipment'
-import type { RawEquipmentRecord } from './schema'
+import type { EquipmentRecord } from './schema'
 
 /** 将单条资料转换为展示模型，不引入整份目录。 */
-export function toEquipmentEntry(record: RawEquipmentRecord): EquipmentEntry {
+export function toEquipmentEntry(record: EquipmentRecord): EquipmentEntry {
   const typeConfig = equipmentTypeByKind.get(record.kind)
   if (!typeConfig)
     throw new Error(`装备类型未配置：${record.kind}（${record.id}）`)

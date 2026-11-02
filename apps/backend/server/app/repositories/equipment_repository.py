@@ -1,6 +1,7 @@
 from functools import lru_cache
 
 from app.core.config import get_settings
+from app.repositories.equipment_verification import apply_verified_names
 from app.schemas.equipment import EquipmentDataset, EquipmentRecord
 
 
@@ -10,6 +11,6 @@ def load_equipment() -> tuple[EquipmentRecord, ...]:
     path = get_settings().data_dir / "interim/mm2r/0.99/equipment.json"
     try:
         dataset = EquipmentDataset.model_validate_json(path.read_bytes())
+        return apply_verified_names(dataset.records, get_settings().data_dir)
     except (OSError, ValueError) as error:
         raise RuntimeError(f"读取装备资料失败：{path}") from error
-    return tuple(dataset.records)

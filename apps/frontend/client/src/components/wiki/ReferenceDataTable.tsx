@@ -1,4 +1,5 @@
 import type { ReferenceTable } from '@/data/knowledge/schema'
+import { formatReaderText } from '@/lib/reader-text'
 
 interface ReferenceDataTableProps {
   table: ReferenceTable
@@ -42,7 +43,9 @@ export function ReferenceDataTable({ table }: ReferenceDataTableProps) {
                     key={index}
                     className="max-w-80 min-w-20 px-3 py-2 align-top break-words"
                   >
-                    {cell && cell !== 't' && cell !== '?t' ? cell : '—'}
+                    {cell && cell !== 't' && cell !== '?t'
+                      ? formatReaderText(cell)
+                      : '—'}
                   </td>
                 ))}
               </tr>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1038" role="img" aria-labelledby="title desc">
   <title id="title">拜亚斯都市：终盘解锁链</title>
-  <desc id="desc">展示同步器、两张ID卡与两组密码、四保护锁、电梯供电、双加速器和三阶段决战的逻辑条件。。原创流程示意 · 非实机地图 · 0.99未验证</desc>
+  <desc id="desc">展示同步器、两张ID卡与两组密码、四保护锁、电梯供电、双加速器和三阶段决战的逻辑条件。。原创流程示意 · 非实机地图</desc>
   <rect width="840" height="1038" rx="20" fill="#f4f7fa" />
   <text x="48" y="51" fill="#183243" font-size="25" font-family="sans-serif" font-weight="700">拜亚斯都市：终盘解锁链</text>
   <text x="48" y="80" fill="#546878" font-size="15" font-family="sans-serif">箭头表示推荐推进次序与事件条件，不表示地理距离或坐标。</text>
@@ -46,6 +46,6 @@
   <text x="80" y="868" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">7</text>
   <text x="112" y="855" fill="#183243" font-size="18" font-family="sans-serif">第三战前营地恢复、修车补甲</text>
   <text x="112" y="881" fill="#183243" font-size="18" font-family="sans-serif">再战第三阶段并保存通关标记</text>
-  <text x="48" y="991" fill="#546878" font-size="15" font-family="sans-serif">原创流程示意 · 非实机地图 · 0.99未验证</text>
+  <text x="48" y="991" fill="#546878" font-size="15" font-family="sans-serif">原创流程示意 · 非实机地图</text>
   <text x="48" y="1015" fill="#546878" font-size="13" font-family="sans-serif">Metal Max Wiki 项目原创；事实出处见同章引用，未复用外部截图或地图像素。</text>
 </svg>

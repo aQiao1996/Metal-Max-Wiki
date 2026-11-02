@@ -2,6 +2,7 @@ import rawEquipmentDataset from '../../../../../../data/interim/mm2r/0.99/equipm
 
 import type { EquipmentEntry } from '@/types/equipment'
 import { toEquipmentEntry } from './entry'
+import { applyVerifiedNames } from './verified-names'
 
 export { toEquipmentEntry } from './entry'
 
@@ -29,7 +30,9 @@ export function parseEquipmentDataset(input: unknown): EquipmentDataset {
 
 const equipmentDataset = parseEquipmentDataset(rawEquipmentDataset)
 
-const equipmentCatalog = equipmentDataset.records.map(toEquipmentEntry)
+const equipmentCatalog = applyVerifiedNames(equipmentDataset.records).map(
+  toEquipmentEntry,
+)
 
 /** 返回通过边界校验的原始装备记录。 */
 export function getEquipmentCatalog(): readonly RawEquipmentRecord[] {

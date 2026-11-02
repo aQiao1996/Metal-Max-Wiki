@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 920" role="img" aria-labelledby="title desc">
   <title id="title">主线推进总览</title>
-  <desc id="desc">从第一辆车、铁爪塔、取得船、黑暗水道、不灭关卡到拜亚斯都市与通关的推荐推进顺序，非地理地图。。原创流程示意 · 非实机地图 · 0.99未验证</desc>
+  <desc id="desc">从第一辆车、铁爪塔、取得船、黑暗水道、不灭关卡到拜亚斯都市与通关的推荐推进顺序，非地理地图。。原创流程示意 · 非实机地图</desc>
   <rect width="840" height="920" rx="20" fill="#f4f7fa" />
   <text x="48" y="51" fill="#183243" font-size="25" font-family="sans-serif" font-weight="700">主线推进总览</text>
   <text x="48" y="80" fill="#546878" font-size="15" font-family="sans-serif">箭头表示推荐推进次序与事件条件，不表示地理距离或坐标。</text>
@@ -40,6 +40,6 @@
   <text x="80" y="750" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">6</text>
   <text x="112" y="737" fill="#183243" font-size="18" font-family="sans-serif">取得玛丽琳密码，关闭双加速器</text>
   <text x="112" y="763" fill="#183243" font-size="18" font-family="sans-serif">最终三阶段 → 保存正式通关记录</text>
-  <text x="48" y="873" fill="#546878" font-size="15" font-family="sans-serif">原创流程示意 · 非实机地图 · 0.99未验证</text>
+  <text x="48" y="873" fill="#546878" font-size="15" font-family="sans-serif">原创流程示意 · 非实机地图</text>
   <text x="48" y="897" fill="#546878" font-size="13" font-family="sans-serif">Metal Max Wiki 项目原创；事实出处见同章引用，未复用外部截图或地图像素。</text>
 </svg>

@@ -66,6 +66,12 @@ services:
         read_only: true
         bind:
           create_host_path: false
+      - type: bind
+        source: ../data/processed
+        target: /app/data/processed
+        read_only: true
+        bind:
+          create_host_path: false
     networks: [application, database]
     expose: ['8000']
     depends_on:

@@ -66,6 +66,12 @@ def _equipment_chunks(record: EquipmentRecord) -> list[EvidenceChunk]:
     facts = equipment_facts(record)
     facts.pop("逐星级普通改造", None)
     facts.pop("名称说明", None)
+    name_scope = (
+        "名称核验范围：当前名称来自本机0.99 ROM提取；"
+        "仅核对名称，数值、获取条件与机制仍为参考资料。\n"
+        if record.name_verification is not None
+        else ""
+    )
     facts.pop("加成计算补充出处", None)
     path = f"/wiki/equipment/{record.id}"
     names = _names(record.names)
@@ -78,7 +84,7 @@ def _equipment_chunks(record: EquipmentRecord) -> list[EvidenceChunk]:
             title=f"{record.name}｜{heading}",
             entity_names=names,
             subject_names=(),
-            text=text,
+            text=name_scope + text,
             path=path + ("#equipment-modifications-heading" if stars is not None else ""),
             verification_status=record.verification_status,
             stars=stars,

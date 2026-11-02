@@ -5,10 +5,13 @@ import { notFound } from 'next/navigation'
 import { ExternalLink, Search } from 'lucide-react'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import { getGuides, guidePhaseIdSchema, guideReaderNote } from '@/data/guides'
+import { getGuides, guidePhaseIdSchema } from '@/data/guides'
 import { buildVersionPath } from '@/lib/version-routes'
 import { GuideList } from '@/components/guides/GuideList'
-import { GuideDiagramFigure } from '@/components/guides/GuideReference'
+import {
+  formatGuideReaderNote,
+  GuideDiagramFigure,
+} from '@/components/guides/GuideReference'
 
 export const metadata: Metadata = {
   title: '主线图文攻略',
@@ -56,7 +59,7 @@ export default async function GuidesPage({
           章操作清单。主线必需、推进前准备与可选支线均有单独标识。
         </p>
         <p className="border-border text-muted-foreground mt-5 max-w-3xl border-l-2 pl-4 text-sm leading-7">
-          {guideReaderNote(data.referenceNote)}
+          {formatGuideReaderNote(data.referenceNote)}
         </p>
       </header>
 
@@ -113,8 +116,7 @@ export default async function GuidesPage({
 
       <div className="flex flex-wrap items-center justify-between gap-3 py-5 text-xs">
         <p className="text-muted-foreground">
-          显示 {data.total} / {data.chapterCount} 章 · 中文名称为参考译名，0.99
-          未实测
+          显示 {data.total} / {data.chapterCount} 章
         </p>
         {q || phase ? (
           <Link
@@ -163,7 +165,7 @@ export default async function GuidesPage({
           查看通关流程总览与阅读说明
         </summary>
         <p className="text-muted-foreground mt-4 text-sm leading-7">
-          {guideReaderNote(data.routeNote)}
+          {formatGuideReaderNote(data.routeNote)}
         </p>
         <div className="mt-5 space-y-5">
           {data.diagrams.map((diagram) => (

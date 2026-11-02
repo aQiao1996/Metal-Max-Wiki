@@ -1,4 +1,5 @@
 import type { WikiAttribute } from '@/types/wiki'
+import { formatReaderText } from '@/lib/reader-text'
 
 interface AttributeTableProps {
   attributes: readonly WikiAttribute[]
@@ -21,10 +22,10 @@ export function AttributeTable({ attributes }: AttributeTableProps) {
           >
             <dt className="text-muted-foreground text-sm">{attribute.label}</dt>
             <dd className="text-foreground min-w-0 text-sm font-medium break-words">
-              {attribute.value}
+              {formatReaderText(attribute.value)}
               {attribute.note && (
                 <span className="text-muted-foreground mt-1 block font-normal">
-                  {attribute.note}
+                  {formatReaderText(attribute.note)}
                 </span>
               )}
             </dd>

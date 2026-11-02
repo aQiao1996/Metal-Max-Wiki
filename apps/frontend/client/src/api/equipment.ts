@@ -1,12 +1,12 @@
 import { z } from 'zod'
 
-import { rawEquipmentRecordSchema } from '@/data/equipment/schema'
+import { equipmentRecordSchema } from '@/data/equipment/schema'
 import { toEquipmentEntry } from '@/data/equipment/entry'
 import { restoreSourceKeys } from '@/lib/request/source-keys'
 import { equipmentTypeIds } from '@/types/equipment'
 
 const apiRecordSchema = z
-  .preprocess(restoreSourceKeys, rawEquipmentRecordSchema)
+  .preprocess(restoreSourceKeys, equipmentRecordSchema)
   .transform(toEquipmentEntry)
 export const equipmentPageSchema = z.object({
   list: z.array(apiRecordSchema),

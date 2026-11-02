@@ -4,8 +4,8 @@ import { ArrowRight } from 'lucide-react'
 
 import type { GameVersionSlug } from '@/config/game-versions'
 import { buildVersionPath } from '@/lib/version-routes'
+import { formatReaderText } from '@/lib/reader-text'
 import type { SearchResult } from '@/types/wiki'
-import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 
 interface SearchResultListProps {
   results: readonly SearchResult[]
@@ -27,11 +27,6 @@ export function SearchResultList({ results, version }: SearchResultListProps) {
             <span className="min-w-0">
               <span className="flex flex-wrap items-center gap-2 text-lg font-semibold text-[var(--mm-navy)]">
                 <span>{result.name}</span>
-                {result.verificationStatus && (
-                  <EquipmentVerificationBadge
-                    status={result.verificationStatus}
-                  />
-                )}
               </span>
               {result.nameSource === 'zh_reference' && (
                 <span className="text-muted-foreground mt-1 block text-xs">
@@ -44,7 +39,7 @@ export function SearchResultList({ results, version }: SearchResultListProps) {
                 </span>
               )}
               <span className="text-muted-foreground mt-2 block text-sm leading-6">
-                {result.summary}
+                {formatReaderText(result.summary)}
               </span>
             </span>
             <ArrowRight className="text-muted-foreground group-hover:text-foreground mt-1 hidden size-4 transition-transform group-hover:translate-x-1 sm:block" />

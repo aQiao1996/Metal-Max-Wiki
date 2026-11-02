@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
-import { ArrowLeft, Info } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { equipmentTypeById, equipmentTypes } from '@/config/equipment-types'
@@ -100,10 +100,6 @@ export default async function EquipmentPage({
           {version.game} · {version.version}
           ，按装备类型检索属性、适用职业与关键数值。
         </p>
-        <div className="bg-accent text-accent-foreground mt-5 flex max-w-3xl items-start gap-2.5 border-l-2 border-[var(--mm-signal)] px-3 py-3 text-sm leading-6">
-          <Info className="mt-1 size-4 shrink-0" aria-hidden="true" />
-          <p>资料包含日版参考与汉化兼容候选，尚未完成 0.99 逐项实机核验。</p>
-        </div>
       </header>
 
       <section className="pt-7" aria-labelledby="equipment-type-heading">

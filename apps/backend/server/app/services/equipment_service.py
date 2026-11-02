@@ -88,7 +88,11 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             if record.attributes.get(f"{key}_raw") == "○"
         )
     if record.kind in ("sub_gun", "special_equipment", "c_unit", "engine"):
-        facts["名称说明"] = "中文参考译名，未核对 0.99 实机名称"
+        facts["名称说明"] = (
+            "名称已从用户指定的0.99 ROM提取核对；本段数值与机制仍为参考资料"
+            if record.name_verification is not None
+            else "中文参考译名，未核对 0.99 实机名称"
+        )
         facts["改造说明"] = (
             "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
         )

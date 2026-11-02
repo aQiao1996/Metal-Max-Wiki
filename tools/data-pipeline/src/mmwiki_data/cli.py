@@ -37,6 +37,8 @@ from mmwiki_data.normalization_models import NormalizedBundle
 from mmwiki_data.parser import extract_page
 from mmwiki_data.quest_normalization import load_quest_references, validate_quest_sources
 from mmwiki_data.quests import collect_quests
+from mmwiki_data.rom_names import validate_rom_names, verify_rom_names
+from mmwiki_data.rom_parameters import validate_rom_parameters, verify_rom_parameters
 from mmwiki_data.special_equipment import collect_special_equipment, load_special_equipment
 from mmwiki_data.storage import (
     ManifestError,
@@ -227,6 +229,11 @@ def audit(repo_root: Path) -> list[str]:
         validate_guide_assets(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid guide source: {error}")
+    try:
+        validate_rom_names(repo_root)
+        validate_rom_parameters(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid ROM name verification: {error}")
     return errors
 
 
@@ -376,6 +383,11 @@ def normalize(repo_root: Path) -> dict[str, object]:
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Metal Max Wiki data acquisition")
     subparsers = parser.add_subparsers(dest="command", required=True)
+    for command in ("verify-rom-names", "verify-rom-parameters"):
+        rom_parser = subparsers.add_parser(command)
+        rom_parser.add_argument("--repo-root", type=Path, required=True)
+        rom_parser.add_argument("--rom", type=Path, required=True)
+        rom_parser.add_argument("--check", action="store_true")
     for command in (
         "collect",
         "collect-special-equipment",
@@ -412,6 +424,18 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "verify-rom-parameters":
+            parameter_summary = verify_rom_parameters(
+                arguments.repo_root.resolve(), arguments.rom.resolve(), check=arguments.check
+            )
+            print(json.dumps(parameter_summary, ensure_ascii=False))
+            return 0
+        if arguments.command == "verify-rom-names":
+            rom_summary = verify_rom_names(
+                arguments.repo_root.resolve(), arguments.rom.resolve(), check=arguments.check
+            )
+            print(json.dumps(rom_summary, ensure_ascii=False))
+            return 0
         if arguments.command == "asset-publish-guides":
             count = publish_guide_assets(arguments.repo_root.resolve())
             print(json.dumps({"published": count}, ensure_ascii=False))

@@ -1,4 +1,7 @@
-import type { RawEquipmentRecord } from '@/data/equipment/schema'
+import type {
+  EquipmentRecord,
+  RawEquipmentRecord,
+} from '@/data/equipment/schema'
 
 export const equipmentTypeIds = [
   'human-weapon',
@@ -14,7 +17,7 @@ export type EquipmentNameSource = 'zh_099' | 'zh_09' | 'zh_reference' | 'ja'
 export type EquipmentSort =
   'name-asc' | 'attack-desc' | 'capacity-desc' | 'price-asc' | 'weight-asc'
 
-export interface EquipmentEntry extends RawEquipmentRecord {
+export interface EquipmentEntry extends EquipmentRecord {
   type: EquipmentTypeId
   name: string
   nameSource: EquipmentNameSource

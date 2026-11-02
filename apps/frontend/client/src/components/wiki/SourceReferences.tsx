@@ -13,7 +13,7 @@ export function SourceReferences({ sources }: SourceReferencesProps) {
         id="sources-heading"
         className="text-xl font-semibold tracking-tight text-[var(--mm-navy)]"
       >
-        来源与校对
+        资料来源
       </h2>
       {sources.length > 0 ? (
         <ol className="border-border mt-5 border-t">
@@ -43,17 +43,13 @@ export function SourceReferences({ sources }: SourceReferencesProps) {
                   查看来源
                   <ExternalLink className="size-3.5" />
                 </a>
-              ) : (
-                <span className="text-muted-foreground text-xs">
-                  {source.status === 'verified' ? '已核对' : '待补充'}
-                </span>
-              )}
+              ) : null}
             </li>
           ))}
         </ol>
       ) : (
         <p className="border-border text-muted-foreground mt-4 border-y py-5 text-sm">
-          来源记录尚未补充，本页不会将未核对内容标记为已验证。
+          来源记录尚未补充。
         </p>
       )}
     </section>

@@ -28,6 +28,8 @@
     "data:collect:quests": "cd tools/data-pipeline && uv run mmwiki-data collect-quests --repo-root ../..",
     "data:collect:guides": "cd tools/data-pipeline && uv run mmwiki-data collect-guides --repo-root ../..",
     "data:normalize": "cd tools/data-pipeline && uv run mmwiki-data normalize --repo-root ../..",
+    "data:verify:rom": "cd tools/data-pipeline && uv run mmwiki-data verify-rom-names --repo-root ../..",
+    "data:verify:parameters": "cd tools/data-pipeline && uv run mmwiki-data verify-rom-parameters --repo-root ../..",
     "data:audit": "cd tools/data-pipeline && uv run mmwiki-data audit --repo-root ../.. && uv run mmwiki-data asset-audit --repo-root ../..",
     "assets:audit": "cd tools/data-pipeline && uv run mmwiki-data asset-audit --repo-root ../..",
     "assets:fetch": "cd tools/data-pipeline && uv run mmwiki-data asset-fetch --repo-root ../..",

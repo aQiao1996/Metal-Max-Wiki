@@ -8,6 +8,7 @@ import { ArrowUpRight, BookOpenText, Send } from 'lucide-react'
 import { askQuestion, getModelStatus } from '@/api/ai'
 import type { GameVersion } from '@/config/game-versions'
 import { useCurrentUser } from '@/hooks/useCurrentUser'
+import { formatReaderText } from '@/lib/reader-text'
 import { Button } from '@/components/ui/button'
 
 const suggestions = [
@@ -173,9 +174,6 @@ export function AiWorkspace({ version }: { version: GameVersion }) {
             <p className="mt-4 text-sm leading-8 break-words whitespace-pre-wrap">
               {answer.data.answer}
             </p>
-            <p className="text-muted-foreground mt-5 text-xs leading-6">
-              引用资料包含日版参考与汉化兼容候选，尚未完成 0.99 逐项实机核验。
-            </p>
           </section>
         )}
       </section>
@@ -194,14 +192,8 @@ export function AiWorkspace({ version }: { version: GameVersion }) {
                   <ArrowUpRight className="size-3.5 shrink-0" />
                 </Link>
                 <p className="text-muted-foreground mt-1 line-clamp-5 text-xs leading-6 break-words">
-                  {source.excerpt}
+                  {formatReaderText(source.excerpt)}
                 </p>
-                <span className="text-muted-foreground mt-1 block text-xs">
-                  {source.verificationStatus === 'source_only'
-                    ? '日版参考'
-                    : '兼容候选'}{' '}
-                  · 查看详情核对原始来源
-                </span>
               </li>
             ))}
           </ol>
