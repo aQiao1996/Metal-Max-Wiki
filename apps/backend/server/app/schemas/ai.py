@@ -22,7 +22,7 @@ class AnswerSource(CamelModel):
     title: str
     href: str
     excerpt: str
-    verification_status: Literal["compatible_candidate"]
+    verification_status: Literal["source_only", "compatible_candidate"]
 
 
 class AnswerData(CamelModel):

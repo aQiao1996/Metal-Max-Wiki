@@ -20,12 +20,13 @@ class NameSet(StrictModel):
     ja: str | None = None
     zh_09: str | None = None
     zh_099: str | None = None
+    zh_reference: str | None = Field(default=None, exclude_if=lambda value: value is None)
     aliases: list[str] = Field(default_factory=list)
 
     @model_validator(mode="after")
     def validate_names(self) -> NameSet:
         """规范别名，并确保至少有一个名称。"""
-        for field in ("ja", "zh_09", "zh_099"):
+        for field in ("ja", "zh_09", "zh_099", "zh_reference"):
             value = getattr(self, field)
             if value is not None:
                 setattr(self, field, normalize("NFKC", value).strip() or None)
@@ -35,7 +36,7 @@ class NameSet(StrictModel):
         if len(aliases) != len(set(aliases)):
             raise ValueError("duplicate alias after NFKC normalization")
         self.aliases = sorted(aliases)
-        if not any((self.ja, self.zh_09, self.zh_099, self.aliases)):
+        if not any((self.ja, self.zh_09, self.zh_099, self.zh_reference, self.aliases)):
             raise ValueError("at least one name is required")
         return self
 
@@ -110,6 +111,24 @@ def sorted_unique_source_spans(source_spans: list[SourceSpan]) -> list[SourceSpa
     ]
 
 
+class EquipmentModification(StrictModel):
+    """同一星级下的原始改造数值，不推算缺失项。"""
+
+    stars: int = Field(ge=0, le=3)
+    attack_min_raw: str
+    attack_raw: str
+    attack_max_raw: str
+    defense_min_raw: str
+    defense_raw: str
+    defense_max_raw: str
+    magazine_min_raw: str
+    magazine_raw: str
+    magazine_max_raw: str
+    weight_min_raw: str
+    weight_raw: str
+    weight_max_raw: str
+
+
 class NormalizedRecord(StrictModel):
     """尚待本机版本核验的标准化领域记录。"""
 
@@ -120,6 +139,9 @@ class NormalizedRecord(StrictModel):
     kind: str = Field(pattern=r"^[a-z][a-z0-9_]*$")
     names: NameSet
     attributes: dict[str, str | int | float | bool | None]
+    modifications: list[EquipmentModification] = Field(
+        default_factory=list, exclude_if=lambda value: not value
+    )
     version_scope: list[str] = Field(default_factory=list)
     verification_status: VerificationStatus
     source_refs: list[SourceRef] = Field(min_length=1)

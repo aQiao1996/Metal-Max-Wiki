@@ -95,9 +95,7 @@ export default async function EquipmentPage({
         </p>
         <div className="bg-accent text-accent-foreground mt-5 flex max-w-3xl items-start gap-2.5 border-l-2 border-[var(--mm-signal)] px-3 py-3 text-sm leading-6">
           <Info className="mt-1 size-4 shrink-0" aria-hidden="true" />
-          <p>
-            当前收录的是 0.9 系资料整理出的 0.99 兼容候选，尚未完成逐项实机核验
-          </p>
+          <p>资料包含日版参考与汉化兼容候选，尚未完成 0.99 逐项实机核验。</p>
         </div>
       </header>
 

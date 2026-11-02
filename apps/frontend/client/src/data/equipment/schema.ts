@@ -4,7 +4,7 @@ const nonEmptyStringSchema = z.string().min(1)
 const sourceHashSchema = z.string().regex(/^sha256:[0-9a-f]{64}$/)
 const equipmentIdSchema = z.string().regex(/^[a-z0-9-]+-[0-9a-f]{10}$/)
 const interimVerificationStatusSchema = z
-  .enum(['compatible_candidate', 'verified_0_99'])
+  .enum(['source_only', 'compatible_candidate', 'verified_0_99'])
   .superRefine((status, context) => {
     if (status === 'verified_0_99') {
       context.addIssue({
@@ -30,6 +30,7 @@ const equipmentNamesSchema = z
     ja: nonEmptyStringSchema.nullable(),
     zh_09: nonEmptyStringSchema.nullable(),
     zh_099: nonEmptyStringSchema.nullable(),
+    zh_reference: nonEmptyStringSchema.nullable().optional(),
     aliases: z.array(nonEmptyStringSchema),
   })
   .strict()
@@ -58,15 +59,34 @@ const equipmentSourceSpanSchema = z
   })
   .strict()
 
+const modificationSchema = z
+  .object({
+    stars: z.number().int().min(0).max(3),
+    attack_min_raw: z.string(),
+    attack_raw: z.string(),
+    attack_max_raw: z.string(),
+    defense_min_raw: z.string(),
+    defense_raw: z.string(),
+    defense_max_raw: z.string(),
+    magazine_min_raw: z.string(),
+    magazine_raw: z.string(),
+    magazine_max_raw: z.string(),
+    weight_min_raw: z.string(),
+    weight_raw: z.string(),
+    weight_max_raw: z.string(),
+  })
+  .strict()
+
 export const rawEquipmentRecordSchema = z
   .object({
     id: equipmentIdSchema,
     game: z.literal('mm2r'),
     target_version: z.literal('0.99'),
     domain: z.literal('equipment'),
-    kind: z.enum(['human_weapon', 'main_cannon']),
+    kind: z.enum(['human_weapon', 'main_cannon', 'special_equipment']),
     names: equipmentNamesSchema,
     attributes: z.record(z.string(), z.union([z.string(), z.number()])),
+    modifications: z.array(modificationSchema).optional(),
     version_scope: z.array(nonEmptyStringSchema),
     verification_status: interimVerificationStatusSchema,
     source_refs: z.array(equipmentSourceRefSchema).min(1),

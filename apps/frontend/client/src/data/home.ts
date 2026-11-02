@@ -1,6 +1,7 @@
 import { getEquipmentEntries } from '@/data/equipment/catalog'
 import type { WikiEntitySummary } from '@/types/wiki'
 import { guides } from '@/data/guides'
+import { equipmentTypeById } from '@/config/equipment-types'
 
 export const recentEntities: WikiEntitySummary[] = getEquipmentEntries()
   .slice(0, 4)
@@ -13,7 +14,7 @@ export const recentEntities: WikiEntitySummary[] = getEquipmentEntries()
       .map((key) => entry.attributes[key])
       .filter((value) => value !== undefined)
       .join(' · '),
-    tags: [entry.type === 'main-cannon' ? '主炮' : '人类武器'],
+    tags: [equipmentTypeById.get(entry.type)?.label ?? '装备'],
     verification: 'pending',
   }))
 export const featuredEntity = recentEntities[0]

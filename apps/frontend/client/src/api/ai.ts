@@ -8,7 +8,7 @@ const sourceSchema = z.object({
   title: z.string(),
   href: z.string().regex(/^\/v\/[a-z0-9-]+\/wiki\/equipment\/[a-z0-9-]+$/),
   excerpt: z.string(),
-  verificationStatus: z.literal('compatible_candidate'),
+  verificationStatus: z.enum(['source_only', 'compatible_candidate']),
 })
 const answerSchema = z.object({
   answer: z.string(),

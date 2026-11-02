@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button'
 const suggestions = [
   '宇宙炮的攻击力和获取方式是什么？',
   '爆裂弩适合哪些职业？',
-  '44玛格南枪在哪里买？',
+  'DDT暴雨有什么特殊作用？',
 ] as const
 
 export function AiWorkspace({ version }: { version: GameVersion }) {
@@ -171,7 +171,7 @@ export function AiWorkspace({ version }: { version: GameVersion }) {
               {answer.data.answer}
             </p>
             <p className="text-muted-foreground mt-5 text-xs leading-6">
-              资料为 0.99 兼容候选，未经逐项实机核验；数值以你的游戏界面为准。
+              引用资料包含日版参考与汉化兼容候选，尚未完成 0.99 逐项实机核验。
             </p>
           </section>
         )}
@@ -194,7 +194,10 @@ export function AiWorkspace({ version }: { version: GameVersion }) {
                   {source.excerpt}
                 </p>
                 <span className="text-muted-foreground mt-1 block text-xs">
-                  兼容候选 · 查看详情核对原始来源
+                  {source.verificationStatus === 'source_only'
+                    ? '日版参考'
+                    : '兼容候选'}{' '}
+                  · 查看详情核对原始来源
                 </span>
               </li>
             ))}

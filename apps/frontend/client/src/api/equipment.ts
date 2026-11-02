@@ -5,6 +5,8 @@ import { toEquipmentEntry } from '@/data/equipment/entry'
 import { request } from '@/lib/request'
 import { equipmentTypeIds, type EquipmentEntry } from '@/types/equipment'
 import type { SearchResult } from '@/types/wiki'
+import { equipmentTypeById } from '@/config/equipment-types'
+import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
 
 function restoreSourceKeys(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(restoreSourceKeys)
@@ -42,7 +44,7 @@ export const equipmentPageSchema = z.object({
   }),
 })
 
-export const suggestedSearches = ['宇宙炮', '爆裂弩', '44玛格南枪'] as const
+export const suggestedSearches = ['宇宙炮', 'DDT暴雨', '海之猎人'] as const
 
 /** 将真实装备转换为搜索结果，所有链接指向稳定 ID。 */
 export function toSearchResult(entry: EquipmentEntry): SearchResult {
@@ -52,11 +54,18 @@ export function toSearchResult(entry: EquipmentEntry): SearchResult {
     name: entry.name,
     aliases: entry.names.aliases,
     summary: ['attack_raw', 'range_raw', 'acquisition_raw']
-      .map((key) => entry.attributes[key])
+      .map((key) => {
+        const value = entry.attributes[key]
+        return value !== undefined && entry.type === 'special-equipment'
+          ? formatSpecialEquipmentValue(key, value)
+          : value
+      })
       .filter((value) => value !== undefined)
       .join(' · '),
     href: `/wiki/equipment/${entry.id}`,
-    categoryLabel: entry.type === 'main-cannon' ? '主炮' : '人类武器',
+    categoryLabel: equipmentTypeById.get(entry.type)?.label ?? '装备',
+    verificationStatus: entry.verification_status,
+    nameSource: entry.nameSource,
   }
 }
 

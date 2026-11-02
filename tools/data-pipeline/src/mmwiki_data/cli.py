@@ -19,7 +19,9 @@ from mmwiki_data.models import (
     FailedTarget,
 )
 from mmwiki_data.normalization import NormalizationError, normalize_snapshots
+from mmwiki_data.normalization_models import NormalizedBundle
 from mmwiki_data.parser import extract_page
+from mmwiki_data.special_equipment import collect_special_equipment, load_special_equipment
 from mmwiki_data.storage import (
     ManifestError,
     load_sources,
@@ -164,6 +166,10 @@ def audit(repo_root: Path) -> list[str]:
             if not isinstance(record, dict) or record.get("verification_status") != "verified_0_99":
                 errors.append(f"{path}: record {index} is not verified_0_99")
 
+    try:
+        load_special_equipment(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid S-E source: {error}")
     return errors
 
 
@@ -214,6 +220,14 @@ def _load_normalization_snapshots(repo_root: Path) -> list[CandidateSnapshot]:
 def normalize(repo_root: Path) -> dict[str, object]:
     """将完整候选集合写入确定性的 interim 数据包。"""
     result = normalize_snapshots(_load_normalization_snapshots(repo_root))
+    special_equipment = load_special_equipment(repo_root)
+    if special_equipment is not None:
+        equipment = result.bundles["equipment"]
+        result.bundles["equipment"] = NormalizedBundle(
+            domain="equipment",
+            records=sorted([*equipment.records, *special_equipment.records], key=lambda r: r.id),
+            source_hashes=[*equipment.source_hashes, *special_equipment.source_hashes],
+        )
     output_root = repo_root / "data" / "interim" / "mm2r" / "0.99"
     output_values: dict[Path, BaseModel] = {
         output_root / _NORMALIZED_FILENAMES[domain]: bundle
@@ -243,7 +257,14 @@ def normalize(repo_root: Path) -> dict[str, object]:
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Metal Max Wiki data acquisition")
     subparsers = parser.add_subparsers(dest="command", required=True)
-    for command in ("collect", "audit", "normalize", "asset-audit", "asset-fetch"):
+    for command in (
+        "collect",
+        "collect-special-equipment",
+        "audit",
+        "normalize",
+        "asset-audit",
+        "asset-fetch",
+    ):
         command_parser = subparsers.add_parser(command)
         command_parser.add_argument("--repo-root", type=Path, required=True)
     return parser
@@ -259,6 +280,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-special-equipment":
+            se_summary = collect_special_equipment(arguments.repo_root.resolve())
+            print(json.dumps(se_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect":
             report = collect(arguments.repo_root.resolve())
             print(report.model_dump_json(indent=2))

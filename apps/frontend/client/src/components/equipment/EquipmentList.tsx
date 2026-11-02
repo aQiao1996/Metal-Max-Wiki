@@ -69,7 +69,7 @@ export function EquipmentList({
     <ul className="border-border border-t">
       {entries.map((entry) => {
         const fields =
-          entry.type === 'main-cannon' ? mainCannonFields : humanWeaponFields
+          entry.type === 'human-weapon' ? humanWeaponFields : mainCannonFields
         const japaneseName =
           entry.names.ja !== null && entry.names.ja !== entry.name
             ? entry.names.ja
@@ -95,6 +95,12 @@ export function EquipmentList({
                     日文名：{japaneseName}
                   </span>
                 )}
+                {entry.type === 'special-equipment' &&
+                  entry.attributes.stat_condition_raw !== undefined && (
+                    <span className="text-muted-foreground mt-1 block text-xs leading-5">
+                      {String(entry.attributes.stat_condition_raw)}
+                    </span>
+                  )}
               </span>
 
               <dl className="grid min-w-0 grid-cols-3 gap-3 sm:contents">

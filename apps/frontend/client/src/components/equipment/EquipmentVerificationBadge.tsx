@@ -28,7 +28,7 @@ export function EquipmentVerificationBadge({
       className="bg-accent text-accent-foreground rounded font-normal"
     >
       <CircleDashed aria-hidden="true" />
-      兼容候选
+      {status === 'source_only' ? '日版参考' : '兼容候选'}
     </Badge>
   )
 }

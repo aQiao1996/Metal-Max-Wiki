@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 import type { GameVersionSlug } from '@/config/game-versions'
 import { buildVersionPath } from '@/lib/version-routes'
 import type { SearchResult } from '@/types/wiki'
+import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 
 interface SearchResultListProps {
   results: readonly SearchResult[]
@@ -24,9 +25,19 @@ export function SearchResultList({ results, version }: SearchResultListProps) {
               {result.categoryLabel}
             </span>
             <span className="min-w-0">
-              <span className="block text-lg font-semibold text-[var(--mm-navy)]">
-                {result.name}
+              <span className="flex flex-wrap items-center gap-2 text-lg font-semibold text-[var(--mm-navy)]">
+                <span>{result.name}</span>
+                {result.verificationStatus && (
+                  <EquipmentVerificationBadge
+                    status={result.verificationStatus}
+                  />
+                )}
               </span>
+              {result.nameSource === 'zh_reference' && (
+                <span className="text-muted-foreground mt-1 block text-xs">
+                  中文参考译名
+                </span>
+              )}
               {result.aliases.length > 0 && (
                 <span className="text-muted-foreground mt-1 block text-xs">
                   别名：{result.aliases.join(' / ')}

@@ -16,6 +16,7 @@ class EquipmentNames(CamelModel):
     ja: str | None
     zh_09: str | None
     zh_099: str | None
+    zh_reference: str | None = None
     aliases: list[str]
 
 
@@ -39,16 +40,33 @@ class EquipmentSourceSpan(CamelModel):
     value: str
 
 
+class EquipmentModification(CamelModel):
+    stars: int = Field(ge=0, le=3)
+    attack_min_raw: str
+    attack_raw: str
+    attack_max_raw: str
+    defense_min_raw: str
+    defense_raw: str
+    defense_max_raw: str
+    magazine_min_raw: str
+    magazine_raw: str
+    magazine_max_raw: str
+    weight_min_raw: str
+    weight_raw: str
+    weight_max_raw: str
+
+
 class EquipmentRecord(CamelModel):
     id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
     game: Literal["mm2r"]
     target_version: Literal["0.99"]
     domain: Literal["equipment"]
-    kind: Literal["human_weapon", "main_cannon"]
+    kind: Literal["human_weapon", "main_cannon", "special_equipment"]
     names: EquipmentNames
     attributes: dict[str, str | int | float]
+    modifications: list[EquipmentModification] = Field(default_factory=list)
     version_scope: list[str]
-    verification_status: Literal["compatible_candidate"]
+    verification_status: Literal["source_only", "compatible_candidate"]
     source_refs: list[EquipmentSource] = Field(min_length=1)
     source_spans: list[EquipmentSourceSpan]
     issues: list[str]
@@ -56,17 +74,24 @@ class EquipmentRecord(CamelModel):
 
     @model_validator(mode="after")
     def validate_display_name(self) -> EquipmentRecord:
-        if not any((self.names.zh_099, self.names.zh_09, self.names.ja)):
+        if not any((self.names.zh_099, self.names.zh_09, self.names.zh_reference, self.names.ja)):
             raise ValueError(f"装备缺少可显示名称：{self.id}")
         return self
 
     @property
     def name(self) -> str:
-        return self.names.zh_099 or self.names.zh_09 or self.names.ja or ""
+        return (
+            self.names.zh_099 or self.names.zh_09 or self.names.zh_reference or self.names.ja or ""
+        )
 
     @property
     def equipment_type(self) -> EquipmentType:
-        return "human-weapon" if self.kind == "human_weapon" else "main-cannon"
+        types: dict[str, EquipmentType] = {
+            "human_weapon": "human-weapon",
+            "main_cannon": "main-cannon",
+            "special_equipment": "special-equipment",
+        }
+        return types[self.kind]
 
 
 class EquipmentDataset(CamelModel):

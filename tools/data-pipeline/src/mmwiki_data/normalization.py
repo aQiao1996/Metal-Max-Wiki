@@ -523,7 +523,7 @@ def _merge_records(
     issues = [issue for record in ordered for issue in record.issues]
 
     name_values: dict[str, str | None] = {}
-    for field in ("ja", "zh_09", "zh_099"):
+    for field in ("ja", "zh_09", "zh_099", "zh_reference"):
         if field == "ja" and canonical_ja is not None:
             name_values[field] = canonical_ja
             continue
@@ -563,6 +563,7 @@ def _merge_records(
         ja=name_values["ja"],
         zh_09=name_values["zh_09"],
         zh_099=name_values["zh_099"],
+        zh_reference=name_values["zh_reference"],
         aliases=sorted(aliases),
     )
     attributes: dict[str, AttributeValue] = {}

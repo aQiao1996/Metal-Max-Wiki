@@ -49,11 +49,11 @@ export const equipmentTypes = [
   },
   {
     id: 'special-equipment',
-    kind: null,
-    label: '特殊装备',
-    description: '战车使用的特殊装备。',
-    emptyMessage: '该分类已保留，资料待录入。',
-    sorts: ['name-asc'],
+    kind: 'special_equipment',
+    label: 'S-E',
+    description: '特殊武器、迎击装备与逐星级改造资料。',
+    emptyMessage: '暂无 S-E 资料。',
+    sorts: ['name-asc', 'attack-desc', 'price-asc', 'weight-asc'],
   },
   {
     id: 'c-unit',
@@ -77,6 +77,7 @@ export const defaultEquipmentType = 'human-weapon' satisfies EquipmentTypeId
 
 export const legacyEquipmentDetailIds: ReadonlyMap<string, string> = new Map([
   ['main-cannons/universe-cannon', 'main-cannon-7972064880'],
+  ['special-equipment/ddt-rain', 'special-equipment-dc7dec0d83'],
 ])
 
 export const equipmentTypeById = new Map<EquipmentTypeId, EquipmentTypeConfig>(

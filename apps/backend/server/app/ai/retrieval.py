@@ -20,11 +20,14 @@ def retrieve_equipment(question: str, *, limit: int = 4) -> list[EquipmentRecord
     terms = _terms(query)
     ranked: list[tuple[float, EquipmentRecord]] = []
     for record in load_equipment():
-        names = [record.name, *record.names.aliases]
+        names = [name for name in (record.name, record.names.ja, *record.names.aliases) if name]
         exact = any(normalize("NFKC", name).casefold() in query for name in names)
         title_hits = len(terms & _terms(" ".join(names)))
         body_hits = len(terms & _terms(equipment_text(record)))
-        type_hit = "主炮" in query and record.kind == "main_cannon"
+        type_hit = ("主炮" in query and record.kind == "main_cannon") or (
+            (re.search(r"\bs[\s-]?e\b", query) is not None or "特殊装备" in query)
+            and record.kind == "special_equipment"
+        )
         score = 30 * exact + 4 * title_hits + body_hits + 2 * type_hit
         if score > 0:
             ranked.append((score, record))

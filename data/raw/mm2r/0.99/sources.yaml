@@ -32,3 +32,11 @@ sources:
     usage: cross-check-only
     attribution: w.atwiki.jp/mm2-r
     notes: 未确认可复用许可，不建立整页副本
+  - id: metalmaniax-mm2r
+    title: METAL MAniaX MM2R 战车资料
+    base_url: https://metalmaniax.com/
+    language: ja
+    license: NOASSERTION
+    usage: cross-check-only
+    attribution: METAL MAniaX contributors
+    notes: 只提取 S-E 数值表与获取地点事实，保留逐页出处；不保存整页正文、攻略评论或图片

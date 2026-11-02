@@ -24,6 +24,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
+import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 
 interface GlobalSearchDialogProps {
   version: GameVersion
@@ -169,9 +170,19 @@ export function GlobalSearchDialog({
                       {result.categoryLabel}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="text-foreground block font-medium">
-                        {result.name}
+                      <span className="text-foreground flex flex-wrap items-center gap-2 font-medium">
+                        <span>{result.name}</span>
+                        {result.verificationStatus && (
+                          <EquipmentVerificationBadge
+                            status={result.verificationStatus}
+                          />
+                        )}
                       </span>
+                      {result.nameSource === 'zh_reference' && (
+                        <span className="text-muted-foreground mt-1 block text-xs">
+                          中文参考译名
+                        </span>
+                      )}
                       <span className="text-muted-foreground mt-1 line-clamp-2 block text-sm leading-5">
                         {result.summary}
                       </span>

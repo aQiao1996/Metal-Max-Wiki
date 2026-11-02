@@ -9,6 +9,7 @@ import {
 import type { EquipmentQuery } from '@/types/equipment'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
 
 interface EquipmentFilterFormProps {
   elements: readonly string[]
@@ -74,7 +75,10 @@ export function EquipmentFilterForm({
           <option value="">全部属性</option>
           {elements.map((element) => (
             <option key={element} value={element}>
-              {element}
+              {query.type === 'special-equipment' &&
+              formatSpecialEquipmentValue('element_raw', element) !== element
+                ? `${formatSpecialEquipmentValue('element_raw', element)}（${element}）`
+                : element}
             </option>
           ))}
         </select>

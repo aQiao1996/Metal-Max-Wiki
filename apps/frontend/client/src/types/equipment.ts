@@ -10,7 +10,7 @@ export const equipmentTypeIds = [
 ] as const
 
 export type EquipmentTypeId = (typeof equipmentTypeIds)[number]
-export type EquipmentNameSource = 'zh_099' | 'zh_09' | 'ja'
+export type EquipmentNameSource = 'zh_099' | 'zh_09' | 'zh_reference' | 'ja'
 export type EquipmentSort =
   'name-asc' | 'attack-desc' | 'price-asc' | 'weight-asc'
 

@@ -36,18 +36,26 @@ export function EquipmentSourceReferences({
               <dl className="grid min-w-0 gap-x-5 gap-y-2 text-sm sm:grid-cols-2">
                 <div className="min-w-0">
                   <dt className="font-medium text-[var(--mm-navy)]">
-                    source_id
+                    资料来源
                   </dt>
                   <dd className="text-foreground mt-0.5 font-mono text-xs break-all">
-                    {source.source_id}
+                    {source.source_id === 'metalmaniax-mm2r'
+                      ? 'METAL MAniaX'
+                      : source.source_id === 'zzjb-mm2r'
+                        ? '重装机兵专题站'
+                        : source.source_id}
                   </dd>
                 </div>
                 <div className="min-w-0">
                   <dt className="font-medium text-[var(--mm-navy)]">
-                    target_id
+                    来源页面
                   </dt>
                   <dd className="text-foreground mt-0.5 font-mono text-xs break-all">
-                    {source.target_id}
+                    {source.target_id === 'maniax-special-equipment'
+                      ? source.table_index > 0
+                        ? 'S-E 总表'
+                        : '装备独立详情'
+                      : source.target_id}
                   </dd>
                 </div>
                 <div className="min-w-0">

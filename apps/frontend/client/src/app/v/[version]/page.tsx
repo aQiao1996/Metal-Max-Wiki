@@ -6,6 +6,7 @@ import { ArrowRight, Bot, CircleDot } from 'lucide-react'
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { featuredEntity, recentEntities, recentGuides } from '@/data/home'
 import { wikiCategories } from '@/data/fixtures/wiki'
+import { getEquipmentEntries } from '@/data/equipment/catalog'
 import { buildVersionPath } from '@/lib/version-routes'
 import { CategoryGrid } from '@/components/wiki/CategoryGrid'
 import { EntityList } from '@/components/wiki/EntityList'
@@ -63,7 +64,8 @@ export default async function VersionHomePage({
               情报总览
             </h1>
             <p className="text-muted-foreground mt-3 max-w-2xl text-base leading-7 text-pretty">
-              先从已收录的 150 条装备资料开始，按名称、属性和获取地点查找。
+              从已收录的 {getEquipmentEntries().length}{' '}
+              条装备资料中，按名称、属性和获取地点查找。
             </p>
           </div>
           <div className="text-muted-foreground text-sm sm:text-right">
@@ -104,9 +106,11 @@ export default async function VersionHomePage({
           <div className="bg-muted text-muted-foreground flex aspect-[4/3] items-center justify-center border border-dashed border-[#b7c3c7] text-center text-xs tracking-wide">
             <div>
               <span className="block text-5xl font-semibold text-[var(--mm-navy)]">
-                150
+                {getEquipmentEntries().length}
               </span>
-              <span className="mt-3 block">人类武器与主炮 · 可追溯来源</span>
+              <span className="mt-3 block">
+                人类武器、主炮与 S-E · 可追溯来源
+              </span>
             </div>
           </div>
           <p className="mt-5 text-[11px] font-medium tracking-[0.14em] text-[var(--mm-signal)] uppercase">

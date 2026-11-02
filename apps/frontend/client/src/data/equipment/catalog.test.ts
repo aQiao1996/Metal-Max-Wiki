@@ -75,7 +75,7 @@ describe('equipment catalog', () => {
   it('返回完整的装备目录', () => {
     const catalog = getEquipmentCatalog()
 
-    expect(catalog).toHaveLength(150)
+    expect(catalog).toHaveLength(239)
     expect(
       catalog.filter((record) => record.kind === 'human_weapon'),
     ).toHaveLength(55)
@@ -159,7 +159,7 @@ describe('equipment catalog', () => {
       ZodError,
     )
     expectTypeOf<RawEquipmentRecord['verification_status']>().toEqualTypeOf<
-      'compatible_candidate' | 'verified_0_99'
+      'source_only' | 'compatible_candidate' | 'verified_0_99'
     >()
   })
 
@@ -266,7 +266,7 @@ describe('equipment catalog', () => {
   it('转换全部真实装备记录', () => {
     const entries = getEquipmentEntries()
 
-    expect(entries).toHaveLength(150)
+    expect(entries).toHaveLength(239)
     expect(entries.every((entry) => entry.name.length > 0)).toBe(true)
     expect(
       entries.filter((entry) => entry.type === 'human-weapon'),

@@ -1,4 +1,5 @@
 import { legacyEquipmentCategories } from '@/config/equipment-types'
+import type { EquipmentEntry, EquipmentNameSource } from '@/types/equipment'
 
 export const wikiCategorySlugs = [
   'vehicles',
@@ -88,4 +89,6 @@ export interface SearchResult {
   aliases: readonly string[]
   href: string
   categoryLabel: string
+  verificationStatus?: EquipmentEntry['verification_status']
+  nameSource?: EquipmentNameSource
 }

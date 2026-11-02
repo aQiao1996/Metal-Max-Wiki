@@ -18,12 +18,12 @@ describe('equipment detail page', () => {
     throw new Error('期望装备目录至少包含一条记录')
   }
 
-  it('只允许 150 个 0.99 装备静态参数', () => {
+  it('只允许已收录的 0.99 装备静态参数', () => {
     const params = generateStaticParams()
 
     expect(dynamicParams).toBe(false)
-    expect(params).toHaveLength(150)
-    expect(new Set(params.map(({ id }) => id)).size).toBe(150)
+    expect(params).toHaveLength(239)
+    expect(new Set(params.map(({ id }) => id)).size).toBe(239)
     expect(params.every(({ version }) => version === 'mm2r-099')).toBe(true)
   })
 

@@ -17,6 +17,7 @@ import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVeri
 import { AttributeTable } from '@/components/wiki/AttributeTable'
 
 import { EquipmentReturnLink } from './_components/EquipmentReturnLink'
+import { EquipmentModifications } from './_components/EquipmentModifications'
 import {
   buildEquipmentDetailAttributes,
   equipmentIssueLabels,
@@ -83,7 +84,9 @@ export default async function EquipmentDetailPage({
   const statusMessage =
     entry.verification_status === 'verified_0_99'
       ? '该记录已完成 0.99 实机核验。'
-      : '该记录为兼容候选，尚未完成 0.99 实机核验。'
+      : entry.verification_status === 'source_only'
+        ? '该记录采用日版参考资料，中文名称为参考译名，尚未完成 0.99 实机核验。'
+        : '该记录为兼容候选，尚未完成 0.99 实机核验。'
 
   return (
     <article className="mx-auto max-w-6xl pb-12">
@@ -148,6 +151,7 @@ export default async function EquipmentDetailPage({
       <div className="mt-9 grid min-w-0 gap-12 xl:grid-cols-[minmax(0,1fr)_19rem] xl:items-start">
         <div className="min-w-0 space-y-10">
           <AttributeTable attributes={attributes} />
+          <EquipmentModifications entry={entry} />
           <EquipmentSourceReferences sources={entry.source_refs} />
         </div>
 
@@ -187,6 +191,16 @@ export default async function EquipmentDetailPage({
                   </dt>
                   <dd className="text-foreground mt-1 break-words">
                     {entry.names.ja}
+                  </dd>
+                </div>
+              )}
+              {entry.names.zh_reference && (
+                <div className="border-border min-w-0 border-b py-3">
+                  <dt className="text-foreground text-xs font-medium">
+                    中文参考译名
+                  </dt>
+                  <dd className="text-foreground mt-1 break-words">
+                    {entry.names.zh_reference}
                   </dd>
                 </div>
               )}

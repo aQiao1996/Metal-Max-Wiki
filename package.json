@@ -15,6 +15,7 @@
     "dev:setup": "node scripts/dev-setup.js",
     "dev:check": "cd apps/backend/server && uv run --locked python -m app.cli.doctor",
     "data:collect": "cd tools/data-pipeline && uv run mmwiki-data collect --repo-root ../..",
+    "data:collect:se": "cd tools/data-pipeline && uv run mmwiki-data collect-special-equipment --repo-root ../..",
     "data:normalize": "cd tools/data-pipeline && uv run mmwiki-data normalize --repo-root ../..",
     "data:audit": "cd tools/data-pipeline && uv run mmwiki-data audit --repo-root ../.. && uv run mmwiki-data asset-audit --repo-root ../..",
     "assets:audit": "cd tools/data-pipeline && uv run mmwiki-data asset-audit --repo-root ../..",

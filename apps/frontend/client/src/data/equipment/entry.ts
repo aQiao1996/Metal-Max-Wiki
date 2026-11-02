@@ -12,12 +12,15 @@ export function toEquipmentEntry(record: RawEquipmentRecord): EquipmentEntry {
       ? 'zh_099'
       : record.names.zh_09 !== null
         ? 'zh_09'
-        : record.names.ja !== null
-          ? 'ja'
-          : undefined
+        : record.names.zh_reference
+          ? 'zh_reference'
+          : record.names.ja !== null
+            ? 'ja'
+            : undefined
   if (!nameSource) throw new Error(`装备记录缺少可显示名称：${record.id}`)
   const name = record.names[nameSource]
-  if (name === null) throw new Error(`装备名称为空：${record.id}`)
+  if (name === null || name === undefined)
+    throw new Error(`装备名称为空：${record.id}`)
   const values = ['acquisition_raw', 'additional_raw', 'notes_raw']
     .map((key) => record.attributes[key])
     .filter((value): value is string => typeof value === 'string')
@@ -31,6 +34,7 @@ export function toEquipmentEntry(record: RawEquipmentRecord): EquipmentEntry {
       record.names.ja,
       record.names.zh_09,
       record.names.zh_099,
+      record.names.zh_reference ?? null,
       ...record.names.aliases,
       ...values,
     ]

@@ -5,10 +5,12 @@ import {
 } from '@/lib/equipment-query'
 import type { EquipmentEntry, EquipmentNameSource } from '@/types/equipment'
 import type { WikiAttribute } from '@/types/wiki'
+import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
 
 export const equipmentNameSourceLabels = {
   zh_099: '0.99 实机名称',
   zh_09: '0.9 系汉化名称',
+  zh_reference: '中文参考译名（未经 0.99 实机核对）',
   ja: '日文原名',
 } as const satisfies Record<EquipmentNameSource, string>
 
@@ -16,6 +18,10 @@ export const equipmentIssueLabels: Readonly<Record<string, string>> = {
   missing_japanese_name: '来源缺少日文原名',
   ambiguous_same_source_name: '同一来源存在重名记录',
   source_merged_cell: '原始表格包含跨列单元格',
+  source_detail_unavailable: '来源尚未提供独立详情',
+  source_modification_unavailable: '来源尚未提供完整改造数值',
+  source_value_difference:
+    '总表与独立详情存在同星级数值差异，展示值取自独立详情，仍待核对',
 }
 
 const humanWeaponFields = [
@@ -41,6 +47,22 @@ const mainCannonFields = [
   { key: 'rarity_raw', label: '稀有度' },
 ] as const
 
+const specialEquipmentFields = [
+  { key: 'stat_condition_raw', label: '数值条件' },
+  { key: 'attack_raw', label: '初始攻击力' },
+  { key: 'attack_max_raw', label: '普通改造攻击上限' },
+  { key: 'defense_raw', label: '初始防御力' },
+  { key: 'weight_raw', label: '初始重量（t）' },
+  { key: 'magazine_raw', label: '初始弹仓' },
+  { key: 'range_raw', label: '攻击方式' },
+  { key: 'element_raw', label: '属性' },
+  { key: 'rarity_raw', label: '可获取星级' },
+  { key: 'acquisition_raw', label: '获取方式' },
+  { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
+  { key: 'notes_raw', label: '特殊作用' },
+  { key: 'source_difference_raw', label: '来源数值差异（待核对）' },
+] as const
+
 function toProfessionDisplayValue(value: string | number): string {
   if (value === '○') {
     return '可装备'
@@ -58,14 +80,30 @@ export function buildEquipmentDetailAttributes(
   entry: EquipmentEntry,
 ): WikiAttribute[] {
   const fields =
-    entry.type === 'human-weapon' ? humanWeaponFields : mainCannonFields
+    entry.type === 'human-weapon'
+      ? humanWeaponFields
+      : entry.type === 'special-equipment'
+        ? specialEquipmentFields
+        : mainCannonFields
   const attributes: WikiAttribute[] = []
 
   for (const field of fields) {
     const value = entry.attributes[field.key]
 
     if (value !== undefined) {
-      attributes.push({ label: field.label, value: String(value) })
+      if (
+        field.key === 'acquisition_ja_raw' &&
+        entry.attributes.acquisition_raw !== undefined
+      )
+        continue
+      const displayValue =
+        field.key === 'rarity_raw' &&
+        typeof entry.attributes.obtainable_stars_raw === 'string'
+          ? `${entry.attributes.obtainable_stars_raw.split(',').join('、')} 星（来源记录）`
+          : entry.type === 'special-equipment'
+            ? formatSpecialEquipmentValue(field.key, value)
+            : String(value)
+      attributes.push({ label: field.label, value: displayValue })
     }
   }
 

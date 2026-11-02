@@ -37,6 +37,14 @@ _ATTRIBUTE_LABELS = {
     "acquisition_raw": "获取方式",
     "additional_raw": "追加效果",
     "notes_raw": "备注",
+    "stat_condition_raw": "数值条件",
+    "attack_max_raw": "普通改造攻击上限",
+    "defense_max_raw": "普通改造防御上限",
+    "magazine_max_raw": "普通改造弹仓上限",
+    "weight_max_raw": "重量参考上限",
+    "acquisition_ja_raw": "获取地点原始记录（日文）",
+    "obtainable_stars_raw": "来源标注可获取星级",
+    "source_difference_raw": "同星级来源数值差异（尚待核对）",
 }
 _PROFESSION_LABELS = {
     "hunter": "猎人",
@@ -61,6 +69,28 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             for key, label in _PROFESSION_LABELS.items()
             if record.attributes.get(f"{key}_raw") == "○"
         )
+    if record.kind == "special_equipment":
+        facts["名称说明"] = "中文参考译名，未核对 0.99 实机名称"
+        if "range_raw" in record.attributes:
+            facts["攻击方式"] = (
+                str(record.attributes["range_raw"])
+                .replace("連射", "连射")
+                .replace("回", "次攻击")
+                .replace("迎撃", "迎击")
+            )
+        facts["逐星级普通改造"] = (
+            "；".join(
+                f"{item.stars} 星：攻击 {item.attack_raw} → {item.attack_max_raw or '未收录'}，"
+                f"防御 {item.defense_raw} → {item.defense_max_raw or '未收录'}，"
+                f"弹仓 {item.magazine_raw} → {item.magazine_max_raw or '未收录'}，"
+                f"重量 {item.weight_raw} → {item.weight_max_raw or '未收录'}"
+                for item in record.modifications
+            )
+            or "来源未提供改造数值"
+        )
+        facts["改造说明"] = (
+            "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
+        )
     return facts
 
 
@@ -74,7 +104,14 @@ def require_available_version(version: str) -> None:
 
 def equipment_text(record: EquipmentRecord) -> str:
     """生成覆盖名称、别名与属性的检索文本。"""
-    values = [record.name, record.names.ja or "", *record.names.aliases]
+    values = [
+        record.name,
+        record.names.ja or "",
+        record.names.zh_09 or "",
+        record.names.zh_099 or "",
+        record.names.zh_reference or "",
+        *record.names.aliases,
+    ]
     values.extend(str(value) for value in record.attributes.values())
     return normalize("NFKC", " ".join(values)).casefold()
 

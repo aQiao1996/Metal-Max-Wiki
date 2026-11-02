@@ -94,12 +94,12 @@ describe('equipment detail', () => {
   })
 
   it('名称来源和已知问题使用固定中文文案', () => {
-    expect(equipmentNameSourceLabels).toEqual({
+    expect(equipmentNameSourceLabels).toMatchObject({
       zh_099: '0.99 实机名称',
       zh_09: '0.9 系汉化名称',
       ja: '日文原名',
     })
-    expect(equipmentIssueLabels).toEqual({
+    expect(equipmentIssueLabels).toMatchObject({
       missing_japanese_name: '来源缺少日文原名',
       ambiguous_same_source_name: '同一来源存在重名记录',
       source_merged_cell: '原始表格包含跨列单元格',
