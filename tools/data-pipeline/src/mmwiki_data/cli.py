@@ -31,6 +31,7 @@ from mmwiki_data.storage import (
     write_json_atomic,
     write_json_batch_atomic,
 )
+from mmwiki_data.sub_guns import collect_sub_guns, load_sub_guns
 
 USER_AGENT = "MetalMaxWikiResearch/0.1 (+https://mm.yangyunqiao.top)"
 
@@ -180,6 +181,10 @@ def audit(repo_root: Path) -> list[str]:
         load_engines(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid engine source: {error}")
+    try:
+        load_sub_guns(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid sub-gun source: {error}")
     return errors
 
 
@@ -234,6 +239,7 @@ def normalize(repo_root: Path) -> dict[str, object]:
         load_special_equipment(repo_root),
         load_c_units(repo_root),
         load_engines(repo_root),
+        load_sub_guns(repo_root),
     ):
         if supplement is None:
             continue
@@ -277,6 +283,7 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect-special-equipment",
         "collect-c-units",
         "collect-engines",
+        "collect-sub-guns",
         "audit",
         "normalize",
         "asset-audit",
@@ -297,6 +304,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-sub-guns":
+            sub_gun_summary = collect_sub_guns(arguments.repo_root.resolve())
+            print(json.dumps(sub_gun_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-engines":
             engine_summary = collect_engines(arguments.repo_root.resolve())
             print(json.dumps(engine_summary, ensure_ascii=False, indent=2))

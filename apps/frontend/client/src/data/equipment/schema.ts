@@ -115,6 +115,7 @@ export const rawEquipmentRecordSchema = z
     kind: z.enum([
       'human_weapon',
       'main_cannon',
+      'sub_gun',
       'special_equipment',
       'c_unit',
       'engine',

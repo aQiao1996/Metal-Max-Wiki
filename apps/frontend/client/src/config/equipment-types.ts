@@ -41,11 +41,11 @@ export const equipmentTypes = [
   },
   {
     id: 'sub-gun',
-    kind: null,
+    kind: 'sub_gun',
     label: '副炮',
-    description: '战车使用的副炮类装备。',
-    emptyMessage: '该分类已保留，资料待录入。',
-    sorts: ['name-asc'],
+    description: '查看副炮的攻击方式、弹仓、迎击适用标记与逐星级改造数值。',
+    emptyMessage: '暂无副炮资料。',
+    sorts: ['name-asc', 'attack-desc', 'weight-asc', 'price-asc'],
   },
   {
     id: 'special-equipment',

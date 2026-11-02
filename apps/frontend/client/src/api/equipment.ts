@@ -6,7 +6,7 @@ import { request } from '@/lib/request'
 import { equipmentTypeIds, type EquipmentEntry } from '@/types/equipment'
 import type { SearchResult } from '@/types/wiki'
 import { equipmentTypeById } from '@/config/equipment-types'
-import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
+import { formatVehicleWeaponValue } from '@/data/equipment/vehicle-weapons'
 
 function restoreSourceKeys(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(restoreSourceKeys)
@@ -64,8 +64,9 @@ export function toSearchResult(entry: EquipmentEntry): SearchResult {
         const value = entry.attributes[key]
         if (key === 'capacity_raw' && value !== undefined)
           return `基础载重 ${value}t`
-        return value !== undefined && entry.type === 'special-equipment'
-          ? formatSpecialEquipmentValue(key, value)
+        return value !== undefined &&
+          (entry.type === 'special-equipment' || entry.type === 'sub-gun')
+          ? formatVehicleWeaponValue(key, value)
           : value
       })
       .filter((value) => value !== undefined)

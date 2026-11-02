@@ -26,6 +26,7 @@ def retrieve_equipment(question: str, *, limit: int = 4) -> list[EquipmentRecord
         body_hits = len(terms & _terms(equipment_text(record)))
         type_hit = (
             ("主炮" in query and record.kind == "main_cannon")
+            or ("副炮" in query and record.kind == "sub_gun")
             or (
                 (re.search(r"\bs[\s-]?e\b", query) is not None or "特殊装备" in query)
                 and record.kind == "special_equipment"

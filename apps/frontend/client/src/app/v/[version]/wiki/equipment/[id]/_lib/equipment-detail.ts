@@ -5,7 +5,7 @@ import {
 } from '@/lib/equipment-query'
 import type { EquipmentEntry, EquipmentNameSource } from '@/types/equipment'
 import type { WikiAttribute } from '@/types/wiki'
-import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
+import { formatVehicleWeaponValue } from '@/data/equipment/vehicle-weapons'
 
 export const equipmentNameSourceLabels = {
   zh_099: '0.99 实机名称',
@@ -56,6 +56,8 @@ const specialEquipmentFields = [
   { key: 'magazine_raw', label: '初始弹仓' },
   { key: 'range_raw', label: '攻击方式' },
   { key: 'element_raw', label: '属性' },
+  { key: 'interception_raw', label: '迎击兵装化' },
+  { key: 'interception_note_raw', label: '迎击说明' },
   { key: 'rarity_raw', label: '可获取星级' },
   { key: 'acquisition_raw', label: '获取方式' },
   { key: 'acquisition_ja_raw', label: '获取地点原始记录（日文）' },
@@ -124,7 +126,7 @@ export function buildEquipmentDetailAttributes(
   const fields =
     entry.type === 'human-weapon'
       ? humanWeaponFields
-      : entry.type === 'special-equipment'
+      : entry.type === 'special-equipment' || entry.type === 'sub-gun'
         ? specialEquipmentFields
         : entry.type === 'c-unit'
           ? cUnitFields
@@ -153,8 +155,8 @@ export function buildEquipmentDetailAttributes(
         field.key === 'rarity_raw' &&
         typeof entry.attributes.obtainable_stars_raw === 'string'
           ? `${entry.attributes.obtainable_stars_raw.split(',').join('、')} 星（来源记录）`
-          : entry.type === 'special-equipment'
-            ? formatSpecialEquipmentValue(field.key, value)
+          : entry.type === 'special-equipment' || entry.type === 'sub-gun'
+            ? formatVehicleWeaponValue(field.key, value)
             : String(value)
       attributes.push({ label: field.label, value: displayValue })
     }

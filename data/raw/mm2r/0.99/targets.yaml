@@ -127,3 +127,9 @@ targets:
     url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A
     output: maniax-engines.json
     collect: false
+  - id: maniax-sub-guns
+    source_id: metalmaniax-mm2r
+    category: equipment
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A
+    output: maniax-sub-guns.json
+    collect: false

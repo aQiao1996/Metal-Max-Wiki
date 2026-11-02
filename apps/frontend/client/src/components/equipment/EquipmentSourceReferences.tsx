@@ -59,23 +59,27 @@ export function EquipmentSourceReferences({
                     来源页面
                   </dt>
                   <dd className="text-foreground mt-0.5 font-mono text-xs break-all">
-                    {source.target_id === 'maniax-special-equipment'
+                    {source.target_id === 'maniax-sub-guns'
                       ? source.table_index > 0
-                        ? 'S-E 总表'
-                        : '装备独立详情'
-                      : source.target_id === 'maniax-c-units'
-                        ? decodeURIComponent(
-                            new URL(source.source_url).search,
-                          ).includes('検証')
-                          ? '命中与回避验证'
-                          : source.table_index === 0
-                            ? '装备独立详情'
-                            : 'C 装置与特性总表'
-                        : source.target_id === 'maniax-engines'
-                          ? source.table_index === 0
-                            ? '引擎独立详情'
-                            : '引擎与特性总表'
-                          : source.target_id}
+                        ? '副炮总表'
+                        : '副炮独立详情'
+                      : source.target_id === 'maniax-special-equipment'
+                        ? source.table_index > 0
+                          ? 'S-E 总表'
+                          : '装备独立详情'
+                        : source.target_id === 'maniax-c-units'
+                          ? decodeURIComponent(
+                              new URL(source.source_url).search,
+                            ).includes('検証')
+                            ? '命中与回避验证'
+                            : source.table_index === 0
+                              ? '装备独立详情'
+                              : 'C 装置与特性总表'
+                          : source.target_id === 'maniax-engines'
+                            ? source.table_index === 0
+                              ? '引擎独立详情'
+                              : '引擎与特性总表'
+                            : source.target_id}
                   </dd>
                 </div>
                 <div className="min-w-0">

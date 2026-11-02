@@ -21,4 +21,6 @@ C 装置的面板、逐星级普通改造值、特性表与获取地点同样参
 
 引擎的型号、逐星级数值、特性、获取地点和马力强化费用参考 METAL MAniaX 的战车资料与独立详情。`engines/facts.json` 仅保存事实和逐页引用；`engines/names.yaml` 为项目整理的中文参考译名和事实摘要，不代表实机汉化名称。
 
+副炮的数值、星级改造、迎击兵装化适用标记和获取地点同样参考 METAL MAniaX。`sub-guns/facts.json` 仅保存表格事实和逐页引用，`sub-guns/names.yaml` 为项目整理的参考译名与事实摘要；未复制整页正文或图片，未将日版资料标为 0.99 实机确认。
+
 辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。

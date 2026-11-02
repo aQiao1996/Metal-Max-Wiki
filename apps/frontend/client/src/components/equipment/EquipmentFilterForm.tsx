@@ -9,7 +9,7 @@ import {
 import type { EquipmentQuery } from '@/types/equipment'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { formatSpecialEquipmentValue } from '@/data/equipment/special-equipment'
+import { formatVehicleWeaponValue } from '@/data/equipment/vehicle-weapons'
 
 interface EquipmentFilterFormProps {
   elements: readonly string[]
@@ -78,9 +78,10 @@ export function EquipmentFilterForm({
           <option value="">{hasTraits ? '全部特性' : '全部属性'}</option>
           {(hasTraits ? traits : elements).map((element) => (
             <option key={element} value={element}>
-              {query.type === 'special-equipment' &&
-              formatSpecialEquipmentValue('element_raw', element) !== element
-                ? `${formatSpecialEquipmentValue('element_raw', element)}（${element}）`
+              {(query.type === 'special-equipment' ||
+                query.type === 'sub-gun') &&
+              formatVehicleWeaponValue('element_raw', element) !== element
+                ? `${formatVehicleWeaponValue('element_raw', element)}（${element}）`
                 : element}
             </option>
           ))}

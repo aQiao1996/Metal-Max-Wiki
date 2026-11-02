@@ -22,8 +22,8 @@ describe('equipment detail page', () => {
     const params = generateStaticParams()
 
     expect(dynamicParams).toBe(false)
-    expect(params).toHaveLength(407)
-    expect(new Set(params.map(({ id }) => id)).size).toBe(407)
+    expect(params).toHaveLength(457)
+    expect(new Set(params.map(({ id }) => id)).size).toBe(457)
     expect(params.every(({ version }) => version === 'mm2r-099')).toBe(true)
   })
 

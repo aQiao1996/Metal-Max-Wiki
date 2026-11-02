@@ -8,15 +8,21 @@ const elements: Readonly<Record<string, string>> = {
   ビーム: '光束',
   ガス: '毒气',
   'ビーム(+冷気)': '光束（附加冷气）',
+  '通常(+ガス)': '普通（附加毒气）',
 }
 
 /** 翻译固定术语，保留未知原文和“次攻击／连射”的区别。 */
-export function formatSpecialEquipmentValue(
+export function formatVehicleWeaponValue(
   key: string,
   value: string | number,
 ): string {
   const text = String(value)
   if (key === 'element_raw') return elements[text] ?? text
+  if (key === 'interception_raw') {
+    if (text === '◯' || text === '○') return '支持迎击兵装化'
+    if (text === '✗' || text === '×') return '不支持迎击兵装化'
+    return text
+  }
   if (key === 'range_raw') {
     return text
       .replaceAll('連射', '连射')
@@ -26,6 +32,7 @@ export function formatSpecialEquipmentValue(
       .replaceAll('円範囲大', '大圆形')
       .replaceAll('扇範囲小', '小扇形')
       .replaceAll('扇範囲大', '大扇形')
+      .replaceAll('扇範囲可変', '可变扇形')
       .replaceAll('貫通小', '小范围贯穿')
       .replaceAll('貫通大', '大范围贯穿')
       .replaceAll('1体', '单体')

@@ -88,7 +88,7 @@ class EquipmentRecord(CamelModel):
     game: Literal["mm2r"]
     target_version: Literal["0.99"]
     domain: Literal["equipment"]
-    kind: Literal["human_weapon", "main_cannon", "special_equipment", "c_unit", "engine"]
+    kind: Literal["human_weapon", "main_cannon", "sub_gun", "special_equipment", "c_unit", "engine"]
     names: EquipmentNames
     attributes: dict[str, str | int | float]
     modifications: list[EquipmentModification] = Field(default_factory=list)
@@ -118,6 +118,7 @@ class EquipmentRecord(CamelModel):
         types: dict[str, EquipmentType] = {
             "human_weapon": "human-weapon",
             "main_cannon": "main-cannon",
+            "sub_gun": "sub-gun",
             "special_equipment": "special-equipment",
             "c_unit": "c-unit",
             "engine": "engine",

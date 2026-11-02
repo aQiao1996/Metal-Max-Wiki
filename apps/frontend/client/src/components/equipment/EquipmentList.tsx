@@ -114,6 +114,7 @@ export function EquipmentList({
                   </span>
                 )}
                 {(entry.type === 'special-equipment' ||
+                  entry.type === 'sub-gun' ||
                   entry.type === 'c-unit' ||
                   entry.type === 'engine') &&
                   entry.attributes.stat_condition_raw !== undefined && (

@@ -61,6 +61,8 @@ _ATTRIBUTE_LABELS = {
     "upgrade_cost_raw": "本次马力强化费用（G）",
     "upgrade_note_raw": "马力强化限制",
     "trait_calculation_source_raw": "加成计算补充出处",
+    "interception_raw": "迎击兵装化支持标记",
+    "interception_note_raw": "迎击标记说明",
 }
 _PROFESSION_LABELS = {
     "hunter": "猎人",
@@ -85,12 +87,12 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             for key, label in _PROFESSION_LABELS.items()
             if record.attributes.get(f"{key}_raw") == "○"
         )
-    if record.kind in ("special_equipment", "c_unit", "engine"):
+    if record.kind in ("sub_gun", "special_equipment", "c_unit", "engine"):
         facts["名称说明"] = "中文参考译名，未核对 0.99 实机名称"
         facts["改造说明"] = (
             "各星级独立列出，不含超改造；固定星级装备的其他星级仅为图鉴参考，不能当作可获取星级；横杠表示来源未注明或不可改造"
         )
-    if record.kind == "special_equipment":
+    if record.kind in ("sub_gun", "special_equipment"):
         if "range_raw" in record.attributes:
             facts["攻击方式"] = (
                 str(record.attributes["range_raw"])
@@ -136,6 +138,14 @@ def equipment_facts(record: EquipmentRecord) -> dict[str, str]:
             "防御与重量改造不改变型号，马力强化变为另一型号；"
             "各项上下限分别记录，不能拼为同一改造配置，括号保留来源记法"
         )
+    if record.kind == "sub_gun":
+        marker = str(record.attributes.get("interception_raw", ""))
+        facts["迎击兵装化支持标记"] = {
+            "◯": "支持迎击兵装化",
+            "○": "支持迎击兵装化",
+            "✗": "不支持迎击兵装化",
+            "×": "不支持迎击兵装化",
+        }.get(marker, marker)
     return facts
 
 

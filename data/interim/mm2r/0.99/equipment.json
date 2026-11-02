@@ -6,7 +6,9 @@
   "source_hashes": [
     "sha256:0090be792fe28fc1f9293a49bf7f115faf89fd2efec137075551595e9641c4d3",
     "sha256:0090e52892229bafe9a4af0de9efb4fdc1821c996adbcefbdbe901afc501e9f5",
+    "sha256:01b627f33dec2828464145eb501a27220cdfd362301a847f59382f9f38e573a6",
     "sha256:02a9e9ae75212f80ac3a25e1241001545f15f3cfd33c4b2885e3723c1366d498",
+    "sha256:02d23544a57bbb093dcbc78e567023ae984dd232da052c21d6f5f4e309109710",
     "sha256:02efdfc5f10e4dcc158e8d35755f97cf126a992e6fb52dbd4228866ebec8b224",
     "sha256:0310331c2a529850fee0a1c801652bda5b5432345f9bb21f1be0fe467e641b79",
     "sha256:032acd766306029d7bb32458fb695daae4855133804874097f6a9b3b7384ce64",
@@ -16,6 +18,7 @@
     "sha256:058083d1a21ffa7eec91c62d7fca2090d654e7c2ad1da7e126fe4ce69964147a",
     "sha256:0663b87fbcbf979212c3d5c226e257189aac1840e3119e5574fa148e6d02a33f",
     "sha256:06f3f1d4b05dbdea0ade0554c906cd87d17eacc9571c18a01ae70e8681dfb654",
+    "sha256:072acd0aba48f4136682d4f83a37668bdca86eeb13a5208bc485a64ec2826535",
     "sha256:0735575ede93a3c2b1ff6574230e5dabcc980730c4701436eea04e4960eb70f5",
     "sha256:07583581f045bbaccc544cb7efb54267acfb435c81a6ce132a41e810f500adaf",
     "sha256:09142c0a0b1711ca2f9acb81c9b718b233e4645ce57860e6147a34db1d82fe54",
@@ -27,35 +30,47 @@
     "sha256:0c81c1f5143466a96436bffad4497b2ae0f07c103bf1c7023e34f7d242346f18",
     "sha256:0ccc8893613d6aaf549afcf92b6dadac61155aff94a21495bad8dd426d21dd32",
     "sha256:0d0a61e52b5626b67d35060c83d6c878c90119cdcb6aa6078be00d31da45d2e5",
+    "sha256:0d5b6df1b2a4c4bd88f21c21541f38ca626c636354d2a8eebc5c597ce48d0c7d",
+    "sha256:0f6ec07d6f306add8542452070e7a54433da352cc4914041f23c10c09bafbe2e",
     "sha256:100b91be89cc583cef3316aa0e7f942e8dbd09b2e25ec0e76b45115bb2c03098",
     "sha256:1071df9b20fb2ada48efe6c2c2725ba830e60bac8ff2789780a7ee123dd5d174",
+    "sha256:10f53d63399f65fbd73701eb7ea037703fba56e012e6da4050d7c9f897b74948",
     "sha256:10fd108c6a8d8c54be53cf607831f3cda3908f8ce9dd272e82d4a9a575a5c3e0",
     "sha256:137289c7e45b27775bec53990d322b5d16ca6432bc28674fa400b3b379a8f531",
     "sha256:14372f43667a3fac638d6b1a0c9eda073a556bf37bf51c48ac038ba180ef66b7",
     "sha256:14fce3b2229035cda1b05f2eb5d7d1396a0c293006f7265a9a102e295fef256c",
     "sha256:1599773fabe05355b080805b5ae9ec8981126361cb655b165ad21ea7556d8936",
     "sha256:165704ee8bc798ff2b5c88369e0df6fc790ada6dbbf89f7be96af4e2ad63654f",
+    "sha256:16ae183ba47bb880eee4a919d4f19d9dc3cfc25c472fd4769c6ea2e5410409c4",
+    "sha256:17a5c945a368cc0d0dffc9a1b4af0f8dc529c72d64d6e97ebea19c4f50cb37c6",
     "sha256:18575ab98722358c12150399d49642eb53ee0df301c62c32d7d12f945960496d",
     "sha256:18bb01f6d1c8eef249cb6dd0695f764cd716836beb7b68983dc90b6ba7806e2f",
+    "sha256:1bddd0d0a47c0f1a2ed0ade5f8f859dca5f196526b3c717cee7275584bea7529",
     "sha256:1cf50db0e5515a94eb99fa2a9815b547ecab2c162dc7011858fa6fb3d90c4659",
     "sha256:1d2088530a6cca82dc14ac2d30427e4379e11bd2d1a7bec761713348514a7e24",
     "sha256:1d98573aa7073edd1c203e01242057b4ee1374205fc8cd750a306443c0a99316",
+    "sha256:1d9a272bdd893c72f7e79e4187f2ad507398aba249977bf552f8ede54e762e0f",
     "sha256:1db85b0d8b68cbad05c21f7c30cc76541f9e4cf0f440d1520e1531cd54bc6d40",
     "sha256:1f66188560fc638dc3520f0961f5b8a81676b5414db78529494afd4564da517b",
     "sha256:20619ce0ced38448b63e962a2176f3a3a39028d75b1e5f2e63677c0d39222f08",
     "sha256:212d412016e1302acd5b2e1bfeeef56f600e2c3e38bd3a8106180a799e6cc0fc",
+    "sha256:22c45610afb1c69e7c6f94420cdb33ed67a70b56ac2bb1240db831c2fabbbf76",
     "sha256:24a1c0fac5a69d073856625a497708bbccd18845389eacc05364d5e4940381a1",
     "sha256:24c6efd9148678e068e67ea924698f1b94b6ff3eaf9868cebf9c26f4cad09a2c",
+    "sha256:24cd0292371a84606dd100e963366b60977e73319079c1ad4ae7139159dec63d",
     "sha256:24e0beed67da2329d1cd79e2327ea3f8ffe9c13979628559ffeab14762287f94",
     "sha256:25654497f51e6750306a2485cf5d26f34b60c57a282bc71bd82e9153b5e1628b",
     "sha256:26e08ae363e85c0b95a227986202f2b498c91baa883b9da68ad040e1314390f8",
+    "sha256:275c5bcf275edb06a3e80ce934013abf1ed6494c3e657a493efe5c2d55993e7f",
     "sha256:278400a8e18feb52592ccf3bdd8c2f9edf574e7a46e22faa96ad7f7b6012c190",
     "sha256:27fb7ad45c10f413c9445883133d9aedf9fa73d3c5612f2eb6618b46907cef73",
     "sha256:284fd20502df1b60808dcae5cbb906f5d10a04aa6e351abf0cae8774f9f2df22",
+    "sha256:285a3bd21c02a050a31cf8e267b047389ff2667e7deb8cbdab80778179f35a08",
     "sha256:294542b0ba8568d46e0535f9abab54257dfc9c04df4e84b72c9db1090a59bc5e",
     "sha256:2a13f6c8a1a3dcfb784dbfb092ff6a34451342239c280d76e5f824ec77eb549d",
     "sha256:2ab0f9aa58a9e997fa4c7e2348cad9c648b6c6028b5a0a38b3870352b1d82f26",
     "sha256:2bcf586fcd8a6863acae8ee3de8a59ebc52581b40eade85738abd7f30317acba",
+    "sha256:2c1024c64cd2b02da7fe9b808b7754211e2b640716dca3438438a48bde16d8ba",
     "sha256:2cd27d2183d3b7c2704ef7c25da5f7fac250ab0a0a7dc15c8de687347832a1e2",
     "sha256:2eb93483b1d5b32737245682f14e51fa46a2f0213eb632f8557d6458deb69413",
     "sha256:2fec667f7e2c4938018bbcf21ecec9f57f1d3e78836ca00583cdb8c085ca8e75",
@@ -64,7 +79,9 @@
     "sha256:3233d960dbcfcdd7f27955b74ae7324fb6086f5b4837e2d68fc9689ef7968c47",
     "sha256:363b366af9db1dc4a10cfd7f1102ffa6bb51d16c79bbdad750da656ee594c8ef",
     "sha256:36b94394ac55bd259304f12b649d7de66cdd34181a6e1e9cf2478d46fd003f9b",
+    "sha256:36f87c4b34fb24bd9500652da222eefc40f93d0475792def2a393ecf8e19a52a",
     "sha256:37b45a824999da06bdc92abe76dc8281d65e28d94ad522b8911cb8d5a39acfa7",
+    "sha256:3a0014ca5c86455d7967ba05a02be684477f0c746fb6d42ee743f907a792095e",
     "sha256:3b18192eadd999ba649e1f7acd8f2176d05200a3ad72325faf95af218e4858a4",
     "sha256:3d938cd847a1bcf5d810f4ee77303142e511a478c1e43145850d666dd3d7ebac",
     "sha256:3e08ac03f931a0b2bb6418a2ed8cf7d8fce5d35eb47715e0e57dec0ebb715d85",
@@ -74,6 +91,7 @@
     "sha256:3fb53e4a06383e647705233328d9c2b5005424068a9c2c6fc46ef5c9a9de0b6a",
     "sha256:401481188d8cbeb354702f1e2cf1cca20ee2b4609cffb192777618fb30c6e772",
     "sha256:403cdfbf92acec5876a7698c1bbcd10237d158a5566758b8542ad7490cf12f19",
+    "sha256:40f19ba8ef5d7f459cfb0a84fac7140bbd93c801efb776045ecd40fdf11b9f0e",
     "sha256:415ae98437fa2c1f6a0641841527de6ae88e7a79555351c8dfa65b978dcc12d0",
     "sha256:4199c685f591397f4820c1606ad63650fcd24796e28f5405161c1e1f94a97641",
     "sha256:422b945d561d2d9a8f0a9dc1e110409bfbcf4c2117f087866de43ecbd1b93166",
@@ -83,6 +101,7 @@
     "sha256:45b743efdea1fae12dddce3e2bab7ab70369378330b11ee8f6e21a6cc96b4c86",
     "sha256:460a924bc9dca8e88723cc16480ac8c4b763d1e0feecdbb669b51623f8f1177b",
     "sha256:467a9c15ac3740e257c934fa84d3af33ee071648e83adb9a3b2bcd16f9d1819d",
+    "sha256:468f5019bb230126d4334d4ed93fcf6b5435e29c03528b75e653776de2883833",
     "sha256:48187fee182d62eaaeab4267caece32158bedf18f649a75c887a61d7d109bbf5",
     "sha256:48c05d1df9479b0f824188bc7095efcae3f564920b7f6654cde6b5ec16777272",
     "sha256:499b7120170811a9b82ac730ee3cd3fb853d52b393603bef0bbacd585a7df1e0",
@@ -92,6 +111,7 @@
     "sha256:4d0afed42abb83994b232046d2a6a91202955a45853c85fb50078aa81d9ed28f",
     "sha256:4fcbd7ef3bdb8575d7b65cfff450cb61f33a933b00db4e1e840c92cb39bbbab4",
     "sha256:50948d2028a65ab4d06a40e4436525f7cddcfbfef406f1fd86de85c0a89152d4",
+    "sha256:50d71bf6bb57059428d8f7c5dcb6bb2faec95fe009e85ea103bb069941e32e4a",
     "sha256:50ea92bb642c459a7c32ca91102aa961ab616e85270d7e0eabb189a5a7e9f78b",
     "sha256:51c25ee6b580dccb8e939c0de0da63509d313c5277a01a6d73bda5d623daa82f",
     "sha256:53f7794cab01e7267d3e380047904f20acde6ec8df8b19dc5fa5cbc68f841730",
@@ -102,21 +122,27 @@
     "sha256:55c46dbc2e7871eb7812e75982fad234379ac942220d64bd3b7aeda1a176af11",
     "sha256:55d24a0513e8faebd9d2ffbdbb2a9255196c8dd4e97a625911e6b1a2fd1f43e9",
     "sha256:58e7d0ffaa06497bd31a38509f542c4a09b7123d723ae4c808dbd3c6c5d538ae",
+    "sha256:59fb27b9eead56880e5de94d80e3f9ec50a4565fbc335521ee30304aba9723cf",
     "sha256:5bb3ee0b8cf40e2435421291a9b404efb77549b258fac93e935ddfa121d4f0b3",
     "sha256:5bbf4c42db3305123be64df6519d513b3ce66a4ba977334846233dcbf4716221",
     "sha256:5d7df136f1de5bd33a4e31b220360493c0e3667fc437bdb20fac45b8fb6fce27",
     "sha256:5f0ed06ab6c531f0daa13286a8017af43a26a4be5a6ecb9104259827d44eed98",
+    "sha256:61217a75e9f7f95fbc0432d23ac712b65b1af223037fb05db292036afd17ceba",
     "sha256:614aa90f9812bb97bb0b57e9c61b4d1af5234e3163d60c6a9818dc6a1208c0e1",
     "sha256:61575d5594ba405f3d93d11803bbcba978b94c1e855b0a66a94ea5376874c26b",
     "sha256:62f5fd2f800cb0c894f0d7ab49b0c223b4618df73f78c96f8fc4d83139bdeef1",
     "sha256:63cf67b3d5ff1d59379fd8a7c0e6c3a648bb6a93ce6053639d9d4abf50e78db5",
+    "sha256:64173b71f65bf3e6b99ad6022eb5186cd4ba136050d9dbdca5ba884c41da3d28",
     "sha256:64cfe0d724e54f2b4ba9f865da17eb38392ce916c4d1e7bceb2aadb5434e8a05",
     "sha256:6532e9419d4d59250cb30b38be90a6f43b171182d5f856bf2ae1e55d0b80af9a",
     "sha256:65a27dbb978493e3b0e4fdaa7eeacf15534e3098b5eb2f640f8f9542e17ef766",
     "sha256:65ba6f44e48bf1afb644835834428f824afbc0bf91263597175fab2505b562e4",
     "sha256:67dab5d2a67f9976548eeb667611aa4c67d1a16f33467eee28ec26d2c002bde7",
+    "sha256:6a7e142930f6ab42ded771e06d9a2d07c5abad7e6d000a666eb693a3b4462cf2",
+    "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
     "sha256:6cd9d5fcf3c2912c30f561a8580c512c8faa61fc61b6c0508250ea361e175d4f",
     "sha256:6e4328a3698fc8230ee4f63e08ccffca33f0a08fa6825ca36dc8f358474a8dc4",
+    "sha256:6e9ee77e308b4d0ecec8301becba029b7f8782d72e0991f00b674f9d807893dc",
     "sha256:6f17505f16882d35d1162cf26a6ad8072b0e218c7ef4d98f6416f10b73c4e1c3",
     "sha256:70fd15c3838d525420deead79b7e103dca43b674c732b68505a0798f2b90fb11",
     "sha256:71be997dc87dc9b6f3bcf349c8c37a8280b3779c44e866649a32f1161e617439",
@@ -124,18 +150,21 @@
     "sha256:72fd9132209cd25f77e330a3a627a0970cecc4e7f74c36605323e599f3acb5b2",
     "sha256:730adebc781be6d8818edae999fd7cef5c42f07935e6dc7b9868d80664231bc8",
     "sha256:73466ef09244135632e8bcfbbee4048fb316357a4996d5c4b70051db71542269",
+    "sha256:7417b582bc97b3e1327f05f549950fef2b5404ca7793805d3ae2502620fe4e03",
     "sha256:75d774b7178628c866a43ab68df6e6e493b61adc9372eb3440a2d42f8a6c9432",
     "sha256:760865268eb170e44da0436ba3371d4dec52dc66168df288bb6613c1dd25f409",
     "sha256:764c5932703452683ad4265d9ada5c63285dda9c9b8ab95f5742135ee7e4a0b7",
     "sha256:771ed87e4d6493ed820542b6a0cf18ed71eeca111934e47359a18316c540c4a4",
     "sha256:779b6864eacdb3764066f05561ebc0828ac262cc73aa16b4d9e76544e2c9574e",
     "sha256:77de242ffef4fed49576dd4921ba2712facccbd96524a8422b7891d3720547cb",
+    "sha256:78a42a663eb2f2df86132a807cba3e4149c61b5a7db47bf2056aeb532792687e",
     "sha256:796879d9e7d79000ae3457405e0a8d04af64a3ac2ce3648474f9649d795244cb",
     "sha256:79712bec3691baff0d88b7dc1ab62a2dd39366dc5ed59c3ba5a64728903c6a78",
     "sha256:7989072ddbbd8c9f5eb1f1edccf1fcccb9a0187b12db4daff8936a8029711fa2",
     "sha256:79e2231a7332e582e23f5b7abe510989ceb1c6cfd932c0f0cb74d7688b4affd0",
     "sha256:79e7c7bebfb2011c762324ce8464e91b07ee009f3d8d040a650a5246ea6cc0a6",
     "sha256:7cf0b7be6453b19cafa872080d6383b91e9fc5bfeecc54a251b3ca0ce5290e20",
+    "sha256:7d050bc8bb098253a39aa32d098ccd69c373da9b2ad6a8f0b7524fdb977c3e9e",
     "sha256:7dd93297d5f3620ba39c79b0d484cae376ae966d68e62f9ec2788203493b6cfc",
     "sha256:7e903466b38bdf925f8cddf413d1ba19d9162fe061374ad55e1ccdf02bad1e4d",
     "sha256:7ea0495ca3fef5caca9a97244efa0014ebae8a7177ecda39658b35812dd072c9",
@@ -151,13 +180,17 @@
     "sha256:85266a769a221ab8b859df5a54da4ad1504b86dcae4446d94f62190c9c10c403",
     "sha256:860eabb27fdf87d1dd7c866de3a02b78c4c8ff01be57b57c515be30971b0d87a",
     "sha256:86603878431a0711efe3a921ac54a106a354ab93306895148b3607969a14f893",
+    "sha256:8678cd28d8366a3d3865479ebd0ad1557593dcf0ebf17565a947ad7a769d84bf",
     "sha256:87e3edf58e890f66d37fb7cc6e6ca7a0318be19df472d2274508132d35734c77",
+    "sha256:8867d799cfab05a2d7346bfe1e0a8ff1166c0746f22722e24d79188d0635acc5",
     "sha256:890703093529ba9d90777febd322b96b096d1c69eb38501db7a2c510177cf437",
     "sha256:89b089d5febe504d1df47daa13bb983e75bf210f31434c7b9ede8ab934dddc55",
     "sha256:8a3a14d6cd1df8595830be3d4506b973eededd8ecb3d837a6380a596b1ef9472",
+    "sha256:8b3f258b5f2f223fb9ca0954b5938e9e8659926d3eb295a74b15ea0713c6b6fd",
     "sha256:8b47246a2fc65641be55941c4bee0d3ec5e8e5061e53c685dfa376488f0eb331",
     "sha256:8be8d107b36ed7eaa01b6bb15754984de49bcc9f3204b3e2f34c608e4fd3592c",
     "sha256:8c08af02f25ecbd7a2a145f3f5a0f903645d7c0ed8da1e77d4f1b42e1167bca7",
+    "sha256:8d05493fff8219456266924d1ea9375a9260d53a857ec4876c0e5db4691c981b",
     "sha256:8d70c8d1dc4ea47625dea973d5e6d59fad6e67781d46c0512ff67e5a94a4a6ba",
     "sha256:8e162e2eb71474070b1619acba405db66a58ce480b44455df2688a7f0c81e7a4",
     "sha256:8edb0075694863a71f376c2cf6775805cbc7217f6c4994a997b49c58cf1d59f4",
@@ -177,21 +210,27 @@
     "sha256:974942cd583698123837ed0a70747535fc41f709ffb35ea2252976324c2f01d4",
     "sha256:9ad67ee579dc04dda11dec8e6e9d692b8635e4d125129327db9752d5d777795b",
     "sha256:9b3bd901419fe8a8a82fbdfd72eb75ab49525d561336ae1ca56a3c7a63f68d40",
+    "sha256:9c0fd27d3e713e1c67fb3c4dd57b86a589733c01c2297cf331304b41929e95bf",
+    "sha256:9df65b1fe948e1247c334964511d6c02c045ce666261a514aa81e093155974df",
     "sha256:9e4ea16271af5f9494ce432ef64847aa4d932e388bf4c3bf1a15c096ea525c62",
     "sha256:9f688fa77e3c68e56f558785141a4ee7b1a11f4b17b1449b9caa5fe808b992e7",
     "sha256:9f878343cd3f3914049620d7aa63a92b139574ee6b5efcb7ee1bd5264a1c2cf7",
     "sha256:9f9a84fa6b7d396d94ea2fed748258dcc7034adf5e845fefab543bfd2944618f",
+    "sha256:9ff73c53e586f55b6081c144b1104648f36e5c8e6172b2b33bd9584e3f9fe1f8",
     "sha256:a0908d0521836955b263c8543622396f20486ac6dd17e960f8240c792009e6da",
     "sha256:a0fb20634fc8aa17786d91e21bc3e2a4c9db2a904b2603ef2539944f8ca653a5",
     "sha256:a27191f4a6ced8ffd4f565d8edefe1b0b2974b8fcc8d662cb49bbde183ae9b14",
     "sha256:a2757caff49f51a2e90a5aa9ca47e66411dd3e6786614cf178f7661ace4e8bd6",
     "sha256:a2be154e96bacb27a46bfe07a0bf6be63da6847b5e1b73415fcf9be0d432921c",
+    "sha256:a2e12a4d1ee627bf3a015abdaeb5bf3c0de6375ad5f003db993ec1a4724dd52b",
     "sha256:a32d31d7c45b66a26e88d68f46aabfdf52c84c4d618c1fff7145c7532d49bc0e",
     "sha256:a5c4bbae13f53f49268dc9cd8bf128fa7d760c87365d05c8dc110b130d76bc48",
+    "sha256:a8e5edda0fcd763d7f63517691719f16de236026a1682238ce193f02063d5065",
     "sha256:ab796a4195529ba28c63095a90170312d399bd5eabbb7190a0804ee83735c5f5",
     "sha256:abf148f100182dd7969ab33f67ebedf5b630b6ff8c68c24b48f1bdb60435b4cb",
     "sha256:ada9be122af894f682bf9c6751afff5cb22d0d5dfb0f0c6fa5dfe1a9fcaaef2e",
     "sha256:ae02109011e2b4f09ee32e55483a9cf17bf28133df991543c2ea0ba608d2c852",
+    "sha256:aec3ff52d21d6682f57bab796abd1cf786d55c3442c89ffefb017ec78658886b",
     "sha256:af31c145a5662cf60b5e075a4d717a0fba47f9638e0fd8602fbbba0ab42889ee",
     "sha256:b0bedf1cc110f9b1e8c811aac0b3e0b8c3e4a683b0e6cae724f3a40882883588",
     "sha256:b26f290ce6c4c56d4f3bb43359950b22d6b4b713f1f91391b9e88d1ff3bbfae0",
@@ -201,6 +240,7 @@
     "sha256:b59dc49ae7f981f9dedd909faab3f9a3c7dd6cec288359f243100817ec9ece16",
     "sha256:b612cdb6a192fa505e37857e972f74b0f4d51b10966786190e10adf4b6a6eaa6",
     "sha256:b64baffcdff82cf8acacd1e69818e417e721355ee3bd6d530d799ebcd59e2dc4",
+    "sha256:b66464464988b93175216b6711056f0785838456cf786ead2dec470e10a8e77a",
     "sha256:b80014b01563876427cc6e82c02597a58ebb7223d2c4c291d0a08be9a034d80d",
     "sha256:b8ad2ca27d996609703444fb327e72deda26bb80ce785a67e08230cf3dc6793e",
     "sha256:bd8e6e7fb5fa23331eaa13801b2207e60db19ab46ca4f374435caf5d69336b7a",
@@ -208,11 +248,15 @@
     "sha256:bef44fca00f7a5630231dbc389e1c7a75ff8ad38f3abe77fc8f43c7c565b123a",
     "sha256:bf805e8425d27c0649f09f0148c6902ad29a6e86942f61e337bbbc11631ee483",
     "sha256:bf9420bd329911c91e46e1d0a0edb39f6669ce411421fe7897b490a983daaa80",
+    "sha256:c0ba12829de4eeabe388efb2f85308f0f369d83085a20d4a0c40fea77875e2f0",
+    "sha256:c184b435ffa5898365ad56aba58165cba65959b8d56e1a80f90cba396aebbe64",
     "sha256:c1aa00aa54ac12365ea4ce6a32a882b9f1118e117b34419adf8d619303f5dc75",
     "sha256:c4d0088b1ec5e1da7ed54fd68781b8dc4b9e88d8f9543402a1b80b083ed9c58b",
     "sha256:c7a26edac0d523a03f34a7c58ff2db2fc12a9aec423a75e9b4a4b0c011db7da5",
     "sha256:c7bb7fe6dc238b5d02d1b3fe673535d640774307f199ced37cab52854dc33758",
+    "sha256:c95a89c8bc506328f5c45e0984428b385cfe70fbde88fb963548ba5f8830c116",
     "sha256:c95d94551f248bd3e9af931cefeee7eedbe942ed764e9a9383b8642ddaacb88e",
+    "sha256:c9a47557212243108940e6d26ce03c8ff1a20d027116ab680aa7e47129e1513f",
     "sha256:c9d3ef4a99e5f96f5fbb98935b5c72c848f8665cd160489d621dfd1e2c5d4158",
     "sha256:cb4d8f9c378e4cc1cdc428107b1dc02d3a7fa003c262436893c7ef9a093abddd",
     "sha256:cd5af4d2b989fcb5662e97e98fbce7418368b74bbc899d91e2f1df39301b1d69",
@@ -226,10 +270,13 @@
     "sha256:d46bd8f15c0a93e55b2509277b9717e0387ee52800a895a5831c22a0136d92de",
     "sha256:d47b455ccdb0b0e4557fe84a628e341969f9fb3d80b99e9bdff0ef2502b176a1",
     "sha256:d4b70e5af2bd09053a1db7a732bcade8e1837f36cb9caf571fe072c86c11650f",
+    "sha256:d55e9b7914ea915485c131b071879c074b17bd1f2aa0854df7dfaa95e1645a46",
     "sha256:d841c30e51d4b2837d30cb18298839320eae69f7f6765683dbf5fe9ac4bbf53e",
+    "sha256:d8933ff7d2dfc0af64b72cc4ca3e4dd09e6e6e55f46a5a075b6f70cdf0d0587e",
     "sha256:d8cfb2890ab2db83108222996216ed291e7a79c459354c869a62faa5116fe6d0",
     "sha256:d9bda6990db0d0d86714a97583984e8ef26157ee22d9baa9029085dc2b11d62d",
     "sha256:da1a7717bb6281446d9fa4eed93cb2a38770ae024ea8e14a51eb077c280ae690",
+    "sha256:dbd0a624668d19085f4dc0466e5260087167d609f163833534cfe15dd890f230",
     "sha256:dd99ded66e1083f6e5b6dbab49dde7ba896f152343928969319562edb88fe07a",
     "sha256:e2e559ec94ac0ffbc364595126442e0bba1b32f2de21fc44b1051808a3b96732",
     "sha256:e30bbc248fb44d7f3d173cc139e339f0aa2522dab5268e5549dd03692a5cbbfc",
@@ -243,9 +290,11 @@
     "sha256:e78546011d2b98d1865cf48ed8f4969c29889ea022d4432cd0f570533e3f3319",
     "sha256:e798cab91dcf03d0b9de6d970c5ede6b4647d986286fe6fcbf1105e70c57d279",
     "sha256:e7ee56cd9c7c639737a5196f3d92920d6f4df0a3a0e3bee922e500ebd585e852",
+    "sha256:e8c63c9d2de3560cd6dec63de85eb6587652df93beda90924711e4e8977c7001",
     "sha256:e90bd0f556553c0698e02892342391174818fff5332403e91ad102d0a06d6d83",
     "sha256:e943a0da192242222a5f73a42ff6d51770a558a1b03d445a76009c24646b6c29",
     "sha256:ea3419782fa1d539f95711b4b0d7af53bbe4e632343b9ffa97b2eac35c9dd939",
+    "sha256:eac307727eb85959d3b5d61753c633e447548251e927f154e6ce4dd2c3fef06a",
     "sha256:eb2e0efffc6763100304e6ce803bcf53fc6118dc872584ecc621526011a0b4b7",
     "sha256:ebaafde0e65961d4a48d014d37b855859024763e57db87a0b8de81a307237a9c",
     "sha256:ed88b60b1f732f620ee6bb6fddbdcc985c33cc77ba002d3c5ee52005a29516ba",
@@ -254,10 +303,12 @@
     "sha256:f0acf877e59e8eea71cd07b960d61ca984d062c6b7c4fd5857e6cee2692cdd29",
     "sha256:f1ef2275eb3e9d07e9ca37bb06ab640b78d2b521782cf632a68022063a44321b",
     "sha256:f209bffd4eea01d8c263c4f55a3d07696f90cfe91cf244adaaa3de6235bf4124",
+    "sha256:f2510957ee9a2c26b0e6a1d8a67c09ca4466cdacaa64ebecff187805dd9faa92",
     "sha256:f43babd6ae3700cee979442cb35b333d168d1dd7ce486f38812dc5ce6435b784",
     "sha256:f47cdaf7d2d61f887dced53f4abfd841c5c835c4c0644e5240d6602e3fc717b7",
     "sha256:f50764f5e0d076309fbcda5206edac4f648749a83ff47291946a74accf160330",
     "sha256:f69b30eadbfcb9273c6bc8d86150683dba962017705df941d7090281092f7938",
+    "sha256:f7283d2acc9108f3d43bde3f03000af560e1239cae76f355b8e568d3ea390478",
     "sha256:f8987eb4be41c7d6bef67e690729155387c4431224d880885660ecfe553a4917",
     "sha256:f8be6b7ce58295a2cfb8a71e2c11bd2211599566c26ac34d7aa1490c9aee7825",
     "sha256:f929a91ade8ff81280bf094fb657db4c3f21afd4b04f56c8f2c45a22bb6d90db",
@@ -34474,6 +34525,5160 @@
           "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%AB%E3%83%A2%E3%83%8D%E3%83%A9%E3%83%9D%E3%83%83%E3%83%89",
           "retrieved_at": "2026-11-02T11:58:54.323111+08:00",
           "content_hash": "sha256:7dd93297d5f3620ba39c79b0d484cae376ae966d68e62f9ec2788203493b6cfc",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-0126940ba3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ミスターチムニー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "烟囱先生",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "320",
+        "range_raw": "1体",
+        "element_raw": "通常(+ガス)",
+        "defense_raw": "50",
+        "weight_raw": "1.20",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "11000",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "400",
+        "defense_max_raw": "80",
+        "weight_max_raw": "1.81",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：デスクルス (開放後) メルトタウン (★0)；其他获取：タキオンテレポーター(★0～3)",
+        "acquisition_raw": "死亡十字解放后的商店；溶解城商店出售无星品；超光速传送可得0～3星品。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "400",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.81t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "84",
+          "attack_raw": "336",
+          "attack_max_raw": "420",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.94t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "88",
+          "attack_raw": "352",
+          "attack_max_raw": "440",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.11t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "96",
+          "attack_raw": "384",
+          "attack_max_raw": "480",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.43t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 32
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%9F%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:46:05.951560+08:00",
+          "content_hash": "sha256:c184b435ffa5898365ad56aba58165cba65959b8d56e1a80f90cba396aebbe64",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-085e653082",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "アサルトレーザー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "突击激光",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "275",
+        "range_raw": "全体",
+        "element_raw": "通常",
+        "defense_raw": "75",
+        "weight_raw": "2.80",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "5500",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "343",
+        "defense_max_raw": "97",
+        "weight_max_raw": "3.72",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：風力発電所 南西の トレーダーキャンプ (★0) モロ・ポコ 東の トレーダーキャンプ；其他获取：タキオンテレポーター(★0～3) エレファント の初期装備(★0) ミラーボールがドロップ(★0)",
+        "acquisition_raw": "风力发电所西南商人营地出售无星品；摩洛波克东侧商人营地；象式战车初始装备及ミラーボール掉落为无星品；超光速传送可得0～3星品。",
+        "notes_raw": "名称含激光，但来源总表列为通常属性、全体攻击。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "68",
+          "attack_raw": "275",
+          "attack_max_raw": "343",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45(0.28)t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.72t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "72",
+          "attack_raw": "288",
+          "attack_max_raw": "360",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.52(0.29)t",
+          "weight_raw": "2.94t",
+          "weight_max_raw": "4.08t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "82",
+          "attack_raw": "330",
+          "attack_max_raw": "412",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.74(0.33)t",
+          "weight_raw": "3.36t",
+          "weight_max_raw": "5.07t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 25
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%82%B5%E3%83%AB%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:56.564976+08:00",
+          "content_hash": "sha256:6a7e142930f6ab42ded771e06d9a2d07c5abad7e6d000a666eb693a3b4462cf2",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-0960aca00a",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "マスタードコブラ",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "芥子眼镜蛇",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "210",
+        "range_raw": "扇範囲大",
+        "element_raw": "ガス",
+        "defense_raw": "75",
+        "weight_raw": "2.25",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "2250",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "241",
+        "defense_max_raw": "97",
+        "weight_max_raw": "2.85",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：デルタ・リオ (「 荒野の運送屋 」にて荷物運搬「前」限定) イスラポルト (「荒野の運送屋」にて荷物運搬「前」限定) デルタ・リオ 北東の トレーダーキャンプ (改造済み)；其他获取：北の魔女の家北西のトレーダーキャンプ 北東の山間付近にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "荒野运输任务送货前，德尔塔·利奥和以斯拉港商店出售；德尔塔·利奥东北营地出售改造品；北之魔女之家西北商人营地的东北山间随机埋藏。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "241",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.17(0.22)t",
+          "weight_raw": "2.25t",
+          "weight_max_raw": "2.85t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "253",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.22(0.23)t",
+          "weight_raw": "2.36t",
+          "weight_max_raw": "3.13t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "265",
+          "defense_min_raw": "20",
+          "defense_raw": "82",
+          "defense_max_raw": "118",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.28(0.24)t",
+          "weight_raw": "2.47t",
+          "weight_max_raw": "3.35t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "289",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.40(0.27)t",
+          "weight_raw": "2.70t",
+          "weight_max_raw": "3.91t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 14
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%89%E3%82%B3%E3%83%96%E3%83%A9",
+          "retrieved_at": "2026-11-02T13:45:41.569450+08:00",
+          "content_hash": "sha256:072acd0aba48f4136682d4f83a37668bdca86eeb13a5208bc485a64ec2826535",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-0a7a4b7212",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ヘビーガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "重型机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "320",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "60",
+        "weight_raw": "4.00",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*5000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "368",
+        "defense_max_raw": "84",
+        "weight_max_raw": "5.32",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：デスクルス 西の砂漠に 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "死亡十字西侧沙漠埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "368",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.08(0.40)t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "5.32t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "84",
+          "attack_raw": "336",
+          "attack_max_raw": "386",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "91",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.18(0.42)t",
+          "weight_raw": "4.20t",
+          "weight_max_raw": "5.71t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "88",
+          "attack_raw": "352",
+          "attack_max_raw": "404",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "102",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2,28(0.44)t",
+          "weight_raw": "4.40t",
+          "weight_max_raw": "6.24t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "96",
+          "attack_raw": "384",
+          "attack_max_raw": "441",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "122",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.49(0.48)t",
+          "weight_raw": "4.80t",
+          "weight_max_raw": "7.24t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 33
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%98%E3%83%93%E3%83%BC%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:07.164910+08:00",
+          "content_hash": "sha256:61217a75e9f7f95fbc0432d23ac712b65b1af223037fb05db292036afd17ceba",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-0b246201aa",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "さびた機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "生锈机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "80",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "5",
+        "weight_raw": "0.30",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*100",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：ハトバ北砂漠、アズサ～サースティ間、レインバレー内などにランダム 埋設 (要金属探知機) ヘルメツ島 B1階北部屋木箱",
+        "acquisition_raw": "码头镇北方沙漠、阿梓莎至萨斯蒂酒吧之间、雨谷等处随机埋藏，需金属探测器；赫尔梅兹岛B1F北侧房间木箱。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "-",
+          "attack_raw": "80",
+          "attack_max_raw": "-",
+          "defense_min_raw": "-",
+          "defense_raw": "5",
+          "defense_max_raw": "-",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "-",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "-"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 0
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%95%E3%81%B3%E3%81%9F%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:23.452594+08:00",
+          "content_hash": "sha256:36f87c4b34fb24bd9500652da222eefc40f93d0475792def2a393ecf8e19a52a",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-0f5eb09282",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "サンダーストーム",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "雷暴",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "380",
+        "range_raw": "貫通大",
+        "element_raw": "電気",
+        "defense_raw": "85",
+        "weight_raw": "3.00",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*10000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "399",
+        "defense_max_raw": "119",
+        "weight_max_raw": "3.81",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：敵撃破数ボーナス(6666体、★変動) プラズマタンク、ミュータントOX、ウシキングからドロップ",
+        "acquisition_raw": "击破6666体奖励，星级随机；プラズマタンク、ミュータントOX、ウシキング掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "399",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "119",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.56(0.30)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "3.81t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "418",
+          "defense_min_raw": "22",
+          "defense_raw": "89",
+          "defense_max_raw": "129",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.63(0.31)t",
+          "weight_raw": "3.15t",
+          "weight_max_raw": "4.09t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "438",
+          "defense_min_raw": "23",
+          "defense_raw": "93",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.71(0.33)t",
+          "weight_raw": "3.30t",
+          "weight_max_raw": "4.48t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "478",
+          "defense_min_raw": "25",
+          "defense_raw": "102",
+          "defense_max_raw": "168",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.87(0.36)t",
+          "weight_raw": "3.60t",
+          "weight_max_raw": "5.11t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 38
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A0",
+          "retrieved_at": "2026-11-02T13:46:13.666411+08:00",
+          "content_hash": "sha256:aec3ff52d21d6682f57bab796abd1cf786d55c3442c89ffefb017ec78658886b",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-178bbc03bc",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ギガンガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "巨型机炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "440",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "132",
+        "weight_raw": "7.70",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*5000",
+        "rarity_raw": "★★",
+        "obtainable_stars_raw": "2",
+        "attack_max_raw": "550",
+        "defense_max_raw": "237",
+        "weight_max_raw": "12.55",
+        "stat_condition_raw": "2 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：タキオンテレポーター(★2)",
+        "acquisition_raw": "通过超光速传送取得，固定2星。",
+        "notes_raw": "来源列为MM3转送品，固定二星；无星数值仅作参考，不能据此认定本作可直接获取。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "500",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "198",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64(0.70)t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "10.78t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "550",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "237",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.00(0.77)t",
+          "weight_raw": "7.70t",
+          "weight_max_raw": "12.55t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 46
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AE%E3%82%AC%E3%83%B3%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:23.363824+08:00",
+          "content_hash": "sha256:24cd0292371a84606dd100e963366b60977e73319079c1ad4ae7139159dec63d",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-18e26dae43",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ロケットチューブ",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "火箭管",
+        "aliases": [
+          "火箭发射管"
+        ]
+      },
+      "attributes": {
+        "attack_raw": "504",
+        "range_raw": "円範囲小",
+        "element_raw": "通常",
+        "defense_raw": "73",
+        "weight_raw": "7.14",
+        "magazine_raw": "48",
+        "interception_raw": "✗",
+        "price_raw": "*10000",
+        "rarity_raw": "★",
+        "obtainable_stars_raw": "1",
+        "attack_max_raw": "630",
+        "defense_max_raw": "109",
+        "magazine_max_raw": "63",
+        "weight_max_raw": "10.99",
+        "stat_condition_raw": "1 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：スタンプ屋 500ポイントの景品(★1)",
+        "acquisition_raw": "印章店500积分奖励，固定1星。",
+        "notes_raw": "副炮类别，固定一星，具有有限弹仓；不能把所有副炮都当作无限弹药。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "",
+          "attack_raw": "480",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "70",
+          "defense_max_raw": "",
+          "magazine_min_raw": "",
+          "magazine_raw": "48",
+          "magazine_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "6.80t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "126",
+          "attack_raw": "504",
+          "attack_max_raw": "630",
+          "defense_min_raw": "18",
+          "defense_raw": "73",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "3",
+          "magazine_raw": "48",
+          "magazine_max_raw": "63",
+          "weight_min_raw": "3.71(0.00)t",
+          "weight_raw": "7.14t",
+          "weight_max_raw": "10.99t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 40
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%AD%E3%82%B1%E3%83%83%E3%83%88%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+          "retrieved_at": "2026-11-02T13:46:16.098379+08:00",
+          "content_hash": "sha256:eac307727eb85959d3b5d61753c633e447548251e927f154e6ce4dd2c3fef06a",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-210f61ef46",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ビッグガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "大型机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "260",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "55",
+        "weight_raw": "2.50",
+        "magazine_raw": "16",
+        "interception_raw": "✗",
+        "price_raw": "*3000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "299",
+        "defense_max_raw": "99",
+        "magazine_max_raw": "31",
+        "weight_max_raw": "4.15",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：イスラポルト 北東（ 悪党ミュージアム を出てまっすぐ西に行ったところにある枯れ木のすぐ下）に 埋設 (要金属探知機、★変動) ヘルメツ島 B3F南部屋木箱",
+        "acquisition_raw": "以斯拉港东北、从恶党博物馆向西直走所见枯树正下方埋藏，需金属探测器，星级随机；赫尔梅兹岛B3F南侧房间木箱。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "65",
+          "attack_raw": "260",
+          "attack_max_raw": "299",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.30(0.02)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "4.15t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "68",
+          "attack_raw": "273",
+          "attack_max_raw": "313",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "108",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.36(0.02)t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "4.50t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "71",
+          "attack_raw": "286",
+          "attack_max_raw": "328",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "120",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.43(0.02)t",
+          "weight_raw": "2.75t",
+          "weight_max_raw": "4.89t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "78",
+          "attack_raw": "312",
+          "attack_max_raw": "358",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "141",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "36",
+          "weight_min_raw": "1.56(0.03)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "5.70t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 22
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%83%E3%82%B0%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:51.447444+08:00",
+          "content_hash": "sha256:40f19ba8ef5d7f459cfb0a84fac7140bbd93c801efb776045ecd40fdf11b9f0e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-21e9470e9c",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ファイアショット",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "火焰射击枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "170",
+        "range_raw": "扇範囲小",
+        "element_raw": "火炎",
+        "defense_raw": "45",
+        "weight_raw": "1.20",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "1200",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "297",
+        "defense_max_raw": "90",
+        "weight_max_raw": "2.38(2.46)",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：ハトバ アズサ",
+        "acquisition_raw": "码头镇、阿梓莎商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "42",
+          "attack_raw": "170",
+          "attack_max_raw": "297",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.38(2.46)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 6
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88",
+          "retrieved_at": "2026-11-02T13:45:31.254482+08:00",
+          "content_hash": "sha256:0f6ec07d6f306add8542452070e7a54433da352cc4914041f23c10c09bafbe2e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-2289a8463a",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "楊貴妃バルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "杨贵妃火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "380",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "100",
+        "weight_raw": "2.50",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*10000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "399",
+        "defense_max_raw": "125",
+        "weight_max_raw": "2.95",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：メルトタウン 東の荒地に 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "溶解城东侧荒地埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "399",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "125",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "2.95t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "418",
+          "defense_min_raw": "26",
+          "defense_raw": "105",
+          "defense_max_raw": "136",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.36t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "3.17t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "438",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.43t",
+          "weight_raw": "2.75t",
+          "weight_max_raw": "3.41t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "478",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "180",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.56t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "3.99t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 37
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E6%A5%8A%E8%B2%B4%E5%A6%83%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:12.360579+08:00",
+          "content_hash": "sha256:78a42a663eb2f2df86132a807cba3e4149c61b5a7db47bf2056aeb532792687e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-2315554cbb",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "22ミリバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "22mm火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "350",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "85",
+        "weight_raw": "2.80",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "18000",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "385",
+        "defense_max_raw": "97",
+        "weight_max_raw": "3.22",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：メルトタウン (★0)；其他获取：タキオンテレポーター(★0～3)",
+        "acquisition_raw": "溶解城商店出售无星品；超光速传送可得0～3星品。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "87",
+          "attack_raw": "350",
+          "attack_max_raw": "385",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45(0.28)t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.22t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "91",
+          "attack_raw": "367",
+          "attack_max_raw": "403",
+          "defense_min_raw": "22",
+          "defense_raw": "89",
+          "defense_max_raw": "106",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.52(0.29)t",
+          "weight_raw": "2.94t",
+          "weight_max_raw": "3.46t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 35
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/22%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:09.634370+08:00",
+          "content_hash": "sha256:2c1024c64cd2b02da7fe9b808b7754211e2b640716dca3438438a48bde16d8ba",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-29736fe3ed",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ジャックスイーパー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "杰克清扫者",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "440",
+        "range_raw": "全体",
+        "element_raw": "通常",
+        "defense_raw": "110",
+        "weight_raw": "7.15",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*30000",
+        "rarity_raw": "★★",
+        "obtainable_stars_raw": "2",
+        "attack_max_raw": "660",
+        "defense_max_raw": "253",
+        "weight_max_raw": "14.22(14.87)",
+        "stat_condition_raw": "2 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：タキオンテレポーター(★2)",
+        "acquisition_raw": "通过超光速传送取得，固定2星。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "600",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "210",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.38(0.65)t",
+          "weight_raw": "6.50t",
+          "weight_max_raw": "12.74t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "660",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "253",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.71(0.71)t",
+          "weight_raw": "7.15t",
+          "weight_max_raw": "14.22(14.87)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 47
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:46:24.891301+08:00",
+          "content_hash": "sha256:64173b71f65bf3e6b99ad6022eb5186cd4ba136050d9dbdca5ba884c41da3d28",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-2ef7a3ecae",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ガトリングガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "格林机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "165",
+        "range_raw": "扇範囲小",
+        "element_raw": "通常",
+        "defense_raw": "40",
+        "weight_raw": "1.10",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "800",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "198",
+        "defense_max_raw": "90",
+        "weight_max_raw": "2.05",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：ハトバ；其他获取：レンタル3号 初期装備(★0) イヌの村 南砂浜にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "码头镇商店；出租战车3号初始装备为无星品；狗之村南侧沙滩随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "41",
+          "attack_raw": "165",
+          "attack_max_raw": "198",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "2.05t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "43",
+          "attack_raw": "173",
+          "attack_max_raw": "207",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "98",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.59(0.11)t",
+          "weight_raw": "1.15t",
+          "weight_max_raw": "2.21t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "45",
+          "attack_raw": "181",
+          "attack_max_raw": "217",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "107",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.21t",
+          "weight_max_raw": "2.40t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "49",
+          "attack_raw": "198",
+          "attack_max_raw": "237",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "129",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.62(2.82)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 4
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AC%E3%83%88%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:28.761711+08:00",
+          "content_hash": "sha256:02d23544a57bbb093dcbc78e567023ae984dd232da052c21d6f5f4e309109710",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-3055965b33",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "7ミリ機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "7mm机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "100",
+        "range_raw": "扇範囲小",
+        "element_raw": "通常",
+        "defense_raw": "20",
+        "weight_raw": "0.20",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*500",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "150",
+        "defense_max_raw": "50",
+        "weight_max_raw": "0.40(0.44)",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：バギー 初期装備(★0) タキオンテレポーター(チョッパー初期装備、★0)",
+        "acquisition_raw": "越野车初始装备；也可通过超光速传送取得チョッパー初始装备的无星品。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "25",
+          "attack_raw": "100",
+          "attack_max_raw": "150",
+          "defense_min_raw": "5",
+          "defense_raw": "20",
+          "defense_max_raw": "50",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.10(0.02)t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "0.40(0.44)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 1
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/7%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:24.706322+08:00",
+          "content_hash": "sha256:01b627f33dec2828464145eb501a27220cdfd362301a847f59382f9f38e573a6",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-323312c0c4",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "フォースバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "四连火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "190",
+        "range_raw": "4連射",
+        "element_raw": "通常",
+        "defense_raw": "60",
+        "weight_raw": "4.00",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "4500",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "247",
+        "defense_max_raw": "90",
+        "weight_max_raw": "5.92",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：デルタ・リオ (販売パターンC)",
+        "acquisition_raw": "德尔塔·利奥C型商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "47",
+          "attack_raw": "190",
+          "attack_max_raw": "247",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.08(0.40)t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "5.92t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 9
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B9%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:35.480335+08:00",
+          "content_hash": "sha256:f7283d2acc9108f3d43bde3f03000af560e1239cae76f355b8e568d3ea390478",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-352c77c2e4",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ナパームジェッター",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "凝固汽油喷射器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "235",
+        "range_raw": "1体",
+        "element_raw": "火炎",
+        "defense_raw": "65",
+        "weight_raw": "2.60",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "3700",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "293",
+        "defense_max_raw": "94",
+        "weight_max_raw": "3.69",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：イスラポルト 西の トレーダーキャンプ；其他获取：火炎カブトガニからドロップ 地獄のストーブからドロップ キャタピラビレッジ 周辺にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "以斯拉港西侧商人营地；火焰鲎（火炎カブトガニ）、地狱火炉（地獄のストーブ）掉落；履带村附近随机埋藏。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "58",
+          "attack_raw": "235",
+          "attack_max_raw": "293",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.35(0.26)t",
+          "weight_raw": "2.60t",
+          "weight_max_raw": "3.69t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "61",
+          "attack_raw": "246",
+          "attack_max_raw": "307",
+          "defense_min_raw": "17",
+          "defense_raw": "68",
+          "defense_max_raw": "102",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.41(0.27)t",
+          "weight_raw": "2.73t",
+          "weight_max_raw": "3.95t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "64",
+          "attack_raw": "258",
+          "attack_max_raw": "322",
+          "defense_min_raw": "17",
+          "defense_raw": "71",
+          "defense_max_raw": "113",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.48(0.28)t",
+          "weight_raw": "2.86t",
+          "weight_max_raw": "4.31t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "70",
+          "attack_raw": "282",
+          "attack_max_raw": "352",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "136",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.62(0.31)t",
+          "weight_raw": "3.12t",
+          "weight_max_raw": "4.99t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 20
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8A%E3%83%91%E3%83%BC%E3%83%A0%E3%82%B8%E3%82%A7%E3%83%83%E3%82%BF%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:49.058374+08:00",
+          "content_hash": "sha256:8678cd28d8366a3d3865479ebd0ad1557593dcf0ebf17565a947ad7a769d84bf",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-35615b9f06",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "シャークガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "鲨鱼枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "500",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "90",
+        "weight_raw": "7.50",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*18000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "600",
+        "defense_max_raw": "198",
+        "weight_max_raw": "13.80",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：U-U-シャーク からドロップ(★変動有)",
+        "acquisition_raw": "赏金首U-U-シャーク掉落，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "198",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.90(0.75)t",
+          "weight_raw": "7.50t",
+          "weight_max_raw": "13.80t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "131",
+          "attack_raw": "525",
+          "attack_max_raw": "630",
+          "defense_min_raw": "23",
+          "defense_raw": "94",
+          "defense_max_raw": "216",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.09(0.78)t",
+          "weight_raw": "7.87t",
+          "weight_max_raw": "14.95t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "137",
+          "attack_raw": "550",
+          "attack_max_raw": "660",
+          "defense_min_raw": "24",
+          "defense_raw": "99",
+          "defense_max_raw": "237",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.29(0.82)t",
+          "weight_raw": "8.25t",
+          "weight_max_raw": "16.17t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "150",
+          "attack_raw": "600",
+          "attack_max_raw": "720",
+          "defense_min_raw": "27",
+          "defense_raw": "108",
+          "defense_max_raw": "286",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.68(0.90)t",
+          "weight_raw": "9.00t",
+          "weight_max_raw": "17.91(18.99)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 42
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:18.492185+08:00",
+          "content_hash": "sha256:6e9ee77e308b4d0ecec8301becba029b7f8782d72e0991f00b674f9d807893dc",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-359c12827f",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "サンダーブラスト",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "雷电爆破枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "230",
+        "range_raw": "1体",
+        "element_raw": "電気",
+        "defense_raw": "75",
+        "weight_raw": "2.50",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "3500",
+        "attack_max_raw": "299",
+        "defense_max_raw": "97",
+        "weight_max_raw": "3.40",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：イスラポルト (「 荒野の運送屋 」にて荷物運搬後)；其他获取：モンキーセンター 付近にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "荒野运输送货后，以斯拉港商店追加；猴子中心附近随机埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "57",
+          "attack_raw": "230",
+          "attack_max_raw": "299",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30(0.25)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "3.40t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "60",
+          "attack_raw": "241",
+          "attack_max_raw": "313",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.36(0.26)t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "3.72t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 19
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%80%E3%83%BC%E3%83%96%E3%83%A9%E3%82%B9%E3%83%88",
+          "retrieved_at": "2026-11-02T13:45:47.803383+08:00",
+          "content_hash": "sha256:10f53d63399f65fbd73701eb7ea037703fba56e012e6da4050d7c9f897b74948",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-3df9b2b661",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ビームブラスター",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "光束冲击枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "200",
+        "range_raw": "貫通小",
+        "element_raw": "ビーム",
+        "defense_raw": "40",
+        "weight_raw": "2.00",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*2480",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "250",
+        "defense_max_raw": "74",
+        "weight_max_raw": "3.32",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：アズサ 真東、行き止まり部分よりやや手前に 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "阿梓莎正东方向、道路尽头稍前处埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "50",
+          "attack_raw": "200",
+          "attack_max_raw": "250",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.32t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "262",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "81",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.61t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "275",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "3.91t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "60",
+          "attack_raw": "240",
+          "attack_max_raw": "300",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "108",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.56t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 12
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%BC%E3%83%A0%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:39.055297+08:00",
+          "content_hash": "sha256:8b3f258b5f2f223fb9ca0954b5938e9e8659926d3eb295a74b15ea0713c6b6fd",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-45eec58dd3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "バーナードラゴン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "龙焰喷射器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "345",
+        "range_raw": "扇範囲大",
+        "element_raw": "火炎",
+        "defense_raw": "90",
+        "weight_raw": "3.50",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "16500",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "396",
+        "defense_max_raw": "121",
+        "weight_max_raw": "4.55",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：メルトタウン；其他获取：ゼロ 初期装備(★0) ATプロメテウスのドロップ(★0) タキオンテレポーター(★0～3)",
+        "acquisition_raw": "溶解城商店；零号战车初始装备和ATプロメテウス掉落为无星品；超光速传送可得0～3星品。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "86",
+          "attack_raw": "345",
+          "attack_max_raw": "396",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "121",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.82(0.35)t",
+          "weight_raw": "3.50t",
+          "weight_max_raw": "4.55t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 34
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%83%BC%E3%83%8A%E3%83%BC%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:08.441218+08:00",
+          "content_hash": "sha256:c9a47557212243108940e6d26ce03c8ff1a20d027116ab680aa7e47129e1513f",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-4def36a267",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "猛牛罵流管",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "猛牛火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "396",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "93",
+        "weight_raw": "0.12",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*4000",
+        "rarity_raw": "★★",
+        "obtainable_stars_raw": "2",
+        "attack_max_raw": "435",
+        "defense_max_raw": "116",
+        "weight_max_raw": "0.14",
+        "stat_condition_raw": "2 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：タキオンテレポーター(★2)",
+        "acquisition_raw": "通过超光速传送取得，固定2星。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "90",
+          "attack_raw": "360",
+          "attack_max_raw": "396",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.11t",
+          "weight_max_raw": "0.12"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "99",
+          "attack_raw": "396",
+          "attack_max_raw": "435",
+          "defense_min_raw": "23",
+          "defense_raw": "93",
+          "defense_max_raw": "116",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.06t",
+          "weight_raw": "0.12t",
+          "weight_max_raw": "0.14t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 44
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E7%8C%9B%E7%89%9B%E7%BD%B5%E6%B5%81%E7%AE%A1",
+          "retrieved_at": "2026-11-02T13:46:20.867851+08:00",
+          "content_hash": "sha256:b66464464988b93175216b6711056f0785838456cf786ead2dec470e10a8e77a",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-4f6418b1c2",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ソニックチューブ",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "音波管",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "550",
+        "range_raw": "全体",
+        "element_raw": "音波",
+        "defense_raw": "75",
+        "weight_raw": "8.50",
+        "magazine_raw": "32",
+        "interception_raw": "✗",
+        "price_raw": "12000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "632",
+        "defense_max_raw": "105",
+        "magazine_max_raw": "47",
+        "weight_max_raw": "12.07",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：イスラポルト (販売パターンB)",
+        "acquisition_raw": "以斯拉港B型商店。",
+        "notes_raw": "音波属性、全体攻击，具有有限弹仓；具体弹仓改造值按星级表查看。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "137",
+          "attack_raw": "550",
+          "attack_max_raw": "632",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "105",
+          "magazine_min_raw": "2",
+          "magazine_raw": "32",
+          "magazine_max_raw": "47",
+          "weight_min_raw": "4.42t",
+          "weight_raw": "8.50t",
+          "weight_max_raw": "12.07t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 43
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+          "retrieved_at": "2026-11-02T13:46:19.674088+08:00",
+          "content_hash": "sha256:16ae183ba47bb880eee4a919d4f19d9dc3cfc25c472fd4769c6ea2e5410409c4",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-55b0ca3707",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "タイムストッパー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "时间停止器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "295",
+        "range_raw": "貫通小",
+        "element_raw": "ビーム",
+        "defense_raw": "75",
+        "weight_raw": "2.30",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "6500",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "339",
+        "defense_max_raw": "97",
+        "weight_max_raw": "2.92",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：モロ・ポコ",
+        "acquisition_raw": "摩洛波克商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "73",
+          "attack_raw": "295",
+          "attack_max_raw": "339",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.19(0.23)t",
+          "weight_raw": "2.30t",
+          "weight_max_raw": "2.92t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 27
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9%E3%83%88%E3%83%83%E3%83%91%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:59.414626+08:00",
+          "content_hash": "sha256:c0ba12829de4eeabe388efb2f85308f0f369d83085a20d4a0c40fea77875e2f0",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-6454f37708",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "スマッシュホルン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "破坏号角",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "265",
+        "range_raw": "全体",
+        "element_raw": "音波",
+        "defense_raw": "40",
+        "weight_raw": "0.80",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "5000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "291",
+        "defense_max_raw": "60",
+        "weight_max_raw": "1.08",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：タイシャー モロ・ポコ 東の トレーダーキャンプ；其他获取：ヘルメツ島 B2木箱(★変動)",
+        "acquisition_raw": "大神社、摩洛波克东侧商人营地；赫尔梅兹岛B2F木箱，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "66",
+          "attack_raw": "265",
+          "attack_max_raw": "291",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "60",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.41(0.08)t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.08t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "69",
+          "attack_raw": "278",
+          "attack_max_raw": "305",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "65",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.43(0.08)t",
+          "weight_raw": "0.84t",
+          "weight_max_raw": "1.16t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "72",
+          "attack_raw": "291",
+          "attack_max_raw": "320",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "72",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.45(0.08)t",
+          "weight_raw": "0.88t",
+          "weight_max_raw": "1.27t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "79",
+          "attack_raw": "318",
+          "attack_max_raw": "349",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "86",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.49(0.09)t",
+          "weight_raw": "0.96t",
+          "weight_max_raw": "1.47t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 23
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%9E%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9B%E3%83%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:53.982070+08:00",
+          "content_hash": "sha256:f2510957ee9a2c26b0e6a1d8a67c09ca4466cdacaa64ebecff187805dd9faa92",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-66070d9239",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "スネークガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "蛇枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "305",
+        "range_raw": "3連射",
+        "element_raw": "通常",
+        "defense_raw": "60",
+        "weight_raw": "1.20",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*5000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "335",
+        "defense_max_raw": "99",
+        "weight_max_raw": "1.74",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：デカごみあさり(A)からドロップ ゴーゴンホールからドロップ",
+        "acquisition_raw": "大型垃圾搜寻者（デカごみあさり）A型个体、ゴーゴンホール掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "76",
+          "attack_raw": "305",
+          "attack_max_raw": "335",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.74t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "352",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "110",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.90t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "83",
+          "attack_raw": "335",
+          "attack_max_raw": "385",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "118",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.07t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "91",
+          "attack_raw": "366",
+          "attack_max_raw": "420",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.43t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 29
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AF%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:02.399091+08:00",
+          "content_hash": "sha256:22c45610afb1c69e7c6f94420cdb33ed67a70b56ac2bb1240db831c2fabbbf76",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-6b4ef2aaba",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ビームランサー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "光束长枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "225",
+        "range_raw": "貫通小",
+        "element_raw": "ビーム",
+        "defense_raw": "55",
+        "weight_raw": "1.45",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "3000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "247",
+        "defense_max_raw": "74",
+        "weight_max_raw": "1.84",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：ノボトケの村 東の トレーダーキャンプ；其他获取：T69イエティがドロップ",
+        "acquisition_raw": "佛像村东侧商人营地；T69イエティ掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "56",
+          "attack_raw": "225",
+          "attack_max_raw": "247",
+          "defense_min_raw": "12",
+          "defense_raw": "55",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.75(0.14)t",
+          "weight_raw": "1.45t",
+          "weight_max_raw": "1.84t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "59",
+          "attack_raw": "236",
+          "attack_max_raw": "259",
+          "defense_min_raw": "13",
+          "defense_raw": "57",
+          "defense_max_raw": "79",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.79(0.15)t",
+          "weight_raw": "1.52t",
+          "weight_max_raw": "1.97t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "61",
+          "attack_raw": "247",
+          "attack_max_raw": "271",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.82(0.15)t",
+          "weight_raw": "1.59t",
+          "weight_max_raw": "2.11t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "67",
+          "attack_raw": "270",
+          "attack_max_raw": "297",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "105",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.90(0.17)t",
+          "weight_raw": "1.74t",
+          "weight_max_raw": "2.47t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 18
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%BC%E3%83%A0%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:46.600818+08:00",
+          "content_hash": "sha256:d55e9b7914ea915485c131b071879c074b17bd1f2aa0854df7dfaa95e1645a46",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-6ce4bfd729",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "イナズマシュート",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "闪电射击枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "205",
+        "range_raw": "貫通小",
+        "element_raw": "電気",
+        "defense_raw": "35",
+        "weight_raw": "1.90",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "2200",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "297",
+        "defense_max_raw": "73",
+        "weight_max_raw": "3.66",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：バザースカ；其他获取：グラップルタワー 5F木箱(★変動) 電撃ボール砲からドロップ",
+        "acquisition_raw": "巴扎斯卡商店；铁爪塔5F木箱，星级随机；电击球炮（電撃ボール砲）掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "51",
+          "attack_raw": "205",
+          "attack_max_raw": "297",
+          "defense_min_raw": "8",
+          "defense_raw": "35",
+          "defense_max_raw": "73",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.98(0.19)t",
+          "weight_raw": "1.90t",
+          "weight_max_raw": "3.66t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "53",
+          "attack_raw": "215",
+          "attack_max_raw": "311",
+          "defense_min_raw": "9",
+          "defense_raw": "36",
+          "defense_max_raw": "79",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.03(0.19)t",
+          "weight_raw": "1.99t",
+          "weight_max_raw": "3.96t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "56",
+          "attack_raw": "225",
+          "attack_max_raw": "326",
+          "defense_min_raw": "9",
+          "defense_raw": "38",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.08(0.20)t",
+          "weight_raw": "2.09t",
+          "weight_max_raw": "4.15(4.28)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "61",
+          "attack_raw": "246",
+          "attack_max_raw": "356",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "107",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.18(0.22)t",
+          "weight_raw": "2.28t",
+          "weight_max_raw": "4.53(5.01)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 13
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%88",
+          "retrieved_at": "2026-11-02T13:45:40.279673+08:00",
+          "content_hash": "sha256:9ff73c53e586f55b6081c144b1104648f36e5c8e6172b2b33bd9584e3f9fe1f8",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-703b1d04d5",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "スキャンレーザー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "扫描激光",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "210",
+        "range_raw": "全体",
+        "element_raw": "通常",
+        "defense_raw": "45",
+        "weight_raw": "2.00",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*3800",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "294",
+        "defense_max_raw": "94",
+        "weight_max_raw": "3.80",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：ベネットの海の家 のすぐ東あたりを サルベージ (★0) ヘルメツ島 B1F上部屋木箱(★変動)",
+        "acquisition_raw": "贝内特海之家东侧附近打捞可得无星品；赫尔梅兹岛B1F上侧房间木箱，星级随机。",
+        "notes_raw": "名称含激光，但来源总表列为通常属性、全体攻击；不按名称猜测光束属性。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "294",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.80t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "308",
+          "defense_min_raw": "11",
+          "defense_raw": "47",
+          "defense_max_raw": "103",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "4.11t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "323",
+          "defense_min_raw": "12",
+          "defense_raw": "49",
+          "defense_max_raw": "112",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.21(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "4.37(4.44)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "352",
+          "defense_min_raw": "13",
+          "defense_raw": "54",
+          "defense_max_raw": "135",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.77(5.13)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 15
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:43.009160+08:00",
+          "content_hash": "sha256:1bddd0d0a47c0f1a2ed0ade5f8f859dca5f196526b3c717cee7275584bea7529",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-75d63247ed",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "スペクトルガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "光谱枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "270",
+        "range_raw": "扇範囲可変",
+        "element_raw": "ビーム",
+        "defense_raw": "65",
+        "weight_raw": "2.50",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "8000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "337",
+        "defense_max_raw": "78",
+        "weight_max_raw": "3.17",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：タイシャー (販売パターンA)",
+        "acquisition_raw": "大神社A型商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "67",
+          "attack_raw": "270",
+          "attack_max_raw": "337",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "78",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30(0.25)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "3.17t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 24
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E3%83%AB%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:55.306425+08:00",
+          "content_hash": "sha256:7417b582bc97b3e1327f05f549950fef2b5404ca7793805d3ae2502620fe4e03",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-78a57386b3",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "サンビームガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "日光枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "500",
+        "range_raw": "全体",
+        "element_raw": "通常",
+        "defense_raw": "65",
+        "weight_raw": "7.00",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*10000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "600",
+        "defense_max_raw": "94",
+        "weight_max_raw": "9.73",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：レンタル戦車 19号初期装備 タキオンテレポーター",
+        "acquisition_raw": "出租战车19号初始装备；也可通过超光速传送取得。",
+        "notes_raw": "来源总表列为通常属性、全体攻击，不是光束属性。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "9.73t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 48
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%93%E3%83%BC%E3%83%A0%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:26.099421+08:00",
+          "content_hash": "sha256:e8c63c9d2de3560cd6dec63de85eb6587652df93beda90924711e4e8977c7001",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-80249a3e99",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ひぼたんバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "绯牡丹火神炮",
+        "aliases": [
+          "红牡丹火神炮"
+        ]
+      },
+      "attributes": {
+        "attack_raw": "365",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "110",
+        "weight_raw": "0.10",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*15000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "383",
+        "defense_max_raw": "148",
+        "weight_max_raw": "0.12",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：超電磁戦車からドロップ パーフェクトガードからドロップ ATVピューマからドロップ 撃破数ボーナスによるドロップ(5000)",
+        "acquisition_raw": "超电磁战车（超電磁戦車）、完美守卫（パーフェクトガード）、ATVピューマ掉落；击破5000体奖励。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "91",
+          "attack_raw": "365",
+          "attack_max_raw": "383",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.10t",
+          "weight_max_raw": "0.12t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "95",
+          "attack_raw": "383",
+          "attack_max_raw": "402",
+          "defense_min_raw": "28",
+          "defense_raw": "115",
+          "defense_max_raw": "161",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.10t",
+          "weight_max_raw": "0.12t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "100",
+          "attack_raw": "401",
+          "attack_max_raw": "421",
+          "defense_min_raw": "30",
+          "defense_raw": "121",
+          "defense_max_raw": "181",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.11t",
+          "weight_max_raw": "0.14t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "109",
+          "attack_raw": "438",
+          "attack_max_raw": "459",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "211",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.06(0.01)t",
+          "weight_raw": "0.12t",
+          "weight_max_raw": "0.16t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 36
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%B2%E3%81%BC%E3%81%9F%E3%82%93%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:10.861239+08:00",
+          "content_hash": "sha256:0d5b6df1b2a4c4bd88f21c21541f38ca626c636354d2a8eebc5c597ce48d0c7d",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-8105a510ba",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "土星フリーザー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "土星冷冻器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "399",
+        "range_raw": "扇範囲大",
+        "element_raw": "冷気",
+        "defense_raw": "105",
+        "weight_raw": "7.35",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*7777",
+        "rarity_raw": "★",
+        "obtainable_stars_raw": "1",
+        "attack_max_raw": "518",
+        "defense_max_raw": "162",
+        "weight_max_raw": "11.09",
+        "stat_condition_raw": "1 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：タキオンテレポーター(★1)",
+        "acquisition_raw": "通过超光速传送取得，固定1星。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "494",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "150",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64(0.70)t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "10.36t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "518",
+          "defense_min_raw": "26",
+          "defense_raw": "105",
+          "defense_max_raw": "162",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.82(0.73)t",
+          "weight_raw": "7.35t",
+          "weight_max_raw": "11.09t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 45
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E5%9C%9F%E6%98%9F%E3%83%95%E3%83%AA%E3%83%BC%E3%82%B6%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:46:22.152693+08:00",
+          "content_hash": "sha256:468f5019bb230126d4334d4ed93fcf6b5435e29c03528b75e653776de2883833",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-8b0f293d4d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "バスターフルート",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "爆破长笛",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "300",
+        "range_raw": "全体",
+        "element_raw": "音波",
+        "defense_raw": "50",
+        "weight_raw": "3.20",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "8000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "345",
+        "defense_max_raw": "80",
+        "weight_max_raw": "4.64",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：キャタピラビレッジ キャタピラビレッジ 北の トレーダーキャンプ",
+        "acquisition_raw": "履带村及该村北侧商人营地。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "75",
+          "attack_raw": "300",
+          "attack_max_raw": "345",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.66(0.32)t",
+          "weight_raw": "3.20t",
+          "weight_max_raw": "4.64t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 28
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%95%E3%83%AB%E3%83%BC%E3%83%88",
+          "retrieved_at": "2026-11-02T13:46:00.856253+08:00",
+          "content_hash": "sha256:3a0014ca5c86455d7967ba05a02be684477f0c746fb6d42ee743f907a792095e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-958fda08ac",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "11ミリバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "11mm火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "173",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "55",
+        "weight_raw": "1.50",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "1250",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "224",
+        "defense_max_raw": "63",
+        "weight_max_raw": "1.90",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：酒場サースティ デルタ・リオ 北東の トレーダーキャンプ (改造済み)；其他获取：デルタ・リオ 東にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "萨斯蒂酒吧商店；德尔塔·利奥东北商人营地出售改造品；德尔塔·利奥东侧随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "43",
+          "attack_raw": "173",
+          "attack_max_raw": "224",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "63",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.78(0.15)t",
+          "weight_raw": "1.50t",
+          "weight_max_raw": "1.90t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "45",
+          "attack_raw": "181",
+          "attack_max_raw": "235",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "68",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.81(0.15)t",
+          "weight_raw": "1.57t",
+          "weight_max_raw": "2.04t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "47",
+          "attack_raw": "190",
+          "attack_max_raw": "247",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "75",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.85(0.16)t",
+          "weight_raw": "1.65t",
+          "weight_max_raw": "2.19t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 7
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/11%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:33.057182+08:00",
+          "content_hash": "sha256:285a3bd21c02a050a31cf8e267b047389ff2667e7deb8cbdab80778179f35a08",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-b0b363e6d6",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ローズバルカン改",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "玫瑰火神炮改",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "400",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "110",
+        "weight_raw": "0.25",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*2000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "480",
+        "defense_max_raw": "148",
+        "weight_max_raw": "0.33",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：ローズバルカンをタキオンテレポーターで転送(★0～3)",
+        "acquisition_raw": "将玫瑰火神炮（ローズバルカン）通过超光速传送转送，星级范围0～3星。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "480",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.12(0.02)t",
+          "weight_raw": "0.25t",
+          "weight_max_raw": "0.33t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "105",
+          "attack_raw": "420",
+          "attack_max_raw": "504",
+          "defense_min_raw": "28",
+          "defense_raw": "115",
+          "defense_max_raw": "161",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.13(0.02)t",
+          "weight_raw": "0.26t",
+          "weight_max_raw": "0.35t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "528",
+          "defense_min_raw": "30",
+          "defense_raw": "121",
+          "defense_max_raw": "181",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.13(0.02)t",
+          "weight_raw": "0.27t",
+          "weight_max_raw": "0.38t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "120",
+          "attack_raw": "480",
+          "attack_max_raw": "576",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "211",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.15(0.03)t",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "0.44t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 49
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3%E6%94%B9",
+          "retrieved_at": "2026-11-02T13:46:27.284640+08:00",
+          "content_hash": "sha256:a2e12a4d1ee627bf3a015abdaeb5bf3c0de6375ad5f003db993ec1a4724dd52b",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-b58b180efe",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "7.7ミリ機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "7.7mm机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "125",
+        "range_raw": "2連射",
+        "element_raw": "通常",
+        "defense_raw": "25",
+        "weight_raw": "0.60",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*500",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "300",
+        "defense_max_raw": "50",
+        "weight_max_raw": "1.19(1.46)",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：白バイ初期装備(★0) レンタル戦車 1号、4号の初期装備(★0) ハトバ北キャンプ周辺緑地(ランダム埋蔵、★変動あり)",
+        "acquisition_raw": "警用摩托及出租战车1、4号初始装备为无星品；码头镇北方营地周边绿地随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "31",
+          "attack_raw": "125",
+          "attack_max_raw": "300",
+          "defense_min_raw": "6",
+          "defense_raw": "25",
+          "defense_max_raw": "50",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.31(0.06)t",
+          "weight_raw": "0.60t",
+          "weight_max_raw": "1.19(1.46)t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "32",
+          "attack_raw": "131",
+          "attack_max_raw": "314",
+          "defense_min_raw": "6",
+          "defense_raw": "26",
+          "defense_max_raw": "53",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.32(0.06)t",
+          "weight_raw": "0.63t",
+          "weight_max_raw": "1.25(1.55)t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "34",
+          "attack_raw": "137",
+          "attack_max_raw": "328",
+          "defense_min_raw": "6",
+          "defense_raw": "27",
+          "defense_max_raw": "59",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.34(0.06)t",
+          "weight_raw": "0.66t",
+          "weight_max_raw": "1.31(1.68)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "150",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "30",
+          "defense_max_raw": "",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "",
+          "weight_raw": "0.72t",
+          "weight_max_raw": ""
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 2
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/7.7%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:25.902453+08:00",
+          "content_hash": "sha256:a8e5edda0fcd763d7f63517691719f16de236026a1682238ce193f02063d5065",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-b692a46ebb",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "9ミリチェインガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "9mm链炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "195",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "60",
+        "weight_raw": "1.30",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "1000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "243",
+        "defense_max_raw": "75",
+        "weight_max_raw": "1.69",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：バザースカ；其他获取：デルタ・リオ北東キャンプ西荒地,要金属探知機,★変動",
+        "acquisition_raw": "巴扎斯卡商店；德尔塔·利奥东北商人营地西侧荒地随机埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "48",
+          "attack_raw": "195",
+          "attack_max_raw": "243",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "75",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.67t",
+          "weight_raw": "1.30t",
+          "weight_max_raw": "1.69t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "234",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "72",
+          "defense_max_raw": "",
+          "magazine_min_raw": "",
+          "magazine_raw": "",
+          "magazine_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "1.56t",
+          "weight_max_raw": "t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 10
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/9%E3%83%9F%E3%83%AA%E3%83%81%E3%82%A7%E3%82%A4%E3%83%B3%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:36.665782+08:00",
+          "content_hash": "sha256:9df65b1fe948e1247c334964511d6c02c045ce666261a514aa81e093155974df",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-c7d839377d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "15ミリバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "15mm火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "200",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "55",
+        "weight_raw": "1.75",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "2000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "250",
+        "defense_max_raw": "82",
+        "weight_max_raw": "2.53",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：バザースカ ホックの交易所；其他获取：バトー戦車を初回製造時に機銃の穴を開けておくとプレゼントしてもらえる イスラポルト 周辺にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "巴扎斯卡、霍克交易所商店；首次在巴特处制造战车时预留机枪孔可获赠；以斯拉港附近随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "50",
+          "attack_raw": "200",
+          "attack_max_raw": "250",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "82",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.91(0.17)t",
+          "weight_raw": "1.75t",
+          "weight_max_raw": "2.53t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "262",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "91",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.95(0.18)t",
+          "weight_raw": "1.83t",
+          "weight_max_raw": "2.76t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "275",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.99(0.19)t",
+          "weight_raw": "1.92t",
+          "weight_max_raw": "2.95t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "60",
+          "attack_raw": "240",
+          "attack_max_raw": "300",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "122",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.48t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 11
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/15%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:37.870262+08:00",
+          "content_hash": "sha256:8867d799cfab05a2d7346bfe1e0a8ff1166c0746f22722e24d79188d0635acc5",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-ca562f9c7d",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "18ミリバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "18mm火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "285",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "70",
+        "weight_raw": "2.20",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "7000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "370",
+        "defense_max_raw": "87",
+        "weight_max_raw": "2.92",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：モロ・ポコ (「 荒野の運送屋 」にて荷物運搬後)；其他获取：P3Cビーからドロップ(★0) ガンケーキからドロップ",
+        "acquisition_raw": "荒野运输送货后，摩洛波克商店追加；P3Cビー掉落无星品，ガンケーキ也会掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "71",
+          "attack_raw": "285",
+          "attack_max_raw": "370",
+          "defense_min_raw": "17",
+          "defense_raw": "70",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "2.92t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 26
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/18%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:57.751400+08:00",
+          "content_hash": "sha256:1d9a272bdd893c72f7e79e4187f2ad507398aba249977bf552f8ede54e762e0f",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-cb1e99e0f9",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "キャノンチューブ",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "加农管",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "500",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "80",
+        "weight_raw": "8.00",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "10000",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "600",
+        "defense_max_raw": "100",
+        "weight_max_raw": "10.16",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：モロ・ポコ (販売パターンA)",
+        "acquisition_raw": "摩洛波克A型商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "20",
+          "defense_raw": "80",
+          "defense_max_raw": "100",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.16(0.80)t",
+          "weight_raw": "8.00t",
+          "weight_max_raw": "10.16t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 41
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AD%E3%83%A3%E3%83%8E%E3%83%B3%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+          "retrieved_at": "2026-11-02T13:46:17.285200+08:00",
+          "content_hash": "sha256:59fb27b9eead56880e5de94d80e3f9ec50a4565fbc335521ee30304aba9723cf",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-cc5d6f9001",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "フリーズガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "冰冻枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "315",
+        "range_raw": "扇範囲小",
+        "element_raw": "冷気",
+        "defense_raw": "85",
+        "weight_raw": "2.80",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "9800",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "393",
+        "defense_max_raw": "97",
+        "weight_max_raw": "3.47",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：デスクルス (開放後) デスクルス 西の砂漠の トレーダーキャンプ",
+        "acquisition_raw": "死亡十字解放后的商店；死亡十字西侧沙漠商人营地。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "78",
+          "attack_raw": "315",
+          "attack_max_raw": "393",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.47t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 31
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:04.767226+08:00",
+          "content_hash": "sha256:c95a89c8bc506328f5c45e0984428b385cfe70fbde88fb963548ba5f8830c116",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-e086d15efe",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ノラバルカン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "诺拉火神炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "380",
+        "range_raw": "扇範囲大",
+        "element_raw": "通常",
+        "defense_raw": "60",
+        "weight_raw": "1.00",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "*10000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "570",
+        "defense_max_raw": "123",
+        "weight_max_raw": "1.93",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：ホバリング・ノラ からドロップ(★変動有)",
+        "acquisition_raw": "赏金首ホバリング・ノラ掉落，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "570",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "123",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.52(0.10)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.93t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "598",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "135",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.54(0.10)t",
+          "weight_raw": "1.05t",
+          "weight_max_raw": "2.08t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "627",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "2.18(2.25)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "684",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "180",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.38(2.64)t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 39
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8E%E3%83%A9%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:14.907261+08:00",
+          "content_hash": "sha256:7d050bc8bb098253a39aa32d098ccd69c373da9b2ad6a8f0b7524fdb977c3e9e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-e0da6ec88a",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "おんちスピーカー",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "走调扬声器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "210",
+        "range_raw": "全体",
+        "element_raw": "音波",
+        "defense_raw": "50",
+        "weight_raw": "2.00",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "*1000",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "294",
+        "defense_max_raw": "80",
+        "weight_max_raw": "3.20",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "其他获取：うたうパラボラからドロップ",
+        "acquisition_raw": "会唱歌的抛物面天线（うたうパラボラ）掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "294",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.20t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "308",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.42t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "323",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "3.71t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "352",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.27t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 16
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%8A%E3%82%93%E3%81%A1%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC",
+          "retrieved_at": "2026-11-02T13:45:44.208534+08:00",
+          "content_hash": "sha256:50d71bf6bb57059428d8f7c5dcb6bb2faec95fe009e85ea103bb069941e32e4a",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-ee154afe88",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "冷気放射器",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "冷气放射器",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "180",
+        "range_raw": "扇範囲小",
+        "element_raw": "冷気",
+        "defense_raw": "75",
+        "weight_raw": "1.80",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "1450",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "225",
+        "defense_max_raw": "90",
+        "weight_max_raw": "2.28",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：酒場サースティ；其他获取：ヴラド博物館 B1F木箱(★変動) デルタ・リオ 東の半島先端部にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "萨斯蒂酒吧商店；布拉德博物馆B1F木箱；德尔塔·利奥东侧半岛尖端随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "45",
+          "attack_raw": "180",
+          "attack_max_raw": "225",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.93(0.18)t",
+          "weight_raw": "1.80t",
+          "weight_max_raw": "2.28t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "47",
+          "attack_raw": "189",
+          "attack_max_raw": "236",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.98(0.18)t",
+          "weight_raw": "1.89t",
+          "weight_max_raw": "2.45t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "49",
+          "attack_raw": "198",
+          "attack_max_raw": "247",
+          "defense_min_raw": "20",
+          "defense_raw": "82",
+          "defense_max_raw": "106",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.02(0.19)t",
+          "weight_raw": "1.98t",
+          "weight_max_raw": "2.63t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "54",
+          "attack_raw": "216",
+          "attack_max_raw": "270",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "126",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.12(0.21)t",
+          "weight_raw": "2.16t",
+          "weight_max_raw": "3.00t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 8
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E5%86%B7%E6%B0%97%E6%94%BE%E5%B0%84%E5%99%A8",
+          "retrieved_at": "2026-11-02T13:45:34.297077+08:00",
+          "content_hash": "sha256:17a5c945a368cc0d0dffc9a1b4af0f8dc529c72d64d6e97ebea19c4f50cb37c6",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-ee778d1a38",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "13ミリチェイン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "13mm链炮",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "250",
+        "range_raw": "1体",
+        "element_raw": "通常",
+        "defense_raw": "70",
+        "weight_raw": "2.10",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "4000",
+        "obtainable_stars_raw": "0,1,2",
+        "attack_max_raw": "300",
+        "defense_max_raw": "94",
+        "weight_max_raw": "2.79",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：タイシャー；其他获取：タキオンテレポーター(★0～2)",
+        "acquisition_raw": "大神社商店；也可通过超光速传送取得0～2星品。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "62",
+          "attack_raw": "250",
+          "attack_max_raw": "300",
+          "defense_min_raw": "17",
+          "defense_raw": "70",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "2.79t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "68",
+          "attack_raw": "275",
+          "attack_max_raw": "330",
+          "defense_min_raw": "19",
+          "defense_raw": "77",
+          "defense_max_raw": "111",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.20(0.23)t",
+          "weight_raw": "2.31t",
+          "weight_max_raw": "3.21t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 21
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/13%E3%83%9F%E3%83%AA%E3%83%81%E3%82%A7%E3%82%A4%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:45:50.262681+08:00",
+          "content_hash": "sha256:9c0fd27d3e713e1c67fb3c4dd57b86a589733c01c2297cf331304b41929e95bf",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-f0a8529b48",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "16ミリ機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "16mm机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "220",
+        "range_raw": "2連射",
+        "element_raw": "通常",
+        "defense_raw": "50",
+        "weight_raw": "1.20",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "2500",
+        "rarity_raw": "☆☆☆",
+        "obtainable_stars_raw": "0,1,2,3",
+        "attack_max_raw": "242",
+        "defense_max_raw": "80",
+        "weight_max_raw": "1.70",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：デルタ・リオ (「 荒野の運送屋 」にて荷物運搬後)；其他获取：レンタル 6号、7号初期装備(★0) ヘルメツ島 B2F木箱(★変動) ナイトシェイドがドロップ バブルカニガンがドロップ ウニガンがドロップ アクアウォーカーがドロップ",
+        "acquisition_raw": "荒野运输送货后，德尔塔·利奥商店追加；出租战车6、7号初始装备为无星品；赫尔梅兹岛B2F木箱；ナイトシェイド、バブルカニガン、ウニガン、アクアウォーカー掉落。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "242",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.70t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "254",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.82t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "60",
+          "attack_raw": "242",
+          "attack_max_raw": "266",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "1.99t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "66",
+          "attack_raw": "264",
+          "attack_max_raw": "290",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.30t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 17
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/16%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:45.390510+08:00",
+          "content_hash": "sha256:275c5bcf275edb06a3e80ce934013abf1ed6494c3e657a493efe5c2d55993e7f",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-f8dea09eb5",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "13ミリ機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "13mm机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "170",
+        "range_raw": "2連射",
+        "element_raw": "通常",
+        "defense_raw": "50",
+        "weight_raw": "1.00",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "1150",
+        "attack_max_raw": "221",
+        "defense_max_raw": "80",
+        "weight_max_raw": "1.54",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：アズサ アズサ北の トレーダーキャンプ；其他获取：ウルフ 初期装備 ヴラド博物館 周辺の砂漠にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "阿梓莎及该镇北方商人营地；红狼战车初始装备；布拉德博物馆周边沙漠随机埋藏，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "42",
+          "attack_raw": "170",
+          "attack_max_raw": "221",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.52(0.10)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.54t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "44",
+          "attack_raw": "178",
+          "attack_max_raw": "231",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.54(0.10)t",
+          "weight_raw": "1.05t",
+          "weight_max_raw": "1.64t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "46",
+          "attack_raw": "187",
+          "attack_max_raw": "243",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "1.79t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 5
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/13%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:30.002161+08:00",
+          "content_hash": "sha256:d8933ff7d2dfc0af64b72cc4ca3e4dd09e6e6e55f46a5a075b6f70cdf0d0587e",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-f942b69a15",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "ファイアガン",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "火焰枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "310",
+        "range_raw": "扇範囲小",
+        "element_raw": "火炎",
+        "defense_raw": "85",
+        "weight_raw": "2.60",
+        "magazine_raw": "∞",
+        "interception_raw": "✗",
+        "price_raw": "7500",
+        "rarity_raw": "-",
+        "obtainable_stars_raw": "0",
+        "attack_max_raw": "387",
+        "defense_max_raw": "97",
+        "weight_max_raw": "3.22",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：キャタピラビレッジ",
+        "acquisition_raw": "履带村商店。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "77",
+          "attack_raw": "310",
+          "attack_max_raw": "387",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.35(0.26)t",
+          "weight_raw": "2.60t",
+          "weight_max_raw": "3.22t"
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 30
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%AC%E3%83%B3",
+          "retrieved_at": "2026-11-02T13:46:03.583886+08:00",
+          "content_hash": "sha256:dbd0a624668d19085f4dc0466e5260087167d609f163833534cfe15dd890f230",
+          "table_index": 0,
+          "row_index": 0
+        }
+      ],
+      "source_spans": [],
+      "issues": [],
+      "asset_refs": []
+    },
+    {
+      "id": "sub-gun-f9c139b207",
+      "game": "mm2r",
+      "target_version": "0.99",
+      "domain": "equipment",
+      "kind": "sub_gun",
+      "names": {
+        "ja": "9ミリ機銃",
+        "zh_09": null,
+        "zh_099": null,
+        "zh_reference": "9mm机枪",
+        "aliases": []
+      },
+      "attributes": {
+        "attack_raw": "150",
+        "range_raw": "2連射",
+        "element_raw": "通常",
+        "defense_raw": "30",
+        "weight_raw": "0.80",
+        "magazine_raw": "∞",
+        "interception_raw": "◯",
+        "price_raw": "650",
+        "attack_max_raw": "195",
+        "defense_max_raw": "69",
+        "weight_max_raw": "1.56",
+        "stat_condition_raw": "0 星初始值；取自独立详情，改造上限不含超改造",
+        "acquisition_ja_raw": "店铺：エルニニョ；其他获取：レンタル2号 初期装備 ハトバ 北の トレーダーキャンプ 周辺の荒地にランダム 埋設 (要金属探知機、★変動)",
+        "acquisition_raw": "厄尔尼诺商店；出租战车2号初始装备；码头镇北方商人营地周边荒地随机埋藏，需金属探测器，星级随机。",
+        "interception_note_raw": "源表只标记迎击兵装化适用性，不代表装备后无条件自动迎击。"
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "37",
+          "attack_raw": "150",
+          "attack_max_raw": "195",
+          "defense_min_raw": "7",
+          "defense_raw": "30",
+          "defense_max_raw": "69",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.41(0.08)t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.56t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "39",
+          "attack_raw": "157",
+          "attack_max_raw": "204",
+          "defense_min_raw": "7",
+          "defense_raw": "31",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.43(0.08)t",
+          "weight_raw": "0.84t",
+          "weight_max_raw": "1.67(1.69)t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "41",
+          "attack_raw": "165",
+          "attack_max_raw": "214",
+          "defense_min_raw": "8",
+          "defense_raw": "33",
+          "defense_max_raw": "84",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.45(0.08)t",
+          "weight_raw": "0.88t",
+          "weight_max_raw": "1.75(1.85)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "180",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "36",
+          "defense_max_raw": "",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "",
+          "weight_raw": "0.96t",
+          "weight_max_raw": ""
+        }
+      ],
+      "version_scope": [
+        "mm2r-jp"
+      ],
+      "verification_status": "source_only",
+      "source_refs": [
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+          "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+          "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+          "table_index": 3,
+          "row_index": 3
+        },
+        {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-sub-guns",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/9%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+          "retrieved_at": "2026-11-02T13:45:27.539620+08:00",
+          "content_hash": "sha256:8d05493fff8219456266924d1ea9375a9260d53a857ec4876c0e5db4691c981b",
           "table_index": 0,
           "row_index": 0
         }

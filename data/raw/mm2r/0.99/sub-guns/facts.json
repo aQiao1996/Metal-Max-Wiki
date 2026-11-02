@@ -1,0 +1,4002 @@
+{
+  "schema_version": 1,
+  "source_id": "metalmaniax-mm2r",
+  "records": [
+    {
+      "name_ja": "さびた機銃",
+      "overview": {
+        "名称": "さびた機銃",
+        "攻撃": "80",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "5",
+        "重量(t)": "0.30",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*100",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 0
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%95%E3%81%B3%E3%81%9F%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:23.452594+08:00",
+        "content_hash": "sha256:36f87c4b34fb24bd9500652da222eefc40f93d0475792def2a393ecf8e19a52a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "-",
+          "attack_raw": "80",
+          "attack_max_raw": "-",
+          "defense_min_raw": "-",
+          "defense_raw": "5",
+          "defense_max_raw": "-",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "-",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "-"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：ハトバ北砂漠、アズサ～サースティ間、レインバレー内などにランダム 埋設 (要金属探知機) ヘルメツ島 B1階北部屋木箱"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "7ミリ機銃",
+      "overview": {
+        "名称": "7ミリ機銃",
+        "攻撃": "100",
+        "範囲": "扇範囲小",
+        "属性": "通常",
+        "守備": "20",
+        "重量(t)": "0.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 1
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/7%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:24.706322+08:00",
+        "content_hash": "sha256:01b627f33dec2828464145eb501a27220cdfd362301a847f59382f9f38e573a6",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "25",
+          "attack_raw": "100",
+          "attack_max_raw": "150",
+          "defense_min_raw": "5",
+          "defense_raw": "20",
+          "defense_max_raw": "50",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.10(0.02)t",
+          "weight_raw": "0.20t",
+          "weight_max_raw": "0.40(0.44)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：バギー 初期装備(★0) タキオンテレポーター(チョッパー初期装備、★0)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "7.7ミリ機銃",
+      "overview": {
+        "名称": "7.7ミリ機銃",
+        "攻撃": "125",
+        "範囲": "2連射",
+        "属性": "通常",
+        "守備": "25",
+        "重量(t)": "0.60",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*500",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 2
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/7.7%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:25.902453+08:00",
+        "content_hash": "sha256:a8e5edda0fcd763d7f63517691719f16de236026a1682238ce193f02063d5065",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "31",
+          "attack_raw": "125",
+          "attack_max_raw": "300",
+          "defense_min_raw": "6",
+          "defense_raw": "25",
+          "defense_max_raw": "50",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.31(0.06)t",
+          "weight_raw": "0.60t",
+          "weight_max_raw": "1.19(1.46)t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "32",
+          "attack_raw": "131",
+          "attack_max_raw": "314",
+          "defense_min_raw": "6",
+          "defense_raw": "26",
+          "defense_max_raw": "53",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.32(0.06)t",
+          "weight_raw": "0.63t",
+          "weight_max_raw": "1.25(1.55)t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "34",
+          "attack_raw": "137",
+          "attack_max_raw": "328",
+          "defense_min_raw": "6",
+          "defense_raw": "27",
+          "defense_max_raw": "59",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.34(0.06)t",
+          "weight_raw": "0.66t",
+          "weight_max_raw": "1.31(1.68)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "150",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "30",
+          "defense_max_raw": "",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "",
+          "weight_raw": "0.72t",
+          "weight_max_raw": ""
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：白バイ初期装備(★0) レンタル戦車 1号、4号の初期装備(★0) ハトバ北キャンプ周辺緑地(ランダム埋蔵、★変動あり)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "9ミリ機銃",
+      "overview": {
+        "名称": "9ミリ機銃",
+        "攻撃": "150",
+        "範囲": "2連射",
+        "属性": "通常",
+        "守備": "30",
+        "重量(t)": "0.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "650",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 3
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/9%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:27.539620+08:00",
+        "content_hash": "sha256:8d05493fff8219456266924d1ea9375a9260d53a857ec4876c0e5db4691c981b",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "37",
+          "attack_raw": "150",
+          "attack_max_raw": "195",
+          "defense_min_raw": "7",
+          "defense_raw": "30",
+          "defense_max_raw": "69",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.41(0.08)t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.56t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "39",
+          "attack_raw": "157",
+          "attack_max_raw": "204",
+          "defense_min_raw": "7",
+          "defense_raw": "31",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.43(0.08)t",
+          "weight_raw": "0.84t",
+          "weight_max_raw": "1.67(1.69)t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "41",
+          "attack_raw": "165",
+          "attack_max_raw": "214",
+          "defense_min_raw": "8",
+          "defense_raw": "33",
+          "defense_max_raw": "84",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.45(0.08)t",
+          "weight_raw": "0.88t",
+          "weight_max_raw": "1.75(1.85)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "180",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "36",
+          "defense_max_raw": "",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "",
+          "weight_raw": "0.96t",
+          "weight_max_raw": ""
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：エルニニョ",
+        "其他获取：レンタル2号 初期装備 ハトバ 北の トレーダーキャンプ 周辺の荒地にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ガトリングガン",
+      "overview": {
+        "名称": "ガトリングガン",
+        "攻撃": "165",
+        "範囲": "扇範囲小",
+        "属性": "通常",
+        "守備": "40",
+        "重量(t)": "1.10",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "800",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 4
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AC%E3%83%88%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:28.761711+08:00",
+        "content_hash": "sha256:02d23544a57bbb093dcbc78e567023ae984dd232da052c21d6f5f4e309109710",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "41",
+          "attack_raw": "165",
+          "attack_max_raw": "198",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "2.05t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "43",
+          "attack_raw": "173",
+          "attack_max_raw": "207",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "98",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.59(0.11)t",
+          "weight_raw": "1.15t",
+          "weight_max_raw": "2.21t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "45",
+          "attack_raw": "181",
+          "attack_max_raw": "217",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "107",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.21t",
+          "weight_max_raw": "2.40t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "49",
+          "attack_raw": "198",
+          "attack_max_raw": "237",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "129",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.62(2.82)t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：ハトバ",
+        "其他获取：レンタル3号 初期装備(★0) イヌの村 南砂浜にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "13ミリ機銃",
+      "overview": {
+        "名称": "13ミリ機銃",
+        "攻撃": "170",
+        "範囲": "2連射",
+        "属性": "通常",
+        "守備": "50",
+        "重量(t)": "1.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "1150",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 5
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/13%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:30.002161+08:00",
+        "content_hash": "sha256:d8933ff7d2dfc0af64b72cc4ca3e4dd09e6e6e55f46a5a075b6f70cdf0d0587e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "42",
+          "attack_raw": "170",
+          "attack_max_raw": "221",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.52(0.10)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.54t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "44",
+          "attack_raw": "178",
+          "attack_max_raw": "231",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.54(0.10)t",
+          "weight_raw": "1.05t",
+          "weight_max_raw": "1.64t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "46",
+          "attack_raw": "187",
+          "attack_max_raw": "243",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "1.79t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：アズサ アズサ北の トレーダーキャンプ",
+        "其他获取：ウルフ 初期装備 ヴラド博物館 周辺の砂漠にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ファイアショット",
+      "overview": {
+        "名称": "ファイアショット",
+        "攻撃": "170",
+        "範囲": "扇範囲小",
+        "属性": "火炎",
+        "守備": "45",
+        "重量(t)": "1.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "1200",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 6
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88",
+        "retrieved_at": "2026-11-02T13:45:31.254482+08:00",
+        "content_hash": "sha256:0f6ec07d6f306add8542452070e7a54433da352cc4914041f23c10c09bafbe2e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "42",
+          "attack_raw": "170",
+          "attack_max_raw": "297",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.38(2.46)t"
+        }
+      ],
+      "acquisition_ja": ["店铺：ハトバ アズサ"],
+      "issues": []
+    },
+    {
+      "name_ja": "11ミリバルカン",
+      "overview": {
+        "名称": "11ミリバルカン",
+        "攻撃": "173",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "55",
+        "重量(t)": "1.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "1250",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 7
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/11%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:33.057182+08:00",
+        "content_hash": "sha256:285a3bd21c02a050a31cf8e267b047389ff2667e7deb8cbdab80778179f35a08",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "43",
+          "attack_raw": "173",
+          "attack_max_raw": "224",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "63",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.78(0.15)t",
+          "weight_raw": "1.50t",
+          "weight_max_raw": "1.90t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "45",
+          "attack_raw": "181",
+          "attack_max_raw": "235",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "68",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.81(0.15)t",
+          "weight_raw": "1.57t",
+          "weight_max_raw": "2.04t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "47",
+          "attack_raw": "190",
+          "attack_max_raw": "247",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "75",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.85(0.16)t",
+          "weight_raw": "1.65t",
+          "weight_max_raw": "2.19t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：酒場サースティ デルタ・リオ 北東の トレーダーキャンプ (改造済み)",
+        "其他获取：デルタ・リオ 東にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "冷気放射器",
+      "overview": {
+        "名称": "冷気放射器",
+        "攻撃": "180",
+        "範囲": "扇範囲小",
+        "属性": "冷気",
+        "守備": "75",
+        "重量(t)": "1.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "1450",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 8
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E5%86%B7%E6%B0%97%E6%94%BE%E5%B0%84%E5%99%A8",
+        "retrieved_at": "2026-11-02T13:45:34.297077+08:00",
+        "content_hash": "sha256:17a5c945a368cc0d0dffc9a1b4af0f8dc529c72d64d6e97ebea19c4f50cb37c6",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "45",
+          "attack_raw": "180",
+          "attack_max_raw": "225",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.93(0.18)t",
+          "weight_raw": "1.80t",
+          "weight_max_raw": "2.28t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "47",
+          "attack_raw": "189",
+          "attack_max_raw": "236",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.98(0.18)t",
+          "weight_raw": "1.89t",
+          "weight_max_raw": "2.45t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "49",
+          "attack_raw": "198",
+          "attack_max_raw": "247",
+          "defense_min_raw": "20",
+          "defense_raw": "82",
+          "defense_max_raw": "106",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.02(0.19)t",
+          "weight_raw": "1.98t",
+          "weight_max_raw": "2.63t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "54",
+          "attack_raw": "216",
+          "attack_max_raw": "270",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "126",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.12(0.21)t",
+          "weight_raw": "2.16t",
+          "weight_max_raw": "3.00t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：酒場サースティ",
+        "其他获取：ヴラド博物館 B1F木箱(★変動) デルタ・リオ 東の半島先端部にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "フォースバルカン",
+      "overview": {
+        "名称": "フォースバルカン",
+        "攻撃": "190",
+        "範囲": "4連射",
+        "属性": "通常",
+        "守備": "60",
+        "重量(t)": "4.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "4500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 9
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B9%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:35.480335+08:00",
+        "content_hash": "sha256:f7283d2acc9108f3d43bde3f03000af560e1239cae76f355b8e568d3ea390478",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "47",
+          "attack_raw": "190",
+          "attack_max_raw": "247",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.08(0.40)t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "5.92t"
+        }
+      ],
+      "acquisition_ja": ["店铺：デルタ・リオ (販売パターンC)"],
+      "issues": []
+    },
+    {
+      "name_ja": "9ミリチェインガン",
+      "overview": {
+        "名称": "9ミリチェインガン",
+        "攻撃": "195",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "60",
+        "重量(t)": "1.30",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "1000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 10
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/9%E3%83%9F%E3%83%AA%E3%83%81%E3%82%A7%E3%82%A4%E3%83%B3%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:36.665782+08:00",
+        "content_hash": "sha256:9df65b1fe948e1247c334964511d6c02c045ce666261a514aa81e093155974df",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "48",
+          "attack_raw": "195",
+          "attack_max_raw": "243",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "75",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.67t",
+          "weight_raw": "1.30t",
+          "weight_max_raw": "1.69t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "",
+          "attack_raw": "234",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "72",
+          "defense_max_raw": "",
+          "magazine_min_raw": "",
+          "magazine_raw": "",
+          "magazine_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "1.56t",
+          "weight_max_raw": "t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：バザースカ",
+        "其他获取：デルタ・リオ北東キャンプ西荒地,要金属探知機,★変動"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "15ミリバルカン",
+      "overview": {
+        "名称": "15ミリバルカン",
+        "攻撃": "200",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "55",
+        "重量(t)": "1.75",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "2000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 11
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/15%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:37.870262+08:00",
+        "content_hash": "sha256:8867d799cfab05a2d7346bfe1e0a8ff1166c0746f22722e24d79188d0635acc5",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "50",
+          "attack_raw": "200",
+          "attack_max_raw": "250",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "82",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.91(0.17)t",
+          "weight_raw": "1.75t",
+          "weight_max_raw": "2.53t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "262",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "91",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.95(0.18)t",
+          "weight_raw": "1.83t",
+          "weight_max_raw": "2.76t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "275",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.99(0.19)t",
+          "weight_raw": "1.92t",
+          "weight_max_raw": "2.95t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "60",
+          "attack_raw": "240",
+          "attack_max_raw": "300",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "122",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.48t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：バザースカ ホックの交易所",
+        "其他获取：バトー戦車を初回製造時に機銃の穴を開けておくとプレゼントしてもらえる イスラポルト 周辺にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ビームブラスター",
+      "overview": {
+        "名称": "ビームブラスター",
+        "攻撃": "200",
+        "範囲": "貫通小",
+        "属性": "ビーム",
+        "守備": "40",
+        "重量(t)": "2.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*2480",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 12
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%BC%E3%83%A0%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:39.055297+08:00",
+        "content_hash": "sha256:8b3f258b5f2f223fb9ca0954b5938e9e8659926d3eb295a74b15ea0713c6b6fd",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "50",
+          "attack_raw": "200",
+          "attack_max_raw": "250",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.32t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "262",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "81",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.61t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "275",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "90",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "3.91t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "60",
+          "attack_raw": "240",
+          "attack_max_raw": "300",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "108",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.56t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：アズサ 真東、行き止まり部分よりやや手前に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "イナズマシュート",
+      "overview": {
+        "名称": "イナズマシュート",
+        "攻撃": "205",
+        "範囲": "貫通小",
+        "属性": "電気",
+        "守備": "35",
+        "重量(t)": "1.90",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "2200",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 13
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A4%E3%83%8A%E3%82%BA%E3%83%9E%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%88",
+        "retrieved_at": "2026-11-02T13:45:40.279673+08:00",
+        "content_hash": "sha256:9ff73c53e586f55b6081c144b1104648f36e5c8e6172b2b33bd9584e3f9fe1f8",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "51",
+          "attack_raw": "205",
+          "attack_max_raw": "297",
+          "defense_min_raw": "8",
+          "defense_raw": "35",
+          "defense_max_raw": "73",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.98(0.19)t",
+          "weight_raw": "1.90t",
+          "weight_max_raw": "3.66t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "53",
+          "attack_raw": "215",
+          "attack_max_raw": "311",
+          "defense_min_raw": "9",
+          "defense_raw": "36",
+          "defense_max_raw": "79",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.03(0.19)t",
+          "weight_raw": "1.99t",
+          "weight_max_raw": "3.96t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "56",
+          "attack_raw": "225",
+          "attack_max_raw": "326",
+          "defense_min_raw": "9",
+          "defense_raw": "38",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.08(0.20)t",
+          "weight_raw": "2.09t",
+          "weight_max_raw": "4.15(4.28)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "61",
+          "attack_raw": "246",
+          "attack_max_raw": "356",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "107",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.18(0.22)t",
+          "weight_raw": "2.28t",
+          "weight_max_raw": "4.53(5.01)t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：バザースカ",
+        "其他获取：グラップルタワー 5F木箱(★変動) 電撃ボール砲からドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "マスタードコブラ",
+      "overview": {
+        "名称": "マスタードコブラ",
+        "攻撃": "210",
+        "範囲": "扇範囲大",
+        "属性": "ガス",
+        "守備": "75",
+        "重量(t)": "2.25",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "2250",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 14
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%89%E3%82%B3%E3%83%96%E3%83%A9",
+        "retrieved_at": "2026-11-02T13:45:41.569450+08:00",
+        "content_hash": "sha256:072acd0aba48f4136682d4f83a37668bdca86eeb13a5208bc485a64ec2826535",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "241",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.17(0.22)t",
+          "weight_raw": "2.25t",
+          "weight_max_raw": "2.85t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "253",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.22(0.23)t",
+          "weight_raw": "2.36t",
+          "weight_max_raw": "3.13t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "265",
+          "defense_min_raw": "20",
+          "defense_raw": "82",
+          "defense_max_raw": "118",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.28(0.24)t",
+          "weight_raw": "2.47t",
+          "weight_max_raw": "3.35t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "289",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.40(0.27)t",
+          "weight_raw": "2.70t",
+          "weight_max_raw": "3.91t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デルタ・リオ (「 荒野の運送屋 」にて荷物運搬「前」限定) イスラポルト (「荒野の運送屋」にて荷物運搬「前」限定) デルタ・リオ 北東の トレーダーキャンプ (改造済み)",
+        "其他获取：北の魔女の家北西のトレーダーキャンプ 北東の山間付近にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スキャンレーザー",
+      "overview": {
+        "名称": "スキャンレーザー",
+        "攻撃": "210",
+        "範囲": "全体",
+        "属性": "通常",
+        "守備": "45",
+        "重量(t)": "2.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*3800",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 15
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:43.009160+08:00",
+        "content_hash": "sha256:1bddd0d0a47c0f1a2ed0ade5f8f859dca5f196526b3c717cee7275584bea7529",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "294",
+          "defense_min_raw": "11",
+          "defense_raw": "45",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.80t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "308",
+          "defense_min_raw": "11",
+          "defense_raw": "47",
+          "defense_max_raw": "103",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "4.11t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "323",
+          "defense_min_raw": "12",
+          "defense_raw": "49",
+          "defense_max_raw": "112",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.21(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "4.37(4.44)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "352",
+          "defense_min_raw": "13",
+          "defense_raw": "54",
+          "defense_max_raw": "135",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.77(5.13)t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：ベネットの海の家 のすぐ東あたりを サルベージ (★0) ヘルメツ島 B1F上部屋木箱(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "おんちスピーカー",
+      "overview": {
+        "名称": "おんちスピーカー",
+        "攻撃": "210",
+        "範囲": "全体",
+        "属性": "音波",
+        "守備": "50",
+        "重量(t)": "2.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*1000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 16
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%8A%E3%82%93%E3%81%A1%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:44.208534+08:00",
+        "content_hash": "sha256:50d71bf6bb57059428d8f7c5dcb6bb2faec95fe009e85ea103bb069941e32e4a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "52",
+          "attack_raw": "210",
+          "attack_max_raw": "294",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.04(0.20)t",
+          "weight_raw": "2.00t",
+          "weight_max_raw": "3.20t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "308",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "3.42t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "323",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "3.71t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "63",
+          "attack_raw": "252",
+          "attack_max_raw": "352",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.24(0.24)t",
+          "weight_raw": "2.40t",
+          "weight_max_raw": "4.27t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：うたうパラボラからドロップ"],
+      "issues": []
+    },
+    {
+      "name_ja": "16ミリ機銃",
+      "overview": {
+        "名称": "16ミリ機銃",
+        "攻撃": "220",
+        "範囲": "2連射",
+        "属性": "通常",
+        "守備": "50",
+        "重量(t)": "1.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "2500",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 17
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/16%E3%83%9F%E3%83%AA%E6%A9%9F%E9%8A%83",
+        "retrieved_at": "2026-11-02T13:45:45.390510+08:00",
+        "content_hash": "sha256:275c5bcf275edb06a3e80ce934013abf1ed6494c3e657a493efe5c2d55993e7f",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "55",
+          "attack_raw": "220",
+          "attack_max_raw": "242",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.70t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "57",
+          "attack_raw": "231",
+          "attack_max_raw": "254",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.82t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "60",
+          "attack_raw": "242",
+          "attack_max_raw": "266",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "1.99t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "66",
+          "attack_raw": "264",
+          "attack_max_raw": "290",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.30t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デルタ・リオ (「 荒野の運送屋 」にて荷物運搬後)",
+        "其他获取：レンタル 6号、7号初期装備(★0) ヘルメツ島 B2F木箱(★変動) ナイトシェイドがドロップ バブルカニガンがドロップ ウニガンがドロップ アクアウォーカーがドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ビームランサー",
+      "overview": {
+        "名称": "ビームランサー",
+        "攻撃": "225",
+        "範囲": "貫通小",
+        "属性": "ビーム",
+        "守備": "55",
+        "重量(t)": "1.45",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "3000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 18
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%BC%E3%83%A0%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:46.600818+08:00",
+        "content_hash": "sha256:d55e9b7914ea915485c131b071879c074b17bd1f2aa0854df7dfaa95e1645a46",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "56",
+          "attack_raw": "225",
+          "attack_max_raw": "247",
+          "defense_min_raw": "12",
+          "defense_raw": "55",
+          "defense_max_raw": "74",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.75(0.14)t",
+          "weight_raw": "1.45t",
+          "weight_max_raw": "1.84t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "59",
+          "attack_raw": "236",
+          "attack_max_raw": "259",
+          "defense_min_raw": "13",
+          "defense_raw": "57",
+          "defense_max_raw": "79",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.79(0.15)t",
+          "weight_raw": "1.52t",
+          "weight_max_raw": "1.97t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "61",
+          "attack_raw": "247",
+          "attack_max_raw": "271",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.82(0.15)t",
+          "weight_raw": "1.59t",
+          "weight_max_raw": "2.11t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "67",
+          "attack_raw": "270",
+          "attack_max_raw": "297",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "105",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.90(0.17)t",
+          "weight_raw": "1.74t",
+          "weight_max_raw": "2.47t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：ノボトケの村 東の トレーダーキャンプ",
+        "其他获取：T69イエティがドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "サンダーブラスト",
+      "overview": {
+        "名称": "サンダーブラスト",
+        "攻撃": "230",
+        "範囲": "1体",
+        "属性": "電気",
+        "守備": "75",
+        "重量(t)": "2.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "3500",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 19
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%80%E3%83%BC%E3%83%96%E3%83%A9%E3%82%B9%E3%83%88",
+        "retrieved_at": "2026-11-02T13:45:47.803383+08:00",
+        "content_hash": "sha256:10f53d63399f65fbd73701eb7ea037703fba56e012e6da4050d7c9f897b74948",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "57",
+          "attack_raw": "230",
+          "attack_max_raw": "299",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30(0.25)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "3.40t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "60",
+          "attack_raw": "241",
+          "attack_max_raw": "313",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.36(0.26)t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "3.72t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：イスラポルト (「 荒野の運送屋 」にて荷物運搬後)",
+        "其他获取：モンキーセンター 付近にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ナパームジェッター",
+      "overview": {
+        "名称": "ナパームジェッター",
+        "攻撃": "235",
+        "範囲": "1体",
+        "属性": "火炎",
+        "守備": "65",
+        "重量(t)": "2.60",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "3700",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 20
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8A%E3%83%91%E3%83%BC%E3%83%A0%E3%82%B8%E3%82%A7%E3%83%83%E3%82%BF%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:49.058374+08:00",
+        "content_hash": "sha256:8678cd28d8366a3d3865479ebd0ad1557593dcf0ebf17565a947ad7a769d84bf",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "58",
+          "attack_raw": "235",
+          "attack_max_raw": "293",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.35(0.26)t",
+          "weight_raw": "2.60t",
+          "weight_max_raw": "3.69t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "61",
+          "attack_raw": "246",
+          "attack_max_raw": "307",
+          "defense_min_raw": "17",
+          "defense_raw": "68",
+          "defense_max_raw": "102",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.41(0.27)t",
+          "weight_raw": "2.73t",
+          "weight_max_raw": "3.95t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "64",
+          "attack_raw": "258",
+          "attack_max_raw": "322",
+          "defense_min_raw": "17",
+          "defense_raw": "71",
+          "defense_max_raw": "113",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.48(0.28)t",
+          "weight_raw": "2.86t",
+          "weight_max_raw": "4.31t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "70",
+          "attack_raw": "282",
+          "attack_max_raw": "352",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "136",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.62(0.31)t",
+          "weight_raw": "3.12t",
+          "weight_max_raw": "4.99t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：イスラポルト 西の トレーダーキャンプ",
+        "其他获取：火炎カブトガニからドロップ 地獄のストーブからドロップ キャタピラビレッジ 周辺にランダム 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "13ミリチェイン",
+      "overview": {
+        "名称": "13ミリチェイン",
+        "攻撃": "250",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "70",
+        "重量(t)": "2.10",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "4000",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 21
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/13%E3%83%9F%E3%83%AA%E3%83%81%E3%82%A7%E3%82%A4%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:50.262681+08:00",
+        "content_hash": "sha256:9c0fd27d3e713e1c67fb3c4dd57b86a589733c01c2297cf331304b41929e95bf",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "62",
+          "attack_raw": "250",
+          "attack_max_raw": "300",
+          "defense_min_raw": "17",
+          "defense_raw": "70",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.09(0.21)t",
+          "weight_raw": "2.10t",
+          "weight_max_raw": "2.79t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "68",
+          "attack_raw": "275",
+          "attack_max_raw": "330",
+          "defense_min_raw": "19",
+          "defense_raw": "77",
+          "defense_max_raw": "111",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.20(0.23)t",
+          "weight_raw": "2.31t",
+          "weight_max_raw": "3.21t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：タイシャー",
+        "其他获取：タキオンテレポーター(★0～2)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ビッグガン",
+      "overview": {
+        "名称": "ビッグガン",
+        "攻撃": "260",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "55",
+        "重量(t)": "2.50",
+        "弾倉": "16",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*3000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 22
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%93%E3%83%83%E3%82%B0%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:51.447444+08:00",
+        "content_hash": "sha256:40f19ba8ef5d7f459cfb0a84fac7140bbd93c801efb776045ecd40fdf11b9f0e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "65",
+          "attack_raw": "260",
+          "attack_max_raw": "299",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.30(0.02)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "4.15t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "68",
+          "attack_raw": "273",
+          "attack_max_raw": "313",
+          "defense_min_raw": "14",
+          "defense_raw": "57",
+          "defense_max_raw": "108",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.36(0.02)t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "4.50t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "71",
+          "attack_raw": "286",
+          "attack_max_raw": "328",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "120",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "31",
+          "weight_min_raw": "1.43(0.02)t",
+          "weight_raw": "2.75t",
+          "weight_max_raw": "4.89t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "78",
+          "attack_raw": "312",
+          "attack_max_raw": "358",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "141",
+          "magazine_min_raw": "1",
+          "magazine_raw": "16",
+          "magazine_max_raw": "36",
+          "weight_min_raw": "1.56(0.03)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "5.70t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：イスラポルト 北東（ 悪党ミュージアム を出てまっすぐ西に行ったところにある枯れ木のすぐ下）に 埋設 (要金属探知機、★変動) ヘルメツ島 B3F南部屋木箱"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スマッシュホルン",
+      "overview": {
+        "名称": "スマッシュホルン",
+        "攻撃": "265",
+        "範囲": "全体",
+        "属性": "音波",
+        "守備": "40",
+        "重量(t)": "0.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "5000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 23
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%9E%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9B%E3%83%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:53.982070+08:00",
+        "content_hash": "sha256:f2510957ee9a2c26b0e6a1d8a67c09ca4466cdacaa64ebecff187805dd9faa92",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "66",
+          "attack_raw": "265",
+          "attack_max_raw": "291",
+          "defense_min_raw": "10",
+          "defense_raw": "40",
+          "defense_max_raw": "60",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.41(0.08)t",
+          "weight_raw": "0.80t",
+          "weight_max_raw": "1.08t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "69",
+          "attack_raw": "278",
+          "attack_max_raw": "305",
+          "defense_min_raw": "10",
+          "defense_raw": "42",
+          "defense_max_raw": "65",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.43(0.08)t",
+          "weight_raw": "0.84t",
+          "weight_max_raw": "1.16t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "72",
+          "attack_raw": "291",
+          "attack_max_raw": "320",
+          "defense_min_raw": "11",
+          "defense_raw": "44",
+          "defense_max_raw": "72",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.45(0.08)t",
+          "weight_raw": "0.88t",
+          "weight_max_raw": "1.27t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "79",
+          "attack_raw": "318",
+          "attack_max_raw": "349",
+          "defense_min_raw": "12",
+          "defense_raw": "48",
+          "defense_max_raw": "86",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.49(0.09)t",
+          "weight_raw": "0.96t",
+          "weight_max_raw": "1.47t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：タイシャー モロ・ポコ 東の トレーダーキャンプ",
+        "其他获取：ヘルメツ島 B2木箱(★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スペクトルガン",
+      "overview": {
+        "名称": "スペクトルガン",
+        "攻撃": "270",
+        "範囲": "扇範囲可変",
+        "属性": "ビーム",
+        "守備": "65",
+        "重量(t)": "2.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "8000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 24
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E3%83%AB%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:55.306425+08:00",
+        "content_hash": "sha256:7417b582bc97b3e1327f05f549950fef2b5404ca7793805d3ae2502620fe4e03",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "67",
+          "attack_raw": "270",
+          "attack_max_raw": "337",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "78",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30(0.25)t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "3.17t"
+        }
+      ],
+      "acquisition_ja": ["店铺：タイシャー (販売パターンA)"],
+      "issues": []
+    },
+    {
+      "name_ja": "アサルトレーザー",
+      "overview": {
+        "名称": "アサルトレーザー",
+        "攻撃": "275",
+        "範囲": "全体",
+        "属性": "通常",
+        "守備": "75",
+        "重量(t)": "2.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "5500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 25
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%82%B5%E3%83%AB%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:56.564976+08:00",
+        "content_hash": "sha256:6a7e142930f6ab42ded771e06d9a2d07c5abad7e6d000a666eb693a3b4462cf2",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "68",
+          "attack_raw": "275",
+          "attack_max_raw": "343",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45(0.28)t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.72t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "72",
+          "attack_raw": "288",
+          "attack_max_raw": "360",
+          "defense_min_raw": "19",
+          "defense_raw": "78",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.52(0.29)t",
+          "weight_raw": "2.94t",
+          "weight_max_raw": "4.08t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "82",
+          "attack_raw": "330",
+          "attack_max_raw": "412",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.74(0.33)t",
+          "weight_raw": "3.36t",
+          "weight_max_raw": "5.07t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：風力発電所 南西の トレーダーキャンプ (★0) モロ・ポコ 東の トレーダーキャンプ",
+        "其他获取：タキオンテレポーター(★0～3) エレファント の初期装備(★0) ミラーボールがドロップ(★0)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "18ミリバルカン",
+      "overview": {
+        "名称": "18ミリバルカン",
+        "攻撃": "285",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "70",
+        "重量(t)": "2.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "7000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 26
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/18%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:45:57.751400+08:00",
+        "content_hash": "sha256:1d9a272bdd893c72f7e79e4187f2ad507398aba249977bf552f8ede54e762e0f",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "71",
+          "attack_raw": "285",
+          "attack_max_raw": "370",
+          "defense_min_raw": "17",
+          "defense_raw": "70",
+          "defense_max_raw": "87",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.14(0.22)t",
+          "weight_raw": "2.20t",
+          "weight_max_raw": "2.92t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：モロ・ポコ (「 荒野の運送屋 」にて荷物運搬後)",
+        "其他获取：P3Cビーからドロップ(★0) ガンケーキからドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "タイムストッパー",
+      "overview": {
+        "名称": "タイムストッパー",
+        "攻撃": "295",
+        "範囲": "貫通小",
+        "属性": "ビーム",
+        "守備": "75",
+        "重量(t)": "2.30",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "6500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 27
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9%E3%83%88%E3%83%83%E3%83%91%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:45:59.414626+08:00",
+        "content_hash": "sha256:c0ba12829de4eeabe388efb2f85308f0f369d83085a20d4a0c40fea77875e2f0",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "73",
+          "attack_raw": "295",
+          "attack_max_raw": "339",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.19(0.23)t",
+          "weight_raw": "2.30t",
+          "weight_max_raw": "2.92t"
+        }
+      ],
+      "acquisition_ja": ["店铺：モロ・ポコ"],
+      "issues": []
+    },
+    {
+      "name_ja": "バスターフルート",
+      "overview": {
+        "名称": "バスターフルート",
+        "攻撃": "300",
+        "範囲": "全体",
+        "属性": "音波",
+        "守備": "50",
+        "重量(t)": "3.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "8000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 28
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%95%E3%83%AB%E3%83%BC%E3%83%88",
+        "retrieved_at": "2026-11-02T13:46:00.856253+08:00",
+        "content_hash": "sha256:3a0014ca5c86455d7967ba05a02be684477f0c746fb6d42ee743f907a792095e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "75",
+          "attack_raw": "300",
+          "attack_max_raw": "345",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.66(0.32)t",
+          "weight_raw": "3.20t",
+          "weight_max_raw": "4.64t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：キャタピラビレッジ キャタピラビレッジ 北の トレーダーキャンプ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "スネークガン",
+      "overview": {
+        "名称": "スネークガン",
+        "攻撃": "305",
+        "範囲": "3連射",
+        "属性": "通常",
+        "守備": "60",
+        "重量(t)": "1.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*5000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 29
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AF%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:02.399091+08:00",
+        "content_hash": "sha256:22c45610afb1c69e7c6f94420cdb33ed67a70b56ac2bb1240db831c2fabbbf76",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "76",
+          "attack_raw": "305",
+          "attack_max_raw": "335",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "99",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.74t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "352",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "110",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.90t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "83",
+          "attack_raw": "335",
+          "attack_max_raw": "385",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "118",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.07t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "91",
+          "attack_raw": "366",
+          "attack_max_raw": "420",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.43t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：デカごみあさり(A)からドロップ ゴーゴンホールからドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ファイアガン",
+      "overview": {
+        "名称": "ファイアガン",
+        "攻撃": "310",
+        "範囲": "扇範囲小",
+        "属性": "火炎",
+        "守備": "85",
+        "重量(t)": "2.60",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "7500",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 30
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:03.583886+08:00",
+        "content_hash": "sha256:dbd0a624668d19085f4dc0466e5260087167d609f163833534cfe15dd890f230",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "77",
+          "attack_raw": "310",
+          "attack_max_raw": "387",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.35(0.26)t",
+          "weight_raw": "2.60t",
+          "weight_max_raw": "3.22t"
+        }
+      ],
+      "acquisition_ja": ["店铺：キャタピラビレッジ"],
+      "issues": []
+    },
+    {
+      "name_ja": "フリーズガン",
+      "overview": {
+        "名称": "フリーズガン",
+        "攻撃": "315",
+        "範囲": "扇範囲小",
+        "属性": "冷気",
+        "守備": "85",
+        "重量(t)": "2.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "9800",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 31
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:04.767226+08:00",
+        "content_hash": "sha256:c95a89c8bc506328f5c45e0984428b385cfe70fbde88fb963548ba5f8830c116",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "78",
+          "attack_raw": "315",
+          "attack_max_raw": "393",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.47t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デスクルス (開放後) デスクルス 西の砂漠の トレーダーキャンプ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ミスターチムニー",
+      "overview": {
+        "名称": "ミスターチムニー",
+        "攻撃": "320",
+        "範囲": "1体",
+        "属性": "通常(+ガス)",
+        "守備": "50",
+        "重量(t)": "1.20",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "11000",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 32
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%9F%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A0%E3%83%8B%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:46:05.951560+08:00",
+        "content_hash": "sha256:c184b435ffa5898365ad56aba58165cba65959b8d56e1a80f90cba396aebbe64",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "400",
+          "defense_min_raw": "12",
+          "defense_raw": "50",
+          "defense_max_raw": "80",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "1.81t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "84",
+          "attack_raw": "336",
+          "attack_max_raw": "420",
+          "defense_min_raw": "13",
+          "defense_raw": "52",
+          "defense_max_raw": "85",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.65(0.12)t",
+          "weight_raw": "1.26t",
+          "weight_max_raw": "1.94t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "88",
+          "attack_raw": "352",
+          "attack_max_raw": "440",
+          "defense_min_raw": "13",
+          "defense_raw": "55",
+          "defense_max_raw": "96",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.68(0.13)t",
+          "weight_raw": "1.32t",
+          "weight_max_raw": "2.11t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "96",
+          "attack_raw": "384",
+          "attack_max_raw": "480",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "114",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.74(0.14)t",
+          "weight_raw": "1.44t",
+          "weight_max_raw": "2.43t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：デスクルス (開放後) メルトタウン (★0)",
+        "其他获取：タキオンテレポーター(★0～3)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ヘビーガン",
+      "overview": {
+        "名称": "ヘビーガン",
+        "攻撃": "320",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "60",
+        "重量(t)": "4.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*5000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 33
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%98%E3%83%93%E3%83%BC%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:07.164910+08:00",
+        "content_hash": "sha256:61217a75e9f7f95fbc0432d23ac712b65b1af223037fb05db292036afd17ceba",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "80",
+          "attack_raw": "320",
+          "attack_max_raw": "368",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "84",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.08(0.40)t",
+          "weight_raw": "4.00t",
+          "weight_max_raw": "5.32t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "84",
+          "attack_raw": "336",
+          "attack_max_raw": "386",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "91",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.18(0.42)t",
+          "weight_raw": "4.20t",
+          "weight_max_raw": "5.71t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "88",
+          "attack_raw": "352",
+          "attack_max_raw": "404",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "102",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2,28(0.44)t",
+          "weight_raw": "4.40t",
+          "weight_max_raw": "6.24t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "96",
+          "attack_raw": "384",
+          "attack_max_raw": "441",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "122",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "2.49(0.48)t",
+          "weight_raw": "4.80t",
+          "weight_max_raw": "7.24t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：デスクルス 西の砂漠に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "バーナードラゴン",
+      "overview": {
+        "名称": "バーナードラゴン",
+        "攻撃": "345",
+        "範囲": "扇範囲大",
+        "属性": "火炎",
+        "守備": "90",
+        "重量(t)": "3.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "16500",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 34
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%90%E3%83%BC%E3%83%8A%E3%83%BC%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:08.441218+08:00",
+        "content_hash": "sha256:c9a47557212243108940e6d26ce03c8ff1a20d027116ab680aa7e47129e1513f",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "86",
+          "attack_raw": "345",
+          "attack_max_raw": "396",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "121",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.82(0.35)t",
+          "weight_raw": "3.50t",
+          "weight_max_raw": "4.55t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：メルトタウン",
+        "其他获取：ゼロ 初期装備(★0) ATプロメテウスのドロップ(★0) タキオンテレポーター(★0～3)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "22ミリバルカン",
+      "overview": {
+        "名称": "22ミリバルカン",
+        "攻撃": "350",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "85",
+        "重量(t)": "2.80",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "18000",
+        "レア": ""
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 35
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/22%E3%83%9F%E3%83%AA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:09.634370+08:00",
+        "content_hash": "sha256:2c1024c64cd2b02da7fe9b808b7754211e2b640716dca3438438a48bde16d8ba",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "87",
+          "attack_raw": "350",
+          "attack_max_raw": "385",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.45(0.28)t",
+          "weight_raw": "2.80t",
+          "weight_max_raw": "3.22t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "91",
+          "attack_raw": "367",
+          "attack_max_raw": "403",
+          "defense_min_raw": "22",
+          "defense_raw": "89",
+          "defense_max_raw": "106",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.52(0.29)t",
+          "weight_raw": "2.94t",
+          "weight_max_raw": "3.46t"
+        }
+      ],
+      "acquisition_ja": [
+        "店铺：メルトタウン (★0)",
+        "其他获取：タキオンテレポーター(★0～3)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ひぼたんバルカン",
+      "overview": {
+        "名称": "ひぼたんバルカン",
+        "攻撃": "365",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "110",
+        "重量(t)": "0.10",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*15000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 36
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%81%B2%E3%81%BC%E3%81%9F%E3%82%93%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:10.861239+08:00",
+        "content_hash": "sha256:0d5b6df1b2a4c4bd88f21c21541f38ca626c636354d2a8eebc5c597ce48d0c7d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "91",
+          "attack_raw": "365",
+          "attack_max_raw": "383",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.10t",
+          "weight_max_raw": "0.12t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "95",
+          "attack_raw": "383",
+          "attack_max_raw": "402",
+          "defense_min_raw": "28",
+          "defense_raw": "115",
+          "defense_max_raw": "161",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.10t",
+          "weight_max_raw": "0.12t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "100",
+          "attack_raw": "401",
+          "attack_max_raw": "421",
+          "defense_min_raw": "30",
+          "defense_raw": "121",
+          "defense_max_raw": "181",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.11t",
+          "weight_max_raw": "0.14t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "109",
+          "attack_raw": "438",
+          "attack_max_raw": "459",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "211",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.06(0.01)t",
+          "weight_raw": "0.12t",
+          "weight_max_raw": "0.16t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：超電磁戦車からドロップ パーフェクトガードからドロップ ATVピューマからドロップ 撃破数ボーナスによるドロップ(5000)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "楊貴妃バルカン",
+      "overview": {
+        "名称": "楊貴妃バルカン",
+        "攻撃": "380",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "100",
+        "重量(t)": "2.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*10000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 37
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E6%A5%8A%E8%B2%B4%E5%A6%83%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:12.360579+08:00",
+        "content_hash": "sha256:78a42a663eb2f2df86132a807cba3e4149c61b5a7db47bf2056aeb532792687e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "399",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "125",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.30t",
+          "weight_raw": "2.50t",
+          "weight_max_raw": "2.95t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "418",
+          "defense_min_raw": "26",
+          "defense_raw": "105",
+          "defense_max_raw": "136",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.36t",
+          "weight_raw": "2.62t",
+          "weight_max_raw": "3.17t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "438",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.43t",
+          "weight_raw": "2.75t",
+          "weight_max_raw": "3.41t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "478",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "180",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.56t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "3.99t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：メルトタウン 東の荒地に 埋設 (要金属探知機、★変動)"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "サンダーストーム",
+      "overview": {
+        "名称": "サンダーストーム",
+        "攻撃": "380",
+        "範囲": "貫通大",
+        "属性": "電気",
+        "守備": "85",
+        "重量(t)": "3.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*10000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 38
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A0",
+        "retrieved_at": "2026-11-02T13:46:13.666411+08:00",
+        "content_hash": "sha256:aec3ff52d21d6682f57bab796abd1cf786d55c3442c89ffefb017ec78658886b",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "399",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "119",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.56(0.30)t",
+          "weight_raw": "3.00t",
+          "weight_max_raw": "3.81t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "418",
+          "defense_min_raw": "22",
+          "defense_raw": "89",
+          "defense_max_raw": "129",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.63(0.31)t",
+          "weight_raw": "3.15t",
+          "weight_max_raw": "4.09t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "438",
+          "defense_min_raw": "23",
+          "defense_raw": "93",
+          "defense_max_raw": "144",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.71(0.33)t",
+          "weight_raw": "3.30t",
+          "weight_max_raw": "4.48t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "478",
+          "defense_min_raw": "25",
+          "defense_raw": "102",
+          "defense_max_raw": "168",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "1.87(0.36)t",
+          "weight_raw": "3.60t",
+          "weight_max_raw": "5.11t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：敵撃破数ボーナス(6666体、★変動) プラズマタンク、ミュータントOX、ウシキングからドロップ"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ノラバルカン",
+      "overview": {
+        "名称": "ノラバルカン",
+        "攻撃": "380",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "60",
+        "重量(t)": "1.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*10000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 39
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%8E%E3%83%A9%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:14.907261+08:00",
+        "content_hash": "sha256:7d050bc8bb098253a39aa32d098ccd69c373da9b2ad6a8f0b7524fdb977c3e9e",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "570",
+          "defense_min_raw": "15",
+          "defense_raw": "60",
+          "defense_max_raw": "123",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.52(0.10)t",
+          "weight_raw": "1.00t",
+          "weight_max_raw": "1.93t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "598",
+          "defense_min_raw": "15",
+          "defense_raw": "63",
+          "defense_max_raw": "135",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.54(0.10)t",
+          "weight_raw": "1.05t",
+          "weight_max_raw": "2.08t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "104",
+          "attack_raw": "418",
+          "attack_max_raw": "627",
+          "defense_min_raw": "16",
+          "defense_raw": "66",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.57(0.11)t",
+          "weight_raw": "1.10t",
+          "weight_max_raw": "2.18(2.25)t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "114",
+          "attack_raw": "456",
+          "attack_max_raw": "684",
+          "defense_min_raw": "18",
+          "defense_raw": "72",
+          "defense_max_raw": "180",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.62(0.12)t",
+          "weight_raw": "1.20t",
+          "weight_max_raw": "2.38(2.64)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：ホバリング・ノラ からドロップ(★変動有)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ロケットチューブ",
+      "overview": {
+        "名称": "ロケットチューブ",
+        "攻撃": "480",
+        "範囲": "円範囲小",
+        "属性": "通常",
+        "守備": "70",
+        "重量(t)": "6.80",
+        "弾倉": "48",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*10000",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 40
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%AD%E3%82%B1%E3%83%83%E3%83%88%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+        "retrieved_at": "2026-11-02T13:46:16.098379+08:00",
+        "content_hash": "sha256:eac307727eb85959d3b5d61753c633e447548251e927f154e6ce4dd2c3fef06a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "",
+          "attack_raw": "480",
+          "attack_max_raw": "",
+          "defense_min_raw": "",
+          "defense_raw": "70",
+          "defense_max_raw": "",
+          "magazine_min_raw": "",
+          "magazine_raw": "48",
+          "magazine_max_raw": "",
+          "weight_min_raw": "t",
+          "weight_raw": "6.80t",
+          "weight_max_raw": "t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "126",
+          "attack_raw": "504",
+          "attack_max_raw": "630",
+          "defense_min_raw": "18",
+          "defense_raw": "73",
+          "defense_max_raw": "109",
+          "magazine_min_raw": "3",
+          "magazine_raw": "48",
+          "magazine_max_raw": "63",
+          "weight_min_raw": "3.71(0.00)t",
+          "weight_raw": "7.14t",
+          "weight_max_raw": "10.99t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：スタンプ屋 500ポイントの景品(★1)"],
+      "issues": []
+    },
+    {
+      "name_ja": "キャノンチューブ",
+      "overview": {
+        "名称": "キャノンチューブ",
+        "攻撃": "500",
+        "範囲": "1体",
+        "属性": "通常",
+        "守備": "80",
+        "重量(t)": "8.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "10000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 41
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AD%E3%83%A3%E3%83%8E%E3%83%B3%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+        "retrieved_at": "2026-11-02T13:46:17.285200+08:00",
+        "content_hash": "sha256:59fb27b9eead56880e5de94d80e3f9ec50a4565fbc335521ee30304aba9723cf",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "20",
+          "defense_raw": "80",
+          "defense_max_raw": "100",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.16(0.80)t",
+          "weight_raw": "8.00t",
+          "weight_max_raw": "10.16t"
+        }
+      ],
+      "acquisition_ja": ["店铺：モロ・ポコ (販売パターンA)"],
+      "issues": []
+    },
+    {
+      "name_ja": "シャークガン",
+      "overview": {
+        "名称": "シャークガン",
+        "攻撃": "500",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "90",
+        "重量(t)": "7.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*18000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 42
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:18.492185+08:00",
+        "content_hash": "sha256:6e9ee77e308b4d0ecec8301becba029b7f8782d72e0991f00b674f9d807893dc",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "22",
+          "defense_raw": "90",
+          "defense_max_raw": "198",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.90(0.75)t",
+          "weight_raw": "7.50t",
+          "weight_max_raw": "13.80t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "131",
+          "attack_raw": "525",
+          "attack_max_raw": "630",
+          "defense_min_raw": "23",
+          "defense_raw": "94",
+          "defense_max_raw": "216",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.09(0.78)t",
+          "weight_raw": "7.87t",
+          "weight_max_raw": "14.95t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "137",
+          "attack_raw": "550",
+          "attack_max_raw": "660",
+          "defense_min_raw": "24",
+          "defense_raw": "99",
+          "defense_max_raw": "237",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.29(0.82)t",
+          "weight_raw": "8.25t",
+          "weight_max_raw": "16.17t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "150",
+          "attack_raw": "600",
+          "attack_max_raw": "720",
+          "defense_min_raw": "27",
+          "defense_raw": "108",
+          "defense_max_raw": "286",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.68(0.90)t",
+          "weight_raw": "9.00t",
+          "weight_max_raw": "17.91(18.99)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：U-U-シャーク からドロップ(★変動有)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ソニックチューブ",
+      "overview": {
+        "名称": "ソニックチューブ",
+        "攻撃": "550",
+        "範囲": "全体",
+        "属性": "音波",
+        "守備": "75",
+        "重量(t)": "8.50",
+        "弾倉": "32",
+        "迎撃兵装化": "✗",
+        "価格(G)": "12000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 43
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
+        "retrieved_at": "2026-11-02T13:46:19.674088+08:00",
+        "content_hash": "sha256:16ae183ba47bb880eee4a919d4f19d9dc3cfc25c472fd4769c6ea2e5410409c4",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "137",
+          "attack_raw": "550",
+          "attack_max_raw": "632",
+          "defense_min_raw": "18",
+          "defense_raw": "75",
+          "defense_max_raw": "105",
+          "magazine_min_raw": "2",
+          "magazine_raw": "32",
+          "magazine_max_raw": "47",
+          "weight_min_raw": "4.42t",
+          "weight_raw": "8.50t",
+          "weight_max_raw": "12.07t"
+        }
+      ],
+      "acquisition_ja": ["店铺：イスラポルト (販売パターンB)"],
+      "issues": []
+    },
+    {
+      "name_ja": "猛牛罵流管",
+      "overview": {
+        "名称": "猛牛罵流管",
+        "攻撃": "360",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "85",
+        "重量(t)": "0.11",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*4000",
+        "レア": "★★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 44
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E7%8C%9B%E7%89%9B%E7%BD%B5%E6%B5%81%E7%AE%A1",
+        "retrieved_at": "2026-11-02T13:46:20.867851+08:00",
+        "content_hash": "sha256:b66464464988b93175216b6711056f0785838456cf786ead2dec470e10a8e77a",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "90",
+          "attack_raw": "360",
+          "attack_max_raw": "396",
+          "defense_min_raw": "21",
+          "defense_raw": "85",
+          "defense_max_raw": "97",
+          "magazine_min_raw": "",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "",
+          "weight_min_raw": "0.05(0.01)t",
+          "weight_raw": "0.11t",
+          "weight_max_raw": "0.12"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "99",
+          "attack_raw": "396",
+          "attack_max_raw": "435",
+          "defense_min_raw": "23",
+          "defense_raw": "93",
+          "defense_max_raw": "116",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.06t",
+          "weight_raw": "0.12t",
+          "weight_max_raw": "0.14t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター(★2)"],
+      "issues": []
+    },
+    {
+      "name_ja": "土星フリーザー",
+      "overview": {
+        "名称": "土星フリーザー",
+        "攻撃": "380",
+        "範囲": "扇範囲大",
+        "属性": "冷気",
+        "守備": "100",
+        "重量(t)": "7.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*7777",
+        "レア": "★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 45
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E5%9C%9F%E6%98%9F%E3%83%95%E3%83%AA%E3%83%BC%E3%82%B6%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:46:22.152693+08:00",
+        "content_hash": "sha256:468f5019bb230126d4334d4ed93fcf6b5435e29c03528b75e653776de2883833",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "95",
+          "attack_raw": "380",
+          "attack_max_raw": "494",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "150",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64(0.70)t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "10.36t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "99",
+          "attack_raw": "399",
+          "attack_max_raw": "518",
+          "defense_min_raw": "26",
+          "defense_raw": "105",
+          "defense_max_raw": "162",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.82(0.73)t",
+          "weight_raw": "7.35t",
+          "weight_max_raw": "11.09t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター(★1)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ギガンガン",
+      "overview": {
+        "名称": "ギガンガン",
+        "攻撃": "400",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "120",
+        "重量(t)": "7.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*5000",
+        "レア": "★★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 46
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%AE%E3%82%AC%E3%83%B3%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:23.363824+08:00",
+        "content_hash": "sha256:24cd0292371a84606dd100e963366b60977e73319079c1ad4ae7139159dec63d",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "500",
+          "defense_min_raw": "30",
+          "defense_raw": "120",
+          "defense_max_raw": "198",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64(0.70)t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "10.78t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "550",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "237",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "4.00(0.77)t",
+          "weight_raw": "7.70t",
+          "weight_max_raw": "12.55t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター(★2)"],
+      "issues": []
+    },
+    {
+      "name_ja": "ジャックスイーパー",
+      "overview": {
+        "名称": "ジャックスイーパー",
+        "攻撃": "400",
+        "範囲": "全体",
+        "属性": "通常",
+        "守備": "100",
+        "重量(t)": "6.50",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*30000",
+        "レア": "★★"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 47
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91%E3%83%BC",
+        "retrieved_at": "2026-11-02T13:46:24.891301+08:00",
+        "content_hash": "sha256:64173b71f65bf3e6b99ad6022eb5186cd4ba136050d9dbdca5ba884c41da3d28",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "600",
+          "defense_min_raw": "25",
+          "defense_raw": "100",
+          "defense_max_raw": "210",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.38(0.65)t",
+          "weight_raw": "6.50t",
+          "weight_max_raw": "12.74t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "660",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "253",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.71(0.71)t",
+          "weight_raw": "7.15t",
+          "weight_max_raw": "14.22(14.87)t"
+        }
+      ],
+      "acquisition_ja": ["其他获取：タキオンテレポーター(★2)"],
+      "issues": []
+    },
+    {
+      "name_ja": "サンビームガン",
+      "overview": {
+        "名称": "サンビームガン",
+        "攻撃": "500",
+        "範囲": "全体",
+        "属性": "通常",
+        "守備": "65",
+        "重量(t)": "7.00",
+        "弾倉": "∞",
+        "迎撃兵装化": "✗",
+        "価格(G)": "*10000",
+        "レア": "-"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 48
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B5%E3%83%B3%E3%83%93%E3%83%BC%E3%83%A0%E3%82%AC%E3%83%B3",
+        "retrieved_at": "2026-11-02T13:46:26.099421+08:00",
+        "content_hash": "sha256:e8c63c9d2de3560cd6dec63de85eb6587652df93beda90924711e4e8977c7001",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "125",
+          "attack_raw": "500",
+          "attack_max_raw": "600",
+          "defense_min_raw": "16",
+          "defense_raw": "65",
+          "defense_max_raw": "94",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "3.64t",
+          "weight_raw": "7.00t",
+          "weight_max_raw": "9.73t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：レンタル戦車 19号初期装備 タキオンテレポーター"
+      ],
+      "issues": []
+    },
+    {
+      "name_ja": "ローズバルカン改",
+      "overview": {
+        "名称": "ローズバルカン改",
+        "攻撃": "400",
+        "範囲": "扇範囲大",
+        "属性": "通常",
+        "守備": "110",
+        "重量(t)": "0.25",
+        "弾倉": "∞",
+        "迎撃兵装化": "◯",
+        "価格(G)": "*2000",
+        "レア": "☆☆☆"
+      },
+      "overview_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A",
+        "retrieved_at": "2026-11-02T13:45:22.248507+08:00",
+        "content_hash": "sha256:6ba4a75d9852d87b8a1c006e79b88f9f1ac319144ec5acf0b4f65e8a8ea23a1a",
+        "table_index": 3,
+        "row_index": 49
+      },
+      "detail_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-sub-guns",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3%E6%94%B9",
+        "retrieved_at": "2026-11-02T13:46:27.284640+08:00",
+        "content_hash": "sha256:a2e12a4d1ee627bf3a015abdaeb5bf3c0de6375ad5f003db993ec1a4724dd52b",
+        "table_index": 0,
+        "row_index": 0
+      },
+      "modifications": [
+        {
+          "stars": 0,
+          "attack_min_raw": "100",
+          "attack_raw": "400",
+          "attack_max_raw": "480",
+          "defense_min_raw": "27",
+          "defense_raw": "110",
+          "defense_max_raw": "148",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.12(0.02)t",
+          "weight_raw": "0.25t",
+          "weight_max_raw": "0.33t"
+        },
+        {
+          "stars": 1,
+          "attack_min_raw": "105",
+          "attack_raw": "420",
+          "attack_max_raw": "504",
+          "defense_min_raw": "28",
+          "defense_raw": "115",
+          "defense_max_raw": "161",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.13(0.02)t",
+          "weight_raw": "0.26t",
+          "weight_max_raw": "0.35t"
+        },
+        {
+          "stars": 2,
+          "attack_min_raw": "110",
+          "attack_raw": "440",
+          "attack_max_raw": "528",
+          "defense_min_raw": "30",
+          "defense_raw": "121",
+          "defense_max_raw": "181",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.13(0.02)t",
+          "weight_raw": "0.27t",
+          "weight_max_raw": "0.38t"
+        },
+        {
+          "stars": 3,
+          "attack_min_raw": "120",
+          "attack_raw": "480",
+          "attack_max_raw": "576",
+          "defense_min_raw": "33",
+          "defense_raw": "132",
+          "defense_max_raw": "211",
+          "magazine_min_raw": "-",
+          "magazine_raw": "∞",
+          "magazine_max_raw": "-",
+          "weight_min_raw": "0.15(0.03)t",
+          "weight_raw": "0.30t",
+          "weight_max_raw": "0.44t"
+        }
+      ],
+      "acquisition_ja": [
+        "其他获取：ローズバルカンをタキオンテレポーターで転送(★0～3)"
+      ],
+      "issues": []
+    }
+  ],
+  "omitted": []
+}
