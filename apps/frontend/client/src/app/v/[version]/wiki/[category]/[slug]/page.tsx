@@ -3,29 +3,76 @@ import { notFound } from 'next/navigation'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { wikiCategoriesBySlug, wikiEntities } from '@/data/fixtures/wiki'
+import { getKnowledgeEntry } from '@/data/knowledge/catalog'
+import { knowledgeCategorySchema } from '@/data/knowledge/schema'
+import { getKnowledgeReturnHref } from '@/lib/knowledge-query'
 import type { WikiCategorySlug } from '@/types/wiki'
 import { AttributeTable } from '@/components/wiki/AttributeTable'
 import { EntityHeader } from '@/components/wiki/EntityHeader'
 import { RelatedEntries } from '@/components/wiki/RelatedEntries'
 import { SourceReferences } from '@/components/wiki/SourceReferences'
-
-export const metadata: Metadata = {
-  title: '百科条目',
-}
+import { KnowledgeDetail } from '@/components/wiki/KnowledgeDetail'
 
 interface EntityPageProps {
   params: Promise<{ version: string; category: string; slug: string }>
+  searchParams?: Promise<{ from?: string | string[] }>
 }
 
-export default async function EntityPage({ params }: EntityPageProps) {
+/** 用条目名称与真实摘要生成页面元信息。 */
+export async function generateMetadata({
+  params,
+}: EntityPageProps): Promise<Metadata> {
+  const { version: versionSlug, category: categorySlug, slug } = await params
+  const version = getGameVersion(versionSlug)
+  if (!version || !isAvailableGameVersion(version))
+    return { title: '资料未开放' }
+  const parsed = knowledgeCategorySchema.safeParse(categorySlug)
+  const entry = parsed.success
+    ? getKnowledgeEntry(parsed.data, slug)
+    : wikiEntities.find(
+        (item) => item.category === categorySlug && item.slug === slug,
+      )
+  return entry
+    ? { title: entry.name, description: entry.summary.slice(0, 160) }
+    : { title: '百科条目' }
+}
+
+export default async function EntityPage({
+  params,
+  searchParams,
+}: EntityPageProps) {
   const { version: versionSlug, category: categorySlug, slug } = await params
   const version = getGameVersion(versionSlug)
   const category = wikiCategoriesBySlug.get(categorySlug as WikiCategorySlug)
+
+  if (!version || !isAvailableGameVersion(version) || !category) {
+    notFound()
+  }
+
+  const knowledgeCategory = knowledgeCategorySchema.safeParse(categorySlug)
+  if (knowledgeCategory.success) {
+    const entry = getKnowledgeEntry(knowledgeCategory.data, slug)
+    if (!entry) notFound()
+    const query = await searchParams
+    return (
+      <KnowledgeDetail
+        entry={entry}
+        category={category}
+        version={version}
+        returnHref={getKnowledgeReturnHref(
+          version.slug,
+          knowledgeCategory.data,
+          query?.from,
+        )}
+      />
+    )
+  }
+
   const entity = wikiEntities.find(
     (item) => item.category === categorySlug && item.slug === slug,
   )
 
-  if (!version || !isAvailableGameVersion(version) || !category || !entity) {
+  if (!entity) {
     notFound()
   }
 

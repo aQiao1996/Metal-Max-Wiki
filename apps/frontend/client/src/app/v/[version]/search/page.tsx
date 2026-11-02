@@ -5,11 +5,7 @@ import { notFound } from 'next/navigation'
 import { SearchX } from 'lucide-react'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import {
-  equipmentPageSchema,
-  suggestedSearches,
-  toSearchResult,
-} from '@/api/equipment'
+import { librarySearchPageSchema, suggestedSearches } from '@/api/search'
 import { serverRequest } from '@/lib/request/server'
 import { buildVersionPath } from '@/lib/version-routes'
 import { SearchField } from '@/components/search/SearchField'
@@ -50,10 +46,10 @@ export default async function SearchPage({
   const data = query
     ? await serverRequest(
         `/versions/${version.slug}/search?${new URLSearchParams({ q: query, page: String(page), pageSize: '20' })}`,
-        equipmentPageSchema,
+        librarySearchPageSchema,
       )
     : null
-  const results = data?.list.map(toSearchResult) ?? []
+  const results = data?.list ?? []
 
   return (
     <div className="mx-auto max-w-5xl pb-10">
@@ -89,7 +85,7 @@ export default async function SearchPage({
             ))}
           </div>
           <p className="text-muted-foreground mt-8 max-w-xl text-sm leading-6">
-            搜索会匹配名称、别名、属性和获取地点，结果不会跨越当前版本。
+            搜索会匹配名称、别名、属性、地点和掉落物品，结果不会跨越当前版本。
           </p>
         </section>
       ) : results.length > 0 ? (

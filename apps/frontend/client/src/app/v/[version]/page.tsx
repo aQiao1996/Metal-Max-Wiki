@@ -7,6 +7,7 @@ import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { featuredEntity, recentEntities, recentGuides } from '@/data/home'
 import { wikiCategories } from '@/data/fixtures/wiki'
 import { getEquipmentEntries } from '@/data/equipment/catalog'
+import { getKnowledgeEntries } from '@/data/knowledge/catalog'
 import { buildVersionPath } from '@/lib/version-routes'
 import { CategoryGrid } from '@/components/wiki/CategoryGrid'
 import { EntityList } from '@/components/wiki/EntityList'
@@ -64,8 +65,9 @@ export default async function VersionHomePage({
               情报总览
             </h1>
             <p className="text-muted-foreground mt-3 max-w-2xl text-base leading-7 text-pretty">
-              从已收录的 {getEquipmentEntries().length}{' '}
-              条装备资料中，按名称、属性和获取地点查找。
+              已收录 {getEquipmentEntries().length} 条装备和{' '}
+              {getKnowledgeEntries('wanted-monsters').length}{' '}
+              个赏金首，可按名称、属性、地点与掉落查找。
             </p>
           </div>
           <div className="text-muted-foreground text-sm sm:text-right">
@@ -106,11 +108,9 @@ export default async function VersionHomePage({
           <div className="bg-muted text-muted-foreground flex aspect-[4/3] items-center justify-center border border-dashed border-[#b7c3c7] text-center text-xs tracking-wide">
             <div>
               <span className="block text-5xl font-semibold text-[var(--mm-navy)]">
-                {getEquipmentEntries().length}
+                {getEquipmentEntries().length + getKnowledgeEntries().length}
               </span>
-              <span className="mt-3 block">
-                武器、C 装置与引擎 · 可追溯来源
-              </span>
+              <span className="mt-3 block">装备与赏金首 · 可追溯来源</span>
             </div>
           </div>
           <p className="mt-5 text-[11px] font-medium tracking-[0.14em] text-[var(--mm-signal)] uppercase">
@@ -173,7 +173,7 @@ export default async function VersionHomePage({
         </div>
         {recentGuides.length === 0 && (
           <p className="text-muted-foreground border-border border-b py-6 text-sm leading-7">
-            攻略正在整理，当前开放装备查询与基于装备资料的问答。
+            攻略正在整理，当前开放装备和赏金首查询，AI 问答支持装备资料。
           </p>
         )}
       </section>

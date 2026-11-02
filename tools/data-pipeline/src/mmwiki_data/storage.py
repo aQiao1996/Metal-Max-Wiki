@@ -5,6 +5,7 @@ import os
 import shutil
 import tempfile
 from collections.abc import Mapping
+from hashlib import sha256
 from pathlib import Path
 from typing import cast
 
@@ -82,6 +83,14 @@ def load_targets(path: Path, sources: Mapping[str, Source]) -> list[Target]:
     if not result:
         raise ManifestError(f"target manifest is empty: {path}")
     return result
+
+
+def model_content_hash(value: BaseModel) -> str:
+    """按规范模型内容计算依赖哈希，排除文件排版差异。"""
+    canonical = json.dumps(
+        value.model_dump(mode="json"), sort_keys=True, ensure_ascii=False, separators=(",", ":")
+    ).encode("utf-8")
+    return "sha256:" + sha256(canonical).hexdigest()
 
 
 def write_json_atomic(path: Path, value: BaseModel | Mapping[str, object]) -> None:

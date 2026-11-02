@@ -6,6 +6,10 @@ import {
   legacyEquipmentDetailIds,
 } from '@/config/equipment-types'
 import { getEquipmentEntry } from '@/data/equipment/catalog'
+import {
+  knowledgeRouteIds,
+  legacyKnowledgeRoutes,
+} from '@/data/knowledge/routes'
 
 const wikiRoutePattern = /^\/v\/([^/]+)\/wiki\/([^/]+)(?:\/([^/]+))?\/?$/
 
@@ -26,6 +30,29 @@ export function proxy(request: NextRequest) {
 
   const [, versionSlug, categorySegment, id] = match
   const version = getGameVersion(versionSlug)
+  const knowledgeLegacy = legacyKnowledgeRoutes.get(`${categorySegment}/${id}`)
+  if (version && isAvailableGameVersion(version) && knowledgeLegacy) {
+    const canonicalUrl = request.nextUrl.clone()
+    canonicalUrl.pathname = `/v/${version.slug}/wiki/${knowledgeLegacy.category}/${knowledgeLegacy.id}`
+    canonicalUrl.search = ''
+    return NextResponse.redirect(canonicalUrl, 308)
+  }
+  const category = normalizedCategory(categorySegment)
+  const knowledgeIds = category ? knowledgeRouteIds.get(category) : undefined
+  if (knowledgeIds) {
+    if (
+      categorySegment !== category ||
+      !version ||
+      !isAvailableGameVersion(version) ||
+      (id !== undefined && !knowledgeIds.has(id))
+    ) {
+      const notFoundUrl = request.nextUrl.clone()
+      notFoundUrl.pathname = '/_not-found'
+      notFoundUrl.search = ''
+      return NextResponse.rewrite(notFoundUrl, { status: 404 })
+    }
+    return NextResponse.next()
+  }
   const legacyId = legacyEquipmentDetailIds.get(`${categorySegment}/${id}`)
   if (
     version &&

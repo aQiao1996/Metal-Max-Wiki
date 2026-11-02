@@ -1,5 +1,23 @@
 schema_version: 1
 targets:
+  - id: maniax-wanted-monsters
+    source_id: metalmaniax-mm2r
+    category: wanted-monsters
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96
+    output: maniax-wanted-monsters.json
+    collect: false
+  - id: kaerulabo-wanted-monster-drops
+    source_id: kaerulabo-mm2r
+    category: wanted-monsters
+    url: http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html
+    output: kaerulabo-wanted-monster-drops.json
+    collect: false
+  - id: maniax-wanted-drop-items
+    source_id: metalmaniax-mm2r
+    category: wanted-drop-items
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96
+    output: maniax-wanted-drop-items.json
+    collect: false
   - id: tank-parts
     source_id: zzjb-mm2r
     category: equipment

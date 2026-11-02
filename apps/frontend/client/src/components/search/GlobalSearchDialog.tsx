@@ -8,11 +8,7 @@ import { useQuery } from '@tanstack/react-query'
 import { ArrowRight, Search } from 'lucide-react'
 
 import type { GameVersion } from '@/config/game-versions'
-import {
-  searchEquipment,
-  suggestedSearches,
-  toSearchResult,
-} from '@/api/equipment'
+import { searchLibrary, suggestedSearches } from '@/api/search'
 import { buildVersionPath } from '@/lib/version-routes'
 import { Button } from '@/components/ui/button'
 import {
@@ -44,12 +40,12 @@ export function GlobalSearchDialog({
     return () => clearTimeout(timer)
   }, [query])
   const results = useQuery({
-    queryKey: ['equipment-search', version.slug, searchTerm],
-    queryFn: ({ signal }) => searchEquipment(version.slug, searchTerm, signal),
+    queryKey: ['library-search', version.slug, searchTerm],
+    queryFn: ({ signal }) => searchLibrary(version.slug, searchTerm, signal),
     enabled: open && searchTerm.length > 0,
     staleTime: 30000,
   })
-  const matchedResults = results.data?.list.map(toSearchResult) ?? []
+  const matchedResults = results.data?.list ?? []
 
   useEffect(() => {
     const mobileViewport = window.matchMedia('(width < 48rem)')
@@ -82,7 +78,7 @@ export function GlobalSearchDialog({
         ) : (
           <button className="border-border bg-card text-muted-foreground hover:text-foreground focus-visible:ring-ring flex h-10 w-full max-w-xl items-center gap-3 rounded-md border px-3.5 text-left text-sm transition-colors hover:border-[#b9c5c9] focus-visible:ring-2 focus-visible:outline-none">
             <Search className="size-4" />
-            <span className="flex-1">搜索装备名称、属性或获取地点</span>
+            <span className="flex-1">搜索名称、地点或掉落物品</span>
             <kbd className="border-border bg-muted text-muted-foreground rounded border px-1.5 py-0.5 font-mono text-[11px]">
               ⌘K
             </kbd>
@@ -119,7 +115,7 @@ export function GlobalSearchDialog({
                 }
               }}
               maxLength={100}
-              placeholder="例如：宇宙炮、爆裂弩"
+              placeholder="例如：宇宙炮、亚当蚁"
               className="h-11 pl-9"
             />
           </label>
@@ -147,7 +143,7 @@ export function GlobalSearchDialog({
           )}
 
           <p className="text-muted-foreground px-2 pt-2 pb-1 text-[11px] font-medium tracking-[0.12em] uppercase">
-            {query ? '匹配结果' : '当前支持装备资料搜索'}
+            {query ? '匹配结果' : '装备与赏金首资料'}
           </p>
           {searchTerm && (results.isFetching || searchTerm !== query.trim()) ? (
             <p role="status" className="text-muted-foreground p-4 text-sm">

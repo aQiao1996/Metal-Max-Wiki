@@ -10,7 +10,9 @@ from app.schemas.equipment import (
     EquipmentType,
 )
 from app.schemas.response import ApiResponse
+from app.schemas.search import LibrarySearchPage
 from app.services.equipment_service import get_equipment, list_equipment
+from app.services.search_service import search_library
 
 router = APIRouter(prefix="/versions/{version}", tags=["equipment"])
 
@@ -51,12 +53,12 @@ async def equipment_detail(version: str, equipment_id: str) -> ApiResponse[Equip
     return ApiResponse(data=get_equipment(version, equipment_id))
 
 
-@router.get("/search", response_model=ApiResponse[EquipmentListData], summary="搜索当前版本资料")
+@router.get("/search", response_model=ApiResponse[LibrarySearchPage], summary="搜索当前版本资料")
 async def search(
     version: str,
     q: Annotated[str, Query(min_length=1, max_length=100)],
     page: Annotated[int, Query(ge=1, le=10000)] = 1,
     page_size: Annotated[int, Query(alias="pageSize", ge=1, le=100)] = 20,
-) -> ApiResponse[EquipmentListData]:
-    """搜索当前已收录的装备，不混入其他版本或示例条目。"""
-    return ApiResponse(data=list_equipment(version, q=q, page=page, page_size=page_size))
+) -> ApiResponse[LibrarySearchPage]:
+    """搜索真实装备与赏金首资料，返回各自详情链接。"""
+    return ApiResponse(data=search_library(version, q=q, page=page, page_size=page_size))

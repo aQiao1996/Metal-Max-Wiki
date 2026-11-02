@@ -19,6 +19,8 @@
     "data:collect:c-units": "cd tools/data-pipeline && uv run mmwiki-data collect-c-units --repo-root ../..",
     "data:collect:engines": "cd tools/data-pipeline && uv run mmwiki-data collect-engines --repo-root ../..",
     "data:collect:sub-guns": "cd tools/data-pipeline && uv run mmwiki-data collect-sub-guns --repo-root ../..",
+    "data:collect:wanted": "cd tools/data-pipeline && uv run mmwiki-data collect-wanted-monsters --repo-root ../..",
+    "data:collect:wanted-items": "cd tools/data-pipeline && uv run mmwiki-data collect-wanted-drop-items --repo-root ../..",
     "data:normalize": "cd tools/data-pipeline && uv run mmwiki-data normalize --repo-root ../..",
     "data:audit": "cd tools/data-pipeline && uv run mmwiki-data audit --repo-root ../.. && uv run mmwiki-data asset-audit --repo-root ../..",
     "assets:audit": "cd tools/data-pipeline && uv run mmwiki-data asset-audit --repo-root ../..",

@@ -1,10 +1,12 @@
 import { getEquipmentEntries } from '@/data/equipment/catalog'
+import { getKnowledgeEntries } from '@/data/knowledge/catalog'
+import { toKnowledgeSummary } from '@/data/knowledge/entry'
 import type { WikiEntitySummary } from '@/types/wiki'
 import { guides } from '@/data/guides'
 import { equipmentTypeById } from '@/config/equipment-types'
 
-export const recentEntities: WikiEntitySummary[] = getEquipmentEntries()
-  .slice(0, 4)
+const equipmentEntities: WikiEntitySummary[] = getEquipmentEntries()
+  .slice(0, 2)
   .map((entry) => ({
     slug: entry.id,
     category: 'equipment',
@@ -17,5 +19,9 @@ export const recentEntities: WikiEntitySummary[] = getEquipmentEntries()
     tags: [equipmentTypeById.get(entry.type)?.label ?? '装备'],
     verification: 'pending',
   }))
+export const recentEntities: WikiEntitySummary[] = [
+  ...getKnowledgeEntries('wanted-monsters').slice(0, 2).map(toKnowledgeSummary),
+  ...equipmentEntities,
+]
 export const featuredEntity = recentEntities[0]
 export const recentGuides = guides.slice(0, 2)

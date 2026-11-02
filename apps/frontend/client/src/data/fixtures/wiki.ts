@@ -189,39 +189,6 @@ export const wikiEntities = [
       },
     ],
   },
-  {
-    slug: 'sand-shark',
-    category: 'wanted-monsters',
-    name: '砂蛟',
-    aliases: [],
-    summary: '赏金首条目将统一收录位置、触发条件和掉落来源。',
-    tags: ['赏金首', '掉落'],
-    verification: 'pending',
-    image: null,
-    attributes: [
-      { label: '类型', value: '赏金首' },
-      { label: '位置', value: '待地图素材校对' },
-      { label: '掉落率', value: '待 0.99 版本数据核验' },
-    ],
-    sections: [
-      {
-        id: 'drops',
-        title: '掉落记录',
-        paragraphs: [
-          '掉落物、判定次数和概率将保持分开字段，重点装备会在数据核验后标记。',
-        ],
-      },
-    ],
-    relatedSlugs: [],
-    sources: [
-      {
-        title: '0.99 版赏金首记录',
-        note: '位置与掉落数据待校对',
-        href: null,
-        status: 'pending',
-      },
-    ],
-  },
 ] as const satisfies readonly WikiEntityDetail[]
 
 export const wikiCategoriesBySlug = new Map<WikiCategorySlug, WikiCategory>(

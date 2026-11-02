@@ -1,0 +1,3093 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "version_scope": "mm2r-jp",
+  "verification_status": "source_only",
+  "reference_note": "中文名称与地点为日版公开资料的参考译名和编辑摘要，未核验0.99实机名称、数值或事件；日文原名与逐页出处单独保留。",
+  "probability_note": "概率只保留カエル研究室原表的各槽百分比文本，不推断槽位统计独立性、合计掉落率、难度或闪光加成及星级概率；该站未说明表值的抽样或解析方法。",
+  "records": [
+    {
+      "overview": {
+        "name_ja": "スナザメ",
+        "bounty_raw": "2,000",
+        "fame_raw": "100",
+        "location_ja_raw": "マド北西の砂漠",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B9%E3%83%8A%E3%82%B6%E3%83%A1",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004469+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 0
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "スナザメ",
+              "賞金": "2,000",
+              "有名度": "100",
+              "落とすアイテム1": "ぢかたび",
+              "落とすアイテム2": "鉄のフカヒレ",
+              "落とすアイテム3": "ザメカトラス",
+              "生息地": "マド北西の砂漠",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004469+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 0
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "012",
+          "encyclopedia_number": "012",
+          "kana_order_raw": "237",
+          "name_ja": "スナザメ",
+          "canonical_name_ja": "スナザメ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ぢかたび",
+              "canonical_item_ja": "ぢかたび",
+              "rate_raw": "85%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "鉄のフカヒレ",
+              "canonical_item_ja": "鉄のフカヒレ",
+              "rate_raw": "65%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ザメカトラス",
+              "canonical_item_ja": "ザメカトラス",
+              "rate_raw": "30%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.033819+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 13
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "efc5f206",
+          "summary_ja": "マドとエルニニョの間の砂漠を移動するシンボルと接触して遭遇する。",
+          "summary_zh": "在玛多与厄尔尼诺之间的沙漠接触移动中的背鳍标志遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B9%E3%83%8A%E3%82%B6%E3%83%A1#efc5f206",
+            "retrieved_at": "2026-11-02T13:48:54.274922+08:00",
+            "content_hash": "sha256:a6d985a8277911ab9f0d0bfa43f8dcd8889c59b1c12719fcca51a13e9cf4d20b",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "デスペロイド",
+        "bounty_raw": "4,500",
+        "fame_raw": "50",
+        "location_ja_raw": "エルニニョ北東の砂漠",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%87%E3%82%B9%E3%83%9A%E3%83%AD%E3%82%A4%E3%83%89",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004628+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 1
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "デスペロイド",
+              "賞金": "4,500",
+              "有名度": "50",
+              "落とすアイテム1": "修理キット",
+              "落とすアイテム2": "デスペローダー",
+              "落とすアイテム3": "デスペローダー",
+              "生息地": "エルニニョ北東の砂漠",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004628+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 1
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "013",
+          "encyclopedia_number": "013",
+          "kana_order_raw": "309",
+          "name_ja": "デスぺロイド",
+          "canonical_name_ja": "デスペロイド",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "修理キット",
+              "canonical_item_ja": "修理キット",
+              "rate_raw": "50%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "デスぺローダー",
+              "canonical_item_ja": "デスペローダー",
+              "rate_raw": "65%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "デスぺローダー",
+              "canonical_item_ja": "デスペローダー",
+              "rate_raw": "15%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.034136+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 14
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "r61b4287",
+          "summary_ja": "エルニニョ北東、電柱に囲まれた砂漠や町の北東の十字路付近に出現する。",
+          "summary_zh": "在厄尔尼诺东北、电线杆围绕的沙漠及出镇后东北十字路附近随机遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%87%E3%82%B9%E3%83%9A%E3%83%AD%E3%82%A4%E3%83%89#r61b4287",
+            "retrieved_at": "2026-11-02T13:48:55.653970+08:00",
+            "content_hash": "sha256:1ea6d324b6a59f4e1c76f853968dfffdf68643fe18896661fe7f023ddf5323be",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "アダムアント",
+        "bounty_raw": "6,000",
+        "fame_raw": "100",
+        "location_ja_raw": "森林監視局内の巨大アリの洞窟最深部",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%A2%E3%83%80%E3%83%A0%E3%82%A2%E3%83%B3%E3%83%88",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004679+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 2
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "アダムアント",
+              "賞金": "6,000",
+              "有名度": "100",
+              "落とすアイテム1": "アダムの羽",
+              "落とすアイテム2": "アダムの前足",
+              "落とすアイテム3": "アダムレンズ",
+              "生息地": "森林監視局内の巨大アリの洞窟最深部",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004679+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 2
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "051",
+          "encyclopedia_number": "051",
+          "kana_order_raw": "010",
+          "name_ja": "アダムアント",
+          "canonical_name_ja": "アダムアント",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "アダムの羽",
+              "canonical_item_ja": "アダムの羽",
+              "rate_raw": "65%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "アダムの前足",
+              "canonical_item_ja": "アダムの前足",
+              "rate_raw": "30%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "アダムレンズ",
+              "canonical_item_ja": "アダムレンズ",
+              "rate_raw": "9%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.034198+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 52
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "la154b20",
+          "summary_ja": "森林監視局の右奥から入る巨大アリの洞くつのB4F奥にいる。",
+          "summary_zh": "位于森林监视局右后方入口通往的巨大蚁穴B4F深处。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%A2%E3%83%80%E3%83%A0%E3%82%A2%E3%83%B3%E3%83%88#la154b20",
+            "retrieved_at": "2026-11-02T13:48:56.889780+08:00",
+            "content_hash": "sha256:5447a141718b91136aced75aea681f1311eeac287fc0225a6a8487007bffa96f",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "千手沙華",
+        "bounty_raw": "20,000",
+        "fame_raw": "250",
+        "location_ja_raw": "森林監視局の南西",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%8D%83%E6%89%8B%E6%B2%99%E8%8F%AF",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004720+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 3
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "千手沙華",
+              "賞金": "20,000",
+              "有名度": "250",
+              "落とすアイテム1": "沙華根",
+              "落とすアイテム2": "沙華パイナップル",
+              "落とすアイテム3": "沙華葉",
+              "生息地": "森林監視局の南西",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004720+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 3
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "054",
+          "encyclopedia_number": "054",
+          "kana_order_raw": "248",
+          "name_ja": "千手沙華",
+          "canonical_name_ja": "千手沙華",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "沙華根",
+              "canonical_item_ja": "沙華根",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "沙華パイナップル",
+              "canonical_item_ja": "沙華パイナップル",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "沙華葉",
+              "canonical_item_ja": "沙華葉",
+              "rate_raw": "33%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.034228+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 55
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "fd796d50",
+          "summary_ja": "ハトバ西、森林監視局南西の森林にいる。シンボルに話しかけて戦闘を選択する。",
+          "summary_zh": "位于码头镇以西、森林监视局西南的树林；与地图标志交谈后选择战斗。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%8D%83%E6%89%8B%E6%B2%99%E8%8F%AF#fd796d50",
+            "retrieved_at": "2026-11-02T13:48:58.102029+08:00",
+            "content_hash": "sha256:b04ce4a3a9c108d7d282d3949b09e1dc14557a5e124f4159abc1575efc51b1fe",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "サイゴン",
+        "bounty_raw": "12,500",
+        "fame_raw": "60",
+        "location_ja_raw": "アズサ～サースティ間",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B5%E3%82%A4%E3%82%B4%E3%83%B3",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004759+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 4
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "サイゴン",
+              "賞金": "12,500",
+              "有名度": "60",
+              "落とすアイテム1": "サイゴンの角",
+              "落とすアイテム2": "サイクラッシャー",
+              "落とすアイテム3": "125ミリサイガン",
+              "生息地": "アズサ～サースティ間",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004759+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 4
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "093",
+          "encyclopedia_number": "093",
+          "kana_order_raw": "178",
+          "name_ja": "サイゴン",
+          "canonical_name_ja": "サイゴン",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "サイゴンの角",
+              "canonical_item_ja": "サイゴンの角",
+              "rate_raw": "80%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "サイクラッシャー",
+              "canonical_item_ja": "サイクラッシャー",
+              "rate_raw": "11%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "１２５ミリサイガン",
+              "canonical_item_ja": "125ミリサイガン",
+              "rate_raw": "5%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036029+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 94
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "w4027828",
+          "summary_ja": "アズサとサースティの間でランダム遭遇する。草原では出現しない模様と記載されている。",
+          "summary_zh": "在梓镇与干渴酒吧之间随机遭遇；来源注明草地区域似乎不出现。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B5%E3%82%A4%E3%82%B4%E3%83%B3#w4027828",
+            "retrieved_at": "2026-11-02T13:48:59.302930+08:00",
+            "content_hash": "sha256:261ea6c06393b48569141465e4987993e4386259b4adace4ed76f95635a27c17",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "スカンクス",
+        "bounty_raw": "25,000",
+        "fame_raw": "100",
+        "location_ja_raw": "グラップルタワー最上階",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B9%E3%82%AB%E3%83%B3%E3%82%AF%E3%82%B9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004795+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 5
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "スカンクス",
+              "賞金": "25,000",
+              "有名度": "100",
+              "落とすアイテム1": "てりゅうだん",
+              "落とすアイテム2": "スカンクスベレー",
+              "落とすアイテム3": "スカンガン",
+              "生息地": "グラップルタワー最上階",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004795+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 5
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "099",
+          "encyclopedia_number": "099",
+          "kana_order_raw": "224",
+          "name_ja": "スカンクス",
+          "canonical_name_ja": "スカンクス",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "てりゅうだん",
+              "canonical_item_ja": "てりゅうだん",
+              "rate_raw": "100%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "スカンクスベレー",
+              "canonical_item_ja": "スカンクスベレー",
+              "rate_raw": "45%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "スカンガン",
+              "canonical_item_ja": "スカンガン",
+              "rate_raw": "5%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036090+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 100
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "z16edcab",
+          "summary_ja": "サースティ北にあるグラップルタワーの最上階にいる。",
+          "summary_zh": "位于干渴酒吧北面的掠夺者之塔最上层。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B9%E3%82%AB%E3%83%B3%E3%82%AF%E3%82%B9#z16edcab",
+            "retrieved_at": "2026-11-02T13:49:00.505719+08:00",
+            "content_hash": "sha256:632a191a1d3b28dfbb1fe2a11bb8ebfbd70ee9a99f60dfb7b56accf357f7cd4d",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "天道機甲神話",
+        "bounty_raw": "30,000",
+        "fame_raw": "150",
+        "location_ja_raw": "ノボトケ村周辺",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%A4%A9%E9%81%93%E6%A9%9F%E7%94%B2%E7%A5%9E%E8%A9%B1",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004830+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 6
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "天道機甲神話",
+              "賞金": "30,000",
+              "有名度": "150",
+              "落とすアイテム1": "音響必罰",
+              "落とすアイテム2": "紅蓮必罰",
+              "落とすアイテム3": "閃光必罰",
+              "生息地": "ノボトケ村周辺",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004830+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 6
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "146",
+          "encyclopedia_number": "146",
+          "kana_order_raw": "342",
+          "name_ja": "天道機甲神話（本体）",
+          "canonical_name_ja": "天道機甲神話",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "音響必罰",
+              "canonical_item_ja": "音響必罰",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "紅蓮必罰",
+              "canonical_item_ja": "紅蓮必罰",
+              "rate_raw": "22%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "閃光必罰",
+              "canonical_item_ja": "閃光必罰",
+              "rate_raw": "11%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036159+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 147
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "y068e3b2",
+          "summary_ja": "ノボトケの村周辺の草原にランダム出現し、村を出た地点でも囮よせできる。",
+          "summary_zh": "在佛像村周边草地随机遭遇，出村原地也可使用诱敌。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%A4%A9%E9%81%93%E6%A9%9F%E7%94%B2%E7%A5%9E%E8%A9%B1#y068e3b2",
+            "retrieved_at": "2026-11-02T13:49:01.779715+08:00",
+            "content_hash": "sha256:7742b957f86033e778b71001aa5199337ffd9a9f518bcd2a7bed43cb5b1d16a3",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "トビウオン",
+        "bounty_raw": "25,000",
+        "fame_raw": "30",
+        "location_ja_raw": "湖",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%88%E3%83%93%E3%82%A6%E3%82%AA%E3%83%B3",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004862+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 7
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "トビウオン",
+              "賞金": "25,000",
+              "有名度": "30",
+              "落とすアイテム1": "ウオノクラフトα",
+              "落とすアイテム2": "トビクラスター",
+              "落とすアイテム3": "ウオンディーヌ",
+              "生息地": "湖",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004862+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 7
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "179",
+          "encyclopedia_number": "179",
+          "kana_order_raw": "357",
+          "name_ja": "トビウオン",
+          "canonical_name_ja": "トビウオン",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ウオノクラフトα",
+              "canonical_item_ja": "ウオノクラフトα",
+              "rate_raw": "50%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "トビクラスター",
+              "canonical_item_ja": "トビクラスター",
+              "rate_raw": "40%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ウオンディーヌ",
+              "canonical_item_ja": "ウオンディーヌ",
+              "rate_raw": "5%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036222+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 180
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "t3d16908",
+          "summary_ja": "デルタ・リオとイスラポルトの連絡航路付近の湖にいる。ハンターオフィスの情報で位置が表示される。",
+          "summary_zh": "在德尔塔利奥至以斯拉港航线附近的湖面活动；听取猎人事务所情报可显示地图标志。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%88%E3%83%93%E3%82%A6%E3%82%AA%E3%83%B3#t3d16908",
+            "retrieved_at": "2026-11-02T13:49:03.005178+08:00",
+            "content_hash": "sha256:5ab9f5b4c52a6594303428434a51b8fb119d6dcce10910b6762c6270357164a2",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "U-シャーク",
+        "bounty_raw": "30,000",
+        "fame_raw": "150",
+        "location_ja_raw": "ビイハブ島周辺",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/U-%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004895+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 8
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "U-シャーク",
+              "賞金": "30,000",
+              "有名度": "150",
+              "落とすアイテム1": "金の指輪",
+              "落とすアイテム2": "Uシャーク砲",
+              "落とすアイテム3": "Uバースト砲",
+              "生息地": "ビイハブ島周辺",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004895+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 8
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "180",
+          "encyclopedia_number": "180",
+          "kana_order_raw": "577",
+          "name_ja": "Ｕ－シャーク",
+          "canonical_name_ja": "U-シャーク",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "金の指輪",
+              "canonical_item_ja": "金の指輪",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "Ｕシャーク砲",
+              "canonical_item_ja": "Uシャーク砲",
+              "rate_raw": "35%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "Ｕバースト砲",
+              "canonical_item_ja": "Uバースト砲",
+              "rate_raw": "5%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036251+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 181
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "wf6146bc",
+          "summary_ja": "ビイハブ船長の小屋付近の海にいる。ハンターオフィスの情報で位置が表示される。",
+          "summary_zh": "在比哈布船长小屋附近海面活动；听取猎人事务所情报可显示地图标志。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/U-%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF#wf6146bc",
+            "retrieved_at": "2026-11-02T13:49:04.227322+08:00",
+            "content_hash": "sha256:1d68694ad0910e652f880de38b8ec9ee261869558c3fecc5e02c16ae2a6c1a35",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "マダム・マッスル",
+        "bounty_raw": "37,500",
+        "fame_raw": "70",
+        "location_ja_raw": "プロテインパレス最深部",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%9E%E3%83%80%E3%83%A0%E3%83%BB%E3%83%9E%E3%83%83%E3%82%B9%E3%83%AB",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004927+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 9
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "マダム・マッスル",
+              "賞金": "37,500",
+              "有名度": "70",
+              "落とすアイテム1": "シリコンパット",
+              "落とすアイテム2": "鉄のブラジャー",
+              "落とすアイテム3": "マダムブーツ",
+              "生息地": "プロテインパレス最深部",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004927+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 9
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "213",
+          "encyclopedia_number": "213",
+          "kana_order_raw": "499",
+          "name_ja": "マダム・マッスル",
+          "canonical_name_ja": "マダム・マッスル",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "シリコンパット",
+              "canonical_item_ja": "シリコンパット",
+              "rate_raw": "45%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "鉄のブラジャー",
+              "canonical_item_ja": "鉄のブラジャー",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "マダムブーツ",
+              "canonical_item_ja": "マダムブーツ",
+              "rate_raw": "20%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036443+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 214
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "xef0e0dd",
+          "summary_ja": "悪党ミュージアム南、車両が入れない地域のプロテイン・パレス地下にいる。",
+          "summary_zh": "位于以斯拉港以东、恶党博物馆南面的蛋白质宫殿地下；该区域车辆无法进入。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%9E%E3%83%80%E3%83%A0%E3%83%BB%E3%83%9E%E3%83%83%E3%82%B9%E3%83%AB#xef0e0dd",
+            "retrieved_at": "2026-11-02T13:49:05.401555+08:00",
+            "content_hash": "sha256:5d7a536aa21ad8fd0a9b95d0103037a37de72fc9e9e12f3aee53a5b5b0cac6a1",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "外道販売鬼",
+        "bounty_raw": "40,000",
+        "fame_raw": "100",
+        "location_ja_raw": "自販機パラダイス",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%A4%96%E9%81%93%E8%B2%A9%E5%A3%B2%E9%AC%BC",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004960+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 10
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "外道販売鬼",
+              "賞金": "40,000",
+              "有名度": "100",
+              "落とすアイテム1": "回復カプセル",
+              "落とすアイテム2": "ゲドーピング・タブ",
+              "落とすアイテム3": "当タールチップ",
+              "生息地": "自販機パラダイス",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004960+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 10
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "275",
+          "encyclopedia_number": "275",
+          "kana_order_raw": "150",
+          "name_ja": "外道販売鬼",
+          "canonical_name_ja": "外道販売鬼",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "回復カプセル",
+              "canonical_item_ja": "回復カプセル",
+              "rate_raw": "95%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ゲドーピング・タブ",
+              "canonical_item_ja": "ゲドーピング・タブ",
+              "rate_raw": "40%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "当タールチップ",
+              "canonical_item_ja": "当タールチップ",
+              "rate_raw": "25%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036580+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 276
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "b10b022e",
+          "summary_ja": "バトー研究所南東、破壊できる廃ビルの東にある自販機パラダイスにいる。",
+          "summary_zh": "位于巴特研究所东南、可破坏废楼以东的自动贩卖机天堂。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%A4%96%E9%81%93%E8%B2%A9%E5%A3%B2%E9%AC%BC#b10b022e",
+            "retrieved_at": "2026-11-02T13:49:06.659859+08:00",
+            "content_hash": "sha256:4ac78a1dcb492d597f9628dccebc24661152283d8158de0e9623963507674f8c",
+            "table_index": 0,
+            "row_index": 0
+          }
+        },
+        {
+          "section_ja": "要点攻略",
+          "section_anchor": "y94de40e",
+          "summary_ja": "画面外になると移動する自販機を探し、商品を購入して当たりを出すと戦闘になる。",
+          "summary_zh": "寻找移出画面后会换位的贩卖机；购买任意商品并中奖后触发战斗，并非随机遇敌。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E5%A4%96%E9%81%93%E8%B2%A9%E5%A3%B2%E9%AC%BC#y94de40e",
+            "retrieved_at": "2026-11-02T13:49:06.660147+08:00",
+            "content_hash": "sha256:4ac78a1dcb492d597f9628dccebc24661152283d8158de0e9623963507674f8c",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "カミカゼキング",
+        "bounty_raw": "50,000",
+        "fame_raw": "40",
+        "location_ja_raw": "イスラポルト北の魔女のキャンプ周辺",
+        "notes_ja_raw": ["戦闘中に乱入する形でのみ出現"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%AB%E3%83%9F%E3%82%AB%E3%82%BC%E3%82%AD%E3%83%B3%E3%82%B0",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.004996+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 11
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "カミカゼキング",
+              "賞金": "50,000",
+              "有名度": "40",
+              "落とすアイテム1": "キングのかんむり",
+              "落とすアイテム2": "爆薬",
+              "落とすアイテム3": "神風ブーツ",
+              "生息地": "イスラポルト北の魔女のキャンプ周辺",
+              "備考": "戦闘中に乱入する形でのみ出現"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.004996+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 11
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "203",
+          "encyclopedia_number": "203",
+          "kana_order_raw": "062",
+          "name_ja": "カミカゼキング",
+          "canonical_name_ja": "カミカゼキング",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "キングのかんむり",
+              "canonical_item_ja": "キングのかんむり",
+              "rate_raw": "99%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "爆薬",
+              "canonical_item_ja": "爆薬",
+              "rate_raw": "66%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "神風ブーツ",
+              "canonical_item_ja": "神風ブーツ",
+              "rate_raw": "15%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036388+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 204
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "i78f14be",
+          "summary_ja": "イスラポルト北北東の魔女の住処周辺に出現する。",
+          "summary_zh": "出现在以斯拉港东北偏北、魔女住处周边。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%AB%E3%83%9F%E3%82%AB%E3%82%BC%E3%82%AD%E3%83%B3%E3%82%B0#i78f14be",
+            "retrieved_at": "2026-11-02T13:49:07.943158+08:00",
+            "content_hash": "sha256:b287033ef34fe80d3ce8f4b997bbed722618761e3b1376a4280ec10503a275d7",
+            "table_index": 0,
+            "row_index": 0
+          }
+        },
+        {
+          "section_ja": "要点攻略",
+          "section_anchor": "qee461d9",
+          "summary_ja": "周辺のスクラヴードゥーやカミカゼボムとの戦闘へ乱入する。",
+          "summary_zh": "可通过在当地与骷髅巫毒或神风炸弹战斗，等待其乱入遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%AB%E3%83%9F%E3%82%AB%E3%82%BC%E3%82%AD%E3%83%B3%E3%82%B0#qee461d9",
+            "retrieved_at": "2026-11-02T13:49:07.943494+08:00",
+            "content_hash": "sha256:b287033ef34fe80d3ce8f4b997bbed722618761e3b1376a4280ec10503a275d7",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "カリョストロ",
+        "bounty_raw": "50,000",
+        "fame_raw": "200",
+        "location_ja_raw": "ダーク・カナル",
+        "notes_ja_raw": ["カリョスモーク★2固定"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%AB%E3%83%AA%E3%83%A7%E3%82%B9%E3%83%88%E3%83%AD",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005027+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 12
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "カリョストロ",
+              "賞金": "50,000",
+              "有名度": "200",
+              "落とすアイテム1": "カリョマント",
+              "落とすアイテム2": "カリョマイク",
+              "落とすアイテム3": "カリョスモーク",
+              "生息地": "ダーク・カナル",
+              "備考": "カリョスモーク★2固定"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005027+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 12
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "331",
+          "encyclopedia_number": "331",
+          "kana_order_raw": "072",
+          "name_ja": "カリョストロ",
+          "canonical_name_ja": "カリョストロ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "カリョマント",
+              "canonical_item_ja": "カリョマント",
+              "rate_raw": "75%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "カリョマイク",
+              "canonical_item_ja": "カリョマイク",
+              "rate_raw": "15%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "カリョスモーク",
+              "canonical_item_ja": "カリョスモーク",
+              "rate_raw": "8%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036744+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 332
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "cf285440",
+          "summary_ja": "ダーク・カナル地下2階の、砂利で覆われた小部屋にいる。",
+          "summary_zh": "位于黑暗水道地下2层、覆盖砂砾的小房间，即有汪汪炮活动的楼层。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%AB%E3%83%AA%E3%83%A7%E3%82%B9%E3%83%88%E3%83%AD#cf285440",
+            "retrieved_at": "2026-11-02T13:49:09.219591+08:00",
+            "content_hash": "sha256:30d32d405f981836ae135e860672fd2a5340915d1e4a504f3b21206fbc14e552",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ダスト原人",
+        "bounty_raw": "37,500",
+        "fame_raw": "80",
+        "location_ja_raw": "風力発電所B2F",
+        "notes_ja_raw": ["ゴミの羽飾りは最大3個ドロップ"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%82%B9%E3%83%88%E5%8E%9F%E4%BA%BA",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005057+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 13
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ダスト原人",
+              "賞金": "37,500",
+              "有名度": "80",
+              "落とすアイテム1": "ゴミの羽飾り",
+              "落とすアイテム2": "ゴミの羽飾り",
+              "落とすアイテム3": "ゴミの羽飾り",
+              "生息地": "風力発電所B2F",
+              "備考": "ゴミの羽飾りは最大3個ドロップ"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005057+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 13
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "242",
+          "encyclopedia_number": "242",
+          "kana_order_raw": "275",
+          "name_ja": "ダスト原人",
+          "canonical_name_ja": "ダスト原人",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ゴミの羽飾り",
+              "canonical_item_ja": "ゴミの羽飾り",
+              "rate_raw": "90%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ゴミの羽飾り",
+              "canonical_item_ja": "ゴミの羽飾り",
+              "rate_raw": "15%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ゴミの羽飾り",
+              "canonical_item_ja": "ゴミの羽飾り",
+              "rate_raw": "10%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036504+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 243
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "ce40b3d5",
+          "summary_ja": "個別攻略ページでは風力発電所B1に出現すると記載されている。",
+          "summary_zh": "独立详情注明位于风力发电站B1；赏金首总表写B2F，楼层存在来源冲突。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%82%B9%E3%83%88%E5%8E%9F%E4%BA%BA#ce40b3d5",
+            "retrieved_at": "2026-11-02T13:49:11.092757+08:00",
+            "content_hash": "sha256:3d0eb531bf6c1f119ff7c847d5a4bc4bae5d819163760f8cbe199af385341500",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "code": "location_floor_conflict",
+          "summary_zh": "赏金首总表标注风力发电站B2F，独立详情标注B1；两种原文及各自出处均保留，未用0.99实机确认。",
+          "source_refs": [
+            {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005057+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 13
+            },
+            {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%82%B9%E3%83%88%E5%8E%9F%E4%BA%BA#ce40b3d5",
+              "retrieved_at": "2026-11-02T13:49:11.092757+08:00",
+              "content_hash": "sha256:3d0eb531bf6c1f119ff7c847d5a4bc4bae5d819163760f8cbe199af385341500",
+              "table_index": 0,
+              "row_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "overview": {
+        "name_ja": "トータルタートル",
+        "bounty_raw": "45,000",
+        "fame_raw": "300",
+        "location_ja_raw": "湖",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%BF%E3%83%BC%E3%83%88%E3%83%AB",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005088+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 14
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "トータルタートル",
+              "賞金": "45,000",
+              "有名度": "300",
+              "落とすアイテム1": "不発弾",
+              "落とすアイテム2": "トータル蓑",
+              "落とすアイテム3": "TTフリーザ",
+              "生息地": "湖",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005088+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 14
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "182",
+          "encyclopedia_number": "182",
+          "kana_order_raw": "344",
+          "name_ja": "トータルタートル",
+          "canonical_name_ja": "トータルタートル",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "不発弾",
+              "canonical_item_ja": "不発弾",
+              "rate_raw": "85%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "トータル蓑",
+              "canonical_item_ja": "トータル蓑",
+              "rate_raw": "35%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ＴＴフリーザ",
+              "canonical_item_ja": "TTフリーザ",
+              "rate_raw": "15%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036296+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 183
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "qa1f15cb",
+          "summary_ja": "イスラポルト西の海を泳いでいる。Uシャークとの戦闘に乱入する場合もある。",
+          "summary_zh": "在以斯拉港西面海域活动，也可能乱入U鲨鱼战斗；猎人事务所情报可显示地图标志。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%BF%E3%83%BC%E3%83%88%E3%83%AB#qa1f15cb",
+            "retrieved_at": "2026-11-02T13:49:12.358850+08:00",
+            "content_hash": "sha256:cb6ea6d1fcdd01763035702ec2880040de957eb8a3c7a195d44ff505faa86800",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ヒトデロン",
+        "bounty_raw": "45,000",
+        "fame_raw": "150",
+        "location_ja_raw": "湖モロ・ポコ北東の入り江",
+        "notes_ja_raw": ["ランダムエンカウント 複数回戦えるバグあり"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%92%E3%83%88%E3%83%87%E3%83%AD%E3%83%B3",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005124+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 15
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ヒトデロン",
+              "賞金": "45,000",
+              "有名度": "150",
+              "落とすアイテム1": "ヒトデホーン",
+              "落とすアイテム2": "デロン細胞",
+              "落とすアイテム3": "エリーザの耳せん",
+              "生息地": "湖モロ・ポコ北東の入り江",
+              "備考": "ランダムエンカウント 複数回戦えるバグあり"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005124+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 15
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "348",
+          "encyclopedia_number": "348",
+          "kana_order_raw": "429",
+          "name_ja": "ヒトデロン",
+          "canonical_name_ja": "ヒトデロン",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ヒトデホーン",
+              "canonical_item_ja": "ヒトデホーン",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "デロン細胞",
+              "canonical_item_ja": "デロン細胞",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "エリーザの耳せん",
+              "canonical_item_ja": "エリーザの耳せん",
+              "rate_raw": "20%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036809+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 349
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "m6538c61",
+          "summary_ja": "モロ・ポコ北の入江に出現する。エリーザ同行時は烏帽子岩の左上付近で遭遇イベントが起こる。",
+          "summary_zh": "出现在摩洛波克北部海湾；同行任务“艾莉莎的恋人”中，在海湾中央乌帽子岩左上附近可触发遭遇事件。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%92%E3%83%88%E3%83%87%E3%83%AD%E3%83%B3#m6538c61",
+            "retrieved_at": "2026-11-02T13:49:14.007521+08:00",
+            "content_hash": "sha256:e944e38abaf59b0e1b93f385f76a78cbdf06a5a252b97fa7d625916fae8c8af7",
+            "table_index": 0,
+            "row_index": 0
+          }
+        },
+        {
+          "section_ja": "クエストは関係ない？",
+          "section_anchor": "mkmd9c61",
+          "summary_ja": "「エリーザの恋人」は通常遭遇の必須条件ではない。イベント戦では逃走し、別にランダム遭遇で戦える。",
+          "summary_zh": "“艾莉莎的恋人”并非普通遭遇的必要条件；任务事件战会逃走，通常讨伐通过该海湾的随机遭遇进行。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%92%E3%83%88%E3%83%87%E3%83%AD%E3%83%B3#mkmd9c61",
+            "retrieved_at": "2026-11-02T13:49:14.007879+08:00",
+            "content_hash": "sha256:e944e38abaf59b0e1b93f385f76a78cbdf06a5a252b97fa7d625916fae8c8af7",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "グロウイン",
+        "bounty_raw": "70,000",
+        "fame_raw": "100",
+        "location_ja_raw": "奇怪ヶ島",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B0%E3%83%AD%E3%82%A6%E3%82%A4%E3%83%B3",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005157+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 16
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "グロウイン",
+              "賞金": "70,000",
+              "有名度": "100",
+              "落とすアイテム1": "グロウインの目玉",
+              "落とすアイテム2": "ドクンドクン細胞",
+              "落とすアイテム3": "グロウイン血球",
+              "生息地": "奇怪ヶ島",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005157+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 16
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "316",
+          "encyclopedia_number": "316",
+          "kana_order_raw": "124",
+          "name_ja": "グロウイン",
+          "canonical_name_ja": "グロウイン",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "グロウインの目玉",
+              "canonical_item_ja": "グロウインの目玉",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ドクンドクン細胞",
+              "canonical_item_ja": "ドクンドクン細胞",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "グロウイン血球",
+              "canonical_item_ja": "グロウイン血球",
+              "rate_raw": "33%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036702+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 317
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "cfad9ffc",
+          "summary_ja": "奇怪ヶ島の地下から進んだグロウイン体内の最深部にいる。",
+          "summary_zh": "位于奇怪岛地下通往的古洛温体内最深处。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B0%E3%83%AD%E3%82%A6%E3%82%A4%E3%83%B3#cfad9ffc",
+            "retrieved_at": "2026-11-02T13:49:15.261596+08:00",
+            "content_hash": "sha256:459a694fe80659cc6bd5b653c6444d21b53fa64737d53877ab9e3c893221a6cc",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ブルフロッグ",
+        "bounty_raw": "75,000",
+        "fame_raw": "100",
+        "location_ja_raw": "デビルアイランド",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%96%E3%83%AB%E3%83%95%E3%83%AD%E3%83%83%E3%82%B0",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005190+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 17
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ブルフロッグ",
+              "賞金": "75,000",
+              "有名度": "100",
+              "落とすアイテム1": "ブルメット",
+              "落とすアイテム2": "フロッグアーマー",
+              "落とすアイテム3": "クルーザー砲",
+              "生息地": "デビルアイランド",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005190+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 17
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "296",
+          "encyclopedia_number": "296",
+          "kana_order_raw": "457",
+          "name_ja": "ブルフロッグ",
+          "canonical_name_ja": "ブルフロッグ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ブルメット",
+              "canonical_item_ja": "ブルメット",
+              "rate_raw": "60%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "フロッグアーマー",
+              "canonical_item_ja": "フロッグアーマー",
+              "rate_raw": "30%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "クルーザー砲",
+              "canonical_item_ja": "クルーザー砲",
+              "rate_raw": "15%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036657+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 297
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "x3ab765b",
+          "summary_ja": "バザースカ東の島にあるデビルアイランドにいる。",
+          "summary_zh": "位于巴扎斯卡东侧岛屿上的恶魔岛设施内。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%96%E3%83%AB%E3%83%95%E3%83%AD%E3%83%83%E3%82%B0#x3ab765b",
+            "retrieved_at": "2026-11-02T13:49:17.164736+08:00",
+            "content_hash": "sha256:20ddc87bc56a49913b2586b60a512d7c8e94e6205aadfa8f6ffaa73c68edeffc",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "金輪際ゴースト",
+        "bounty_raw": "66,600",
+        "fame_raw": "350",
+        "location_ja_raw": "金輪際ホテル",
+        "notes_ja_raw": ["要熱センサー"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E9%87%91%E8%BC%AA%E9%9A%9B%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005221+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 18
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "金輪際ゴースト",
+              "賞金": "66,600",
+              "有名度": "350",
+              "落とすアイテム1": "金輪際モップ",
+              "落とすアイテム2": "スケスケアーマー",
+              "落とすアイテム3": "金輪際チャクラム",
+              "生息地": "金輪際ホテル",
+              "備考": "要熱センサー"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005221+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 18
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "285",
+          "encyclopedia_number": "285",
+          "kana_order_raw": "176",
+          "name_ja": "金輪際ゴースト",
+          "canonical_name_ja": "金輪際ゴースト",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "金輪際モップ",
+              "canonical_item_ja": "金輪際モップ",
+              "rate_raw": "70%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "スケスケアーマー",
+              "canonical_item_ja": "スケスケアーマー",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "金輪際チャクラム",
+              "canonical_item_ja": "金輪際チャクラム",
+              "rate_raw": "10%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036617+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 286
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "p59bb987",
+          "summary_ja": "ヘルメツ島南、あいのかけら西の半島にある金輪際ホテルにいる。",
+          "summary_zh": "位于赫尔梅茨岛以南、爱之碎片以西半岛上的金轮际旅馆。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E9%87%91%E8%BC%AA%E9%9A%9B%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88#p59bb987",
+            "retrieved_at": "2026-11-02T13:49:18.401764+08:00",
+            "content_hash": "sha256:8eaeffe8f302576fd9935fa03455ec334613634b383956150dc247786d8839df",
+            "table_index": 0,
+            "row_index": 0
+          }
+        },
+        {
+          "section_ja": "戦闘準備",
+          "section_anchor": "d944268d",
+          "summary_ja": "熱センサーで居場所を特定する。「くさったスープ」は厨房の鍋から入手でき、戦闘中の逃走を防ぐために使う。",
+          "summary_zh": "用热传感器确定位置；厨房锅内可取得腐烂浓汤，战斗中使用可阻止其逃跑。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E9%87%91%E8%BC%AA%E9%9A%9B%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88#d944268d",
+            "retrieved_at": "2026-11-02T13:49:18.401974+08:00",
+            "content_hash": "sha256:8eaeffe8f302576fd9935fa03455ec334613634b383956150dc247786d8839df",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "きゃたつラー",
+        "bounty_raw": "58,000",
+        "fame_raw": "70",
+        "location_ja_raw": "モロ・ポコ",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%81%8D%E3%82%83%E3%81%9F%E3%81%A4%E3%83%A9%E3%83%BC",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005251+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 19
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "きゃたつラー",
+              "賞金": "58,000",
+              "有名度": "70",
+              "落とすアイテム1": "軍手",
+              "落とすアイテム2": "ぢかたび",
+              "落とすアイテム3": "きゃた肝",
+              "生息地": "モロ・ポコ",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005251+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 19
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "347",
+          "encyclopedia_number": "347",
+          "kana_order_raw": "086",
+          "name_ja": "きゃたつラー",
+          "canonical_name_ja": "きゃたつラー",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "軍手",
+              "canonical_item_ja": "軍手",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ぢかたび",
+              "canonical_item_ja": "ぢかたび",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "きゃた肝",
+              "canonical_item_ja": "きゃた肝",
+              "rate_raw": "55%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036784+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 348
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "sb9820d3",
+          "summary_ja": "モロ・ポコ入口正面の階段に触れると徒歩戦闘になる。2F側から触れても戦える。",
+          "summary_zh": "接触摩洛波克入口正前方的楼梯即触发白兵战；从2层接触楼梯也可触发。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%81%8D%E3%82%83%E3%81%9F%E3%81%A4%E3%83%A9%E3%83%BC#sb9820d3",
+            "retrieved_at": "2026-11-02T13:49:19.580090+08:00",
+            "content_hash": "sha256:5536039f4d7480b7e479f6ef58f4cf73ab1bad3a0d9300e67145b2e85e88cac1",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ピチピチブラザーズ",
+        "bounty_raw": "8,000",
+        "fame_raw": "70",
+        "location_ja_raw": "メルトタウン地下",
+        "notes_ja_raw": ["オトピチ", "ステピチ"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%94%E3%83%81%E3%83%94%E3%83%81%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005283+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 20
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ピチピチブラザーズ",
+              "賞金": "8,000",
+              "有名度": "70",
+              "落とすアイテム1": "花火セット",
+              "落とすアイテム2": "オトピチグローブ",
+              "落とすアイテム3": "弟ソンブレロ",
+              "生息地": "メルトタウン地下",
+              "備考": "オトピチ"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005283+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 20
+            }
+          },
+          {
+            "fields": {
+              "モンスター名": "ピチピチブラザーズ",
+              "賞金": "8,000",
+              "有名度": "70",
+              "落とすアイテム1": "いれずみシール",
+              "落とすアイテム2": "ステピチブーツ",
+              "落とすアイテム3": "兄貴ソンブレロ",
+              "生息地": "メルトタウン地下",
+              "備考": "ステピチ"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005299+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 21
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "428",
+          "encyclopedia_number": "428",
+          "kana_order_raw": "040",
+          "name_ja": "オトピチ",
+          "canonical_name_ja": "オトピチ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "花火セット",
+              "canonical_item_ja": "花火セット",
+              "rate_raw": "60%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "オトピチグローブ",
+              "canonical_item_ja": "オトピチグローブ",
+              "rate_raw": "35%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "弟ソンブレロ",
+              "canonical_item_ja": "弟ソンブレロ",
+              "rate_raw": "20%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037005+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 429
+          }
+        },
+        {
+          "frog_enemy_id": "427",
+          "encyclopedia_number": "427",
+          "kana_order_raw": "231",
+          "name_ja": "ステピチ",
+          "canonical_name_ja": "ステピチ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "いれずみシール",
+              "canonical_item_ja": "いれずみシール",
+              "rate_raw": "60%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ステピチブーツ",
+              "canonical_item_ja": "ステピチブーツ",
+              "rate_raw": "35%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "兄貴ソンブレロ",
+              "canonical_item_ja": "兄貴ソンブレロ",
+              "rate_raw": "20%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036977+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 428
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "o83ec21d",
+          "summary_ja": "「極悪非道？の兄弟」の各地でのイベントを進め、メルトタウン地下道で最終戦を行う。道中の全遭遇が必須ではない。",
+          "summary_zh": "推进“穷凶极恶？的兄弟”系列事件后，在熔岩镇地下道进行最终战；来源注明途中部分会面可跳过。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%94%E3%83%81%E3%83%94%E3%83%81%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA#o83ec21d",
+            "retrieved_at": "2026-11-02T13:49:20.793466+08:00",
+            "content_hash": "sha256:8755da631bda9f10b344038c3a08dcfec4c5a7e140ab9b14ffbc792b2dae6f8b",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ダイダロス",
+        "bounty_raw": "140,000",
+        "fame_raw": "200",
+        "location_ja_raw": "南ゲート西側砂漠",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%82%A4%E3%83%80%E3%83%AD%E3%82%B9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005330+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 22
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ダイダロス",
+              "賞金": "140,000",
+              "有名度": "200",
+              "落とすアイテム1": "ダロス1000",
+              "落とすアイテム2": "ダイキャノン",
+              "落とすアイテム3": "ダイダロッド",
+              "生息地": "南ゲート西側砂漠",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005330+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 22
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "381",
+          "encyclopedia_number": "381",
+          "kana_order_raw": "269",
+          "name_ja": "ダイダロス",
+          "canonical_name_ja": "ダイダロス",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ダロス１０００",
+              "canonical_item_ja": "ダロス1000",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ダイキャノン",
+              "canonical_item_ja": "ダイキャノン",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ダイダロッド",
+              "canonical_item_ja": "ダイダロッド",
+              "rate_raw": "7%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036864+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 382
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "d4d10787",
+          "summary_ja": "キャタピラビレッジ東の砂漠でランダム出現する。囮よせ時は乱入する空間を残す必要がある。",
+          "summary_zh": "在履带村东侧沙漠随机遭遇；使用诱敌时需给其乱入留下足够战场空间。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%82%A4%E3%83%80%E3%83%AD%E3%82%B9#d4d10787",
+            "retrieved_at": "2026-11-02T13:49:22.245235+08:00",
+            "content_hash": "sha256:a541fd8b0088ad61f6bca3e832f76d906b5d40d60b3f519f74ef12fe6081d804",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "サンディダンディ",
+        "bounty_raw": "80,000",
+        "fame_raw": "400",
+        "location_ja_raw": "南ゲート東側砂漠",
+        "notes_ja_raw": ["要熱センサー"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B5%E3%83%B3%E3%83%87%E3%82%A3%E3%83%80%E3%83%B3%E3%83%87%E3%82%A3",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005360+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 23
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "サンディダンディ",
+              "賞金": "80,000",
+              "有名度": "400",
+              "落とすアイテム1": "何かの電子部品",
+              "落とすアイテム2": "レアメタル",
+              "落とすアイテム3": "ダンディコア",
+              "生息地": "南ゲート東側砂漠",
+              "備考": "要熱センサー"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005360+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 23
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "382",
+          "encyclopedia_number": "382",
+          "kana_order_raw": "193",
+          "name_ja": "サンディダンディ",
+          "canonical_name_ja": "サンディダンディ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "何かの電子部品",
+              "canonical_item_ja": "何かの電子部品",
+              "rate_raw": "100%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "レアメタル",
+              "canonical_item_ja": "レアメタル",
+              "rate_raw": "50%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ダンディコア",
+              "canonical_item_ja": "ダンディコア",
+              "rate_raw": "10%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.036890+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 383
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "gc063e63",
+          "summary_ja": "モロ・ポコ南、南ゲート東の砂漠にいる。熱センサーがないと姿の確認も遭遇もできない。",
+          "summary_zh": "位于摩洛波克南部、南关卡以东的沙漠；需要热传感器才能发现并遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%B5%E3%83%B3%E3%83%87%E3%82%A3%E3%83%80%E3%83%B3%E3%83%87%E3%82%A3#gc063e63",
+            "retrieved_at": "2026-11-02T13:49:23.723697+08:00",
+            "content_hash": "sha256:0309e5c40e788493610d7d3e7c5a85de265a03dffedf810b1aaa556a27f0bd38",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ぐんかんサウルス",
+        "bounty_raw": "200,000",
+        "fame_raw": "30",
+        "location_ja_raw": "レインバレー",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%81%90%E3%82%93%E3%81%8B%E3%82%93%E3%82%B5%E3%82%A6%E3%83%AB%E3%82%B9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005390+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 24
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ぐんかんサウルス",
+              "賞金": "200,000",
+              "有名度": "30",
+              "落とすアイテム1": "サウルスパック",
+              "落とすアイテム2": "サウルス砲",
+              "落とすアイテム3": "サウルスハープーン",
+              "生息地": "レインバレー",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005390+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 24
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "429",
+          "encyclopedia_number": "429",
+          "kana_order_raw": "142",
+          "name_ja": "ぐんかんサウルス",
+          "canonical_name_ja": "ぐんかんサウルス",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "サウルスパック",
+              "canonical_item_ja": "サウルスパック",
+              "rate_raw": "75%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "サウルス砲",
+              "canonical_item_ja": "サウルス砲",
+              "rate_raw": "20%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "サウルスハープーン",
+              "canonical_item_ja": "サウルスハープーン",
+              "rate_raw": "10%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037032+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 430
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "v4887e99",
+          "summary_ja": "レインバレーのランダム遭遇と、クエスト「霧の中で」で遭う経路がある。",
+          "summary_zh": "可在雨谷随机遭遇，也可在“浓雾之中”任务期间遇到。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%81%90%E3%82%93%E3%81%8B%E3%82%93%E3%82%B5%E3%82%A6%E3%83%AB%E3%82%B9#v4887e99",
+            "retrieved_at": "2026-11-02T13:49:25.050691+08:00",
+            "content_hash": "sha256:c293779ff19cf0235da9ab41ef7be2d4ed3aadcca664a85b33fe6a971615a680",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ホバリング・ノラ",
+        "bounty_raw": "180,000",
+        "fame_raw": "300",
+        "location_ja_raw": "レインバレー",
+        "notes_ja_raw": ["ランダムエンカウント 鼻デテクター★1固定"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%9B%E3%83%90%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%8E%E3%83%A9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005420+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 25
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ホバリング・ノラ",
+              "賞金": "180,000",
+              "有名度": "300",
+              "落とすアイテム1": "鼻デテクター",
+              "落とすアイテム2": "ノラロケット",
+              "落とすアイテム3": "ノラバルカン",
+              "生息地": "レインバレー",
+              "備考": "ランダムエンカウント 鼻デテクター★1固定"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005420+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 25
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "432",
+          "encyclopedia_number": "432",
+          "kana_order_raw": "483",
+          "name_ja": "ホバリング・ノラ",
+          "canonical_name_ja": "ホバリング・ノラ",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "鼻デテクター",
+              "canonical_item_ja": "鼻デテクター",
+              "rate_raw": "55%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ノラロケット",
+              "canonical_item_ja": "ノラロケット",
+              "rate_raw": "30%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ノラバルカン",
+              "canonical_item_ja": "ノラバルカン",
+              "rate_raw": "15%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037062+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 433
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "ce40b3d5",
+          "summary_ja": "メルトタウン周辺でランダム出現または乱入する。「霧の中で」の廃墟では単独で出現する。",
+          "summary_zh": "在熔岩镇周边随机遭遇或乱入；“浓雾之中”任务的废墟战中单独出现。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%9B%E3%83%90%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%8E%E3%83%A9#ce40b3d5",
+            "retrieved_at": "2026-11-02T13:49:26.508249+08:00",
+            "content_hash": "sha256:ec2e0b9ecbee1a25647bdb1bdcedf7e5436d59a8e40b0e1802d6190bce4e0054",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "テッド・ブロイラー",
+        "bounty_raw": "250,000",
+        "fame_raw": "50",
+        "location_ja_raw": "バイアス・シティ地下",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%86%E3%83%83%E3%83%89%E3%83%BB%E3%83%96%E3%83%AD%E3%82%A4%E3%83%A9%E3%83%BC",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005451+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 26
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "テッド・ブロイラー",
+              "賞金": "250,000",
+              "有名度": "50",
+              "落とすアイテム1": "まんたんドリンク",
+              "落とすアイテム2": "プロイラーボンベ",
+              "落とすアイテム3": "モヒカッター",
+              "生息地": "バイアス・シティ地下",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005451+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 26
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "475",
+          "encyclopedia_number": "475",
+          "kana_order_raw": "314",
+          "name_ja": "テッド・ブロイラー",
+          "canonical_name_ja": "テッド・ブロイラー",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "まんたんドリンク",
+              "canonical_item_ja": "まんたんドリンク",
+              "rate_raw": "75%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ブロイラーボンベ",
+              "canonical_item_ja": "ブロイラーボンベ",
+              "rate_raw": "35%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "モヒカッター",
+              "canonical_item_ja": "モヒカッター",
+              "rate_raw": "10%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037147+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 476
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "御鎮座場所",
+          "section_anchor": "oa6018c8",
+          "summary_ja": "バイアス・シティB3F、西側のフェイル・セイフ・ロックの手前にいる。",
+          "summary_zh": "位于拜亚斯都市B3F，西侧故障安全锁之前。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%86%E3%83%83%E3%83%89%E3%83%BB%E3%83%96%E3%83%AD%E3%82%A4%E3%83%A9%E3%83%BC#oa6018c8",
+            "retrieved_at": "2026-11-02T13:49:27.810138+08:00",
+            "content_hash": "sha256:c37b19bb2785a3cd827f07d966c5f5fd1be85dfadf5d9233acf703fa4cb5700b",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "U-U-シャーク",
+        "bounty_raw": "220,000",
+        "fame_raw": "20",
+        "location_ja_raw": "ウォーターバイパス引き潮時",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/U-U-%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005482+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 27
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "U-U-シャーク",
+              "賞金": "220,000",
+              "有名度": "20",
+              "落とすアイテム1": "シャークガン",
+              "落とすアイテム2": "UUシャーク砲",
+              "落とすアイテム3": "UUバースト砲",
+              "生息地": "ウォーターバイパス引き潮時",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005482+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 27
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "486",
+          "encyclopedia_number": "486",
+          "kana_order_raw": "575",
+          "name_ja": "Ｕ‐Ｕ‐シャーク",
+          "canonical_name_ja": "U-U-シャーク",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "シャークガン",
+              "canonical_item_ja": "シャークガン",
+              "rate_raw": "80%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "ＵＵシャーク砲",
+              "canonical_item_ja": "UUシャーク砲",
+              "rate_raw": "10%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "ＵＵバースト砲",
+              "canonical_item_ja": "UUバースト砲",
+              "rate_raw": "3%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037186+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 487
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現地帯",
+          "section_anchor": "ec906881",
+          "summary_ja": "湖上では逃走するため倒せない。本編クリア後は、湖で遭わなくても干潮時のウォーターバイパスで戦える。",
+          "summary_zh": "湖面遭遇时会强制逃走，无法在那里击破；通关后退潮时可直接在码头镇东南的水上大楼“水道旁路”内遭遇，无需先完成湖面遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/U-U-%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF#ec906881",
+            "retrieved_at": "2026-11-02T13:49:28.992051+08:00",
+            "content_hash": "sha256:681200bbd516d3adb98d89aeb271e6a6742ecdd6c3894f739467c97dd658c0ac",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "エクスダイダロス",
+        "bounty_raw": "250,000",
+        "fame_raw": "50",
+        "location_ja_raw": "デスクルス西側砂漠",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%80%E3%82%A4%E3%83%80%E3%83%AD%E3%82%B9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005511+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 28
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "エクスダイダロス",
+              "賞金": "250,000",
+              "有名度": "50",
+              "落とすアイテム1": "ダロス3000",
+              "落とすアイテム2": "サイレントダロス",
+              "落とすアイテム3": "エクスダイキャノン",
+              "生息地": "デスクルス西側砂漠",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005511+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 28
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "488",
+          "encyclopedia_number": "488",
+          "kana_order_raw": "033",
+          "name_ja": "エクスダイダロス",
+          "canonical_name_ja": "エクスダイダロス",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "ダロス３０００",
+              "canonical_item_ja": "ダロス3000",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "サイレントダロス",
+              "canonical_item_ja": "サイレントダロス",
+              "rate_raw": "20%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "エクスダイキャノン",
+              "canonical_item_ja": "エクスダイキャノン",
+              "rate_raw": "5%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037212+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 489
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "m54c46f7",
+          "summary_ja": "本編クリアとダイダロス撃破後、悪党ミュージアムのハンターオフィスで情報を聞くと出現する。デスクルス西でランダム遭遇する。",
+          "summary_zh": "通关且击败戴达罗斯后，在恶党博物馆猎人事务所听取情报，随后可在死亡十字西侧随机遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%80%E3%82%A4%E3%83%80%E3%83%AD%E3%82%B9#m54c46f7",
+            "retrieved_at": "2026-11-02T13:49:30.251701+08:00",
+            "content_hash": "sha256:e69aa984fb6fed95e373d84e1cd014b8a6833c14d384777ab6015a1815dbfafd",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "母艦サウルス",
+        "bounty_raw": "280,000",
+        "fame_raw": "100",
+        "location_ja_raw": "レインバレー",
+        "notes_ja_raw": ["ランダムエンカウント"],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E6%AF%8D%E8%89%A6%E3%82%B5%E3%82%A6%E3%83%AB%E3%82%B9",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005542+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 29
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "母艦サウルス",
+              "賞金": "280,000",
+              "有名度": "100",
+              "落とすアイテム1": "鋼鉄の卵",
+              "落とすアイテム2": "母トロン",
+              "落とすアイテム3": "母艦砲",
+              "生息地": "レインバレー",
+              "備考": "ランダムエンカウント"
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005542+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 29
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "489",
+          "encyclopedia_number": "489",
+          "kana_order_raw": "481",
+          "name_ja": "母艦サウルス",
+          "canonical_name_ja": "母艦サウルス",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "鋼鉄の卵",
+              "canonical_item_ja": "鋼鉄の卵",
+              "rate_raw": "99%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "母トロン",
+              "canonical_item_ja": "母トロン",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "母艦砲",
+              "canonical_item_ja": "母艦砲",
+              "rate_raw": "8%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037590+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 490
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "w2902ace",
+          "summary_ja": "クリア後に悪党ミュージアムで情報を聞くとレインバレーに出現する。ぐんかんサウルス撃破後の「霧の中で」でも出現し、この経路ではクリア前に遭遇できる。",
+          "summary_zh": "通关后在恶党博物馆取得情报，即可在雨谷随机遭遇；已击败军舰恐龙时，“浓雾之中”任务也可使其出现，这一路径可在通关前遭遇。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E6%AF%8D%E8%89%A6%E3%82%B5%E3%82%A6%E3%83%AB%E3%82%B9#w2902ace",
+            "retrieved_at": "2026-11-02T13:49:31.470020+08:00",
+            "content_hash": "sha256:22ad72d0b4587ec7bf1d715a2f71412eab586d85e3b2c27a01fbea8f9c2521c2",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "overview": {
+        "name_ja": "ラグナ＝ロック",
+        "bounty_raw": "300,000",
+        "fame_raw": "100",
+        "location_ja_raw": "タイシャー周辺",
+        "notes_ja_raw": [],
+        "detail_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%A9%E3%82%B0%E3%83%8A%EF%BC%9D%E3%83%AD%E3%83%83%E3%82%AF",
+        "source_ref": {
+          "source_id": "metalmaniax-mm2r",
+          "target_id": "maniax-wanted-monsters",
+          "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+          "retrieved_at": "2026-11-02T13:48:50.005571+08:00",
+          "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+          "table_index": 0,
+          "row_index": 30
+        },
+        "rows": [
+          {
+            "fields": {
+              "モンスター名": "ラグナ＝ロック",
+              "賞金": "300,000",
+              "有名度": "100",
+              "落とすアイテム1": "サンダーフェザー",
+              "落とすアイテム2": "灼熱鳳凰",
+              "落とすアイテム3": "怪鳥音叉",
+              "生息地": "タイシャー周辺",
+              "備考": ""
+            },
+            "source_ref": {
+              "source_id": "metalmaniax-mm2r",
+              "target_id": "maniax-wanted-monsters",
+              "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96",
+              "retrieved_at": "2026-11-02T13:48:50.005571+08:00",
+              "content_hash": "sha256:dede49a3319bbb6d835492e21deaf601b7585c96aa4984846109ef0465acd036",
+              "table_index": 0,
+              "row_index": 30
+            }
+          }
+        ]
+      },
+      "enemy_forms": [
+        {
+          "frog_enemy_id": "491",
+          "encyclopedia_number": "491",
+          "kana_order_raw": "535",
+          "name_ja": "ラグナ＝ロック",
+          "canonical_name_ja": "ラグナ=ロック",
+          "drops": [
+            {
+              "slot": 1,
+              "item_ja": "サンダーフェザー",
+              "canonical_item_ja": "サンダーフェザー",
+              "rate_raw": "33%"
+            },
+            {
+              "slot": 2,
+              "item_ja": "灼熱鳳凰",
+              "canonical_item_ja": "灼熱鳳凰",
+              "rate_raw": "25%"
+            },
+            {
+              "slot": 3,
+              "item_ja": "怪鳥音叉",
+              "canonical_item_ja": "怪鳥音叉",
+              "rate_raw": "25%"
+            }
+          ],
+          "source_ref": {
+            "source_id": "kaerulabo-mm2r",
+            "target_id": "kaerulabo-wanted-monster-drops",
+            "source_url": "http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html",
+            "retrieved_at": "2026-11-02T13:48:53.037629+08:00",
+            "content_hash": "sha256:10eb74adfa2cb5cf28efd34b8c0207de56ed7d1642e70072e0116caaed4b6db8",
+            "table_index": 1,
+            "row_index": 492
+          }
+        }
+      ],
+      "appearance_facts": [
+        {
+          "section_ja": "出現場所",
+          "section_anchor": "t63568dd",
+          "summary_ja": "タイシャー周辺のシンボルで遭遇する。氷掘りの依頼を済ませ、バトー博士の手紙を受け取り、依頼を進める必要がある。",
+          "summary_zh": "在大社镇周边接触地图标志遭遇；需完成挖冰委托，收到巴特博士的来信并推进相应委托。",
+          "source_ref": {
+            "source_id": "metalmaniax-mm2r",
+            "target_id": "maniax-wanted-monsters",
+            "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%A9%E3%82%B0%E3%83%8A%EF%BC%9D%E3%83%AD%E3%83%83%E3%82%AF#t63568dd",
+            "retrieved_at": "2026-11-02T13:49:32.685089+08:00",
+            "content_hash": "sha256:9c95f87dc49ab338beeaa38b67428e212793dbca1f8a2587e9a93a267d311fff",
+            "table_index": 0,
+            "row_index": 0
+          }
+        }
+      ],
+      "conflicts": []
+    }
+  ]
+}

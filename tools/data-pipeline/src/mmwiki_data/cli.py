@@ -14,6 +14,7 @@ from mmwiki_data.asset_pipeline import AssetPipelineError, audit_assets, fetch_a
 from mmwiki_data.c_units import collect_c_units, load_c_units
 from mmwiki_data.engines import collect_engines, load_engines
 from mmwiki_data.fetcher import FetchError, fetch
+from mmwiki_data.knowledge_models import build_knowledge_route_index
 from mmwiki_data.models import (
     CandidateSnapshot,
     CollectedTarget,
@@ -32,6 +33,9 @@ from mmwiki_data.storage import (
     write_json_batch_atomic,
 )
 from mmwiki_data.sub_guns import collect_sub_guns, load_sub_guns
+from mmwiki_data.wanted_drop_items import collect_wanted_drop_items
+from mmwiki_data.wanted_monsters import collect_wanted_monsters
+from mmwiki_data.wanted_normalization import load_wanted_monsters, validate_wanted_sources
 
 USER_AGENT = "MetalMaxWikiResearch/0.1 (+https://mm.yangyunqiao.top)"
 
@@ -185,6 +189,10 @@ def audit(repo_root: Path) -> list[str]:
         load_sub_guns(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid sub-gun source: {error}")
+    try:
+        validate_wanted_sources(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid wanted-monster source: {error}")
     return errors
 
 
@@ -255,6 +263,17 @@ def normalize(repo_root: Path) -> dict[str, object]:
         for domain, bundle in result.bundles.items()
     }
     output_values[output_root / "conflicts.json"] = result.conflicts
+    wanted = load_wanted_monsters(
+        repo_root,
+        result.bundles["equipment"].records,
+        rebuilt_bundles={
+            f"data/interim/mm2r/0.99/{domain}.json": bundle
+            for domain, bundle in result.bundles.items()
+        },
+    )
+    if wanted is not None:
+        output_values[output_root / "wanted-monsters.json"] = wanted
+        output_values[output_root / "knowledge-routes.json"] = build_knowledge_route_index([wanted])
     write_json_batch_atomic(output_values)
 
     domain_counts = {domain: len(bundle.records) for domain, bundle in result.bundles.items()}
@@ -264,6 +283,9 @@ def normalize(repo_root: Path) -> dict[str, object]:
     source_span_count = sum(
         len(record.source_spans) for bundle in result.bundles.values() for record in bundle.records
     )
+    if wanted is not None:
+        domain_counts[wanted.category] = len(wanted.records)
+        source_ref_count += sum(len(record.source_refs) for record in wanted.records)
     output_paths: Mapping[str, str] = {path.name: str(path) for path in sorted(output_values)}
     return {
         "domains": domain_counts,
@@ -284,6 +306,8 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect-c-units",
         "collect-engines",
         "collect-sub-guns",
+        "collect-wanted-monsters",
+        "collect-wanted-drop-items",
         "audit",
         "normalize",
         "asset-audit",
@@ -304,6 +328,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-wanted-monsters":
+            wanted_summary = collect_wanted_monsters(arguments.repo_root.resolve())
+            print(json.dumps(wanted_summary, ensure_ascii=False, indent=2))
+            return 0
+        if arguments.command == "collect-wanted-drop-items":
+            drop_summary = collect_wanted_drop_items(arguments.repo_root.resolve())
+            print(json.dumps(drop_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-sub-guns":
             sub_gun_summary = collect_sub_guns(arguments.repo_root.resolve())
             print(json.dumps(sub_gun_summary, ensure_ascii=False, indent=2))

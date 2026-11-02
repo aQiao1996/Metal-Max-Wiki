@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "routes": [
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-04ef142f7d",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-1c550c0c80",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-20b2a7ef2c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-2438bcc9ab",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-25572dbddc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-2d226cba01",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-2e6d1f739e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-335c039f68",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-433f613905",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-4593a743a7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-613b95b40e",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-623a8a82ec",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-63a31c7295",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-6f827c1ba2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-74f15052e4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-784227fd4d",
+      "legacy_slugs": [
+        "sand-shark"
+      ]
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-7d62643654",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-87afba47b6",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-8b1332e5fc",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-8dce2bc0d4",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-94ec5c1d74",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-96a5e0cca2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-97d49a134a",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-b1ab3940a3",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-baaead2796",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-ccdf543214",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-d6da4f22d9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-e2637627e9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-e6c7780680",
+      "legacy_slugs": []
+    },
+    {
+      "category": "wanted-monsters",
+      "id": "wanted-monster-f5e9699f59",
+      "legacy_slugs": []
+    }
+  ]
+}

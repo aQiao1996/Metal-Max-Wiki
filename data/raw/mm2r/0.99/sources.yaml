@@ -33,10 +33,18 @@ sources:
     attribution: w.atwiki.jp/mm2-r
     notes: 未确认可复用许可，不建立整页副本
   - id: metalmaniax-mm2r
-    title: METAL MAniaX MM2R 战车资料
+    title: METAL MAniaX MM2R
     base_url: https://metalmaniax.com/
     language: ja
     license: NOASSERTION
     usage: cross-check-only
     attribution: METAL MAniaX contributors
-    notes: 只提取副炮、S-E、C 装置和引擎数值表、特性及获取地点事实，保留逐页出处；不保存整页正文、攻略评论或图片
+    notes: 只提取战车部件、赏金首及掉落物的事实表、特性、位置和出现条件，保留逐页出处；不保存整页正文、攻略评论或图片
+  - id: kaerulabo-mm2r
+    title: カエル研究室 MM2R 敌人掉落概率表
+    base_url: http://kaerulabo.web.fc2.com/etc/mm2r/
+    language: ja
+    license: NOASSERTION
+    usage: cross-check-only
+    attribution: カエル研究室（kaerulabo.web.fc2.com）
+    notes: 只保存赏金首31名敌人的三槽物品与概率事实；表值方法未公开，不推算联合概率、星级或难度加成

@@ -79,6 +79,8 @@ pnpm dev:all
 
 当前开放 2R 0.99 的 457 条装备参考资料：人类武器 55 条、主炮 95 条、副炮 50 条、S-E 89 条、C 装置 48 条、引擎型号 120 条。人类武器与主炮为汉化兼容候选；副炮、S-E、C 装置和引擎为日版参考，中文名采用单独标注的参考译名，尚未逐项核对 0.99 实机。游客可浏览、筛选和搜索；邮箱注册后自动登录，AI 问答需要登录，回答附带装备详情引用。首版采用单轮检索问答，未收录的信息不作为已知事实回答；没有账号邮件验证、找回密码和历史会话功能。
 
+赏金首收录 30 次悬赏、31 名敌人及 93 个独立掉落槽，提供位置、触发条件、各槽物品概率和 89 种掉落物的作用与属性表。皮奇兄弟分别列出两人的掉落，同名重复槽不合并；来源楼层、物品类别与作用的差异明确保留。装备与赏金首均纳入全站搜索，AI 问答目前仍以装备为范围。
+
 资料使用可追溯 JSON，账号与可撤销会话使用 PostgreSQL。密码通过 Argon2 哈希保存，登录令牌仅保存在 HttpOnly Cookie，数据库保存令牌摘要。生产环境需设置 `ENVIRONMENT=production`、HTTPS 的 `CLIENT_ORIGIN` 并使用 HTTPS；登录与问答限流当前适用于单进程部署。
 
 前端默认连接 `http://127.0.0.1:8000`，可通过前端环境变量 `API_BASE_URL` 修改。浏览器只访问同源 `/api`，不直接访问 Ollama 或持有模型密钥。
@@ -88,7 +90,9 @@ pnpm dev:all
 - `GET /game-versions`：游戏版本。
 - `GET /versions/{version}/equipment`：装备筛选、排序与分页。
 - `GET /versions/{version}/equipment/{id}`：装备详情与来源。
-- `GET /versions/{version}/search?q=...`：真实装备搜索。
+- `GET /versions/{version}/wiki/wanted-monsters`：赏金首搜索、赏金排序与分页摘要。
+- `GET /versions/{version}/wiki/wanted-monsters/{id}`：赏金首位置、出现条件、独立掉落槽与物品属性。
+- `GET /versions/{version}/search?q=...`：装备与赏金首搜索，返回统一摘要及详情链接。
 - `POST /auth/register`、`POST /auth/login`、`GET /auth/me`、`POST /auth/logout`：账号与会话。
 - `POST /versions/{version}/ask`：登录后的带引用问答。
 
@@ -131,7 +135,7 @@ pnpm build
 
 ## MM2R 0.99 资料数据管线
 
-数据管线从 17 份候选快照与副炮、S-E、C 装置、引擎事实快照生成 811 条记录：装备 457 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条。输出保留 1335 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
+数据管线从 17 份候选快照与战车部件、赏金首和掉落物事实快照生成 841 条记录：装备 457 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条、赏金首 30 条。输出保留 2314 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
 
 初次运行先同步数据工具依赖：
 
@@ -147,6 +151,8 @@ pnpm data:collect:se
 pnpm data:collect:c-units
 pnpm data:collect:engines
 pnpm data:collect:sub-guns
+pnpm data:collect:wanted
+pnpm data:collect:wanted-items
 pnpm data:normalize
 pnpm data:audit
 pnpm assets:fetch
@@ -158,6 +164,8 @@ pnpm assets:audit
 S-E 的普通改造数值按星级分别保存，不包含超改造。来源未给出的值不推算；固定星级装备的其他星级仅作图鉴参考。LOVE 机器在总表中的配方合并行尚不足以建立可靠独立条目，本次未收入 S-E。
 
 副炮保留有限与无限弹仓的区别，迎击兵装化标记表示适用性，不等于装备后自动迎击。转送品和固定星级单独注明；副炮与 S-E 共用星级表采集和展示规则。
+
+`data:collect:wanted` 采集悬赏总表、出现条件和カエル研究室的逐槽掉落率；`data:collect:wanted-items` 随后采集全部 89 种掉落物的事实表。依赖哈希按已校验快照的规范 JSON 计算，排版变化不会误报，事实变化需要重新采集。掉落率来源未说明统计或解析方法，不推算联合概率、难度加成或星级概率；不同星级与不同来源的数值分开显示。
 
 C 装置的主动指令与被动特性分别标注，保留耗弹变化、适用孔位和效果疑点。命中与回避只显示来源面板值，不能当作实际概率；通信转送品注明 MM3 条件，RENTA 系统注明无法获得。LOVE 机器的 C 装置配方行尚未独立收录。
 

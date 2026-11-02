@@ -7,9 +7,14 @@ import { ArrowLeft, ListFilter } from 'lucide-react'
 import { getLegacyEquipmentType } from '@/config/equipment-types'
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { wikiCategoriesBySlug, wikiEntities } from '@/data/fixtures/wiki'
+import { knowledgeCategorySchema } from '@/data/knowledge/schema'
 import { buildVersionPath } from '@/lib/version-routes'
 import type { WikiCategorySlug } from '@/types/wiki'
 import { EntityList } from '@/components/wiki/EntityList'
+import {
+  KnowledgeIndex,
+  type KnowledgeQuery,
+} from '@/components/wiki/KnowledgeIndex'
 
 export const metadata: Metadata = {
   title: '资料分类',
@@ -17,9 +22,13 @@ export const metadata: Metadata = {
 
 interface CategoryPageProps {
   params: Promise<{ version: string; category: string }>
+  searchParams?: Promise<KnowledgeQuery>
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({
+  params,
+  searchParams,
+}: CategoryPageProps) {
   const { version: versionSlug, category: categorySlug } = await params
   const version = getGameVersion(versionSlug)
 
@@ -39,6 +48,18 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   if (!category) {
     notFound()
+  }
+
+  const knowledgeCategory = knowledgeCategorySchema.safeParse(categorySlug)
+  if (knowledgeCategory.success) {
+    return (
+      <KnowledgeIndex
+        version={version}
+        category={category}
+        categorySlug={knowledgeCategory.data}
+        query={(await searchParams) ?? {}}
+      />
+    )
   }
 
   const entities = wikiEntities.filter(

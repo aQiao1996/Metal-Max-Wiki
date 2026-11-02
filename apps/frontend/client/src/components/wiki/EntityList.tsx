@@ -11,12 +11,14 @@ interface EntityListProps {
   entities: readonly WikiEntitySummary[]
   version: GameVersionSlug
   emptyMessage?: string
+  from?: string
 }
 
 export function EntityList({
   entities,
   version,
   emptyMessage = '这个分类还没有录入条目。',
+  from,
 }: EntityListProps) {
   if (entities.length === 0) {
     return (
@@ -34,10 +36,12 @@ export function EntityList({
         return (
           <li key={`${entity.category}:${entity.slug}`}>
             <Link
-              href={buildVersionPath(
-                version,
-                `/wiki/${entity.category}/${entity.slug}`,
-              )}
+              href={
+                buildVersionPath(
+                  version,
+                  `/wiki/${entity.category}/${entity.slug}`,
+                ) + (from ? `?${new URLSearchParams({ from })}` : '')
+              }
               className="group border-border focus-visible:ring-ring grid gap-2 border-b py-4 transition-colors hover:bg-white/55 focus-visible:ring-2 focus-visible:outline-none sm:grid-cols-[9rem_1fr_auto] sm:items-center sm:gap-5 sm:px-3"
             >
               <span className="text-xs font-medium text-[var(--mm-signal)]">

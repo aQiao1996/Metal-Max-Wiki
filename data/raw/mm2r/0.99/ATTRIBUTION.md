@@ -23,4 +23,10 @@ C 装置的面板、逐星级普通改造值、特性表与获取地点同样参
 
 副炮的数值、星级改造、迎击兵装化适用标记和获取地点同样参考 METAL MAniaX。`sub-guns/facts.json` 仅保存表格事实和逐页引用，`sub-guns/names.yaml` 为项目整理的参考译名与事实摘要；未复制整页正文或图片，未将日版资料标为 0.99 实机确认。
 
+赏金首名称、悬赏金额、地点与出现条件参考 [METAL MAniaX MM2R 赏金首](https://metalmaniax.com/index.php?MM2R/DATA/%E8%B3%9E%E9%87%91%E9%A6%96) 及各独立攻略页。`wanted-monsters/facts.json` 只保存事实字段、自写摘要和来源小节定位；`wanted-drop-items/facts.json` 保存对应 89 种物品的详情及总表事实，逐行保留星级等条件，不复制整页攻略、评论或图片。
+
+逐槽物品与百分比参考 [カエル研究室 MM2R 敌人掉落概率表](http://kaerulabo.web.fc2.com/etc/mm2r/item_monsterDrop.html)，署名为カエル研究室（kaerulabo.web.fc2.com）。只提取标记为赏金首的 31 名敌人、93 个掉落槽；未确认开放许可，未保存完整页面。来源未说明百分比表值的方法，不据此推导槽位独立性、总掉落率、难度或星级概率。
+
+上述两个赏金首目录内的 `names.yaml` 为项目编辑的中文参考译名、简要作用与字段翻译，未核验 0.99 实机；同名物品的来源类别、作用或消耗性差异分别标记。
+
 辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。

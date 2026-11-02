@@ -2,6 +2,10 @@
 
 本目录由数据管线自动生成，请勿手动修改 JSON 文件。输入来自 `data/raw/mm2r/0.99/` 下的 `candidates`、`special-equipment`、`c-units`、`engines` 和 `sub-guns`，可在根目录执行 `pnpm data:normalize` 重建。
 
+`wanted-monsters.json` 另外读取 `wanted-monsters` 与 `wanted-drop-items` 两份事实快照，包含 30 次悬赏、31 名敌人及 93 个独立掉落槽。物品作用、带行条件的属性表、来源冲突与逐页引用同时保留；重复物品槽不合并，概率不相加。
+
+`knowledge-routes.json` 同步生成仅含分类、稳定 ID 与旧地址映射的轻量索引，用于页面渲染前的 404 校验和旧链接跳转；不在请求代理中加载百科正文。
+
 S-E 的来源快照通过 `pnpm data:collect:se` 单独获取，只保存数值表和获取地点事实。中文参考名与实机汉化名称分开保存；星级改造值逐项保留，不推算来源空缺。固定星级装备的其他星级可能仅是图鉴参考，不能视为实际可获取。
 
 C 装置通过 `pnpm data:collect:c-units` 采集，保存面板改造值、特性和获取地点事实。中文说明区分主动指令与被动效果，保留适用孔位、耗弹和验证限制；命中、回避不换算为实际概率。通信转送品与无法获得的租赁部件单独标明。
