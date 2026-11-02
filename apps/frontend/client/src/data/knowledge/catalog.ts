@@ -1,10 +1,14 @@
 import rawWantedDataset from '../../../../../../data/interim/mm2r/0.99/wanted-monsters.json'
+import rawVehicleDataset from '../../../../../../data/interim/mm2r/0.99/vehicles.json'
 
 import { toKnowledgeEntry, type KnowledgeEntry } from './entry'
 import { knowledgeDatasetSchema, type KnowledgeCategory } from './schema'
 import { knowledgeRouteIds } from './routes'
 
-const datasets = [knowledgeDatasetSchema.parse(rawWantedDataset)]
+const datasets = [
+  knowledgeDatasetSchema.parse(rawWantedDataset),
+  knowledgeDatasetSchema.parse(rawVehicleDataset),
+]
 const entries: KnowledgeEntry[] = datasets.flatMap((dataset) =>
   dataset.records.map((record) => toKnowledgeEntry(record)),
 )

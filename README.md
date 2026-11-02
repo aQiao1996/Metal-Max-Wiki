@@ -81,6 +81,8 @@ pnpm dev:all
 
 赏金首收录 30 次悬赏、31 名敌人及 93 个独立掉落槽，提供位置、触发条件、各槽物品概率和 89 种掉落物的作用与属性表。皮奇兄弟分别列出两人的掉落，同名重复槽不合并；来源楼层、物品类别与作用的差异明确保留。装备与赏金首均纳入全站搜索，AI 问答目前仍以装备为范围。
 
+战车收录 16 种车型、355 个配置、19 个租赁购买选项和 20 项底盘特性。支持按车型、型号、特性及双引擎／双 C 条件查找；配置按来源阶段展示，巴特设计预设单独标注，不推测升级连线。底盘特性数值保留孔位、生效方式和证据适用对象，双部件改造的互斥、开放阶段与不可逆条件明确列出。全站搜索同时覆盖车辆。
+
 资料使用可追溯 JSON，账号与可撤销会话使用 PostgreSQL。密码通过 Argon2 哈希保存，登录令牌仅保存在 HttpOnly Cookie，数据库保存令牌摘要。生产环境需设置 `ENVIRONMENT=production`、HTTPS 的 `CLIENT_ORIGIN` 并使用 HTTPS；登录与问答限流当前适用于单进程部署。
 
 前端默认连接 `http://127.0.0.1:8000`，可通过前端环境变量 `API_BASE_URL` 修改。浏览器只访问同源 `/api`，不直接访问 Ollama 或持有模型密钥。
@@ -92,7 +94,9 @@ pnpm dev:all
 - `GET /versions/{version}/equipment/{id}`：装备详情与来源。
 - `GET /versions/{version}/wiki/wanted-monsters`：赏金首搜索、赏金排序与分页摘要。
 - `GET /versions/{version}/wiki/wanted-monsters/{id}`：赏金首位置、出现条件、独立掉落槽与物品属性。
-- `GET /versions/{version}/search?q=...`：装备与赏金首搜索，返回统一摘要及详情链接。
+- `GET /versions/{version}/wiki/vehicles`：车型搜索与 `mount=double-engine|double-c-unit|all` 筛选。
+- `GET /versions/{version}/wiki/vehicles/{id}`：底盘配置、获取方式、特性、改造限制与来源。
+- `GET /versions/{version}/search?q=...`：装备、战车与赏金首搜索，返回统一摘要及详情链接。
 - `POST /auth/register`、`POST /auth/login`、`GET /auth/me`、`POST /auth/logout`：账号与会话。
 - `POST /versions/{version}/ask`：登录后的带引用问答。
 
@@ -135,7 +139,7 @@ pnpm build
 
 ## MM2R 0.99 资料数据管线
 
-数据管线从 17 份候选快照与战车部件、赏金首和掉落物事实快照生成 841 条记录：装备 457 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条、赏金首 30 条。输出保留 2314 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
+数据管线从 17 份候选快照与战车底盘及部件、赏金首和掉落物事实快照生成 857 条记录：装备 457 条、道具 274 条、任务 8 条、职业 7 条、技能 65 条、赏金首 30 条、战车 16 条。输出保留 3309 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
 
 初次运行先同步数据工具依赖：
 
@@ -153,6 +157,8 @@ pnpm data:collect:engines
 pnpm data:collect:sub-guns
 pnpm data:collect:wanted
 pnpm data:collect:wanted-items
+pnpm data:collect:vehicles
+pnpm data:collect:vehicle-traits
 pnpm data:normalize
 pnpm data:audit
 pnpm assets:fetch
@@ -166,6 +172,8 @@ S-E 的普通改造数值按星级分别保存，不包含超改造。来源未�
 副炮保留有限与无限弹仓的区别，迎击兵装化标记表示适用性，不等于装备后自动迎击。转送品和固定星级单独注明；副炮与 S-E 共用星级表采集和展示规则。
 
 `data:collect:wanted` 采集悬赏总表、出现条件和カエル研究室的逐槽掉落率；`data:collect:wanted-items` 随后采集全部 89 种掉落物的事实表。依赖哈希按已校验快照的规范 JSON 计算，排版变化不会误报，事实变化需要重新采集。掉落率来源未说明统计或解析方法，不推算联合概率、难度加成或星级概率；不同星级与不同来源的数值分开显示。
+
+`data:collect:vehicles` 采集底盘配置、初始装备、单孔改造、获取条件及租赁购买事实；`data:collect:vehicle-traits` 随后采集同作特性与双部件改造证据，依赖车辆规范内容哈希。来源空重量不补零；猎豹 GSE 的两个阶段不按同名去重；C 装置验证值不冒充底盘固定参数。
 
 C 装置的主动指令与被动特性分别标注，保留耗弹变化、适用孔位和效果疑点。命中与回避只显示来源面板值，不能当作实际概率；通信转送品注明 MM3 条件，RENTA 系统注明无法获得。LOVE 机器的 C 装置配方行尚未独立收录。
 

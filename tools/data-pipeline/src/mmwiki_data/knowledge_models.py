@@ -11,7 +11,7 @@ from mmwiki_data.normalization_models import (
     sorted_unique_source_refs,
 )
 
-KnowledgeCategory = Literal["wanted-monsters"]
+KnowledgeCategory = Literal["wanted-monsters", "vehicles"]
 
 
 class ReferenceAttribute(StrictModel):
@@ -66,6 +66,37 @@ class WantedEnemy(StrictModel):
         return self
 
 
+class VehicleSetup(StrictModel):
+    id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
+    kind: Literal["pattern", "preset", "fixed"]
+    stage: int = Field(ge=1, le=128)
+    name_ja: str = Field(min_length=1)
+    name_reference: str = Field(min_length=1)
+    holes_raw: list[str] = Field(min_length=5, max_length=5)
+    weight_raw: str
+    trait_ja: str = Field(min_length=1)
+    trait_name: str = Field(min_length=1)
+    cargo_raw: str
+    fixed_armament_raw: str | None = None
+    source_ref: SourceRef
+    issues: list[str] = Field(default_factory=list)
+
+
+class VehicleDetails(StrictModel):
+    double_engine_supported: bool
+    double_c_unit_supported: bool
+    configurations: list[VehicleSetup] = Field(min_length=1, max_length=128)
+    design_traits_ja: list[str] = Field(default_factory=list)
+    trait_terms: list[str] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def validate_setups(self) -> VehicleDetails:
+        ids = [configuration.id for configuration in self.configurations]
+        if len(ids) != len(set(ids)):
+            raise ValueError("战车配置包含重复ID")
+        return self
+
+
 class KnowledgeRecord(StrictModel):
     id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
     game: Literal["mm2r"] = "mm2r"
@@ -78,6 +109,7 @@ class KnowledgeRecord(StrictModel):
     sections: list[ReferenceSection]
     enemies: list[WantedEnemy] = Field(default_factory=list)
     probability_note: str = ""
+    vehicle: VehicleDetails | None = Field(default=None, exclude_if=lambda value: value is None)
     tags: list[str] = Field(default_factory=list)
     version_scope: list[str] = Field(min_length=1)
     verification_status: Literal["source_only", "compatible_candidate"]
@@ -89,6 +121,8 @@ class KnowledgeRecord(StrictModel):
         """所有正文及掉落出处都必须进入条目引用集合。"""
         if self.category == "wanted-monsters" and self.bounty is None:
             raise ValueError(f"{self.id}: 赏金首缺少赏金")
+        if self.category == "vehicles" and self.vehicle is None:
+            raise ValueError(f"{self.id}: 战车缺少配置信息")
         nested = [ref for section in self.sections for ref in section.source_refs]
         nested.extend(
             ref
@@ -96,6 +130,8 @@ class KnowledgeRecord(StrictModel):
             for table in section.tables
             for ref in table.source_refs
         )
+        if self.vehicle is not None:
+            nested.extend(configuration.source_ref for configuration in self.vehicle.configurations)
         nested.extend(
             ref for enemy in self.enemies for drop in enemy.drops for ref in drop.source_refs
         )
@@ -158,6 +194,7 @@ def build_knowledge_route_index(datasets: list[KnowledgeDataset]) -> KnowledgeRo
     """生成不包含百科正文的路由索引，供请求进入页面前校验。"""
     legacy_slugs: dict[tuple[KnowledgeCategory, str], list[str]] = {
         ("wanted-monsters", "スナザメ"): ["sand-shark"],
+        ("vehicles", "ウルフ"): ["red-wolf"],
     }
     routes = [
         KnowledgeRoute(

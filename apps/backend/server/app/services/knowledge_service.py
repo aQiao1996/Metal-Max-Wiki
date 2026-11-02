@@ -5,6 +5,7 @@ from app.repositories.knowledge_repository import load_knowledge
 from app.schemas.knowledge import (
     KnowledgeCategory,
     KnowledgeListData,
+    KnowledgeMount,
     KnowledgeRecord,
     KnowledgeSort,
     KnowledgeSummary,
@@ -17,12 +18,31 @@ def knowledge_text(record: KnowledgeRecord) -> str:
     """检索名称、地点、正文和逐槽掉落，不拼接其他版本。"""
     values = [record.name, record.names.ja or "", *record.names.aliases, record.summary]
     values.extend(attribute.value for attribute in record.attributes)
-    values.extend(paragraph for section in record.sections for paragraph in section.paragraphs)
+    values.extend(
+        paragraph
+        for section in record.sections
+        if section.id != "source-issues"
+        for paragraph in section.paragraphs
+    )
     values.extend(
         f"{drop.name} {drop.item_ja} {drop.summary}"
         for enemy in record.enemies
         for drop in enemy.drops
     )
+    if record.vehicle is not None:
+        values.extend(record.vehicle.trait_terms)
+        values.extend(
+            " ".join(
+                [
+                    setup.name_ja,
+                    setup.name_reference,
+                    setup.trait_ja,
+                    setup.trait_name,
+                    *setup.holes_raw,
+                ]
+            )
+            for setup in record.vehicle.configurations
+        )
     return normalize("NFKC", " ".join(values)).casefold()
 
 
@@ -32,17 +52,34 @@ def list_knowledge(
     *,
     q: str = "",
     sort: KnowledgeSort = "name-asc",
+    mount: KnowledgeMount = "all",
     page: int = 1,
     page_size: int = 20,
 ) -> KnowledgeListData:
     """按分类和关键词查询百科，保留稳定分页。"""
     require_available_version(version)
+    if category != "wanted-monsters" and sort == "bounty-desc":
+        raise BusinessError(422, "此分类不支持赏金排序")
+    if category != "vehicles" and mount != "all":
+        raise BusinessError(422, "此分类不支持战车动力筛选")
     query = normalize("NFKC", q.strip()).casefold()
     records = [
         record
         for record in load_knowledge(category)
         if not query or query in knowledge_text(record)
     ]
+    if mount != "all":
+
+        def supports_mount(record: KnowledgeRecord) -> bool:
+            if record.vehicle is None:
+                raise ValueError(f"战车缺少动力配置：{record.id}")
+            return (
+                record.vehicle.double_engine_supported
+                if mount == "double-engine"
+                else record.vehicle.double_c_unit_supported
+            )
+
+        records = [record for record in records if supports_mount(record)]
     if sort == "bounty-desc":
 
         def bounty_key(record: KnowledgeRecord) -> tuple[int, str]:

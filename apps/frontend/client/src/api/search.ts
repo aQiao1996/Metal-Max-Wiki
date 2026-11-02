@@ -24,7 +24,12 @@ export const librarySearchPageSchema = z
   })
   .strict()
 
-export const suggestedSearches = ['宇宙炮', 'DDT暴雨', '亚当蚁'] as const
+export const suggestedSearches = [
+  '宇宙炮',
+  'DDT暴雨',
+  '亚当蚁',
+  '红狼',
+] as const
 
 /** 搜索当前版本资料，并取消已经过期的查询。 */
 export function searchLibrary(

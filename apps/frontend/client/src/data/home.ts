@@ -20,7 +20,8 @@ const equipmentEntities: WikiEntitySummary[] = getEquipmentEntries()
     verification: 'pending',
   }))
 export const recentEntities: WikiEntitySummary[] = [
-  ...getKnowledgeEntries('wanted-monsters').slice(0, 2).map(toKnowledgeSummary),
+  ...getKnowledgeEntries('vehicles').slice(0, 1).map(toKnowledgeSummary),
+  ...getKnowledgeEntries('wanted-monsters').slice(0, 1).map(toKnowledgeSummary),
   ...equipmentEntities,
 ]
 export const featuredEntity = recentEntities[0]

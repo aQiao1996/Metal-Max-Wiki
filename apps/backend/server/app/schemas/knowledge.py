@@ -6,8 +6,9 @@ from app.schemas.base import CamelModel
 from app.schemas.equipment import EquipmentNames, EquipmentSource
 from app.schemas.response import PaginationMeta
 
-KnowledgeCategory = Literal["wanted-monsters"]
+KnowledgeCategory = Literal["wanted-monsters", "vehicles"]
 KnowledgeSort = Literal["name-asc", "bounty-desc"]
+KnowledgeMount = Literal["all", "double-engine", "double-c-unit"]
 
 
 class ReferenceAttribute(CamelModel):
@@ -61,6 +62,36 @@ class WantedEnemy(CamelModel):
         return self
 
 
+class VehicleSetup(CamelModel):
+    id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
+    kind: Literal["pattern", "preset", "fixed"]
+    stage: int = Field(ge=1, le=128)
+    name_ja: str = Field(min_length=1)
+    name_reference: str = Field(min_length=1)
+    holes_raw: list[str] = Field(min_length=5, max_length=5)
+    weight_raw: str
+    trait_ja: str = Field(min_length=1)
+    trait_name: str = Field(min_length=1)
+    cargo_raw: str
+    fixed_armament_raw: str | None
+    source_ref: EquipmentSource
+    issues: list[str]
+
+
+class VehicleDetails(CamelModel):
+    double_engine_supported: bool
+    double_c_unit_supported: bool
+    configurations: list[VehicleSetup] = Field(min_length=1, max_length=128)
+    design_traits_ja: list[str]
+    trait_terms: list[str] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def validate_setups(self) -> VehicleDetails:
+        if len({setup.id for setup in self.configurations}) != len(self.configurations):
+            raise ValueError("战车配置包含重复ID")
+        return self
+
+
 class KnowledgeSummary(CamelModel):
     id: str = Field(pattern=r"^[a-z0-9-]+-[0-9a-f]{10}$")
     game: Literal["mm2r"]
@@ -92,12 +123,15 @@ class KnowledgeRecord(KnowledgeSummary):
     sections: list[ReferenceSection]
     enemies: list[WantedEnemy]
     probability_note: str
+    vehicle: VehicleDetails | None = Field(default=None, exclude_if=lambda value: value is None)
     version_scope: list[str] = Field(min_length=1)
     source_refs: list[EquipmentSource] = Field(min_length=1)
     issues: list[str]
 
     @model_validator(mode="after")
     def validate_names(self) -> KnowledgeRecord:
+        if self.category == "vehicles" and self.vehicle is None:
+            raise ValueError(f"战车缺少配置信息：{self.id}")
         if len({section.id for section in self.sections}) != len(self.sections):
             raise ValueError(f"百科条目存在重复正文定位：{self.id}")
         return self

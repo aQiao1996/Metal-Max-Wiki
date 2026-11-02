@@ -5,6 +5,7 @@ from app.core.errors import BusinessError
 from app.repositories.equipment_repository import load_equipment
 from app.repositories.knowledge_repository import load_knowledge
 from app.schemas.equipment import EquipmentNames, EquipmentRecord
+from app.schemas.knowledge import KnowledgeCategory
 from app.schemas.response import PaginationMeta
 from app.schemas.search import LibrarySearchPage, LibrarySearchResult
 from app.services.equipment_service import equipment_text, require_available_version
@@ -17,6 +18,10 @@ _TYPE_LABELS = {
     "special-equipment": "S-E",
     "c-unit": "C 装置",
     "engine": "引擎",
+}
+_KNOWLEDGE_LABELS: dict[KnowledgeCategory, str] = {
+    "wanted-monsters": "赏金首",
+    "vehicles": "战车",
 }
 
 
@@ -68,21 +73,22 @@ def search_library(
                 name_source=_name_source(record.names),
             )
         )
-    for entry in load_knowledge("wanted-monsters"):
-        if query not in knowledge_text(entry):
-            continue
-        results.append(
-            LibrarySearchResult(
-                id=entry.id,
-                name=entry.name,
-                summary=entry.summary,
-                aliases=entry.names.aliases,
-                href=f"/wiki/{entry.category}/{entry.id}",
-                category_label="赏金首",
-                verification_status=entry.verification_status,
-                name_source=_name_source(entry.names),
+    for category, label in _KNOWLEDGE_LABELS.items():
+        for entry in load_knowledge(category):
+            if query not in knowledge_text(entry):
+                continue
+            results.append(
+                LibrarySearchResult(
+                    id=entry.id,
+                    name=entry.name,
+                    summary=entry.summary,
+                    aliases=entry.names.aliases,
+                    href=f"/wiki/{entry.category}/{entry.id}",
+                    category_label=label,
+                    verification_status=entry.verification_status,
+                    name_source=_name_source(entry.names),
+                )
             )
-        )
     results.sort(
         key=lambda result: (
             query != normalize("NFKC", result.name).casefold(),

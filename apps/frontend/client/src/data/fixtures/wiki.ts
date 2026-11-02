@@ -84,46 +84,6 @@ const legacyWikiCategories = legacyEquipmentCategories.map(
 
 export const wikiEntities = [
   {
-    slug: 'red-wolf',
-    category: 'vehicles',
-    name: '红狼战车',
-    aliases: ['红狼', 'R狼'],
-    summary: '以主炮输出见长的经典战车，需要结合版本核对改造分支。',
-    tags: ['战车', '主炮流', '改造'],
-    verification: 'pending',
-    image: null,
-    attributes: [
-      { label: '资料版本', value: '2R 0.99 汉化版' },
-      { label: '定位', value: '主炮输出' },
-      { label: '校对状态', value: '改造名称与数值待实机核对' },
-    ],
-    sections: [
-      {
-        id: 'overview',
-        title: '使用思路',
-        paragraphs: [
-          '页面将保留不同改造路线的差异，最终数值以 0.99 版实机核对结果为准。',
-        ],
-      },
-      {
-        id: 'build',
-        title: '配装方向',
-        paragraphs: [
-          '优先呈现主炮、C 装置、引擎和底盘之间的取舍，不在资料未核验时填写推测数值。',
-        ],
-      },
-    ],
-    relatedSlugs: ['universe-cannon', 'ddt-rain'],
-    sources: [
-      {
-        title: '游戏内改造界面',
-        note: '需使用 0.99 汉化版存档复核',
-        href: null,
-        status: 'pending',
-      },
-    ],
-  },
-  {
     slug: 'universe-cannon',
     category: 'main-cannons',
     name: '宇宙炮',
@@ -146,7 +106,7 @@ export const wikiEntities = [
         ],
       },
     ],
-    relatedSlugs: ['red-wolf'],
+    relatedSlugs: [],
     sources: [
       {
         title: '游戏内武器界面',
@@ -179,7 +139,7 @@ export const wikiEntities = [
         ],
       },
     ],
-    relatedSlugs: ['red-wolf'],
+    relatedSlugs: [],
     sources: [
       {
         title: '游戏内 S-E 说明',

@@ -1,0 +1,1289 @@
+{
+  "schema_version": 1,
+  "source_id": "metalmaniax-mm2r",
+  "verification_status": "source_only",
+  "reference_note": "中文名称与说明为根据日文同作公开资料自行整理的参考译名；全部source_only，未在0.99汉化实机逐项核验。",
+  "source_locator_note": "table_index为#body内从0开始的表号，row_index为去除表头后的原始行号；正文证据以source_url锚点及locator定位，正文的表格坐标0不代表表格证据。",
+  "inventory": {
+    "vehicle_content_hash": "sha256:fd7a6d5bdb88e7b62f0977b50ab766569a879b2826292d74fd2207bd44e04e33",
+    "configuration_count": 355,
+    "configuration_values": {
+      "S-Eラッシュ": 12,
+      "なし": 1,
+      "キャノンラッシュ": 9,
+      "ダブルストライク": 8,
+      "ツインラッシュ": 21,
+      "バルカンラッシュ": 7,
+      "会心の一発": 33,
+      "対ビーム仕様": 2,
+      "対空能力": 26,
+      "特殊装甲": 2,
+      "耐冷仕様": 41,
+      "耐熱仕様": 41,
+      "耐電仕様": 1,
+      "身交わし走行": 88,
+      "迎撃能力": 1,
+      "選択 *1": 4,
+      "野生の怒り": 57,
+      "防音仕様": 1
+    },
+    "design_choices_ja": [
+      "なし",
+      "キャノンラッシュ",
+      "バルカンラッシュ",
+      "S-Eラッシュ",
+      "ツインラッシュ",
+      "ダーティラッシュ",
+      "ダブルアタッカー",
+      "会心の一発",
+      "ダブルストライク",
+      "対空能力",
+      "迎撃能力",
+      "迎撃補助",
+      "身交わし走行",
+      "耐熱仕様",
+      "耐冷仕様",
+      "防音仕様",
+      "対ビーム仕様",
+      "耐電仕様"
+    ],
+    "design_placeholder": "選択 *1",
+    "design_source_refs": [
+      {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicles",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%83%93%E3%82%B7%E3%83%8B%E3%82%A2%E3%83%B3#notefoot_1",
+        "retrieved_at": "2026-11-02T13:51:49.957392+08:00",
+        "content_hash": "sha256:44c7d359b21b9ba6e28170c24c063fae3c2fb63e8068b7448770d09df2dfef8b",
+        "table_index": 0,
+        "row_index": 0
+      },
+      {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicles",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%88%E3%83%A9%E3%83%87%E3%82%A3%E3%83%90%E3%83%AA#notefoot_1",
+        "retrieved_at": "2026-11-02T13:51:52.477518+08:00",
+        "content_hash": "sha256:2c6b1ef4c44849caab04a92a2ec85f8fbdfdce511e00e28b366d84df433c2ece",
+        "table_index": 0,
+        "row_index": 0
+      },
+      {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicles",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%83%BC#notefoot_1",
+        "retrieved_at": "2026-11-02T13:51:53.787296+08:00",
+        "content_hash": "sha256:b59229a9af0b5108a5a732d3a8f53a4258d8f888e057a7dba74a3efe55e85965",
+        "table_index": 0,
+        "row_index": 0
+      },
+      {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicles",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%83%AC%E3%82%AA%E3%83%91%E3%83%AB%E3%83%88#notefoot_1",
+        "retrieved_at": "2026-11-02T13:51:55.453384+08:00",
+        "content_hash": "sha256:97b3f7f4dadb8abc1f6a999ef972380e47b70310e9de16aaf67112a2e19b6548",
+        "table_index": 0,
+        "row_index": 0
+      }
+    ]
+  },
+  "records": [
+    {
+      "description": {
+        "name": "无特性",
+        "activation": "无特性",
+        "effect": "底盘不额外提供战斗特性。",
+        "limits": "仍可依装备获得其他特性；本项不是可发动的战斗指令。"
+      },
+      "aliases": [],
+      "parameters": [],
+      "unknown_parameters": [],
+      "evidence_ids": ["wolf-comment"],
+      "name_ja": "なし",
+      "configuration_count": 1,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "闪避行驶",
+        "activation": "被动生效",
+        "effect": "共用特性表记录身交闪避率约2%。",
+        "limits": "同名效果不叠加，闪避步行优先；身交闪避不同于C装置面板回避。"
+      },
+      "aliases": ["身交闪避行驶"],
+      "parameters": [
+        {
+          "label": "身交闪避率",
+          "value": "约2%",
+          "conditions": "同作共用表的近似值；同名效果不叠加，闪避步行优先。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["evasion-table"]
+        }
+      ],
+      "unknown_parameters": ["底盘独立试验样本及精确内部概率。"],
+      "evidence_ids": ["evasion-table"],
+      "name_ja": "身交わし走行",
+      "configuration_count": 88,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "耐热规格",
+        "activation": "被动生效",
+        "effect": "共用特性表记录火炎抗性变为1.5倍。",
+        "limits": "来源未给抗性到最终伤害的公式，不能写成固定50%减伤。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "火炎抗性倍率",
+          "value": "1.5倍",
+          "conditions": "抗性字段的倍率；不是已证实的最终伤害比例。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["heat-table"]
+        }
+      ],
+      "unknown_parameters": ["最终减伤比例及与其他抗性来源叠加的完整公式。"],
+      "evidence_ids": ["heat-table"],
+      "name_ja": "耐熱仕様",
+      "configuration_count": 41,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "耐寒规格",
+        "activation": "被动生效",
+        "effect": "共用特性表记录冷气抗性变为1.5倍。",
+        "limits": "来源未给抗性到最终伤害的公式，不能写成固定50%减伤。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "冷气抗性倍率",
+          "value": "1.5倍",
+          "conditions": "抗性字段的倍率；不是已证实的最终伤害比例。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["cold-table"]
+        }
+      ],
+      "unknown_parameters": ["最终减伤比例及与其他抗性来源叠加的完整公式。"],
+      "evidence_ids": ["cold-table"],
+      "name_ja": "耐冷仕様",
+      "configuration_count": 41,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "隔音规格",
+        "activation": "被动生效",
+        "effect": "共用特性表记录音波抗性变为1.5倍。",
+        "limits": "来源未给抗性到最终伤害的公式，不能写成固定50%减伤。直接伤害乘员的音波攻击不受此效果保护。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "音波抗性倍率",
+          "value": "1.5倍",
+          "conditions": "抗性字段的倍率；不是已证实的最终伤害比例。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["sound-table"]
+        }
+      ],
+      "unknown_parameters": ["最终减伤比例及与其他抗性来源叠加的完整公式。"],
+      "evidence_ids": ["sound-table"],
+      "name_ja": "防音仕様",
+      "configuration_count": 1,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "抗光束规格",
+        "activation": "被动生效",
+        "effect": "共用特性表记录光束抗性变为1.5倍。",
+        "limits": "来源未给抗性到最终伤害的公式，不能写成固定50%减伤。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "光束抗性倍率",
+          "value": "1.5倍",
+          "conditions": "抗性字段的倍率；不是已证实的最终伤害比例。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["beam-table"]
+        }
+      ],
+      "unknown_parameters": ["最终减伤比例及与其他抗性来源叠加的完整公式。"],
+      "evidence_ids": ["beam-table"],
+      "name_ja": "対ビーム仕様",
+      "configuration_count": 2,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "耐电规格",
+        "activation": "被动生效",
+        "effect": "共用特性表记录电击抗性变为1.5倍。",
+        "limits": "来源未给抗性到最终伤害的公式，不能写成固定50%减伤。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "电击抗性倍率",
+          "value": "1.5倍",
+          "conditions": "抗性字段的倍率；不是已证实的最终伤害比例。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["electric-table"]
+        }
+      ],
+      "unknown_parameters": ["最终减伤比例及与其他抗性来源叠加的完整公式。"],
+      "evidence_ids": ["electric-table"],
+      "name_ja": "耐電仕様",
+      "configuration_count": 1,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "特殊装甲",
+        "activation": "被动生效",
+        "effect": "名义效果是减轻伤害；装甲车详情报告本作疑似反而增加各属性受伤。",
+        "limits": "包括通常属性在内的反效果是来源报告，尚未在0.99实机核验；来源没有给出减伤或增伤倍率。"
+      },
+      "aliases": [],
+      "parameters": [],
+      "unknown_parameters": [
+        "实际受伤倍率、触发条件与0.99版本是否保留该问题。"
+      ],
+      "evidence_ids": ["armor-table", "armor-chassis"],
+      "name_ja": "特殊装甲",
+      "configuration_count": 2,
+      "design_selectable": false,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "会心一击",
+        "activation": "被动生效",
+        "effect": "共用特性表记录一号孔武器的会心概率变为原来的2倍，同类效果可叠加。",
+        "limits": "改变会心概率，不是伤害翻倍；仅一号孔。同作C装置说明提及约50%总体上限，并称墙体等固定物目标不产生会心；这些条件缺底盘独立样本，未在0.99实机核验。"
+      },
+      "aliases": ["会心の1発", "会心一发"],
+      "parameters": [
+        {
+          "label": "会心概率倍率",
+          "value": "2倍",
+          "conditions": "仅一号孔；来源允许同类叠加，但未列每种组合的精确公式。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["critical-table"]
+        },
+        {
+          "label": "组合会心率上限的来源近似值",
+          "value": "约50%",
+          "conditions": "ATストライク说明讨论与狼式/巴特底盘及武器修正组合；仅供同作C装置搭配对照，缺底盘独立试验。",
+          "applicability": "C装置对照",
+          "evidence_ids": ["critical-cunit"]
+        }
+      ],
+      "unknown_parameters": [
+        "武器与目标相关的基准会心率、叠加公式和底盘精确概率上限。"
+      ],
+      "evidence_ids": ["critical-table", "critical-cunit", "wolf-comment"],
+      "name_ja": "会心の一発",
+      "configuration_count": 33,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "双重打击",
+        "activation": "被动生效",
+        "effect": "一号孔武器增加1次连射，使用弹数保持原值。",
+        "limits": "仅一号孔，部分喷射火炎武器无效；增加连射不等于所有武器总攻击数一律翻倍，C装置详情区分X连射与X回攻击，底盘未独立测量。"
+      },
+      "aliases": ["双重连击"],
+      "parameters": [
+        {
+          "label": "一号孔追加连射次数",
+          "value": "+1次",
+          "conditions": "作用于一号孔且武器兼容；部分火炎武器不生效。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["strike-table"]
+        },
+        {
+          "label": "该次攻击的耗弹倍率",
+          "value": "1倍（不增加）",
+          "conditions": "被动增加连射时，共用特性表注明使用弹数不变。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["strike-table"]
+        }
+      ],
+      "unknown_parameters": ["底盘与多个打击类效果叠加时的完整攻击数公式。"],
+      "evidence_ids": ["strike-table", "strike-cunit"],
+      "name_ja": "ダブルストライク",
+      "configuration_count": 8,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "主炮齐射",
+        "activation": "主动指令",
+        "effect": "在战斗菜单新增主炮齐射指令，将所有兼容的对应武器一并发射。",
+        "limits": "武器类别不是唯一判据，存在跨类别兼容与排除项；不等于被动增加射击次数。来源未给全部武器的耗弹边界与损坏状态规则。"
+      },
+      "aliases": ["主炮ラッシュ", "主炮连射"],
+      "parameters": [],
+      "unknown_parameters": [
+        "逐件武器的耗弹与弹药不足处理，以及调查表空白武器的兼容性。"
+      ],
+      "evidence_ids": ["cannon-table", "rush-exceptions"],
+      "name_ja": "キャノンラッシュ",
+      "configuration_count": 9,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "副炮齐射",
+        "activation": "主动指令",
+        "effect": "在战斗菜单新增副炮齐射指令，将所有兼容的对应武器一并发射。",
+        "limits": "武器类别不是唯一判据，存在跨类别兼容与排除项；不等于被动增加射击次数。来源未给全部武器的耗弹边界与损坏状态规则。"
+      },
+      "aliases": ["机枪齐射"],
+      "parameters": [],
+      "unknown_parameters": [
+        "逐件武器的耗弹与弹药不足处理，以及调查表空白武器的兼容性。"
+      ],
+      "evidence_ids": ["vulcan-table", "rush-exceptions"],
+      "name_ja": "バルカンラッシュ",
+      "configuration_count": 7,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "S-E齐射",
+        "activation": "主动指令",
+        "effect": "在战斗菜单新增S-E齐射指令，将所有兼容的对应武器一并发射。",
+        "limits": "武器类别不是唯一判据，存在跨类别兼容与排除项；不等于被动增加射击次数。来源未给全部武器的耗弹边界与损坏状态规则。"
+      },
+      "aliases": ["特殊炮齐射"],
+      "parameters": [],
+      "unknown_parameters": [
+        "逐件武器的耗弹与弹药不足处理，以及调查表空白武器的兼容性。"
+      ],
+      "evidence_ids": ["se-table", "rush-exceptions"],
+      "name_ja": "S-Eラッシュ",
+      "configuration_count": 12,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "乱射",
+        "activation": "主动指令",
+        "effect": "随机选择能用于攻击的武器，重复攻击2至4次。",
+        "limits": "共用表只允许可攻击武器；C装置说明排除无弹、彻底损坏、迎击专用和雷达，底盘未逐项实测。2、3、4次的分布未明，不能直接给出平均3次。"
+      },
+      "aliases": ["随机乱射"],
+      "parameters": [
+        {
+          "label": "随机攻击次数",
+          "value": "2–4次",
+          "conditions": "每次随机选择能用于攻击的武器；各次数的概率未知。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["dirty-table"]
+        }
+      ],
+      "unknown_parameters": [
+        "各次数概率、底盘各异常武器状态的排除规则与具体耗弹公式。"
+      ],
+      "evidence_ids": ["dirty-table", "dirty-cunit"],
+      "name_ja": "ダーティラッシュ",
+      "configuration_count": 0,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "双孔齐射",
+        "activation": "主动指令",
+        "effect": "使用一号孔和二号孔武器进行齐射。",
+        "limits": "固定使用孔1与孔2，与给一号孔追加连射的双重打击不同；来源未给弹药不足、损坏时的具体处理。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "参与孔位",
+          "value": "1号孔、2号孔",
+          "conditions": "战斗菜单主动选择此指令。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["twin-table"]
+        }
+      ],
+      "unknown_parameters": ["弹药不足与损坏状态下的逐孔处理及耗弹规则。"],
+      "evidence_ids": ["twin-table"],
+      "name_ja": "ツインラッシュ",
+      "configuration_count": 21,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "双重射击",
+        "activation": "主动指令",
+        "effect": "新增双重射击（ダブルショット）指令，一号孔武器攻击2次。",
+        "limits": "仅一号孔，使用弹数为通常的2倍；必须主动选择，不能当作被动双重打击。"
+      },
+      "aliases": ["双重攻击者", "ダブルショット"],
+      "parameters": [
+        {
+          "label": "一号孔攻击次数",
+          "value": "2次",
+          "conditions": "主动使用ダブルショット指令。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["attacker-table"]
+        },
+        {
+          "label": "耗弹倍率",
+          "value": "2倍",
+          "conditions": "相对于该武器通常攻击的耗弹；来源未给弹药只够一次时的处理。",
+          "applicability": "底盘特性",
+          "evidence_ids": ["attacker-table"]
+        }
+      ],
+      "unknown_parameters": ["弹药不足时的行为及与打击类效果组合的完整计算。"],
+      "evidence_ids": ["attacker-table"],
+      "name_ja": "ダブルアタッカー",
+      "configuration_count": 0,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "对空能力",
+        "activation": "被动生效",
+        "effect": "帮助兼容武器命中空中及高身交闪避目标；同作机制调查说明底盘和C装置均可赋予。",
+        "limits": "依武器兼容性生效，水中身交闪避不能按同一规则忽略；不提供迎击，也不保证必中。C装置说明覆盖1至5孔，底盘逐孔范围尚缺独立试验。"
+      },
+      "aliases": [],
+      "parameters": [
+        {
+          "label": "C装置对照组观测命中",
+          "value": "35/108（32.41%）",
+          "conditions": "原始调查以宇宙炮攻击拉格纳洛克，未加スカイウォッチ；仅该次试验。目标高身交闪避但非空中，天气通常为雪；该节未完整列人物驾驶等级及难度。",
+          "applicability": "C装置对照",
+          "evidence_ids": ["anti-air-control", "anti-air-conditions"]
+        },
+        {
+          "label": "C装置对空组观测命中",
+          "value": "119/120（99.17%）",
+          "conditions": "同一调查、同一宇宙炮加スカイウォッチ；该观测不是底盘固定命中率或统一提升幅度。目标高身交闪避但非空中，天气通常为雪；该节未完整列人物驾驶等级及难度。",
+          "applicability": "C装置对照",
+          "evidence_ids": ["anti-air-test", "anti-air-conditions"]
+        }
+      ],
+      "unknown_parameters": [
+        "统一命中率提升数值、底盘逐孔实测范围和不同目标/武器的精确概率。"
+      ],
+      "evidence_ids": [
+        "anti-air-table",
+        "anti-air-mechanics",
+        "anti-air-exceptions",
+        "anti-air-cunit-scope",
+        "anti-air-control",
+        "anti-air-test",
+        "anti-air-conditions"
+      ],
+      "name_ja": "対空能力",
+      "configuration_count": 26,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "迎击能力",
+        "activation": "被动生效",
+        "effect": "利用有迎击兼容性的武器击落敌方弹丸。",
+        "limits": "需兼容武器，顺序为通常、光束、电击，同优先级先用小孔号；火炎、冷气、音波、气体无兼容武器。C装置说明会使用武器弹仓且保护自身，底盘消弹与范围未独立测量。"
+      },
+      "aliases": [],
+      "parameters": [],
+      "unknown_parameters": [
+        "底盘迎击触发率、反应速度、弹仓消耗与保护范围的独立测量。"
+      ],
+      "evidence_ids": ["intercept-table", "intercept-cunit"],
+      "name_ja": "迎撃能力",
+      "configuration_count": 1,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "迎击辅助",
+        "activation": "被动生效",
+        "effect": "共用表记载提高迎击发动概率；巴特底盘原始搭配记录还报告响应变快。",
+        "limits": "需已有迎击手段才有可辅助对象；底盘记录使用閃光迎撃神話和模式E，九成以上只是体感且全体攻击较难，不能写成固定90%成功率。"
+      },
+      "aliases": [],
+      "parameters": [],
+      "unknown_parameters": [
+        "发动率增加的准确数值、反应时间及与C装置同类辅助的叠加公式。"
+      ],
+      "evidence_ids": ["assist-table", "assist-chassis-test"],
+      "name_ja": "迎撃補助",
+      "configuration_count": 0,
+      "design_selectable": true,
+      "verification_status": "source_only"
+    },
+    {
+      "description": {
+        "name": "野性之怒",
+        "activation": "主动指令",
+        "effect": "新增底盘冲撞攻击，无视属性抗性，伤害受野巴士底盘与敌方守备力差影响。",
+        "limits": "目标过硬时野巴士反受伤；来源未给常规伤害与反伤公式，不能用另一代的神之怒或菜单取消异常用法替代。"
+      },
+      "aliases": ["野生之怒"],
+      "parameters": [],
+      "unknown_parameters": [
+        "常规伤害系数、反伤公式、敌方守备力阈值及耗弹相关规则。"
+      ],
+      "evidence_ids": ["wild-table", "wild-chassis"],
+      "name_ja": "野生の怒り",
+      "configuration_count": 57,
+      "design_selectable": false,
+      "verification_status": "source_only"
+    }
+  ],
+  "mount_rules": [
+    {
+      "id": "double_engine",
+      "name": "双引擎",
+      "effect": "把允许改造的底盘变为可装两台引擎，提供两台引擎的搭载选择。",
+      "limits": "与双C装置互斥，不能恢复两类部件均为单件；实际载重受引擎及其特性影响，不能写成无条件载重翻倍。普通野巴士不能改，租赁10号以双引擎入手但转双C后不能改回。",
+      "parameters": [
+        {
+          "label": "可装引擎数量",
+          "value": "2台",
+          "conditions": "完成该种改造且底盘允许；不能与另一种双部件并存。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop"]
+        },
+        {
+          "label": "改造费用",
+          "value": "2000G",
+          "conditions": "以斯拉港对应改造工匠，每种改造的来源标价。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop"]
+        },
+        {
+          "label": "首次改造增重",
+          "value": "+1.00t",
+          "conditions": "改造增加底盘重量；零式初始双引擎首次转双C仍增重，后续转回不变。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop", "mount-zero"]
+        },
+        {
+          "label": "狼式开放阶段",
+          "value": "第4阶段",
+          "conditions": "需先推进底盘配置改造；并非初始可用。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-stages"]
+        },
+        {
+          "label": "猎豹开放阶段",
+          "value": "第5阶段",
+          "conditions": "需先推进底盘配置改造；并非初始可用。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-gepard-stage"]
+        }
+      ],
+      "unknown_parameters": [
+        "各引擎组合的实际载重由引擎资料决定；不在底盘特性中推算。"
+      ],
+      "evidence_ids": [
+        "mount-shop",
+        "mount-stages",
+        "mount-gepard-stage",
+        "mount-bus",
+        "mount-zero"
+      ],
+      "verification_status": "source_only"
+    },
+    {
+      "id": "double_c_unit",
+      "name": "双C装置",
+      "effect": "把允许改造的底盘变为可装两件C装置，扩大特性组合。",
+      "limits": "与双引擎互斥，不能恢复两类部件均为单件；同名特性能否叠加须逐项判断。C装置原始调查质疑面板命中回避的作用，不能承诺两件面板数值带来对应的实战百分比提升。",
+      "parameters": [
+        {
+          "label": "可装C装置数量",
+          "value": "2件",
+          "conditions": "完成该种改造且底盘允许；不能与另一种双部件并存。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop"]
+        },
+        {
+          "label": "改造费用",
+          "value": "2000G",
+          "conditions": "以斯拉港对应改造工匠，每种改造的来源标价。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop"]
+        },
+        {
+          "label": "首次改造增重",
+          "value": "+1.00t",
+          "conditions": "改造增加底盘重量；零式初始双引擎首次转双C仍增重，后续转回不变。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-shop", "mount-zero"]
+        },
+        {
+          "label": "狼式开放阶段",
+          "value": "第4阶段",
+          "conditions": "需先推进底盘配置改造；并非初始可用。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-stages"]
+        },
+        {
+          "label": "猎豹开放阶段",
+          "value": "第5阶段",
+          "conditions": "需先推进底盘配置改造；并非初始可用。",
+          "applicability": "双部件改造",
+          "evidence_ids": ["mount-gepard-stage"]
+        }
+      ],
+      "unknown_parameters": [
+        "每种C装置特性的叠加方式及命中回避面板的完整战斗公式。"
+      ],
+      "evidence_ids": [
+        "mount-shop",
+        "mount-stages",
+        "mount-gepard-stage",
+        "mount-bus",
+        "mount-zero",
+        "cunit-stats-test"
+      ],
+      "verification_status": "source_only"
+    }
+  ],
+  "evidence": {
+    "evasion-table": {
+      "summary_zh": "同作共用特性表记载约2%的身交闪避率；同名效果不叠加，闪避步行优先。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[0]=身交わし走行",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 0
+      }
+    },
+    "heat-table": {
+      "summary_zh": "同作共用特性表将火炎抗性记为1.5倍；该数值描述抗性，不提供最终伤害换算公式。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[2]=耐熱仕様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 2
+      }
+    },
+    "cold-table": {
+      "summary_zh": "同作共用特性表将冷气抗性记为1.5倍；该数值描述抗性，不提供最终伤害换算公式。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[3]=耐冷仕様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 3
+      }
+    },
+    "sound-table": {
+      "summary_zh": "同作共用特性表将音波抗性记为1.5倍；该数值描述抗性，不提供最终伤害换算公式。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[4]=防音仕様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 4
+      }
+    },
+    "beam-table": {
+      "summary_zh": "同作共用特性表将光束抗性记为1.5倍；该数值描述抗性，不提供最终伤害换算公式。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[5]=対ビーム仕様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 5
+      }
+    },
+    "electric-table": {
+      "summary_zh": "同作共用特性表将电击抗性记为1.5倍；该数值描述抗性，不提供最终伤害换算公式。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[6]=耐電仕様",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 6
+      }
+    },
+    "armor-table": {
+      "summary_zh": "共用表对特殊装甲仅给出减伤的名义效果，未给减伤数值，并提示疑似程序问题导致反效果。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[8]=特殊装甲",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 8
+      }
+    },
+    "critical-table": {
+      "summary_zh": "同作共用表将会心概率记为原值的2倍，仅作用于一号孔，允许同类效果叠加。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[9]=会心の一発",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 9
+      }
+    },
+    "strike-table": {
+      "summary_zh": "同作共用表说明一号孔武器增加1次连射，原本耗弹不变，部分火炎武器不生效。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[10]=ダブルストライク",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 10
+      }
+    },
+    "cannon-table": {
+      "summary_zh": "同作共用表将主炮齐射列为新增战斗指令，发射对应武器；存在少量跨类别兼容武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[12]=キャノンラッシュ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 12
+      }
+    },
+    "vulcan-table": {
+      "summary_zh": "同作共用表将副炮齐射列为新增战斗指令，发射对应武器；存在少量跨类别兼容武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[13]=バルカンラッシュ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 13
+      }
+    },
+    "se-table": {
+      "summary_zh": "同作共用表将S-E齐射列为新增战斗指令，发射对应武器；存在少量跨类别兼容武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[14]=S-Eラッシュ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 14
+      }
+    },
+    "dirty-table": {
+      "summary_zh": "同作共用表把乱射列为主动指令，从能用于攻击的武器中随机进行2至4次攻击。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[15]=ダーティラッシュ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 15
+      }
+    },
+    "twin-table": {
+      "summary_zh": "同作共用表把双孔齐射列为主动指令，使用一号孔与二号孔武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[16]=ツインラッシュ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 16
+      }
+    },
+    "attacker-table": {
+      "summary_zh": "同作共用表记载主动双重射击指令，一号孔武器攻击2次，弹药消耗为通常的2倍。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[18]=ダブルアタッカー",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 18
+      }
+    },
+    "anti-air-table": {
+      "summary_zh": "同作共用表说明对空能力帮助命中空中及神风类目标；明确有不接受该效果的武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[20]=対空能力",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 20
+      }
+    },
+    "intercept-table": {
+      "summary_zh": "同作共用表说明迎击借助兼容武器击落敌方弹丸，属性优先顺序为通常、光束、电击，同一顺序优先较小孔号；火炎、冷气、音波、气体没有兼容武器。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[21]=迎撃能力",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 21
+      }
+    },
+    "assist-table": {
+      "summary_zh": "同作共用特性表仅写迎击发动概率提高，没有给出增加幅度或固定成功率。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[22]=迎撃補助",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 22
+      }
+    },
+    "wild-table": {
+      "summary_zh": "同作共用表把野性之怒列为主动冲撞指令，无视属性抗性，伤害与野巴士底盘及敌方守备力差有关，敌方过硬时野巴士反受伤。",
+      "applicability": "底盘特性",
+      "kind": "共用特性表",
+      "locator": "#body h3:特性一覧 table[11] row[24]=野生の怒り",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb",
+        "retrieved_at": "2026-11-02T14:33:23.111668+08:00",
+        "content_hash": "sha256:d7f73ecc7ed852e9bfb9fd84c2c02d3f2e9c6b55839556ecd3f0e90fc3cecefe",
+        "table_index": 11,
+        "row_index": 24
+      }
+    },
+    "wolf-comment": {
+      "summary_zh": "狼式战车详情区分初始底盘无特性、其他多数配置的会心一击，以及S狼VF的主炮齐射；并说明底盘会心可与ATストライク组合。",
+      "applicability": "底盘特性",
+      "kind": "底盘说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A6%E3%83%AB%E3%83%95#t4bd9515",
+        "retrieved_at": "2026-11-02T14:33:26.570504+08:00",
+        "content_hash": "sha256:b91a26ecf8128a1af70f4c054b24e5b5db6b81a63b524a422f9e536222ee28e7",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "critical-cunit": {
+      "summary_zh": "ATストライク说明讨论与狼式或巴特底盘及武器会心修正组合，记述约50%的总体上限；未给底盘独立样本。该页也指出固定物类目标不产生会心。",
+      "applicability": "C装置对照",
+      "kind": "C装置说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/AT%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF#g1c58a65",
+        "retrieved_at": "2026-11-02T14:33:27.791164+08:00",
+        "content_hash": "sha256:c01aa76dc9ee8af7d3c275576fad02d4bbda319faf1310b8dd91b583ba6e9d23",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "armor-chassis": {
+      "summary_zh": "装甲车详情明确指出11式炮王和11式天罚获得特殊装甲；该特性被报告疑似使包括通常属性在内的所有属性受伤增加，未给倍率。",
+      "applicability": "底盘特性",
+      "kind": "底盘说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E8%A3%85%E7%94%B2%E8%BB%8A#sb57cad3",
+        "retrieved_at": "2026-11-02T14:33:29.186884+08:00",
+        "content_hash": "sha256:7b92900f2d0141cbd015cbefef978ac7443b4c860a5a924812acee152159b191",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "wild-chassis": {
+      "summary_zh": "野巴士详情明确常规野性之怒依赖底盘守备力、无视属性抗性；目标守备力过高时伤害不足且车辆会反受伤。该页另谈菜单取消的异常用法，未当作常规效果。",
+      "applicability": "底盘特性",
+      "kind": "底盘说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E9%87%8E%E3%83%90%E3%82%B9#ud7583ca",
+        "retrieved_at": "2026-11-02T14:33:30.574287+08:00",
+        "content_hash": "sha256:c662e31b782750ba0e90d3ff8473a71c4090a8f81e87ac857ba5538584589482",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "rush-exceptions": {
+      "summary_zh": "同作兼容性调查确认跨类别例外：主炮齐射对应ビッグガン、キャノンチューブ、ツインロケッター、キャノンミサイル；副炮齐射对应バルカンキャノン、サンダーバード；S-E齐射对应アイスキャノン、ロケットチューブ。ビッグガン不兼容副炮齐射，ツインロケッター不兼容S-E齐射。",
+      "applicability": "底盘特性",
+      "kind": "原始验证记录",
+      "locator": "#body h3:特殊適用武器まとめ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E7%89%B9%E6%AE%8A%E9%81%A9%E7%94%A8%E6%AD%A6%E5%99%A8%E8%AA%BF%E6%9F%BB#kf56b87c",
+        "retrieved_at": "2026-11-02T14:33:33.181008+08:00",
+        "content_hash": "sha256:9205f017c39b6f8063213bffe5487c1a7d4ff1b5c71493e7764a940880b6becc",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "dirty-cunit": {
+      "summary_zh": "アクティブハリー详情把随机选武器再发射重复2至4次，排除无弹、彻底损坏、迎击专用和雷达；使用单一可攻击武器时集中到该武器。文中的平均3次以各次数等概率为前提，并未证实次数分布。",
+      "applicability": "C装置对照",
+      "kind": "C装置说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%83%8F%E3%83%AA%E3%83%BC#c5890b02",
+        "retrieved_at": "2026-11-02T14:33:35.160969+08:00",
+        "content_hash": "sha256:6eaf32be96bcf2f8a0d918857fd9953ca8582e1274e4b1f8440d230027fe05f4",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "strike-cunit": {
+      "summary_zh": "ジェミナイザー详情区分增加1次连射与整次攻击重复：原X连射变X+1连射，原X回攻击则整组重复2次；并列举部分喷射火焰武器例外。这是C装置说明，底盘未独立实测。",
+      "applicability": "C装置对照",
+      "kind": "C装置说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B8%E3%82%A7%E3%83%9F%E3%83%8A%E3%82%A4%E3%82%B6%E3%83%BC#dfe95f4c",
+        "retrieved_at": "2026-11-02T14:33:38.400272+08:00",
+        "content_hash": "sha256:3e0f26fbfee6542da563e2ca556bd409e0ec1fe1602e46151bae8226309a3e87",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "anti-air-mechanics": {
+      "summary_zh": "同作机制调查明确可由底盘或C装置特性赋予对空能力，描述为接近忽略通常及空中目标的身交闪避，但保留不确定语气；水中目标不适用，并有不能被赋予的武器。",
+      "applicability": "底盘特性",
+      "kind": "原始验证记录",
+      "locator": "#body h4:対空能力、ロケット弾",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#v8f49306",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "anti-air-exceptions": {
+      "summary_zh": "该调查明确列出鱼雷、钻头、铁球、机械臂及多数通常属性机枪等不接受对空特性；不能仅凭武器属性判断，霊子キャノン等也有例外。",
+      "applicability": "底盘特性",
+      "kind": "原始验证记录",
+      "locator": "#body h3:予備知識3・対空能力が乗らない装備",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#e2731e7b",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "anti-air-cunit-scope": {
+      "summary_zh": "スカイウォッチ的C装置详情说明一至五号孔均受对空效果影响，但受武器兼容性限制；此范围并非底盘逐孔验证，不能直接提升为底盘已证实。",
+      "applicability": "C装置对照",
+      "kind": "C装置说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81#kaacd6f9",
+        "retrieved_at": "2026-11-02T14:33:41.279021+08:00",
+        "content_hash": "sha256:97bd4bc64d8cc13e3f78f181608232216e2ee5b5352b7e4fcdb5400ef203b89e",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "anti-air-control": {
+      "summary_zh": "原始调查对拉格纳洛克使用宇宙炮，记录108次攻击中35次命中（其中8次会心），命中率32.41%；这是单次试验的对照组。",
+      "applicability": "C装置对照",
+      "kind": "原始验证记录",
+      "locator": "#body h4:ラグナ＝ロックさんを泣くまで殴って命中率調査 table[0] row[9]=宇宙砲",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#u04254a8",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 9
+      }
+    },
+    "anti-air-test": {
+      "summary_zh": "同一调查在同一宇宙炮上加スカイウォッチ，记录120次中119次命中（其中34次会心），99.17%；属于特定目标与C装置组合的观测，不是底盘固定命中率或提升百分比。",
+      "applicability": "C装置对照",
+      "kind": "原始验证记录",
+      "locator": "#body h4:ラグナ＝ロックさんを泣くまで殴って命中率調査 table[0] row[10]=対空宇宙砲",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#u04254a8",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 10
+      }
+    },
+    "intercept-cunit": {
+      "summary_zh": "スパイダーネット详情说明兼容武器利用自身弹仓迎击自己受到的攻击；同装迎击专用或攻击迎击两用装备时，优先于迎击特性。这是C装置说明，底盘消弹与保护范围未独立测量。",
+      "applicability": "C装置对照",
+      "kind": "C装置说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%B9%E3%83%91%E3%82%A4%E3%83%80%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88#j12f27e3",
+        "retrieved_at": "2026-11-02T14:33:42.573795+08:00",
+        "content_hash": "sha256:66386748062a979e93852da758161836553f66ac88e08e787068972eb0886cd8",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "assist-chassis-test": {
+      "summary_zh": "原始记录以巴特底盘迎击辅助搭配閃光迎撃神話，在战斗模式E测试，报告响应变快；“九成以上”只是体感、未列样本数，全体攻击较难拦截，不能据此给底盘写固定90%成功率。",
+      "applicability": "底盘特性",
+      "kind": "原始验证记录",
+      "locator": "#body h4:敵の攻撃に対してこちらの迎撃はどの程度の性能なのか",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#z82904ee",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "mount-shop": {
+      "summary_zh": "以斯拉港的改造分别开放双引擎或双C装置，费用各2000G，底盘重量增加1.00t；不能恢复引擎和C装置均为单件，支持双方案的车可以互换，但两种双部件不能并存。狼式需第4阶段、猎豹需第5阶段。",
+      "applicability": "双部件改造",
+      "kind": "改造说明",
+      "locator": "#body h3:ダブルエンジン・ダブルCユニット",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%82%BF/%E6%94%B9%E9%80%A0%E5%B1%8B#be6b4848",
+        "retrieved_at": "2026-11-02T14:33:44.938910+08:00",
+        "content_hash": "sha256:b53de33d612778a4b4c0169968dc064575a63a55f03d5431fc1d3afc6bb003b2",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "mount-stages": {
+      "summary_zh": "同作改造许可表单独注明狼式从第4阶段、猎豹从第5阶段开放双部件改造；不是所有车型与初始配置均可改。",
+      "applicability": "双部件改造",
+      "kind": "改造说明",
+      "locator": "#body h3:ダブルエンジン・ダブルCユニット table[2] row[3]=ウルフ",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%82%BF/%E6%94%B9%E9%80%A0%E5%B1%8B#be6b4848",
+        "retrieved_at": "2026-11-02T14:33:44.938910+08:00",
+        "content_hash": "sha256:b53de33d612778a4b4c0169968dc064575a63a55f03d5431fc1d3afc6bb003b2",
+        "table_index": 2,
+        "row_index": 3
+      }
+    },
+    "mount-gepard-stage": {
+      "summary_zh": "同作改造许可表注明猎豹战车从第5阶段开放双引擎及双C装置改造。",
+      "applicability": "双部件改造",
+      "kind": "改造说明",
+      "locator": "#body h3:ダブルエンジン・ダブルCユニット table[2] row[4]=ゲパルト",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%82%BF/%E6%94%B9%E9%80%A0%E5%B1%8B#be6b4848",
+        "retrieved_at": "2026-11-02T14:33:44.938910+08:00",
+        "content_hash": "sha256:b53de33d612778a4b4c0169968dc064575a63a55f03d5431fc1d3afc6bb003b2",
+        "table_index": 2,
+        "row_index": 4
+      }
+    },
+    "mount-bus": {
+      "summary_zh": "租赁10号以双引擎入手，是野巴士的例外；转成双C装置后不能通过改造回到双引擎，需重新购买。普通野巴士不能改双引擎。",
+      "applicability": "双部件改造",
+      "kind": "底盘说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E9%87%8E%E3%83%90%E3%82%B9#ud7583ca",
+        "retrieved_at": "2026-11-02T14:33:30.574287+08:00",
+        "content_hash": "sha256:c662e31b782750ba0e90d3ff8473a71c4090a8f81e87ac857ba5538584589482",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "mount-zero": {
+      "summary_zh": "零式初始已是双引擎，首次转双C装置仍按首次改造增加1.00t，之后改回双引擎不再改变重量。",
+      "applicability": "双部件改造",
+      "kind": "底盘说明",
+      "locator": "#body h3:コメント",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A/%E3%82%BC%E3%83%AD#aa055f75",
+        "retrieved_at": "2026-11-02T14:33:47.054739+08:00",
+        "content_hash": "sha256:5127b119d9055c50fef1121e6cc65e2e3ca5bf1fed54882438b4a5872da78c9e",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "cunit-stats-test": {
+      "summary_zh": "同作C装置原始调查只比较特定条件下伤害极值，作者据此认为面板命中回避可能只有微小影响或没有作用；并非完整内部公式证明，也不是底盘对空或闪避特性实验。",
+      "applicability": "C装置对照",
+      "kind": "原始验证记录",
+      "locator": "#body h3:おわりに",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/C%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%81%AE%E5%91%BD%E4%B8%AD%E3%83%BB%E5%9B%9E%E9%81%BF%E3%81%AE%E8%AC%8E#z90df19e",
+        "retrieved_at": "2026-11-02T14:33:48.838737+08:00",
+        "content_hash": "sha256:a77a53bf79282b7fe15faa2d89206bf7d64d5f261d8c5125374b0a1008617bc0",
+        "table_index": 0,
+        "row_index": 0
+      }
+    },
+    "anti-air-conditions": {
+      "summary_zh": "该原始调查的目标拉格纳洛克身交闪避高，但并非空中状态，天气通常为雪；该节未完整列出人物驾驶等级及难度，两个观测比例只能用于这一试验对照。",
+      "applicability": "C装置对照",
+      "kind": "原始验证记录",
+      "locator": "#body h4:ラグナ＝ロックさんを泣くまで殴って命中率調査",
+      "source_ref": {
+        "source_id": "metalmaniax-mm2r",
+        "target_id": "maniax-vehicle-traits",
+        "source_url": "https://metalmaniax.com/index.php?MM2R/%E6%A4%9C%E8%A8%BC/%E6%95%B5%E3%81%AE%E7%8A%B6%E6%85%8B%EF%BD%A5%E5%B1%9E%E6%80%A7%EF%BD%A5%E5%AF%BE%E5%BF%9C%E8%83%BD%E5%8A%9B%E3%81%AE%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#u04254a8",
+        "retrieved_at": "2026-11-02T14:33:39.998227+08:00",
+        "content_hash": "sha256:3a4d176ce649a749afbeb393974e6b25615fa512acbdaf2e131b5e78f5b713cf",
+        "table_index": 0,
+        "row_index": 0
+      }
+    }
+  },
+  "limitations": [
+    "20项真实特性覆盖355配置与18项巴特设计候选；選択 *1为设计占位，不是战斗特性。",
+    "同作战车页的特性一覧是底盘、C装置及引擎共用表；仅提取本次底盘实际出现或设计可选的条目。",
+    "资料只保存事实、最短定位片段与自写中文摘要，不复制攻略正文；原始验证记录的推测、体感与样本条件均保留。",
+    "C装置说明和试验明确标注C装置对照，不能据此宣称底盘已经达到同一概率、孔位范围或消弹结果。",
+    "会心2倍是概率倍率，抗性1.5倍不是最终减伤50%；对空试验的99.17%不是底盘通用命中率。",
+    "会心约50%来自同作C装置搭配说明，缺底盘独立测量；未推算2倍效果叠加后的精确概率。",
+    "迎击辅助九成以上是模式E特定搭配的体感记录，没有样本分母，未作为数值参数。",
+    "不同代游戏、攻略本推导或异常菜单用法未被当成本作普通底盘机制的已验证证据。",
+    "未找到精确参数时明确列入unknown_parameters；不会用0、平均值或固定概率补空。",
+    "双引擎与双C装置是互斥的部件改造许可，不属于底盘特性名，按独立mount_rules记录。"
+  ]
+}

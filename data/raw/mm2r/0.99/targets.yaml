@@ -1,5 +1,17 @@
 schema_version: 1
 targets:
+  - id: maniax-vehicles
+    source_id: metalmaniax-mm2r
+    category: vehicles
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A
+    output: maniax-vehicles.json
+    collect: false
+  - id: maniax-vehicle-traits
+    source_id: metalmaniax-mm2r
+    category: vehicle-traits
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A#k8c073fb
+    output: maniax-vehicle-traits.json
+    collect: false
   - id: maniax-wanted-monsters
     source_id: metalmaniax-mm2r
     category: wanted-monsters

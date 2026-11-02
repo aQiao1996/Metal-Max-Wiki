@@ -29,4 +29,8 @@ C 装置的面板、逐星级普通改造值、特性表与获取地点同样参
 
 上述两个赏金首目录内的 `names.yaml` 为项目编辑的中文参考译名、简要作用与字段翻译，未核验 0.99 实机；同名物品的来源类别、作用或消耗性差异分别标记。
 
+车辆配置、初始装备、单孔改造、获取条件和租赁购买参考 [METAL MAniaX MM2R 战车资料](https://metalmaniax.com/index.php?MM2R/DATA/%E6%88%A6%E8%BB%8A) 及各车型、地点和任务独立页。`vehicles/facts.json` 仅保存表格事实与自写条件摘要，`vehicles/names.yaml` 保存中文参考名与别名；未复制整页攻略或图片。
+
+底盘特性和双部件改造参考同站 MM2R 共用特性表、商店改造说明及各验证记录。`vehicle-traits` 保存带适用对象的参数、缺失项与逐条出处；C 装置对照、特定配置测试和体感描述没有转换为底盘的无条件概率。相关中文名称与说明均为参考，未核验 0.99 实机。
+
 辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。

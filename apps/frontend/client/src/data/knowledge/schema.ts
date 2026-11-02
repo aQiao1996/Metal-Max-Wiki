@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import { rawEquipmentRecordSchema } from '@/data/equipment/schema'
 
-export const knowledgeCategories = ['wanted-monsters'] as const
+export const knowledgeCategories = ['wanted-monsters', 'vehicles'] as const
 export const knowledgeCategorySchema = z.enum(knowledgeCategories)
 
 const sourceRefsSchema = rawEquipmentRecordSchema.shape.source_refs
@@ -64,6 +64,41 @@ const enemySchema = z
     }
   })
 
+const vehicleSetupSchema = z
+  .object({
+    id: rawEquipmentRecordSchema.shape.id,
+    kind: z.enum(['pattern', 'preset', 'fixed']),
+    stage: z.number().int().min(1).max(128),
+    name_ja: z.string().min(1),
+    name_reference: z.string().min(1),
+    holes_raw: z.array(z.string().min(1)).length(5),
+    weight_raw: z.string(),
+    trait_ja: z.string().min(1),
+    trait_name: z.string().min(1),
+    cargo_raw: z.string(),
+    fixed_armament_raw: z.string().nullable(),
+    source_ref: rawEquipmentRecordSchema.shape.source_refs.element,
+    issues: z.array(z.string()),
+  })
+  .strict()
+const vehicleDetailsSchema = z
+  .object({
+    double_engine_supported: z.boolean(),
+    double_c_unit_supported: z.boolean(),
+    configurations: z.array(vehicleSetupSchema).min(1).max(128),
+    design_traits_ja: z.array(z.string()),
+    trait_terms: z.array(z.string().min(1)).min(1),
+  })
+  .strict()
+  .superRefine((vehicle, context) => {
+    if (
+      new Set(vehicle.configurations.map(({ id }) => id)).size !==
+      vehicle.configurations.length
+    ) {
+      context.addIssue({ code: 'custom', message: '战车配置包含重复ID' })
+    }
+  })
+
 const knowledgeSummaryShape = {
   id: rawEquipmentRecordSchema.shape.id,
   game: z.literal('mm2r'),
@@ -87,6 +122,7 @@ export const rawKnowledgeRecordSchema = z
     sections: z.array(sectionSchema),
     enemies: z.array(enemySchema),
     probability_note: z.string(),
+    vehicle: vehicleDetailsSchema.optional(),
     version_scope: z.array(z.string().min(1)).min(1),
     source_refs: sourceRefsSchema,
     issues: z.array(z.string()),
@@ -97,6 +133,12 @@ export const rawKnowledgeRecordSchema = z
       context.addIssue({
         code: 'custom',
         message: `${record.id}：赏金首缺少赏金`,
+      })
+    }
+    if (record.category === 'vehicles' && record.vehicle === undefined) {
+      context.addIssue({
+        code: 'custom',
+        message: `${record.id}：战车缺少配置信息`,
       })
     }
     if (
@@ -141,3 +183,4 @@ export type RawKnowledgeRecord = z.infer<typeof rawKnowledgeRecordSchema>
 export type RawKnowledgeSummary = z.infer<typeof rawKnowledgeSummarySchema>
 export type ReferenceTable = z.infer<typeof tableSchema>
 export type WantedEnemy = z.infer<typeof enemySchema>
+export type VehicleDetails = z.infer<typeof vehicleDetailsSchema>

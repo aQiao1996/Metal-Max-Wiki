@@ -17,6 +17,7 @@ export interface KnowledgeQuery {
   q?: string | string[]
   sort?: string | string[]
   page?: string | string[]
+  mount?: string | string[]
 }
 
 interface KnowledgeIndexProps {
@@ -36,7 +37,16 @@ export async function KnowledgeIndex({
   const first = (value: string | string[] | undefined) =>
     Array.isArray(value) ? value[0] : value
   const q = (first(query.q) ?? '').trim().slice(0, 100)
-  const sort = first(query.sort) === 'bounty-desc' ? 'bounty-desc' : 'name-asc'
+  const sort =
+    categorySlug === 'wanted-monsters' && first(query.sort) === 'bounty-desc'
+      ? 'bounty-desc'
+      : 'name-asc'
+  const rawMount = first(query.mount)
+  const mount =
+    categorySlug === 'vehicles' &&
+    (rawMount === 'double-engine' || rawMount === 'double-c-unit')
+      ? rawMount
+      : 'all'
   const rawPage = first(query.page)
   const page =
     rawPage && /^[1-9][0-9]{0,3}$/.test(rawPage) ? Number(rawPage) : 1
@@ -47,12 +57,17 @@ export async function KnowledgeIndex({
     page: String(page),
     pageSize: '20',
   })
+  if (mount !== 'all') parameters.set('mount', mount)
   const data = await serverRequest(
     `/versions/${version.slug}/wiki/${categorySlug}?${parameters}`,
     knowledgePageSchema,
   )
-  const href = (targetPage: number) =>
-    `${path}?${new URLSearchParams({ q, sort, page: String(targetPage) })}`
+  const listParameters = (targetPage: number) => {
+    const values = new URLSearchParams({ q, sort, page: String(targetPage) })
+    if (mount !== 'all') values.set('mount', mount)
+    return values
+  }
+  const href = (targetPage: number) => `${path}?${listParameters(targetPage)}`
   return (
     <div className="mx-auto max-w-6xl min-w-0 pb-10">
       <Link
@@ -91,24 +106,42 @@ export async function KnowledgeIndex({
             type="search"
             maxLength={100}
             defaultValue={q}
-            placeholder="名称、地点或掉落物品"
+            placeholder={
+              categorySlug === 'vehicles'
+                ? '车型、型号或特性'
+                : '名称、地点或掉落物品'
+            }
           />
         </div>
         <div>
           <label
-            htmlFor="knowledge-sort"
+            htmlFor={
+              categorySlug === 'vehicles' ? 'knowledge-mount' : 'knowledge-sort'
+            }
             className="mb-2 block text-sm font-medium"
           >
-            排序
+            {categorySlug === 'vehicles' ? '动力配置' : '排序'}
           </label>
           <select
-            id="knowledge-sort"
-            name="sort"
-            defaultValue={sort}
+            id={
+              categorySlug === 'vehicles' ? 'knowledge-mount' : 'knowledge-sort'
+            }
+            name={categorySlug === 'vehicles' ? 'mount' : 'sort'}
+            defaultValue={categorySlug === 'vehicles' ? mount : sort}
             className="border-input bg-card focus-visible:ring-ring h-10 w-full rounded-md border px-3 text-sm focus-visible:ring-2 focus-visible:outline-none"
           >
-            <option value="name-asc">名称升序</option>
-            <option value="bounty-desc">赏金降序</option>
+            {categorySlug === 'vehicles' ? (
+              <>
+                <option value="all">全部车型</option>
+                <option value="double-engine">支持双引擎</option>
+                <option value="double-c-unit">支持双 C</option>
+              </>
+            ) : (
+              <>
+                <option value="name-asc">名称升序</option>
+                <option value="bounty-desc">赏金降序</option>
+              </>
+            )}
           </select>
         </div>
         <div className="flex min-h-10 items-center gap-4">
@@ -127,7 +160,7 @@ export async function KnowledgeIndex({
       <EntityList
         entities={data.list.map(toKnowledgeSummary)}
         version={version.slug}
-        from={new URLSearchParams({ q, sort, page: String(page) }).toString()}
+        from={listParameters(page).toString()}
         emptyMessage={
           data.pagination.total > 0
             ? '这一页没有结果，可返回第一页查看。'

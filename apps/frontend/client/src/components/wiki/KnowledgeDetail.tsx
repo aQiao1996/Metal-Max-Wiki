@@ -4,18 +4,92 @@ import { ArrowLeft, ChevronRight } from 'lucide-react'
 
 import type { GameVersion } from '@/config/game-versions'
 import { toKnowledgeSources, type KnowledgeEntry } from '@/data/knowledge/entry'
+import { cn } from '@/lib/utils'
 import { buildVersionPath } from '@/lib/version-routes'
 import type { WikiCategory } from '@/types/wiki'
 import { EquipmentVerificationBadge } from '@/components/equipment/EquipmentVerificationBadge'
 import { AttributeTable } from '@/components/wiki/AttributeTable'
 import { ReferenceDataTable } from '@/components/wiki/ReferenceDataTable'
 import { SourceReferences } from '@/components/wiki/SourceReferences'
+import { VehicleConfigurations } from '@/components/wiki/VehicleConfigurations'
 
 interface KnowledgeDetailProps {
   entry: KnowledgeEntry
   category: WikiCategory
   version: GameVersion
   returnHref?: string
+}
+
+function KnowledgeSection({
+  section,
+  folded = false,
+  collapseTables = false,
+}: {
+  section: KnowledgeEntry['sections'][number]
+  folded?: boolean
+  collapseTables?: boolean
+}) {
+  const content = (
+    <>
+      <div className="mt-4 space-y-3 text-sm leading-7 sm:text-base">
+        {section.paragraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
+      {section.tables.length > 0 && (
+        <div className="mt-5 min-w-0 space-y-5">
+          {collapseTables ? (
+            <details>
+              <summary className="focus-visible:ring-ring min-h-10 cursor-pointer py-2 text-sm font-medium text-[var(--mm-navy)] focus-visible:ring-2 focus-visible:outline-none">
+                原文与来源记录
+              </summary>
+              <div className="mt-3 min-w-0 space-y-4">
+                {section.tables.map((table, index) => (
+                  <ReferenceDataTable
+                    key={`${section.id}:${index}`}
+                    table={table}
+                  />
+                ))}
+              </div>
+            </details>
+          ) : (
+            section.tables.map((table, index) => (
+              <ReferenceDataTable
+                key={`${section.id}:${index}`}
+                table={table}
+              />
+            ))
+          )}
+        </div>
+      )}
+    </>
+  )
+  const heading = (
+    <h2
+      className={cn(
+        'text-xl font-semibold tracking-tight text-[var(--mm-navy)]',
+        folded && 'inline',
+      )}
+    >
+      {section.title}
+    </h2>
+  )
+  return folded ? (
+    <details
+      id={section.id}
+      className="border-border min-w-0 scroll-mt-24 border-t pt-4"
+    >
+      <summary className="focus-visible:ring-ring min-h-11 cursor-pointer py-2 focus-visible:ring-2 focus-visible:outline-none">
+        {heading}
+      </summary>
+      {content}
+    </details>
+  ) : (
+    <section id={section.id} className="min-w-0 scroll-mt-24">
+      {heading}
+      {content}
+    </section>
+  )
 }
 
 /** 展示有来源的百科正文和独立掉落槽。 */
@@ -27,6 +101,12 @@ export function KnowledgeDetail({
 }: KnowledgeDetailProps) {
   const listHref =
     returnHref ?? buildVersionPath(version.slug, `/wiki/${entry.category}`)
+  const leadingSections = entry.vehicle
+    ? entry.sections.filter((section) => section.id === 'acquisition')
+    : []
+  const remainingSections = entry.vehicle
+    ? entry.sections.filter((section) => section.id !== 'acquisition')
+    : entry.sections
   return (
     <article className="mx-auto max-w-6xl min-w-0 pb-12">
       <nav
@@ -81,31 +161,33 @@ export function KnowledgeDetail({
       <div className="mt-8 grid min-w-0 gap-10 xl:grid-cols-[minmax(0,1fr)_15rem]">
         <div className="min-w-0 space-y-10">
           <AttributeTable attributes={entry.attributes} />
-          {entry.sections.map((section) => (
-            <section
+          {leadingSections.map((section) => (
+            <KnowledgeSection
               key={section.id}
-              id={section.id}
-              className="min-w-0 scroll-mt-24"
-            >
-              <h2 className="text-xl font-semibold tracking-tight text-[var(--mm-navy)]">
-                {section.title}
-              </h2>
-              <div className="mt-4 space-y-3 text-sm leading-7 sm:text-base">
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-              {section.tables.length > 0 && (
-                <div className="mt-5 min-w-0 space-y-5">
-                  {section.tables.map((table, index) => (
-                    <ReferenceDataTable
-                      key={`${section.id}:${index}`}
-                      table={table}
-                    />
-                  ))}
-                </div>
-              )}
-            </section>
+              section={section}
+              collapseTables
+            />
+          ))}
+          {entry.vehicle && (
+            <VehicleConfigurations
+              vehicle={entry.vehicle}
+              vehicleId={entry.id}
+            />
+          )}
+          {remainingSections.map((section) => (
+            <KnowledgeSection
+              key={section.id}
+              section={section}
+              folded={
+                entry.vehicle !== undefined &&
+                [
+                  'initial-equipment',
+                  'individual-modifications',
+                  'traits',
+                  'purchase-options',
+                ].includes(section.id)
+              }
+            />
           ))}
 
           {entry.enemies.length > 0 && (
@@ -218,6 +300,18 @@ export function KnowledgeDetail({
             本页目录
           </h2>
           <nav aria-label="条目目录" className="mt-3 flex flex-col text-sm">
+            {entry.vehicle && (
+              <a
+                href="#configurations"
+                className="focus-visible:ring-ring inline-flex min-h-10 items-center py-1 text-[var(--mm-navy)] hover:underline focus-visible:ring-2 focus-visible:outline-none"
+              >
+                {entry.vehicle.configurations.every(
+                  (setup) => setup.kind === 'preset',
+                )
+                  ? '设计预设'
+                  : '底盘配置'}
+              </a>
+            )}
             {entry.sections.map((section) => (
               <a
                 key={section.id}

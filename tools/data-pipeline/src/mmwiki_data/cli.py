@@ -33,6 +33,9 @@ from mmwiki_data.storage import (
     write_json_batch_atomic,
 )
 from mmwiki_data.sub_guns import collect_sub_guns, load_sub_guns
+from mmwiki_data.vehicle_normalization import load_vehicle_references, validate_vehicle_sources
+from mmwiki_data.vehicle_traits import collect_vehicle_traits
+from mmwiki_data.vehicles import collect_vehicles
 from mmwiki_data.wanted_drop_items import collect_wanted_drop_items
 from mmwiki_data.wanted_monsters import collect_wanted_monsters
 from mmwiki_data.wanted_normalization import load_wanted_monsters, validate_wanted_sources
@@ -193,6 +196,10 @@ def audit(repo_root: Path) -> list[str]:
         validate_wanted_sources(repo_root)
     except (OSError, ValueError) as error:
         errors.append(f"invalid wanted-monster source: {error}")
+    try:
+        validate_vehicle_sources(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid vehicle source: {error}")
     return errors
 
 
@@ -273,7 +280,14 @@ def normalize(repo_root: Path) -> dict[str, object]:
     )
     if wanted is not None:
         output_values[output_root / "wanted-monsters.json"] = wanted
-        output_values[output_root / "knowledge-routes.json"] = build_knowledge_route_index([wanted])
+    vehicle = load_vehicle_references(repo_root)
+    if vehicle is not None:
+        output_values[output_root / "vehicles.json"] = vehicle
+    knowledge_datasets = [dataset for dataset in (wanted, vehicle) if dataset is not None]
+    if knowledge_datasets:
+        output_values[output_root / "knowledge-routes.json"] = build_knowledge_route_index(
+            knowledge_datasets
+        )
     write_json_batch_atomic(output_values)
 
     domain_counts = {domain: len(bundle.records) for domain, bundle in result.bundles.items()}
@@ -286,6 +300,9 @@ def normalize(repo_root: Path) -> dict[str, object]:
     if wanted is not None:
         domain_counts[wanted.category] = len(wanted.records)
         source_ref_count += sum(len(record.source_refs) for record in wanted.records)
+    if vehicle is not None:
+        domain_counts[vehicle.category] = len(vehicle.records)
+        source_ref_count += sum(len(record.source_refs) for record in vehicle.records)
     output_paths: Mapping[str, str] = {path.name: str(path) for path in sorted(output_values)}
     return {
         "domains": domain_counts,
@@ -308,6 +325,8 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect-sub-guns",
         "collect-wanted-monsters",
         "collect-wanted-drop-items",
+        "collect-vehicles",
+        "collect-vehicle-traits",
         "audit",
         "normalize",
         "asset-audit",
@@ -328,6 +347,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "collect-vehicles":
+            vehicle_summary = collect_vehicles(arguments.repo_root.resolve())
+            print(json.dumps(vehicle_summary, ensure_ascii=False, indent=2))
+            return 0
+        if arguments.command == "collect-vehicle-traits":
+            vehicle_trait_summary = collect_vehicle_traits(arguments.repo_root.resolve())
+            print(json.dumps(vehicle_trait_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-wanted-monsters":
             wanted_summary = collect_wanted_monsters(arguments.repo_root.resolve())
             print(json.dumps(wanted_summary, ensure_ascii=False, indent=2))

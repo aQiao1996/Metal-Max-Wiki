@@ -4,6 +4,88 @@
   "target_version": "0.99",
   "routes": [
     {
+      "category": "vehicles",
+      "id": "vehicle-1e590f68d2",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-212b1904e7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-31c47c76e9",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-34bcf94a54",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-3f9d1a1724",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-4416d7b909",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-50f1bade76",
+      "legacy_slugs": [
+        "red-wolf"
+      ]
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-5cbc607671",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-6062ade60c",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-665b1ff499",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-670d3b8ce8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-84860653c7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-b858ad5cb1",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-bafd751b52",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-d35ddcbf94",
+      "legacy_slugs": []
+    },
+    {
+      "category": "vehicles",
+      "id": "vehicle-f6fe42e0cb",
+      "legacy_slugs": []
+    },
+    {
       "category": "wanted-monsters",
       "id": "wanted-monster-04ef142f7d",
       "legacy_slugs": []

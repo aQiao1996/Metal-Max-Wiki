@@ -15,9 +15,15 @@ export function getKnowledgeReturnHref(
   const parameters = new URLSearchParams()
   const q = source.get('q')?.trim()
   if (q) parameters.set('q', q.slice(0, 100))
-  if (source.get('sort') === 'bounty-desc')
+  if (category === 'wanted-monsters' && source.get('sort') === 'bounty-desc')
     parameters.set('sort', 'bounty-desc')
   const page = source.get('page')
   if (page && /^[1-9][0-9]{0,3}$/.test(page)) parameters.set('page', page)
+  const mount = source.get('mount')
+  if (
+    category === 'vehicles' &&
+    (mount === 'double-engine' || mount === 'double-c-unit')
+  )
+    parameters.set('mount', mount)
   return parameters.size > 0 ? `${path}?${parameters}` : path
 }

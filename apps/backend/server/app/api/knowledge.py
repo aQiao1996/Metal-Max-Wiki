@@ -5,6 +5,7 @@ from fastapi import APIRouter, Query
 from app.schemas.knowledge import (
     KnowledgeCategory,
     KnowledgeListData,
+    KnowledgeMount,
     KnowledgeRecord,
     KnowledgeSort,
 )
@@ -20,12 +21,15 @@ async def knowledge_list(
     category: KnowledgeCategory,
     q: Annotated[str, Query(max_length=100)] = "",
     sort: KnowledgeSort = "name-asc",
+    mount: KnowledgeMount = "all",
     page: Annotated[int, Query(ge=1, le=10000)] = 1,
     page_size: Annotated[int, Query(alias="pageSize", ge=1, le=100)] = 20,
 ) -> ApiResponse[KnowledgeListData]:
-    """浏览赏金首位置、出现条件与掉落资料。"""
+    """按关键词、排序和战车动力配置浏览百科。"""
     return ApiResponse(
-        data=list_knowledge(version, category, q=q, sort=sort, page=page, page_size=page_size)
+        data=list_knowledge(
+            version, category, q=q, sort=sort, mount=mount, page=page, page_size=page_size
+        )
     )
 
 
@@ -35,5 +39,5 @@ async def knowledge_list(
 async def knowledge_detail(
     version: str, category: KnowledgeCategory, record_id: str
 ) -> ApiResponse[KnowledgeRecord]:
-    """返回事实正文、逐槽掉落与可追溯来源。"""
+    """返回事实正文、战车配置、掉落与可追溯来源。"""
     return ApiResponse(data=get_knowledge(version, category, record_id))
