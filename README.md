@@ -23,10 +23,31 @@ pnpm install --frozen-lockfile
 
 ## 本地数据库
 
+首次开发先初始化本地配置：
+
 ```bash
-cp infra/env/.env.example infra/env/.env
+pnpm dev:setup
+```
+
+该命令从 Ollama 的已安装模型中选择问答模型，创建缺失的前后端及数据库配置，并生成本地数据库密码。已有配置保持原样，配置内容不会打印到终端。
+
+若后端配置已存在、数据库配置却缺失，命令会在写入前停止；请先按原 `DATABASE_URL` 补齐数据库配置，避免使用不同的凭据。
+
+如果默认 8000 端口被其他项目占用，可在首次初始化时指定端口：
+
+```bash
+pnpm dev:setup --port 8001
+```
+
+也可以通过 `--model 模型名` 明确指定模型。后端使用 `API_PORT`，用户端使用 `API_BASE_URL`；两者由初始化命令同步设置。已有配置需要手动调整，重新运行不会覆盖。
+
+启动 Docker 后运行：
+
+```bash
 docker compose --env-file infra/env/.env -f infra/compose.yaml up -d --wait db
 ```
+
+Compose 项目名固定为 `metalmax-wiki`，使用独立的 `metalmax-wiki_postgres_data` 数据卷，数据库端口仅监听本机。旧的 `infra_*` 数据卷不会被删除或自动迁移。
 
 停止数据库但保留数据卷：
 
@@ -36,10 +57,9 @@ docker compose --env-file infra/env/.env -f infra/compose.yaml down
 
 ## 本地 MVP 配置
 
-复制后端配置并填写本机已安装的模型名：
+`pnpm dev:setup` 已自动创建缺失的配置。若手动配置，可参考各应用的 `.env.example`；使用下面的命令查看本机模型：
 
 ```bash
-cp apps/backend/server/.env.example apps/backend/server/.env
 ollama list
 ```
 
@@ -51,8 +71,11 @@ ollama list
 cd apps/backend/server
 uv run alembic upgrade head
 cd ../../..
+pnpm dev:check
 pnpm dev:all
 ```
+
+`dev:check` 只读检查配置、前端代理地址、装备资料、数据库连接与迁移版本、模型是否存在；不会执行迁移、下载模型或发起推理。任一检查失败时会返回非零状态并给出处理方式。修改环境变量后，需要重启已经运行的前后端。
 
 当前开放 2R 0.99 的 150 条装备兼容候选资料。游客可浏览、筛选和搜索；邮箱注册后自动登录，AI 问答需要登录，回答附带装备详情引用。首版采用单轮检索问答，未收录的信息不作为已知事实回答；没有账号邮件验证、找回密码和历史会话功能。
 
@@ -86,6 +109,8 @@ pnpm dev:all
 - Client：<http://localhost:3000>
 - API：<http://localhost:8000>
 - API 文档：<http://localhost:8000/docs>
+
+后端端口以本机 `.env` 的 `API_PORT` 为准；例如初始化时使用 `--port 8001`，接口文档位于 `http://localhost:8001/docs`。
 
 也可以分别执行：
 

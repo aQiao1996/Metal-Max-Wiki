@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     app_name: str = "Metal Max Wiki API"
     environment: str = "development"
     api_v1_prefix: str = "/api/v1"
+    api_port: int = Field(default=8000, ge=1, le=65535)
     database_url: str = "postgresql+psycopg://metalmax:metalmax@localhost:5432/metalmax"
     data_dir: Path = Path(__file__).resolve().parents[5] / "data"
     client_origin: str = "http://localhost:3000"

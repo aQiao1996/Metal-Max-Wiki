@@ -26,8 +26,8 @@ async def require_same_origin(request: Request) -> None:
             {
                 "http://localhost:3000",
                 "http://127.0.0.1:3000",
-                "http://localhost:8000",
-                "http://127.0.0.1:8000",
+                f"http://localhost:{settings.api_port}",
+                f"http://127.0.0.1:{settings.api_port}",
             }
         )
     if request.headers.get("origin") not in allowed:
