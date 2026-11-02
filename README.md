@@ -139,6 +139,48 @@ pnpm dev:client
 pnpm dev:server
 ```
 
+## 生产部署
+
+生产编排独立于本地数据库，包含 PostgreSQL、FastAPI、Next.js 和 Caddy。仅 Caddy 发布 80／443 端口，API 与数据库通过容器网络连接；生产数据卷使用 `metalmax-wiki-production_*` 前缀，不复用本地数据卷。
+
+在目标 Linux 主机的项目根目录准备配置：
+
+```bash
+cp infra/production/.env.example infra/production/.env
+chmod 600 infra/production/.env
+```
+
+填写域名、证书邮箱、数据库用户名与库名、数据库密码及模型配置。数据库密码使用 `openssl rand -hex 32` 生成，避免数据库 URL 中的保留字符；真实配置不提交到 Git。域名须解析到目标主机，80／443 端口须可访问。
+
+`AI_BASE_URL` 必须是 API 容器可访问的地址，容器内的 `127.0.0.1` 不代表开发用 Mac。4GB 云服务器只运行网站和数据库，本机 Ollama 通过私有网络或另行配置的 SSH 反向隧道接入；不要公开 11434 端口。也可填写在线兼容接口。编排不会部署模型、创建隧道或修改 DNS。
+
+配置完成后，使用同一份配置构建和启动：
+
+```bash
+compose_prod() {
+  docker compose --env-file infra/production/.env -f infra/compose.production.yaml "$@"
+}
+
+compose_prod config --quiet
+compose_prod build server
+compose_prod build client
+compose_prod up -d --wait db
+compose_prod run --rm server alembic upgrade head
+compose_prod up -d --wait
+```
+
+业务迁移由显式命令执行，不随 API 启动自动运行。后端使用单 worker，与当前进程内限流一致；资料目录只读挂载，前后端以非 root 用户运行，镜像不包含真实 `.env`、本地代理规则或原始采集资料。
+
+数据库备份使用 Linux 脚本：
+
+```bash
+bash infra/scripts/backup-postgres.sh infra/production/.env /srv/backups/metalmax-wiki
+```
+
+备份目录须由执行用户拥有，权限为 `700`。脚本以 `600` 权限写入带 UTC 时间的 PostgreSQL 自定义格式备份；失败时保留 `.partial` 文件，不覆盖旧备份，也不自动清理或恢复数据。需要定期将备份保存到独立存储。
+
+本次镜像构建和容器联测在本机 Linux/arm64 环境完成，尚未部署到远端。目标主机的 CPU 架构、4GB 内存下的构建与负载、域名证书及私有模型连通性仍需上线前核对。
+
 ## 质量检查
 
 ```bash
@@ -264,14 +306,17 @@ metalmax-wiki/
 │   └── data-pipeline/          # 资料采集、标准化、权利校验与资产审计工具
 │
 ├── infra/                      # 部署及服务器基础设施配置
-│   ├── compose.yaml            # 本地及服务器容器编排
-│   ├── caddy/
-│   │   └── Caddyfile           # HTTPS、域名和反向代理配置
+│   ├── compose.yaml            # 本地 PostgreSQL
+│   ├── compose.production.yaml # 生产数据库、API、用户端与 HTTPS
+│   ├── production/
+│   │   ├── client.Dockerfile   # Next.js standalone 镜像
+│   │   ├── server.Dockerfile   # FastAPI 镜像
+│   │   ├── Caddyfile           # HTTPS 与反向代理
+│   │   └── .env.example        # 生产配置占位符
 │   ├── postgres/
 │   │   └── init.sql            # PostgreSQL、pgvector 初始化
 │   ├── scripts/
-│   │   ├── deploy.sh           # 部署脚本
-│   │   └── backup.sh           # 数据库备份脚本
+│   │   └── backup-postgres.sh  # Linux 数据库备份
 │   └── env/
 │       └── .env.example        # 环境变量示例，不保存真实密码
 │
