@@ -87,6 +87,8 @@ pnpm dev:all
 
 道具收录 274 条记录，包括 81 组 LOVE 配方与 12 处芯片位置；用途、地点、消耗性和不同来源条件分别保留。任务收录 101 项，其中 25 项特别委托、21 项有明确失败或错过条件；其余条目明确标注来源未说明，不能据此认定不会失败。两类均支持类型筛选、中文用途检索、分页和返回列表。
 
+主线攻略分 6 个阶段、23 章，包含 100 个操作步骤、208 条带出处的事实，以及 3 张项目原创流程示意图。支持按阶段、地点、道具和机关查找，区分主线必需、准备、可选与剧情必败；原值和短证据可展开核对。流程图可在手机内阅读并打开大图，不冒充实机地图或截图。
+
 资料使用可追溯 JSON，账号与可撤销会话使用 PostgreSQL。密码通过 Argon2 哈希保存，登录令牌仅保存在 HttpOnly Cookie，数据库保存令牌摘要。生产环境需设置 `ENVIRONMENT=production`、HTTPS 的 `CLIENT_ORIGIN` 并使用 HTTPS；登录与问答限流当前适用于单进程部署。
 
 前端默认连接 `http://127.0.0.1:8000`，可通过前端环境变量 `API_BASE_URL` 修改。浏览器只访问同源 `/api`，不直接访问 Ollama 或持有模型密钥。
@@ -103,7 +105,8 @@ pnpm dev:all
 - `GET /versions/{version}/wiki/jobs`、`/wiki/jobs/{id}`：职业检索、成长观测、技能与来源差异。
 - `GET /versions/{version}/wiki/items`、`/wiki/items/{id}`：道具类型、用途、LOVE 配方及芯片位置。
 - `GET /versions/{version}/wiki/quests`、`/wiki/quests/{id}`：任务类型、步骤、奖励与错过条件。两类列表支持 `tag` 筛选。
-- `GET /versions/{version}/search?q=...`：装备、战车、赏金首、职业、道具与任务搜索，返回统一摘要及详情链接。
+- `GET /versions/{version}/search?q=...`：装备、战车、赏金首、职业、道具、任务与攻略搜索，返回统一摘要及详情链接。
+- `GET /versions/{version}/guides`、`/guides/{slug}`：按 `q`、`phase` 筛选攻略及读取章节正文。
 - `POST /auth/register`、`POST /auth/login`、`GET /auth/me`、`POST /auth/logout`：账号与会话。
 - `POST /versions/{version}/ask`：登录后的带引用问答。
 
@@ -146,7 +149,7 @@ pnpm build
 
 ## MM2R 0.99 资料数据管线
 
-数据管线从 17 份候选快照与战车底盘及部件、赏金首和掉落物事实快照生成 950 条记录：装备 457 条、道具 274 条、任务 101 条、职业 7 条、技能 65 条、赏金首 30 条、战车 16 条。输出保留 4587 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
+数据管线从 17 份候选快照与战车底盘及部件、赏金首和掉落物事实快照生成 973 条记录：装备 457 条、道具 274 条、任务 101 条、职业 7 条、技能 65 条、赏金首 30 条、战车 16 条、攻略 23 章。输出保留 4686 个来源引用、37 个跨列原始范围、137 组副炮星级改造数值、256 组 S-E 星级改造数值、114 组 C 装置星级改造数值和 346 组引擎星级数值。总表与独立详情的同星级数值差异单独标记，原始值均保留。
 
 初次运行先同步数据工具依赖：
 
@@ -169,9 +172,11 @@ pnpm data:collect:vehicle-traits
 pnpm data:collect:job-skills
 pnpm data:collect:items
 pnpm data:collect:quests
+pnpm data:collect:guides
 pnpm data:normalize
-pnpm data:audit
 pnpm assets:fetch
+pnpm assets:publish:guides
+pnpm data:audit
 pnpm assets:audit
 ```
 
@@ -285,3 +290,5 @@ metalmax-wiki/
 
 - `mm.yangyunqiao.top`：用户端
 - 站点通过同源 `/api` 路径反向代理到 FastAPI，减少跨域和鉴权复杂度。
+
+`assets:publish:guides` 离线核对攻略事实、原创资产清单、锁文件和 SHA-256 后，将三张 SVG 发布至用户端 public。原图或清单变化时先同步原创资产与锁文件；路径、权限、哈希或许可声明不符会拒绝发布，不自动删除旧图。`guide-routes.json` 为章节提供独立轻量索引，未知地址和未开放版本返回 HTTP 404。

@@ -14,6 +14,13 @@ from mmwiki_data.asset_pipeline import AssetPipelineError, audit_assets, fetch_a
 from mmwiki_data.c_units import collect_c_units, load_c_units
 from mmwiki_data.engines import collect_engines, load_engines
 from mmwiki_data.fetcher import FetchError, fetch
+from mmwiki_data.guide_assets import publish_guide_assets, validate_guide_assets
+from mmwiki_data.guide_normalization import (
+    GuideRouteIndex,
+    load_guide_references,
+    validate_guide_sources,
+)
+from mmwiki_data.guides import collect_guides
 from mmwiki_data.item_normalization import load_item_references, validate_item_sources
 from mmwiki_data.items import collect_items
 from mmwiki_data.job_normalization import load_job_references, validate_job_sources
@@ -215,6 +222,11 @@ def audit(repo_root: Path) -> list[str]:
             validator(repo_root)
         except (OSError, ValueError) as error:
             errors.append(f"invalid {label} source: {error}")
+    try:
+        validate_guide_sources(repo_root)
+        validate_guide_assets(repo_root)
+    except (OSError, ValueError) as error:
+        errors.append(f"invalid guide source: {error}")
     return errors
 
 
@@ -320,6 +332,12 @@ def normalize(repo_root: Path) -> dict[str, object]:
         output_values[output_root / "knowledge-routes.json"] = build_knowledge_route_index(
             knowledge_datasets
         )
+    guides = load_guide_references(repo_root)
+    if guides is not None:
+        output_values[output_root / "guides.json"] = guides
+        output_values[output_root / "guide-routes.json"] = GuideRouteIndex(
+            slugs=[record.slug for record in guides.records]
+        )
     write_json_batch_atomic(output_values)
 
     domain_counts = {domain: len(bundle.records) for domain, bundle in result.bundles.items()}
@@ -341,6 +359,9 @@ def normalize(repo_root: Path) -> dict[str, object]:
         if dataset is not None:
             domain_counts[dataset.category] = len(dataset.records)
             source_ref_count += sum(len(record.source_refs) for record in dataset.records)
+    if guides is not None:
+        domain_counts["guides"] = len(guides.records)
+        source_ref_count += sum(len(record.source_refs) for record in guides.records)
     output_paths: Mapping[str, str] = {path.name: str(path) for path in sorted(output_values)}
     return {
         "domains": domain_counts,
@@ -368,10 +389,12 @@ def _build_parser() -> argparse.ArgumentParser:
         "collect-job-skills",
         "collect-items",
         "collect-quests",
+        "collect-guides",
         "audit",
         "normalize",
         "asset-audit",
         "asset-fetch",
+        "asset-publish-guides",
     ):
         command_parser = subparsers.add_parser(command)
         command_parser.add_argument("--repo-root", type=Path, required=True)
@@ -385,9 +408,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         "normalize": "normalization",
         "asset-audit": "asset audit",
         "asset-fetch": "asset fetch",
+        "asset-publish-guides": "guide asset publish",
     }
     command_label = command_labels.get(arguments.command, arguments.command)
     try:
+        if arguments.command == "asset-publish-guides":
+            count = publish_guide_assets(arguments.repo_root.resolve())
+            print(json.dumps({"published": count}, ensure_ascii=False))
+            return 0
+        if arguments.command == "collect-guides":
+            guide_summary = collect_guides(arguments.repo_root.resolve())
+            print(json.dumps(guide_summary, ensure_ascii=False, indent=2))
+            return 0
         if arguments.command == "collect-items":
             item_summary = collect_items(arguments.repo_root.resolve())
             print(json.dumps(item_summary, ensure_ascii=False, indent=2))

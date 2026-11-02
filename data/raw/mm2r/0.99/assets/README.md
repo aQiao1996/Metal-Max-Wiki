@@ -30,12 +30,15 @@
 
 ```bash
 uv run mmwiki-data asset-fetch --repo-root ../..
+uv run mmwiki-data asset-publish-guides --repo-root ../..
 uv run mmwiki-data asset-audit --repo-root ../..
 ```
 
 `asset-fetch` 只获取 `reusable` 远程栅格图，并为允许的本地图片生成 `lock.json`；`asset-audit` 不联网，核对清单、锁文件、实际内容、权限、目录孤儿，并严格加载五个 `data/interim/mm2r/0.99` 领域文件，验证 `entity_refs` 与 `asset_refs` 双向一致。
 
-清单模型会先拒绝用户信息、片段、IP 字面量、`localhost`、`.local` 和单标签主机名。这只是静态边界；Task 6 的下载器还必须在每一次请求和重定向前重新解析 DNS，并拒绝回环、私网、链路本地和其他非公网地址，避免 DNS rebinding 或重定向绕过。
+清单模型会先拒绝用户信息、片段、IP 字面量、`localhost`、`.local` 和单标签主机名。下载器还会在每次请求和重定向前重新解析 DNS，并拒绝回环、私网、链路本地和其他非公网地址。
+
+攻略的三张原创 SVG 通过 `asset-publish-guides` 离线发布到用户端。发布前同时核对原始攻略、清单、锁文件及 SHA-256；图的内容或文件名变化时先同步人工资产记录，不自动删除旧图。`asset-audit` 核对原图，`data:audit` 另外核对已发布的攻略图。
 
 ## 版权与攻略图原则
 

@@ -1,5 +1,11 @@
 schema_version: 1
 targets:
+  - id: maniax-guides
+    source_id: metalmaniax-mm2r
+    category: guides
+    url: https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%83%AB%E3%83%BC%E3%83%88
+    output: maniax-guides.json
+    collect: false
   - id: maniax-items
     source_id: metalmaniax-mm2r
     category: items

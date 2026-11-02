@@ -53,7 +53,9 @@ export function toKnowledgeSources(entry: KnowledgeEntry): SourceReference[] {
           ? 'カエル研究室 · 掉落概率表'
           : refs[0].source_id === 'dqff-mm2r'
             ? 'MM2R 攻略 wiki 組長式'
-            : refs[0].source_id,
+            : refs[0].source_id === 'zzjb-mm2r'
+              ? '重装机兵资料站'
+              : refs[0].source_id,
     note:
       [
         ...new Set(

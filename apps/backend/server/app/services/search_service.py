@@ -3,12 +3,14 @@ from unicodedata import normalize
 
 from app.core.errors import BusinessError
 from app.repositories.equipment_repository import load_equipment
+from app.repositories.guide_repository import load_guides
 from app.repositories.knowledge_repository import load_knowledge
 from app.schemas.equipment import EquipmentNames, EquipmentRecord
 from app.schemas.knowledge import KnowledgeCategory
 from app.schemas.response import PaginationMeta
 from app.schemas.search import LibrarySearchPage, LibrarySearchResult
 from app.services.equipment_service import equipment_text, require_available_version
+from app.services.guide_service import guide_text
 from app.services.knowledge_service import knowledge_text
 
 _TYPE_LABELS = {
@@ -90,6 +92,21 @@ def search_library(
                     category_label=label,
                     verification_status=entry.verification_status,
                     name_source=_name_source(entry.names),
+                )
+            )
+    for guide in load_guides().records:
+        if query in guide_text(guide):
+            results.append(
+                LibrarySearchResult(
+                    id=guide.slug,
+                    kind="guide",
+                    name=guide.title,
+                    summary=guide.summary,
+                    aliases=[],
+                    href=f"/guides/{guide.slug}",
+                    category_label="攻略",
+                    verification_status="source_only",
+                    name_source="zh_reference",
                 )
             )
     results.sort(

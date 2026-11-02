@@ -20,10 +20,12 @@ describe('equipment detail proxy', () => {
     expect(existsSync(`${appDirectory}errors/not-found/page.tsx`)).toBe(false)
   })
 
-  it('matcher 覆盖 wiki category 并由 proxy 精确识别装备路由', () => {
+  it('matcher 覆盖百科与攻略并由 proxy 识别实际路由', () => {
     expect(config.matcher).toEqual([
       '/v/:version/wiki/:category',
       '/v/:version/wiki/:category/:id',
+      '/v/:version/:section',
+      '/v/:version/:section/:slug',
     ])
   })
 

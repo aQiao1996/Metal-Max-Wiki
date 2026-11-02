@@ -273,6 +273,7 @@ def _classify_license(value: str) -> LicenseBasis:
             "user-created",
             "user created",
             "project-original",
+            "licenseref-project-original",
             "project original",
             "本人拍摄",
             "本人原创",

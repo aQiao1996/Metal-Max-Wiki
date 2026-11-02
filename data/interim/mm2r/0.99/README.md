@@ -21,3 +21,5 @@ C 装置通过 `pnpm data:collect:c-units` 采集，保存面板改造值、特�
 interim 数据不是对本机 0.99 的确认：中文字段可能为空，所有记录仍保留来源状态和引用。只有 `verified_0_99` 的记录才可以进入 `data/processed`。
 
 `item-entries.json` 与 `quest-entries.json` 提供可浏览的 274 条道具及 101 项任务。既有 `items.json` 和 `quests.json` 保持原样用于继承校验；标准化在原子写入前核对本轮重建输入、掉落依赖和参考译名。原表列、条件、空白与重复行分别保留。
+
+`guides.json` 保留 6 阶段 23 章、100 步、208 条事实和 3 张原创图的全部条件、原值及逐条出处；`guide-routes.json` 只含23个章节路径，用于渲染前校验。图的 public 发布通过 `pnpm assets:publish:guides` 单独执行并纳入数据审计。

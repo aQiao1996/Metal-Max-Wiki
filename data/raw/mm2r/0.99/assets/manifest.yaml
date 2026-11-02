@@ -30,6 +30,54 @@ assets:
     allowed_redirect_hosts: []
     alt: eBay 商品页展示的 MM2R 官方攻略本内页扫描图
     notes: 官方攻略书扫描内容不纳入项目，不下载也不用于重绘像素素材。
+  - id: mm2r-guide-bias-unlock-flow
+    kind: guide
+    title: 拜亚斯都市：终盘解锁链
+    source_page_url: https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3
+    source_image_url: null
+    author: Metal Max Wiki 项目原创
+    license: LicenseRef-Project-Original
+    rights_status: original_diagram
+    version_scope:
+      - mm2r-099-unverified
+      - mm2r-jp-reference
+    entity_refs: []
+    local_path: files/original-diagrams/bias-unlock-flow-43b857e022eb.svg
+    allowed_redirect_hosts: []
+    alt: 展示同步器、两张ID卡与两组密码、四保护锁、电梯供电、双加速器和三阶段决战的逻辑条件。
+    notes: 项目原创流程示意，非游戏截图、非实机地图；依据 MM2R 日版公开事实整理，中文参考，0.99 未验证。对应章节：devil-synchronizer、bias-city-surface、failsafe-three-locks、ted-fourth-lock、elevator-power、cyclotron-shutdown、final-three-stages。完整事实出处与逐条证据保留在攻略章节中。
+  - id: mm2r-guide-dark-canal-flow
+    kind: guide
+    title: 黑暗水道：开门与两战流程
+    source_page_url: https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%87%E3%83%AB%E3%82%BF%E3%83%BB%E3%83%AA%E3%82%AA
+    source_image_url: null
+    author: Metal Max Wiki 项目原创
+    license: LicenseRef-Project-Original
+    rights_status: original_diagram
+    version_scope:
+      - mm2r-099-unverified
+      - mm2r-jp-reference
+    entity_refs: []
+    local_path: files/original-diagrams/dark-canal-flow-3d2b94f9d82c.svg
+    allowed_redirect_hosts: []
+    alt: 将艾娃任务、水门、车辆入口、两次首领战及交谈读便条并开东口画为事件流程，不表示真实水道位置。
+    notes: 项目原创流程示意，非游戏截图、非实机地图；依据 MM2R 日版公开事实整理，中文参考，0.99 未验证。对应章节：delta-rio-eva、dark-canal-gates、cagliostro-eva。完整事实出处与逐条证据保留在攻略章节中。
+  - id: mm2r-guide-mainline-overview
+    kind: guide
+    title: 主线推进总览
+    source_page_url: https://metalmaniax.com/index.php?MM2R/%E6%94%BB%E7%95%A5/%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89/%E3%83%80%E3%83%BC%E3%82%AF%E3%83%BB%E3%82%AB%E3%83%8A%E3%83%AB
+    source_image_url: null
+    author: Metal Max Wiki 项目原创
+    license: LicenseRef-Project-Original
+    rights_status: original_diagram
+    version_scope:
+      - mm2r-099-unverified
+      - mm2r-jp-reference
+    entity_refs: []
+    local_path: files/original-diagrams/mainline-overview-862eae001adb.svg
+    allowed_redirect_hosts: []
+    alt: 从第一辆车、铁爪塔、取得船、黑暗水道、不灭关卡到拜亚斯都市与通关的推荐推进顺序，非地理地图。
+    notes: 项目原创流程示意，非游戏截图、非实机地图；依据 MM2R 日版公开事实整理，中文参考，0.99 未验证。对应章节：mado-first-vehicle、party-bay-bridge、tunnel-bazaska、thirsty-preparation、grapple-tower、delta-rio-eva、nemesis-u-shark、swan-lock-hacker、marilyn-room、dark-canal-gates、cagliostro-eva、southern-supplies、optional-south-detours、fumetsu-security、fumetsu-neuro-units、devil-synchronizer、bias-city-surface、failsafe-three-locks、ted-fourth-lock、elevator-power、cyclotron-shutdown、final-three-stages、clear-and-next-cycle。完整事实出处与逐条证据保留在攻略章节中。
   - id: paopaoche-wrong-version-guide-image
     kind: guide
     title: 跑跑车搜索结果中的非 MM2R 攻略图
@@ -44,4 +92,4 @@ assets:
     local_path: null
     allowed_redirect_hosts: []
     alt: 搜索结果中与 MM2R 版本不匹配的游戏攻略图
-    notes: 'wrong_version：图片不属于 MM2R，不能用作 0.99 资料或视觉素材。'
+    notes: wrong_version：图片不属于 MM2R，不能用作 0.99 资料或视觉素材。

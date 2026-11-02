@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "game": "mm2r",
+  "target_version": "0.99",
+  "slugs": [
+    "mado-first-vehicle",
+    "party-bay-bridge",
+    "tunnel-bazaska",
+    "thirsty-preparation",
+    "grapple-tower",
+    "delta-rio-eva",
+    "nemesis-u-shark",
+    "swan-lock-hacker",
+    "marilyn-room",
+    "dark-canal-gates",
+    "cagliostro-eva",
+    "southern-supplies",
+    "optional-south-detours",
+    "fumetsu-security",
+    "fumetsu-neuro-units",
+    "devil-synchronizer",
+    "bias-city-surface",
+    "failsafe-three-locks",
+    "ted-fourth-lock",
+    "elevator-power",
+    "cyclotron-shutdown",
+    "final-three-stages",
+    "clear-and-next-cycle"
+  ]
+}

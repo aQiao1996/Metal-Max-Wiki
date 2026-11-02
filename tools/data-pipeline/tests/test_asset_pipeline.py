@@ -1852,7 +1852,7 @@ def test_repository_manifest_fetches_zero_and_audits_deterministically(
     second = (asset_root(isolated_repo) / "lock.json").read_bytes()
     second_audit = audit_assets(isolated_repo)
 
-    assert summary == summary_again == {"downloaded": 0, "local": 0, "locked": 0}
+    assert summary == summary_again == {"downloaded": 0, "local": 3, "locked": 3}
     assert first == second
     assert first_audit == second_audit == []
     assert repository_lock.read_bytes() == original_lock

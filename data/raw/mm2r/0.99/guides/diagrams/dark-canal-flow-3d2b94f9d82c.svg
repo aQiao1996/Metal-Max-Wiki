@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 920" role="img" aria-labelledby="title desc">
+  <title id="title">黑暗水道：开门与两战流程</title>
+  <desc id="desc">将艾娃任务、水门、车辆入口、两次首领战及交谈读便条并开东口画为事件流程，不表示真实水道位置。。原创流程示意 · 非实机地图 · 0.99未验证</desc>
+  <rect width="840" height="920" rx="20" fill="#f4f7fa" />
+  <text x="48" y="51" fill="#183243" font-size="25" font-family="sans-serif" font-weight="700">黑暗水道：开门与两战流程</text>
+  <text x="48" y="80" fill="#546878" font-size="15" font-family="sans-serif">箭头表示推荐推进次序与事件条件，不表示地理距离或坐标。</text>
+  <rect x="48" y="112" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="154" r="16" fill="#176c73" />
+  <text x="80" y="160" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">1</text>
+  <text x="112" y="147" fill="#183243" font-size="18" font-family="sans-serif">德尔塔利奥：接艾娃失踪任务</text>
+  <text x="112" y="173" fill="#183243" font-size="18" font-family="sans-serif">确认被带走事件已推进</text>
+  <path d="M420 199 V221 M414 214 L420 221 L426 214" fill="none" stroke="#6d8797" stroke-width="2.5" />
+  <rect x="48" y="230" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="272" r="16" fill="#176c73" />
+  <text x="80" y="278" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">2</text>
+  <text x="112" y="265" fill="#183243" font-size="18" font-family="sans-serif">沿河左侧阶梯下行</text>
+  <text x="112" y="291" fill="#183243" font-size="18" font-family="sans-serif">水门控制设为OPEN，再回船前进</text>
+  <path d="M420 317 V339 M414 332 L420 339 L426 332" fill="none" stroke="#6d8797" stroke-width="2.5" />
+  <rect x="48" y="348" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="390" r="16" fill="#176c73" />
+  <text x="80" y="396" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">3</text>
+  <text x="112" y="383" fill="#183243" font-size="18" font-family="sans-serif">先走首领以外的岔路</text>
+  <text x="112" y="409" fill="#183243" font-size="18" font-family="sans-serif">下车辆坡道开墙，返回把车开入</text>
+  <path d="M420 435 V457 M414 450 L420 457 L426 450" fill="none" stroke="#6d8797" stroke-width="2.5" />
+  <rect x="48" y="466" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="508" r="16" fill="#176c73" />
+  <text x="80" y="514" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">4</text>
+  <text x="112" y="501" fill="#183243" font-size="18" font-family="sans-serif">第一战结束后先恢复HP与装甲</text>
+  <text x="112" y="527" fill="#183243" font-size="18" font-family="sans-serif">不先下车靠近艾娃</text>
+  <path d="M420 553 V575 M414 568 L420 575 L426 568" fill="none" stroke="#6d8797" stroke-width="2.5" />
+  <rect x="48" y="584" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="626" r="16" fill="#176c73" />
+  <text x="80" y="632" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">5</text>
+  <text x="112" y="619" fill="#183243" font-size="18" font-family="sans-serif">与倒地首领反复交谈</text>
+  <text x="112" y="645" fill="#183243" font-size="18" font-family="sans-serif">完成第二战后与艾娃交谈</text>
+  <path d="M420 671 V693 M414 686 L420 693 L426 686" fill="none" stroke="#6d8797" stroke-width="2.5" />
+  <rect x="48" y="702" width="744" height="84" rx="12" fill="#ffffff" stroke="#c9d7df" stroke-width="1.5" />
+  <circle cx="80" cy="744" r="16" fill="#176c73" />
+  <text x="80" y="750" text-anchor="middle" fill="#ffffff" font-size="16" font-family="sans-serif">6</text>
+  <text x="112" y="737" fill="#183243" font-size="18" font-family="sans-serif">阅读艾娃便条</text>
+  <text x="112" y="763" fill="#183243" font-size="18" font-family="sans-serif">开启东口水门，前往南部</text>
+  <text x="48" y="873" fill="#546878" font-size="15" font-family="sans-serif">原创流程示意 · 非实机地图 · 0.99未验证</text>
+  <text x="48" y="897" fill="#546878" font-size="13" font-family="sans-serif">Metal Max Wiki 项目原创；事实出处见同章引用，未复用外部截图或地图像素。</text>
+</svg>

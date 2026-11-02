@@ -6,6 +6,7 @@ import {
   legacyEquipmentDetailIds,
 } from '@/config/equipment-types'
 import { getEquipmentEntry } from '@/data/equipment/catalog'
+import { guideSlugs } from '@/data/guide-routes'
 import {
   knowledgeRouteIds,
   legacyKnowledgeRoutes,
@@ -22,6 +23,25 @@ function normalizedCategory(segment: string): string | undefined {
 }
 
 export function proxy(request: NextRequest) {
+  const guideMatch = /^\/v\/([^/]+)\/([^/]+)(?:\/([^/]+))?\/?$/.exec(
+    request.nextUrl.pathname,
+  )
+  if (guideMatch && normalizedCategory(guideMatch[2]) === 'guides') {
+    const [, versionSlug, segment, slug] = guideMatch
+    const version = getGameVersion(versionSlug)
+    if (
+      segment !== 'guides' ||
+      !version ||
+      !isAvailableGameVersion(version) ||
+      (slug !== undefined && !guideSlugs.has(slug))
+    ) {
+      const url = request.nextUrl.clone()
+      url.pathname = '/_not-found'
+      url.search = ''
+      return NextResponse.rewrite(url, { status: 404 })
+    }
+    return NextResponse.next()
+  }
   const match = wikiRoutePattern.exec(request.nextUrl.pathname)
 
   if (match === null) {
@@ -89,5 +109,10 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/v/:version/wiki/:category', '/v/:version/wiki/:category/:id'],
+  matcher: [
+    '/v/:version/wiki/:category',
+    '/v/:version/wiki/:category/:id',
+    '/v/:version/:section',
+    '/v/:version/:section/:slug',
+  ],
 }

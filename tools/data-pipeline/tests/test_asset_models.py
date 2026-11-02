@@ -678,10 +678,16 @@ def test_repository_manifest_is_valid_and_keeps_unlicensed_images_remote() -> No
         yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     )
 
-    assert len(manifest.assets) == 3
-    assert [asset.rights_status for asset in manifest.assets] == [
+    assert len(manifest.assets) == 6
+    originals = [
+        asset for asset in manifest.assets if asset.rights_status is RightsStatus.ORIGINAL_DIAGRAM
+    ]
+    remote = [asset for asset in manifest.assets if asset not in originals]
+    assert len(originals) == 3
+    assert all(asset.local_path is not None for asset in originals)
+    assert [asset.rights_status for asset in remote] == [
         RightsStatus.REFERENCE_ONLY,
         RightsStatus.REJECTED,
         RightsStatus.REJECTED,
     ]
-    assert all(asset.local_path is None for asset in manifest.assets)
+    assert all(asset.local_path is None for asset in remote)
