@@ -4,11 +4,7 @@ import { notFound } from 'next/navigation'
 import { ArrowRight, Bot, CircleDot } from 'lucide-react'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import {
-  featuredEntity,
-  recentEntities,
-  recentGuides,
-} from '@/data/fixtures/home'
+import { featuredEntity, recentEntities, recentGuides } from '@/data/home'
 import { wikiCategories } from '@/data/fixtures/wiki'
 import { buildVersionPath } from '@/lib/version-routes'
 import { CategoryGrid } from '@/components/wiki/CategoryGrid'
@@ -67,7 +63,7 @@ export default async function VersionHomePage({
               情报总览
             </h1>
             <p className="text-muted-foreground mt-3 max-w-2xl text-base leading-7 text-pretty">
-              按车辆、装备、赏金首和职业整理的版本化资料库。
+              先从已收录的 150 条装备资料开始，按名称、属性和获取地点查找。
             </p>
           </div>
           <div className="text-muted-foreground text-sm sm:text-right">
@@ -106,7 +102,12 @@ export default async function VersionHomePage({
 
         <aside className="border-border bg-card border p-5 sm:p-6">
           <div className="bg-muted text-muted-foreground flex aspect-[4/3] items-center justify-center border border-dashed border-[#b7c3c7] text-center text-xs tracking-wide">
-            [战车实机图 · 4:3]
+            <div>
+              <span className="block text-5xl font-semibold text-[var(--mm-navy)]">
+                150
+              </span>
+              <span className="mt-3 block">人类武器与主炮 · 可追溯来源</span>
+            </div>
           </div>
           <p className="mt-5 text-[11px] font-medium tracking-[0.14em] text-[var(--mm-signal)] uppercase">
             Featured entry
@@ -166,6 +167,11 @@ export default async function VersionHomePage({
             </Link>
           ))}
         </div>
+        {recentGuides.length === 0 && (
+          <p className="text-muted-foreground border-border border-b py-6 text-sm leading-7">
+            攻略正在整理，当前开放装备查询与基于装备资料的问答。
+          </p>
+        )}
       </section>
 
       <section className="border-border grid gap-5 border-y bg-[var(--mm-navy)] px-5 py-6 text-white sm:grid-cols-[auto_1fr_auto] sm:items-center sm:px-7">

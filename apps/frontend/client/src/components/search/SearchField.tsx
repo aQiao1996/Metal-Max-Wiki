@@ -15,6 +15,7 @@ export function SearchField({ defaultValue = '' }: SearchFieldProps) {
         <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
         <Input
           name="q"
+          maxLength={100}
           defaultValue={defaultValue}
           placeholder="输入正式名称、简称或关键词"
           className="bg-card h-11 pl-9"

@@ -97,5 +97,13 @@ export function buildEquipmentReturnHref(
       : Object.fromEntries(new URLSearchParams(fromValue))
   const query = parseEquipmentQuery(rawQuery)
 
-  return `/v/${version}/wiki/equipment?${buildEquipmentSearch(query)}`
+  const params = new URLSearchParams(buildEquipmentSearch(query))
+  const page = rawQuery.page
+  if (
+    typeof page === 'string' &&
+    /^[1-9][0-9]{0,3}$/.test(page) &&
+    Number(page) > 1
+  )
+    params.set('page', page)
+  return `/v/${version}/wiki/equipment?${params}`
 }

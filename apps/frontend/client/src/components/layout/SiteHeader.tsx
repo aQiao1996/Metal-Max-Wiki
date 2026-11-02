@@ -1,9 +1,5 @@
-import Link from 'next/link'
-
-import { LogIn } from 'lucide-react'
-
 import type { GameVersion } from '@/config/game-versions'
-import { Button } from '@/components/ui/button'
+import { AccountMenu } from '@/components/auth/AccountMenu'
 
 import { GlobalSearchDialog } from '../search/GlobalSearchDialog'
 
@@ -19,12 +15,7 @@ export function SiteHeader({ version }: SiteHeaderProps) {
         <p className="text-muted-foreground hidden text-xs xl:block">
           当前资料范围：{version.game} · {version.version}
         </p>
-        <Button asChild variant="outline" size="lg">
-          <Link href="/login">
-            <LogIn />
-            登录
-          </Link>
-        </Button>
+        <AccountMenu />
       </div>
     </header>
   )

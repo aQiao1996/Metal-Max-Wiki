@@ -4,20 +4,26 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
 import { ArrowLeft } from 'lucide-react'
+import type { EquipmentTypeId } from '@/types/equipment'
 
 import { buildEquipmentReturnHref } from '../_lib/equipment-detail'
 
 interface EquipmentReturnLinkProps {
   version: string
   variant: 'breadcrumb' | 'footer'
+  equipmentType: EquipmentTypeId
 }
 
 export function EquipmentReturnLink({
   version,
   variant,
+  equipmentType,
 }: EquipmentReturnLinkProps) {
   const from = useSearchParams().get('from') ?? undefined
-  const href = buildEquipmentReturnHref(version, from)
+  const href =
+    from === undefined
+      ? `/v/${version}/wiki/equipment?type=${equipmentType}`
+      : buildEquipmentReturnHref(version, from)
 
   if (variant === 'breadcrumb') {
     return (

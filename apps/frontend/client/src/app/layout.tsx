@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import { Geist } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
+import { Providers } from '@/components/Providers'
 
 import './globals.css'
 
@@ -22,7 +23,9 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="zh-CN" className={cn('font-sans', geist.variable)}>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

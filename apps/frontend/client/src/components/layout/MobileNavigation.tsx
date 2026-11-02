@@ -7,6 +7,7 @@ import { Menu } from 'lucide-react'
 import type { GameVersion } from '@/config/game-versions'
 import { buildVersionPath } from '@/lib/version-routes'
 import { Button } from '@/components/ui/button'
+import { AccountMenu } from '@/components/auth/AccountMenu'
 import {
   Sheet,
   SheetClose,
@@ -70,6 +71,9 @@ export function MobileNavigation({ version }: MobileNavigationProps) {
               })}
             </ul>
           </nav>
+          <div className="bg-background text-foreground mt-auto px-4 py-4">
+            <AccountMenu />
+          </div>
         </SheetContent>
       </Sheet>
 

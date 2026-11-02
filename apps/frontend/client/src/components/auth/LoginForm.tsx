@@ -1,11 +1,14 @@
 'use client'
 
-import { FormEvent, useState } from 'react'
+import { type FormEvent, useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 import { Eye, EyeOff } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { authenticate, currentUserKey } from '@/api/auth'
 
 interface FormErrors {
   email?: string
@@ -13,9 +16,25 @@ interface FormErrors {
   form?: string
 }
 
-export function LoginForm() {
+export function LoginForm({
+  nextPath = '/v/mm2r-099/ai',
+}: {
+  nextPath?: string
+}) {
+  const [mode, setMode] = useState<'login' | 'register'>('login')
   const [showPassword, setShowPassword] = useState(false)
   const [errors, setErrors] = useState<FormErrors>({})
+  const router = useRouter()
+  const client = useQueryClient()
+  const mutation = useMutation({
+    mutationFn: ({ email, password }: { email: string; password: string }) =>
+      authenticate(mode, email, password),
+    onSuccess: (user) => {
+      client.setQueryData(currentUserKey, user)
+      router.replace(nextPath)
+      router.refresh()
+    },
+  })
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -32,10 +51,21 @@ export function LoginForm() {
 
     if (!password) {
       nextErrors.password = '请输入密码。'
+    } else if (
+      password.length > 128 ||
+      (mode === 'register' && password.length < 15)
+    ) {
+      nextErrors.password =
+        '注册密码需要 15–128 个字符，可以使用一句容易记住的话。'
+    } else if (
+      mode === 'register' &&
+      password !== formData.get('confirmPassword')
+    ) {
+      nextErrors.password = '两次输入的密码不一致。'
     }
 
     if (Object.keys(nextErrors).length === 0) {
-      nextErrors.form = '登录服务尚未接入。'
+      mutation.mutate({ email, password })
     }
 
     setErrors(nextErrors)
@@ -43,6 +73,28 @@ export function LoginForm() {
 
   return (
     <form noValidate onSubmit={handleSubmit} className="space-y-5">
+      <div
+        className="border-border flex border-b"
+        role="group"
+        aria-label="账号操作"
+      >
+        {(['login', 'register'] as const).map((item) => (
+          <button
+            key={item}
+            type="button"
+            disabled={mutation.isPending}
+            aria-pressed={mode === item}
+            onClick={() => {
+              setMode(item)
+              setErrors({})
+              mutation.reset()
+            }}
+            className={`min-h-11 flex-1 border-b-2 text-sm font-medium ${mode === item ? 'border-[var(--mm-signal)] text-[var(--mm-navy)]' : 'text-muted-foreground border-transparent'}`}
+          >
+            {item === 'login' ? '登录' : '注册'}
+          </button>
+        ))}
+      </div>
       <div>
         <label htmlFor="email" className="text-foreground text-sm font-medium">
           邮箱
@@ -76,7 +128,10 @@ export function LoginForm() {
             id="password"
             name="password"
             type={showPassword ? 'text' : 'password'}
-            autoComplete="current-password"
+            autoComplete={
+              mode === 'register' ? 'new-password' : 'current-password'
+            }
+            maxLength={128}
             aria-invalid={Boolean(errors.password)}
             aria-describedby={errors.password ? 'password-error' : undefined}
             className="bg-card h-11 pr-11"
@@ -101,6 +156,28 @@ export function LoginForm() {
         )}
       </div>
 
+      {mode === 'register' && (
+        <div>
+          <label
+            htmlFor="confirm-password"
+            className="text-foreground text-sm font-medium"
+          >
+            确认密码
+          </label>
+          <Input
+            id="confirm-password"
+            name="confirmPassword"
+            type="password"
+            autoComplete="new-password"
+            maxLength={128}
+            className="bg-card mt-2 h-11"
+          />
+          <p className="text-muted-foreground mt-2 text-xs leading-5">
+            密码至少 15 个字符，建议使用容易记住的长短语。
+          </p>
+        </div>
+      )}
+
       {errors.form && (
         <p
           role="alert"
@@ -109,13 +186,27 @@ export function LoginForm() {
           {errors.form}
         </p>
       )}
+      {mutation.isError && (
+        <p role="alert" className="text-destructive text-sm">
+          {mutation.error.message}
+        </p>
+      )}
 
-      <Button type="submit" size="lg" className="h-11 w-full">
-        登录
+      <Button
+        type="submit"
+        size="lg"
+        className="h-11 w-full"
+        disabled={mutation.isPending}
+      >
+        {mutation.isPending
+          ? '正在处理…'
+          : mode === 'login'
+            ? '登录'
+            : '注册并登录'}
       </Button>
 
       <p className="text-muted-foreground text-xs leading-5">
-        账号系统尚未接入，当前页面仅用于确认界面和校验状态。
+        百科资料无需登录，账号用于 AI 问答。注册后自动登录当前设备。
       </p>
     </form>
   )

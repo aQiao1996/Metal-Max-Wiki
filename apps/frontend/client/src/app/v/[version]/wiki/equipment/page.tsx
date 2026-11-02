@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -8,13 +9,12 @@ import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
 import { equipmentTypeById, equipmentTypes } from '@/config/equipment-types'
 import { getEquipmentEntries } from '@/data/equipment/catalog'
 import {
-  filterEquipmentEntries,
   parseEquipmentQuery,
   type EquipmentSearchParams,
 } from '@/lib/equipment-query'
 import type { EquipmentTypeId } from '@/types/equipment'
 import { EquipmentFilterForm } from '@/components/equipment/EquipmentFilterForm'
-import { EquipmentList } from '@/components/equipment/EquipmentList'
+import { EquipmentResults } from '@/components/equipment/EquipmentResults'
 import { EquipmentTypeNav } from '@/components/equipment/EquipmentTypeNav'
 
 export const metadata: Metadata = {
@@ -59,7 +59,11 @@ export default async function EquipmentPage({
   const currentTypeEntries = entries.filter(
     (entry) => entry.type === query.type,
   )
-  const filteredEntries = filterEquipmentEntries(entries, query)
+  const rawPage = Array.isArray(rawSearchParams.page)
+    ? rawSearchParams.page[0]
+    : rawSearchParams.page
+  const page =
+    rawPage && /^[1-9][0-9]{0,3}$/.test(rawPage) ? Number(rawPage) : 1
   const elements = [
     ...new Set(
       currentTypeEntries
@@ -125,22 +129,16 @@ export default async function EquipmentPage({
           />
         </div>
 
-        <div className="mt-6 flex items-center justify-between gap-4">
-          <p className="text-sm font-medium text-[var(--mm-navy)]">
-            共 {currentTypeEntries.length} 条，当前显示 {filteredEntries.length}{' '}
-            条
-          </p>
-        </div>
-
-        <div className="mt-3">
-          <EquipmentList
-            emptyMessage={config.emptyMessage}
-            entries={filteredEntries}
-            query={query}
-            totalForType={currentTypeEntries.length}
-            version={version.slug}
-          />
-        </div>
+        <Suspense
+          key={`${JSON.stringify(query)}:${page}`}
+          fallback={
+            <p className="text-muted-foreground py-8 text-sm" role="status">
+              正在读取装备资料…
+            </p>
+          }
+        >
+          <EquipmentResults version={version.slug} query={query} page={page} />
+        </Suspense>
       </section>
     </div>
   )

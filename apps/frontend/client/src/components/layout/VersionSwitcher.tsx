@@ -2,10 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
 import { Check, ChevronDown } from 'lucide-react'
 
-import { gameVersions, type GameVersion } from '@/config/game-versions'
+import { type GameVersion } from '@/config/game-versions'
+import { getGameVersions } from '@/api/game-versions'
 import { replaceVersionInPathname } from '@/lib/version-routes'
 import { cn } from '@/lib/utils'
 
@@ -21,9 +24,19 @@ export function VersionSwitcher({
   inverted = false,
 }: VersionSwitcherProps) {
   const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+  const versions = useQuery({
+    queryKey: ['game-versions'],
+    queryFn: getGameVersions,
+    enabled: open,
+    staleTime: 300000,
+  })
 
   return (
-    <details className="group relative">
+    <details
+      className="group relative"
+      onToggle={(event) => setOpen(event.currentTarget.open)}
+    >
       <summary
         className={cn(
           'focus-visible:ring-ring flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 rounded-md border px-3 py-2 text-left text-sm transition-colors marker:content-none focus-visible:ring-2 focus-visible:outline-none [&::-webkit-details-marker]:hidden',
@@ -60,7 +73,21 @@ export function VersionSwitcher({
         <p className="text-muted-foreground px-2.5 pt-2 pb-1 text-[11px] font-medium tracking-[0.12em] uppercase">
           资料版本
         </p>
-        {gameVersions.map((version) => {
+        {versions.isFetching && (
+          <p role="status" className="p-3 text-sm">
+            正在读取版本…
+          </p>
+        )}
+        {versions.isError && (
+          <button
+            type="button"
+            onClick={() => versions.refetch()}
+            className="text-destructive min-h-11 p-3 text-sm"
+          >
+            版本读取失败，点击重试
+          </button>
+        )}
+        {versions.data?.map((version) => {
           const isCurrent = version.slug === currentVersion.slug
 
           if (version.status === 'planned') {

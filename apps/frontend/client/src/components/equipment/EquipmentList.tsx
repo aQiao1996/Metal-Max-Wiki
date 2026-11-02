@@ -14,6 +14,7 @@ interface EquipmentListProps {
   query: EquipmentQuery
   totalForType: number
   version: GameVersionSlug
+  page?: number
 }
 
 const humanWeaponFields = [
@@ -34,6 +35,7 @@ export function EquipmentList({
   query,
   totalForType,
   version,
+  page = 1,
 }: EquipmentListProps) {
   const equipmentIndexPath = `/v/${version}/wiki/equipment`
 
@@ -59,7 +61,9 @@ export function EquipmentList({
     )
   }
 
-  const encodedFrom = encodeURIComponent(buildEquipmentSearch(query))
+  const from = new URLSearchParams(buildEquipmentSearch(query))
+  if (page > 1) from.set('page', String(page))
+  const encodedFrom = encodeURIComponent(from.toString())
 
   return (
     <ul className="border-border border-t">

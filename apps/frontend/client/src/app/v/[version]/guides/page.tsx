@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import { guides } from '@/data/fixtures/guides'
 import { GuideList } from '@/components/guides/GuideList'
+import { guides } from '@/data/guides'
 
 export const metadata: Metadata = {
   title: '攻略整理',
@@ -31,12 +31,18 @@ export default async function GuidesPage({ params }: GuidesPageProps) {
           攻略与实机记录
         </h1>
         <p className="text-muted-foreground mt-3 max-w-2xl leading-7 text-pretty">
-          围绕 {version.version}整理的改造、装备和数据核对方法。
+          围绕 {version.version}整理的改造、装备和实机记录。
         </p>
       </header>
 
       <section className="py-7">
-        <GuideList guides={guides} version={version.slug} />
+        {guides.length > 0 ? (
+          <GuideList guides={guides} version={version.slug} />
+        ) : (
+          <p className="text-muted-foreground text-sm leading-7">
+            目前没有正式发布的攻略。你可以先查询装备属性、获取方式和资料来源。
+          </p>
+        )}
       </section>
     </div>
   )

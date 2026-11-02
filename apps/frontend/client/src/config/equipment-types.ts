@@ -75,6 +75,10 @@ export const equipmentTypes = [
 
 export const defaultEquipmentType = 'human-weapon' satisfies EquipmentTypeId
 
+export const legacyEquipmentDetailIds: ReadonlyMap<string, string> = new Map([
+  ['main-cannons/universe-cannon', 'main-cannon-7972064880'],
+])
+
 export const equipmentTypeById = new Map<EquipmentTypeId, EquipmentTypeConfig>(
   equipmentTypes.map((config): [EquipmentTypeId, EquipmentTypeConfig] => [
     config.id,

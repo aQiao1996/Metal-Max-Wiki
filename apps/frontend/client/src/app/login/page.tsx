@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   title: '登录',
 }
 
-export default function LoginPage() {
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>
+}) {
+  const { next } = await searchParams
+  const nextPath =
+    typeof next === 'string' && next.startsWith('/v/') && !next.includes('\\')
+      ? next
+      : '/v/mm2r-099/ai'
   return (
     <main className="grid min-h-screen lg:grid-cols-[minmax(20rem,0.8fr)_minmax(32rem,1.2fr)]">
       <section className="hidden flex-col justify-between bg-[var(--mm-navy)] p-10 text-white lg:flex xl:p-14">
@@ -49,13 +58,13 @@ export default function LoginPage() {
             Account
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--mm-navy)]">
-            登录账号
+            账号
           </h2>
           <p className="text-muted-foreground mt-2 text-sm leading-6">
             使用邮箱和密码登录。
           </p>
           <div className="mt-8">
-            <LoginForm />
+            <LoginForm nextPath={nextPath} />
           </div>
         </div>
       </section>

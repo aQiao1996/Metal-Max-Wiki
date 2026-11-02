@@ -49,6 +49,7 @@ export function EquipmentFilterForm({
         </label>
         <Input
           id="equipment-query"
+          maxLength={100}
           type="search"
           name="q"
           defaultValue={query.q}

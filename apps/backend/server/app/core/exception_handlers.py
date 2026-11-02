@@ -6,6 +6,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
+from app.core.errors import BusinessError
 from app.schemas.response import ApiError
 
 logger = logging.getLogger(__name__)
@@ -75,6 +76,20 @@ async def unhandled_exception_handler(
 
 
 def register_exception_handlers(application: FastAPI) -> None:
+    application.add_exception_handler(BusinessError, business_exception_handler)
     application.add_exception_handler(StarletteHTTPException, http_exception_handler)
     application.add_exception_handler(RequestValidationError, validation_exception_handler)
     application.add_exception_handler(Exception, unhandled_exception_handler)
+
+
+async def business_exception_handler(request: Request, exception: Exception) -> JSONResponse:
+    if not isinstance(exception, BusinessError):
+        raise TypeError("业务异常处理器收到了非业务异常")
+    payload = ApiError(
+        code=exception.status_code,
+        timestamp=_utc_timestamp(),
+        path=request.url.path,
+        method=request.method,
+        message=exception.message,
+    )
+    return JSONResponse(status_code=exception.status_code, content=payload.model_dump(mode="json"))

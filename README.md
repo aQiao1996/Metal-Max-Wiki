@@ -34,6 +34,43 @@ docker compose --env-file infra/env/.env -f infra/compose.yaml up -d --wait db
 docker compose --env-file infra/env/.env -f infra/compose.yaml down
 ```
 
+## 本地 MVP 配置
+
+复制后端配置并填写本机已安装的模型名：
+
+```bash
+cp apps/backend/server/.env.example apps/backend/server/.env
+ollama list
+```
+
+在后端 `.env` 中将 `AI_MODEL` 改为 `ollama list` 显示的完整名称，并确认 `DATABASE_URL` 与本地 PostgreSQL 配置一致。Ollama 默认通过 `http://127.0.0.1:11434/v1` 调用；`AI_BASE_URL`、`AI_MODEL` 和 `AI_API_KEY` 可用于接入其他兼容模型服务。
+
+数据库启动后，在后端目录执行迁移，再启动前后端：
+
+```bash
+cd apps/backend/server
+uv run alembic upgrade head
+cd ../../..
+pnpm dev:all
+```
+
+当前开放 2R 0.99 的 150 条装备兼容候选资料。游客可浏览、筛选和搜索；邮箱注册后自动登录，AI 问答需要登录，回答附带装备详情引用。首版采用单轮检索问答，未收录的信息不作为已知事实回答；没有账号邮件验证、找回密码和历史会话功能。
+
+资料使用可追溯 JSON，账号与可撤销会话使用 PostgreSQL。密码通过 Argon2 哈希保存，登录令牌仅保存在 HttpOnly Cookie，数据库保存令牌摘要。生产环境需设置 `ENVIRONMENT=production`、HTTPS 的 `CLIENT_ORIGIN` 并使用 HTTPS；登录与问答限流当前适用于单进程部署。
+
+前端默认连接 `http://127.0.0.1:8000`，可通过前端环境变量 `API_BASE_URL` 修改。浏览器只访问同源 `/api`，不直接访问 Ollama 或持有模型密钥。
+
+主要业务接口均位于 `/api/v1`：
+
+- `GET /game-versions`：游戏版本。
+- `GET /versions/{version}/equipment`：装备筛选、排序与分页。
+- `GET /versions/{version}/equipment/{id}`：装备详情与来源。
+- `GET /versions/{version}/search?q=...`：真实装备搜索。
+- `POST /auth/register`、`POST /auth/login`、`GET /auth/me`、`POST /auth/logout`：账号与会话。
+- `POST /versions/{version}/ask`：登录后的带引用问答。
+
+列表、搜索与账号请求由 FastAPI 处理；装备详情保留静态生成，使用与接口相同的数据文件。修改资料后重新构建前端并重启后端，使静态详情与接口同步。
+
 ## 启动
 
 ```bash
@@ -109,7 +146,7 @@ pnpm assets:audit
 
 远程图片仅允许 HTTPS 与清单允许的重定向主机；每次请求都检查公网 DNS，并限制重定向次数、文件大小、MIME、实际图片格式、尺寸、帧数和哈希。远程下载只接受 PNG、JPEG 和 WebP，全部合格后才更新 `lock.json`。
 
-AI 问答与 Agent 由用户后续单独实现；本轮数据和图片管线未接入、未修改相关代码。
+AI 问答只使用当前已收录的装备资料。检索、模型 Provider 与业务接口分开组织，后续可以替换检索策略或模型服务。
 
 ## 项目结构
 

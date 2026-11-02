@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import { guides } from '@/data/fixtures/guides'
+import { guides } from '@/data/guides'
 import { GuideArticle } from '@/components/guides/GuideArticle'
 
 export const metadata: Metadata = {

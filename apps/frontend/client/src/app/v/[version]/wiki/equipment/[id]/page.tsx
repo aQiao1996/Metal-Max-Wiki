@@ -78,7 +78,7 @@ export default async function EquipmentDetailPage({
     notFound()
   }
 
-  const defaultEquipmentHref = `/v/${version.slug}/wiki/equipment?type=human-weapon`
+  const defaultEquipmentHref = `/v/${version.slug}/wiki/equipment?type=${entry.type}`
   const attributes = buildEquipmentDetailAttributes(entry)
   const statusMessage =
     entry.verification_status === 'verified_0_99'
@@ -108,7 +108,11 @@ export default async function EquipmentDetailPage({
             </Link>
           }
         >
-          <EquipmentReturnLink version={version.slug} variant="breadcrumb" />
+          <EquipmentReturnLink
+            version={version.slug}
+            variant="breadcrumb"
+            equipmentType={entry.type}
+          />
         </Suspense>
         <ChevronRight className="size-3.5 shrink-0" aria-hidden="true" />
         <span className="text-foreground min-w-0 break-words">
@@ -231,7 +235,11 @@ export default async function EquipmentDetailPage({
           </Link>
         }
       >
-        <EquipmentReturnLink version={version.slug} variant="footer" />
+        <EquipmentReturnLink
+          version={version.slug}
+          variant="footer"
+          equipmentType={entry.type}
+        />
       </Suspense>
     </article>
   )

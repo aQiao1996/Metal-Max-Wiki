@@ -1,7 +1,10 @@
 import { type NextRequest, NextResponse } from 'next/server'
 
 import { getGameVersion, isAvailableGameVersion } from '@/config/game-versions'
-import { equipmentTypeById } from '@/config/equipment-types'
+import {
+  equipmentTypeById,
+  legacyEquipmentDetailIds,
+} from '@/config/equipment-types'
 import { getEquipmentEntry } from '@/data/equipment/catalog'
 
 const wikiRoutePattern = /^\/v\/([^/]+)\/wiki\/([^/]+)(?:\/([^/]+))?\/?$/
@@ -22,11 +25,23 @@ export function proxy(request: NextRequest) {
   }
 
   const [, versionSlug, categorySegment, id] = match
+  const version = getGameVersion(versionSlug)
+  const legacyId = legacyEquipmentDetailIds.get(`${categorySegment}/${id}`)
+  if (
+    version &&
+    isAvailableGameVersion(version) &&
+    legacyId &&
+    getEquipmentEntry(legacyId)
+  ) {
+    const canonicalUrl = request.nextUrl.clone()
+    canonicalUrl.pathname = `/v/${version.slug}/wiki/equipment/${legacyId}`
+    canonicalUrl.search = ''
+    return NextResponse.redirect(canonicalUrl, 308)
+  }
   if (normalizedCategory(categorySegment) !== 'equipment') {
     return NextResponse.next()
   }
 
-  const version = getGameVersion(versionSlug)
   const entry = id === undefined ? undefined : getEquipmentEntry(id)
   const typeConfig = entry && equipmentTypeById.get(entry.type)
 

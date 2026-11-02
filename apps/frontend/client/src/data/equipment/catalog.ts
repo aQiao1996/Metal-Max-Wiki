@@ -1,7 +1,9 @@
 import rawEquipmentDataset from '../../../../../../data/interim/mm2r/0.99/equipment.json'
 
-import { equipmentTypeByKind } from '@/config/equipment-types'
-import type { EquipmentEntry, EquipmentNameSource } from '@/types/equipment'
+import type { EquipmentEntry } from '@/types/equipment'
+import { toEquipmentEntry } from './entry'
+
+export { toEquipmentEntry } from './entry'
 
 import {
   equipmentDatasetSchema,
@@ -26,64 +28,6 @@ export function parseEquipmentDataset(input: unknown): EquipmentDataset {
 }
 
 const equipmentDataset = parseEquipmentDataset(rawEquipmentDataset)
-
-function resolveEquipmentName(record: RawEquipmentRecord): {
-  name: string
-  nameSource: EquipmentNameSource
-} {
-  if (record.names.zh_099 !== null) {
-    return { name: record.names.zh_099, nameSource: 'zh_099' }
-  }
-
-  if (record.names.zh_09 !== null) {
-    return { name: record.names.zh_09, nameSource: 'zh_09' }
-  }
-
-  if (record.names.ja !== null) {
-    return { name: record.names.ja, nameSource: 'ja' }
-  }
-
-  throw new Error(`装备记录缺少可显示名称：${record.id}`)
-}
-
-const searchableAttributeKeys = [
-  'acquisition_raw',
-  'additional_raw',
-  'notes_raw',
-] as const
-
-/** 将通过校验的原始记录转换为可展示、可搜索的装备条目。 */
-export function toEquipmentEntry(record: RawEquipmentRecord): EquipmentEntry {
-  const typeConfig = equipmentTypeByKind.get(record.kind)
-
-  if (typeConfig === undefined) {
-    throw new Error(`装备类型未配置：${record.kind}（${record.id}）`)
-  }
-
-  const { name, nameSource } = resolveEquipmentName(record)
-  const searchableAttributes = searchableAttributeKeys
-    .map((key) => record.attributes[key])
-    .filter((value): value is string => typeof value === 'string')
-  const searchText = [
-    name,
-    record.names.ja,
-    record.names.zh_09,
-    record.names.zh_099,
-    ...record.names.aliases,
-    ...searchableAttributes,
-  ]
-    .filter((value): value is string => value !== null)
-    .join(' ')
-    .toLocaleLowerCase('zh-CN')
-
-  return {
-    ...record,
-    type: typeConfig.id,
-    name,
-    nameSource,
-    searchText,
-  }
-}
 
 const equipmentCatalog = equipmentDataset.records.map(toEquipmentEntry)
 
