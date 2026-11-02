@@ -22,7 +22,8 @@ const equipmentEntities: WikiEntitySummary[] = getEquipmentEntries()
 export const recentEntities: WikiEntitySummary[] = [
   ...getKnowledgeEntries('vehicles').slice(0, 1).map(toKnowledgeSummary),
   ...getKnowledgeEntries('wanted-monsters').slice(0, 1).map(toKnowledgeSummary),
-  ...equipmentEntities,
+  ...getKnowledgeEntries('jobs').slice(0, 1).map(toKnowledgeSummary),
+  ...equipmentEntities.slice(0, 1),
 ]
 export const featuredEntity = recentEntities[0]
 export const recentGuides = guides.slice(0, 2)

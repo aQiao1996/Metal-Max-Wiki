@@ -143,7 +143,7 @@ export function GlobalSearchDialog({
           )}
 
           <p className="text-muted-foreground px-2 pt-2 pb-1 text-[11px] font-medium tracking-[0.12em] uppercase">
-            {query ? '匹配结果' : '装备、战车与赏金首资料'}
+            {query ? '匹配结果' : '装备、战车、赏金首与职业技能'}
           </p>
           {searchTerm && (results.isFetching || searchTerm !== query.trim()) ? (
             <p role="status" className="text-muted-foreground p-4 text-sm">

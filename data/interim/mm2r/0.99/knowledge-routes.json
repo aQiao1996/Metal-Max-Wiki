@@ -4,6 +4,41 @@
   "target_version": "0.99",
   "routes": [
     {
+      "category": "jobs",
+      "id": "job-09b51cf0e7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-4205a9beb7",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-49dab6b280",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-8c8f6a23a8",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-a600bc30ea",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-b9a30c5355",
+      "legacy_slugs": []
+    },
+    {
+      "category": "jobs",
+      "id": "job-c8ea6c94a5",
+      "legacy_slugs": []
+    },
+    {
       "category": "vehicles",
       "id": "vehicle-1e590f68d2",
       "legacy_slugs": []

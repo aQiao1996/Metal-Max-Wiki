@@ -6,7 +6,7 @@ from app.schemas.base import CamelModel
 from app.schemas.equipment import EquipmentNames, EquipmentSource
 from app.schemas.response import PaginationMeta
 
-KnowledgeCategory = Literal["wanted-monsters", "vehicles"]
+KnowledgeCategory = Literal["wanted-monsters", "vehicles", "jobs"]
 KnowledgeSort = Literal["name-asc", "bounty-desc"]
 KnowledgeMount = Literal["all", "double-engine", "double-c-unit"]
 

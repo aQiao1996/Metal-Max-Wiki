@@ -39,7 +39,7 @@ sources:
     license: NOASSERTION
     usage: cross-check-only
     attribution: METAL MAniaX contributors
-    notes: 只提取战车底盘与部件、特性、赏金首及掉落物的事实表、位置和出现条件，保留逐页出处；不保存整页正文、攻略评论或图片
+    notes: 只提取战车底盘与部件、特性、职业技能、赏金首及掉落物的事实表、位置和出现条件，保留逐页出处；不保存整页正文、攻略评论或图片
   - id: kaerulabo-mm2r
     title: カエル研究室 MM2R 敌人掉落概率表
     base_url: http://kaerulabo.web.fc2.com/etc/mm2r/

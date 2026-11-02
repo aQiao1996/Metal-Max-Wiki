@@ -109,7 +109,9 @@ export async function KnowledgeIndex({
             placeholder={
               categorySlug === 'vehicles'
                 ? '车型、型号或特性'
-                : '名称、地点或掉落物品'
+                : categorySlug === 'jobs'
+                  ? '职业、技能或作用'
+                  : '名称、地点或掉落物品'
             }
           />
         </div>
@@ -139,7 +141,9 @@ export async function KnowledgeIndex({
             ) : (
               <>
                 <option value="name-asc">名称升序</option>
-                <option value="bounty-desc">赏金降序</option>
+                {categorySlug === 'wanted-monsters' && (
+                  <option value="bounty-desc">赏金降序</option>
+                )}
               </>
             )}
           </select>

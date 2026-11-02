@@ -33,4 +33,6 @@ C 装置的面板、逐星级普通改造值、特性表与获取地点同样参
 
 底盘特性和双部件改造参考同站 MM2R 共用特性表、商店改造说明及各验证记录。`vehicle-traits` 保存带适用对象的参数、缺失项与逐条出处；C 装置对照、特定配置测试和体感描述没有转换为底盘的无条件概率。相关中文名称与说明均为参考，未核验 0.99 实机。
 
+职业、成长观测、技能机制和主副职业规则参考 [METAL MAniaX MM2R 角色资料](https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF)、各职业页及 FAQ，并保留与组长式技能表的差异。`job-skills` 仅保存事实字段、最短定位片段与项目整理的中文摘要，不复制完整攻略；参考译名、属性观测和技能次数未作 0.99 实机确认。
+
 辅助加成和同名加成的计算对象另参考同站大辞典的 [辅助加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2443) 与 [双引擎同名加成](https://metalmaniax.com/cgi-bin/dictionary/ziten.cgi?action=view&data=2444)，于 2026-11-02 通过检索资料快照核对；原词典地址当前直连返回 404。只整理比例、槽位及同名条件等事实，不复制完整词条。

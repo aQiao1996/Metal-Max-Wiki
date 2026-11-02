@@ -1,5 +1,11 @@
 schema_version: 1
 targets:
+  - id: maniax-job-skills
+    source_id: metalmaniax-mm2r
+    category: jobs
+    url: https://metalmaniax.com/index.php?MM2R/DATA/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF
+    output: maniax-job-skills.json
+    collect: false
   - id: maniax-vehicles
     source_id: metalmaniax-mm2r
     category: vehicles

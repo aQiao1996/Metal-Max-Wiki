@@ -1,0 +1,833 @@
+schema_version: 1
+verification_status: source_only
+reference_note: 本文件中文名称、目标与用途由日文公开资料编辑整理，仅为中文参考；不代表0.99汉化实机名称或已核验的0.99机制。保留旧日文身份，并使用METAL MAniaX的职业内规范名对齐完整技能表。
+job_names:
+  ハンター: 猎人
+  メカニック: 机械师
+  ソルジャー: 士兵
+  ナース: 护士
+  レスラー: 摔跤手
+  アーチスト: 艺术家
+  犬: 犬
+skill_names:
+  モーレツ看護: 强力护理
+  パンチラキック5: 飞裙踢
+  復元ゲージツ: 复原艺术
+  パンチラキック: 飞裙踢
+  肉塊グラインダー: 肉块粉碎机
+  エルボー乱気流: 肘击乱气流
+  おしっこ: 撒尿
+  台風チョップ: 台风劈
+  男気パンチ3: 男气拳
+  囮よせ: 诱敌
+  破損修理: 破损修理
+  タイル命: 装甲至上
+  オーバードリップ: 持续点滴
+  おたけび: 战吼
+  満タン看護: 完全护理
+  武器の知識: 武器知识
+  ヤバイ修理: 危险修理
+  戦場の天使: 战场天使
+  パンチラキック4: 飞裙踢
+  死んだふり: 装死
+  パンチラキック6: 飞裙踢
+  パンチラキック3: 飞裙踢
+  じゃれる: 嬉闹
+  戦場のAED: 战场AED
+  全門発射: 全门发射
+  ねらいうち: 瞄准射击
+  暗黒舞踏: 暗黑舞踏
+  掘る: 挖掘
+  気つけ薬: 清醒药
+  ハンターズアイ: 猎人之眼
+  火炎カブキ: 火焰歌舞伎
+  男気キック: 男气拳
+  ヨコヅナオーラ: 横纲气场
+  パンチラキック2: 飞裙踢
+  男気パンチ2: 男气拳
+  ニトロラリアット: 硝化套索臂
+  ドラムストレッチ: 桶式伸展
+  みだれなげ: 乱投
+  男気キック2: 男气拳
+  大破修理: 大破修理
+  砲弾ゲージツ: 炮弹艺术
+  突進: 突进
+  獲物の匂い: 猎物气息
+  人間パトリオット: 人类爱国者
+  吼える: 吠叫
+  ジェットハット: 喷射肩撞
+  禁断の注射器: 禁忌注射器
+  ゆるめる: 松动螺丝
+  最も危険な修理: 最危险修理
+  男気パンチ4: 男气拳
+  改造ゲージツ: 改造艺术
+  ニンジャステップ: 忍者步法
+  ぶっぱなす: 全武器齐射
+  砲撃演舞: 炮击演舞
+  男気パンチ: 男气拳
+  スパナ乱舞: 扳手乱舞
+  電光石火: 电光石火
+  戦いのフェロモン: 战斗信息素
+  薬の知識: 药品知识
+  ゴーストドリフト: 幽灵漂移
+  金粉ゲージツ: 金粉艺术
+  解体: 拆解
+  ダブルアタック: 双重攻击
+  ハンターマジック: 猎人魔法
+  着ぐるみゲージツ: 变装艺术
+job_summaries:
+  ハンター:
+    code: hunter-role
+    source_page: ハンター
+    section_ja: 概要
+    summary_zh: 战车战专长，驾驶等级最易增长；可使用较多人类武器，但自身白兵技能较少。
+    evidence_ja:
+      - クルマ戦闘のスペシャリスト
+      - 運転Lvが最も上がりやすい
+      - 白兵戦用の特技
+  メカニック:
+    code: mechanic-role
+    source_page: メカニック
+    section_ja: 概要
+    summary_zh: 负责维修受损和大破部件，也能在战斗中修理和补甲；驾驶等级较高，白兵耐久与武器选择受限。
+    evidence_ja:
+      - 修理のプロフェッショナル
+      - 装甲タイルを貼ったり
+      - 装備可能な武器が少なめ
+  ソルジャー:
+    code: soldier-role
+    source_page: ソルジャー
+    section_ja: 概要
+    summary_zh: 擅长白兵战，能使用多种人类武器；驾驶等级较低，但有可在摩托上使用的技能。
+    evidence_ja:
+      - 白兵戦のプロ
+      - 装備可能武器が豊富
+      - バイク乗車時でも使用出来る
+  ナース:
+    code: nurse-role
+    source_page: ナース
+    section_ja: 概要
+    summary_zh: 专注HP恢复、异常解除和急救；能增强恢复药品效果，并把恢复道具用于全体同伴。
+    evidence_ja:
+      - 薬の知識
+      - 戦場の天使
+      - 人数分消費
+  レスラー:
+    code: wrestler-role
+    source_page: レスラー
+    section_ja: 概要
+    summary_zh: 以身体能力、强化和近身技能进行白兵输出；高腕力配合多段攻击，行动速度较慢。
+    evidence_ja:
+      - ドラムストレッチ
+      - 生身での火力
+  アーチスト:
+    code: artist-role
+    source_page: アーチスト
+    section_ja: 概要
+    summary_zh: 兼有战车与白兵连续攻击，并能制作特殊炮弹、进行车载装备超改造。
+    evidence_ja:
+      - クルマ・白兵両方で連続攻撃
+      - 砲弾ゲージツ
+      - 改造ゲージツ
+  犬:
+    code: dog-role
+    source_page: 犬
+    section_ja: 概要
+    summary_zh: 由AI自行选择武器与辅助动作，不能单独驾驶战车；能随人搭乘多人车辆受到保护。
+    evidence_ja:
+      - 自分で操作出来ず、行動はAI任せ
+      - 運転レベルは1で固定
+      - 多人数用戦車に乗せる
+skill_summaries:
+  モーレツ看護: 不用道具进行比例治疗；来源按已损失HP的比例恢复，因此不能靠此技能直接回满。
+  パンチラキック5: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  復元ゲージツ: 消耗修理包修复破损部件；不能用机械师工具箱代替修理包。
+  パンチラキック: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  肉塊グラインダー: 旋转下落，同时攻击面前的所有敌人。
+  エルボー乱気流: 对一名敌人连续肘击；首击伤害较高，后续每击为首击的一半，角色差异另见来源。
+  おしっこ: 犬在判断自己难以有效作战时可能执行的本能动作；既有来源记载没有战斗效果。
+  台風チョップ: 随机目标连续劈击4次，攻击可能分散；部分普通角色存在只出一击的异常。
+  男気パンチ3: 以男气值发动白兵攻击；男气越高，威力越强。
+  囮よせ: 将选定怪物引来交战；海上不能使用，也不能直接引来仅增援出现的敌人。
+  破損修理: 使用修理工具修复破损的车辆部件。
+  タイル命: 战斗中暂时下车，消耗装甲包补充车辆装甲。
+  オーバードリップ: 赋予回合结束时自动恢复HP的效果，来源记载其持续至战斗结束。
+  おたけび: 优先发动攻击，并在本回合提高全体同伴的攻击力。
+  満タン看護: 不使用恢复道具，将一名同伴的HP完全恢复。
+  武器の知識: 自动提高所装备人类武器的攻击力；不增加角色腕力。
+  ヤバイ修理: 不用修理工具尝试修理部件，有失败或状况恶化的风险。
+  戦場の天使: 把选定的恢复道具用于全体同伴，需消耗相应人数份的道具。
+  パンチラキック4: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  死んだふり: 使自身不被直接选为攻击目标，期间不能攻击；仍可能受范围或全体攻击波及。
+  パンチラキック6: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  パンチラキック3: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  じゃれる: 干扰一名敌人，使其在本回合无法行动。
+  戦場のAED: 尝试复活死亡同伴；来源成功率为50%，成功后HP全满。
+  全門発射: 在一回合中发射车上所有可用的车载武器。
+  ねらいうち: 使用车载兵器瞄准攻击，提高会心一击的发生机会。
+  暗黒舞踏: 以腕力对同一目标发动3至4次通常属性攻击，目标不会在敌人间分散。
+  掘る: 犬可能执行的挖掘动作；既有来源记载偶尔可找到物品。
+  気つけ薬: 解除全体同伴的睡眠、兴奋、混乱和麻痹，不能解除魅惑或束缚。
+  ハンターズアイ: 自动识别怪物的属性等战斗信息。
+  火炎カブキ: 向小扇形范围喷火，可攻击飞行敌人；范围与DQFF的敌全体记载不同。
+  男気キック: 以男气值发动白兵攻击；男气越高，威力越强。
+  ヨコヅナオーラ: 短时间大幅提高身体能力；来源记为3回合、3倍，并指出攻击力提升不等于伤害倍率提升。
+  パンチラキック2: 以女性气质发动白兵踢击；来源说明男气越低，威力越强。
+  男気パンチ2: 以男气值发动白兵攻击；男气越高，威力越强。
+  ニトロラリアット: 发动高威力套索臂，具有较高会心概率；来源的会心概率随等级变化。
+  ドラムストレッチ: 提高下一回合攻击力；来源记为2倍，且不适用于男气拳、飞裙踢、火焰歌舞伎或喷射肩撞。
+  みだれなげ: 一次连续使用多个对应的投掷类战斗道具，消耗相应数量的物品。
+  男気キック2: 以男气值发动白兵攻击；男气越高，威力越强。
+  大破修理: 使用修理工具，将大破的车辆部件恢复为正常状态。
+  砲弾ゲージツ: 组合材料制作特殊炮弹或炮弹材料，成功率与等级相关。
+  突進: 犬以体当攻击一名敌人，来源明确指出防御力越高威力越大。
+  獲物の匂い: 调查当前位置会出现的怪物。
+  人間パトリオット: 用已装备且支持迎击的人类武器自动拦截敌方弹丸；并非所有武器都能迎击。
+  吼える: 威吓生物类敌人，使弱敌逃跑或打断行动；逃跑目标不提供经验值。
+  ジェットハット: 以防御力相关的体当攻击敌人；对方防御过高时可能反伤自身。
+  禁断の注射器: 尝试使生物或昆虫类目标立即死亡；不能视为对所有非机械敌人均有效。
+  ゆるめる: 降低机械或战车类敌人的防御力，可重复施加。
+  最も危険な修理: 战斗中暂时下车，使用修理工具维修车辆部件。
+  男気パンチ4: 以男气值发动白兵攻击；男气越高，威力越强。
+  改造ゲージツ: 消耗超稀有金属，进行车载装备的超改造；武器、C装置和引擎的变化不同。
+  ニンジャステップ: 本回合提高闪避；来源指出可上下车的战斗中效果可能错误施加给车辆。
+  ぶっぱなす: 一回合内用已装备且可用的人类武器依次攻击；原DQFF说明有截断，保留来源差异。
+  砲撃演舞: 以所选车载兵器连续攻击；来源将相关职业等级与攻击次数联系，并限定主艺术家可达4次。
+  男気パンチ: 以男气值发动白兵攻击；男气越高，威力越强。
+  スパナ乱舞: 以腕力发动全体攻击，对机械和战车类敌人尤其有效。
+  電光石火: 以所选车载兵器连续攻击；攻击次数会随相关职业等级变化。
+  戦いのフェロモン: 在移动时提高遇敌率；可用驱敌喷雾消除该效果。
+  薬の知識: 自动增强恢复药品的效果；副职业习得后改成其他职业仍然有效。
+  ゴーストドリフト: 在回合开始时专注驾驶，回避多数攻击并清除若干车辆异常；部分攻击仍会命中。
+  金粉ゲージツ: 暂时提高属性攻击抵抗；来源对攻略本增幅说法提出异议，0.99具体增幅待核。
+  解体: 尝试使机械或战车类目标立即死亡，成功率受等级与难度影响，并非对所有此类敌人有效。
+  ダブルアタック: 用同一件人类武器连续攻击两次。
+  ハンターマジック: 习得后可在战车中使用人类武器和道具，发动时短暂离车；不消耗技能次数。
+  着ぐるみゲージツ: 换装模仿特定怪物，以不同模式发动攻击。
+skill_targets:
+  モーレツ看護: 我方单体
+  パンチラキック5: 敌方
+  復元ゲージツ: 破损车辆部件
+  パンチラキック: 敌方
+  肉塊グラインダー: 敌方全体
+  エルボー乱気流: 敌方单体
+  おしっこ: 未指明
+  台風チョップ: 敌方随机目标
+  男気パンチ3: 敌方
+  囮よせ: 可诱出的指定怪物
+  破損修理: 破损车辆部件
+  タイル命: 我方车辆
+  オーバードリップ: 我方
+  おたけび: 敌方及我方全体
+  満タン看護: 我方单体
+  武器の知識: 自身装备的人类武器
+  ヤバイ修理: 车辆部件
+  戦場の天使: 我方全体
+  パンチラキック4: 敌方
+  死んだふり: 自身
+  パンチラキック6: 敌方
+  パンチラキック3: 敌方
+  じゃれる: 敌方单体
+  戦場のAED: 死亡的我方同伴
+  全門発射: 按各车载武器而定
+  ねらいうち: 敌方
+  暗黒舞踏: 敌方单体
+  掘る: 未指明
+  気つけ薬: 我方全体
+  ハンターズアイ: 怪物信息
+  火炎カブキ: 敌方小扇形范围
+  男気キック: 敌方
+  ヨコヅナオーラ: 自身
+  パンチラキック2: 敌方
+  男気パンチ2: 敌方
+  ニトロラリアット: 敌方
+  ドラムストレッチ: 自身
+  みだれなげ: 按战斗道具而定
+  男気キック2: 敌方
+  大破修理: 大破车辆部件
+  砲弾ゲージツ: 特殊炮弹及材料
+  突進: 敌方单体
+  獲物の匂い: 当前位置怪物
+  人間パトリオット: 可迎击的敌方弹丸
+  吼える: 生物类敌方
+  ジェットハット: 敌方单体
+  禁断の注射器: 适用的生物或昆虫类敌方
+  ゆるめる: 机械或战车类敌方
+  最も危険な修理: 我方车辆部件
+  男気パンチ4: 敌方
+  改造ゲージツ: 可超改造的车载装备
+  ニンジャステップ: 自身；来源另记载车辆效果异常
+  ぶっぱなす: 按各人类武器而定
+  砲撃演舞: 所选车载武器的攻击目标
+  男気パンチ: 敌方
+  スパナ乱舞: 敌方全体
+  電光石火: 所选武器的攻击目标
+  戦いのフェロモン: 移动中的遇敌率
+  薬の知識: 恢复药品的效果
+  ゴーストドリフト: 自身乘坐车辆
+  金粉ゲージツ: 自身
+  解体: 可拆解的机械或战车类敌方
+  ダブルアタック: 所选武器的攻击目标
+  ハンターマジック: 按人类武器或道具而定
+  着ぐるみゲージツ: 按变装攻击而定
+mechanics:
+  電光石火:
+    - code: hunter-four-attacks
+      source_page: ハンター
+      section_ja: 概要
+      summary_zh: 来源写明相关主副等级之和达到120时可固定攻击4次，并限定仅主猎人可达4次；不将此式套用到任意两职业等级。
+      evidence_ja:
+        - メインLv＋サブLv ≧ 120
+        - 確定で4回攻撃
+        - メインハンターのみ4回攻撃
+      raw_values:
+        level_condition_raw: メインLv＋サブLv ≧ 120
+        attack_count_raw: '4'
+  砲撃演舞:
+    - code: artist-four-attacks
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 来源写明相关主副等级之和达到120时可攻击4次，并限定仅主艺术家可达4次；不将此式套用到任意两职业等级。
+      evidence_ja:
+        - メインLv＋サブLv ≧ 120
+        - メインがアーチストの場合のみ
+        - 4回攻撃
+      raw_values:
+        level_condition_raw: メインLv＋サブLv ≧ 120
+        attack_count_raw: '4'
+  囮よせ:
+    - code: lure-constraints
+      source_page: ハンター
+      section_ja: 概要
+      summary_zh: 海上不能诱敌，也不能直接呼叫只作为战斗增援出现的敌人；来源指出敌人抢先行动机会较高。
+      evidence_ja:
+        - 海の上だけは勘弁
+        - 乱入専用の敵キャラを直接呼び寄せることはできない
+        - 敵の先制率が通常のエンカウントよりかなり高い
+  ハンターマジック:
+    - code: hunter-magic-auto
+      source_page: ハンター
+      section_ja: 概要
+      summary_zh: 该技能习得后自动生效，无技能次数消耗；可从车内使用人类武器和道具，但不能因此使用所有白兵技能。
+      evidence_ja:
+        - 回数消費性ではなくなり、習得していればオート発動
+        - 人間武器攻撃やアイテム使用が可能
+        - 搭乗中の特技はクルマのもの
+  ゴーストドリフト:
+    - code: ghost-priority-and-exceptions
+      source_page: ハンター
+      section_ja: 概要
+      summary_zh: 在回合开始时发动，并清除燃烧、冷却、酸、烟幕、水泥等状态；怪音波、部分尾击等攻击可绕过回避。
+      evidence_ja:
+        - 必ずターンの最初に発動
+        - 燃え、冷え、酸、煙幕、セメント
+        - 怪音波
+  スパナ乱舞:
+    - code: spanner-strength-and-area
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 此招依赖腕力并为全体攻击；可由高腕力职业通过副机械师使用。
+      evidence_ja:
+        - スパナ乱舞
+        - 腕力依存
+        - 全体攻撃
+      raw_values:
+        target_raw: 全体攻撃
+  ゆるめる:
+    - code: loosen-stackable
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 降低战车和机械类敌人的防御，可叠加；并非只限普通杂兵。
+      evidence_ja:
+        - タンク・マシン系の敵の守備力を下げる
+        - 重ね掛けも可能
+        - ボスや賞金首であろうが通用
+  破損修理:
+    - code: mechanic-repair-tools
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 除技能次数外通常还消耗1个修理包；持有机械师工具箱时优先使用不消耗的工具箱，副机械师同样适用。
+      evidence_ja:
+        - 「破損修理」、「最も危険な修理」、「大破修理」
+        - 修理キットを1個消費
+        - サブメカニックでも同様
+      raw_values:
+        repair_kit_count_raw: '1'
+  最も危険な修理:
+    - code: mechanic-repair-tools
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 除技能次数外通常还消耗1个修理包；持有机械师工具箱时优先使用不消耗的工具箱，副机械师同样适用。
+      evidence_ja:
+        - 「破損修理」、「最も危険な修理」、「大破修理」
+        - 修理キットを1個消費
+        - サブメカニックでも同様
+      raw_values:
+        repair_kit_count_raw: '1'
+  大破修理:
+    - code: mechanic-repair-tools
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 除技能次数外通常还消耗1个修理包；持有机械师工具箱时优先使用不消耗的工具箱，副机械师同样适用。
+      evidence_ja:
+        - 「破損修理」、「最も危険な修理」、「大破修理」
+        - 修理キットを1個消費
+        - サブメカニックでも同様
+      raw_values:
+        repair_kit_count_raw: '1'
+  解体:
+    - code: dismantle-level-and-difficulty
+      source_page: メカニック
+      section_ja: 概要
+      summary_zh: 成功率明显受等级与难度影响；低等级对高等级目标容易失败，且有不适用的机械类敌人。
+      evidence_ja:
+        - レベルと難易度による影響が大きく
+        - 低レベルの状態で高レベルの敵を解体しようとしても失敗しやすい
+  武器の知識:
+    - code: weapon-knowledge-not-strength
+      source_page: ソルジャー
+      section_ja: 概要
+      summary_zh: 只提高人类武器自身攻击力，不增强角色腕力。
+      evidence_ja:
+        - 武器の攻撃力のみで、腕力は無関係
+  おたけび:
+    - code: shout-priority
+      source_page: ソルジャー
+      section_ja: 習得特技
+      summary_zh: 来源记为必定优先行动，并使全体同伴的攻击力提高1回合。
+      evidence_ja:
+        - 1ターン仲間全員の攻撃力を上昇
+        - 必ず最初に行動
+      raw_values:
+        duration_raw: 1ターン
+  みだれなげ:
+    - code: throw-item-limits
+      source_page: ソルジャー
+      section_ja: 概要
+      summary_zh: 只能使用对应的投掷类战斗道具；并非投掷物的RPG7或金藏托盘不适用。
+      evidence_ja:
+        - 投げるタイプではないキンゾーのお盆やRPG7には対応していない
+  ダブルアタック:
+    - code: double-attack-count
+      source_page: ソルジャー
+      section_ja: 習得特技
+      summary_zh: 以同一件人类武器连续攻击两次。
+      evidence_ja:
+        - 同じ武器で２回連続攻撃
+      raw_values:
+        attack_count_raw: ２
+  人間パトリオット:
+    - code: human-patriot-weapon-constraints
+      source_page: ソルジャー
+      section_ja: 概要
+      summary_zh: 需装备支持迎击的武器，火焰、冷气、音波、气体武器没有对应迎击选项；迎击精度与速度也有限制。
+      evidence_ja:
+        - 火炎、冷気、音波、ガス属性には対応する武器がない
+        - 迎撃するまでのスピードに違い
+  ニンジャステップ:
+    - code: ninja-vehicle-bug
+      source_page: ソルジャー
+      section_ja: 概要
+      summary_zh: 可上下车的战斗中，来源指出效果会反映到车辆；完整白兵战时才按原本用途施加给人。
+      evidence_ja:
+        - クルマに乗降できる状態で使用すると、効果がクルマ側に反映される
+        - 完全に白兵戦な状態でなければ本来の使い方はできない
+  戦いのフェロモン:
+    - code: pheromone-removal
+      source_page: ソルジャー
+      section_ja: 概要
+      summary_zh: 提高遇敌率后，可用驱敌喷雾消除效果。
+      evidence_ja:
+        - 効果を打ち消すには「テキよけスプレー」を使う必要
+  薬の知識:
+    - code: medicine-multiplier
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 来源表将恢复量记为原来的2至3倍，并以增加100%至200%描述；不外推为固定倍率。
+      evidence_ja:
+        - 補正値は+100～200％
+        - 回復量が2～3倍
+      raw_values:
+        bonus_raw: +100～200％
+        recovery_multiplier_raw: 2～3倍
+  戦場の天使:
+    - code: angel-consumes-per-person
+      source_page: ナース
+      section_ja: 概要
+      summary_zh: 恢复道具按受用人数消耗，物品数量不足时不能当成无消耗全体治疗。
+      evidence_ja:
+        - 戦場の天使はきっちりと人数分消費
+  モーレツ看護:
+    - code: nursing-missing-hp-fraction
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 恢复量按已损失HP的45%至80%计算；来源明确指出无法靠此技能直接补满。
+      evidence_ja:
+        - 消耗量の45～80％
+        - これでHP全快は不可能
+      raw_values:
+        missing_hp_fraction_raw: 45～80％
+  オーバードリップ:
+    - code: drip-duration
+      source_page: ナース
+      section_ja: 概要
+      summary_zh: 施加后持续到战斗结束，在回合末自动治疗；来源还记载自动恢复有助于解除部分暂时异常。
+      evidence_ja:
+        - 一度使えば戦闘終了まで持続
+        - 一時的な状態異常から復帰しやすくなる
+  禁断の注射器:
+    - code: injection-enemy-types
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 来源将适用族群限定为生物类与昆虫类。
+      evidence_ja:
+        - バイオ系・インセクト系に限る
+      raw_values:
+        enemy_types_raw: バイオ系・インセクト系
+  気つけ薬:
+    - code: reviver-status-list
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 解除全体同伴的睡眠、兴奋、混乱和麻痹；魅惑及束缚不适用。
+      evidence_ja:
+        - 味方全員の睡眠、興奮、混乱、マヒを解除
+        - 魅了・捕縛には無力
+      raw_values:
+        target_raw: 味方全員
+  満タン看護:
+    - code: full-nursing-single-target
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 无道具消耗，恢复一名同伴的全部HP。
+      evidence_ja:
+        - 回復アイテムを使わずに仲間一人のHPを全回復
+      raw_values:
+        target_raw: 仲間一人
+  戦場のAED:
+    - code: aed-chance-and-recovery
+      source_page: ナース
+      section_ja: 習得特技
+      summary_zh: 复活成功率为50%；成功后目标HP为全满。
+      evidence_ja:
+        - 成功確率50%
+        - 蘇生後のHPは全快状態
+      raw_values:
+        success_rate_raw: 50%
+  ドラムストレッチ:
+    - code: stretch-multiplier
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 使下一回合攻击力提高为2倍；不把攻击力倍率直接当作伤害倍率。
+      evidence_ja:
+        - つぎのターンの攻撃力を2倍
+      raw_values:
+        attack_multiplier_raw: 2倍
+    - code: stretch-expiration-and-exclusions
+      source_page: レスラー
+      section_ja: 概要
+      summary_zh: 下一回合若不用普通攻击或依赖腕力的攻击技能，强化不继续保留；男气拳、飞裙踢、火焰歌舞伎和喷射肩撞不适用。
+      evidence_ja:
+        - 効果が持ち越されない
+        - 男気パンチ(パンチラキック)、火炎カブキ、ジェットハットには適用されない
+  エルボー乱気流:
+    - code: elbow-hit-multipliers
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 来源记载首击为1.5倍伤害，第二至第三击各为首击的一半，并提示男性艺术家有角色差异。
+      evidence_ja:
+        - 1撃目は1.5倍ダメージ
+        - 2～3撃目はその半分
+        - アーチスト男
+      raw_values:
+        first_hit_multiplier_raw: 1.5倍
+        later_hits_raw: 2～3撃目はその半分
+  火炎カブキ:
+    - code: fire-kabuki-small-cone
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 攻击范围为小扇形，可攻击飞行目标；保留与DQFF敌全体记载的差异。
+      evidence_ja:
+        - 空を飛んでいる敵も攻撃できる
+        - 範囲は扇範囲小
+      raw_values:
+        target_raw: 扇範囲小
+  ニトロラリアット:
+    - code: nitro-power-and-critical
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 来源记载威力为普通的2倍，会心率随等级变化为28%至50%；未给逐级对应表。
+      evidence_ja:
+        - 通常の2倍の破壊力
+        - 会心率はレベルによって変動、28～50％
+      raw_values:
+        power_raw: 2倍
+        critical_rate_range_raw: 28～50％
+  台風チョップ:
+    - code: typhoon-four-random-hits
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 4次攻击各为1.5倍伤害，不能指定目标，可能分散攻击。
+      evidence_ja:
+        - 1.5倍ダメージの4回攻撃
+        - ターゲット指定できず
+        - 攻撃が分散
+      raw_values:
+        damage_multiplier_raw: 1.5倍
+        attack_count_raw: '4'
+    - code: typhoon-generic-hunter-bug
+      source_page: ハンター
+      section_ja: サブ選択
+      summary_zh: 酒吧创建的普通男女猎人可能只打出一击；作为主角创建的金发男女猎人不会发生该异常。
+      evidence_ja:
+        - 台風チョップを1発しか放たない不具合
+        - 主人公として作成した金髪のハンター
+        - 台風チョップの不具合は起こらない
+      raw_values:
+        bug_attack_count_raw: '1'
+  ジェットハット:
+    - code: jet-defense-reference
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 来源以自身防御力的5倍与目标防御力说明此招；不足时会产生自身受伤，不据此补造完整伤害公式。
+      evidence_ja:
+        - 守備力の5倍
+        - 相手の守備力が参照される
+        - 下回ってると自滅ダメージ
+      raw_values:
+        defense_reference_raw: 守備力の5倍
+  ヨコヅナオーラ:
+    - code: yokozuna-duration-and-power
+      source_page: レスラー
+      section_ja: 習得特技
+      summary_zh: 来源记载能力提高为3倍、持续3回合；其攻击力增强不能直接等同于伤害提高3倍。
+      evidence_ja:
+        - 3ターンのあいだ
+        - 全性能を3倍
+      raw_values:
+        duration_raw: 3ターン
+        performance_multiplier_raw: 3倍
+    - code: wrestler-attack-not-damage
+      source_page: レスラー
+      section_ja: 概要
+      summary_zh: 伸展与横纲气场增强的是攻击力，不是伤害倍率。
+      evidence_ja:
+        - 攻撃力に補正
+        - ダメージ倍率に補正
+  死んだふり:
+    - code: play-dead-area-damage
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 不被直接选为攻击目标，但仍会被范围或全体攻击波及。
+      evidence_ja:
+        - 範囲攻撃や全体攻撃に対しては巻き添えを喰らう
+  着ぐるみゲージツ:
+    - code: costume-forms
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 来源列举模仿对象为女高音歌手、油桶、杀人变形虫及徘徊油桶。
+      evidence_ja:
+        - ソプラノ歌手、ドラム缶、さつじんアメーバ、うろつきポリタン
+  砲弾ゲージツ:
+    - code: shell-art-level-chance
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 制作成功率与等级相关，等级过低会失败并制成未爆弹。
+      evidence_ja:
+        - 成功率はレベルに依存
+        - 失敗して不発弾ができる
+  金粉ゲージツ:
+    - code: gold-resistance-disagreement
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 来源对攻略本所写3至5回合、全抗性提高80%提出异议，认为实际增幅约20%；两种说法均不能当作0.99实机结论。
+      evidence_ja:
+        - 3～5ターンの間、全耐性80％アップ
+        - 実際はせいぜい20％アップ程度
+      raw_values:
+        guide_duration_raw: 3～5ターン
+        guide_resistance_bonus_raw: 80％
+        source_estimated_bonus_raw: 20％
+  復元ゲージツ:
+    - code: restoration-repair-kit-only
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 必须消耗修理包，不能用机械师工具箱替代；即使主职业为机械师也一样。
+      evidence_ja:
+        - 修理キットを消費して破損を修理
+        - メカニックキットには対応していない
+        - メインメカニックが「復元ゲージツ」を使用した場合でも修理キットが必要
+  暗黒舞踏:
+    - code: dark-dance-strength-and-count
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 以腕力作通常属性单体攻击，连续攻击3至4次。
+      evidence_ja:
+        - 通常属性で腕力依存の単体3～4回攻撃
+      raw_values:
+        attack_count_raw: 3～4
+        attribute_raw: 通常
+  改造ゲージツ:
+    - code: super-upgrade-cost-and-values
+      source_page: アーチスト
+      section_ja: 概要
+      summary_zh: 每次消耗1个超稀有金属；车载武器攻击力加5、重量加0.04t，C装置防御力加5、重量加0.04t，引擎只增加0.01t重量。
+      evidence_ja:
+        - 1回につきスーパーレアメタルを1個消費
+        - 攻撃力+5、重量+0.04t
+        - 守備力+5
+        - 重量+0.01t
+      raw_values:
+        material_count_raw: '1'
+        weapon_attack_delta_raw: '+5'
+        weapon_weight_delta_raw: +0.04t
+        c_unit_defense_delta_raw: '+5'
+        c_unit_weight_delta_raw: +0.04t
+        engine_weight_delta_raw: +0.01t
+  じゃれる:
+    - code: dog-play-one-turn
+      source_page: 犬
+      section_ja: 習得特技
+      summary_zh: 使一名敌人在本回合内无法行动。
+      evidence_ja:
+        - 敵1体を1ターンのあいだ行動不能
+      raw_values:
+        duration_raw: 1ターン
+        target_raw: 敵1体
+  突進:
+    - code: dog-rush-defense
+      source_page: 犬
+      section_ja: 習得特技
+      summary_zh: 威力随犬的防御力提高而增大；来源没有给完整伤害公式。
+      evidence_ja:
+        - 守備力が高いほど威力が増す
+rules:
+  - code: human-main-and-sub-jobs
+    source_page: faq
+    section_ja: 潜在能力ヘッドホン使用時のメッセージが早すぎてよめない
+    summary_zh: 人类主职业与副职业各有猎人、机械师、士兵、护士、摔跤手、艺术家6种；职业影响成长、技能和装备。
+    evidence_ja:
+      - 職業は全部で6種類
+      - 職業によって、成長の仕方が変わり
+      - サブジョブも、本来の職業と同様に
+    raw_values:
+      human_job_count_raw: '6'
+  - code: unlock-sub-job
+    source_page: unlock
+    section_ja: 覚醒！潜在能力！
+    summary_zh: 在渴望酒吧2楼向楼梯附近的老人取得潜在能力耳机，使用后解锁副职业。
+    evidence_ja:
+      - 階段のすぐそばにいる老人
+      - 潜在能力ヘッドホン
+      - サブジョブが解禁
+  - code: sub-job-equipment
+    source_page: faq
+    section_ja: SFC版との違いは?
+    summary_zh: 可装备物品依主职业决定；副职业提供其技能，不授予副职业装备权限。
+    evidence_ja:
+      - 装備品はメインジョブ由来の品のみ
+      - サブジョブはその特技のみの使用
+  - code: sub-job-change
+    source_page: faq
+    section_ja: SFC版との違いは?
+    summary_zh: 移动中可自由切换副职业。
+    evidence_ja:
+      - サブジョブは移動中ならどこでも自由に変更可能
+  - code: field-skills-retained
+    source_page: faq
+    section_ja: サブジョブはどれを選べばいい？
+    summary_zh: 移动中可使用已经学会的非当前副职业技能，例如诱敌、炮弹艺术及维修。
+    evidence_ja:
+      - 移動中は選択されていないサブジョブの特技も使用可能
+      - 囮よせ
+      - 砲弾ゲージツ
+  - code: same-main-sub-use-counts
+    source_page: ハンター
+    section_ja: サブ選択
+    summary_zh: 主副职业选择相同职业时，有次数限制的技能会增加可用次数；来源未给统一逐级公式。
+    evidence_ja:
+      - サブ職とメイン職で同じものをとった場合
+      - 回数制限系のスキルはちゃんと増えてくれる
+  - code: sub-job-level-cap
+    source_page: growth
+    section_ja: 所感
+    summary_zh: 来源将副职业等级上限记为Lv99；高等级主职业与副职业的可用次数不能混为同一口径。
+    evidence_ja:
+      - サブクラスはLv99で打ち止め
+    raw_values:
+      sub_job_level_cap_raw: Lv99
+  - code: main-skill-use-cap-observation
+    source_page: growth
+    section_ja: 所感
+    summary_zh: 来源称高等级主职业的很多技能可用次数达到99次；未提供逐级次数增长表或通用公式。
+    evidence_ja:
+      - スキルの使用回数はメインクラスだと99回になるもの多し
+    raw_values:
+      observed_use_count_raw: '99'
+  - code: hunter-auto-requires-current-job
+    source_page: ハンター
+    section_ja: 概要
+    summary_zh: 副职业学会猎人之眼或猎人魔法后，若当前副职业改为非猎人，这两项不再生效。
+    evidence_ja:
+      - ハンターズアイとハンターマジック
+      - サブ職をハンター以外にすると効果を発揮出来ない
+  - code: nurse-knowledge-retained
+    source_page: ナース
+    section_ja: 概要
+    summary_zh: 副职业学会药品知识后，即使当前副职业换成非护士，效果仍然保留。
+    evidence_ja:
+      - 薬の知識
+      - ナース以外の職へ変更しても常時有効
+  - code: dog-no-sub-job
+    source_page: 犬
+    section_ja: サブ選択
+    summary_zh: 犬不能设置副职业。
+    evidence_ja:
+      - 犬にサブジョブは設定できない
+  - code: dog-driving-level
+    source_page: 犬
+    section_ja: 概要
+    summary_zh: 犬的驾驶等级固定为1，不能单独驾驶车辆。
+    evidence_ja:
+      - 犬単体ではクルマの運転ができない
+      - 運転レベルは1で固定
+    raw_values:
+      driving_level_raw: '1'
+  - code: protagonist-job-selection
+    source_page: protagonist
+    section_ja: 概要
+    summary_zh: 主角可选择性别和人类职业，但不能选择来源的オカマ或丽人性别分类。
+    evidence_ja:
+      - 性別・職業ともに選択可能
+      - オカマや麗人は選択不可
+  - code: protagonist-hunter-equivalence-and-exception
+    source_page: protagonist
+    section_ja: 概要
+    summary_zh: 猎人主角与普通猎人的成长率、习得技能相同；主角猎人的台风劈能正常出招，普通猎人存在差异。
+    evidence_ja:
+      - 成長率や習得特技は汎用ハンターと同じ
+      - 正常な台風チョップが確実に出る
+  - code: protagonist-other-jobs
+    source_page: protagonist
+    section_ja: 概要
+    summary_zh: 主角选择猎人以外职业时，来源称其外观与性能均与普通角色相同。
+    evidence_ja:
+      - ハンター以外の職を選んだ場合
+      - 汎用キャラと性能は一緒
+  - code: multi-rider-driving-level
+    source_page: ハンター
+    section_ja: 概要
+    summary_zh: 一辆车多人乘坐时，使用队列中最靠前乘员的驾驶等级，不叠加所有乘员驾驶等级。
+    evidence_ja:
+      - 一台に複数人乗車した場合
+      - 最も先頭に近いキャラクターの運転レベル
+limitations:
+  - 全部记录仅为日版公开来源参考，verification_status固定为source_only；未与本机0.99逐项实测核验。
+  - 65个旧技能身份均与7张METAL MAniaX职业技能表匹配，本次没有发现来源表中实际遗漏的技能；不添加其他作品的技能。
+  - 技能学习等级及Lv99次数采用METAL MAniaX表格口径，DQFF原始学习等级、目标、分类和旧名另外保留；冲突未由0.99实机裁定。
+  - Lv99、Lv199、Lv499、Lv999成长表是来源记录的观测值，不是确定的逐级成长率；来源未说明全部测量条件，不插值、不反推、不保证每名同职业角色数值完全相同。
+  - 来源没有提供统一的逐级HP、战斗等级、驾驶等级、腕力、体力、速度或技能次数成长公式，也没有完整副职业经验分配公式。
+  - 次数栏的短横线保留为原值，不一律解释为主动技能无限使用；猎人魔法和自动技能的触发条件另存事实。
+  - 主副职业等级与连击次数的关系按来源原文及职业限定保存；不把主Lv加副Lv的式子套用到任意职业组合，也不推演出0.99精确伤害。
+  - 乘车、摩托、白兵三种分类的使用限制来自FAQ；回复、维修、艺术、移动和自动分类没有统一套用该矩阵，具体工具、战斗场景和触发条件以逐项事实为准。
+  - 火焰歌舞伎的小扇形范围、金粉艺术的增抗争议、部分角色台风劈异常及主角差异均为来源报告，未在0.99复现。
+  - 只保留表格事实原值、逐行出处与用于校对的短证据，不保存整篇攻略、评论或页面副本。

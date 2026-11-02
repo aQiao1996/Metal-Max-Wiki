@@ -107,6 +107,45 @@ export function KnowledgeDetail({
   const remainingSections = entry.vehicle
     ? entry.sections.filter((section) => section.id !== 'acquisition')
     : entry.sections
+  const contents = (
+    <nav aria-label="条目目录" className="mt-3 flex flex-col text-sm">
+      {entry.vehicle && (
+        <a
+          href="#configurations"
+          className="focus-visible:ring-ring inline-flex min-h-10 items-center py-1 text-[var(--mm-navy)] hover:underline focus-visible:ring-2 focus-visible:outline-none"
+        >
+          {entry.vehicle.configurations.every(
+            (setup) => setup.kind === 'preset',
+          )
+            ? '设计预设'
+            : '底盘配置'}
+        </a>
+      )}
+      {entry.sections.map((section) => (
+        <a
+          key={section.id}
+          href={`#${section.id}`}
+          className="focus-visible:ring-ring inline-flex min-h-10 items-center py-1 text-[var(--mm-navy)] hover:underline focus-visible:ring-2 focus-visible:outline-none"
+        >
+          {section.title}
+        </a>
+      ))}
+      {entry.enemies.length > 0 && (
+        <a
+          href="#drops"
+          className="focus-visible:ring-ring inline-flex min-h-10 items-center hover:underline focus-visible:ring-2 focus-visible:outline-none"
+        >
+          掉落物品
+        </a>
+      )}
+      <a
+        href="#sources-heading"
+        className="focus-visible:ring-ring inline-flex min-h-10 items-center hover:underline focus-visible:ring-2 focus-visible:outline-none"
+      >
+        来源与校对
+      </a>
+    </nav>
+  )
   return (
     <article className="mx-auto max-w-6xl min-w-0 pb-12">
       <nav
@@ -158,6 +197,13 @@ export function KnowledgeDetail({
         </p>
       </header>
 
+      <details className="border-border mt-6 border-b pb-3 xl:hidden">
+        <summary className="focus-visible:ring-ring min-h-11 cursor-pointer py-3 text-sm font-medium focus-visible:ring-2 focus-visible:outline-none">
+          本页目录
+        </summary>
+        {contents}
+      </details>
+
       <div className="mt-8 grid min-w-0 gap-10 xl:grid-cols-[minmax(0,1fr)_15rem]">
         <div className="min-w-0 space-y-10">
           <AttributeTable attributes={entry.attributes} />
@@ -179,13 +225,14 @@ export function KnowledgeDetail({
               key={section.id}
               section={section}
               folded={
-                entry.vehicle !== undefined &&
-                [
-                  'initial-equipment',
-                  'individual-modifications',
-                  'traits',
-                  'purchase-options',
-                ].includes(section.id)
+                ['raw-source-tables', 'source-issues'].includes(section.id) ||
+                (entry.vehicle !== undefined &&
+                  [
+                    'initial-equipment',
+                    'individual-modifications',
+                    'traits',
+                    'purchase-options',
+                  ].includes(section.id))
               }
             />
           ))}
@@ -295,47 +342,11 @@ export function KnowledgeDetail({
           )}
           <SourceReferences sources={toKnowledgeSources(entry)} />
         </div>
-        <aside className="border-border border-t pt-5 xl:sticky xl:top-24 xl:self-start">
+        <aside className="border-border hidden border-t pt-5 xl:sticky xl:top-24 xl:block xl:self-start">
           <h2 className="text-sm font-semibold text-[var(--mm-navy)]">
             本页目录
           </h2>
-          <nav aria-label="条目目录" className="mt-3 flex flex-col text-sm">
-            {entry.vehicle && (
-              <a
-                href="#configurations"
-                className="focus-visible:ring-ring inline-flex min-h-10 items-center py-1 text-[var(--mm-navy)] hover:underline focus-visible:ring-2 focus-visible:outline-none"
-              >
-                {entry.vehicle.configurations.every(
-                  (setup) => setup.kind === 'preset',
-                )
-                  ? '设计预设'
-                  : '底盘配置'}
-              </a>
-            )}
-            {entry.sections.map((section) => (
-              <a
-                key={section.id}
-                href={`#${section.id}`}
-                className="focus-visible:ring-ring inline-flex min-h-10 items-center py-1 text-[var(--mm-navy)] hover:underline focus-visible:ring-2 focus-visible:outline-none"
-              >
-                {section.title}
-              </a>
-            ))}
-            {entry.enemies.length > 0 && (
-              <a
-                href="#drops"
-                className="focus-visible:ring-ring inline-flex min-h-10 items-center hover:underline focus-visible:ring-2 focus-visible:outline-none"
-              >
-                掉落物品
-              </a>
-            )}
-            <a
-              href="#sources-heading"
-              className="focus-visible:ring-ring inline-flex min-h-10 items-center hover:underline focus-visible:ring-2 focus-visible:outline-none"
-            >
-              来源与校对
-            </a>
-          </nav>
+          {contents}
           <p className="text-muted-foreground mt-5 text-xs leading-6">
             {version.game} · {version.version}
           </p>

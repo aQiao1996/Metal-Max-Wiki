@@ -15,7 +15,7 @@ from app.services.equipment_service import require_available_version
 
 
 def knowledge_text(record: KnowledgeRecord) -> str:
-    """检索名称、地点、正文和逐槽掉落，不拼接其他版本。"""
+    """检索名称、正文与条件表，排除全局来源说明。"""
     values = [record.name, record.names.ja or "", *record.names.aliases, record.summary]
     values.extend(attribute.value for attribute in record.attributes)
     values.extend(
@@ -29,6 +29,14 @@ def knowledge_text(record: KnowledgeRecord) -> str:
         for enemy in record.enemies
         for drop in enemy.drops
     )
+    values.extend(section.title for section in record.sections if section.id != "source-issues")
+    if record.vehicle is None:
+        values.extend(
+            " ".join([table.caption, *table.headers, *(cell for row in table.rows for cell in row)])
+            for section in record.sections
+            if section.id != "source-issues"
+            for table in section.tables
+        )
     if record.vehicle is not None:
         values.extend(record.vehicle.trait_terms)
         values.extend(
@@ -68,6 +76,16 @@ def list_knowledge(
         for record in load_knowledge(category)
         if not query or query in knowledge_text(record)
     ]
+    exact = [
+        record
+        for record in records
+        if any(
+            query == normalize("NFKC", name).casefold()
+            for name in (record.name, record.names.ja or "", *record.names.aliases)
+        )
+    ]
+    if query and exact:
+        records = exact
     if mount != "all":
 
         def supports_mount(record: KnowledgeRecord) -> bool:

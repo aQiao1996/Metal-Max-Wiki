@@ -2,7 +2,11 @@ import { z } from 'zod'
 
 import { rawEquipmentRecordSchema } from '@/data/equipment/schema'
 
-export const knowledgeCategories = ['wanted-monsters', 'vehicles'] as const
+export const knowledgeCategories = [
+  'wanted-monsters',
+  'vehicles',
+  'jobs',
+] as const
 export const knowledgeCategorySchema = z.enum(knowledgeCategories)
 
 const sourceRefsSchema = rawEquipmentRecordSchema.shape.source_refs

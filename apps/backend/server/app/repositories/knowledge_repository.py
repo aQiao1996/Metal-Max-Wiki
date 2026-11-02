@@ -7,7 +7,8 @@ from app.schemas.knowledge import KnowledgeCategory, KnowledgeDataset, Knowledge
 @lru_cache(maxsize=8)
 def load_knowledge(category: KnowledgeCategory) -> tuple[KnowledgeRecord, ...]:
     """读取对应分类的已校验百科快照。"""
-    path = get_settings().data_dir / f"interim/mm2r/0.99/{category}.json"
+    filename = "job-entries.json" if category == "jobs" else f"{category}.json"
+    path = get_settings().data_dir / f"interim/mm2r/0.99/{filename}"
     try:
         dataset = KnowledgeDataset.model_validate_json(path.read_bytes())
     except (OSError, ValueError) as error:

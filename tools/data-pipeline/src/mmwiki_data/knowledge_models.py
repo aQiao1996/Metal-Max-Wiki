@@ -11,7 +11,7 @@ from mmwiki_data.normalization_models import (
     sorted_unique_source_refs,
 )
 
-KnowledgeCategory = Literal["wanted-monsters", "vehicles"]
+KnowledgeCategory = Literal["wanted-monsters", "vehicles", "jobs", "items", "quests"]
 
 
 class ReferenceAttribute(StrictModel):

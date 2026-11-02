@@ -67,8 +67,9 @@ export default async function VersionHomePage({
             <p className="text-muted-foreground mt-3 max-w-2xl text-base leading-7 text-pretty">
               已收录 {getEquipmentEntries().length} 条装备、
               {getKnowledgeEntries('vehicles').length} 种战车和{' '}
-              {getKnowledgeEntries('wanted-monsters').length}{' '}
-              个赏金首，可按名称、属性、地点与掉落查找。
+              {getKnowledgeEntries('wanted-monsters').length} 个赏金首、
+              {getKnowledgeEntries('jobs').length}{' '}
+              类职业，可按名称、属性、技能与地点查找。
             </p>
           </div>
           <div className="text-muted-foreground text-sm sm:text-right">
@@ -112,7 +113,7 @@ export default async function VersionHomePage({
                 {getEquipmentEntries().length + getKnowledgeEntries().length}
               </span>
               <span className="mt-3 block">
-                装备、战车与赏金首 · 可追溯来源
+                装备、战车、赏金首与职业技能 · 可追溯来源
               </span>
             </div>
           </div>
@@ -176,7 +177,8 @@ export default async function VersionHomePage({
         </div>
         {recentGuides.length === 0 && (
           <p className="text-muted-foreground border-border border-b py-6 text-sm leading-7">
-            攻略正在整理，当前开放装备、战车与赏金首查询，AI 问答支持装备资料。
+            攻略正在整理，当前开放装备、战车、赏金首及职业技能查询，AI
+            问答支持装备资料。
           </p>
         )}
       </section>
